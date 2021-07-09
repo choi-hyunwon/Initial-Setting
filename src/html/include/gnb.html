@@ -1,0 +1,316 @@
+<div class="wrap">
+    <!--header-->
+    <div class="header_bg">
+        <header class="header">
+            <h1 class="no-badge"><a href="#">T셀파</a></h1>
+            <div class="util-line clearfix">
+          <span class="util-link">
+            <a href="#" class="dark">T셀파 메인</a>
+            <div class="anther_site">
+              <a href="#" class="on_site">유치</a>
+              <div class="anther_site_list">
+                <a href="#" class="new">유치</a>
+                <a href="#" class="new">초등</a>
+                <a href="#">초등</a>
+                <a href="#">중학</a>
+                <a href="#">고등</a>
+              </div>
+              <script>
+                $('.on_site').on('click',function(){
+                    if(!$(this).hasClass('active')){
+                        $(this).addClass('active');
+                        $('.anther_site_list').slideDown(50);
+                    }else {
+                        $(this).removeClass('active');
+                        $('.anther_site_list').slideUp(50);
+                    }
+                })
+                $('html').click(function(e){
+                    if(!$(e.target).hasClass('active')){
+                        $('.on_site').removeClass('active');
+                        $('.anther_site_list').slideUp(50);
+                    }
+                })
+              </script>
+            </div>
+            <a href="#">T셀파몰</a>
+            <a href="#">연수원</a>
+            <a href="#">즐겨찾기 추가</a>
+          </span>
+                <span class="util-member">
+            <a href="#"><u>로그인</u></a>
+            <a href="#">MY T셀파</a>
+            <a href="#">고객센터</a>
+            <a href="#">이벤트</a>
+          </span>
+            </div>
+            <nav>
+                <ul class="gnb">
+
+                </ul>
+            </nav>
+            <div class="common_btns">
+                <a href="#" class="btn btn_allMenu">전체메뉴 부르기</a>
+                <a href="#" class="btn btn_search">검색</a>
+            </div>
+        </header>
+
+
+        <div class="gnb_search_wrap">
+            <div class="inner clearfix">
+                <div class="search_box">
+                    <div class="input_box">
+                        <input type="text" id="searchtext" title="검색어 입력" placeholder="검색어를 입력하세요">
+                        <div class="btn-box">
+                            <a href="#" class="btn-search"><i class="icon icon-gnb-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="word_box">
+                    <!--검색결과 없을때-->
+                    <!-- <ul class="keyword">
+                       <li><span class="title">최근 검색어</span></li>
+                       <li class="no-data">
+                         <p class="text">최근 검색 내역이 없습니다.</p>
+                       </li>
+                       <li class="function_area">
+                         <span class="autosave"><a href="#">자동 저장 끄기</a></span>
+                         <span><a href="#">검색 기록 삭제</a></span>
+                       </li>
+                     </ul>-->
+                    <!--검색결과 있을때-->
+                    <ul class="keyword">
+                        <li><span class="title">최근 검색어</span></li>
+                        <li>
+                            <span class="word"><a href="#">손 씻기</a></span>
+                            <span class="date">
+            <span>2021.05.08</span>
+            <a href="#"><i class="icon icon-search-remove"></i></a>
+          </span>
+                        </li>
+                        <li>
+                            <span class="word"><a href="#">겨울</a></span>
+                            <span class="date">
+            <span>2021.05.07</span>
+            <a href="#"><i class="icon icon-search-remove"></i></a>
+          </span>
+                        </li>
+                        <li>
+                            <span class="word"><a href="#">학교 안전</a></span>
+                            <span class="date">
+            <span>2021.05.01</span>
+            <a href="#"><i class="icon icon-search-remove"></i></a>
+          </span>
+                        </li>
+                        <li>
+                            <span class="word"><a href="#">학교</a></span>
+                            <span class="date">
+            <span>2021.04.28</span>
+            <a href="#"><i class="icon icon-search-remove"></i></a>
+          </span>
+                        </li>
+                        <li class="function_area">
+                            <span class="autosave"><a href="#">자동 저장 끄기</a></span>
+                            <span><a href="#">검색 기록 삭제</a></span>
+                        </li>
+                    </ul>
+                    <ul class="keyword popular_list">
+                        <li><span class="title">인기 검색어</span></li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <span class="num">1</span>
+                                    <span class="word"><a href="#">손 씻기</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                    <span class="word"><a href="#">겨울</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                    <span class="word"><a href="#">학교 안전</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">4</span>
+                                    <span class="word"><a href="#">학교</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">5</span>
+                                    <span class="word"><a href="#">종이접기</a></span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span class="num">6</span>
+                                    <span class="word"><a href="#">독립</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">7</span>
+                                    <span class="word"><a href="#">3월</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">8</span>
+                                    <span class="word"><a href="#">4월</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">9</span>
+                                    <span class="word"><a href="#">계기교육</a></span>
+                                </li>
+                                <li>
+                                    <span class="num">10</span>
+                                    <span class="word"><a href="#">통일교육</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="function_area">
+                            <span><a href="#">2021.05.08 기준</a></span>
+                        </li>
+                        <li class="badge_list">
+                            <p class="title">추천 검색어</p>
+                            <span><a href="#">수업 지도안</a></span>
+                            <span><a href="#">보충 자료</a></span>
+                            <span><a href="#">연간 수업</a></span>
+                            <span><a href="#">온라인 수업</a></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn_search_close">닫기</a>
+            </div><!--inner e-->
+
+
+        </div><!--gnb_search_wrap e-->
+
+    </div>
+    <div class="gnb_sitemap">
+        <div class="map_header">
+            <div class="inner">
+                <span>유치</span>
+                <a href="#" class="site_map_close">
+                    <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼"/>
+                </a>
+            </div>
+        </div>
+        <div class="map_body _scroll_sitemap">
+            <div class="inner">
+                <div class="site_list">
+                    <div class="subject">
+                        <span>놀꿈</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>키즈토리</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>NEW에스사이언</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>Vroom Vroom</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>English</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>Every English</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>아르제니</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>로봇/블록</span>
+                        <ul>
+                            <li><a href="#">교재 소개</a></li>
+                            <li><a href="#">교재 자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>셀파 한글수</span>
+                        <ul>
+                            <li><a href="#">셀파 한글&#183;수</a></li>
+                            <li><a href="#">우등생키즈 한글&#183;수학</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject">
+                        <span>기타</span>
+                        <ul>
+                            <li><a href="#">쉬는시간</a></li>
+                            <li><a href="#">알림장</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(window).scroll(function() {
+            $('.gnb_sitemap, .header_bg').css({left: $(this).scrollLeft() * -1 });
+        });
+    </script>
+    <!--header-->
+    <script>
+        $(document).ready(function(){
+
+            $('.btn_allMenu').on("click",function (){
+                $('.gnb_sitemap').slideDown().addClass('show');
+                $('.btn_allMenu').parents('body').addClass('_body_scroll')
+            })
+            $('.site_map_close').on("click",function (){
+                $('.gnb_sitemap').slideUp().removeClass('show')
+                $('.btn_allMenu').parents('body').removeClass('_body_scroll')
+            })
+
+            $('.btn_search').on("click",function (){
+                $('.gnb_search_wrap').slideDown().addClass('show')
+                $('.btn_search').parents('body').addClass('_body_scroll')
+            })
+            $('.btn_search_close').on("click",function (){
+                $('.gnb_search_wrap').slideUp().removeClass('show')
+                $('.btn_search_close').parents('body').removeClass('_body_scroll')
+            })
+
+            // x버튼 클릭시 text 사라짐
+            $('.search_remove').on('click', function () {
+                $('#searchtext').val('')
+            });
+
+            //사이트맵 스크롤커스텀
+            $('._scroll_sitemap').mCustomScrollbar({
+                scrollButtons: { enable: false },
+                theme: 'dark',
+                autoHideScrollbar: true,
+                mouseWheelPixels: 170,
+                autoDraggerLength:false,
+            });
+        });
+    </script>
+
+
+

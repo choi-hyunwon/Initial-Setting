@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko" class="mobile">
+@@include('../include/head.html')
+<body>
+@@include('../include/mobile/header.html')
+    <div class="contents" style=" margin:10px auto; padding:20px;">
+      @@include('../guide_mobile/menu.html')
+
+      <div class="page-content mb30">
+        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="mobile-basic">mobile basic Popup</a>
+        <a class="btn btn-primary disabled" href="#" data-toggle="modal" data-target="#mobile-full">full popup</a>
+      </div>
+
+      
+      <div class="modal fade" tabindex="-1" role="dialog" id="mobile-basic" aria-modal="true">
+        <div class="modal-dialog-centered modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">TITLE</div>
+              <a class="close" data-dismiss="modal" aria-label="Close">
+                <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
+              </a>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" tabindex="-1" role="dialog" id="mobile-full" aria-modal="true">
+        <div class="modal-dialog-centered modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">T핀 폴더 선택</div>
+              <a class="close" data-dismiss="modal" aria-label="Close">
+                <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
+              </a>
+            </div>
+            <div class="modal-body folder_choice">
+              <div class="section_info_text">
+                <span>직접 구성한 T핀 자료들은 MY T셀파에서 확인하실 수 있습니다.</span>
+                <a href="#" class="btn btn-sm btn-secondary"><span class="text">MY T셀파 바로가기</span><span class="arrow"></span></a>
+              </div>
+              <div class="section_folder_wrap">
+                <div class="pin_list border-radius">
+                  <ul class="clearfix">
+                    <li class="active"><a href="#"><i class="icon icon-tpin-black"></i><span><em>쉬는 시간</em></span></a></li>
+                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>오후 수업 0713</em></span></a></li>
+                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>오전 수업</em></span></a></li>
+                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>마이폴더</em></span></a></li>
+                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>학부모 참관수업</em></span></a></li>
+                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>11월 30일 국어수업</em></span></a></li>
+                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>4반 특강</em></span></a></li>
+                    <li class="empty"><a href="#"><i class="icon icon-plus-gray"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <a href="#" class="btn btn-primary btn-lg"><span  class="name">저장</span></a>
+              <a href="#" class="btn btn-default btn-lg"  data-toggle="modal" data-target="#folderAdd"><span class="name">신규 폴더 생성</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <script>
+        $(function (){
+          $(".page-content a").click(function (){
+            const idx = $(this).index();
+            $('.modal').eq(idx).modal('show')
+
+          /* 태그 순서 바꾼후 실행
+           $('.modal').eq(0).modal('show')
+            setTimeout(function (){
+              $('.modal').eq(1).modal('show')
+            },1000)
+            setTimeout(function (){
+              $('.modal').eq(2).modal('show')
+            },2000)*/
+          })
+        })
+      </script>
+
+    </div>
+    @@include('../include/mobile/footer.html')
+  </body>
+  </html>

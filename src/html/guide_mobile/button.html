@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko" class="mobile">
+@@include('../include/head.html')
+<body>
+@@include('../include/mobile/header.html')
+
+<div class="contents" style="margin:10px auto; padding:20px;">
+  @@include('../guide_mobile/menu.html')
+
+  <!--기본-->
+  <div class="mb20" style="background: #ffe3e3;padding: 10px;border-radius: 5px;">
+    <h3>기본 btn</h3>
+    <p class="mb10">height : 36px / font-size : 14px <br> color : #666 / min-width : 70px</p>
+    <a href="#" class="btn"><span class="name">.btn</span></a>
+  </div>
+
+  <!--비활성화-->
+  <div class="mb20" style="background: #ffe3e3;padding: 10px;border-radius: 5px;">
+    <h3>비활성화 btn</h3>
+    <a href="#" class="btn btn-default disabled"><span class="name">&.disabled</span></a>
+    <a href="#" class="btn btn-primary disabled"><span class="name">&.disabled</span></a>
+  </div>
+
+  <!--스위치-->
+  <div class="mb20" style="background: #ffe3e3;padding: 10px;border-radius: 5px;">
+    <h3>toggle switch</h3>
+      <span class="title">disabled</span>
+      <span class="flag-line">
+        <span class="switch switchOn disabled"></span>
+      </span>
+
+      <span class="title">off</span>
+      <span class="flag-line">
+        <span class="switch"></span>
+      </span>
+
+      <span class="title">on</span>
+      <span class="flag-line">
+        <span class="switch switchOn"></span>
+      </span>
+
+      <script>
+        $('.switch').on('click', function () {
+            $(this).toggleClass("switchOn");
+        })
+      </script>
+  </div>
+
+
+  <!--full-box-->
+  <div class="mb30">
+    <h3>full-box ( width : 100% )</h3>
+    <div class="mb10">
+      <div class="full-box">
+        <a href="#" class="btn btn-primary"><span class="name">.btn-primary</span></a>
+      </div>
+    </div>
+    <div class="mb10">
+      <div class="full-box">
+        <a href="#" class="btn btn-default"><span class="name">.btn-default</span></a>
+      </div>
+    </div>
+    <div>
+      <div class="full-box">
+        <a href="#" class="btn btn-gray"><span class="name">.btn-gray</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!--half-box-->
+  <div class="mb50">
+    <h3>half-box ( width : 50% )</h3>
+    <div class="mb20">
+      <div class="half-box">
+        <a href="#" class="btn btn-primary"><span class="name">.btn-primary</span></a>
+        <a href="#" class="btn btn-default"><span class="name">.btn-default</span></a>
+      </div>
+    </div>
+    <div>
+      <div class="half-box">
+        <a href="#" class="btn btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+        <a href="#" class="btn btn-default btn-circle"><span class="name">&.btn-circle</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!--버튼 사이즈-->
+  <div class="mb50">
+    <h3>버튼 사이즈</h3>
+
+    <!--btn-xl-->
+    <div class="mb50">
+      <p class="mb10">btn-xl ( height : 52px )</p>
+      <div class="mb20">
+        <div class="full-box">
+          <a href="#" class="btn btn-xl btn-default"><span class="name">.full-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-xl btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-xl btn-default "><span class="name">.half-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-xl btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-xl btn-default btn-circle "><span class="name">&.btn-circle</span></a>
+        </div>
+      </div>
+      <div style="font-size: 0">
+        <a href="#" class="btn btn-xl btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-xl btn-default "><span class="name">취소</span></a>
+        <a href="#" class="btn btn-xl btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-xl btn-default btn-circle "><span class="name">삭제</span></a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-xl btn-default">
+          <i class="icon icon-clip"></i><span class="name">버튼</span>
+        </a>
+        <a href="#" class="btn btn-xl btn-default">
+          <span class="name">버튼</span><i class="icon icon-clip"></i>
+        </a>
+        <a href="#" class="btn btn-xl btn-primary">
+          <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
+        </a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-xl btn-default">
+          <i class="icon icon-trash"></i><span class="name">삭제</span>
+        </a>
+        <a href="#" class="btn btn-xl btn-default">
+          <span class="name">삭제</span><i class="icon icon-trash"></i>
+        </a>
+        <a href="#" class="btn btn-xl btn-primary">
+          <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!--btn-lg-->
+    <div class="mb50">
+      <p class="mb10">btn-lg ( height : 44px )</p>
+      <div class="mb20">
+        <div class="full-box">
+          <a href="#" class="btn btn-lg btn-default"><span class="name">.full-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-lg btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-lg btn-default "><span class="name">.half-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-lg btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-lg btn-default btn-circle "><span class="name">&.btn-circle</span></a>
+        </div>
+      </div>
+      <div style="font-size: 0">
+        <a href="#" class="btn btn-lg btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-lg btn-default "><span class="name">취소</span></a>
+        <a href="#" class="btn btn-lg btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-lg btn-default btn-circle "><span class="name">삭제</span></a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-lg btn-default">
+          <i class="icon icon-clip"></i><span class="name">버튼</span>
+        </a>
+        <a href="#" class="btn btn-lg btn-default">
+          <span class="name">버튼</span><i class="icon icon-clip"></i>
+        </a>
+        <a href="#" class="btn btn-lg btn-primary">
+          <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
+        </a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-lg btn-default">
+          <i class="icon icon-trash"></i><span class="name">삭제</span>
+        </a>
+        <a href="#" class="btn btn-lg btn-default">
+          <span class="name">삭제</span><i class="icon icon-trash"></i>
+        </a>
+        <a href="#" class="btn btn-lg btn-primary">
+          <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!--btn-ml-->
+    <div class="mb50">
+      <p class="mb10">btn-ml ( height : 36px )</p>
+      <div class="mb20">
+        <div class="full-box">
+          <a href="#" class="btn btn-ml btn-default"><span class="name">.full-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-ml btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-ml btn-default "><span class="name">.half-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-ml btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-ml btn-default btn-circle "><span class="name">&.btn-circle</span></a>
+        </div>
+      </div>
+      <div style="font-size: 0">
+        <a href="#" class="btn btn-ml btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-ml btn-default "><span class="name">취소</span></a>
+        <a href="#" class="btn btn-ml btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-ml btn-default btn-circle"><span class="name">삭제</span></a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-ml btn-default">
+          <i class="icon icon-clip"></i><span class="name">버튼</span>
+        </a>
+        <a href="#" class="btn btn-ml btn-default">
+          <span class="name">버튼</span><i class="icon icon-clip"></i>
+        </a>
+        <a href="#" class="btn btn-ml btn-primary">
+          <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
+        </a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-ml btn-default">
+          <i class="icon icon-trash"></i><span class="name">삭제</span>
+        </a>
+        <a href="#" class="btn btn-ml btn-default">
+          <span class="name">삭제</span><i class="icon icon-trash"></i>
+        </a>
+        <a href="#" class="btn btn-ml btn-primary">
+          <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!--btn-md-->
+    <div class="mb50">
+      <p class="mb10">btn-md ( height : 32px )</p>
+      <div class="mb20">
+        <div class="full-box">
+          <a href="#" class="btn btn-md btn-default"><span class="name">.full-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-md btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-md btn-default "><span class="name">.half-box</span></a>
+        </div>
+      </div>
+      <div class="mb20">
+        <div class="half-box">
+          <a href="#" class="btn btn-md btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-md btn-default btn-circle "><span class="name">&.btn-circle</span></a>
+        </div>
+      </div>
+      <div style="font-size: 0">
+        <a href="#" class="btn btn-md btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-md btn-default "><span class="name">취소</span></a>
+        <a href="#" class="btn btn-md btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-md btn-default btn-circle"><span class="name">삭제</span></a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-md btn-default">
+          <i class="icon icon-clip"></i><span class="name">버튼</span>
+        </a>
+        <a href="#" class="btn btn-md btn-default">
+          <span class="name">버튼</span><i class="icon icon-clip"></i>
+        </a>
+        <a href="#" class="btn btn-md btn-primary">
+          <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
+        </a>
+
+        <p class="mb10"></p>
+
+        <a href="#" class="btn btn-md btn-default">
+          <i class="icon icon-trash"></i><span class="name">삭제</span>
+        </a>
+        <a href="#" class="btn btn-md btn-default">
+          <span class="name">삭제</span><i class="icon icon-trash"></i>
+        </a>
+        <a href="#" class="btn btn-md btn-primary">
+          <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--.name 없는 경우-->
+  <div class="full-box mb10">
+    <a href="#" class="btn btn-xl btn-default">.name 없는 xl</a>
+  </div>
+
+  <div class="full-box mb10">
+    <a href="#" class="btn btn-lg btn-default">.name 없는 lg</a>
+  </div>
+
+  <div class="full-box mb10">
+    <a href="#" class="btn btn-ml btn-default">.name 없는 ml</a>
+  </div>
+
+  <div class="full-box mb10">
+    <a href="#" class="btn btn-default">.name 없는 md(기본)</a>
+  </div>
+
+</div>
+<!--//contents-->
+@@include('../include/mobile/footer.html')
+</body>
+</html>

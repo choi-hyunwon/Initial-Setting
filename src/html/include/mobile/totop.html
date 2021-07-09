@@ -1,0 +1,28 @@
+<a href="#" class="to_pagetop" style="opacity: 0">go to top</a>
+
+<script>
+  $(document).ready(function(){
+    $('.to_pagetop').click(function(){
+      $('html,body').animate( { scrollTop:0 },'slow' );
+      return false;
+    });
+
+    $(window).on('scroll', function (){
+      var nDocH = $(document).height()
+      var nWinH = $(window).height()
+      var nMaxH = nDocH - nWinH
+      var scrollTop = $(window).scrollTop()
+      if (scrollTop > 50) {
+        $('.to_pagetop').css({'opacity' : 1})
+      } else {
+        $('.to_pagetop').css({'opacity' : 0})
+      }
+      if (scrollTop > nMaxH - 280 + 65) {
+        $('.to_pagetop').css({'bottom' : scrollTop - (nMaxH - 275)})
+      } else {
+        $('.to_pagetop').css({'bottom' : '20px'})
+      }
+    })
+  });
+</script>
+

@@ -1,0 +1,140 @@
+<div class="modal fade membership_pointtrasnfer_popup" tabindex="-1" role="dialog"  aria-modal="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">교육쇼핑몰 / 연수원 포인트 전환하기</div>
+        <a class="close" data-dismiss="modal" aria-label="Close">
+          <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
+        </a>
+      </div>
+      <div class="modal-body">
+        <!-- 혜택 공지 라운드버전 -->
+        <div class="benefit_notie_wrap-img popup">
+          <ul class="benefit_notice">
+            <li>
+              보유 카네이션을 연수원, 교육쇼핑몰에서 결제 시 사용 가능한 포인트로 전환 가능합니다.<br>
+              (카네이션은 연수원, 교육쇼핑몰에서 결제 시 사용 불가)
+            </li>
+            <li>카네이션 10송이 당 연수포인트/ 셀파포인트 1P로 전환할 수 있으며 카네이션 전환 후에는 취소가 불가합니다.</li>
+            <li>카네이션의 유효기간은 적립일로부터 매년 12월 31일까지 사용 가능합니다.</li>
+          </ul>
+        </div>
+
+        <!-- 리스트 공통 영역-->
+        <div class="list_title_section-popup">
+          <div class="list_title">
+            <span class="text">카네이션</span>
+            <span class="arrow"></span>
+            <span class="text">연수포인트로 전환하기</span>
+          </div>
+        </div>
+
+        <!-- 카네이션 전환하기 폼 -->
+        <div class="canation_transform">
+          <div class="transform_box">
+            <div class="point_info_area">
+              <div class="text_box">
+                <div class="headline">전환 가능 카네이션</div>
+                <div class="point">2,530 <span>송이</span></div>
+              </div>
+              <div class="img_box">
+                <img src="../../img/mytsherpa/img-carnation.png" alt="카네이션">
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="headline">전환할 카네이션</div>
+              <div class="insert_area">
+                <input type="number" placeholder="10단위로 입력"><span>송이</span>
+              </div>
+            </div>
+          </div>
+          <div class="transform_arrow"></div>
+          <div class="transform_box">
+            <div class="point_info_area">
+              <div class="text_box">
+                <div class="headline">연수포인트</div>
+                <div class="desc">
+                  카네이션 10송이 당,<br>
+                  연수포인트 1P로 전환됩니다.
+                </div>
+              </div>
+              <div class="img_box">
+                <img src="../../img/mytsherpa/img-coin.png" alt="">
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="headline">전환된 연수포인트</div>
+              <div class="insert_area">
+                <input type="number" placeholder="0" readonly><span>P</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 리스트 공통 영역-->
+        <div class="list_title_section-popup">
+          <div class="list_title">
+            <span class="text">카네이션</span>
+            <span class="arrow"></span>
+            <span class="text">교육쇼핑몰 셀파포인트로 전환하기</span>
+          </div>
+        </div>
+
+        <!-- 카네이션 전환하기 폼 -->
+        <div class="canation_transform">
+          <div class="transform_box">
+            <div class="point_info_area">
+              <div class="text_box">
+                <div class="headline">전환 가능 카네이션</div>
+                <div class="point">2,530 <span>송이</span></div>
+              </div>
+              <div class="img_box">
+                <img src="../../img/mytsherpa/img-carnation.png" alt="카네이션">
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="headline">전환할 카네이션</div>
+              <div class="insert_area">
+                <input type="number" placeholder="10단위로 입력"><span>송이</span>
+              </div>
+            </div>
+          </div>
+          <div class="transform_arrow"></div>
+          <div class="transform_box">
+            <div class="point_info_area">
+              <div class="text_box">
+                <div class="headline">교육쇼핑몰 셀파포인트</div>
+                <div class="desc">
+                  카네이션 10송이 당,<br>
+                  교육쇼핑몰 1P로 전환됩니다.
+                </div>
+              </div>
+              <div class="img_box">
+                <img src="../../img/mytsherpa/img-coin.png" alt="">
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="headline">전환된 교육쇼핑몰 셀파포인트</div>
+              <div class="insert_area">
+                <input type="number" placeholder="0" readonly><span>P</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 전환하기 버튼 -->
+        <div class="transfor_button">
+          <a href="#" class="btn btn-primary">전환하기</a>
+          <a href="#" class="btn btn-default" data-dismiss="modal">취소</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('._popup_click-membership_pointtrasnfer_popup').on('click',function(){
+    $('.membership_pointtrasnfer_popup').modal('show');
+  });
+</script>

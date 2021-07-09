@@ -1,0 +1,75 @@
+<a href="#" class="to_pagetop" style="opacity: 0">go to top</a>
+<a href="#" class="to_teaching">
+    <div class="teaching_btn_lg">
+        <div class="title">내가 만드는 수업자료!</div>
+        <div class="desc">티칭보드 바로가기</div>
+        <i class="teaching_arrow"></i>
+    </div>
+</a>
+
+<script>
+    $(document).ready(function(){
+        $('.to_pagetop').click(function(){
+            $('html,body').animate( { scrollTop:0 },'slow' );
+            return false;
+        });
+        $(window).on('scroll', function (){
+            var nDocH = $(document).height()
+            var nWinH = $(window).height()
+            var nMaxH = nDocH - nWinH
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 50) {
+                $('.to_pagetop').css({'opacity' : 1})
+                $('.to_teaching').css('bottom','100px');
+            } else {
+                $('.to_pagetop').css({'opacity' : 0})
+                $('.to_teaching').css('bottom','45px');
+            }
+            if (scrollTop > nMaxH - 280 + 45) {
+                $('.to_pagetop').css({'bottom' : scrollTop - (nMaxH - 325)})
+            } else {
+                $('.to_pagetop').css({'bottom' : '45px'})
+            }
+        })
+    });
+</script>
+
+
+<script>
+    $(document).ready(function(){
+        $(window).on('scroll', function (){
+            var nDocH = $(document).height()
+            var nWinH = $(window).height()
+            var nMaxH = nDocH - nWinH
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 50) {
+                $('.to_teaching').css({'opacity' : 1});
+                $('.to_teaching').addClass('sm');
+                
+            } else {
+                $('.to_teaching').css({'opacity' : 1})
+                $('.to_teaching').removeClass('sm')
+                // $('.to_teaching').css('bottom','45px');
+            }
+
+
+            if (scrollTop > nMaxH - 280 + 45) {
+                $('.to_teaching').css({'bottom' : scrollTop - (nMaxH - 390)})
+            } else {
+                $('.to_teaching').css({'bottom' : '45px'})
+
+            }
+        })
+
+        //TP2-1037
+        //마우스 호버시 이미지 변경
+        $('.to_teaching').hover( function(e)
+            {$(this).removeClass("sm");},
+            function(e) {
+
+            $(this).addClass("sm");}
+        );
+
+    });
+</script>
+

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+@@include('../include/wrap-img.html', {'src' : '../../img/@temp/초등_PC_평가자료_01.png'})
+<div class="wrap">
+  <!-- container-->
+  <div id="container" class="pt-0">
+    <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
+      @@include('../guide/menu.html')
+
+      <!--    global : - local : _ -->
+
+      <div class="section">
+
+
+        <h3>정보 입력 테이블 ( .border-radius > .table.info )</h3>
+        <div class="border-radius" style="margin-bottom: 50px">
+          <table class="table info">
+            <colgroup>
+              <col style="width:145px">
+              <col style="width: calc(100% - 145px)">
+            </colgroup>
+            <tbody>
+            <tr>
+              <th>기본</th>
+              <td>
+                <p>td가 한줄일 경우 tr태그에 아무것도 넣지 X</p>
+              </td>
+            </tr>
+
+            <tr >
+              <th class="title-top">
+                .title-top
+              </th>
+              <td>
+                <p>td가 두줄일 경우</p>
+                <p>tr태그에 title-top이라는 클래스를 추가</p>
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <span class="red_bullet">.red_bullet</span>
+              </th>
+              <td>
+                <p>빨간점이 필요할경우 th안에 있는 span태그에  .red_bullet를 추가</p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="border-radius">
+          <table class="table info">
+            <colgroup>
+              <col style="width:145px">
+              <col style="width: calc(100% - 145px)">
+            </colgroup>
+            <tbody>
+            <tr>
+              <th>
+                <span class="red_bullet">
+                  이름
+                </span>
+              </th>
+              <td>
+                <p>김재성</p>
+              </td>
+            </tr>
+            <tr >
+              <th class="title-top">
+                <span class="red_bullet">아이디</span>
+              </th>
+              <td>
+                <div class="input_area">
+                  <input class="text" value="soboro3" type="text">
+                  <a href="#" class="btn btn-primary"><span class="name">중복확인</span></a>
+                </div>
+                <p class="desc valid">사용 가능한 아이디 입니다.</p>
+              </td>
+            </tr>
+            <tr >
+              <th class="title-top">
+                <span class="red_bullet">비밀번호</span>
+              </th>
+              <td>
+                <div class="input_area">
+                  <input type="password" class="password">
+                </div>
+                <p class="desc">사용 가능한 비밀번호 입니다.</p>
+              </td>
+            </tr>
+            <tr >
+              <th class="title-top">
+                <span class="red_bullet">비밀번호 확인</span>
+              </th>
+              <td>
+                <div class="input_area">
+                  <input type="password" class="password">
+                </div>
+                <p class="desc error">비밀번호가 일치하지 않습니다.</p>
+              </td>
+            </tr>
+            <tr >
+              <th>
+                <span class="red_bullet">이메일 주소</span>
+              </th>
+              <td>
+                <div class="email-box">
+                  <input type="text" class="text" value="dhgidifjie" maxlength="25">
+                  <span class="whelk">@</span>
+                  <input type="text" class="text">
+                  <select class="custom-select form-control">
+                    <option selected="">직접입력</option>
+                    <option>naver.com</option>
+                    <option>gmail.com</option>
+                    <option>nate.com</option>
+                    <option>gmail.com</option>
+                    <option>hanmail.com</option>
+                    <option>hotmail.com</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span class="red_bullet">휴대폰</span>
+              </th>
+              <td>
+                <div class="phone-box">
+                  <select class="custom-select form-control custom-select-lg">
+                    <option selected="selected">010</option>
+                    <option>011</option>
+                    <option>016</option>
+                    <option>017</option>
+                    <option>018</option>
+                    <option>019</option>
+                  </select>
+                  <span class="line"></span>
+                  <input type="number" class="number" value="1234" oninput="handleOnInput(this, 4)">
+                  <span class="line"></span>
+                  <input type="number" class="number" value="5678" oninput="handleOnInput(this, 4)">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span class="red_bullet">생년월일</span>
+              </th>
+              <td>
+                <div class="birthday_box">
+                  <input type="number" class="number" value="2000" oninput="handleOnInput(this, 4)">
+                  <span class="day">년</span>
+                  <input type="number" class="number" value="05" oninput="handleOnInput(this, 2)">
+                  <span class="day">월</span>
+                  <input type="number" class="number" value="03" oninput="handleOnInput(this, 2)">
+                  <span class="day">일</span>
+                </div>
+              </td>
+            </tr>
+            <tr >
+              <th>
+                <span class="red_bullet">학교 종류</span>
+              </th>
+              <td class="one_input_line">
+                <div class="input_area">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" checked="checked" name="customRadio2" class="custom-control-input">
+                    <label class="custom-control-label change_left" for="customRadio3">초등</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
+                    <label class="custom-control-label change_left" for="customRadio4">중등</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio5" name="customRadio2" class="custom-control-input">
+                    <label class="custom-control-label change_left" for="customRadio5">고등</label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>학교명</th>
+              <td class="one_input_line">
+                <div class="input_area">
+                  <select class="custom-select form-control custom-select-lg">
+                    <option selected="">선택</option>
+                    <option>선택</option>
+                    <option>선택</option>
+                    <option>선택</option>
+                  </select>
+                  <select class="custom-select form-control custom-select-lg">
+                    <option selected="">선택</option>
+                    <option>선택</option>
+                    <option>naver.com</option>
+                    <option>naver.com</option>
+                  </select>
+                  <input type="text" class="text">
+                  <a href="#" class="btn btn-primary">
+                    <span class="name">학교찾기</span>
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="title-top">학교주소</th>
+              <td class="two_input_line">
+                <div class="input_area">
+                  <input type="text" class="text">
+                  <a href="#" class="btn btn-primary"><span class="name">우편번호 찾기</span></a>
+                </div>
+                <input type="text" class="text">
+              </td>
+            </tr>
+            <tr>
+              <th>담임 여부</th>
+              <td class="one_input_line">
+                <div class="input_area">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio10" name="customRadio3" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio10">담임</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio11" name="customRadio3" class="custom-control-input">
+                    <label class="custom-control-label change_left" for="customRadio11">담임 아님</label>
+                  </div>
+                  <select class="custom-select form-control custom-select-lg">
+                    <option selected="">1학년</option>
+                    <option>2학년</option>
+                    <option>3학년</option>
+                    <option>4학년</option>
+                    <option>5학년</option>
+                    <option>6학년</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span><span class="red_bullet">어린이집</span><br>유치원찾기</span>
+              </th>
+              <td class="one_input_line">
+                <div class="input_area type2_input">
+                  <span class="title">시/도</span>
+                  <select class="custom-select form-control custom-select-lg" title="">
+                    <option selected="selected">서울시</option>
+                    <option>서울시</option>
+                    <option>서울시</option>
+                  </select>
+                  <span class="title">시/군/구</span>
+                  <select class="custom-select form-control custom-select-lg" title="">
+                    <option selected="selected">금천구</option>
+                    <option>금천구</option>
+                    <option>금천구</option>
+                  </select>
+                  <span class="title">기관명</span>
+                  <input type="text" class="text">
+                  <a href="#" class="btn btn-primary"><span class="name">검색</span></a>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <br><br><br>
+
+        <h3>기본 테이블</h3>
+        <table class="table text-align-center flat-row">
+          <colgroup>
+            <col style="width:60px;">
+            <col style="">
+            <col style="width:90px;">
+          </colgroup>
+          <thead>
+          <tr>
+            <th>
+              <div class="custom-control custom-checkbox no-label">
+                <input type="checkbox" class="custom-control-input" id="customCheck00">
+                <label class="custom-control-label" for="customCheck00"></label>
+              </div>
+            </th>
+            <th>자료명</th>
+            <th>미리보기</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              <div class="custom-control custom-checkbox no-label">
+                <input type="checkbox" class="custom-control-input" id="customCheck11">
+                <label class="custom-control-label" for="customCheck11"></label>
+              </div>
+            </td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.05 영국명예혁명 수업지도안</span>
+            </td>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="custom-control custom-checkbox no-label">
+                <input type="checkbox" class="custom-control-input" id="customCheck22">
+                <label class="custom-control-label" for="customCheck22"></label>
+              </div>
+            </td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.07 입동 수업지도안</span>
+            </td>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br><br><br>
+
+
+        <h3>제목을 포함하는 둥근 상자 (아코디언 없음)</h3>
+        <div class="heading-wrap">
+          <div class="heading-line">
+            <p class="date">11.22</p>
+          </div>
+          <div class="body-line">
+            <ul class="list">
+              <li><a href="#">소설(小雪)</a></li>
+              <li><a href="#">카이로 정상 개최</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //heading-wrap -->
+    </div>
+  </div>
+  <!-- //container-->
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+@@include('../include/wrap-img.html', {'src' : '../../img/@temp/초등_PC_평가자료_01.png'})
+<div class="wrap">
+  <!-- container-->
+  <div id="container" class="pt-0">
+    <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
+      @@include('../guide/menu.html')
+
+      <!--    global : - local : _ -->
+
+      <div class="section">
+
+        <h2>체크박스 (두줄 이상일때 세로 중앙 배치)</h2>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+        <br>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck2">
+          <label class="custom-control-label" for="customCheck2">체크박스 레이블이 <br>여러줄 일 때</label>
+        </div>
+
+        <br><br><br>
+
+        <h2>체크박스 두줄 이상일때 위에 배치 (top-line 클래스 부여)</h2>
+        <div class="custom-control custom-checkbox top-line">
+          <input type="checkbox" class="custom-control-input" id="customCheck3">
+          <label class="custom-control-label" for="customCheck3">체크박스 레이블이 <br>여러줄 일 때</label>
+        </div>
+
+        <br><br><br>
+
+        <h2>체크박스 레이블 없을 때 no-label 클래스 부여</h2>
+        <div class="custom-control custom-checkbox no-label">
+          <input type="checkbox" class="custom-control-input" id="customCheck4">
+          <label class="custom-control-label" for="customCheck4"></label>
+        </div>
+
+        <br><br><br>
+
+        <h2>라디오버튼</h2>
+
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio3" checked="checked" name="customRadio2" class="custom-control-input">
+            <label class="custom-control-label change_left" for="customRadio3">초등</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
+            <label class="custom-control-label change_left" for="customRadio4">중등</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio5" name="customRadio2" class="custom-control-input">
+            <label class="custom-control-label change_left" for="customRadio5">고등</label>
+          </div>
+
+        <br><br><br>
+
+        <h2>SELECT</h2>
+        <select class="form-control" title="검색 키워드 선택">
+          <option>제목</option>
+          <option>내용</option>
+          <option>이름</option>
+          <option>제목 + 내용 + 이름</option>
+        </select>
+
+        <br><br><br>
+
+        <h2>검색바</h2>
+        <div class="form-group search_bar">
+          <select class="form-control" title="검색 키워드 선택">
+            <option>제목</option>
+            <option>내용</option>
+            <option>이름</option>
+            <option>제목 + 내용 + 이름</option>
+          </select>
+          <input type="text" title="검색어 입력" placeholder="검색어를 입력해주세요">
+          <a href="#" class="btn"><i class="icon icon-search"></i></a>
+        </div>
+
+        <br><br><br>
+
+        <h2>첨부 파일 업로드</h2>
+
+
+        <p style="text-align: right">.custom-file .no-field .img-upload</p>
+        <div class="mb100">
+          <div class="custom-file no-field img-upload">
+            <input type="file" class="custom-file-input" id="customFile1">
+            <label class="custom-file-label selected" for="customFile1">선택된 파일 없음</label>
+          </div>
+        </div>
+
+        <p style="text-align: right">.custom-file .no-field</p>
+        <div class="mb100">
+        <div class="custom-file no-field">
+          <input type="file" class="custom-file-input" id="customFile2">
+          <label class="custom-file-label selected" for="customFile2">선택된 파일 없음</label>
+        </div>
+        </div>
+
+        <p>.custom-file .img-upload</p>
+        <div class="mb100">
+        <div class="custom-file img-upload">
+          <input type="file" class="custom-file-input" id="customFile3">
+          <label class="custom-file-label selected" for="customFile3">선택된 파일 없음</label>
+        </div>
+        </div>
+
+
+
+
+        <h2>TEXTAREA</h2>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="내용을 입력하세요"></textarea>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- //container-->
+</div>
+</body>
+</html>
+

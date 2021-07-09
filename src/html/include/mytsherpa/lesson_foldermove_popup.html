@@ -1,0 +1,104 @@
+<div class="modal fade lesson_foldermove_popup" tabindex="-1" role="dialog"  aria-modal="true">
+  <div class="modal-dialog-centered modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">티칭보드 폴더 이동</div>
+        <a class="close" data-dismiss="modal" aria-label="Close">
+          <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
+        </a>
+      </div>
+      <div class="modal-body">
+        <div class="sub_headline">이동할 티칭보드 폴더를 선택해 주세요</div>
+       
+        <div class="scroll_wrap select_folder">
+          <div class="section_list_accordion list-accordion" id="accordion_unit_select">
+            <div class="item">
+              <div id="accordion_head_01">
+                <div class="item_head" id="item_head_01">
+                  <p class="tit_line"><i class="icon icon-folder-gray"></i> 11월 수업자료</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div id="accordion_head_01">
+                <div class="item_head" id="item_head_01">
+                  <p class="tit_line"><i class="icon icon-folder-gray"></i> 11월 수업자료</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div id="accordion_head_01">
+                <div class="item_head" id="item_head_01">
+                  <p class="tit_line"><i class="icon icon-folder-gray"></i> 11월 수업자료</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div id="accordion_head_01">
+                <div class="item_head" id="item_head_01">
+                  <p class="tit_line"><i class="icon icon-folder-gray"></i> 11월 수업자료</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="item">
+              <div id="accordion-head-02">
+                <div class="item_head" id="item_head_02">
+                  <p class="tit_line"><i class="icon icon-folder-gray"></i>학무모 참관수업 자료</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div id="accordion-head-03">
+                <div class="item_head" id="item_head_03">
+                  <p class="tit_line"><i class="icon icon-folder-gray"></i>안내장 관련</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div id="accordion-head-04">
+                <div class="item_head" id="item_head_04">
+                  <p class="tit_line"><i class="icon icon-folder-gray"></i>쉬는시간에 틀어줄꺼 영상</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson_popup_confirm">
+          <a href="#" class="btn btn-primary btn_save disabled">확인</a>
+          <a href="#" class="btn btn-default" data-dismiss="modal">취소</a>
+          <script>
+            let $itemHead = $('.item_head');
+            let $modal = $('.btn_save');
+  
+            $itemHead.on('click', function () {
+              if ($(this).hasClass('active')) {
+                //클릭된곳
+                $(this).removeClass('active');
+                $modal.addClass('disabled');
+  
+              } else {
+                //클릭 안된곳
+                $itemHead.removeClass('active')
+                $(this).addClass('active');
+                $modal.removeClass('disabled');
+              }
+            });
+          </script>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('._popup_click-lesson_foldermove_popup').on('click',function(){
+    $('.lesson_foldermove_popup').modal('show');
+  });
+</script>

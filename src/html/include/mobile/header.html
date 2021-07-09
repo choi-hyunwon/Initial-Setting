@@ -1,0 +1,56 @@
+<div class="m-wrap">
+  <div class="m-head">
+    <div class="logo_area">
+      <div class="logo_title"><img src="../../img/m-gate/gate-logo.png" alt=""></div>
+      <div class="search_and_menu">
+        <a href="#" class="mobile_menu _open_leftgnb">
+          <span class="line"></span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- 왼쪽 메뉴 -->
+    @@include('layout-left_gnb.html')
+
+    <!-- 서브 타이틀 :: 1depth -->
+    <div class="depth1_title">
+      MY T 셀파
+    </div>
+
+    <!-- 서브 타이틀 :: 2depth -->
+    <div class="depth2_menu_wrap">
+      <ul class="depth2_menu">
+        <li class="active"><a href="#"><span>내 핀 메뉴</span></a></li>
+        <li><a href="#"><span>내 수업 자료실</span></a></li>
+        <li><a href="#"><span>문의 내역 및 답변</span></a></li>
+      </ul>
+    </div>
+    <script>
+      console.log($('.active').offset().left)
+      $('.depth2_menu').scrollLeft($('.active').offset().left)
+    </script>
+
+    <!-- 서브 타이틀 :: 2depth :: ver2.0 -->
+    <!-- <div class="depth2_menu_wrap-ver2 swiper-container">
+      <ul class="depth2_menu-ver2 swiper-wrapper">
+        <li class="active swiper-slide"><a href="#"><span>1학년</span></a></li>
+        <li class="swiper-slide"><a href="#"><span>2학년</span></a></li>
+        <li class="swiper-slide"><a href="#"><span>3학년</span></a></li>
+        <li class="swiper-slide"><a href="#"><span>4학년</span></a></li>
+        <li class="swiper-slide"><a href="#"><span>5학년</span></a></li>
+        <li class="swiper-slide"><a href="#"><span>6학년</span></a></li>
+        <li class="swiper-slide"><a href="#"><span>인정교과서</span></a></li>
+      </ul>
+    </div>
+    <script>
+      var swiper = new Swiper('.depth2_menu_wrap-ver2.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+      });
+    </script> -->
+
+    <!-- 서브 타이틀 컨텐츠 시작 간격-->
+    <div class="m-subcontents_start"></div>
+  </div>
+
+  <div class="m-container">

@@ -1,0 +1,35 @@
+<div class="modal fade lesson_newfolder_popup" tabindex="-1" role="dialog"  aria-modal="true">
+  <div class="modal-dialog-centered modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">신규 폴더 생성</div>
+        <a class="close" data-dismiss="modal" aria-label="Close">
+          <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
+        </a>
+      </div>
+      <div class="modal-body">
+
+        <div class="desc">
+          신규로 생성할 폴더명을 입력해주세요.<br>
+          (폴더명은 10자 이내로 입력해 주세요)
+        </div>
+        <div class="lesson_popup-input">
+          <input type="text">
+          <span class="length_check"><span class="over">11</span>/10</span>
+          <!-- class : over = 파란색 -->
+        </div>
+        <div class="lesson_popup_confirm">
+          <a href="#" class="btn btn-primary">확인</a>
+          <a href="#" class="btn btn-default" data-dismiss="modal">취소</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('._popup_click-lesson_newfolder_popup').on('click',function(){
+    $('.lesson_newfolder_popup').modal('show');
+  });
+</script>

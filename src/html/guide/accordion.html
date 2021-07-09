@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+@@include('../include/wrap-img.html', {'src' : '../../img/@temp/초등_PC_평가자료_01.png'})
+<div class="wrap">
+  <!-- container-->
+  <div id="container" class="pt-0">  <!--위에 박스가 있는 경우 위여백 0-->
+    <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
+      @@include('../guide/menu.html')
+      <div style="margin-bottom:20px; width:100%">
+        <h2>accordion-basic</h2>
+        <p><kbd>basic</kbd></p>
+        <br>
+        <div class="list-accordion" id="accordion_basic">
+          <div class="item">
+            <div class="item_head" id="accordion_basic01-head" data-toggle="collapse" data-target="#accordion_basic01-body" aria-controls="accordion_basic01-body" aria-expanded="true">
+              <div class="txt">
+                <div class="title">item_head</div>
+              </div>
+              <div class="buttons">
+                <a href="#" class="arrow up"><span></span><span></span></a>
+              </div>
+            </div>
+            <div class="item_body collapse show" id="accordion_basic01-body" aria-labelledby="accordion_basic01-head" data-parent="#accordion_basic"> <!-- 아코디언 컨텐츠 -->
+              <div class="body_contents">
+                <p><kbd>body_contents</kbd></p>
+              </div>
+            </div>
+          </div><!-- item -->
+          <div class="item">
+            <div class="item_head" id="accordion_basic02-head" data-toggle="collapse" data-target="#accordion_basic02-body" aria-controls="accordion_basic02-body" aria-expanded="true">
+              <div class="txt">
+                <div class="title">item_head</div>
+              </div>
+              <div class="buttons">
+                <a href="#" class="arrow down"><span></span><span></span></a>
+              </div>
+            </div>
+            <div class="item_body collapse" id="accordion_basic02-body" aria-labelledby="accordion_basic02-head" data-parent="#accordion_basic"> <!-- 아코디언 컨텐츠 -->
+              <div class="body_contents">
+                <p><kbd>body_contents</kbd></p>
+              </div>
+            </div>
+          </div><!-- item -->
+        </div><!-- list accordion -->
+      </div>
+
+      <div style="margin-bottom:20px; width:100%">
+          <h2>accordion</h2>
+          <p><kbd>subject</kbd> , <kbd>교과자료용</kbd></p>
+          <br>
+          <div class="list-accordion" id="accordion">
+            <div class="item">
+              <div class="item_head" id="accordion01-head" data-toggle="collapse" data-target="#accordion01-body" aria-controls="accordion01-body" aria-expanded="true">
+                <div class="txt">
+                  <div class="title">item_head</div>
+                </div>
+                <div class="buttons">
+                  <a href="#" class="arrow up"><span></span><span></span></a>
+                </div>
+              </div>
+              <div class="item_body collapse show" id="accordion01-body" aria-labelledby="accordion01-head" data-parent="#accordion"> <!-- 아코디언 컨텐츠 -->
+                <div class="body_contents">
+                  <p><kbd>body_contents > body_contents_tables</kbd></p>
+                  <div class="body_contents_tables">
+                    <p><kbd>body_contents > body_contents_tables > column-grid / column-2</kbd></p>
+                    <div class="column-grid column-2"> <!-- 아코디언 안에 2개짜리 칼럼을 제작 -->
+                      <div class="item">
+                        <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                          <colgroup>
+                            <col width="13%">
+                            <col width="auto">
+                            <col width="19%">
+                          </colgroup>
+                          <thead>
+                          <tr>
+                            <th>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1"></label>
+                              </div>
+                            </th>
+                            <th>자료명</th>
+                            <th>미리보기</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td class="title">
+                              <i class="icon icon-hangle"></i>
+                              <span class="title_subject">백지도</span>
+                            </td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td class="title">
+                              <i class="icon icon-ppt"></i>
+                              <span class="title_subject">백지도</span>
+                            </td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td class="title">
+                              <i class="icon icon-hangle"></i>
+                              <span class="title_subject">백지도</span>
+                            </td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div><!-- item -->
+                      <div class="item">
+                        <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                          <colgroup>
+                            <col width="13%">
+                            <col width="auto">
+                            <col width="19%">
+                          </colgroup>
+                          <thead>
+                          <tr>
+                            <th>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1"></label>
+                              </div>
+                            </th>
+                            <th>자료명</th>
+                            <th>미리보기</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td class="title">
+                              <i class="icon icon-hangle"></i>
+                              <span class="title_subject">백지도</span>
+                            </td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div><!-- item -->
+                    </div>
+
+                    <p><kbd>body_contents > body_contents_tables > column-grid / column-1</kbd></p>
+                    <div class="column-grid column-1"> <!-- 아코디언 안에 2개짜리 칼럼을 제작 -->
+                      <div class="item">
+                        <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                          <colgroup>
+                            <col width="5.5%">
+                            <col width="auto">
+                            <col width="9%">
+                            <col width="9%">
+                            <col width="9%">
+                          </colgroup>
+                          <thead>
+                          <tr>
+                            <th>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1"></label>
+                              </div>
+                            </th>
+                            <th>자료명</th>
+                            <th>미리보기</th>
+                            <th>T핀</th>
+                            <th>다운로드</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td class="title">
+                              <i class="icon icon-hangle"></i>
+                              <span class="title_subject">백지도</span>
+                            </td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-download"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td class="title">
+                              <i class="icon icon-hangle"></i>
+                              <span class="title_subject">백지도</span>
+                            </td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox no-label">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td class="title">
+                              <i class="icon icon-hangle"></i>
+                              <span class="title_subject">백지도</span>
+                            </td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                            <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div><!-- item -->
+                    </div>
+
+                    <p><kbd>body_contents > body_contents_tables > buttons</kbd></p>
+                    <div class="buttons">
+                      <a href="#" class="btn btn-default"><span class="name">모아받기(ZIP)</span></a>
+                      <a href="#" class="btn btn-default"><span class="name">개별 파일 받기</span></a>
+                      <a href="#" class="btn btn-default"><i class="icon icon-tpin-gray"></i><span class="name">T핀</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- item -->
+            <div class="item">
+              <div class="item_head" id="accordion02-head" data-toggle="collapse" data-target="#accordion02-body" aria-controls="accordion02-body" aria-expanded="true">
+                <div class="txt">
+                  <div class="num">01</div>
+                  <div class="title">옛사람들의 삶과 문화</div>
+                </div>
+                <div class="buttons">
+                  <a href="#" class="arrow up"><span></span><span></span></a>
+                </div>
+              </div>
+              <div class="item_body collapse show" id="accordion02-body" aria-labelledby="accordion02-head" data-parent="#accordion"> <!-- 아코디언 컨텐츠 -->
+                <div class="body_contents">
+                  <div id="sub_accordion">
+                    <div class="sub_item">
+                      <div id="sub_accordion01-head" class="body_head" data-toggle="collapse" data-target="#sub_accrodion01-body" aria-controls="sub_accrodion01-body" aria-expanded="true">
+                        <div class="txt">
+                          <span class="title bullet-circle">단원 공통자료</span>
+                        </div>
+                        <a class="arrow-circle up"><span></span><span></span></a>
+                      </div>
+                      <div id="sub_accrodion01-body" class="body_contents collapse show" aria-labelledby="sub_accordion01-head" data-parent="#sub_accordion">
+                        <div class="body_contents_tables">
+                          <div class="column-grid column-2"> <!-- 아코디언 안에 2개짜리 칼럼을 제작 -->
+                            <div class="item">
+                              <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                                <colgroup>
+                                  <col width="13%">
+                                  <col width="auto">
+                                  <col width="19%">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                  <th>
+                                    <div class="custom-control custom-checkbox no-label">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                      <label class="custom-control-label" for="customCheck1"></label>
+                                    </div>
+                                  </th>
+                                  <th>자료명</th>
+                                  <th>미리보기</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="custom-control custom-checkbox no-label">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                      <label class="custom-control-label" for="customCheck2"></label>
+                                    </div>
+                                  </td>
+                                  <td class="title">
+                                    <i class="icon icon-hangle"></i>
+                                    <span class="title_subject">백지도</span>
+                                  </td>
+                                  <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="custom-control custom-checkbox no-label">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                      <label class="custom-control-label" for="customCheck2"></label>
+                                    </div>
+                                  </td>
+                                  <td class="title">
+                                    <i class="icon icon-ppt"></i>
+                                    <span class="title_subject">백지도</span>
+                                  </td>
+                                  <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="custom-control custom-checkbox no-label">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                      <label class="custom-control-label" for="customCheck2"></label>
+                                    </div>
+                                  </td>
+                                  <td class="title">
+                                    <i class="icon icon-hangle"></i>
+                                    <span class="title_subject">백지도</span>
+                                  </td>
+                                  <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </div><!-- item -->
+                            <div class="item">
+                              <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                                <colgroup>
+                                  <col width="13%">
+                                  <col width="auto">
+                                  <col width="19%">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                  <th>
+                                    <div class="custom-control custom-checkbox no-label">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                      <label class="custom-control-label" for="customCheck1"></label>
+                                    </div>
+                                  </th>
+                                  <th>자료명</th>
+                                  <th>미리보기</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="custom-control custom-checkbox no-label">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                      <label class="custom-control-label" for="customCheck2"></label>
+                                    </div>
+                                  </td>
+                                  <td class="title">
+                                    <i class="icon icon-hangle"></i>
+                                    <span class="title_subject">백지도</span>
+                                  </td>
+                                  <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </div><!-- item -->
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-default"><span class="name">모아받기(ZIP)</span></a>
+                            <a href="#" class="btn btn-default"><span class="name">개별 파일 받기</span></a>
+                            <a href="#" class="btn btn-default"><i class="icon icon-tpin-gray"></i><span class="name">T핀</span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="body_contents_tabs tab-menu">
+
+                    <div class="tab_menu_box clearfix">
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="tab-menu01" data-bs-toggle="tab" href="#tab_contents01" role="tab" aria-controls="home" aria-selected="true">전체보기</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="tab-menu02" data-bs-toggle="tab" href="#tab_contents02" role="tab" aria-controls="profile" aria-selected="false">지도안</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="tab-menu03" data-bs-toggle="tab" href="#tab_contents03" role="tab" aria-controls="contact" aria-selected="false">활동지</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="tab-menu04" data-bs-toggle="tab" href="#tab_contents04" role="tab" aria-controls="contact" aria-selected="false">확인 문제</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="tab-menu05" data-bs-toggle="tab" href="#tab_contents05" role="tab" aria-controls="contact" aria-selected="false">기타</a>
+                        </li>
+                      </ul>
+                   </div>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="tab_contents01" role="tabpanel" aria-labelledby="tab-menu01">
+                        <div id="tab_contents_accordion">
+                          <div class="sub_item">
+                            <div id="tab_contents_accordion01-head" class="body_head" data-toggle="collapse" data-target="#tab_contents_accordion01-body" aria-controls="tab_contents_accordion01-body" aria-expanded="true">
+                              <div class="txt">
+                                <span class="title bullet-circle">단원도입</span>
+                              </div>
+                              <a class="arrow-circle up"><span></span><span></span></a>
+                            </div>
+                            <div id="tab_contents_accordion01-body" class="body_contents collapse show" aria-labelledby="tab_contents_accordion01-head" data-parent="#tab_contents_accordion">
+                              <div class="body_contents_tables">
+                                <div class="body_title">[1차시] 단원 학습 내용 예상하기(사6-9p)</div>
+                                <div class="column-grid column-1"> <!-- 아코디언 안에 2개짜리 칼럼을 제작 -->
+                                  <div class="item">
+                                    <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                                      <colgroup>
+                                        <col width="5.5%">
+                                        <col width="auto">
+                                        <col width="9%">
+                                        <col width="9%">
+                                        <col width="9%">
+                                      </colgroup>
+                                      <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1"></label>
+                                          </div>
+                                        </th>
+                                        <th>자료명</th>
+                                        <th>미리보기</th>
+                                        <th>T핀</th>
+                                        <th>다운로드</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-download"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </div><!-- item -->
+                                </div>
+                                <div class="buttons">
+                                  <a href="#" class="btn btn-default"><span class="name">모아받기(ZIP)</span></a>
+                                  <a href="#" class="btn btn-default"><span class="name">개별 파일 받기</span></a>
+                                  <a href="#" class="btn btn-default"><i class="icon icon-tpin-gray"></i><span class="name">T핀</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="sub_item">
+                            <div id="tab_contents_accordion02-head" class="body_head" data-toggle="collapse" data-target="#tab_contents_accordion02-body" aria-controls="tab_contents_accordion02-body" aria-expanded="true">
+                              <div class="txt">
+                                <span class="num">1</span><span class="title">나라의 등장과 발전</span>
+                              </div>
+                              <a class="arrow-circle up"><span></span><span></span></a>
+                            </div>
+                            <div id="tab_contents_accordion02-body" class="body_contents collapse show" aria-labelledby="tab_contents_accordion02-head" data-parent="#tab_contents_accordion">
+                              <div class="body_contents_tables">
+                                <div class="body_title">[2차시] 고조선의 건국과 발전 과정 알아보기 (교과서 10~13쪽)</div>
+                                <div class="column-grid column-1"> <!-- 아코디언 안에 2개짜리 칼럼을 제작 -->
+                                  <div class="item">
+                                    <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                                      <colgroup>
+                                        <col width="5.5%">
+                                        <col width="auto">
+                                        <col width="9%">
+                                        <col width="9%">
+                                        <col width="9%">
+                                      </colgroup>
+                                      <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1"></label>
+                                          </div>
+                                        </th>
+                                        <th>자료명</th>
+                                        <th>미리보기</th>
+                                        <th>T핀</th>
+                                        <th>다운로드</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-download"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </div><!-- item -->
+                                </div>
+                                <div class="buttons">
+                                  <a href="#" class="btn btn-default"><span class="name">모아받기(ZIP)</span></a>
+                                  <a href="#" class="btn btn-default"><span class="name">개별 파일 받기</span></a>
+                                  <a href="#" class="btn btn-default"><i class="icon icon-tpin-gray"></i><span class="name">T핀</span></a>
+                                </div>
+                              </div>
+                              <div class="body_contents_tables">
+                                <div class="body_title">[2차시] 고조선의 건국과 발전 과정 알아보기 (교과서 10~13쪽)</div>
+                                <div class="column-grid column-1"> <!-- 아코디언 안에 2개짜리 칼럼을 제작 -->
+                                  <div class="item">
+                                    <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                                      <colgroup>
+                                        <col width="5.5%">
+                                        <col width="auto">
+                                        <col width="9%">
+                                        <col width="9%">
+                                        <col width="9%">
+                                      </colgroup>
+                                      <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1"></label>
+                                          </div>
+                                        </th>
+                                        <th>자료명</th>
+                                        <th>미리보기</th>
+                                        <th>T핀</th>
+                                        <th>다운로드</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-download"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-tpin-gray"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </div><!-- item -->
+                                </div>
+                                <div class="buttons">
+                                  <a href="#" class="btn btn-default"><span class="name">모아받기(ZIP)</span></a>
+                                  <a href="#" class="btn btn-default"><span class="name">개별 파일 받기</span></a>
+                                  <a href="#" class="btn btn-default"><i class="icon icon-tpin-gray"></i><span class="name">T핀</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="sub_item">
+                            <div id="tab_contents_accordion03-head" class="body_head" data-toggle="collapse" data-target="#tab_contents_accordion03-body" aria-controls="tab_contents_accordion03-body" aria-expanded="true">
+                              <div class="txt">
+                                <span class="title bullet-circle">단원 공통자료</span>
+                              </div>
+                              <a class="arrow-circle down"><span></span><span></span></a>
+                            </div>
+                            <div id="tab_contents_accordion03-body" class="body_contents collapse" aria-labelledby="tab_contents_accordion03-head" data-parent="#tab_contents_accordion">
+                              <div class="body_contents_tables">
+                                <div class="column-grid column-2"> <!-- 아코디언 안에 2개짜리 칼럼을 제작 -->
+                                  <div class="item">
+                                    <table class="table table-subject text-align-center"> <!-- subject용 table 제작 -->
+                                      <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                      </colgroup>
+                                      <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1"></label>
+                                          </div>
+                                        </th>
+                                        <th>자료명</th>
+                                        <th>미리보기</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <i class="icon icon-hangle"></i>
+                                          <span class="title_subject">백지도</span>
+                                        </td>
+                                        <td><a class="search_btn" href="#"><i class="icon icon-search"></i></a></td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </div><!-- item -->
+                                  <div class="item">
+                                    <table class="table text-align-center">
+                                      <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                      </colgroup>
+                                      <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3"></label>
+                                          </div>
+                                        </th>
+                                        <th>자료명</th>
+                                        <th>미리보기</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="custom-control custom-checkbox no-label">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label" for="customCheck4"></label>
+                                          </div>
+                                        </td>
+                                        <td class="title">
+                                          <img src="../../img/common/ico_hangle.png" alt="한글파일 아이콘">
+                                          <span class="title_main">백지도</span>
+                                        </td>
+                                        <td><i class="icon icon-search"></i></td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="buttons">
+                                  <a href="#" class="btn btn-default"><span class="name">모아받기(ZIP)</span></a>
+                                  <a href="#" class="btn btn-default"><span class="name">개별 파일 받기</span></a>
+                                  <a href="#" class="btn btn-default"><i class="icon icon-tpin-gray"></i><span class="name">T핀</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!--탭 컨텐츠 -->
+                      <div class="tab-pane fade" id="tab_contents02" role="tabpanel" aria-labelledby="tab-menu02">...2</div>
+                      <div class="tab-pane fade" id="tab_contents03" role="tabpanel" aria-labelledby="tab-menu03">...3</div>
+                      <div class="tab-pane fade" id="tab_contents04" role="tabpanel" aria-labelledby="tab-menu04">...4</div>
+                      <div class="tab-pane fade" id="tab_contents05" role="tabpanel" aria-labelledby="tab-menu05">...5</div>
+                    </div>
+                  </div>
+                  <script>
+                      /*
+                      |----------------------------------|
+                      |          부트스트랩 탭 호출
+                      |----------------------------------|
+                      */
+                      var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+                      triggerTabList.forEach(function (triggerEl) {
+                        var tabTrigger = new bootstrap.Tab(triggerEl)
+
+                        triggerEl.addEventListener('click', function (event) {
+                          event.preventDefault()
+                          tabTrigger.show()
+                        })
+                      })
+                  </script>
+                </div>
+              </div>
+            </div><!-- item -->
+          </div><!-- list accordion -->
+      </div>
+    </div>
+    <!--//contents-->
+    @@include('../include/totop.html')
+  </div>
+  <!-- //container-->
+  @@include('../include/footer.html')
+</div>
+</body>
+</html>
+
