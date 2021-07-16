@@ -27,18 +27,6 @@ data.guide = {
   list: [
     {
       stateClass: 'complete',
-      url:'GNB-search',
-      category: 'guide',
-      page: 'GNB - 최근검색어 없음'
-    },
-    {
-      stateClass: 'complete',
-      url: 'nodata',
-      category: 'guide',
-      page: '결과없음'
-    },
-    {
-      stateClass: 'complete',
       url: 'button',
       category: 'guide',
       page: '버튼'
@@ -96,12 +84,6 @@ data.guide = {
       url: 'loading',
       category: 'guide',
       page: '로딩'
-    },
-    {
-      stateClass: 'complete',
-      url: 'badge',
-      category: 'guide',
-      page: '뱃지'
     },
     {
       stateClass: 'complete',
@@ -1277,3 +1259,37 @@ data.problembank = {
   ]
 }
 */
+
+data.membership = {
+  title: '멤버쉽',
+  list: [
+    {
+      stateClass: 'complete',
+      url: 'E-mem-privacy-mobile',
+      category: 'membership',
+      page: 'M- 개인정보처리방침'
+    },
+    {
+      stateClass: 'complete',
+      url: 'E-mem-service-mobile',
+      category: 'membership',
+      page: 'M- 이용약관'
+    },
+    {
+      stateClass: 'complete',
+      url: 'E-mem-privacy',
+      category: 'membership',
+      page: '개인정보처리방침'
+    },
+    {
+      stateClass: 'complete',
+      url: 'E-mem-service',
+      category: 'membership',
+      page: '이용약관'
+    },
+
+
+
+
+  ]
+}

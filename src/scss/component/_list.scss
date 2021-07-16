@@ -293,3 +293,23 @@
     }
   }
 }
+
+
+
+
+/*------------------------------------*/
+
+
+/*버튼 정렬*/
+.position-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.position-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.position-between {
+  display: flex;
+  justify-content: space-between;
+}

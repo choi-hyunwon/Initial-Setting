@@ -9,9 +9,9 @@
       @@include('../guide/menu.html')
 
       <div class="page-content mb30">
-        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#folderAdd"><span class="name">Small Popup</span></a>
-        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#folderChoice"><span class="name">Medium popup</span></a>
-        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#copyrightProtect"><span class="name">Large popup</span></a>
+        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup01"><span class="name">Small Popup</span></a>
+        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup02"><span class="name">Medium popup</span></a>
+        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup03"><span class="name">Large popup</span></a>
       </div>
 
       <!--팝업 구조 설명-->
@@ -36,337 +36,63 @@
       </div>
 
 
-      <div class="modal fade" tabindex="-1" role="dialog" id="folderAdd" aria-modal="true">
+      <div class="modal fade" tabindex="-1" role="dialog" id="Popup01" aria-modal="true">
         <div class="modal-dialog-centered modal-dialog modal-sm" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <div class="modal-title">신규 폴더 생성</div>
+              <div class="modal-title">Small popup</div>
               <a class="close" data-dismiss="modal" aria-label="Close">
                 <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
               </a>
             </div>
-            <div class="modal-body folder_add">
-              <div class="section_text_wrap">
-                <div class="text">신규로 생성할 폴더명을 입력해주세요.<br/>(폴더명은 10자 이내로 입력해 주세요)</div>
-              </div>
-              <div class="section_input_wrap">
-                <input type="text" class="folder_name" title="제목입력" placeholder="제목을 입력하세요" maxlength="10">
-                <span class="text_num">0/10</span>
-              </div>
+            <div class="modal-body">
+             작은크기의 팝업입니다.
             </div>
-
-
             <div class="modal-footer">
-              <a href="#" class="btn btn-primary btn-lg"><span class="name">확인</span></a>
+              <a href="#" class="btn btn-bg-primary btn-lg"><span class="name">확인</span></a>
               <a href="#" class="btn btn-default btn-lg" data-dismiss="modal"><span class="name">취소</span></a>
             </div>
-
           </div>
         </div>
       </div>
-      <div class="modal fade" tabindex="-1" role="dialog" id="folderChoice" aria-modal="true">
+      <div class="modal fade" tabindex="-1" role="dialog" id="Popup02" aria-modal="true">
         <div class="modal-dialog-centered modal-dialog modal-md" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <div class="modal-title">T핀 폴더 선택</div>
+              <div class="modal-title">Medium popup</div>
               <a class="close" data-dismiss="modal" aria-label="Close">
                 <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
               </a>
             </div>
-            <div class="modal-body folder_choice">
-              <div class="section_info_text">
-                <span>직접 구성한 T핀 자료들은 MY T셀파에서 확인하실 수 있습니다.</span>
-                <a href="#" class="btn btn-sm btn-secondary"><span class="name">MY T셀파 바로가기</span><i class="icon icon-arrow-right-white"></i></a>
-              </div>
-              <div class="section_folder_wrap">
-                <div class="pin_list border-radius">
-                  <ul class="clearfix">
-                    <li class="active"><a href="#"><i class="icon icon-tpin-black"></i><span><em>쉬는 시간</em></span></a></li>
-                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>오후 수업 0713</em></span></a></li>
-                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>오전 수업</em></span></a></li>
-                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>마이폴더</em></span></a></li>
-                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>학부모 참관수업</em></span></a></li>
-                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>11월 30일 국어수업</em></span></a></li>
-                    <li><a href="#"><i class="icon icon-tpin-gray"></i><span><em>4반 특강</em></span></a></li>
-                    <li class="empty"><a href="#"><i class="icon icon-plus-gray"></i></a></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="modal-body">
+                중간크기의 팝업입니다.
             </div>
-
             <div class="modal-footer">
-              <a href="#" class="btn btn-primary btn-lg"><span  class="name">저장</span></a>
-              <a href="#" class="btn btn-default btn-lg"  data-toggle="modal" data-target="#folderAdd"><span class="name">신규 폴더 생성</span></a>
+              <a href="#" class="btn btn-bg-primary btn-lg"><span  class="name">저장</span></a>
+              <a href="#" class="btn btn-default btn-lg" data-dismiss="modal"><span class="name">취소</span></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" tabindex="-1" role="dialog" id="unitSelect" aria-modal="true">
+      <div class="modal fade" tabindex="-1" role="dialog" id="Popup03" aria-modal="true">
         <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <div class="modal-title">관련 차시 찾기</div>
+              <div class="modal-title">Large popup</div>
               <a class="close" data-dismiss="modal" aria-label="Close">
                 <img src="../../img/common/btn-close-big-white.png" alt="닫기버튼" aria-hidden="true"/>
               </a>
             </div>
-            <div class="modal-body unit_select">
-              <div class="section_unit_text">
-                <div><span class="bullet">3학년 2학기> 영어(함순애)</span> >단원 선택> 차시 선택</div>
-                <div class="text">추가하고 싶은 대단원과 차시를 선택해 주세요</div>
-              </div>
-
-              <div class="section_list_accordion list-accordion popup-accordion" id="accordion_unit_select">
-                <div class="item">
-                  <div id="accordion_head_01">
-                    <div class="item_head" id="item_head_01">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label subject_name font-weight-medium" for="customCheck1">Lesson 1. Hello!</label>
-                      </div>
-                      <div class="buttons" data-toggle="collapse" data-target="#accordion-01" aria-expanded="true" aria-controls="accordion-01">
-                        <span class="arrow down"><span></span><span></span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item_body collapse" id="accordion-01" aria-labelledby="item_head_01"
-                       data-parent="#accordion_unit_select">
-                    <div class="body_contents">
-                      <ul class="list check-bg">
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check_1">
-                            <label class="custom-control-label subject_name" for="check_1">Lesson 1. Hello!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check_2">
-                            <label class="custom-control-label subject_name" for="check_2">Lesson 1. Hello!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check_3">
-                            <label class="custom-control-label subject_name" for="check_3">Lesson 1. Hello!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check_4">
-                            <label class="custom-control-label subject_name" for="check_4">Lesson 1. Hello!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check_5">
-                            <label class="custom-control-label subject_name" for="check_5">Lesson 1. Hello!</label>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div id="accordion-head-02">
-                    <div class="item_head" id="item_head_02" >
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label subject_name" for="customCheck2">Lesson 2. Oh! It's a Ball!</label>
-                      </div>
-                      <div class="buttons" data-toggle="collapse" data-target="#accordion-02" aria-expanded="true" aria-controls="accordion-02">
-                        <span class="arrow down"><span></span><span></span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item_body collapse" id="accordion-02" aria-labelledby="item_head_02"
-                       data-parent="#accordion_unit_select">
-                    <div class="body_contents">
-                      <ul class="list check-bg">
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check-1">
-                            <label class="custom-control-label subject_name" for="check-1">Lesson 2. Oh! It's a Ball!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check-2">
-                            <label class="custom-control-label subject_name" for="check-2">Lesson 2. Oh! It's a Ball!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check-3">
-                            <label class="custom-control-label subject_name" for="check-3">Lesson 2. Oh! It's a Ball!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check-4">
-                            <label class="custom-control-label subject_name" for="check-4">Lesson 2. Oh! It's a Ball!</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check-5">
-                            <label class="custom-control-label subject_name" for="check-5">Lesson 2. Oh! It's a Ball!</label>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div id="accordion-head-03">
-                    <div class="item_head" id="item_head_03" >
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label subject_name" for="customCheck3">Special 1</label>
-                      </div>
-                      <div class="buttons" data-toggle="collapse" data-target="#accordion-03" aria-expanded="true" aria-controls="accordion-03">
-                        <span class="arrow down"><span></span><span></span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item_body collapse" id="accordion-03" aria-labelledby="item_head_03" data-parent="#accordion_unit_select">
-                    <div class="body_contents">
-                      <ul class="list check-bg">
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check01">
-                            <label class="custom-control-label subject_name" for="check01">Special 1</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check02">
-                            <label class="custom-control-label subject_name" for="check02">Special 1</label>
-                          </div>
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div id="accordion-head-04" class="accordion-head">
-                    <div class="item_head" id="item_head_04" >
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4" checked="checked">
-                        <label class="custom-control-label subject_name" for="customCheck4">Lesson 3. Sit Down,please</label>
-                      </div>
-                      <div class="buttons" data-toggle="collapse" data-target="#accordion-04"
-                           aria-expanded="true" aria-controls="accordion-04">
-                        <span class="arrow up"><span></span><span></span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item_body collapse show" id="accordion-04" aria-labelledby="item_head_02"
-                       data-parent="#accordion_unit_select">
-                    <div class="body_contents">
-                      <ul class="list check-bg">
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check1">
-                            <label class="custom-control-label subject_name" for="check1">[2차시] Learning Point ~ Homework
-                              (32~33쪽)</label>
-                          </div>
-                        </li>
-                        <li class="checked">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input checked" id="check2" checked="checked">
-                            <label class="custom-control-label subject_name" for="check2">[3차시] Learning Point ~ Homework
-                              (34~35쪽)</label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check3">
-                            <label class="custom-control-label subject_name" for="check3">[4차시] Learning Point ~ Homework
-                              (35~38쪽)</label>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <script>
-                $(document).ready(function () {
-                  /*item body 아코디언 화살표 제어 */
-                  $('.item_body.collapse').on('show.bs.collapse', function (event) {
-                    $(this).prev("div").children(".item_head").children(".buttons").children(".arrow").removeClass("down").addClass("up");
-                    event.stopPropagation();
-                  }).on('hide.bs.collapse', function (event) {
-                    $(this).prev("div").children(".item_head").children(".buttons").children(".arrow").removeClass("up").addClass("down");
-                    event.stopPropagation();
-                  });
-
-                  $('.item_head label').on('click', function(){
-                    var isCheck = $(this).prev().is(":checked");
-                    if(isCheck){
-                      //해지
-                      $(this).parents('.item').find('li input').prop('checked', false)
-                      $(this).parents('.item').find('li').removeClass('checked');
-
-                    } else {
-                      //등록
-                      $(this).parents('.item').find('li input').prop('checked', true);
-                      $(this).parents('.item').find('li').addClass('checked');
-
-                    }
-                  })
-
-                  $('.item_body .subject_name').on('click',function (){
-                    // console.log('a')
-                    const isCheck = $(this).prev();
-                    if(isCheck.is(":checked")){
-                      //해지
-                      $(this).parents('.item').find('.item_head input[type="checkbox"]').prop('checked', false)
-                    }
-
-
-                  });
-
-
-
-
-
-                });
-              </script>
-
-              <div class="border-radius section_list_detail">
-                <p class="text">
-                  <span>3학년 2학기> 영어(함순애)> </span>Lesson 3. Sit Down, please > [3차시] Learning Point ~ Homework(34~35쪽)
-                </p>
-              </div>
+            <div class="modal-body">
+              큰 크기의 팝업입니다.
             </div>
-
-            <script>
-              $(document).ready(function(){               // 체크박스 체크 -> 배경색 변경
-                $('.check-bg li .custom-control-input').click(function(){
-                  var chk = $(this).is(":checked");
-                  if(chk) $(this).parent().parent().addClass('checked');
-                  else  $(this).parent().parent().removeClass('checked');
-                });
-              });
-            </script>
-
-
             <div class="modal-footer">
-              <a href="#" class="btn btn-primary btn-lg"><span class="name">확인</span></a>
+              <a href="#" class="btn btn-bg-primary btn-lg"><span class="name">확인</span></a>
               <a href="#" class="btn btn-default btn-lg" data-dismiss="modal"><span class="name">취소</span></a>
             </div>
-
-
           </div>
         </div>
       </div>
-
 
 
       <script>

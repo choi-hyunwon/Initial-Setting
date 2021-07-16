@@ -44,10 +44,10 @@ $font-family-sans-serif: 'NotoSansKR', 'Nanum Gothic', -apple-system, BlinkMacSy
 $font-family-monospace:  'Nanum Gothic', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 
-$font-weight-light:           350 !default; //regular
-$font-weight-normal:          450 !default; //mediaum
-$font-weight-bold:            550 !default;
-$font-weight-base:            $font-weight-light !default;
+$regular:           350 !default; //regular
+$medium:          450 !default; //medium
+$bold:            550 !default;
+$font-weight-base:            $regular !default;
 
 
 

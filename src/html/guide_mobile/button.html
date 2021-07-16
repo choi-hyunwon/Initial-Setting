@@ -4,6 +4,177 @@
 <body>
 @@include('../include/mobile/header.html')
 
+
+<div class="contents"
+     style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
+  @@include('../guide_mobile/menu.html')
+
+
+  <div class="box">
+    <div class="sub-box">
+      <p>기본 버튼 (btn)</p>
+      <a href="#" class="btn">버튼</a>
+    </div>
+
+    <div class="sub-box">
+      <p>비활성화 (&.disabled)</p>
+      <a href="#" class="btn disabled">disabled</a>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <h3>버튼 형태에 따른 분류</h3>
+    <div class="sub-box">
+      <p>outline</p>
+      <a href="#" class="btn btn-outline-primary">btn-outline-primary</a>
+      <a href="#" class="btn btn-outline-secondary">btn-outline-secondary</a>
+    </div>
+    <div class="sub-box">
+      <p>bg</p>
+      <a href="#" class="btn btn-bg-primary">btn-bg-primary</a>
+      <a href="#" class="btn btn-bg-secondary">btn-bg-secondary</a>
+    </div>
+    <div class="sub-box">
+      <p>btn-circle</p>
+      <a href="#" class="btn btn-outline-primary btn-circle">btn-circle</a>
+      <a href="#" class="btn btn-bg-secondary">btn-bg-secondary</a>
+    </div>
+    <div class="sub-box">
+      <p>비활성화 (&.disabled)</p>
+      <a href="#" class="btn btn-outline-primary disabled">disabled</a>
+      <a href="#" class="btn btn-outline-secondary disabled">disabled</a>
+      <a href="#" class="btn btn-bg-primary disabled">disabled</a>
+      <a href="#" class="btn btn-bg-secondary disabled">disabled</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>버튼 크기에 따른 분류 </h3>
+    <div class="sub-box">
+      <p><span class="mr10">btn-sm: 28px</span>/
+        <span class="ml10 mr10">기본 높이 36px</span>/
+        <span class="ml10 mr10">btn-lg : 40px</span>/
+        <span class="ml10 mr10">btn-xl : 48px</span>
+      </p>
+    </div>
+    <div class="sub-box">
+      <a href="#" class="btn btn-sm"><span class="name">btn-sm</span></a>
+      <a href="#" class="btn">기본</a>
+      <a href="#" class="btn btn-lg">btn-lg</a>
+      <a href="#" class="btn btn-xl">btn-xl</a>
+    </div>
+    <div class="sub-box">
+      <a href="#" class="btn btn-sm btn-outline-primary"><span class="name">btn-sm</span></a>
+      <a href="#" class="btn btn-outline-primary">기본</a>
+      <a href="#" class="btn btn-lg btn-outline-primary">btn-lg</a>
+      <a href="#" class="btn btn-xl btn-outline-primary">btn-xl</a>
+    </div>
+    <div class="sub-box">
+      <a href="#" class="btn btn-sm btn-outline-secondary"><span class="name">btn-sm</span></a>
+      <a href="#" class="btn btn-outline-secondary">기본</a>
+      <a href="#" class="btn btn-lg btn-outline-secondary">btn-lg</a>
+      <a href="#" class="btn btn-xl btn-outline-secondary">btn-xl</a>
+    </div>
+    <div class="sub-box">
+      <a href="#" class="btn btn-sm btn-bg-primary"><span class="name">btn-sm</span></a>
+      <a href="#" class="btn btn-bg-primary">기본</a>
+      <a href="#" class="btn btn-lg btn-bg-primary">btn-lg</a>
+      <a href="#" class="btn btn-xl btn-bg-primary">btn-xl</a>
+    </div>
+    <div class="sub-box">
+      <a href="#" class="btn btn-sm btn-bg-secondary"><span class="name">btn-sm</span></a>
+      <a href="#" class="btn btn-bg-secondary">기본</a>
+      <a href="#" class="btn btn-lg btn-bg-secondary">btn-lg</a>
+      <a href="#" class="btn btn-xl btn-bg-secondary">btn-xl</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>아이콘 예시</h3>
+    <div class="sub-box">
+      <a href="#" class="btn btn-sm btn-bg-primary"><i class="icon icon-arrow-left-white"></i>btn-sm</a>
+      <a href="#" class="btn btn-bg-primary"><i class="icon icon-arrow-left-white"></i>기본</a>
+      <a href="#" class="btn btn-lg btn-bg-primary"><i class="icon icon-arrow-left-white"></i>btn-lg</a>
+      <a href="#" class="btn btn-xl btn-bg-primary"><i class="icon icon-arrow-left-white"></i>btn-xl</a>
+    </div>
+    <div class="sub-box">
+      <a href="#" class="btn btn-sm btn-bg-secondary">btn-sm<i class="icon icon-arrow-right-white"></i></a>
+      <a href="#" class="btn btn-bg-secondary">기본<i class="icon icon-arrow-right-white"></i></a>
+      <a href="#" class="btn btn-lg btn-bg-secondary">btn-lg<i class="icon icon-arrow-right-white"></i></a>
+      <a href="#" class="btn btn-xl btn-bg-secondary">btn-xl<i class="icon icon-arrow-right-white"></i></a>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <h3>묶인 버튼의 경우 .btn-group</h3>
+    <div class="btn-group">
+      <a href="#" class="btn btn-gray">
+        <i class="icon icon-hangle"></i>
+        <span class="name">수업지도안</span>
+      </a>
+      <a href="#" class="btn btn-gray">
+        <i class="icon icon-tpin-gray"></i>
+      </a>
+      <a href="#" class="btn btn-gray">
+        <i class="icon icon-download"></i>
+      </a>
+    </div>
+    <div class="btn-group">
+      <a href="#" class="btn btn-default">
+        <span class="name">사회과 부도</span>
+        <i class="icon icon-link"></i>
+      </a>
+      <a href="#" class="btn btn-default">
+        <span class="name">사회과 부도</span>
+        <i class="icon icon-link"></i>
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="box">
+    <h3>정렬</h3>
+    <div class="sub-box">
+      <p>좌측정렬(default) :position-left </p>
+      <div class="position-left" style="border: 1px solid gray;border-radius: 5px">
+        <a href="#" class="btn btn-outline-secondary"><span class="name">전체 선택 · 해제</span></a>
+        <a href="#" class="btn btn-outline-secondary"><i class="icon icon-tpin-gray"></i><span
+                class="name">T핀</span></a>
+      </div>
+    </div>
+
+    <div class="sub-box">
+      <p>우측정렬 : position-right</p>
+      <div class="position-right" style="border: 1px solid gray;border-radius: 5px;">
+        <a href="#" class="btn btn-bg-primary btn-right"><span class="name">등록</span></a>
+      </div>
+    </div>
+
+    <div class="sub-box">
+      <p>양쪽 정렬 : position-between</p>
+      <div class="position-between" style="border: 1px solid gray;border-radius: 5px;">
+        <div>
+          <a href="#" class="btn btn-outline-secondary btn-left"><span class="name">수정</span></a>
+          <a href="#" class="btn btn-outline-secondary btn-left "><span class="name">삭제</span></a>
+        </div>
+        <div>
+          <a href="#" class="btn btn-outline-secondary"><i
+                  class="icon icon-arrow-top-darkgray"></i><span
+                  class="name">이전글</span></a>
+          <a href="#" class="btn btn-outline-secondary"><i
+                  class="icon icon-arrow-bottom-darkgray"></i><span
+                  class="name">다음글</span></a>
+          <a href="#" class="btn btn-outline-secondary"><span class="name">목록</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
 <div class="contents" style="margin:10px auto; padding:20px;">
   @@include('../guide_mobile/menu.html')
 
@@ -14,12 +185,6 @@
     <a href="#" class="btn"><span class="name">.btn</span></a>
   </div>
 
-  <!--비활성화-->
-  <div class="mb20" style="background: #ffe3e3;padding: 10px;border-radius: 5px;">
-    <h3>비활성화 btn</h3>
-    <a href="#" class="btn btn-default disabled"><span class="name">&.disabled</span></a>
-    <a href="#" class="btn btn-primary disabled"><span class="name">&.disabled</span></a>
-  </div>
 
   <!--스위치-->
   <div class="mb20" style="background: #ffe3e3;padding: 10px;border-radius: 5px;">
@@ -52,7 +217,7 @@
     <h3>full-box ( width : 100% )</h3>
     <div class="mb10">
       <div class="full-box">
-        <a href="#" class="btn btn-primary"><span class="name">.btn-primary</span></a>
+        <a href="#" class="btn btn-bg-primary"><span class="name">.btn-bg-primary</span></a>
       </div>
     </div>
     <div class="mb10">
@@ -72,13 +237,13 @@
     <h3>half-box ( width : 50% )</h3>
     <div class="mb20">
       <div class="half-box">
-        <a href="#" class="btn btn-primary"><span class="name">.btn-primary</span></a>
+        <a href="#" class="btn btn-bg-primary"><span class="name">.btn-bg-primary</span></a>
         <a href="#" class="btn btn-default"><span class="name">.btn-default</span></a>
       </div>
     </div>
     <div>
       <div class="half-box">
-        <a href="#" class="btn btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+        <a href="#" class="btn btn-bg-primary btn-circle"><span class="name">&.btn-circle</span></a>
         <a href="#" class="btn btn-default btn-circle"><span class="name">&.btn-circle</span></a>
       </div>
     </div>
@@ -98,20 +263,20 @@
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-xl btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-xl btn-bg-primary"><span class="name">.half-box</span></a>
           <a href="#" class="btn btn-xl btn-default "><span class="name">.half-box</span></a>
         </div>
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-xl btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-xl btn-bg-primary btn-circle"><span class="name">&.btn-circle</span></a>
           <a href="#" class="btn btn-xl btn-default btn-circle "><span class="name">&.btn-circle</span></a>
         </div>
       </div>
       <div style="font-size: 0">
-        <a href="#" class="btn btn-xl btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-xl btn-bg-primary"><span class="name">확인</span></a>
         <a href="#" class="btn btn-xl btn-default "><span class="name">취소</span></a>
-        <a href="#" class="btn btn-xl btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-xl btn-bg-primary btn-circle"><span class="name">등록</span></a>
         <a href="#" class="btn btn-xl btn-default btn-circle "><span class="name">삭제</span></a>
 
         <p class="mb10"></p>
@@ -122,7 +287,7 @@
         <a href="#" class="btn btn-xl btn-default">
           <span class="name">버튼</span><i class="icon icon-clip"></i>
         </a>
-        <a href="#" class="btn btn-xl btn-primary">
+        <a href="#" class="btn btn-xl btn-bg-primary">
           <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
         </a>
 
@@ -134,7 +299,7 @@
         <a href="#" class="btn btn-xl btn-default">
           <span class="name">삭제</span><i class="icon icon-trash"></i>
         </a>
-        <a href="#" class="btn btn-xl btn-primary">
+        <a href="#" class="btn btn-xl btn-bg-primary">
           <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
         </a>
 
@@ -151,20 +316,20 @@
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-lg btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-lg btn-bg-primary"><span class="name">.half-box</span></a>
           <a href="#" class="btn btn-lg btn-default "><span class="name">.half-box</span></a>
         </div>
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-lg btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-lg btn-bg-primary btn-circle"><span class="name">&.btn-circle</span></a>
           <a href="#" class="btn btn-lg btn-default btn-circle "><span class="name">&.btn-circle</span></a>
         </div>
       </div>
       <div style="font-size: 0">
-        <a href="#" class="btn btn-lg btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-lg btn-bg-primary"><span class="name">확인</span></a>
         <a href="#" class="btn btn-lg btn-default "><span class="name">취소</span></a>
-        <a href="#" class="btn btn-lg btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-lg btn-bg-primary btn-circle"><span class="name">등록</span></a>
         <a href="#" class="btn btn-lg btn-default btn-circle "><span class="name">삭제</span></a>
 
         <p class="mb10"></p>
@@ -175,7 +340,7 @@
         <a href="#" class="btn btn-lg btn-default">
           <span class="name">버튼</span><i class="icon icon-clip"></i>
         </a>
-        <a href="#" class="btn btn-lg btn-primary">
+        <a href="#" class="btn btn-lg btn-bg-primary">
           <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
         </a>
 
@@ -187,7 +352,7 @@
         <a href="#" class="btn btn-lg btn-default">
           <span class="name">삭제</span><i class="icon icon-trash"></i>
         </a>
-        <a href="#" class="btn btn-lg btn-primary">
+        <a href="#" class="btn btn-lg btn-bg-primary">
           <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
         </a>
 
@@ -204,20 +369,20 @@
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-ml btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-ml btn-bg-primary"><span class="name">.half-box</span></a>
           <a href="#" class="btn btn-ml btn-default "><span class="name">.half-box</span></a>
         </div>
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-ml btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-ml btn-bg-primary btn-circle"><span class="name">&.btn-circle</span></a>
           <a href="#" class="btn btn-ml btn-default btn-circle "><span class="name">&.btn-circle</span></a>
         </div>
       </div>
       <div style="font-size: 0">
-        <a href="#" class="btn btn-ml btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-ml btn-bg-primary"><span class="name">확인</span></a>
         <a href="#" class="btn btn-ml btn-default "><span class="name">취소</span></a>
-        <a href="#" class="btn btn-ml btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-ml btn-bg-primary btn-circle"><span class="name">등록</span></a>
         <a href="#" class="btn btn-ml btn-default btn-circle"><span class="name">삭제</span></a>
 
         <p class="mb10"></p>
@@ -228,7 +393,7 @@
         <a href="#" class="btn btn-ml btn-default">
           <span class="name">버튼</span><i class="icon icon-clip"></i>
         </a>
-        <a href="#" class="btn btn-ml btn-primary">
+        <a href="#" class="btn btn-ml btn-bg-primary">
           <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
         </a>
 
@@ -240,7 +405,7 @@
         <a href="#" class="btn btn-ml btn-default">
           <span class="name">삭제</span><i class="icon icon-trash"></i>
         </a>
-        <a href="#" class="btn btn-ml btn-primary">
+        <a href="#" class="btn btn-ml btn-bg-primary">
           <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
         </a>
 
@@ -257,20 +422,20 @@
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-md btn-primary"><span class="name">.half-box</span></a>
+          <a href="#" class="btn btn-md btn-bg-primary"><span class="name">.half-box</span></a>
           <a href="#" class="btn btn-md btn-default "><span class="name">.half-box</span></a>
         </div>
       </div>
       <div class="mb20">
         <div class="half-box">
-          <a href="#" class="btn btn-md btn-primary btn-circle"><span class="name">&.btn-circle</span></a>
+          <a href="#" class="btn btn-md btn-bg-primary btn-circle"><span class="name">&.btn-circle</span></a>
           <a href="#" class="btn btn-md btn-default btn-circle "><span class="name">&.btn-circle</span></a>
         </div>
       </div>
       <div style="font-size: 0">
-        <a href="#" class="btn btn-md btn-primary"><span class="name">확인</span></a>
+        <a href="#" class="btn btn-md btn-bg-primary"><span class="name">확인</span></a>
         <a href="#" class="btn btn-md btn-default "><span class="name">취소</span></a>
-        <a href="#" class="btn btn-md btn-primary btn-circle"><span class="name">등록</span></a>
+        <a href="#" class="btn btn-md btn-bg-primary btn-circle"><span class="name">등록</span></a>
         <a href="#" class="btn btn-md btn-default btn-circle"><span class="name">삭제</span></a>
 
         <p class="mb10"></p>
@@ -281,7 +446,7 @@
         <a href="#" class="btn btn-md btn-default">
           <span class="name">버튼</span><i class="icon icon-clip"></i>
         </a>
-        <a href="#" class="btn btn-md btn-primary">
+        <a href="#" class="btn btn-md btn-bg-primary">
           <span class="name">T핀</span><i class="icon icon-tpin-white"></i>
         </a>
 
@@ -293,7 +458,7 @@
         <a href="#" class="btn btn-md btn-default">
           <span class="name">삭제</span><i class="icon icon-trash"></i>
         </a>
-        <a href="#" class="btn btn-md btn-primary">
+        <a href="#" class="btn btn-md btn-bg-primary">
           <i class="icon icon-tpin-white"></i><span class="name">T핀</span>
         </a>
 
@@ -302,25 +467,16 @@
   </div>
 
 
-  <!--.name 없는 경우-->
-  <div class="full-box mb10">
-    <a href="#" class="btn btn-xl btn-default">.name 없는 xl</a>
-  </div>
-
-  <div class="full-box mb10">
-    <a href="#" class="btn btn-lg btn-default">.name 없는 lg</a>
-  </div>
-
-  <div class="full-box mb10">
-    <a href="#" class="btn btn-ml btn-default">.name 없는 ml</a>
-  </div>
-
-  <div class="full-box mb10">
-    <a href="#" class="btn btn-default">.name 없는 md(기본)</a>
-  </div>
-
 </div>
 <!--//contents-->
 @@include('../include/mobile/footer.html')
 </body>
 </html>
+
+
+
+<style>
+  .box{margin-bottom: 30px;border:1px solid #999;padding:20px;border-radius: 10px;}
+  .box .sub-box{margin-bottom: 20px;}
+  .box .sub-box p{font-weight: normal;margin-bottom: 5px}
+</style>
