@@ -27,11 +27,11 @@ function htmlInclude() {
 }
 
 function htmlPage() {
-  if (process.env.NODE_ENV == 'product') {
+  if (process.env.NODE_ENV === 'product') {
     gulp.src('src/html/include/head.html')
       .pipe(replace('bootstrap.css', 'bootstrap.min.css'))
       .pipe(gulp.dest('src/html/include/'));
-  } else if (process.env.NODE_ENV == 'develope') {
+  } else if (process.env.NODE_ENV === 'develope') {
     gulp.src('src/html/include/head.html')
       .pipe(replace('bootstrap.min.css', 'bootstrap.css'))
       .pipe(gulp.dest('src/html/include/'));

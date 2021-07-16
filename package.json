@@ -1,6 +1,6 @@
 {
-  "name": "t-spa-common-web",
-  "description": "t_셀파_공통_웹",
+  "name": "initial_setting",
+  "description": "프로젝트_기본셋팅",
   "version": "0.1.0",
   "version_short": "0.1",
   "keywords": [
@@ -12,7 +12,7 @@
     "framework",
     "web"
   ],
-  "homepage": "https://github.com/choi-hyunwon/T-spa-common-web.git",
+  "homepage": "https://github.com/choi-hyunwon/Initial-Setting.git",
   "author": "domfam inc.",
   "bugs": {
     "url": ""
@@ -50,13 +50,13 @@
   "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/choi-hyunwon/T-spa-common-web.git"
+    "url": "git+https://github.com/choi-hyunwon/Initial-Setting.git"
   },
   "license": "MIT",
   "dependencies": {
     "@fullcalendar/core": "^5.5.0",
     "@fullcalendar/daygrid": "^5.5.0",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.0.2",
     "browser-sync": "^2.26.13",
     "install": "^0.13.0",
     "malihu-custom-scrollbar-plugin": "^3.1.5",

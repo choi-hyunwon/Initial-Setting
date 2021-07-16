@@ -43,7 +43,10 @@
 
   /*형태*/
   &.btn-outline-primary {
-    border:1px solid $primary
+    border:1px solid $primary;
+    &:hover{
+      color:#fff;
+    }
   }
   &.btn-outline-secondary {
     border:1px solid $secondary
