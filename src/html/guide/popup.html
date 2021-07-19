@@ -4,14 +4,14 @@
 <body>
 <div class="wrap">
   <!-- container-->
-  <div id="container" class="pt-0">  <!--위에 박스가 있는 경우 위여백 0-->
+  <div id="container">
     <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
       @@include('../guide/menu.html')
 
       <div class="page-content mb30">
-        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup01"><span class="name">Small Popup</span></a>
-        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup02"><span class="name">Medium popup</span></a>
-        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup03"><span class="name">Large popup</span></a>
+        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup01">Small Popup</a>
+        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup02">Medium popup</a>
+        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup03">Large popup</a>
       </div>
 
       <!--팝업 구조 설명-->
@@ -21,7 +21,7 @@
           <p class="mb20 "> class="modal fade"</p>
           <p class="mb20 "> modal-size ="modal-sm (w:430px) modal-md(w:530px) modal-ml(w:565px) modal-lg(w:787px) </p>
           <div class="border-radius" style="border:2px solid #ff9797;padding: 20px;">
-            <p class="mb20"> class="modal-dialog-centered modal-dialog"</p>
+            <p class="mb20"> class="modal-dialog-centered modal-dialog modal-dialog-scrollable(모달 본체를 스크롤할 수 있는 스크롤 가능한 모달)"</p>
             <div class="border-radius" style="border:2px solid #e34d4e;padding: 20px;">
               <p class="mb20"> class="modal-content" </p>
               <div class="border-radius" style="border:2px solid #de292a;padding: 20px;">
@@ -49,14 +49,14 @@
              작은크기의 팝업입니다.
             </div>
             <div class="modal-footer">
-              <a href="#" class="btn btn-bg-primary btn-lg"><span class="name">확인</span></a>
-              <a href="#" class="btn btn-default btn-lg" data-dismiss="modal"><span class="name">취소</span></a>
+              <a href="#" class="btn btn-bg-primary btn-lg">확인</a>
+              <a href="#" class="btn btn-outline-secondary btn-lg" data-dismiss="modal">취소</a>
             </div>
           </div>
         </div>
       </div>
       <div class="modal fade" tabindex="-1" role="dialog" id="Popup02" aria-modal="true">
-        <div class="modal-dialog-centered modal-dialog modal-md" role="document">
+        <div class="modal-dialog-centered modal-dialog modal-dialog-scrollable modal-md" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <div class="modal-title">Medium popup</div>
@@ -65,11 +65,20 @@
               </a>
             </div>
             <div class="modal-body">
-                중간크기의 팝업입니다.
+              modal-dialog-scrollable 클래스가있는 내부 스크롤 가능한 팝업(외부 스크롤 X)<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>
+              중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.<br>중간크기의 팝업입니다.
             </div>
             <div class="modal-footer">
-              <a href="#" class="btn btn-bg-primary btn-lg"><span  class="name">저장</span></a>
-              <a href="#" class="btn btn-default btn-lg" data-dismiss="modal"><span class="name">취소</span></a>
+              <a href="#" class="btn btn-bg-primary btn-lg" data-toggle="modal" data-target="#Popup01">저장</a>
+              <a href="#" class="btn btn-outline-secondary btn-lg" data-dismiss="modal">취소</a>
             </div>
           </div>
         </div>
@@ -84,11 +93,21 @@
               </a>
             </div>
             <div class="modal-body">
-              큰 크기의 팝업입니다.
+              modal-dialog-scrollable 클래스가없는 내부스크롤 안되는 팝업(외부 스크롤 O)<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>
+              큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.<br>큰 크기의 팝업입니다.
+
             </div>
             <div class="modal-footer">
-              <a href="#" class="btn btn-bg-primary btn-lg"><span class="name">확인</span></a>
-              <a href="#" class="btn btn-default btn-lg" data-dismiss="modal"><span class="name">취소</span></a>
+              <a href="#" class="btn btn-bg-primary btn-lg" data-toggle="modal" data-target="#Popup01">확인</a>
+              <a href="#" class="btn btn-outline-secondary btn-lg" data-dismiss="modal">취소</a>
             </div>
           </div>
         </div>
