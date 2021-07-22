@@ -84,12 +84,6 @@ data.guide = {
       url: 'loading',
       category: 'guide',
       page: '로딩'
-    },
-    {
-      stateClass: 'complete',
-      url: 'video',
-      category: 'guide',
-      page: '비디오'
     }
   ]
 }

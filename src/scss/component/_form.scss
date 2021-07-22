@@ -167,11 +167,14 @@ select::-ms-expand {
 .custom-checkbox {
   display: inline-block;
   padding: 0;
+  position: relative;
 
   .custom-control-input {
     width: 20px;
     height: 20px;
-    top: 50%;
+    position: absolute;
+    left: 0;
+    top:50%;
     transform: translateY(-50%);
   }
 
@@ -198,7 +201,7 @@ select::-ms-expand {
     }
   }
 
-  &.no-label {
+/*  &.no-label {
     width: 20px;
 
     .custom-control-label {
@@ -206,7 +209,7 @@ select::-ms-expand {
       width: 20px;
       height: 20px;
     }
-  }
+  }*/
 
   &.top-line {
     .custom-control-input {
@@ -640,7 +643,7 @@ textarea.form-control {
   }
 
   /*검색바 공통*/
-  .form-group{
+  .form-inline{
     &.search_bar{
       text-align: left;
       margin: 0 auto;
