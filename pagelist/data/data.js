@@ -150,12 +150,6 @@ data.guide_mobile = {
       category: 'guide_mobile',
       page: '아이콘'
     },
-    {
-      stateClass: 'complete',
-      url: 'loading',
-      category: 'guide_mobile',
-      page: '로딩'
-    },
   ]
 }
 

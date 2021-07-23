@@ -1,35 +1,9 @@
 /*
 |----------------------------------|
  v.0.1 최초 공통화 작업
- v.0.2 모바일 sub-select 추가 (border없는 select) - 선미
- v.0.3 모바일 sub-select height 변경 - 성수
- v.0.4 pc - TP2-58 체크박스 아이콘 무늬 제거 - 선미
- v.0.5 모바일 - 체크박스 아이폰 이슈(-webkit-appearance: none;) - 선미
- v.0.6 모바일 - 체크박스 아이폰 이슈(-webkit-appearance: none;) 위치이동 - 선미
- v.0.7 모바일 - 체크박스 체크이미지 수정(아이폰 이슈) - 선미
- v.0.8 모바일 - 첨부파일 삭제버튼(공통)추가 - 선미
- v.0.9 모바일 - .sub-select 이미지 변경 - 성수
- v.0.10 pc - TP2-817 필수입력값 수정시 색상수정 (부트스트랩 - .was-validated) - 선미
- v.0.11 모바일 - input 클릭시 outline제거 (tp2-812) - 태윤
 |----------------------------------|
 */
-
-
-
 @import "../lib/bootstrap-datepicker3";
-
-/**
- * 폼 Component
- */
-
-
-/* IE X button clear */
-input::-ms-clear {
-  display:none!important;
-}
-input {
-  -webkit-border-radius: 0;
-}
 
 input[type="text"],
 input[type="password"],
@@ -43,24 +17,223 @@ input[type="email"] {
   font-size: 14px;
   vertical-align: middle;
   padding: 0 14px;
-  font-weight: $font-weight-light;
+  font-weight: $regular;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="tel"]:focus,
 input[type="number"]:focus,
-input[type="email"]:focus {
-  outline: 0;
-}
-
-.form-control:focus {
-  border-color: $border-color;
-  outline: 0;
+input[type="email"]:focus,
+input[type="file"]:focus{
   box-shadow: none;
+  outline: 0;
+}
+.form-control:focus{
+  box-shadow: none;
+  font-size: 14px;
+  border: 1px solid $border-color;
+  outline: 0;
 }
 
-/*TP2-817 필수입력값 색상수정*/
-.was-validated{
+/*-----------------
+  체크박스 / 라디오
+-----------------*/
+/*레이블 있는경우*/
+.form-check {
+  position: relative;
+  &.form-top-line{
+    .form-check-input{
+      top:4px;/*폰트사이즈 16px기준*/
+      transform: translateY( 0 );
+    }
+  }
+  .form-check-input{
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    position: absolute;
+    top:50%;
+    transform: translateY( -45% );
+  }
+}
+/*레이블 없는경우 겸 공통*/
+.form-check-input{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  &:focus{
+    box-shadow: none;
+  }
+  /*라디오 모양 이미지로 변경할경우 checked에 이미지넣고 before,after제거*/
+  &:checked[type="radio"]{
+    background-image: none;
+    background-color: #fff;
+    &:before {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border: 1px solid #418ac9;
+      background: #fff;
+    }
+    &:after{
+      content: '';
+      display: inline-block;
+      clear: both;
+      left: 3px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      background: #418ac9;
+    }
+  }
+}
+
+/*-----------------
+  셀렉트
+-----------------*/
+.form-select{
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    padding: 0 40px 0 12px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff url(../img/common/bg-ico-select.png) no-repeat 100% 50%;
+    vertical-align: middle;
+    color: #666;
+    &:focus {
+      border-color: $border-color;
+      outline: 0;
+      box-shadow: none;
+    }
+}
+
+/*-----------------
+  검색바
+-----------------*/
+.search-bar {
+  position: relative;
+  text-align: right;
+  font-size: 0;
+
+  input[type=text] {
+    display: inline-block;
+    width: 250px;
+    padding: 0 40px 0 15px;
+    margin-left: 5px;
+  }
+  .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 36px;
+    background: none;
+    border: none;
+  }
+
+}
+
+/*-----------------
+  첨부파일 업로드
+-----------------*/
+.file-upload{
+  text-align: right;
+  label {
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: $regular;
+    color: white;
+    vertical-align: middle;
+    background-color: $primary;
+    line-height: 36px;
+    cursor: pointer;
+  }
+  input[type="file"] {
+    /* 파일 필드 숨기기 */
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0); border: 0;
+  }
+}
+
+/*-----------------
+  textarea
+-----------------*/
+textarea{
+  &.form-control {
+    width: 100%;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    resize: none;
+  }
+}
+
+
+
+
+/*!*검색바 공통*!*/
+ /*.form-inline{
+   &.search_bar{
+     text-align: left;
+     margin: 0 auto;
+     .form-select{
+       width: 118px;
+       margin-right: 8px;
+       margin-bottom: 0;
+     }
+     input[type="text"]{
+       width: calc(100% - 126px);
+       margin-bottom: 0;
+       margin-left: 0;
+       position: relative;
+       &:disabled{
+         +.btn{
+           .icon-search{
+             background: url(../img/m-common/ico-input-search-disabled.png) no-repeat 95% center / 20px auto;
+             width: 20px;
+             height: 20px;
+             margin-right: 0;
+           }
+         }
+       }
+     }
+     }
+     }*/
+
+/* IE X button clear */
+/*input::-ms-clear {
+  display:none!important;
+}
+input {
+  -webkit-border-radius: 0;
+}
+
+IE
+select::-ms-expand {
+  display: none;
+}
+
+*/
+/*
+
+
+
+
+!*TP2-817 필수입력값 색상수정*!
+!*.was-validated{
   .form-control{
     &:valid, &.is-valid{
       background-image: none !important;
@@ -79,7 +252,7 @@ input[type="email"]:focus {
   .custom-control-input:valid ~ .custom-control-label::before, .custom-control-input.is-valid ~ .custom-control-label::before{
     color:#000;
   }
-}
+}*!
 
 // select
 select {
@@ -90,78 +263,34 @@ select {
   padding: 0 24px 0 0;
   border: none;
   background: #fff url(../img/common/ico-arrow-bottom-darkgray.png) no-repeat 90% center / 7px auto;
-
   &:focus {
     outline: 0;
   }
-}
-select.form-control {
-  display: inline-block;
-  width: 160px;
-  height: 36px;
-  padding: 0 40px 0 12px;
-  border: 1px solid $border-color;
-  border-radius: 5px;
-  font-size: 14px;
-  background: #fff url(../img/common/bg-ico-select.png) no-repeat 100% 50%;
-  vertical-align: middle;
-  color: #666;
-}
-select::-ms-expand {
-  display: none;
-}
-.select-wrap {
-  font-size: 0;
-
-  select {
-    + {
-      select {
-        margin-left: 10px;
-      }
+  + {
+    select {
+      margin-left: 10px;
     }
   }
-}
-
-// 검색바
-.search_bar {
-  position: relative;
-  text-align: right;
-  font-size: 0;
-  .btn {
-    background:none; border:0px;
-  }
-  .form-control{
-    padding: 0 25px 0 15px;
-    option{
-
-    }
-  }
-
-  input[type=text] {
-    width: 248px;
-    padding: 0 40px 0 15px;
-    margin-left: 5px;
+  &.form-control {
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    padding: 0 40px 0 12px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff url(../img/common/bg-ico-select.png) no-repeat 100% 50%;
+    vertical-align: middle;
+    color: #666;
     &:focus {
-      outline: none;
-    }
-
-  }
-  .btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: none;
-    border: none;
-  }
-
-  &.search_bar-fullwidth {
-    margin-bottom: 0px;
-
-    input[type=text] {
-      width: 100%;
+      border-color: $border-color;
+      outline: 0;
+      box-shadow: none;
     }
   }
 }
+
+
 
 // checkbox
 .custom-checkbox {
@@ -201,7 +330,7 @@ select::-ms-expand {
     }
   }
 
-/*  &.no-label {
+!*  &.no-label {
     width: 20px;
 
     .custom-control-label {
@@ -209,7 +338,7 @@ select::-ms-expand {
       width: 20px;
       height: 20px;
     }
-  }*/
+  }*!
 
   &.top-line {
     .custom-control-input {
@@ -235,7 +364,7 @@ select::-ms-expand {
     border-color: #ccc;
   }
 
-  /*TP2-58 체크박스 아이콘 무늬 제거*/
+  !*TP2-58 체크박스 아이콘 무늬 제거*!
   .custom-control-input:disabled:checked ~ .custom-control-label::after {
     background: url(../img/common/bg-checkbox.png) no-repeat 50% 50%;;
   }
@@ -244,16 +373,27 @@ select::-ms-expand {
 // radio
 .custom-radio {
   padding-left: 0;
+  + {
+    .custom-radio {
+      margin-left: 10px;
+    }
+  }
 
   &.custom-control {
     display: inline-block;
+    .custom-control-input{
+      width: 20px;
+      height: 20px;
+      vertical-align: bottom;
+    }
   }
 
   .custom-control-label {
-    padding-left: 24px;
+
     font-size: 14px;
 
-    &:before {
+
+  !*  &:before {
       left: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -261,8 +401,8 @@ select::-ms-expand {
       height: 20px;
       border: 1px solid #e0e0e0;
     }
-
-    &:after {
+*!
+   !* &:after {
       left: 4px;
       top: 50%;
       transform: translateY(-50%);
@@ -271,10 +411,10 @@ select::-ms-expand {
       border-radius: 100%;
       background: #fff;
       //background: #fff url(../img/common/bg-radio.png) no-repeat center;
-    }
+    }*!
   }
 
-  input[type=radio] {
+!*  input[type=radio] {
     &:checked {
       + {
         .custom-control-label {
@@ -300,7 +440,7 @@ select::-ms-expand {
         }
       }
     }
-  }
+  }*!
 
   .custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
     background: #fafafa;
@@ -454,15 +594,7 @@ select::-ms-expand {
 }
 
 
-// textarea
-textarea.form-control {
-  width: 100%;
-  border: 1px solid $border-color;
-  border-radius: 5px;
-  padding: 15px 17px;
-  font-size: 14px;
-  resize: none;
-}
+
 
 
 
@@ -473,7 +605,7 @@ textarea.form-control {
   font-size: 15px;
 }
 
-/* 텍스트와 검색바 수평정렬*/
+!* 텍스트와 검색바 수평정렬*!
 .list_before{
   &.level-line{
     position: relative;
@@ -491,9 +623,10 @@ textarea.form-control {
 
 
 
+!*
 
 //태윤
-/*텍스트 검색바 , 서치바 수평정렬*/
+!*텍스트 검색바 , 서치바 수평정렬*!
 .level_area {
   display: flex;
   align-items: center;
@@ -535,6 +668,7 @@ textarea.form-control {
     color: #666666;
   }
 }
+*!
 
 
 .mobile{
@@ -543,7 +677,7 @@ textarea.form-control {
     -webkit-appearance: none;
   }
 
-  /*input*/
+  !*input*!
   input[type="text"],
   input[type="password"],
   input[type="tel"],
@@ -577,7 +711,7 @@ textarea.form-control {
     }
   }
 
-  /*select*/
+  !*select*!
   select {
     &.form-control{
       min-width: 92px;
@@ -613,7 +747,7 @@ textarea.form-control {
     }
   }
 
-  /*textarea*/
+  !*textarea*!
   textarea{
     &.form-control{
       &::placeholder {
@@ -642,7 +776,7 @@ textarea.form-control {
     }
   }
 
-  /*검색바 공통*/
+  !*검색바 공통*!
   .form-inline{
     &.search_bar{
       text-align: left;
@@ -693,7 +827,7 @@ textarea.form-control {
 
   }
 
-  /*체크박스*/
+  !*체크박스*!
   .custom-checkbox {
     display: inline-block;
     padding: 0;
@@ -703,7 +837,7 @@ textarea.form-control {
       height: 24px;
       top: 50%;
       transform: translateY(-50%);
-      /*체크박스 비활성화*/
+      !*체크박스 비활성화*!
       &:disabled{
         +.custom-control-label{
           &:before {
@@ -721,13 +855,13 @@ textarea.form-control {
         }
       }
     }
-    /*----------절대 지우지 마세요~ (체크박스 기본 체크이미지 변경)----------------*/
-    .custom-control-input:checked~.custom-control-label::after{
+    !*----------절대 지우지 마세요~ (체크박스 기본 체크이미지 변경)----------------*!
+    .custom-control-input:checked~.custom-control-input{
       background: $primary url("../img/m-common/bg-checkbox.png") no-repeat center center/ 11px 7.5px;
     }
-    /*--------------------------------------------------------------------*/
+    !*--------------------------------------------------------------------*!
 
-    .custom-control-label {
+    .custom-control-input {
       padding-left: 32px;
       font-size: 14px;
       outline: 0 !important;
@@ -754,7 +888,7 @@ textarea.form-control {
 
 
 
-  /*라디오버튼*/
+  !*라디오버튼*!
 
   // radio
   .custom-radio {
@@ -811,7 +945,7 @@ textarea.form-control {
 
 
     }
-    /*라디오버튼 비활성화*/
+    !*라디오버튼 비활성화*!
     .custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::after {
       background: $gray-7;
     }
@@ -857,3 +991,4 @@ textarea.form-control {
 
 
 }
+*/
