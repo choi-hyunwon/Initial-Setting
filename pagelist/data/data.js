@@ -33,6 +33,30 @@ data.guide = {
     },
     {
       stateClass: 'complete',
+      url: 'form',
+      category: 'guide',
+      page: '폼'
+    },
+    {
+      stateClass: 'complete',
+      url: 'tab',
+      category: 'guide',
+      page: '탭'
+    },
+    {
+      stateClass: 'complete',
+      url: 'icon',
+      category: 'guide',
+      page: '아이콘'
+    },
+    {
+      stateClass: 'complete',
+      url: 'popup',
+      category: 'guide',
+      page: '팝업'
+    },
+    {
+      stateClass: 'complete',
       url: 'accordion',
       category: 'guide',
       page: '아코디언'
@@ -42,12 +66,6 @@ data.guide = {
       url: 'grid',
       category: 'guide',
       page: '그리드'
-    },
-    {
-      stateClass: 'complete',
-      url: 'form',
-      category: 'guide',
-      page: '폼'
     },
     {
       stateClass: 'complete',
@@ -61,30 +79,15 @@ data.guide = {
       category: 'guide',
       page: '슬라이드'
     },
-    {
-      stateClass: 'complete',
-      url: 'tab',
-      category: 'guide',
-      page: '탭'
-    },
-    {
-      stateClass: 'complete',
-      url: 'popup',
-      category: 'guide',
-      page: '팝업'
-    },
-    {
-      stateClass: 'complete',
-      url: 'icon',
-      category: 'guide',
-      page: '아이콘'
-    },
+
+
+
     {
       stateClass: 'complete',
       url: 'loading',
       category: 'guide',
       page: '로딩'
-    }
+    },
   ]
 }
 data.guide_mobile = {

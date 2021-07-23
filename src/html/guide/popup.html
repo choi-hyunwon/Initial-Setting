@@ -8,23 +8,25 @@
     <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
       @@include('../guide/menu.html')
 
-      <div class="page-content mb30">
-        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup01">Small Popup</a>
-        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup02">Medium popup</a>
-        <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup03">Large popup</a>
+      <div class="box">
+        <div class="page-content">
+          <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup01">Small Popup</a>
+          <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup02">Medium popup</a>
+          <a class="btn btn-bg-primary" href="#" data-toggle="modal" data-target="#Popup03">Large popup</a>
+        </div>
       </div>
 
       <!--팝업 구조 설명-->
-      <div class="font-weight-bold" style="letter-spacing: 0">
-        <p class="h2 font-weight-bold"> modal 구조</p>
-        <div class="mb20 border-radius" style="border:2px solid #ffcbcb;padding:20px;">
-          <p class="mb20 "> class="modal fade"</p>
-          <p class="mb20 "> modal-size ="modal-sm (w:430px) modal-md(w:530px) modal-ml(w:565px) modal-lg(w:787px) </p>
-          <div class="border-radius" style="border:2px solid #ff9797;padding: 20px;">
-            <p class="mb20"> class="modal-dialog-centered modal-dialog modal-dialog-scrollable(모달 본체를 스크롤할 수 있는 스크롤 가능한 모달)"</p>
-            <div class="border-radius" style="border:2px solid #e34d4e;padding: 20px;">
-              <p class="mb20"> class="modal-content" </p>
-              <div class="border-radius" style="border:2px solid #de292a;padding: 20px;">
+      <div class="box">
+        <h2> modal 구조</h2>
+        <div class="box mb10">
+          <p class="mb10"> class="modal fade"</p>
+          <p class="mb10"> modal-size ="modal-sm (w:430px) modal-md(w:530px) modal-ml(w:565px) modal-lg(w:787px) </p>
+          <div class="box">
+            <p class="mb10"> class="modal-dialog-centered modal-dialog modal-dialog-scrollable(모달 본체를 스크롤할 수 있는 스크롤 가능한 모달)"</p>
+            <div class="box">
+              <p class="mb10"> class="modal-content" </p>
+              <div class="box">
                 <p class="mb10">class="modal-header"(제목 / 닫기버튼)</p>
                 <p class="mb10">class="modal-body"(내용)</p>
                 <p>class="modal-footer"(버튼 (확인,취소,저장...)) size : btn-lg(기본)</p>
@@ -32,10 +34,10 @@
             </div>
           </div>
         </div>
-        <p class="h2 font-weight-bold"> script => $('#modal의 id').modal('show') </p>
+        <h3> script => $('#modal의 id').modal('show') </h3>
       </div>
 
-
+      <!--Small Popup-->
       <div class="modal fade" tabindex="-1" role="dialog" id="Popup01" aria-modal="true">
         <div class="modal-dialog-centered modal-dialog modal-sm" role="document">
           <div class="modal-content">
@@ -55,6 +57,7 @@
           </div>
         </div>
       </div>
+      <!--Medium popup-->
       <div class="modal fade" tabindex="-1" role="dialog" id="Popup02" aria-modal="true">
         <div class="modal-dialog-centered modal-dialog modal-dialog-scrollable modal-md" role="document">
           <div class="modal-content">
@@ -83,6 +86,7 @@
           </div>
         </div>
       </div>
+      <!--Large popup-->
       <div class="modal fade" tabindex="-1" role="dialog" id="Popup03" aria-modal="true">
         <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -139,3 +143,17 @@
 </div>
 </body>
 </html>
+
+
+
+<style>
+  .box{
+    border:2px solid #999;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .mb10{
+    margin-bottom: 10px;
+  }
+</style>

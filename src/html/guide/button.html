@@ -2,7 +2,6 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-@@include('../include/wrap-img.html', {'src' : '../../img/@temp/초등_PC_평가자료_01.png'})
 <div class="wrap">
     <!-- container-->
     <div id="container">
@@ -10,14 +9,13 @@
              style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
             @@include('../guide/menu.html')
 
-
             <div class="box">
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>기본 버튼 (btn)</p>
                     <a href="#" class="btn">버튼</a>
                 </div>
 
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>비활성화 (&.disabled)</p>
                     <a href="#" class="btn disabled">disabled</a>
                 </div>
@@ -26,17 +24,17 @@
 
             <div class="box">
                 <h3>버튼 형태에 따른 분류</h3>
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>outline</p>
                     <a href="#" class="btn btn-outline-primary">btn-outline-primary</a>
                     <a href="#" class="btn btn-outline-secondary">btn-outline-secondary</a>
                 </div>
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>bg</p>
                     <a href="#" class="btn btn-bg-primary">btn-bg-primary</a>
                     <a href="#" class="btn btn-bg-secondary">btn-bg-secondary</a>
                 </div>
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>비활성화 (&.disabled)</p>
                     <a href="#" class="btn btn-outline-primary disabled">disabled</a>
                     <a href="#" class="btn btn-outline-secondary disabled">disabled</a>
@@ -47,38 +45,38 @@
 
             <div class="box">
                 <h3>버튼 크기에 따른 분류 </h3>
-                <div class="sub-box">
+                <div class="sub_box">
                     <p><span class="mr10">btn-sm: 28px</span>/
                         <span class="ml10 mr10">기본 높이 36px</span>/
                         <span class="ml10 mr10">btn-lg : 40px</span>/
                         <span class="ml10 mr10">btn-xl : 48px</span>
                     </p>
                 </div>
-                <div class="sub-box">
+                <div class="sub_box">
                     <a href="#" class="btn btn-sm"><span class="name">btn-sm</span></a>
                     <a href="#" class="btn">기본</a>
                     <a href="#" class="btn btn-lg">btn-lg</a>
                     <a href="#" class="btn btn-xl">btn-xl</a>
                 </div>
-                <div class="sub-box">
+                <div class="sub_box">
                     <a href="#" class="btn btn-sm btn-outline-primary"><span class="name">btn-sm</span></a>
                     <a href="#" class="btn btn-outline-primary">기본</a>
                     <a href="#" class="btn btn-lg btn-outline-primary">btn-lg</a>
                     <a href="#" class="btn btn-xl btn-outline-primary">btn-xl</a>
                 </div>
-                <div class="sub-box">
+                <div class="sub_box">
                     <a href="#" class="btn btn-sm btn-outline-secondary"><span class="name">btn-sm</span></a>
                     <a href="#" class="btn btn-outline-secondary">기본</a>
                     <a href="#" class="btn btn-lg btn-outline-secondary">btn-lg</a>
                     <a href="#" class="btn btn-xl btn-outline-secondary">btn-xl</a>
                 </div>
-                <div class="sub-box">
+                <div class="sub_box">
                     <a href="#" class="btn btn-sm btn-bg-primary"><span class="name">btn-sm</span></a>
                     <a href="#" class="btn btn-bg-primary">기본</a>
                     <a href="#" class="btn btn-lg btn-bg-primary">btn-lg</a>
                     <a href="#" class="btn btn-xl btn-bg-primary">btn-xl</a>
                 </div>
-                <div class="sub-box">
+                <div class="sub_box">
                     <a href="#" class="btn btn-sm btn-bg-secondary"><span class="name">btn-sm</span></a>
                     <a href="#" class="btn btn-bg-secondary">기본</a>
                     <a href="#" class="btn btn-lg btn-bg-secondary">btn-lg</a>
@@ -88,17 +86,21 @@
 
             <div class="box">
                 <h3>아이콘 예시</h3>
-                <div class="sub-box">
-                    <a href="#" class="btn btn-sm btn-bg-primary"><i class="icon icon-arrow-left-white"></i>btn-sm</a>
-                    <a href="#" class="btn btn-bg-primary"><i class="icon icon-arrow-left-white"></i>기본</a>
-                    <a href="#" class="btn btn-lg btn-bg-primary"><i class="icon icon-arrow-left-white"></i>btn-lg</a>
-                    <a href="#" class="btn btn-xl btn-bg-primary"><i class="icon icon-arrow-left-white"></i>btn-xl</a>
+                <div class="sub_box">
+                    <a href="#" class="btn btn-sm btn-bg-primary"><i class="icon icon-mr icon-arrow-left-white"></i>btn-sm</a>
+                    <a href="#" class="btn btn-bg-primary"><i class="icon icon-mr icon-arrow-left-white"></i>기본</a>
+                    <a href="#" class="btn btn-lg btn-bg-primary"><i class="icon icon-mr icon-arrow-left-white"></i>btn-lg</a>
+                    <a href="#" class="btn btn-xl btn-bg-primary"><i class="icon icon-mr icon-arrow-left-white"></i>btn-xl</a>
                 </div>
-                <div class="sub-box">
-                    <a href="#" class="btn btn-sm btn-bg-secondary">btn-sm<i class="icon icon-arrow-right-white"></i></a>
-                    <a href="#" class="btn btn-bg-secondary">기본<i class="icon icon-arrow-right-white"></i></a>
-                    <a href="#" class="btn btn-lg btn-bg-secondary">btn-lg<i class="icon icon-arrow-right-white"></i></a>
-                    <a href="#" class="btn btn-xl btn-bg-secondary">btn-xl<i class="icon icon-arrow-right-white"></i></a>
+                <div class="sub_box">
+                    <a href="#" class="btn btn-sm btn-bg-secondary">btn-sm<i class="icon icon-ml icon-arrow-right-white"></i></a>
+                    <a href="#" class="btn btn-bg-secondary">기본<i class="icon icon-ml icon-arrow-right-white"></i></a>
+                    <a href="#" class="btn btn-lg btn-bg-secondary">btn-lg<i class="icon icon-ml icon-arrow-right-white"></i></a>
+                    <a href="#" class="btn btn-xl btn-bg-secondary">btn-xl<i class="icon icon-ml icon-arrow-right-white"></i></a>
+                </div>
+                <div class="sub_box">
+                    <p>아이콘에 좌우 여백 클래스</p>
+                    <p>.icon-mr {margin-right: 3px} / .icon-ml {margin-left: 3px}</p>
                 </div>
             </div>
 
@@ -133,7 +135,7 @@
 
             <div class="box">
                 <h3>정렬</h3>
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>좌측정렬(default) :position-left </p>
                     <div class="position-left" style="border: 1px solid gray;border-radius: 5px">
                         <a href="#" class="btn btn-outline-secondary"><span class="name">전체 선택 · 해제</span></a>
@@ -142,14 +144,14 @@
                     </div>
                 </div>
 
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>우측정렬 : position-right</p>
                     <div class="position-right" style="border: 1px solid gray;border-radius: 5px;">
                         <a href="#" class="btn btn-bg-primary btn-right"><span class="name">등록</span></a>
                     </div>
                 </div>
 
-                <div class="sub-box">
+                <div class="sub_box">
                     <p>양쪽 정렬 : position-between</p>
                     <div class="position-between" style="border: 1px solid gray;border-radius: 5px;">
                         <div>
@@ -169,18 +171,26 @@
                 </div>
             </div>
 
-
         </div>
         <!--//contents-->
     </div>
     <!-- //container-->
-    @@include('../include/footer.html')
 </div>
 </body>
 </html>
 
 <style>
-    .box{margin-bottom: 30px;border:1px solid #999;padding:20px;border-radius: 10px;}
-    .box .sub-box{margin-bottom: 20px;}
-    .box .sub-box p{font-weight: normal;margin-bottom: 5px}
+    .box{
+        border:2px solid #999;
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin-bottom: 40px;
+    }
+    .sub_box{
+        margin-bottom: 20px;
+    }
+    .sub_box p{
+        font-weight: normal;
+        margin-bottom: 5px
+    }
 </style>

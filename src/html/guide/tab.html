@@ -2,18 +2,16 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-@@include('../include/wrap-img.html', {'src' : '../../img/@temp/초등_PC_평가자료_01.png'})
 <div class="wrap">
   <!-- container-->
-  <div id="container" class="pt-0">  <!--위에 박스가 있는 경우 위여백 0-->
+  <div id="container">
 
     <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
         @@include('../guide/menu.html')
-        <div style="margin-bottom:20px;">
-          <p style="margin-bottom:20px;">
-              <h3>tab-list tab-list-... 탭 디자인 (링크형)</h3>
-              <kbd>tab-list</kbd>
-          </p>
+      <div class="section">
+        <!--탭그룹-->
+        <div class="box">
+          <h2>tab-list + .tab-list-숫자 (링크형)</h2>
           <kbd>tab-list-1</kbd>
           <div class="tab-list tab-list-1">
             <a class="item on" href="#"><span class="txt">단원별 보기</span></a>
@@ -297,41 +295,38 @@
           </div>
 
         </div>
-
-        <div style="margin-bottom:20px;">
-            <p style="margin-bottom:20px;">
-              <h3>tab-{name} (show/hide형)</h3>
-                <kbd>tab-basic</kbd> , <kbd>기본</kbd>
-            </p>
-            <div class="tab-basic">
-              <!-- 탭 메뉴 -->
-              <ul class="nav nav-tabs" id="myTab_basic" role="tablist">
+        <!--탭기본-->
+        <div class="box">
+          <h2>tab-basic (기본)</h2>
+          <div class="tab-basic">
+            <!-- 탭 메뉴 -->
+            <ul class="nav nav-tabs" id="myTab_basic" role="tablist">
               <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="tab-menu01" data-bs-toggle="tab" href="#con01" role="tab" aria-controls="home" aria-selected="true">전체보기</a>
+                <a class="nav-link active" id="tab-menu1" data-bs-toggle="tab" href="#con01" role="tab" aria-controls="home" aria-selected="true">전체보기</a>
               </li>
               <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="tab-menu02" data-bs-toggle="tab" href="#con02" role="tab" aria-controls="profile" aria-selected="false">지도안</a>
+                <a class="nav-link" id="tab-menu2" data-bs-toggle="tab" href="#con02" role="tab" aria-controls="profile" aria-selected="false">지도안</a>
               </li>
               <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="tab-menu03" data-bs-toggle="tab" href="#con03" role="tab" aria-controls="contact" aria-selected="false">활동지</a>
+                <a class="nav-link" id="tab-menu3" data-bs-toggle="tab" href="#con03" role="tab" aria-controls="contact" aria-selected="false">활동지</a>
               </li>
               <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="tab-menu04" data-bs-toggle="tab" href="#con04" role="tab" aria-controls="contact" aria-selected="false">확인 문제</a>
+                <a class="nav-link" id="tab-menu4" data-bs-toggle="tab" href="#con04" role="tab" aria-controls="contact" aria-selected="false">확인 문제</a>
               </li>
               <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="tab-menu05" data-bs-toggle="tab" href="#con05" role="tab" aria-controls="contact" aria-selected="false">기타</a>
+                <a class="nav-link" id="tab-menu5" data-bs-toggle="tab" href="#con05" role="tab" aria-controls="contact" aria-selected="false">기타</a>
               </li>
-              </ul>
-              <!-- 탭 컨텐츠 -->
-              <div class="tab-content" id="myTabContent_basic">
-                <div class="tab-pane fade show active" id="con01" role="tabpanel" aria-labelledby="tab-menu01">..1</div><!--탭 컨텐츠 -->
-                <div class="tab-pane fade" id="con02" role="tabpanel" aria-labelledby="tab-menu02">...2</div>
-                <div class="tab-pane fade" id="con03" role="tabpanel" aria-labelledby="tab-menu03">...3</div>
-                <div class="tab-pane fade" id="con04" role="tabpanel" aria-labelledby="tab-menu04">...4</div>
-                <div class="tab-pane fade" id="con05" role="tabpanel" aria-labelledby="tab-menu05">...5</div>
-              </div>
-            </div> <!-- 탭 종료 -->
-            <script>
+            </ul>
+            <!-- 탭 컨텐츠 -->
+            <div class="tab-content" id="myTabContent_basic">
+              <div class="tab-pane fade show active" id="con01" role="tabpanel" aria-labelledby="tab-menu1">..1</div><!--탭 컨텐츠 -->
+              <div class="tab-pane fade" id="con02" role="tabpanel" aria-labelledby="tab-menu2">...2</div>
+              <div class="tab-pane fade" id="con03" role="tabpanel" aria-labelledby="tab-menu3">...3</div>
+              <div class="tab-pane fade" id="con04" role="tabpanel" aria-labelledby="tab-menu4">...4</div>
+              <div class="tab-pane fade" id="con05" role="tabpanel" aria-labelledby="tab-menu5">...5</div>
+            </div>
+          </div> <!-- tab-basic 종료 -->
+          <script>
             /*
             |----------------------------------|
             |          부트스트랩 탭 호출
@@ -339,54 +334,51 @@
             */
             var triggerTabList = [].slice.call(document.querySelectorAll('#myTab_basic a'))
             triggerTabList.forEach(function (triggerEl) {
-                var tabTrigger = new bootstrap.Tab(triggerEl)
+              var tabTrigger = new bootstrap.Tab(triggerEl)
 
-                triggerEl.addEventListener('click', function (event) {
+              triggerEl.addEventListener('click', function (event) {
                 event.preventDefault()
                 tabTrigger.show()
-                })
+              })
             })
-            </script>
+          </script>
         </div>
-
-
-        <div style="margin-bottom:20px;">
-            <p style="margin-bottom:20px;">
-                <kbd>tab-menu</kbd>
-            </p>
-            <div class="body_contents_tabs tab-menu">
-                <!-- 탭 메뉴 -->
-                <div class="tab_menu_box clearfix">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link active" id="tab-menu01" data-bs-toggle="tab" href="#tab_contents01" role="tab" aria-controls="home" aria-selected="true">전체보기</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="tab-menu02" data-bs-toggle="tab" href="#tab_contents02" role="tab" aria-controls="profile" aria-selected="false">지도안</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="tab-menu03" data-bs-toggle="tab" href="#tab_contents03" role="tab" aria-controls="contact" aria-selected="false">활동지</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="tab-menu04" data-bs-toggle="tab" href="#tab_contents04" role="tab" aria-controls="contact" aria-selected="false">확인 문제</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="tab-menu05" data-bs-toggle="tab" href="#tab_contents05" role="tab" aria-controls="contact" aria-selected="false">기타</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- 탭 컨텐츠 -->
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="tab_contents01" role="tabpanel" aria-labelledby="tab-menu01">
-                  ..1
-                  </div><!--탭 컨텐츠 -->
-                  <div class="tab-pane fade" id="tab_contents02" role="tabpanel" aria-labelledby="tab-menu02">...2</div>
-                  <div class="tab-pane fade" id="tab_contents03" role="tabpanel" aria-labelledby="tab-menu03">...3</div>
-                  <div class="tab-pane fade" id="tab_contents04" role="tabpanel" aria-labelledby="tab-menu04">...4</div>
-                  <div class="tab-pane fade" id="tab_contents05" role="tabpanel" aria-labelledby="tab-menu05">...5</div>
-                </div>
-            </div> <!-- 탭 종료 -->
-            <script>
+        <!--컨텐츠내부 탭-->
+        <div class="box">
+          <h2>tab-menu</h2>
+          <div class="tab-menu">
+            <!-- 탭 메뉴 -->
+            <div class="clearfix">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="tab-menu01" data-bs-toggle="tab" href="#tab_contents01" role="tab" aria-controls="home" aria-selected="true">전체보기</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="tab-menu02" data-bs-toggle="tab" href="#tab_contents02" role="tab" aria-controls="profile" aria-selected="false">지도안</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="tab-menu03" data-bs-toggle="tab" href="#tab_contents03" role="tab" aria-controls="contact" aria-selected="false">활동지</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="tab-menu04" data-bs-toggle="tab" href="#tab_contents04" role="tab" aria-controls="contact" aria-selected="false">확인 문제</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="tab-menu05" data-bs-toggle="tab" href="#tab_contents05" role="tab" aria-controls="contact" aria-selected="false">기타</a>
+                </li>
+              </ul>
+            </div>
+            <!-- 탭 컨텐츠 -->
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="tab_contents01" role="tabpanel" aria-labelledby="tab-menu01">
+                ..1
+              </div><!--탭 컨텐츠 -->
+              <div class="tab-pane fade" id="tab_contents02" role="tabpanel" aria-labelledby="tab-menu02">...2</div>
+              <div class="tab-pane fade" id="tab_contents03" role="tabpanel" aria-labelledby="tab-menu03">...3</div>
+              <div class="tab-pane fade" id="tab_contents04" role="tabpanel" aria-labelledby="tab-menu04">...4</div>
+              <div class="tab-pane fade" id="tab_contents05" role="tabpanel" aria-labelledby="tab-menu05">...5</div>
+            </div>
+          </div> <!-- tab-menu 종료 -->
+          <script>
             /*
             |----------------------------------|
             |          부트스트랩 탭 호출
@@ -394,22 +386,31 @@
             */
             var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
             triggerTabList.forEach(function (triggerEl) {
-                var tabTrigger = new bootstrap.Tab(triggerEl)
+              var tabTrigger = new bootstrap.Tab(triggerEl)
 
-                triggerEl.addEventListener('click', function (event) {
+              triggerEl.addEventListener('click', function (event) {
                 event.preventDefault()
                 tabTrigger.show()
-                })
+              })
             })
-            </script>
+          </script>
         </div>
-    </div>
-    <!--//contents-->
+      </div>
+    </div> <!--//contents-->
 
-  </div>
-  <!-- //container-->
-  @@include('../include/footer.html')
+  </div><!-- //container-->
 </div>
 </body>
 </html>
 
+<style>
+  .box{
+    border:2px solid #999;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 40px;
+  }
+  .tab-list{
+    margin-bottom: 20px;
+  }
+</style>
