@@ -1,18 +1,54 @@
 /*
 |----------------------------------|
  v.0.1 최초 공통화 작업
- v.0.2 no-select 추가 - 고태윤
- v.0.3 thead tr th -> padding 10px 0.75rem 수정  - 박선미
- v.0.4 .heading-wrap -> 모바일 버전 제작 - 한성수
- v.0.5 .birthday_box -> .day -> margin값 변경 (margin: 0px 15px 0px 4px;) - 고태윤
- v.0.6 .table > td > .no-data 패딩 수정 - 박선미
 |----------------------------------|
 */
 
-
 @import "../lib/bootstrap-table";
-table{
+.table{
   background-color: #fff;
+  font-size: 15px;
+  text-align: center;
+  thead{
+    background-color: #fcfcfc;
+    tr{
+      th{
+        padding: 0.875rem;
+        font-weight: $regular;
+        height: 40px;
+      }
+    }
+  }
+  tbody{
+    color:#666;
+    tr{
+      td{
+        &.title{
+          text-align: left;
+        }
+      }
+    }
+
+
+  }
+
+
+  &.table-hover{
+    tbody{
+      &:hover{
+        tr{
+          color:#666;
+        }
+      }
+    }
+  }
+}
+.table>:not(:last-child)>:last-child>* {
+  border-bottom-color: #e0e0e0;
+  border-top:1px solid #e0e0e0;
+}
+.table > :not(caption) > * > * {
+  padding: 1.35rem;
 }
 /*
 .table {

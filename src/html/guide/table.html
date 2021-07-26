@@ -2,17 +2,144 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-@@include('../include/wrap-img.html', {'src' : '../../img/@temp/초등_PC_평가자료_01.png'})
 <div class="wrap">
   <!-- container-->
-  <div id="container" class="pt-0">
+  <div id="container">
     <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
       @@include('../guide/menu.html')
 
-      <!--    global : - local : _ -->
-
       <div class="section">
-        <h3>정보 입력 테이블 ( .border-radius > .table.info )</h3>
+        <h3>기본 테이블</h3>
+        <table class="table">
+          <colgroup>
+            <col style="width:60px;">
+            <col style="">
+            <col style="width:90px;">
+          </colgroup>
+          <thead>
+          <tr>
+            <th>
+              <div>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value="" aria-label="...">
+              </div>
+            </th>
+            <th>자료명</th>
+            <th>미리보기</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              <div>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel2" value="" aria-label="...">
+              </div>
+            </td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.05 영국명예혁명 수업지도안</span>
+            </td>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel3" value="" aria-label="...">
+              </div>
+            </td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.07 입동 수업지도안</span>
+            </td>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+          </tr>
+          </tbody>
+        </table>
+       <!--     <script>
+          $('.table thead input').on('click', function(){
+            var isCheck = $(this).prev().is(":checked");
+            if(isCheck){
+              //해지
+              $(this).parents('.tbody').find('td input').prop('checked', false)
+              $(this).parents('.tbody').find('td').removeClass('checked');
+
+            } else {
+              //등록
+              $(this).parents('.tbody').find('td input').prop('checked', true);
+              $(this).parents('.tbody').find('td').addClass('checked');
+
+            }
+          })
+        </script>-->
+
+        <h3>hover 테이블</h3>
+        <table class="table table-hover">
+          <colgroup>
+            <col style="width:60px;">
+            <col style="">
+            <col style="width:90px;">
+          </colgroup>
+          <thead>
+          <tr>
+            <th>
+              <div>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel4" value="" aria-label="...">
+              </div>
+            </th>
+            <th>자료명</th>
+            <th>미리보기</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              <div>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel5" value="" aria-label="...">
+              </div>
+            </td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.05 영국명예혁명 수업지도안</span>
+            </td>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel6" value="" aria-label="...">
+              </div>
+            </td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.07 입동 수업지도안</span>
+            </td>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+          </tr>
+          </tbody>
+        </table>
+
+
+        <h3>header 없는 테이블</h3>
+        <table class="table table-bordered">
+          <colgroup>
+            <col style="width:90px;">
+            <col style="">
+          </colgroup>
+          <tbody>
+          <tr>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.05 영국명예혁명 수업지도안</span>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#" class="ico-preview">미리보기</a></td>
+            <td class="title">
+              <span class="ico-save"></span> <span class="has-icon">11.07 입동 수업지도안</span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+
+        <br><br><br>
+
+      <!--  <h3>정보 입력 테이블 ( .border-radius > .table.info )</h3>
         <div class="border-radius" style="margin-bottom: 50px">
           <table class="table info">
             <colgroup>
@@ -48,7 +175,6 @@
             </tbody>
           </table>
         </div>
-
         <div class="border-radius">
           <table class="table info">
             <colgroup>
@@ -262,58 +388,7 @@
           </table>
         </div>
 
-
         <br><br><br>
-
-        <h3>기본 테이블</h3>
-        <table class="table text-align-center flat-row">
-          <colgroup>
-            <col style="width:60px;">
-            <col style="">
-            <col style="width:90px;">
-          </colgroup>
-          <thead>
-          <tr>
-            <th>
-              <div class="custom-control custom-checkbox no-label">
-                <input type="checkbox" class="custom-control-input" id="customCheck00">
-                <label class="custom-control-label" for="customCheck00"></label>
-              </div>
-            </th>
-            <th>자료명</th>
-            <th>미리보기</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>
-              <div class="custom-control custom-checkbox no-label">
-                <input type="checkbox" class="custom-control-input" id="customCheck11">
-                <label class="custom-control-label" for="customCheck11"></label>
-              </div>
-            </td>
-            <td class="title">
-              <span class="ico-save"></span> <span class="has-icon">11.05 영국명예혁명 수업지도안</span>
-            </td>
-            <td><a href="#" class="ico-preview">미리보기</a></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="custom-control custom-checkbox no-label">
-                <input type="checkbox" class="custom-control-input" id="customCheck22">
-                <label class="custom-control-label" for="customCheck22"></label>
-              </div>
-            </td>
-            <td class="title">
-              <span class="ico-save"></span> <span class="has-icon">11.07 입동 수업지도안</span>
-            </td>
-            <td><a href="#" class="ico-preview">미리보기</a></td>
-          </tr>
-          </tbody>
-        </table>
-
-        <br><br><br>
-
 
         <h3>제목을 포함하는 둥근 상자 (아코디언 없음)</h3>
         <div class="heading-wrap">
@@ -327,7 +402,12 @@
             </ul>
           </div>
         </div>
-        <!-- //heading-wrap -->
+         //heading-wrap -->
+
+
+
+
+
     </div>
   </div>
   <!-- //container-->
