@@ -8,11 +8,11 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  vertical-align: middle;
+/*  vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center center;
   text-indent: -999em;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 
 .icon-new {
@@ -23,16 +23,16 @@
 }
 /*메인페이지 아이콘*/
 .icon-instagram {
-  background-image: url("../img/home/ico-instagram.png");
+  background-image: url("../img/common/ico-instagram.png");
 }
 .icon-blog {
-  background-image: url("../img/home/ico-blog.png");
+  background-image: url("../img/common/ico-blog.png");
 }
 .icon-facebook {
-  background-image: url("../img/home/ico-facebook.png");
+  background-image: url("../img/common/ico-facebook.png");
 }
 .icon-youtube {
-  background-image: url("../img/home/ico-youtube.png");
+  background-image: url("../img/common/ico-youtube.png");
 }
 /*확장자아이콘*/
 .icon-word {

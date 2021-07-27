@@ -28,13 +28,15 @@ input[type="file"]:focus{
   box-shadow: none;
   outline: 0;
 }
-.form-control:focus{
-  box-shadow: none;
-  font-size: 14px;
-  border: 1px solid $border-color;
-  outline: 0;
+.form-control{
+  display: inline-block;
+  &:focus{
+    box-shadow: none;
+    font-size: 14px;
+    border: 1px solid $border-color;
+    outline: 0;
+  }
 }
-
 /*-----------------
   체크박스 / 라디오
 -----------------*/

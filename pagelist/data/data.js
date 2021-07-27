@@ -57,6 +57,12 @@ data.guide = {
     },
     {
       stateClass: 'complete',
+      url: 'table',
+      category: 'guide',
+      page: '테이블'
+    },
+    {
+      stateClass: 'complete',
       url: 'accordion',
       category: 'guide',
       page: '아코디언'
@@ -69,15 +75,15 @@ data.guide = {
     },
     {
       stateClass: 'complete',
-      url: 'table',
-      category: 'guide',
-      page: '테이블'
-    },
-    {
-      stateClass: 'complete',
       url: 'slide',
       category: 'guide',
       page: '슬라이드'
+    },
+    {
+      stateClass: 'complete',
+      url: 'bullet',
+      category: 'guide',
+      page: '불릿'
     },
 
 

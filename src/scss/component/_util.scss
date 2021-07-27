@@ -10,8 +10,7 @@
 
 
 
-
-/*불렛*/
+/*기본 불렛(before)*/
  .bullet-circle {
    position: relative;
    padding-left: 10px;
@@ -71,15 +70,37 @@
      }
    }
  }
-
-
-
-
-//두줄이상 블릿 맞출경우 우선 텍스트와 블릿의 영역을 따로 잡고 난후 div로 감싼후
-//div안에 d-flex align-items-baseline 으로 클래스를 넣은후 사용하면됩니다.
-
-
-
+ /*테이블 내부에있는 th 불렛(after)*/
+.table{
+  tbody{
+    th{
+      .bullet-circle{
+        padding-left: 0;
+        &:before{
+          content: none;
+        }
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          border-radius: 100%;
+          vertical-align: text-top;
+          position: relative;
+          background-color: #000;
+          left: 4px;
+          top: 4px;
+        }
+        /*색상별*/
+        &.bullet-color-red {
+          &:after {
+            background: #ff0000;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 

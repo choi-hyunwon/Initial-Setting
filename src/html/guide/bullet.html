@@ -8,7 +8,7 @@
     <div class="contents" style="width:1200px; background:#f5f5f5; margin:150px auto; padding:50px;border-radius: 10px">
       @@include('../guide/menu.html')
         <div class="box">
-            <h3>Bullet</h3>
+            <h3>Bullet (&:before)</h3>
             <div class="sub_box">
                 <p class="bullet-circle">.bullet-circle (기본)</p>
                 <p class="bullet-circle bullet-color-red">+ .bullet-color-red (색상)</p>
@@ -24,6 +24,28 @@
                 <p class="bullet-circle bullet-center">+ .bullet-center <br>(2줄 이상일 경우 가운데 정렬입니다.)</p>
                 <p class="bullet-circle bullet-indent bullet-center">+ .bullet-indent  + .bullet-center<br> (가운데정렬 2줄이상 + 들여쓰기)</p>
             </div>
+        </div>
+        <div class="box">
+            <h3>.table 내부 th -> Bullet (&:after)</h3>
+            <table class="table table-border">
+                <colgroup>
+                    <col style="width:250px;">
+                    <col style="">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th><p class="bullet-circle">.bullet-circle</p></th>
+                    <td><p class="bullet-circle">th만 after 적용(ex: 회원가입)</p></td>
+                </tr>
+                <tr>
+                    <th><p class="bullet-circle bullet-color-red">+.bullet-color-red</p></th>
+                    <td>
+                        <p class="bullet-circle bullet-color-red">bullet</p>
+                        <p class="bullet-circle bullet-indent">td는 기본과 똑같이 사용됨</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
     </div>
@@ -47,14 +69,11 @@
         margin-bottom: 40px;
     }
     .sub_box{
-        margin-bottom: 0 20px;
+        margin-bottom: 20px;
         border-bottom: 1px solid #e0e0e0;
         padding: 20px;
     }
     .sub_box:last-child{border-bottom: 0;margin-bottom: 0}
     .sub_box .bullet-circle{margin-bottom: 5px}
-    .file-upload{
-        margin-bottom: 20px;
-    }
 </style>
 

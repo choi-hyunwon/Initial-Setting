@@ -1,16 +1,89 @@
 /*
 |----------------------------------|
  v.0.1 최초 공통화 작업
- v.0.2 .slide-addtional - 교과 부가 이미지 슬라이드 추가 - 한성수
- v.0.3 tp2-1024 수정
- v.0.4 tp2-1429 수정 .slide-button
 |----------------------------------|
 */
+.carousel{
+  .carousel-inner{
+    .carousel-item{
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+  button{
+    &.carousel-control-prev{
+      display: inline-block;
+      width: 2%;
+      left: -10px;
+      .carousel-control-prev-icon{
+        background: url(../img/common/btn-circle-arrow-left-on.png) no-repeat 0 0;
+        width:24px;
+        height:24px;
+      }
+    }
+    &.carousel-control-next{
+      display: inline-block;
+      width: 2%;
+      right:-10px;
+      .carousel-control-next-icon{
+        background: url(../img/common/btn-circle-arrow-right-on.png) no-repeat 0 0;
+        width:24px;
+        height:24px;
+      }
+    }
+  }
 
+}
+
+
+
+
+
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev		 { left: -25%; }
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slide-button{
+  z-index:10; position:absolute; top:25%; width:25px; height:25px; border:1px solid #e0e0e0; background:#fff; display:block; content:""; border-radius: 100%;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  & span:nth-child(1) {display:block; width:6px; height:2px; background:#0c0c0d; }
+  & span:nth-child(2) {display:block; width:6px; height:2px; background:#0c0c0d; }
+  &.next {
+    right:2px;
+    & span:nth-child(1) {transform:translate(8.5px,9px) rotate(45deg);}
+    & span:nth-child(2) {transform:translate(8.5px,11px) rotate(-45deg);}
+  }
+  &.prev {
+    left:2px;
+    & span:nth-child(1) {transform:translate(8.5px,9px) rotate(-45deg);}
+    & span:nth-child(2) {transform:translate(8.5px,11px) rotate(45deg);}
+  }
+  &:active {outline:0px;}
+  &:focus {outline:0px;}
+}
+
+
+/*
 @import "../lib/swiper";
 
 .slide-group {position:relative;
-    /* 교과학습 내부 아코디언 */
+    !* 교과학습 내부 아코디언 *!
     .title {margin-bottom:20px; padding:0px 30px;}
     .slide {overflow:hidden; text-align:center; position:relative; padding:0 5px; margin:0 15px;
         .type {width:24px; height:24px; position:absolute; background:white; border-radius: 100%; top:75px; left:10px; display:block; content:""; line-height:19px;
@@ -46,7 +119,7 @@
         }
     }
 
-    /* 기본 슬라이드 */
+    !* 기본 슬라이드 *!
     .slide-basic {
         overflow:hidden; text-align:center; position:relative; padding:0 5px; margin:0 15px;
         .img {width:100%;  background:brown; border-radius: 4px; overflow:hidden; margin:0 0px; padding:0 0px;}
@@ -156,3 +229,4 @@
     }
   }
 }
+*/
