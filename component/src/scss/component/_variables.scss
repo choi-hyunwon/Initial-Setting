@@ -12,7 +12,7 @@ $red: #ff6652;
 
 $body-color: $black !default;
 
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 $link-decoration: none !default;
 
 //$spacer : 3rem;
@@ -20,6 +20,5 @@ $link-decoration: none !default;
 $font-family-base : 'Noto Sans KR' !default;
 $font-family-sans-serif: $font-family-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
-$font-ko : $font-family-base;
-$font-en : 'Proxima Nova';
-
+//$font-ko : 'Noto Sans KR';
+//$font-en : 'Proxima Nova';

@@ -8,5 +8,11 @@ data.styleGuide = {
       category: 'guide',
       page: 'COLORS'
     },
+    {
+      stateClass: 'complete',
+      url: 'typography_01',
+      category: 'guide',
+      page: 'TYPOGRAPHY'
+    },
   ]
 }

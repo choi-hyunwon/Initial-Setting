@@ -2,7 +2,6 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  unicode-range: U+AC00-U+D7A3;
   src: url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -10,13 +9,13 @@
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-regular.woff') format('woff'), /* Modern Browsers */
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+  unicode-range: U+AC00-D7A3;
 }
 
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  unicode-range: U+AC00-U+D7A3;
   src: url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-500.eot'); /* IE9 Compat Modes */
   src: local(''),
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -24,13 +23,13 @@
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-500.woff') format('woff'), /* Modern Browsers */
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-500.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-500.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+  unicode-range: U+AC00-D7A3;
 }
 
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  unicode-range: U+AC00-U+D7A3;
   src: url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-700.eot'); /* IE9 Compat Modes */
   src: local(''),
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -38,4 +37,5 @@
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-700.woff') format('woff'), /* Modern Browsers */
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-700.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../fonts/NotoSansKR/noto-sans-kr-v13-korean-700.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+  unicode-range: U+AC00-D7A3;
 }
