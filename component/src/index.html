@@ -2,10 +2,9 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>index_list_templete</title>
+  <title>Macrogen</title>
   <script type="text/javascript" src="../pagelist/js/lib/jquery.js"></script>
   <script type="text/javascript" src="../pagelist/js/lib/handlebars.js"></script>
   <link rel="stylesheet" href="../pagelist/css/style.css">
@@ -24,13 +23,13 @@
 </div>
 <div class="nav_depth_2">
   <div class="title">
-    <ul class="navi_site">
-      <li><a href="#" class="active">Git Link 01</a></li>
-      <li><a href="#">Git Link 02</a></li>
-    </ul>
+<!--    <ul class="navi_site">-->
+<!--      <li><a href="#" class="active">Git Link 01</a></li>-->
+<!--      <li><a href="#">Git Link 02</a></li>-->
+<!--    </ul>-->
     <h2>Page List</h2>
     <a href="#" class="btn_control_all close"></a>
-    <p><a href="#" class=""><i class="far fa-square"></i><i class="far fa-check-square"></i> 진척률 보기</a></p>
+<!--    <p><a href="#" class=""><i class="far fa-square"></i><i class="far fa-check-square"></i> 진척률 보기</a></p>-->
   </div>
   <div class="wrap_scroll">
 
@@ -84,8 +83,6 @@
     }
   })
 
-
-
   function countState() {
     for(var index in data) {
       // console.log(data[index]);
@@ -114,19 +111,12 @@
     }
   }
 
-
-
-
-
   countState();
   // var source = document.getElementById("entry-template").innerHTML; //js
-  var source = $('#list-template')
-          .html() //jQuery
+  var source = $('#list-template').html() //jQuery
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
-          .append(template(data.membership))
-          .append(template(data.guide))
-          .append(template(data.guide_mobile))
+          .append(template(data.styleGuide))
 </script>
 <script>
   $('.link').on('click', function () {
@@ -142,56 +132,31 @@
     }
   })
   $('.nav .btn_open_depths').on('click', function () {
-    if ($(this)
-            .hasClass('close')) {
-      $(this)
-              .removeClass('close')
-      $(this)
-              .children('i')
-              .attr('class', 'fas fa-chevron-left')
+    if ($(this).hasClass('close')) {
+      $(this).removeClass('close')
+      $(this).children('i').attr('class', 'fas fa-chevron-left')
     } else {
-      $(this)
-              .addClass('close')
-      $(this)
-              .children('i')
-              .attr('class', 'fas fa-chevron-right')
+      $(this).addClass('close')
+      $(this).children('i').attr('class', 'fas fa-chevron-right')
     }
-    if ($('.nav_depth_2')
-            .hasClass('close')) {
-      $('.nav_depth_2')
-              .removeClass('close')
+    if ($('.nav_depth_2').hasClass('close')) {
+      $('.nav_depth_2').removeClass('close')
     } else {
-      $('.nav_depth_2')
-              .addClass('close')
+      $('.nav_depth_2').addClass('close')
     }
   })
 
 
   $('.icon_dropdown')
           .on('click', function () {
-            if ($(this)
-                    .parent()
-                    .siblings('.list_wrap')
-                    .hasClass('close')) {
-              $(this)
-                      .removeClass('close')
-              $(this)
-                      .children('i')
-                      .attr('class', 'fas fa-angle-up')
-              $(this)
-                      .parent()
-                      .siblings('.list_wrap')
-                      .removeClass('close')
+            if ($(this).parent().siblings('.list_wrap').hasClass('close')) {
+              $(this).removeClass('close')
+              $(this).children('i').attr('class', 'fas fa-angle-up')
+              $(this).parent().siblings('.list_wrap').removeClass('close')
             } else {
-              $(this)
-                      .addClass('close')
-              $(this)
-                      .children('i')
-                      .attr('class', 'fas fa-angle-down')
-              $(this)
-                      .parent()
-                      .siblings('.list_wrap')
-                      .addClass('close')
+              $(this).addClass('close')
+              $(this).children('i').attr('class', 'fas fa-angle-down')
+              $(this).parent().siblings('.list_wrap').addClass('close')
             }
           })
 
@@ -199,31 +164,21 @@
   var $navDepth2 = $('.nav_depth_2')
 
   $navDepth2.on('click', '.title p a', function () {
-    if ($(this)
-            .hasClass('checked')) {
-      $(this)
-              .removeClass('checked')
-      $('.ing')
-              .hide()
+    if ($(this).hasClass('checked')) {
+      $(this).removeClass('checked')
+      $('.ing').hide()
     } else {
-      $(this)
-              .addClass('checked')
-      $('.ing')
-              .show()
+      $(this).addClass('checked')
+      $('.ing').show()
     }
   })
   $navDepth2.on('click', '.btn_control_all', function () {
-    if ($(this)
-            .hasClass('close')) {
-      $(this)
-              .removeClass('close')
-      $('.list_wrap , .icon_dropdown')
-              .removeClass('close')
+    if ($(this).hasClass('close')) {
+      $(this).removeClass('close')
+      $('.list_wrap , .icon_dropdown').removeClass('close')
     } else {
-      $(this)
-              .addClass('close')
-      $('.list_wrap , .icon_dropdown')
-              .addClass('close')
+      $(this).addClass('close')
+      $('.list_wrap , .icon_dropdown').addClass('close')
     }
   })
 
@@ -240,11 +195,8 @@
   })
   // sum = sum - 20;
   var total = (comp / sum) * 100
-  $('.nav_depth_2 .title h2')
-          .html('v0.0.1 프로젝트명')
+  $('.nav_depth_2 .title h2').html('Macrogen guide')
   // .html('페이지 목록 : 완료' + total.toFixed(0) + '%')
-
 </script>
-
 </body>
 </html>

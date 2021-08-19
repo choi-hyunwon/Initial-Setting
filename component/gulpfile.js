@@ -26,35 +26,40 @@ function htmlInclude() {
     .pipe(gulp.dest('dist/html/include'))
 }
 
+// function htmlPage() {
+//   if (process.env.NODE_ENV === 'product') {
+//     gulp.src('src/html/include/head.html')
+//       .pipe(replace('bootstrap.css', 'bootstrap.min.scss'))
+//       .pipe(gulp.dest('src/html/include/'));
+//   } else if (process.env.NODE_ENV === 'develope') {
+//     gulp.src('src/html/include/head.html')
+//       .pipe(replace('bootstrap.min.scss', 'bootstrap.css'))
+//       .pipe(gulp.dest('src/html/include/'));
+//   }
+//
+//   return gulp.src('src/html/**/*.html')
+//     .pipe(html())
+//     .pipe(gulp.dest('dist/html/'))
+// }
+
 function htmlPage() {
-  if (process.env.NODE_ENV === 'product') {
-    gulp.src('src/html/include/head.html')
-      .pipe(replace('bootstrap.css', 'bootstrap.min.css'))
-      .pipe(gulp.dest('src/html/include/'));
-  } else if (process.env.NODE_ENV === 'develope') {
-    gulp.src('src/html/include/head.html')
-      .pipe(replace('bootstrap.min.css', 'bootstrap.css'))
-      .pipe(gulp.dest('src/html/include/'));
-  }
-
-  return gulp.src('src/html/**/*.html')
-    .pipe(html())
-    .pipe(gulp.dest('dist/html/'))
+  return gulp.src('src/html/guide/*.html')
+      .pipe(html())
+      .pipe(gulp.dest('dist/html/guide'))
 }
 
-function replaceIndex() {
-  return gulp.src('dist/index.html')
-    .pipe(replace('src="./pagelist', 'src="../pagelist'))
-    .pipe(gulp.dest('dist/'));
-}
-
+// function replaceIndex() {
+//   return gulp.src('dist/index.html')
+//     .pipe(replace('src="./pagelist', 'src="../pagelist'))
+//     .pipe(gulp.dest('dist/'));
+// }
 
 function copyCss() {
-  gulp.src(['src/css/dist/bootstrap.min.css', 'src/css/dist/bootstrap.min.css.map'])
-    .pipe(gulp.dest('dist/css'));
-  return gulp.src('src/css/dist/fonts/**',)
-    .pipe(gulp.dest('dist/css/fonts'));
+  return gulp.src(['src/scss/**/**.scss','src/scss/**.scss'])
+      .pipe(sass.sync().on('error', sass.logError))
+      .pipe(gulp.dest('dist/css/'))
 }
+
 function copyIndex() {
   return gulp.src('src/index.html')
     .pipe(gulp.dest('dist/'));
@@ -71,37 +76,28 @@ function copyFonts() {
 
 function jsLib() {
   let sourceLib = [
-    'src/js/src/jquery.js',
-    'src/js/src/popper.min.js',
-    'src/js/src/bootstrap.min.js',
-    'src/js/src/prism.js',
-    'src/js/src/_common.js',
-    'src/js/src/jquery.twbsPagination.js',
-    'src/js/src/jquery.mCustomScrollbar.js',
-    'src/js/src/swiper.min.js',
-    'src/js/src/jquery_ui.js',
-    'src/js/src/bootstrap-datepicker.js',
-    'src/js/src/bootstrap-datepicker.ko.min.js'
+    'src/js/lib/jquery.js',
+    'src/js/lib/bootstrap.bundle.min.js',
+    'src/js/lib/swiper.min.js',
   ];
   return gulp.src(sourceLib)
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('dist/js'))
 }
 
-
 function jsCommon() {
-  let sourceUi = ['src/js/ui/*.js'];
+  let sourceUi = ['src/js/common.js'];
   return gulp.src(sourceUi)
     .pipe(concat('common.js'))
     .pipe(gulp.dest('dist/js'))
 }
 
 function watchScss() {
-  gulp.watch('src/scss/**/*.scss', gulp.series(scss));
+  gulp.watch(['src/scss/**/*.scss','src/scss/*.html'], gulp.series(scss));
 }
 
 function watchHtml() {
-  gulp.watch(['src/html/**/*.html'], gulp.series(htmlPage));
+  gulp.watch(['src/html/**/*.html','src/**.html'], gulp.series(htmlPage));
 }
 
 function watchInclude() {
@@ -152,7 +148,7 @@ gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, wa
 
 gulp.task('browser-sync', function() {
   browserSync.init({
-    port:2012,
+    port: 1000,
     server: {
       baseDir: "./",
       index: "dist/index.html"
