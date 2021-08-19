@@ -1,0 +1,33 @@
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.08.19
+|----------------------------------|
+*/
+@import "variables";
+
+.font-ko {
+  font-family: $font-ko;
+
+  &.font-medium {
+    font-family: 'NotoSansKR-Medium';
+    font-weight: 500;
+  }
+
+  &.font-bold {
+    font-family: 'NotoSansKR-Bold';
+    font-weight: 900;
+  }
+}
+.font-en {
+  font-family: $font-en;
+
+  &.font-medium {
+    font-family: 'Proxima Nova Medium';
+    font-weight: 500;
+  }
+
+  &.font-bold {
+    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
+  }
+}

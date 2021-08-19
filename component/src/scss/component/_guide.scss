@@ -1,0 +1,22 @@
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.08.19
+|----------------------------------|
+*/
+.guide {
+  &.typography {
+    .box {
+      padding-top: 150px;
+
+      .title {
+        text-transform: uppercase;
+        margin-bottom: 70px;
+      }
+
+      p {
+        font-size: 80px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

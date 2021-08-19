@@ -12,35 +12,10 @@ const sourcemaps = require('gulp-sourcemaps');
 
 /* scss TASK*/
 function scss() {
-  return gulp.src('src/scss/**/*.scss')
-      .pipe(sourcemaps.init())
-      .pipe(sass().on('error', sass.logError))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest('dist/css'))
+  return gulp.src('src/scss/*.scss')
+      .pipe(sass.sync().on('error', sass.logError))
+      .pipe(gulp.dest('dist/css/'))
 }
-
-function htmlInclude() {
-  let source = 'src/html/include/*.html';
-  return gulp.src(source)
-    .pipe(html())
-    .pipe(gulp.dest('dist/html/include'))
-}
-
-// function htmlPage() {
-//   if (process.env.NODE_ENV === 'product') {
-//     gulp.src('src/html/include/head.html')
-//       .pipe(replace('bootstrap.css', 'bootstrap.min.scss'))
-//       .pipe(gulp.dest('src/html/include/'));
-//   } else if (process.env.NODE_ENV === 'develope') {
-//     gulp.src('src/html/include/head.html')
-//       .pipe(replace('bootstrap.min.scss', 'bootstrap.css'))
-//       .pipe(gulp.dest('src/html/include/'));
-//   }
-//
-//   return gulp.src('src/html/**/*.html')
-//     .pipe(html())
-//     .pipe(gulp.dest('dist/html/'))
-// }
 
 function htmlPage() {
   return gulp.src('src/html/guide/*.html')
@@ -48,18 +23,12 @@ function htmlPage() {
       .pipe(gulp.dest('dist/html/guide'))
 }
 
-// function replaceIndex() {
-//   return gulp.src('dist/index.html')
-//     .pipe(replace('src="./pagelist', 'src="../pagelist'))
-//     .pipe(gulp.dest('dist/'));
-// }
-
 function copyCss() {
-  return gulp.src(['src/scss/**/**.scss','src/scss/**.scss'])
-      .pipe(sass.sync().on('error', sass.logError))
-      .pipe(gulp.dest('dist/css/'))
+  gulp.src(['src/scss/**/*.scss'])
+      .pipe(gulp.dest('dist/css'));
+  return gulp.src('src/scss/fonts/**',)
+      .pipe(gulp.dest('dist/css/fonts'));
 }
-
 function copyIndex() {
   return gulp.src('src/index.html')
     .pipe(gulp.dest('dist/'));
@@ -101,7 +70,7 @@ function watchHtml() {
 }
 
 function watchInclude() {
-  gulp.watch('src/html/include/*.html', gulp.series(htmlInclude, htmlPage));
+  gulp.watch('src/html/include/*.html', gulp.series(htmlPage));
 }
 
 function watchJs() {
@@ -156,7 +125,7 @@ gulp.task('browser-sync', function() {
   });
   gulp.watch('src/scss/**/*.scss', gulp.series(scss)).on('change', browserSync.reload);
   gulp.watch(['src/html/**/*.html'], gulp.series(htmlPage)).on('change', browserSync.reload);
-  gulp.watch('src/html/include/*.html', gulp.series(htmlInclude, htmlPage)).on('change', browserSync.reload);
+  gulp.watch('src/html/include/*.html', gulp.series(htmlPage)).on('change', browserSync.reload);
   gulp.watch('src/js/*/*.js', gulp.series(jsLib, jsCommon)).on('change', browserSync.reload);
   gulp.watch('src/img/**/*', gulp.series(copyImg)).on('change', browserSync.reload);
   gulp.watch('src/fonts/**/**', gulp.series(copyFonts)).on('change', browserSync.reload);
