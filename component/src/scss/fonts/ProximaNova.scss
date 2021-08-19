@@ -2,20 +2,25 @@
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: normal;
-  src: url(../fonts/ProximaNova/proxima-nova-regular.woff2) format('woff2');
-  src: url(../fonts/ProximaNova/proxima-nova-regular.woff) format('woff');
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039 !important;
+  src: url(../fonts/ProximaNova/proxima-nova-regular.woff2) format('woff2'),
+  url(../fonts/ProximaNova/proxima-nova-regular.woff) format('woff');
 }
+
 @font-face {
   font-family: 'Proxima Nova Medium';
   font-style: normal;
   font-weight: 500;
-  src: url(../fonts/ProximaNova/proxima-nova-medium.woff2) format('woff2');
-  src: url(../fonts/ProximaNova/proxima-nova-medium.woff) format('woff');
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039 !important;
+  src: url(../fonts/ProximaNova/proxima-nova-medium.woff2) format('woff2'),
+  url(../fonts/ProximaNova/proxima-nova-medium.woff) format('woff');
 }
+
 @font-face {
   font-family: 'Proxima Nova Bold';
   font-style: normal;
   font-weight: bold;
-  src: url(../fonts/ProximaNova/proxima-nova-bold.woff2) format('woff2');
-  src: url(../fonts/ProximaNova/proxima-nova-bold.woff) format('woff');
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039 !important;
+  src: url(../fonts/ProximaNova/proxima-nova-bold.woff2) format('woff2'),
+  url(../fonts/ProximaNova/proxima-nova-bold.woff) format('woff');
 }

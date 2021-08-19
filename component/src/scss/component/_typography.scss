@@ -9,13 +9,15 @@
   font-family: $font-ko;
 
   &.font-medium {
-    font-family: 'NotoSansKR-Medium';
+    font-family: 'Noto Sans KR';
+    font-style: normal;
     font-weight: 500;
   }
 
   &.font-bold {
-    font-family: 'NotoSansKR-Bold';
-    font-weight: 900;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
   }
 }
 .font-en {
@@ -28,6 +30,6 @@
 
   &.font-bold {
     font-family: 'Proxima Nova Bold';
-    font-weight: 700;
+    font-weight: bold;
   }
 }
