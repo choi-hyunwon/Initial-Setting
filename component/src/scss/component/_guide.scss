@@ -3,15 +3,10 @@
  v.0.1 (주연) 최초 작업 -- 2021.08.19
 |----------------------------------|
 */
-@import "variables";
-@import "typography";
-@import "config";
-
 .guide {
-  @include background-img($width: 200px, $height: 100px, $category: 'common', $img: 'temp.svg');
-  &.typography {
-    margin-top: -100px;
+  padding: 0 50px;
 
+  &.typography {
     .title-lg {
       font-size: 20px;
       font-weight: bold;
@@ -29,8 +24,6 @@
     }
 
     .box {
-      padding-top: 150px;
-
       p {
         font-size: 80px;
         text-transform: uppercase;
@@ -89,6 +82,19 @@
             color: #000000;
           }
         }
+      }
+    }
+  }
+
+  &.grid {
+    padding: 0;
+
+    .col {
+
+      > div {
+        height: 2609px;
+        background: rgba(255, 0, 0, 0.06);
+        border: 1px solid rgba(255, 0, 0, 0.1);
       }
     }
   }
