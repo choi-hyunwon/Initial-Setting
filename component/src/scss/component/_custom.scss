@@ -1,0 +1,16 @@
+/*
+|----------------------------------|
+ 부트스트랩 커스텀
+ v.0.1 (주연) 최초 작업 -- 2021.08.19
+|----------------------------------|
+*/
+$custom-colors: (
+        "point-primary": #2E87EF,
+        "point-secondary": #186BE8,
+        "point-active": #E50050,
+        "point-sub": #01BDB9,
+        "bg-black": #000000,
+        "bg-navy": #002163,
+        "bg-gray": #F7F7F7
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
