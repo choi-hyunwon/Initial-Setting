@@ -3,6 +3,8 @@
  v.0.1 (주연) 최초 작업 -- 2021.08.19
 |----------------------------------|
 */
+@import "variables";
+
 .guide {
   &.typography {
     .box {
@@ -23,6 +25,13 @@
   }
 
   &.color-palette {
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 30px;
+    }
+
     .box {
       margin-bottom: 80px;
       overflow: hidden;
@@ -30,17 +39,22 @@
       .item {
         float: left;
         width: 145px;
-        margin-left: 15px;
+        margin-right: 15px;
         border-radius: 16px;
         overflow: hidden;
+        border: 1px solid $line-d9d9d9;
+
+        &:last-child {
+          margin-right: 0;
+        }
 
         .color {
           width: 100%;
           height: 100px;
+          border-bottom: 1px solid $line-d9d9d9;
         }
 
         .info {
-          border: 1px solid #D9D9D9;
           border-radius: 0 0 16px 16px;
           padding: 14px 25px;
 
