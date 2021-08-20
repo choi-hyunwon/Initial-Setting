@@ -27,6 +27,13 @@ Font Size  + 14px
   letter-spacing: -3px;
 }
 
+@mixin font-h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: -3px;
+}
+
 .font-h2 {
   font-size: 40px;
   font-weight: 700;

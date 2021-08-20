@@ -4,8 +4,11 @@
 |----------------------------------|
 */
 @import "variables";
+@import "typography";
+@import "config";
 
 .guide {
+  @include background-img($width: 200px, $height: 100px, $category: 'common', $img: 'temp.svg');
   &.typography {
     margin-top: -100px;
 

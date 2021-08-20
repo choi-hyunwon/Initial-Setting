@@ -5,7 +5,7 @@
 @import "node_modules/bootstrap/scss/mixins";
 @import "node_modules/bootstrap/scss/utilities";
 
-@import "component/custom";
+@import "component/config";
 
 @import "node_modules/bootstrap/scss/root";
 @import "node_modules/bootstrap/scss/reboot";
@@ -51,7 +51,7 @@
 @import "lib/swiper.min";
 
 // component
-@import "component/custom";
+@import "component/config";
 
 @import "component/reboot";
 @import "component/typography";
