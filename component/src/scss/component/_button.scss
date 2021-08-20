@@ -1,0 +1,214 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  letter-spacing: -0.025em;
+  font-weight: $font-weight-light;
+  height: 36px;
+  line-height: 23px;
+  border: 1px solid transparent;
+  background-color: #fff;
+
+  .name {
+    line-height: 22px;
+    display: inline-block;
+  }
+
+
+  &.btn:focus, .btn.focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.btn-primary {
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: #fff;
+
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled).active {
+      box-shadow: none;
+      outline: none;
+      background-color: $primary;
+      border: 1px solid $primary;
+    }
+  }
+
+  &.btn-default {
+    border: solid 1px #e0e0e0;
+    background-color: #ffffff;
+  }
+
+  &.btn-gray {
+    color: #323232;
+    background: #fcfcfc;
+    border-color: #e0e0e0;
+  }
+
+  &.btn-text {
+    display: inline-block;
+    padding: 0;
+    line-height: 20px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  &.btn-secondary {
+    color: #ffffff;
+    background: $secondary;
+    border-color: $secondary;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled).active {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  /* 버튼 사이즈 */
+  &.btn-sm {
+    height: 28px;
+    font-size: 13px;
+    padding: 0 8px;
+
+    .name {
+      line-height: 26px;
+    }
+  }
+
+  &.btn-lg {
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 20px;
+    line-height: 28px;
+
+    .name {
+      line-height: 26px;
+    }
+  }
+
+  &.btn-xl {
+    height: 48px;
+    font-size: 16px;
+    padding: 5px 20px;
+    line-height: 32px;
+
+    .name {
+      line-height: 32px;
+    }
+  }
+
+
+  //티칭보드용 버튼
+  &-orange {
+    background: $orange;
+    color: #fff;
+    font-weight: $font-weight-normal;
+    letter-spacing: 0;
+    border-color: $orange;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  /*묶인 버튼의 경우 */
+  .btn-group {
+    .btn {
+      display: inline-block;
+      width: auto;
+      margin-right: 1px;
+      border-right: 0px;
+      //pointer-events:none;
+      &:first-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      &:last-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin-right: 0px;
+        border-right: solid 1px #e0e0e0;
+      }
+    }
+  }
+
+
+  /*아이콘형 버튼*/
+  &.ico-clip {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    min-width: auto;
+    background: url(../img/common/ico-clip.png) no-repeat center;
+    vertical-align: middle;
+    text-indent: -9000px;
+  }
+
+  &.btn_search {
+    width: 34px;
+    height: 34px;
+    background: url(../img/common/btn-search.png) no-repeat center;
+    text-indent: -9000px;
+  }
+
+  &.btn_allMenu {
+    width: 34px;
+    height: 34px;
+    background: url(../img/common/btn-menu.png) no-repeat center;
+    text-indent: -9000px;
+  }
+
+  &.btn-setting-aside {
+    width: 30px;
+    height: 30px;
+    background: url(../img/common/ico-setting-aside.png) no-repeat center;
+    border: none;
+  }
+
+
+  /* 교과학습 단원별보기 공통자료 버튼 +모양 */
+  .btn-icon-plus {
+    width: 11px;
+    height: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 1px;
+    position: relative;
+    margin-left: 3px;
+
+    &:after {
+      width: 11px;
+      height: 2px;
+      background: white;
+      content: "";
+      display: block;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    &:before {
+      width: 12px;
+      height: 2px;
+      background: white;
+      content: "";
+      display: block;
+      transform: translate(-50%, -50%) rotate(90deg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+}

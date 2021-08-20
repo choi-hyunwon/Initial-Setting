@@ -10,6 +10,12 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
+      url: 'button',
+      category: 'guide',
+      page: 'button'
+    },
+    {
+      stateClass: 'complete',
       url: 'typography_01',
       category: 'guide',
       page: 'TYPOGRAPHY'
