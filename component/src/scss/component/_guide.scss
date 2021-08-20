@@ -7,15 +7,26 @@
 
 .guide {
   &.typography {
+    margin-top: -100px;
+
+    .title-lg {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    > div:nth-child(2n+1) {
+      margin-bottom: 10px;
+    }
+
     .box {
       padding-top: 150px;
-
-      .title {
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 70px;
-      }
 
       p {
         font-size: 80px;

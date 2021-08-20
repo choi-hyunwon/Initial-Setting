@@ -16,6 +16,18 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
+      url: 'typography_02',
+      category: 'guide',
+      page: 'TYPOGRAPHY(한글)'
+    },
+    {
+      stateClass: 'complete',
+      url: 'typography_03',
+      category: 'guide',
+      page: 'TYPOGRAPHY(영어)'
+    },
+    {
+      stateClass: 'complete',
       url: 'layout',
       category: 'guide',
       page: 'layout'
