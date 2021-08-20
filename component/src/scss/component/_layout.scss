@@ -11,6 +11,7 @@
     width: 100%;
     height: 124px;
     position: fixed;
+    background-color: #ffffff;
      &:before{
       content: '';
       display: inline-block;
@@ -22,19 +23,19 @@
      }
     .inner{
       max-width: 1920px;
-      width: 1244px;
+      min-width: 1366px;
       margin: 0 auto;
-      padding: 30px 50px;
+      padding: 30px 0;
       height: 123px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #ffffff;
-
+      position: relative;
       .section_gnb{
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
         .logo{
           display: inline-block;
-          width: 287px;
+          width: 283px;
           img{
             width: 171px;
             height: 64px;
@@ -46,7 +47,7 @@
             li{
               text-transform: uppercase;
               display: inline-block;
-              margin-right: 50px;
+              margin-right: 46px;
               font-size: 20px;
               &:last-of-type{
                 margin-right: 0;
@@ -59,17 +60,24 @@
           }
         }
       }
-
       .section_btn{
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
         .sns{
           li{
             display: inline-block;
-            margin-right: 8px;
+            margin-right: 4px;
             &:last-of-type{
               margin-right: 0;
             }
             a{
               display: block;
+              img{
+                width: 30px;
+                height: 30px;
+              }
             }
           }
         }
@@ -79,28 +87,41 @@
   }
 
   .container{
-    width: 1244px;
+    min-width: 1366px;
     margin: 0 auto;
     padding: 124px 0 0;
+    .section{
+      border: 1px solid red;
+      height: 500px;
+    }
   }
   .footer{
     border-bottom: 1px solid red;
 
     width: 100%;
     min-width: 1244px;
-    padding: 100px 0;
     height: 494px;
-    background-color: #fff;
-    border-top: 12px solid #f5f5f5;
+    background-color: #ffffff;
+    position: relative;
+    &:before{
+      content: '';
+      display: inline-block;
+      border-top: 12px solid #f5f5f5;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
     .inner{
       width: 1244px;
       height: 100%;
+      padding: 100px 0;
       margin: 0 auto;
-      border: 1px solid green;
       .section_copy{
+        border-right: 1px solid green;
+
         width: 281px;
         display: inline-block;
-        border: 1px solid red;
         font-family: "Proxima Nova Bold";
         .text{
           text-transform: uppercase;
@@ -124,11 +145,28 @@
         .copyright{
           margin: 38px 0 60px;
         }
+        .sns{
+          li{
+            display: inline-block;
+            margin-right: 26px;
+            &:last-of-type{
+              margin-right: 0;
+            }
+            a{
+              display: block;
+              img{
 
+              }
+            }
+          }
+        }
 
       }
       .section_information{
-        border: 1px solid red;
+        border: 1px solid green;
+
+        width: calc(100% - 290px);
+
         display: inline-block;
       }
     }
