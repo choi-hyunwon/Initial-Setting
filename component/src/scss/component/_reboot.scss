@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.19
+ v.0.2 (선미) ol,dl,ul,li margin,paiing 0 추가 -- 2021.08.20
 |----------------------------------|
 */
 @import "variables";
@@ -29,6 +30,27 @@ html {
 body {
   margin: 0;
   font-family: $font-family-base;
+}
+
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /**
