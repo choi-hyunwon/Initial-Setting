@@ -1,0 +1,140 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -999em;
+  overflow: hidden;
+}
+/*header*/
+.icon-facebook-circle {
+  background-image : url("../img/common/ico-facebook-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+.icon-youtube-circle {
+  background-image : url("../img/common/ico-youtube-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+.icon-blog-circle {
+  background-image : url("../img/common/ico-blog-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+.icon-linkedin-circle {
+  background-image : url("../img/common/ico-linkedin-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+
+/*footer*/
+.icon-facebook-square {
+  background-image : url("../img/common/ico-facebook-square.svg");
+  width: 18px;
+  height: 18px;
+}
+.icon-youtube-square {
+  background-image : url("../img/common/ico-youtube-square.svg");
+  width: 23px;
+  height: 16px;
+}
+.icon-blog-square {
+  background-image : url("../img/common/ico-blog-square.svg");
+  width: 22px;
+  height: 18px;
+}
+.icon-linkedin-square {
+  background-image : url("../img/common/ico-linkedin-square.svg");
+  width: 18px;
+  height: 18px;
+}
+
+
+/*화살표*/
+.icon-arrow-right-long {
+  background-image : url("../img/common/ico-arrow-right-long.svg");
+  width: 65px;
+  height: 9.9px;
+}
+.icon-arrow-left-long {
+  background-image : url("../img/common/ico-arrow-left-long.svg");
+  width: 65px;
+  height: 9.9px;
+}
+.icon-arrow-right-short {
+  background-image : url("../img/common/ico-arrow-right-short.svg");
+  width: 14px;
+  height: 12px;
+}
+.icon-arrow-left-lg {
+  background-image : url("../img/common/ico-arrow-left-lg.svg");
+  width: 16.97px;
+  height: 33.94px;
+  &.disabled{
+    background-image : url("../img/common/ico-arrow-left-lg-disabled.svg");
+  }
+}
+.icon-arrow-right-lg {
+  background-image : url("../img/common/ico-arrow-right-lg.svg");
+  width: 16.97px;
+  height: 33.94px;
+  &.disabled{
+    background-image : url("../img/common/ico-arrow-right-lg-disabled.svg");
+  }
+}
+.icon-arrow-left-md {
+  background-image : url("../img/common/ico-arrow-left-md.svg");
+  width: 7.78px;
+  height: 15.56px;
+}
+.icon-arrow-right-md {
+  background-image : url("../img/common/ico-arrow-right-md.svg");
+  width: 7.78px;
+  height: 15.56px;
+}
+.icon-arrow-left-md-white {
+  background-image : url("../img/common/ico-arrow-left-md-white.svg");
+  width: 7.78px;
+  height: 15.56px;
+}
+.icon-arrow-right-md-white {
+  background-image : url("../img/common/ico-arrow-right-md-white.svg");
+  width: 7.78px;
+  height: 15.56px;
+}
+.icon-arrow-left-sm {
+  background-image : url("../img/common/ico-arrow-left-sm.svg");
+  width: 6.57px;
+  height: 13.14px;
+}
+.icon-arrow-right-sm {
+  background-image : url("../img/common/ico-arrow-right-sm.svg");
+  width: 6.57px;
+  height: 13.14px;
+}
+
+
+/*icon - guide*/
+.icon-basket {
+  background-image : url("../img/common/ico-basket.svg");
+  width: 24px;
+  height: 24px;
+}
+.icon-earth-black {
+  background-image : url("../img/common/ico-earth-black.svg");
+  width: 17px;
+  height: 17px;
+}
+.icon-earth-white {
+  background-image : url("../img/common/ico-earth-white.svg");
+  width: 17px;
+  height: 17px;
+}
+.icon-menu-white {
+  background-image : url("../img/common/ico-menu-white.svg");
+  width: 14px;
+  height: 12px;
+}
+
+

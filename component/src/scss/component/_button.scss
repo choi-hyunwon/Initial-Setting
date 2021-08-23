@@ -1,214 +1,121 @@
 .btn {
   display: inline-block;
   box-sizing: border-box;
-  padding: 5px 15px;
-  border-radius: 6px;
-  font-size: 14px;
-  color: #333;
+  padding: 25px 20px;
+  min-width: 280px;
+  min-height: 92px;
+  font-size: 22px;
   text-align: center;
-  letter-spacing: -0.025em;
-  font-weight: $font-weight-light;
-  height: 36px;
-  line-height: 23px;
-  border: 1px solid transparent;
-  background-color: #fff;
-
-  .name {
-    line-height: 22px;
-    display: inline-block;
+  letter-spacing: -0.75px;
+  font-weight: bold;
+  border-radius: 0;
+  vertical-align: middle;
+  border:1px solid transparent;
+  color:#222;
+  >span{
+    vertical-align: middle;
+  }
+  .icon{
+    +span{
+      margin-left: 14px
+    }
   }
 
-
-  &.btn:focus, .btn.focus {
-    outline: none;
+  &:not(:disabled):not(.disabled):active:focus,
+  &:not(:disabled):not(.disabled).active,
+  &.btn:focus, .btn.focus{
     box-shadow: none;
+    outline: none;
+  }
+  /*색상별*/
+  &.btn-primary{
+    border: 1px solid  $point-primary;;
+    background-color: $point-primary;;
+    color:  $gray-ffffff;
+  }
+  &.btn-black{
+    border: 1px solid #222;
+    background-color: #222;
+    color:  $gray-ffffff
+  }
+  &.btn-white{
+    border: 1px solid $line-000000;
+    background-color: $bg-white;
+    color: #222;
   }
 
-  &.btn-primary {
-    background-color: $primary;
-    border: 1px solid $primary;
-    color: #fff;
-
-    &:not(:disabled):not(.disabled):active:focus,
-    &:not(:disabled):not(.disabled).active {
-      box-shadow: none;
-      outline: none;
-      background-color: $primary;
-      border: 1px solid $primary;
-    }
-  }
-
-  &.btn-default {
-    border: solid 1px #e0e0e0;
-    background-color: #ffffff;
-  }
-
-  &.btn-gray {
-    color: #323232;
-    background: #fcfcfc;
-    border-color: #e0e0e0;
-  }
-
-  &.btn-text {
-    display: inline-block;
-    padding: 0;
-    line-height: 20px;
-    font-size: 14px;
-    vertical-align: middle;
-  }
-
-  &.btn-secondary {
-    color: #ffffff;
-    background: $secondary;
-    border-color: $secondary;
-
-    &:hover {
-      color: #fff;
-    }
-
-    &:not(:disabled):not(.disabled):active:focus,
-    &:not(:disabled):not(.disabled).active {
-      box-shadow: none;
-      outline: none;
-    }
-  }
-
-  /* 버튼 사이즈 */
+  /*크기별*/
   &.btn-sm {
-    height: 28px;
-    font-size: 13px;
-    padding: 0 8px;
-
-    .name {
-      line-height: 26px;
+    font-size: 14px;
+    padding: 9px 20px;
+    min-width: 98px;
+    min-height: 45px;
+    &.btn-round{
+      border-radius: 21.5px;
+    }
+    &.btn-white{
+      border: 1px solid $line-e9e9e9;
+    }
+    .icon{
+      +span{
+        margin-left: 7px
+      }
     }
   }
 
-  &.btn-lg {
-    height: 40px;
-    font-size: 15px;
-    padding: 5px 20px;
-    line-height: 28px;
-
-    .name {
-      line-height: 26px;
-    }
-  }
-
-  &.btn-xl {
-    height: 48px;
+  /*형태별*/
+  &.btn-text{
     font-size: 16px;
-    padding: 5px 20px;
-    line-height: 32px;
+    min-width: unset;
+    min-height: unset;
+    padding: 0;
 
-    .name {
-      line-height: 32px;
-    }
-  }
-
-
-  //티칭보드용 버튼
-  &-orange {
-    background: $orange;
-    color: #fff;
-    font-weight: $font-weight-normal;
-    letter-spacing: 0;
-    border-color: $orange;
-
-    &:hover {
-      color: #fff;
-    }
-  }
-
-  /*묶인 버튼의 경우 */
-  .btn-group {
-    .btn {
-      display: inline-block;
-      width: auto;
-      margin-right: 1px;
-      border-right: 0px;
-      //pointer-events:none;
-      &:first-child {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+    .icon{
+      +span{
+        margin-left: 12px
       }
-
-      &:last-child {
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        margin-right: 0px;
-        border-right: solid 1px #e0e0e0;
+    }
+    span{
+      +.icon{
+        margin-left: 12px;
       }
     }
   }
 
-
-  /*아이콘형 버튼*/
-  &.ico-clip {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    min-width: auto;
-    background: url(../img/common/ico-clip.png) no-repeat center;
-    vertical-align: middle;
-    text-indent: -9000px;
-  }
-
-  &.btn_search {
-    width: 34px;
-    height: 34px;
-    background: url(../img/common/btn-search.png) no-repeat center;
-    text-indent: -9000px;
-  }
-
-  &.btn_allMenu {
-    width: 34px;
-    height: 34px;
-    background: url(../img/common/btn-menu.png) no-repeat center;
-    text-indent: -9000px;
-  }
-
-  &.btn-setting-aside {
-    width: 30px;
-    height: 30px;
-    background: url(../img/common/ico-setting-aside.png) no-repeat center;
-    border: none;
-  }
-
-
-  /* 교과학습 단원별보기 공통자료 버튼 +모양 */
-  .btn-icon-plus {
-    width: 11px;
-    height: 12px;
-    vertical-align: middle;
-    display: inline-block;
-    padding-top: 1px;
+  &.btn-circle{
+    border-radius: 50%;
+    min-width: unset;
+    min-height: unset;
+    padding: 0;
     position: relative;
-    margin-left: 3px;
-
-    &:after {
-      width: 11px;
-      height: 2px;
-      background: white;
-      content: "";
-      display: block;
-      transform: translate(-50%, -50%);
+    .icon{
       position: absolute;
-      top: 50%;
       left: 50%;
+      top:50%;
+      transform: translate(-50% , -50%);
+    }
+    &.btn-white{
+      border: 1px solid $line-e9e9e9;
+      background-color: $bg-white;
+    }
+    &.btn-black{
+      border: 1px solid $line-000000;
+      background-color: $bg-black;
     }
 
-    &:before {
-      width: 12px;
-      height: 2px;
-      background: white;
-      content: "";
-      display: block;
-      transform: translate(-50%, -50%) rotate(90deg);
-      position: absolute;
-      top: 50%;
-      left: 50%;
+    &.btn-lg{
+      width: 70px;
+      height: 70px;
+    }
+    &.btn-md{
+      height: 45px;
+      width: 45px;
+    }
+    &.btn-sm{
+      height: 38px;
+      width: 38px;
     }
   }
+
+
 }
