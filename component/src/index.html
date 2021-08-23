@@ -117,6 +117,7 @@
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
           .append(template(data.styleGuide))
+          .append(template(data.template))
 </script>
 <script>
   $('.link').on('click', function () {

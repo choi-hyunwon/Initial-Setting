@@ -3,6 +3,7 @@
 @@include('../../html/include/head.html')
 <body>
 <div class="wrap">
+    @@include('../../html/include/header.html')
     <div class="container">
         <div class="guide list">
             <div class="title">List/Current</div>
@@ -73,8 +74,6 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="title">List/Thumbnail</div>
             <div class="list-wrap mb-5">
                 <div class="list-item">
                     <ul class="clearfix">
@@ -98,6 +97,17 @@
                             <a href="#">
                                 <span class="img"><img src="../../img/@temp/tumb-03.png" alt="공지사항"></span>
                                 <span class="category bg-point-primary">MEDIA</span>
+                                <span class="tit">마크로젠-꼬리-엠제이 바이오젠, 국내 최대 규모 반려견 장내미생물 마크로젠-꼬리-엠제이바이오젠, 국내 최대 규모 반려견 장내미생물</span>
+                                <span class="date">2021.06.14</span>
+                            </a>
+                        </li>
+                        <li class="item with-category"> <!-- 카테고리 포함 썸네일 높이고정형 동영상 -->
+                            <span class="img">
+                                <img src="../../img/@temp/tumb-04.png" alt="공지사항">
+                                <a href="#" class="btn-play"><span class="sr-only">재생 버튼</span></a>
+                            </span>
+                            <a href="#">
+                                <span class="category bg-point-sub">MOVIE</span>
                                 <span class="tit">마크로젠-꼬리-엠제이 바이오젠, 국내 최대 규모 반려견 장내미생물 마크로젠-꼬리-엠제이바이오젠, 국내 최대 규모 반려견 장내미생물</span>
                                 <span class="date">2021.06.14</span>
                             </a>
@@ -184,6 +194,7 @@
             </div>
         </div>
     </div>
+    @@include('../../html/include/footer.html')
 </div>
 </body>
 </html>

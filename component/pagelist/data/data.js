@@ -46,15 +46,20 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
-      url: 'ui_02',
-      category: 'guide',
-      page: 'ui list'
-    },
-    {
-      stateClass: 'complete',
       url: 'layout',
       category: 'guide',
       page: 'layout'
+    },
+  ]
+}
+data.template = {
+  title: 'Style Guide',
+  list: [
+    {
+      stateClass: 'complete',
+      url: 'template_01',
+      category: 'guide',
+      page: 'template'
     },
   ]
 }
