@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.19
+ v.0.1 (주연) pagination 변수 / bg-light-blue 추가 -- 2021.08.23
 |----------------------------------|
 */
 
@@ -39,8 +40,46 @@ $bg-black : #000000;
 $bg-navy : #002163;
 $bg-gray : #F7F7F7;
 $bg-white : #FFFFFF;
+$bg-light-blue : #F5F8FB;
 
-$body-color: $gray-454545;
+/* pagination */
+$pagination-padding-y:              0;
+$pagination-padding-x:              0.8125rem;
+$pagination-padding-y-sm:           0;
+$pagination-padding-x-sm:           0;
+$pagination-padding-y-lg:           0;
+$pagination-padding-x-lg:           0;
+
+$pagination-color:                  $gray-d9d9d9;
+$pagination-bg:                     transparent;
+$pagination-border-width:           0;
+$pagination-border-radius:          0;
+$pagination-margin-start:           0;
+$pagination-border-color:           transparent;
+
+$pagination-focus-color:            $gray-d9d9d9;
+$pagination-focus-bg:               transparent;
+$pagination-focus-box-shadow:       none;
+$pagination-focus-outline:          0;
+
+$pagination-hover-color:            $gray-d9d9d9;
+$pagination-hover-bg:               transparent;
+$pagination-hover-border-color:     transparent;
+
+$pagination-active-color:           $gray-000000;
+$pagination-active-bg:              transparent;
+$pagination-active-border-color:    transparent;
+
+$pagination-disabled-color:         $gray-d9d9d9;
+$pagination-disabled-bg:            transparent;
+$pagination-disabled-border-color:  transparent;
+
+$pagination-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$pagination-border-radius-sm:       0;
+$pagination-border-radius-lg:       0;
+
+$body-color: $gray-000000;
 
 $grid-gutter-width: 2.5rem !default;
 

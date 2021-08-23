@@ -40,6 +40,12 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
+      url: 'ui',
+      category: 'guide',
+      page: 'ui'
+    },
+    {
+      stateClass: 'complete',
       url: 'layout',
       category: 'guide',
       page: 'layout'

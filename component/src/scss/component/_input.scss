@@ -1,0 +1,80 @@
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.08.23
+|----------------------------------|
+*/
+/* select */
+.form-select {
+  line-height: 53px;
+  padding: 0 21px 0 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid $line-000000;
+  border-radius: 0;
+  font-size: 18px;
+  letter-spacing: -0.75px;
+  color: $line-000000;
+  @include background-img ($width: 8px, $height: 6px, $category: 'common', $img: 'ico-select-box.svg');
+  width: 54px;
+  height: auto;
+  background-position: right 8px center;
+  background-size: 8px 6px;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: $gray-000000;
+  }
+}
+
+/* search*/
+.search-wrap {
+  .form-select {
+    display: inline-block;
+    width: 128px;
+    margin-right: 6px;
+  }
+  .input-search {
+    display: inline-block;
+    width: 388px;
+  }
+}
+.input-search {
+  position: relative;
+
+  .form-control {
+    height: 54px;
+    line-height: 53px;
+    padding: 0 42px 0 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid $line-000000;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: -0.75px;
+    color: $line-000000;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: $gray-d9d9d9;
+    }
+  }
+  .btn-search {
+    position: absolute;
+    @include background-img ($width: 22px, $height: 22px, $category: 'common', $img: 'ico-search.svg');
+    z-index: 2;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background-color: transparent;
+    margin-left: 0;
+    padding: 0;
+  }
+}

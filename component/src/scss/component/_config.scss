@@ -37,7 +37,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 @mixin background-img ($width: 100px, $height: 100px, $category: 'common', $img: 'temp.svg'){
-  $url : "../../img/";
+  $url : "../../dist/img/";
   $slash : "/";
   width: $width;
   height: $height;

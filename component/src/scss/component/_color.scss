@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.20
+ v.0.1 (주연) bg-gradation / bg-light-blue 추가 -- 2021.08.23
 |----------------------------------|
 */
 @import "variables";
@@ -13,6 +14,8 @@
 .bg-navy { background-color: $bg-navy;}
 .bg-gray { background-color: $bg-gray;}
 .bg-white { background-color: $bg-white;}
+.bg-light-blue { background-color: $bg-light-blue;}
+.bg-gradation { background: linear-gradient(106.65deg, #00ADA9 9.33%, #377EF9 93.88%);}
 
 .color-point-primary { color: $point-primary;}
 .color-point-secondary { color: $point-secondary;}

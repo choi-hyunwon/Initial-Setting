@@ -1,7 +1,8 @@
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.19
- v.0.2 (선미) ol,dl,ul,li margin,paiing 0 추가 -- 2021.08.20
+ v.0.2 (선미) ol,dl,ul,li margin, padding 0 추가 -- 2021.08.20
+ v.0.3 (주연) sr-only 추가 / body bg color 추가 -- 2021.08.23
 |----------------------------------|
 */
 @import "variables";
@@ -30,6 +31,7 @@ html {
 body {
   margin: 0;
   font-family: $font-family-base;
+  background-color: $bg-white;
 }
 
 ol,
@@ -379,4 +381,15 @@ template {
 
 p {
   margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0,0,0,0);
 }

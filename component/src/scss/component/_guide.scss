@@ -82,6 +82,10 @@
             color: #000000;
           }
         }
+
+        &.item-lg {
+          width: 305px;
+        }
       }
     }
   }
@@ -96,6 +100,16 @@
         background: rgba(255, 0, 0, 0.06);
         border: 1px solid rgba(255, 0, 0, 0.1);
       }
+    }
+  }
+
+  &.input {
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
     }
   }
 }

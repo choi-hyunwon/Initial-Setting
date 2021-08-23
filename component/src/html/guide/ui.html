@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/head.html')
+<body>
+<div class="wrap">
+    <div class="container">
+        <div class="guide input">
+            <div class="title">Search</div>
+            <div class="search-wrap mb-5">
+                <select class="form-select" title="카테고리">
+                    <option selected>제목</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <div class="input-search">
+                    <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요"
+                           aria-describedby="search">
+                    <button class="btn-search" type="button" id="search"><span class="sr-only">검색</span></button>
+                </div>
+            </div>
+            <div class="search-wrap mb-5">
+                <div class="input-search">
+                    <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요" aria-describedby="search2">
+                    <button class="btn-search" type="button" id="search2"><span class="sr-only">검색</span></button>
+                </div>
+            </div>
+            <div class="title">Paging</div>
+            <div class="pagination-wrap mb-3">
+                <ul class="navigation">
+                    <li class="page-item">
+                        <a class="page-link first" href="#">
+                            <span class="sr-only">맨 앞</span>
+                        </a>
+                    </li>
+                    <li class="page-item prev">
+                        <a class="page-link" href="#">
+                            <span class="sr-only">이전</span>
+                        </a>
+                    </li>
+                    <li class="page-item next">
+                        <a class="page-link" href="#">
+                            <span class="sr-only">다음</span>
+                        </a>
+                    </li>
+                    <li class="page-item last">
+                        <a class="page-link" href="#">
+                            <span class="sr-only">맨 뒤</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="pagination">
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                </ul>
+            </div>
+            <div class="pagination-wrap mb-5">
+                <ul class="navigation">
+                    <li class="page-item">
+                        <a class="page-link first" href="#">
+                            <span class="sr-only">맨 앞</span>
+                        </a>
+                    </li>
+                    <li class="page-item prev">
+                        <a class="page-link" href="#">
+                            <span class="sr-only">이전</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="title">List/Current</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
