@@ -94,7 +94,6 @@
     padding: 0;
 
     .col {
-
       > div {
         height: 2609px;
         background: rgba(255, 0, 0, 0.06);
@@ -104,6 +103,18 @@
   }
 
   &.input {
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+  }
+
+  &.list {
+    padding: 0;
+
     .title {
       font-weight: bold;
       font-size: 20px;
