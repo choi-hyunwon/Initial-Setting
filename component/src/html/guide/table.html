@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/head.html')
+<body>
+<div class="wrap">
+    @@include('../../html/include/header.html')
+     <div class="container">
+         <div class="section" style="margin: 50px 0">
+             <table class="table text-align-center flat-row">
+                 <colgroup>
+                     <col style="width:60px;">
+                     <col style="">
+                     <col style="width:90px;">
+                 </colgroup>
+                 <thead>
+                 <tr>
+                     <th>title</th>
+                     <th>title</th>
+                     <th>title</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+                     <td>내용</td>
+                     <td>내용</td>
+                     <td>내용</td>
+                 </tr>
+                 <tr>
+                     <td>내용</td>
+                     <td>내용</td>
+                     <td>내용</td>
+                 </tr>
+                 </tbody>
+             </table>
+
+
+
+         </div>
+     </div>
+    @@include('../../html/include/footer.html')
+</div>
+</body>
+</html>
+
+<style>
+    .container .box{
+        border:1px solid #d9d9d9;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .container .box:last-child{margin-bottom: 0}
+    .container .box div {margin-bottom: 20px}
+    .container .box div:last-child{margin-bottom: 0}
+    .container .box p {margin-bottom: 20px}
+    .container .text{font-size: 20px; font-weight: bold}
+    .container .box .btn-totop{margin: 0 30px}
+</style>
