@@ -46,9 +46,9 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
-      url: 'layout',
+      url: 'sub-header',
       category: 'guide',
-      page: 'layout'
+      page: 'sub-header'
     },
   ]
 }

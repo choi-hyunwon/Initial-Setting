@@ -4,7 +4,7 @@
 <body>
 <div class="wrap">
     @@include('../../html/include/header.html')
-     <div class="container" style="min-height: 500px;padding-top: 200px">
+     <div class="container">
          <div class="box">
              <p class="font-h6">기본 버튼 (Default) <span class="text">min-width : 280px / min-hight : 92px</span></p>
              <div>
@@ -64,9 +64,10 @@
     .container .box{
         border:1px solid #d9d9d9;
         padding: 30px;
-        margin-bottom: 20px;
         border-radius: 10px;
+        margin-bottom: 30px;
     }
+    .container .box:last-child{margin-bottom: 0}
     .container .box div {margin-bottom: 20px}
     .container .box div:last-child{margin-bottom: 0}
     .container .box p {margin-bottom: 20px}
