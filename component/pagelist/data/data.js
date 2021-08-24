@@ -46,9 +46,15 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
-      url: 'ui_01',
+      url: 'ui',
       category: 'guide',
       page: 'ui search/paging'
+    },
+    {
+      stateClass: 'complete',
+      url: 'tab',
+      category: 'guide',
+      page: 'tab'
     },
     {
       stateClass: 'complete',
@@ -72,6 +78,30 @@ data.newsroom = {
       url: 'newsroom_02',
       category: 'guide',
       page: '뉴스 조회'
+    },
+    {
+      stateClass: 'complete',
+      url: 'newsroom_03',
+      category: 'guide',
+      page: '미디어라이브 목록'
+    },
+    {
+      stateClass: 'complete',
+      url: 'newsroom_04',
+      category: 'guide',
+      page: '미디어라이브 조회'
+    },
+    {
+      stateClass: 'complete',
+      url: 'newsroom_05',
+      category: 'guide',
+      page: '공지사항 목록'
+    },
+    {
+      stateClass: 'complete',
+      url: 'newsroom_06',
+      category: 'guide',
+      page: '공지사항 조회'
     },
   ],
 }

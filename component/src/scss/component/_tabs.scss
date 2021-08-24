@@ -67,3 +67,17 @@
     width: 388px;
   }
 }
+
+.tab-slide-box {
+  li {
+    float: left;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+    }
+  }
+}

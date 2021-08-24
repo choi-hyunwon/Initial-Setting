@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/head.html')
+<body>
+<div class="wrap">
+    @@include('../../html/include/header.html')
+    <div class="container">
+        <div class="guide">
+            <div class="mb-5">
+                <p class="font-h7 mb-5">탭 type 1</p>
+                <nav class="tab-box">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all"
+                                type="button" role="tab" aria-controls="nav-all" aria-selected="true">전체
+                        </button>
+                        <button class="nav-link" id="nav-media-tab" data-bs-toggle="tab" data-bs-target="#nav-media"
+                                type="button" role="tab" aria-controls="nav-media" aria-selected="false">미디어
+                        </button>
+                        <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video"
+                                type="button" role="tab" aria-controls="nav-video" aria-selected="false">영상
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <p class="font-h7 mb-5">탭 type 2</p>
+                <div class="tab-slide-box"> <!-- todo! 이주연 - 이전 매뉴 하나씩 이동 -->
+                    <ul class="clearfix">
+                        <li><a href="#">Whole Genome Sequencing</a></li>
+                        <li><a href="#">Exome Sequencing</a></li>
+                        <li><a href="#">Targeted Sequencing</a></li>
+                        <li><a href="#">Transcriptome Sequencing</a></li>
+                        <li><a href="#">Metagenome Sequencing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('../../html/include/footer.html')
+</div>
+</body>
+</html>
+
+<style>
+    .container .box{
+        border:1px solid #d3d3d3;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .container .box .card{
+        display: inline-block;
+        padding: 10px 15px;
+        width: 24.5%;
+        height: 60px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    .container .box .card.black{
+       background: #333;
+       color:#fff;
+    }
+    .container .box .card:last-child{margin-bottom: 0}
+    .container .box .card span{
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .container .box p {margin-bottom: 20px}
+</style>
