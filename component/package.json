@@ -58,7 +58,8 @@
     "browser-sync": "^2.26.13",
     "install": "^0.13.0",
     "node-sass": "^6.0.1",
-    "npm": "^6.14.11"
+    "npm": "^6.14.11",
+    "postcss-preset-env": "^6.7.0"
   },
   "devDependencies": {
     "del": "^5.1.0",

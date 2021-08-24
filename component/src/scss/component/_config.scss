@@ -1,0 +1,46 @@
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.08.20
+|----------------------------------|
+*/
+$custom-colors: (
+        "point-primary": #2E87EF,
+        "point-secondary": #186BE8,
+        "point-active": #E50050,
+        "point-sub": #01BDB9,
+        "bg-black": #000000,
+        "bg-navy": #002163,
+        "bg-gray": #F7F7F7
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@mixin ellipsis($line: 1) {
+  overflow: hidden;
+
+  @if $line==1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @else {
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin img-100 {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin background-img ($width: 100px, $height: 100px, $category: 'common', $img: 'temp.svg'){
+  $url : "../../dist/img/";
+  $slash : "/";
+  width: $width;
+  height: $height;
+  background-image: url($url + $category + $slash + $img);
+  background-size: cover;
+}

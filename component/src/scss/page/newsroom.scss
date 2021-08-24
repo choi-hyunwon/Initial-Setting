@@ -1,0 +1,14 @@
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.08.24
+|----------------------------------|
+*/
+.newsroom {
+  .tab-content {
+    .thumbnail {
+      &.thumbnail-with-category {
+        padding-bottom: 8px;
+      }
+    }
+  }
+}

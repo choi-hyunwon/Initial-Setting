@@ -12,3 +12,141 @@
 .font-bold {
   font-weight: 700;
 }
+
+.font-h1 {
+  font-size: 64px;
+  line-height: 93px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  margin-bottom: 120px;
+}
+
+.font-h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: -2px;
+}
+
+.font-h3 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -3px;
+}
+
+.font-h4 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -2px;
+}
+
+.font-h5 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -1px;
+}
+
+.font-h6 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: -1px;
+}
+
+.font-h7 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.75px;
+}
+
+.font-h8 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+}
+
+.font-slogan {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 94px;
+  letter-spacing: -6px;
+}
+
+.font-body-h {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+}
+
+.font-body {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+}
+
+.font-caption {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.75px;
+}
+
+.en {
+  .font-h1 {
+    letter-spacing: 0.5px;
+  }
+
+  .font-h2 {
+    font-size: 42px;
+    line-height: 56px;
+    letter-spacing: 0.5px;
+  }
+
+  .font-h3 {
+    font-size: 58px;
+    line-height: 72px;
+    letter-spacing: 0.5px;
+  }
+
+  .font-h4 {
+    letter-spacing: 0;
+  }
+
+  .font-h5 {
+    letter-spacing: 0;
+  }
+
+  .font-h6 {
+    letter-spacing: 0;
+  }
+
+  .font-h7 {
+    letter-spacing: 0;
+  }
+
+  .font-h8 {
+    letter-spacing: 0;
+  }
+
+  .font-slogan {
+    letter-spacing: 0.5px;
+  }
+  .font-body-h {
+    letter-spacing: 0;
+  }
+
+  .font-body {
+    letter-spacing: 0;
+  }
+
+  .font-caption {
+    letter-spacing: 0;
+  }
+}

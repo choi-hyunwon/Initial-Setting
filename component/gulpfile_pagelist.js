@@ -31,7 +31,7 @@ function pcss() {
         .pipe(rename({extname: '.css' }))
         .pipe(gulp.dest('pagelist/css/'))
 }
-gulp.task("csscompile", gulp.series(tasksass,pcss));
+gulp.task("csscompile", gulp.series(tasksass,pcss,watchsass));
 function watchsass() {
     gulp.watch('pagelist/scss/style.css', gulp.series(tasksass, pcss));
 }
