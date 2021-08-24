@@ -10,6 +10,12 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
+      url: 'icon',
+      category: 'guide',
+      page: 'icon'
+    },
+    {
+      stateClass: 'complete',
       url: 'button',
       category: 'guide',
       page: 'button'
@@ -61,5 +67,5 @@ data.template = {
       category: 'guide',
       page: 'template'
     },
-  ]
+  ],
 }
