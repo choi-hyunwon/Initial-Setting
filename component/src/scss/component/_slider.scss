@@ -3,3 +3,76 @@
  v.0.1 (주연) 최초 작업 -- 2021.08.25
 |----------------------------------|
 */
+.business {
+  .slider {
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 1130px;
+          height: 620px;
+          padding-top: 379px;
+          padding-left: 100px;
+
+          .title {
+            font-size: 80px;
+            line-height: 92px;
+            letter-spacing: 0.5px;
+            color: $gray-ffffff;
+            margin-bottom: 9px;
+          }
+          .desc {
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: -0.75px;
+            color: $gray-ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.media {
+  .slider {
+    padding-left: 340px;
+
+    .slider-navigation {
+      text-align: right;
+      margin-bottom: 70px;
+    }
+
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 380px !important;
+
+          .img  {
+            width: 380px;
+            height: auto;
+            margin-bottom: 25px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .content {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.5px;
+            color: $gray-454545;
+            margin-bottom: 25px;
+            @include ellipsis($line: 3);
+          }
+          .date {
+            font-size: 16px;
+            line-height: 28px;
+            color: $gray-909090;
+          }
+        }
+      }
+    }
+  }
+}

@@ -148,6 +148,10 @@
     margin: 0 auto;
     padding: 124px 0 150px;
     max-width: none;
+
+    &.container-fluid {
+      width: 100%;
+    }
   }
 
   .footer {

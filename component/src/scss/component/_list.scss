@@ -28,6 +28,7 @@
         letter-spacing: -0.75px;
         color: $gray-454545;
         margin-bottom: 40px;
+        @include ellipsis($line: 4);
       }
 
       .date {
@@ -489,6 +490,61 @@
 
     .btn-box {
       text-align: center;
+    }
+  }
+}
+
+.file-download {
+  .item {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    width: calc(50% - 40px);
+    height: 94px;
+    background-color: $bg-f7f7f7;
+    padding-left: 40px;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+
+    .icon-pdf {
+      margin-right: 40px;
+    }
+
+    .title {
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      max-width: 380px;
+      @include ellipsis($line:1);
+    }
+
+    .btn-download {
+      position: absolute;
+      width: 84px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      top: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $line-e9e9e9;
+      }
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 }

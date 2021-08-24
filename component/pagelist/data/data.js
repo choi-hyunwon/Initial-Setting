@@ -48,13 +48,19 @@ data.styleGuide = {
       stateClass: 'complete',
       url: 'ui',
       category: 'guide',
-      page: 'ui search/paging'
+      page: 'SEARCH/PAGING/FILE'
     },
     {
       stateClass: 'complete',
       url: 'tab',
       category: 'guide',
       page: 'tab'
+    },
+    {
+      stateClass: 'complete',
+      url: 'slider',
+      category: 'guide',
+      page: 'slider'
     },
     {
       stateClass: 'complete',

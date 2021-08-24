@@ -24,15 +24,73 @@
             </div>
             <div>
                 <p class="font-h7 mb-5">탭 type 2</p>
-                <div class="tab-slide-box"> <!-- todo! 이주연 - 이전 매뉴 하나씩 이동 -->
-                    <ul class="clearfix">
-                        <li><a href="#">Whole Genome Sequencing</a></li>
-                        <li><a href="#">Exome Sequencing</a></li>
-                        <li><a href="#">Targeted Sequencing</a></li>
-                        <li><a href="#">Transcriptome Sequencing</a></li>
-                        <li><a href="#">Metagenome Sequencing</a></li>
-                    </ul>
+                <div class="tab-slide-box">
+                    <div class="swiper-container tab-slide-box _swiperTab">
+                        <div class="swiper-wrapper _swiperTab">
+                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="#" class="btn btn-circle btn-white btn-sm _slideLeft"><i class="icon icon-arrow-left-sm"></i></a>
+                        <a href="#" class="btn btn-circle btn-white btn-sm _slideRight"><i class="icon icon-arrow-right-sm"></i></a>
+                        <a href="#" class="btn btn-circle btn-black btn-sm _btnMenu"><i class="icon icon-menu-white"></i></a>
+                    </div>
                 </div>
+                <script>
+                    var swiper = new Swiper("._swiperTab", {
+                        slidesPerView: "auto",
+                        spaceBetween: 0,
+                        centeredSlides: false,
+                        watchActiveIndex: true,
+                        navigation: {
+                            nextEl: "._slideRight",
+                            prevEl: "._slideLeft",
+                        },
+                    });
+
+                    $(document).ready(function (){
+                        var idx = $('._swiperTab .swiper-slide').length;
+                        var sum= 0;
+
+                        // slide wrap width
+                        for (var j = 0; j < idx; j++) {
+                            sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
+                        }
+                        console.log(sum)
+                        $('.swiper-wrapper').css('width',sum)
+
+                        // slide width
+                        for (var i = 0; i <= idx; i++) {
+                            var target = $(`.swiper-slide:eq(${i})`);
+                            var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
+                            target.css('width',idxWidth)
+                        }
+                    })
+
+                    $('._swiperTab .swiper-slide').on('click', function(){
+                        var idx = $(this).index();
+                        console.log(idx)
+                        swiper.slideTo(idx,500,false);
+                    });
+
+                    // $("._swiperTab .swiper-slide").on("click", function() {
+                    //     var slideInx = $(this).index();
+                    //     setTimeout(function () {
+                    //         swiperTab.slideTo(slideInx, 100, true)
+                    //     }, 175);
+                    // });
+                </script>
             </div>
         </div>
     </div>
@@ -40,7 +98,6 @@
 </div>
 </body>
 </html>
-
 <style>
     .container .box{
         border:1px solid #d3d3d3;
