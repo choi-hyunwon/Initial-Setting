@@ -163,3 +163,16 @@
 }
 
 
+/* chpis */
+.badge-recruit {
+  position: absolute;
+  display: block;
+  right: 67px;
+  top: 50%;
+  transform: translateY(-50%);
+  @include background-img($width: 106px, $height: 107px, $category: 'common', $img: 'ico-recruit-02.svg');
+
+  &.ongoing {
+    @include background-img($width: 106px, $height: 106px, $category: 'common', $img: 'ico-recruit-01.svg');
+  }
+}
