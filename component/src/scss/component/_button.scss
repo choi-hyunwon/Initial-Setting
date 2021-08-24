@@ -12,11 +12,18 @@
   vertical-align: middle;
   border:1px solid transparent;
   color:#222;
+  margin: 0 2px;
   &:before{
     content: '';
     display: inline-block;
     vertical-align: middle;
     height: 100%;
+  }
+  &:first-of-type{
+    margin-left: 0;
+  }
+  &:last-of-type{
+    margin-right: 0;
   }
 
   >span{
@@ -85,6 +92,18 @@
     span{
       +.icon{
         margin-left: 12px;
+      }
+    }
+    /*to top 예외 사항*/
+    &.btn-totop{
+      width: 60px;
+      text-align: center;
+      .icon{
+        display: inline-block;
+        +span{
+          margin-left: 0;
+          display: block;
+        }
       }
     }
   }

@@ -79,13 +79,18 @@
 /*화살표*/
 .icon-arrow-right-long {
   background-image : url("../img/common/ico-arrow-right-long.svg");
-  width: 65px;
-  height: 9.9px;
+  width: 66px;
+  height: 12px;
 }
 .icon-arrow-left-long {
   background-image : url("../img/common/ico-arrow-left-long.svg");
-  width: 65px;
-  height: 9.9px;
+  width: 66px;
+  height: 12px;
+}
+.icon-arrow-top-long {
+  background-image : url("../img/common/ico-arrow-top-long.svg");
+  width: 12px;
+  height: 66px;
 }
 .icon-arrow-right-short {
   background-image : url("../img/common/ico-arrow-right-short.svg");
@@ -115,33 +120,33 @@
 }
 .icon-arrow-left-md {
   background-image : url("../img/common/ico-arrow-left-md.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
 .icon-arrow-right-md {
   background-image : url("../img/common/ico-arrow-right-md.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
 .icon-arrow-left-md-white {
   background-image : url("../img/common/ico-arrow-left-md-white.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
 .icon-arrow-right-md-white {
   background-image : url("../img/common/ico-arrow-right-md-white.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
 .icon-arrow-left-sm  {
   background-image : url("../img/common/ico-arrow-left-sm.svg");
-  width: 6.57px;
-  height: 13.14px;
+  width: 8px;
+  height: 14px;
 }
 .icon-arrow-right-sm {
   background-image : url("../img/common/ico-arrow-right-sm.svg");
-  width: 6.57px;
-  height: 13.14px;
+  width: 8px;
+  height: 14px;
 }
 
 /*icon - guide*/
