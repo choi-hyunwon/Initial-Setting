@@ -13,8 +13,7 @@
     width: 100%;
     height: 124px;
     position: fixed;
-    background-color: #ffffff;
-
+    background-color: $bg-ffffff;
     &:before {
       content: '';
       display: inline-block;
@@ -24,34 +23,33 @@
       left: 0;
       bottom: 0;
     }
-
     .inner {
       max-width: 1920px;
       min-width: 1366px;
       margin: 0 auto;
-      padding: 30px 0;
+      padding: 20px 0;
       height: 123px;
       position: relative;
-
       .section_gnb {
         position: absolute;
         left: 50px;
         top: 50%;
         transform: translateY(-50%);
-
         .logo {
           display: inline-block;
+          vertical-align: middle;
           width: 283px;
-
-          img {
+          a {
+            display: block;
             width: 171px;
             height: 64px;
+            background: url("../img/common/logo-default.svg") no-repeat left center / 100%;
+            text-indent: -9000px;
           }
         }
-
         nav {
           display: inline-block;
-
+          vertical-align: middle;
           ul {
             li {
               text-transform: uppercase;
@@ -71,7 +69,6 @@
           }
         }
       }
-
       .section_btn {
         position: absolute;
         right: 50px;
@@ -83,8 +80,6 @@
           li {
             display: inline-block;
             margin-right: 4px;
-
-
             &:last-of-type {
               margin-right: 16px;
             }
@@ -95,19 +90,53 @@
         }
         .btn_eng{
           display: inline-block;
-          .btn-white{
+          .btn-round{
             background: rgba(255, 255, 255, 0.1);
+            border: 1px solid $line-e9e9e9;
           }
         }
       }
+    }
 
+    &.sub-header{
+      background-color: #333333;
+      &:before {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .inner{
+        .section_gnb{
+          .logo {
+            a {
+              background: url("../img/common/logo-white.svg") no-repeat left center / 100%;
+            }
+          }
+          nav{
+            li{
+              a{
+                color: $gray-ffffff
+              }
+            }
+          }
+        }
+        .section_btn{
+          .btn_eng{
+            .btn-round{
+              background: rgba(255, 255, 255, 0.1);
+              color:$gray-ffffff;
+              .icon{
+                background-image : url("../img/common/ico-earth-white.svg");
+              }
+            }
+          }
+        }
+      }
     }
   }
 
   .container {
     width: 1244px;
     margin: 0 auto;
-    padding: 124px 0 0;
+    padding: 154px 0 150px;
     max-width: none;
   }
 

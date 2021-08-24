@@ -28,6 +28,31 @@
   height: 30px;
 }
 
+/*sub-header*/
+.sub-header{
+  .icon-facebook-circle {
+    background-image : url("../img/common/ico-facebook-circle-white.svg");
+    width: 30px;
+    height: 30px;
+  }
+  .icon-youtube-circle {
+    background-image : url("../img/common/ico-youtube-circle-white.svg");
+    width: 30px;
+    height: 30px;
+  }
+  .icon-blog-circle {
+    background-image : url("../img/common/ico-blog-circle-white.svg");
+    width: 30px;
+    height: 30px;
+  }
+  .icon-linkedin-circle {
+    background-image : url("../img/common/ico-linkedin-circle-white.svg");
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
 /*footer*/
 .icon-facebook-square {
   background-image : url("../img/common/ico-facebook-square.svg");
