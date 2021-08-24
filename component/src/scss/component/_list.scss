@@ -6,7 +6,7 @@
 .board {
   > .slider {
     overflow: hidden;
-    margin-bottom: 103px;
+    margin-bottom: 100px;
 
     .info {
       float: left;
@@ -87,10 +87,23 @@
   }
 
   > .thumbnail {
-    .item {
-      float: left;
-      width: 388px;
+    .galcolumn {
+      width: 388px !important;
+      padding-left: 0 !important;
+      padding-bottom: 0 !important;
       margin-right: 40px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+    .item {
+      width: 388px;
+
+      &:first-child {
+        margin-bottom: 84px !important;
+      }
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -189,13 +202,15 @@
       }
     }
 
-    &.list-fluid {
-      .img {
-        width: 100%;
-        height: auto;
-
-        img {
+    &.thumbnail-fluid {
+      .item {
+        .img {
+          width: 100%;
           height: auto;
+
+          img {
+            height: auto;
+          }
         }
       }
     }

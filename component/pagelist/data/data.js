@@ -53,7 +53,7 @@ data.styleGuide = {
   ]
 }
 data.template = {
-  title: 'Style Guide',
+  title: 'Template',
   list: [
     {
       stateClass: 'complete',
