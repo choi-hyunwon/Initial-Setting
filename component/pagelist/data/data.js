@@ -64,15 +64,3 @@ data.template = {
   ],
 
 }
-data.research = {
-  title: 'R&D',
-  list: [
-    {
-      stateClass: 'complete',
-      url: '03_patent',
-      category: 'guide',
-      page: '특허'
-    },
-  ],
-
-}
