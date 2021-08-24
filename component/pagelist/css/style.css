@@ -62,7 +62,7 @@ caption.visually_hidden {
   background: transparent; }
 
 .wrap_scroll::-webkit-scrollbar-thumb {
-  background: #2E87EF; }
+  background: #8dbbf2; }
 
 .policy li {
   position: relative;
@@ -75,12 +75,12 @@ caption.visually_hidden {
   position: absolute;
   left: 0;
   top: 0;
-  color: #454545; }
+  color: #000; }
   .icon_dropdown i {
     position: absolute;
     right: 0;
     top: 10px;
-    color: #454545; }
+    color: #000; }
 
 .list_wrap.close {
   display: none; }
@@ -4753,14 +4753,14 @@ a {
   position: absolute;
   width: 25px;
   height: 100%;
-  background-color: #2E87EF;
-  color: #454545;
+  background-color: #8dbbf2;
+  color: #000;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
   z-index: 100; }
   .nav i {
-    color: #454545; }
+    color: #000; }
   .nav a {
     display: block;
     text-align: center; }
@@ -4771,7 +4771,7 @@ a {
       margin-bottom: 10px; }
     .nav a span {
       font-size: 12px;
-      color: #454545;
+      color: #000;
       display: block; }
   .nav .logo {
     padding: 30px 0;
@@ -4808,9 +4808,9 @@ a {
   z-index: 90;
   width: 350px;
   height: 100%;
-  background: #8dbbf2;
+  background: #fff;
   transition: .5s;
-  box-shadow: 2px 2px 3px #666;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   padding: 28px 20px 0; }
   .nav_depth_2.close {
     width: 0;
@@ -4826,7 +4826,7 @@ a {
       margin-bottom: 10px;
       font-weight: bold;
       padding-bottom: 10px;
-      border-bottom: 1px solid #454545;
+      border-bottom: 1px solid #000;
       color: #000;
       text-transform: uppercase; }
     .nav_depth_2 .title .btn_control_all {
@@ -4835,14 +4835,14 @@ a {
       width: 61px;
       height: 30px;
       display: block;
-      background: #8dbbf2;
-      color: #454545;
+      background: #fff;
+      color: #000;
       line-height: 30px;
       position: relative;
       text-align: center;
       cursor: pointer; }
       .nav_depth_2 .title .btn_control_all:hover {
-        color: #2E87EF; }
+        color: #8dbbf2; }
       .nav_depth_2 .title .btn_control_all::after {
         content: '모두 닫기';
         display: inline-block;
@@ -4852,7 +4852,7 @@ a {
         line-height: 30px;
         width: 100%;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.8);
         color: #fff;
         font-size: 13px; }
       .nav_depth_2 .title .btn_control_all.close::after {
@@ -4867,7 +4867,7 @@ a {
     .nav_depth_2 .title p {
       text-align: right; }
       .nav_depth_2 .title p a {
-        color: #454545;
+        color: #000;
         cursor: pointer; }
         .nav_depth_2 .title p a .fa-check-square {
           display: none; }
@@ -4885,8 +4885,8 @@ a {
     .nav_depth_2 .wrap_scroll .title_page_category {
       position: relative; }
       .nav_depth_2 .wrap_scroll .title_page_category li:hover {
-        background-color: #2E87EF;
-        color: #454545; }
+        background-color: #8dbbf2;
+        color: #000; }
       .nav_depth_2 .wrap_scroll .title_page_category > h3 {
         font-size: 16px;
         height: 34px;
@@ -4894,12 +4894,12 @@ a {
         position: relative;
         padding-bottom: 10px;
         padding-left: 5px;
-        color: #454545;
+        color: #000;
         background-color: #9dc5f5; }
       .nav_depth_2 .wrap_scroll .title_page_category ul {
         padding-bottom: 10px; }
         .nav_depth_2 .wrap_scroll .title_page_category ul span {
-          color: #454545; }
+          color: #000; }
           .nav_depth_2 .wrap_scroll .title_page_category ul span.depths_2_filename {
             font-weight: bold;
             text-transform: uppercase; }
@@ -4909,7 +4909,7 @@ a {
           position: absolute;
           right: 3px;
           top: 10px;
-          color: #454545; }
+          color: #000; }
       .nav_depth_2 .wrap_scroll .title_page_category .ing {
         font-size: 14px;
         width: 100%;
@@ -4962,15 +4962,15 @@ a {
         overflow: hidden;
         text-overflow: ellipsis; }
         .nav_depth_2 .wrap_scroll ul li .link.focus, .nav_depth_2 .wrap_scroll ul li .unlink.focus {
-          background-color: #2E87EF; }
+          background-color: rgba(141, 187, 242, 0.4); }
         .nav_depth_2 .wrap_scroll ul li .link:hover span, .nav_depth_2 .wrap_scroll ul li .link.focus span, .nav_depth_2 .wrap_scroll ul li .unlink:hover span, .nav_depth_2 .wrap_scroll ul li .unlink.focus span {
           color: #000; }
         .nav_depth_2 .wrap_scroll ul li .link.focus span.depths_2_filename, .nav_depth_2 .wrap_scroll ul li .unlink.focus span.depths_2_filename {
           position: relative; }
       .nav_depth_2 .wrap_scroll ul li:hover, .nav_depth_2 .wrap_scroll ul li.nav_depth_2 .wrap_scroll ul li .link.focus {
-        background: #8dbbf2; }
+        background-color: rgba(141, 187, 242, 0.4); }
       .nav_depth_2 .wrap_scroll ul li:hover .fa-external-link-alt:before {
-        color: #454545; }
+        color: #000; }
 
 .content {
   position: relative;
