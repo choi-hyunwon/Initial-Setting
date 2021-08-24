@@ -4,7 +4,7 @@
 |----------------------------------|
 */
 .board {
-  > .slider {
+  .slider {
     overflow: hidden;
     margin-bottom: 100px;
 
@@ -84,7 +84,7 @@
     }
   }
 
-  > .thumbnail {
+  .thumbnail {
     padding-bottom: 76px;
 
     .galcolumn {
@@ -92,6 +92,19 @@
       padding-left: 0 !important;
       padding-bottom: 0 !important;
       margin-right: 40px;
+      margin-bottom: 0 !important;
+
+      .item {
+        margin-bottom: 0;
+        height: auto;
+
+        &:first-child {
+          margin-bottom: 84px !important;
+        }
+        &:nth-child(2) {
+          margin-bottom: 0 !important;
+        }
+      }
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -99,12 +112,11 @@
     }
 
     .item {
+      float: left;
       width: 388px;
-      margin-bottom: 0 !important;
-
-      &:first-child {
-        margin-bottom: 84px !important;
-      }
+      height: 449px;
+      margin-right: 40px;
+      margin-bottom: 84px;
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -217,7 +229,7 @@
     }
   }
 
-  > .list {
+  .list {
     &.list-border {
       .item {
         position: relative;
@@ -311,8 +323,41 @@
     }
   }
 
-  > .detail {
+  .detail {
     .heading {
+      .category {
+        font-weight: bold;
+        font-size: 26px;
+        vertical-align: middle;
+        line-height: 32px;
+        color: $gray-000000;
+        background-color: transparent;
+        margin-bottom: 9px;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 4px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $point-primary;
+        }
+
+        &.bg-point-primary {
+          &::after {
+            background-color: $point-primary;
+          }
+        }
+
+        &.bg-point-sub {
+          &::after {
+            background-color: $point-sub;
+          }
+        }
+      }
+
       .title {
         font-weight: 700;
         font-size: 44px;
@@ -346,6 +391,13 @@
         }
       }
 
+      .video {
+        width: 1244px;
+        height: 700px;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
       .text {
         font-size: 16px;
         line-height: 30px;
@@ -360,7 +412,7 @@
     }
   }
 
-  > .indicator {
+  .indicator {
     .content {
       display: flex;
       margin-bottom: 120px;
