@@ -64,14 +64,20 @@ data.styleGuide = {
     },
   ]
 }
-data.template = {
-  title: 'Template',
+data.newsroom = {
+  title: 'newsroom',
   list: [
     {
       stateClass: 'complete',
-      url: 'template_01',
+      url: 'newsroom_01',
       category: 'guide',
-      page: 'template'
+      page: '뉴스 목록'
+    },
+    {
+      stateClass: 'complete',
+      url: 'newsroom_02',
+      category: 'guide',
+      page: '뉴스 조회'
     },
   ],
 }
