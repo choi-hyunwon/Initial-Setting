@@ -79,94 +79,127 @@
 /*화살표*/
 .icon-arrow-right-long {
   background-image : url("../img/common/ico-arrow-right-long.svg");
-  width: 65px;
-  height: 9.9px;
+  width: 66px;
+  height: 12px;
 }
 .icon-arrow-left-long {
   background-image : url("../img/common/ico-arrow-left-long.svg");
-  width: 65px;
-  height: 9.9px;
+  width: 66px;
+  height: 12px;
+}
+.icon-arrow-top-long {
+  background-image : url("../img/common/ico-arrow-top-long.svg");
+  width: 12px;
+  height: 66px;
 }
 .icon-arrow-right-short {
   background-image : url("../img/common/ico-arrow-right-short.svg");
   width: 14px;
   height: 12px;
 }
+.icon-arrow-bottom-short-white {
+  background-image : url("../img/common/ico-arrow-bottom-short-white.svg");
+  width: 14px;
+  height: 12px;
+}
 .icon-arrow-left-lg {
   background-image : url("../img/common/ico-arrow-left-lg.svg");
-  width: 16.97px;
-  height: 33.94px;
+  width: 20px;
+  height: 36px;
   &.disabled{
     background-image : url("../img/common/ico-arrow-left-lg-disabled.svg");
   }
 }
 .icon-arrow-right-lg {
   background-image : url("../img/common/ico-arrow-right-lg.svg");
-  width: 16.97px;
-  height: 33.94px;
+  width: 20px;
+  height: 36px;
   &.disabled{
     background-image : url("../img/common/ico-arrow-right-lg-disabled.svg");
   }
 }
 .icon-arrow-left-md {
   background-image : url("../img/common/ico-arrow-left-md.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
 .icon-arrow-right-md {
   background-image : url("../img/common/ico-arrow-right-md.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
 .icon-arrow-left-md-white {
   background-image : url("../img/common/ico-arrow-left-md-white.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
 .icon-arrow-right-md-white {
   background-image : url("../img/common/ico-arrow-right-md-white.svg");
-  width: 7.78px;
-  height: 15.56px;
+  width: 8px;
+  height: 16px;
 }
-.icon-arrow-left-sm {
+.icon-arrow-left-sm  {
   background-image : url("../img/common/ico-arrow-left-sm.svg");
-  width: 6.57px;
-  height: 13.14px;
+  width: 8px;
+  height: 14px;
 }
 .icon-arrow-right-sm {
   background-image : url("../img/common/ico-arrow-right-sm.svg");
-  width: 6.57px;
-  height: 13.14px;
+  width: 8px;
+  height: 14px;
 }
 
-
 /*icon - guide*/
-.icon-basket {
-  background-image : url("../img/common/ico-basket.svg");
-  width: 24px;
-  height: 24px;
+.icon-earth-white {
+  background-image : url("../img/common/ico-earth-white.svg");
+  width: 17px;
+  height: 17px;
 }
 .icon-earth-black {
   background-image : url("../img/common/ico-earth-black.svg");
   width: 17px;
   height: 17px;
 }
-.icon-earth-white {
-  background-image : url("../img/common/ico-earth-white.svg");
-  width: 17px;
-  height: 17px;
+.icon-share {
+  background-image : url("../img/common/ico-share.svg");
+  width: 26px;
+  height: 26px;
+}
+.icon-search {
+  background-image : url("../img/common/ico-search.svg");
+  width: 22px;
+  height: 22px;
+}
+.icon-basket-white {
+  background-image : url("../img/common/ico-basket-white.svg");
+  width: 24px;
+  height: 24px;
+}
+.icon-basket-black-line {
+  background-image : url("../img/common/ico-basket-black-line.svg");
+  width: 24px;
+  height: 24px;
+}
+.icon-basket-black {
+  background-image : url("../img/common/ico-basket-black.svg");
+  width: 24px;
+  height: 24px;
+}
+.icon-download{
+  background-image : url("../img/common/ico-download.svg");
+  width: 14px;
+  height: 18px;
 }
 .icon-menu-white {
   background-image : url("../img/common/ico-menu-white.svg");
   width: 14px;
   height: 12px;
 }
-.icon-share {
-  background-image : url("../img/common/ico-share.svg");
-  width: 26px;
-  height: 26px;
+.icon-pdf{
+  background-image : url("../img/common/ico-pdf.svg");
+  width: 27px;
+  height: 30px;
 }
-
 
 /* chpis */
 .badge-recruit {
