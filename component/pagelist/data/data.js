@@ -16,6 +16,12 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
+      url: 'table',
+      category: 'guide',
+      page: 'table'
+    },
+    {
+      stateClass: 'complete',
       url: 'button',
       category: 'guide',
       page: 'button'
