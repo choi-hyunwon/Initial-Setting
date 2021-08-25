@@ -4,11 +4,26 @@
 <body>
 <div class="wrap">
     <div class="container container-fluid">
-        @@include('../../html/include/media-slider.html')
-        @@include('../../html/include/business-slider.html')
+        <div class="mb-5">
+            <div style="padding: 0 340px">
+                <p class="font-h3 mb-3">.media > .slider</p>
+            </div>
+            @@include('../../html/include/media-slider.html')
+        </div>
+        <div class="mb-5">
+            <div style="padding: 0 340px">
+                <p class="font-h3 mb-3">.business > .slider</p>
+            </div>
+            @@include('../../html/include/business-slider.html')
+        </div>
     </div>
     <div class="container">
-        @@include('../../html/include/board-slider.html')
+        <div class="mb-5">
+            <div>
+                <p class="font-h3 mb-3">.board > .slider</p>
+            </div>
+            @@include('../../html/include/board-slider.html')
+        </div>
     </div>
 </div>
 </body>

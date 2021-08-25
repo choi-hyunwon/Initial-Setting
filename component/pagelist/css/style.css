@@ -4753,7 +4753,7 @@ a {
   position: absolute;
   width: 25px;
   height: 100%;
-  background-color: #8dbbf2;
+  background: linear-gradient(106.65deg, #00ADA9 9.33%, #377EF9 93.88%);
   color: #000;
   font-size: 15px;
   font-weight: bold;
