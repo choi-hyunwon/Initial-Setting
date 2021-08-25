@@ -3,27 +3,47 @@
  v.0.1 (선미) 최초 작업 -- 2021.08.24
 |----------------------------------|
 */
-
-
 table{
   background-color: $bg-ffffff;
   &.table{
-    margin-bottom: 0;
-    border-top:1px solid $line-000000;
+    thead, tbody, tfoot, tr, td, th {
+      border: 0;
+    }
     thead{
-      border-bottom:1px solid $line-d9d9d9;
+      border-top:1px solid $line-000000;
+      background: $bg-f7f7f7;
       tr {
+        border-bottom:1px solid $line-d9d9d9;
         th {
           text-align: center;
-          background: $bg-f7f7f7;
           vertical-align: middle;
-          padding: 25px 20px 24px;
+          padding: 25px 30px 24px;
+          line-height: 30px;
+          font-weight: bold;
+          font-size: 18px;
+          &.sub-title{
+            font-weight: 500;
+            font-size: 16px;
+          }
+          span{
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    tbody{
+      tr{
+        border-bottom:1px solid $line-d9d9d9;
+        td {
+          color:$gray-666666;
+          text-align: center;
+          vertical-align: middle;
+          padding: 25px 30px 24px;
           line-height: 30px;
           font-weight: normal;
         }
       }
     }
-    tbody{}
   }
 }
 
