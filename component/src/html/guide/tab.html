@@ -3,124 +3,22 @@
 @@include('../../html/include/head.html')
 <body>
 <div class="wrap">
-    @@include('../../html/include/header.html')
     <div class="container">
         <div class="guide">
             <div class="mb-5">
                 <p class="font-h7 mb-5">탭 type 1</p>
-                <nav class="tab-box">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all"
-                                type="button" role="tab" aria-controls="nav-all" aria-selected="true">전체
-                        </button>
-                        <button class="nav-link" id="nav-media-tab" data-bs-toggle="tab" data-bs-target="#nav-media"
-                                type="button" role="tab" aria-controls="nav-media" aria-selected="false">미디어
-                        </button>
-                        <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video"
-                                type="button" role="tab" aria-controls="nav-video" aria-selected="false">영상
-                        </button>
-                    </div>
-                </nav>
+                @@include('../../html/include/nav-tab-wrap.html')
+            </div>
+            <div class="mb-5">
+                <p class="font-h7 mb-5">탭 type 2</p>
+                @@include('../../html/include/slide-tab-wrap.html')
             </div>
             <div>
-                <p class="font-h7 mb-5">탭 type 2</p>
-                <div class="tab-slide-box">
-                    <div class="swiper-container tab-slide-box _swiperTab">
-                        <div class="swiper-wrapper _swiperTab">
-                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
-                            <div class="swiper -slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
-                        </div>
-                    </div>
-                    <div class="btn-box">
-                        <a href="#" class="btn btn-circle btn-white btn-sm _slideLeft"><i class="icon icon-arrow-left-sm"></i></a>
-                        <a href="#" class="btn btn-circle btn-white btn-sm _slideRight"><i class="icon icon-arrow-right-sm"></i></a>
-                        <a href="#" class="btn btn-circle btn-black btn-sm _btnMenu"><i class="icon icon-menu-white"></i></a>
-                    </div>
-                </div>
-                <script>
-                    var swiper = new Swiper("._swiperTab", {
-                        slidesPerView: "auto",
-                        spaceBetween: 0,
-                        centeredSlides: false,
-                        watchActiveIndex: true,
-                        navigation: {
-                            nextEl: "._slideRight",
-                            prevEl: "._slideLeft",
-                        },
-                    });
-
-                    $(document).ready(function (){
-                        var idx = $('._swiperTab .swiper-slide').length;
-                        var sum= 0;
-
-                        // slide wrap width
-                        for (var j = 0; j < idx; j++) {
-                            sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-                        }
-                        console.log(sum)
-                        $('.swiper-wrapper').css('width',sum)
-
-                        // slide width
-                        for (var i = 0; i <= idx; i++) {
-                            var target = $(`.swiper-slide:eq(${i})`);
-                            var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
-                            target.css('width',idxWidth)
-                        }
-                    })
-
-                    $('._swiperTab .swiper-slide').on('click', function(){
-                        var idx = $(this).index();
-                        console.log(idx)
-                        swiper.slideTo(idx,500,false);
-                    });
-
-                    // $("._swiperTab .swiper-slide").on("click", function() {
-                    //     var slideInx = $(this).index();
-                    //     setTimeout(function () {
-                    //         swiperTab.slideTo(slideInx, 100, true)
-                    //     }, 175);
-                    // });
-                </script>
+                <p class="font-h7 mb-5">탭 type 3</p>
+                @@include('../../html/include/tab-wrap.html')
             </div>
         </div>
     </div>
-    @@include('../../html/include/footer.html')
 </div>
 </body>
 </html>
-<style>
-    .container .box{
-        border:1px solid #d3d3d3;
-        padding: 15px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-    }
-    .container .box .card{
-        display: inline-block;
-        padding: 10px 15px;
-        width: 24.5%;
-        height: 60px;
-        line-height: 38px;
-        margin-bottom: 20px;
-    }
-    .container .box .card.black{
-       background: #333;
-       color:#fff;
-    }
-    .container .box .card:last-child{margin-bottom: 0}
-    .container .box .card span{
-        font-weight: bold;
-        margin-left: 10px;
-    }
-    .container .box p {margin-bottom: 20px}
-</style>

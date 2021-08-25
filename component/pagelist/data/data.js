@@ -46,9 +46,27 @@ data.styleGuide = {
     },
     {
       stateClass: 'complete',
-      url: 'ui',
+      url: 'layout_01',
       category: 'guide',
-      page: 'SEARCH/PAGING/FILE'
+      page: 'layout frame A'
+    },
+    {
+      stateClass: 'complete',
+      url: 'layout_02',
+      category: 'guide',
+      page: 'layout frame B'
+    },
+    {
+      stateClass: 'complete',
+      url: 'layout_03',
+      category: 'guide',
+      page: 'layout frame C'
+    },
+    {
+      stateClass: 'complete',
+      url: 'input',
+      category: 'guide',
+      page: 'INPUT'
     },
     {
       stateClass: 'complete',
@@ -62,52 +80,40 @@ data.styleGuide = {
       category: 'guide',
       page: 'slider'
     },
-    {
-      stateClass: 'complete',
-      url: 'sub-header',
-      category: 'guide',
-      page: 'sub-header'
-    },
   ]
 }
-data.newsroom = {
-  title: 'newsroom',
+data.board = {
+  title: 'board',
   list: [
     {
       stateClass: 'complete',
-      url: 'newsroom_01',
+      url: 'board_01',
       category: 'guide',
-      page: '뉴스 목록'
+      page: '썸네일 리스트'
     },
     {
       stateClass: 'complete',
-      url: 'newsroom_02',
+      url: 'board_02',
       category: 'guide',
-      page: '뉴스 조회'
+      page: '게시판 리스트 1'
     },
     {
       stateClass: 'complete',
-      url: 'newsroom_03',
+      url: 'board_03',
       category: 'guide',
-      page: '미디어라이브 목록'
+      page: '게시판 리스트 2'
     },
     {
       stateClass: 'complete',
-      url: 'newsroom_04',
+      url: 'board_04',
       category: 'guide',
-      page: '미디어라이브 조회'
+      page: '상세'
     },
     {
       stateClass: 'complete',
-      url: 'newsroom_05',
+      url: 'board_05',
       category: 'guide',
-      page: '공지사항 목록'
-    },
-    {
-      stateClass: 'complete',
-      url: 'newsroom_06',
-      category: 'guide',
-      page: '공지사항 조회'
-    },
+      page: '인디케이터'
+    }
   ],
 }

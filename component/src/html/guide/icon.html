@@ -3,11 +3,10 @@
 @@include('../../html/include/head.html')
 <body>
 <div class="wrap">
-    @@include('../../html/include/header.html')
     <div class="container">
         <div class="guide">
 
-            <!--header / sub-header / footer-->
+            <!--header / footer-->
             <div class="box">
                 <p class="font-h7">예외 아이콘</p>
                 <p class="font-h8">.header</p>
@@ -28,22 +27,24 @@
                     <span>icon-linkedin-circle</span>
                 </div>
 
-                <p class="font-h8">.sub-header</p>
-                <div class="card sub-header black">
-                    <i class="icon icon-facebook-circle"></i>
-                    <span>icon-facebook-circle</span>
-                </div>
-                <div class="card sub-header black">
-                    <i class="icon icon-youtube-circle"></i>
-                    <span>icon-youtube-circle</span>
-                </div>
-                <div class="card sub-header black">
-                    <i class="icon icon-blog-circle"></i>
-                    <span>icon-blog-circle</span>
-                </div>
-                <div class="card sub-header black">
-                    <i class="icon icon-linkedin-circle"></i>
-                    <span>icon-linkedin-circle</span>
+                <p class="font-h8">.header / scroll</p>
+                <div class="sticky-wrapper is-sticky">
+                    <div class="card black">
+                        <i class="icon icon-facebook-circle"></i>
+                        <span>icon-facebook-circle</span>
+                    </div>
+                    <div class="card black">
+                        <i class="icon icon-youtube-circle"></i>
+                        <span>icon-youtube-circle</span>
+                    </div>
+                    <div class="card black">
+                        <i class="icon icon-blog-circle"></i>
+                        <span>icon-blog-circle</span>
+                    </div>
+                    <div class="card black">
+                        <i class="icon icon-linkedin-circle"></i>
+                        <span>icon-linkedin-circle</span>
+                    </div>
                 </div>
 
                 <p class="font-h8">.footer</p>
@@ -175,11 +176,9 @@
             </div>
         </div>
     </div>
-    @@include('../../html/include/footer.html')
 </div>
 </body>
 </html>
-
 <style>
     .container .box{
         border:1px solid #d3d3d3;

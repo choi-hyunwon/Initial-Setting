@@ -48,6 +48,7 @@ function jsLib() {
     'src/js/lib/jquery.js',
     'src/js/lib/bootstrap.bundle.min.js',
     'src/js/lib/swiper.min.js',
+    'src/js/lib/jquery.sticky.js',
     'src/js/lib/jquery.grid-a-licious.js',
   ];
   return gulp.src(sourceLib)

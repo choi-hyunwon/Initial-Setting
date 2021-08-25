@@ -9,8 +9,6 @@
   height: 50px;
   align-items: end;
   justify-content: flex-end;
-  margin-bottom: 90px;
-  padding-top: 32px;
 
   .breadcrumb-item {
     a {
@@ -20,9 +18,19 @@
       text-transform: uppercase;
       color: $gray-909090;
     }
+
     &.active {
       a {
         color: $gray-000000;
+      }
+    }
+
+    + .breadcrumb-item {
+      padding-left: 6px;
+
+      &::before {
+        color: $gray-909090;
+        padding-right: 6px;
       }
     }
   }

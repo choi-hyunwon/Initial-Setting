@@ -23,7 +23,23 @@ front.common = (function () {
   }
 
   var commonHandler = function () {
+    $(".header").sticky({topSpacing:0});
 
+    $('._fileUpload .form-control-file').on('change', function(){
+      var target = $(this).parent().find('.file-box');
+      if(typeof(this.files) !='undefined'){
+        if(this.files.length == 0){
+          target.removeClass('withFile').text(target.data('default'));
+        }
+        else {
+          var file = this.files[0];
+          var name = file.name;
+          target.parent().addClass('withFile');
+          target.html(`<span>${name}</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>`);
+        }
+      }
+      return false;
+    });
   }
 
   return {

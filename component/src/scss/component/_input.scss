@@ -5,6 +5,8 @@
 */
 /* input-group */
 .input-group {
+  margin-bottom: 50px;
+
   .input-group-text {
     width: 174px;
     height: 60px;
@@ -16,6 +18,25 @@
     font-size: 22px;
     letter-spacing: -0.75px;
   }
+
+  .input-group-phone {
+    display: flex;
+    width: calc(100% - 174px - 40px);
+
+    .form-select {
+      width: 334px;
+      margin-right: 14px;
+    }
+
+    .form-control {
+      width: 334px;
+
+      &:nth-child(2) {
+        margin-right: 14px;
+      }
+    }
+  }
+
   .form-control {
     height: 60px;
     border-top: 0;
@@ -36,11 +57,12 @@
     &::placeholder {
       color: $gray-d9d9d9;
     }
+
     &.form-control-file {
-      opacity:1;
+      opacity: 1;
       filter: alpha(opacity=0);
       -ms-filter: alpha(opacity=0);
-      cursor:pointer;
+      cursor: pointer;
 
       &::after {
         content: '';
@@ -64,6 +86,7 @@
     margin-right: 14px;
   }
 }
+
 /* select */
 .form-select {
   line-height: 53px;
@@ -146,33 +169,162 @@
   }
 }
 
-.form-control-file{
+.form-control-file {
+  display: flex;
   cursor: pointer;
+  overflow: hidden;
+  width: auto;
+
+  .btn-add-file {
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin-right: 14px;
+    line-height: 58px;
+  }
 
   .form-control-file {
     display: none;
   }
 
-  .file-name {
-    color: #fff;
-    margin: 0 0 10px;
-    padding: 5px 10px;
-    text-decoration: none;
-    background: #418edb;
-    border-radius: 2px;
-    font: normal 14px/1.412 Helvetica;
+  &.withFile{
+    width: calc(100% - 174px - 40px);
 
-    &:hover{
-      background: #2683E1;
+    .file-box {
+      display: block;
+      padding: 0 30px;
+      align-items: center;
+      height: 60px;
+      line-height: 60px;
+      background: #F7F7F7;
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      color: $gray-454545;
+      @include ellipsis($line: 1);
+    }
+  }
+
+  .file-box {
+    display: none;
+    position: relative;
+    float: left;
+    width: calc(100% - 157px - 14px);
+
+    .btn-delete {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      @include background-img ($width: 28px, $height: 28px, $category: 'common', $img: 'btn-delete.svg');
+    }
+  }
+}
+
+/* 파일 다운로드 */
+.file-download {
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 94px;
+    background-color: $bg-f7f7f7;
+    padding-left: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .icon-pdf {
+      margin-right: 40px;
     }
 
-    &.withFile{
-      &:after{
-        content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTA5OEU0M0REOUIwMTFFMzg4Q0VDNDEwMTU1QkU0MUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTA5OEU0M0VEOUIwMTFFMzg4Q0VDNDEwMTU1QkU0MUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDk4RTQzQkQ5QjAxMUUzODhDRUM0MTAxNTVCRTQxQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMDk4RTQzQ0Q5QjAxMUUzODhDRUM0MTAxNTVCRTQxQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PolX3bIAAADWSURBVHjadNHNCkFBFMDxSYq9UsoCC4/gZqFEiXLZSKy8nJ2Pja6FB1A8i/KRuEjXfzSXY3DqV3Nnzpx7TqOCIMhjgAkSUJYkRugjG1VKFeGiBgdz9RmOObvgWWEWvOOMlqiu1745u2OsN9No42YOLqigbNbhXgMp2WsdW5NwE8kbVMM8e8ASrlaLjsyJWAPG1HfEP77+DOiLlo6m3VdLOXRFK3qOAoo4iAIdZPQFT/R8ktXQFH/VMVXmlfVL7qzkkIs9hujpl16G42D9Y+gVFvD0+iHAAMR9gu9PEii4AAAAAElFTkSuQmCC');
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 8px;
+    .title {
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      max-width: 380px;
+      @include ellipsis($line:1);
+    }
+
+    .btn-download {
+      position: absolute;
+      width: 84px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      top: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $line-e9e9e9;
       }
     }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+/* textarea */
+textarea.form-control {
+  height: 600px !important;
+  resize: none;
+  padding: 32px 30px !important;
+  border: 1px solid $gray-000000 !important;
+}
+
+.form-check {
+  min-height: 26px;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  .form-check-input {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 26px;
+    margin: 0 10px 0 0;
+    border-radius: 0;
+    border: 2px solid $line-d9d9d9;
+    background-image: url(../../dist/img/common/ico-check-gray.png);
+    background-size: 16px 12px;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:checked {
+      border: 2px solid $point-primary;
+      background-color: $point-primary;
+      background-image: url(../../dist/img/common/ico-check-white.png);
+
+      + .form-check-label {
+        color:$gray-000000;
+      }
+    }
+  }
+
+  .form-check-label {
+    line-height: 26px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color:$gray-909090;
   }
 }

@@ -97,7 +97,6 @@
 
       .item {
         margin-bottom: 0;
-        height: auto;
 
         &:first-child {
           margin-bottom: 84px !important;
@@ -115,7 +114,7 @@
     .item {
       float: left;
       width: 388px;
-      height: 449px;
+      height: 523px;
       margin-right: 40px;
       margin-bottom: 84px;
 
@@ -152,7 +151,7 @@
         letter-spacing: -0.75px;
         color: $gray-000000;
         margin-bottom: 16px;
-        @include ellipsis($line: 2);
+        @include ellipsis($line: 1);
       }
 
       .cont {
@@ -210,9 +209,17 @@
     }
 
     &.thumbnail-with-category {
-      .img {
-        width: 100%;
-        height: 260px;
+      .item {
+        height: 449px;
+
+        .img {
+          width: 100%;
+          height: 260px;
+        }
+
+        .tit {
+          @include ellipsis($line: 2);
+        }
       }
     }
 
@@ -242,6 +249,7 @@
         }
 
         .tit {
+          display: block;
           font-weight: 700;
           font-size: 26px;
           line-height: 40px;
@@ -254,6 +262,7 @@
         }
 
         .date {
+          display: block;
           font-size: 16px;
           line-height: 19px;
           color: #909090;
@@ -278,6 +287,7 @@
         }
 
         .tit-sub {
+          display: block;
           font-weight: 700;
           font-size: 18px;
           line-height: 26px;
@@ -287,15 +297,18 @@
         }
 
         .tit {
+          display: block;
           font-weight: bold;
           font-size: 26px;
           line-height: 40px;
           letter-spacing: -0.75px;
           color: $gray-000000;
           margin-bottom: 10px;
+          @include ellipsis($line: 2);
         }
 
         .cont {
+          display: block;
           font-size: 18px;
           line-height: 32px;
           color: $gray-454545;
@@ -303,6 +316,7 @@
         }
 
         .date {
+          display: block;
           font-size: 16px;
           line-height: 19px;
           color: $gray-909090;
@@ -311,7 +325,7 @@
       }
     }
 
-    .btn-more {
+    .board-ico-more {
       position: absolute;
       right: 33px;
       top: 50%;
@@ -409,7 +423,7 @@
         margin-bottom: 40px;
       }
 
-      .btn-share-box {
+      .chips-share-box {
         text-align: right;
       }
     }
@@ -490,61 +504,6 @@
 
     .btn-box {
       text-align: center;
-    }
-  }
-}
-
-.file-download {
-  .item {
-    position: relative;
-    float: left;
-    display: flex;
-    align-items: center;
-    width: calc(50% - 40px);
-    height: 94px;
-    background-color: $bg-f7f7f7;
-    padding-left: 40px;
-    border-radius: 10px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-
-    .icon-pdf {
-      margin-right: 40px;
-    }
-
-    .title {
-      margin-bottom: 0;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 30px;
-      max-width: 380px;
-      @include ellipsis($line:1);
-    }
-
-    .btn-download {
-      position: absolute;
-      width: 84px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: 0;
-      top: 0;
-
-      &:before {
-        content: '';
-        position: absolute;
-        width: 1px;
-        height: 18px;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: $line-e9e9e9;
-      }
-    }
-
-    &:nth-child(2n) {
-      margin-right: 0;
     }
   }
 }
