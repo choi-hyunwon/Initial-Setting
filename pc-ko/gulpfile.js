@@ -18,9 +18,9 @@ function scss() {
 }
 
 function htmlPage() {
-  return gulp.src('src/html/guide/*.html')
+  return gulp.src('src/html/**/*.html')
       .pipe(html())
-      .pipe(gulp.dest('dist/html/guide'))
+      .pipe(gulp.dest('dist/html/'))
 }
 
 function copyCss() {
