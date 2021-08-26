@@ -43,6 +43,11 @@ function copyFonts() {
     .pipe(gulp.dest('dist/fonts'));
 }
 
+function copyInclude() {
+  return gulp.src('src/html/include/**')
+      .pipe(gulp.dest('dist/html/include'));
+}
+
 function jsLib() {
   let sourceLib = [
     'src/js/lib/jquery.js',
@@ -113,8 +118,8 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, jsLib, jsCommon, htmlPage));
-gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, jsLib, jsCommon, htmlPage,copyInclude));
+gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, copyInclude, beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont, ));
 
 gulp.task('browser-sync', function() {
