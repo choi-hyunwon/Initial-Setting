@@ -1,0 +1,12 @@
+<div class="tab-wrap _tabWrap">
+    <ul>
+        <li class="active"><a href="#">CHAIRMAN</a></li>
+        <li><a href="#">CEO</a></li>
+        <li><a href="#">CHAIRMAN</a></li>
+    </ul>
+</div>
+<script>
+    $('._tabWrap li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
