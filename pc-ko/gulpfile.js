@@ -115,7 +115,7 @@ function setEnvDevelope(cb) {
 //task
 gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts,  htmlPage));
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, htmlPage, beautify));
-gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont, ));
+gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg ));
 
 gulp.task('browser-sync', function() {
   browserSync.init({
@@ -128,9 +128,7 @@ gulp.task('browser-sync', function() {
   gulp.watch('src/scss/**/*.scss', gulp.series(scss)).on('change', browserSync.reload);
   gulp.watch(['src/html/**/*.html'], gulp.series(htmlPage)).on('change', browserSync.reload);
   gulp.watch('src/html/include/*.html', gulp.series(htmlPage)).on('change', browserSync.reload);
-  gulp.watch('src/js/*/*.js', gulp.series(jsLib, jsCommon)).on('change', browserSync.reload);
   gulp.watch('src/img/**/*', gulp.series(copyImg)).on('change', browserSync.reload);
-  gulp.watch('src/fonts/**/**', gulp.series(copyFonts)).on('change', browserSync.reload);
 });
 
 exports.default = gulp.series("dist");
