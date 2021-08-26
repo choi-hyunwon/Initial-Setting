@@ -4,6 +4,7 @@
  v.0.2 (선미) .header 추가-- 2021.08.20
  v.0.3 (주연) header z-index / hr.divider / .btn-indicator-box 추가 -- 2021.08.24
  v.0.4 (주연) 레이아웃 전체 변경 -- 2021.08.25
+ v.0.5 (선미) sticky-wrapper 제거 -- 2021.08.26
 |----------------------------------|
 */
 .wrap {
@@ -124,7 +125,7 @@
     }
   }
 
-  .sticky-wrapper {
+/*  .sticky-wrapper {
     &.is-sticky {
       .header {
         background-color: $gray-ffffff;
@@ -166,7 +167,7 @@
         }
       }
     }
-  }
+  }*/
 
   .header {
     width: 100%;
@@ -267,6 +268,7 @@
           .btn-round {
             background: rgba(255, 255, 255, 0.1);
             color: $gray-ffffff;
+            border: 1px solid $line-ffffff;
 
             .icon {
               background-image: url("../img/common/ico-earth-white.svg");

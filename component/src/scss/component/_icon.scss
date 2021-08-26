@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 (선미) 최초 작업 -- 2021.08.24
+ v.0.2 (선미) header 영역 아이콘 변경  -- 2021.08.26
 |----------------------------------|
 */
 .icon {
@@ -11,7 +12,65 @@
   text-indent: -999em;
   overflow: hidden;
 }
+
+
+/*---------------------------------------------------------------*/
+
 /*header*/
+.icon-facebook-circle-white {
+  background-image: url("../img/common/ico-facebook-circle-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-youtube-circle-white {
+  background-image: url("../img/common/ico-youtube-circle-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-blog-circle-white {
+  background-image: url("../img/common/ico-blog-circle-white.svg");
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+  position: relative;
+}
+
+.icon-linkedin-circle-white {
+  background-image: url("../img/common/ico-linkedin-circle-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-facebook-circle {
+  background-image: url("../img/common/ico-facebook-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-youtube-circle {
+  background-image: url("../img/common/ico-youtube-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-blog-circle {
+  background-image: url("../img/common/ico-blog-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-linkedin-circle {
+  background-image: url("../img/common/ico-linkedin-circle.svg");
+  width: 30px;
+  height: 30px;
+}
+
+/*---------------------------------------------------------------*/
+/*
+
+!*header*!
 .icon-facebook-circle {
   background-image : url("../img/common/ico-facebook-circle.svg");
   width: 30px;
@@ -33,7 +92,7 @@
   height: 30px;
 }
 
-/* scroll 시 이미지 */
+!* scroll 시 이미지 *!
 .is-sticky{
   .icon-facebook-circle {
     background-image : url("../img/common/ico-facebook-circle-white.svg");
@@ -56,26 +115,30 @@
     height: 30px;
   }
 }
+*/
 
 
 /*footer*/
 .icon-facebook-square {
-  background-image : url("../img/common/ico-facebook-square.svg");
+  background-image: url("../img/common/ico-facebook-square.svg");
   width: 18px;
   height: 18px;
 }
+
 .icon-youtube-square {
-  background-image : url("../img/common/ico-youtube-square.svg");
+  background-image: url("../img/common/ico-youtube-square.svg");
   width: 23px;
   height: 16px;
 }
+
 .icon-blog-square {
-  background-image : url("../img/common/ico-blog-square.svg");
+  background-image: url("../img/common/ico-blog-square.svg");
   width: 22px;
   height: 18px;
 }
+
 .icon-linkedin-square {
-  background-image : url("../img/common/ico-linkedin-square.svg");
+  background-image: url("../img/common/ico-linkedin-square.svg");
   width: 18px;
   height: 18px;
 }
@@ -83,125 +146,148 @@
 
 /*화살표*/
 .icon-arrow-right-long {
-  background-image : url("../img/common/ico-arrow-right-long.svg");
+  background-image: url("../img/common/ico-arrow-right-long.svg");
   width: 66px;
   height: 12px;
 }
+
 .icon-arrow-left-long {
-  background-image : url("../img/common/ico-arrow-left-long.svg");
+  background-image: url("../img/common/ico-arrow-left-long.svg");
   width: 66px;
   height: 12px;
 }
+
 .icon-arrow-top-long {
-  background-image : url("../img/common/ico-arrow-top-long.svg");
+  background-image: url("../img/common/ico-arrow-top-long.svg");
   width: 12px;
   height: 66px;
 }
+
 .icon-arrow-right-short {
-  background-image : url("../img/common/ico-arrow-right-short.svg");
+  background-image: url("../img/common/ico-arrow-right-short.svg");
   width: 14px;
   height: 12px;
 }
+
 .icon-arrow-bottom-short-white {
-  background-image : url("../img/common/ico-arrow-bottom-short-white.svg");
+  background-image: url("../img/common/ico-arrow-bottom-short-white.svg");
   width: 14px;
   height: 12px;
 }
+
 .icon-arrow-left-lg {
-  background-image : url("../img/common/ico-arrow-left-lg.svg");
+  background-image: url("../img/common/ico-arrow-left-lg.svg");
   width: 20px;
   height: 36px;
-  &.disabled{
-    background-image : url("../img/common/ico-arrow-left-lg-disabled.svg");
+
+  &.disabled {
+    background-image: url("../img/common/ico-arrow-left-lg-disabled.svg");
   }
 }
+
 .icon-arrow-right-lg {
-  background-image : url("../img/common/ico-arrow-right-lg.svg");
+  background-image: url("../img/common/ico-arrow-right-lg.svg");
   width: 20px;
   height: 36px;
-  &.disabled{
-    background-image : url("../img/common/ico-arrow-right-lg-disabled.svg");
+
+  &.disabled {
+    background-image: url("../img/common/ico-arrow-right-lg-disabled.svg");
   }
 }
+
 .icon-arrow-left-md {
-  background-image : url("../img/common/ico-arrow-left-md.svg");
+  background-image: url("../img/common/ico-arrow-left-md.svg");
   width: 8px;
   height: 16px;
 }
+
 .icon-arrow-right-md {
-  background-image : url("../img/common/ico-arrow-right-md.svg");
+  background-image: url("../img/common/ico-arrow-right-md.svg");
   width: 8px;
   height: 16px;
 }
+
 .icon-arrow-left-md-white {
-  background-image : url("../img/common/ico-arrow-left-md-white.svg");
+  background-image: url("../img/common/ico-arrow-left-md-white.svg");
   width: 8px;
   height: 16px;
 }
+
 .icon-arrow-right-md-white {
-  background-image : url("../img/common/ico-arrow-right-md-white.svg");
+  background-image: url("../img/common/ico-arrow-right-md-white.svg");
   width: 8px;
   height: 16px;
 }
-.icon-arrow-left-sm  {
-  background-image : url("../img/common/ico-arrow-left-sm.svg");
+
+.icon-arrow-left-sm {
+  background-image: url("../img/common/ico-arrow-left-sm.svg");
   width: 8px;
   height: 14px;
 }
+
 .icon-arrow-right-sm {
-  background-image : url("../img/common/ico-arrow-right-sm.svg");
+  background-image: url("../img/common/ico-arrow-right-sm.svg");
   width: 8px;
   height: 14px;
 }
 
 /*icon - guide*/
 .icon-earth-white {
-  background-image : url("../img/common/ico-earth-white.svg");
+  background-image: url("../img/common/ico-earth-white.svg");
   width: 17px;
   height: 17px;
 }
+
 .icon-earth-black {
-  background-image : url("../img/common/ico-earth-black.svg");
+  background-image: url("../img/common/ico-earth-black.svg");
   width: 17px;
   height: 17px;
 }
+
 .icon-share {
-  background-image : url("../img/common/ico-share.svg");
+  background-image: url("../img/common/ico-share.svg");
   width: 26px;
   height: 26px;
 }
+
 .icon-search {
-  background-image : url("../img/common/ico-search.svg");
+  background-image: url("../img/common/ico-search.svg");
   width: 22px;
   height: 22px;
 }
+
 .icon-basket-white {
-  background-image : url("../img/common/ico-basket-white.svg");
+  background-image: url("../img/common/ico-basket-white.svg");
   width: 24px;
   height: 24px;
 }
+
 .icon-basket-black-line {
-  background-image : url("../img/common/ico-basket-black-line.svg");
+  background-image: url("../img/common/ico-basket-black-line.svg");
   width: 24px;
   height: 24px;
 }
+
 .icon-basket-black {
-  background-image : url("../img/common/ico-basket-black.svg");
+  background-image: url("../img/common/ico-basket-black.svg");
   width: 24px;
   height: 24px;
 }
-.icon-download{
-  background-image : url("../img/common/ico-download.svg");
+
+.icon-download {
+  background-image: url("../img/common/ico-download.svg");
   width: 14px;
   height: 18px;
 }
+
 .icon-menu-white {
-  background-image : url("../img/common/ico-menu-white.svg");
+  background-image: url("../img/common/ico-menu-white.svg");
   width: 14px;
   height: 12px;
 }
-.icon-pdf{
-  background-image : url("../img/common/ico-pdf.svg");
+
+.icon-pdf {
+  background-image: url("../img/common/ico-pdf.svg");
   width: 27px;
   height: 30px;
 }
