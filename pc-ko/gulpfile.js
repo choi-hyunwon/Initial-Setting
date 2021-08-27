@@ -42,6 +42,10 @@ function copyFonts() {
   return gulp.src('src/fonts/**/**')
     .pipe(gulp.dest('dist/fonts'));
 }
+function copyJS() {
+  return gulp.src('src/js/**')
+      .pipe(gulp.dest('dist/js'));
+}
 function copyCSS() {
   return gulp.src('src/css/**')
     .pipe(gulp.dest('dist/css'));
@@ -117,8 +121,8 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, copyCSS, htmlPage));
-gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS, htmlPage, beautify));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, copyCSS,copyJS, htmlPage));
+gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS,copyJS,  htmlPage, beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg ));
 
 gulp.task('browser-sync', function() {
