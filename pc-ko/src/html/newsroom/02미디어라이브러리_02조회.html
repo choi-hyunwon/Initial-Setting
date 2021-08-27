@@ -3,10 +3,14 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/04Newsroom_02미디어라이브러리_02조회.png'})
+<!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/04Newsroom_02미디어라이브러리_02조회.png'})-->
     @@include('../../html/include/component/header-white.html')
     <div class="container">
-        @@include('../../html/include/common/newsroom/breadcrumb-medialibrary.html')
+        @@include('../../html/include/common/breadcrumb.html',  {
+        "depth1": "Newsroom",
+        "depth2": "미디어라이브러리",
+        "depth3": "",
+        })
         <div class="section_newsroom">
             <div class="font-h1">미디어라이브러리</div>
             <div class="btn-indicator-box">
