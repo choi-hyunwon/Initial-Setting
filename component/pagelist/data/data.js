@@ -112,7 +112,7 @@ data.guide = {
     },
     {
       stateClass: 'complete',
-      url: 'board_05',
+      url: 'Indicator',
       category: 'guide',
       page: '인디케이터'
     }
