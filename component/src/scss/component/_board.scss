@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.23
+ v.0.2 (선미) list > list-border :hover 효과 추가 -- 2021.08.27
 |----------------------------------|
 */
 .board {
@@ -120,7 +121,7 @@
       width: 388px;
       height: 523px;
       margin-right: 40px;
-      margin-bottom: 84px;
+      margin-bottom: 70px;
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -154,7 +155,7 @@
         line-height: 40px;
         letter-spacing: -0.75px;
         color: $gray-000000;
-        margin-bottom: 16px;
+        margin-bottom: 22px;
         @include ellipsis($line: 1);
       }
 
@@ -182,12 +183,13 @@
         color: $gray-000000;
         background-color: transparent;
         margin-bottom: 10px;
+        letter-spacing: 0;
 
         &::after {
           content: '';
           display: inline-block;
           vertical-align: middle;
-          margin-left: 4px;
+          margin-left: 6px;
           width: 10px;
           height: 10px;
           border-radius: 50%;
@@ -228,6 +230,7 @@
     }
 
     &.thumbnail-fluid {
+      display: inline-block;
       .item {
         .img {
           width: 100%;
@@ -245,13 +248,11 @@
     &.list-border {
       .item {
         position: relative;
-        padding: 45px 176px 45px 0;
+        padding: 45px 176px 44px 0;
         border-bottom: 1px solid $line-e9e9e9;
-
         &:first-child {
           border-top: 1px solid $line-e9e9e9;
         }
-
         .tit {
           display: block;
           font-weight: 700;
@@ -264,12 +265,33 @@
           max-height: 80px;
           @include ellipsis($line: 2);
         }
-
         .date {
           display: block;
           font-size: 16px;
           line-height: 19px;
           color: #909090;
+        }
+        .icon-arrow-right-short{
+          position: absolute;
+          right: 50px;
+          top:50%;
+          transform: translateY(-50%);
+        }
+        &:hover{
+          .tit {
+            color: $point-active;
+          }
+          .date {
+            color: $point-active;
+          }
+          .arrow{
+            display: block;
+            .icon-arrow-right-short{
+              background-image: url("../img/common/ico-arrow-right-short-pink.svg");
+              width: 14px;
+              height: 13px;
+            }
+          }
         }
       }
     }
@@ -383,20 +405,21 @@
         font-weight: 700;
         font-size: 44px;
         line-height: 60px;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         color: $gray-000000;
-        margin-bottom: 24px;
+        margin-bottom: 23px;
       }
 
       .date {
         font-size: 18px;
         line-height: 22px;
         color: $gray-909090;
+        letter-spacing: 0.25px;
       }
     }
 
     .divider {
-      margin: 80px 0;
+      margin: 80px 0 80px;
     }
 
     .content {

@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="ko">
 @@include('../../html/include/common/head.html')
+<link rel="stylesheet" href="../../../../component/node_modules/bootstrap/scss/bootstrap.scss">
 <body>
 <div class="wrap">
-    @@include('../../html/include/component/header.html')
+    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/04Newsroom_01뉴스_02조회.png'})
+    @@include('../../html/include/component/header-white.html')
     <div class="container">
-        @@include('../../html/include/component/breadcrumb-notice.html')
-        <div class="newsroom">
-            <div class="font-h1">공지사항</div>
+        @@include('../../html/include/common/newsroom/breadcrumb-news.html')
+        <div class="section_newsroom">
+            <div class="font-h1">뉴스</div>
             <div class="btn-indicator-box">
                 <a href="#" class="btn btn-text"><i class="icon icon-arrow-left-long"></i><span>BACK</span></a>
             </div>
@@ -19,7 +21,7 @@
                     </div>
                     <hr class="divider"/>
                     <div class="content">
-                        <div class="img"><img src="../../img/@temp/big-thumb.png" alt="뉴스"></div>
+                        <div class="img"><img src="../../img/@temp/big-thumb2.png" alt="뉴스"></div>
                         <div class="text">
                             - 업계 최초 ‘ISMS-P’ 취득, 국제 표준 ‘ISO27001’에 이어 ‘ISO27701’ 추가 획득<br/>
                             - 국내·국제 최고 수준 정보보호체계 역량 검증, 고객 중심 서비스 다각화 발판 마련<br/><br/>
@@ -39,7 +41,7 @@
                 </div>
                 <div class="indicator">
                     <div class="content">
-                        <a href="#" class="item prev disabled">
+                        <a href="#" class="item prev">
                             <div class="sub">이전글</div>
                             <div class="title">이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동 ‘고고 챌린지’ 캠페인 동참 이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동
                                 ‘고고 챌린지’ 캠페인 동참
@@ -47,7 +49,7 @@
                         </a>
                         <a href="#" class="item next">
                             <div class="sub">다음글</div>
-                            <div class="title">이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동 ‘고고 챌린지’ 캠페인 동참</div>
+                            <div class="title">마크로젠, 업계 유일 정보보호 인증 3종 모두 획득··· 신뢰성 제고</div>
                         </a>
                     </div>
                     <div class="btn-box">

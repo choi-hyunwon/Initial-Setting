@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.24
  v.0.2 선미 : Default - btn-sm, 비활성화 추가  -- 2021.08.26
+ v.0.3 선미 : btn-indicator-box 이동 -- 2021.08.27
 |----------------------------------|
 */
 .btn {
@@ -106,6 +107,7 @@
     min-width: unset;
     height: unset;
     padding: 0;
+    line-height: 1;
 
     .icon{
       +span{
@@ -183,4 +185,8 @@
       width: 38px;
     }
   }
+}
+
+.btn-indicator-box {
+  margin-bottom: 95px;
 }

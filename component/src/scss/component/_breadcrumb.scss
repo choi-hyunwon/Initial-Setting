@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.23
+ v.0.2 (선미)  breadcrumb >padding-top:30px; -- 2021.08.26
 |----------------------------------|
 */
 .breadcrumb {
@@ -9,6 +10,10 @@
   height: 50px;
   align-items: end;
   justify-content: flex-end;
+  padding-top:30px;
+  font-size: 14px;
+  margin-bottom: 90px;
+  letter-spacing: 0;
 
   .breadcrumb-item {
     a {

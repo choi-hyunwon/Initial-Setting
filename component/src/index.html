@@ -116,8 +116,7 @@
   var source = $('#list-template').html() //jQuery
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
-          .append(template(data.styleGuide))
-          .append(template(data.board))
+          .append(template(data.guide))
 </script>
 <script>
   $('.link').on('click', function () {

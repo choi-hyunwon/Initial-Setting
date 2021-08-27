@@ -1,6 +1,6 @@
 const data = {}
-data.styleGuide = {
-  title: 'Style Guide',
+data.guide = {
+  title: 'Guide',
   list: [
     {
       stateClass: 'complete',
@@ -86,11 +86,6 @@ data.styleGuide = {
       category: 'guide',
       page: 'slider'
     },
-  ]
-}
-data.board = {
-  title: 'board',
-  list: [
     {
       stateClass: 'complete',
       url: 'board_01',
@@ -121,5 +116,5 @@ data.board = {
       category: 'guide',
       page: '인디케이터'
     }
-  ],
+  ]
 }

@@ -1,14 +1,17 @@
 /*
 |----------------------------------|
- v.0.1 (주연) 최초 작업 -- 2021.08.24
+ v.0.1 (선미) 최초 작업 -- 2021.08.26
 |----------------------------------|
 */
-.newsroom {
+.section_newsroom {
   .tab-content {
     .thumbnail {
       &.thumbnail-with-category {
-        padding-bottom: 8px;
+        padding-bottom: 22px;
       }
     }
+  }
+  .btn-share-box{
+    text-align: right;
   }
 }
