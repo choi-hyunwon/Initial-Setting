@@ -13,7 +13,9 @@ const sourcemaps = require('gulp-sourcemaps');
 /* scss TASK*/
 function scss() {
   return gulp.src('src/scss/*.scss')
-      .pipe(sass.sync().on('error', sass.logError))
+      .pipe(sourcemaps.init())
+      .pipe(sass().on('error', sass.logError))
+      .pipe(sourcemaps.write())
       .pipe(gulp.dest('dist/css/'))
 }
 
