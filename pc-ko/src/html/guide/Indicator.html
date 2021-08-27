@@ -19,8 +19,8 @@
 
 <body>
 <div class="wrap">
-    <div class="full-bg" style="background-color: #333;">
-        <header class="header">
+    <div class="full-bg">
+        <header class="header header-bg-white">
     <div class="inner">
         <div class="section_gnb">
             <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
@@ -37,10 +37,10 @@
         </div>
         <div class="section_btn">
             <ul class="sns">
-                <li><a href="#"><i class="icon icon-facebook-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-youtube-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-blog-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-linkedin-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-facebook-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-blog-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin-circle"></i></a></li>
             </ul>
             <div class="btn_eng">
                 <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
@@ -49,7 +49,7 @@
     </div>
 </header>
 
-        <div class="frame frameB">
+        <div class="frame frameC">
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -58,11 +58,78 @@
     </ol>
 </nav>
 
-            <div class="hero-title">히어로 타이틀</div>
-            <div class="slogan-sub">슬로건 서브카피</div>
+            <div class="hero-title">BOARD > INDICATOR</div>
         </div>
     </div>
     <div class="container">
+            <div class="guide-box">
+                <p class="font-h6">Indicator (Default)</p>
+                <div class="board">
+                    <div class="indicator">
+                        <div class="content">
+                            <a href="#" class="item prev">
+                                <div class="sub">이전글</div>
+                                <div class="title">이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동 ‘고고 챌린지’ 캠페인 동참</div>
+                            </a>
+                            <a href="#" class="item next">
+                                <div class="sub">다음글</div>
+                                <div class="title">이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동 ‘고고 챌린지’ 캠페인 동참</div>
+                            </a>
+                        </div>
+                        <div class="btn-box">
+                            <a href="#" class="btn btn-black"><span>목록</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-box">
+                <p class="font-h6">Indicator (disabled)</p>
+                <div class="board">
+                    <div class="indicator">
+                        <div class="content">
+                            <a href="#" class="item prev disabled">
+                                <div class="sub">이전글</div>
+                                <div class="title">이전 글이 없습니다.</div>
+                            </a>
+                            <a href="#" class="item next disabled">
+                                <div class="sub">다음글</div>
+                                <div class="title">이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동 ‘고고 챌린지’ 캠페인 동참</div>
+                            </a>
+                        </div>
+                        <div class="btn-box">
+                            <a href="#" class="btn btn-black"><span>목록</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-box">
+                <p class="font-h6">Indicator (2줄이상)</p>
+                <div class="board">
+                    <div class="indicator">
+                        <div class="content">
+                            <a href="#" class="item prev">
+                                <div class="sub">이전글</div>
+                                <div class="title">이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동 ‘고고 챌린지’ 캠페인 동참이수강 마크로젠 대표, 탈(脫) 플라스틱
+                                    실천운동
+                                    ‘고고 챌린지’ 캠페인 동참
+                                </div>
+                            </a>
+                            <a href="#" class="item next">
+                                <div class="sub">다음글</div>
+                                <div class="title">이수강 마크로젠 대표, 탈(脫) 플라스틱 실천운동 ‘고고 챌린지’ 캠페인 동참이수강 마크로젠 대표, 탈(脫) 플라스틱
+                                    실천운동
+                                    ‘고고 챌린지’ 캠페인 동참
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn-box">
+                            <a href="#" class="btn btn-black"><span>목록</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <footer class="footer">
     <div class="inner clearfix">
@@ -117,3 +184,15 @@
 </div>
 </body>
 </html>
+<style>
+    .guide-box{
+        border: 1px solid #d9d9d9;
+        padding: 30px;
+        margin-bottom: 30px;}
+    .guide-box:last-of-type{
+         margin-bottom: 0;
+     }
+    .guide-box>p{
+        margin-bottom: 50px;
+    }
+ </style>

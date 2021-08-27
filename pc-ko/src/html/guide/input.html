@@ -1,6 +1,22 @@
 <!doctype html>
 <html lang="ko">
-@@include('../../html/include/component/head_guide.html')
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=1244,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-title" content="macrogen" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="macrogen"/>
+  <meta name="keywords" content="macrogen"/>
+<!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
+  <title>MACROGEN</title>
+  <script src="../../js/bundle.js"></script>
+  <script src="../../js/common.js"></script>
+  <link type="text/css" rel="stylesheet" href="../../css/marcrogen_component_pc.css"/>
+</head>
+
 <body>
 <div class="wrap">
     <div class="container">
@@ -66,7 +82,38 @@
             </div>
             <div class="title">Paging</div>
             <div class="mb-5">
-                @@include('../../html/include/component/pagination.html')
+                <div class="pagination-wrap">
+    <ul class="navigation">
+        <li class="page-item first">
+            <a class="page-link" href="#">
+                <span class="sr-only">맨 앞</span>
+            </a>
+        </li>
+        <li class="page-item prev">
+            <a class="page-link" href="#">
+                <span class="sr-only">이전</span>
+            </a>
+        </li>
+        <li class="page-item next">
+            <a class="page-link" href="#">
+                <span class="sr-only">다음</span>
+            </a>
+        </li>
+        <li class="page-item last">
+            <a class="page-link" href="#">
+                <span class="sr-only">맨 뒤</span>
+            </a>
+        </li>
+    </ul>
+    <ul class="pagination">
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+    </ul>
+</div>
+
             </div>
             <div class="mb-5">
                 <div class="pagination-wrap">
