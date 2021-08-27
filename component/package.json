@@ -21,8 +21,8 @@
     "domfam Inc."
   ],
   "scripts": {
-    "dev": "npm-run-all develope watch",
-    "dist": "npm-run-all css js && gulp",
+    "dev-component": "npm-run-all develope watch",
+    "dist-component": "npm-run-all css js && gulp",
     "---------------------------- gulp task ": "",
     "watch": "gulp browser-sync",
     "develope": "gulp dev",
