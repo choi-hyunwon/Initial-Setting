@@ -136,7 +136,9 @@ gulp.task('browser-sync', function() {
   gulp.watch('src/scss/**/*.scss', gulp.series(scss)).on('change', browserSync.reload);
   gulp.watch(['src/html/**/*.html'], gulp.series(htmlPage)).on('change', browserSync.reload);
   gulp.watch('src/html/include/*.html', gulp.series(htmlPage)).on('change', browserSync.reload);
+  gulp.watch('src/js/*/*.js', gulp.series(jsLib, jsCommon)).on('change', browserSync.reload);
   gulp.watch('src/img/**/*', gulp.series(copyImg)).on('change', browserSync.reload);
+  gulp.watch('src/fonts/**/**', gulp.series(copyFonts)).on('change', browserSync.reload);
 });
 
 exports.default = gulp.series("dist");
