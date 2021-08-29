@@ -315,6 +315,15 @@
       .inner {
         padding: 0;
         height: 95px;
+        .section_gnb {
+          .logo {
+            a {
+              width: 144px;
+              height: 54px;
+              background: url("../img/common/logo-default-sm.svg") no-repeat left center / 100%;
+            }
+          }
+        }
       }
     }
   }
