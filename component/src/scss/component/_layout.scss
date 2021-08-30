@@ -5,6 +5,7 @@
  v.0.3 (주연) header z-index / hr.divider / .btn-indicator-box 추가 -- 2021.08.24
  v.0.4 (주연) 레이아웃 전체 변경 -- 2021.08.25
  v.0.5 (선미) sticky-wrapper 제거 / container : padding-top : 124px 추가-- 2021.08.26
+ v.0.6 (선미) .header /position: relative-- 2021.08.30
 |----------------------------------|
 */
 .wrap {
@@ -80,7 +81,7 @@
         }
 
         .breadcrumb {
-          top: 30px;
+          top: 0;
           right: 0;
         }
       }
@@ -104,7 +105,7 @@
         }
 
         .breadcrumb {
-          top: 30px;
+          top: 0;
           right: 0;
 
           .breadcrumb-item {
@@ -175,6 +176,7 @@
     //position: fixed; //레이아웃 요소 변경으로 수정
     background-color: transparent;
     z-index: 5 !important;
+    position: relative;
 
     &:before {
       content: '';
@@ -331,7 +333,7 @@
   .container {
     width: 1244px;
     margin: 0 auto;
-    padding: 124px 0 150px;
+    padding: 0 0 150px;
     max-width: none;
 
     &.container-fluid {

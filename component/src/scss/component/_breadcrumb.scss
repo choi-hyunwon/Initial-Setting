@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.23
  v.0.2 (선미)  breadcrumb >padding-top:30px; -- 2021.08.26
+ v.0.3 (선미)  .breadcrumb-white추가 -- 2021.08.30
 |----------------------------------|
 */
 .breadcrumb {
@@ -10,24 +11,20 @@
   height: 50px;
   align-items: end;
   justify-content: flex-end;
-  padding-top:30px;
   font-size: 14px;
   margin-bottom: 90px;
   letter-spacing: 0;
+  padding-top: 30px;
 
   .breadcrumb-item {
-    a {
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
       text-transform: uppercase;
       color: $gray-909090;
-    }
 
     &.active {
-      a {
         color: $gray-000000;
-      }
     }
 
     + .breadcrumb-item {
@@ -37,6 +34,11 @@
         color: $gray-909090;
         padding-right: 6px;
       }
+    }
+  }
+  &.breadcrumb-white{
+    .breadcrumb-item{
+      color: $gray-ffffff;
     }
   }
 }
