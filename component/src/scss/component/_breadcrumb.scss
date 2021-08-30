@@ -15,18 +15,14 @@
   letter-spacing: 0;
 
   .breadcrumb-item {
-    a {
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
       text-transform: uppercase;
       color: $gray-909090;
-    }
 
     &.active {
-      a {
         color: $gray-000000;
-      }
     }
 
     + .breadcrumb-item {
@@ -36,6 +32,11 @@
         color: $gray-909090;
         padding-right: 6px;
       }
+    }
+  }
+  &.breadcrumb-white{
+    .breadcrumb-item{
+      color: $gray-ffffff;
     }
   }
 }

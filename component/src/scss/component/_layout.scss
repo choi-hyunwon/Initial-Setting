@@ -175,6 +175,7 @@
     //position: fixed; //레이아웃 요소 변경으로 수정
     background-color: transparent;
     z-index: 5 !important;
+    position: relative;
 
     &:before {
       content: '';
@@ -331,7 +332,7 @@
   .container {
     width: 1244px;
     margin: 0 auto;
-    padding: 124px 0 150px;
+    padding: 30px 0 150px;
     max-width: none;
 
     &.container-fluid {
