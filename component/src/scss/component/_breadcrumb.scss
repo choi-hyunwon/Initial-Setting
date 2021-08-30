@@ -39,6 +39,9 @@
   &.breadcrumb-white{
     .breadcrumb-item{
       color: $gray-ffffff;
+      &.active {
+        color: $gray-ffffff;
+      }
     }
   }
 }

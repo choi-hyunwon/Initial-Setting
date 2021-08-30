@@ -116,8 +116,8 @@
   var source = $('#list-template').html() //jQuery
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
-          .append(template(data.newsroom))
           .append(template(data.guide))
+          .append(template(data.newsroom))
 </script>
 <script>
   $('.link').on('click', function () {
@@ -196,7 +196,7 @@
   })
   // sum = sum - 20;
   var total = (comp / sum) * 100
-  $('.nav_depth_2 .title h2').html('Macrogen guide')
+  $('.nav_depth_2 .title h2').html('Macrogen')
   // .html('페이지 목록 : 완료' + total.toFixed(0) + '%')
 </script>
 </body>

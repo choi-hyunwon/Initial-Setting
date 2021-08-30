@@ -1,47 +1,6 @@
 const data = {}
-data.newsroom = {
-  title: 'newsroom',
-  list: [
-    {
-      stateClass: 'complete',
-      url: '01뉴스_01목록',
-      category: 'newsroom',
-      page: '01뉴스_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '01뉴스_02조회',
-      category: 'newsroom',
-      page: '01뉴스_02조회'
-    },
-    {
-      stateClass: 'complete',
-      url: '02미디어라이브러리_01목록',
-      category: 'newsroom',
-      page: '02미디어라이브러리_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '02미디어라이브러리_02조회',
-      category: 'newsroom',
-      page: '02미디어라이브러리_02조회'
-    },
-    {
-      stateClass: 'complete',
-      url: '03공지사항_01목록',
-      category: 'newsroom',
-      page: '03공지사항_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '03공지사항_02조회',
-      category: 'newsroom',
-      page: '03공지사항_02조회'
-    }
-  ]
-}
 data.guide = {
-  title: 'guide',
+  title: 'GUIDE',
   list: [
     {
       stateClass: 'complete',
@@ -159,3 +118,45 @@ data.guide = {
     }
   ]
 }
+data.newsroom = {
+  title: 'NEWSROOM',
+  list: [
+    {
+      stateClass: 'complete',
+      url: '01뉴스_01목록',
+      category: 'newsroom',
+      page: '01뉴스_01목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '01뉴스_02조회',
+      category: 'newsroom',
+      page: '01뉴스_02조회'
+    },
+    {
+      stateClass: 'complete',
+      url: '02미디어라이브러리_01목록',
+      category: 'newsroom',
+      page: '02미디어라이브러리_01목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '02미디어라이브러리_02조회',
+      category: 'newsroom',
+      page: '02미디어라이브러리_02조회'
+    },
+    {
+      stateClass: 'complete',
+      url: '03공지사항_01목록',
+      category: 'newsroom',
+      page: '03공지사항_01목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '03공지사항_02조회',
+      category: 'newsroom',
+      page: '03공지사항_02조회'
+    }
+  ]
+}
+

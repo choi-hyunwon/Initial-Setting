@@ -3,6 +3,7 @@
 @@include('../../html/include/component/head_guide.html')
 <body>
 <div class="wrap">
+    @@include('../../html/include/component/header-white.html')
     <div class="container">
         <!--header / footer-->
         <div class="box">
@@ -204,6 +205,7 @@
                 </div>
             </div>
     </div>
+    @@include('../../html/include/component/footer.html')
 </div>
 </body>
 </html>
@@ -213,6 +215,10 @@
         padding: 30px;
         border-radius: 10px;
         margin-bottom: 30px;
+
+    }
+    .box:first-child{
+        margin-top: 50px;
     }
     .container .box .card{
         display: inline-block;
