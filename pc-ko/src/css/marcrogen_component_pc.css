@@ -10647,7 +10647,6 @@ textarea.form-control {
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.08.23
  v.0.2 (선미)  breadcrumb >padding-top:30px; -- 2021.08.26
- v.0.3 (선미)  .breadcrumb-white추가 -- 2021.08.30
 |----------------------------------|
 */
 .breadcrumb {
@@ -10656,25 +10655,23 @@ textarea.form-control {
   height: 50px;
   align-items: end;
   justify-content: flex-end;
+  padding-top: 30px;
   font-size: 14px;
   margin-bottom: 90px;
-  letter-spacing: 0;
-  padding-top: 30px; }
-  .breadcrumb .breadcrumb-item {
+  letter-spacing: 0; }
+  .breadcrumb .breadcrumb-item a {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: #909090; }
-    .breadcrumb .breadcrumb-item.active {
-      color: #000000; }
-    .breadcrumb .breadcrumb-item + .breadcrumb-item {
-      padding-left: 6px; }
-      .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-        color: #909090;
-        padding-right: 6px; }
-  .breadcrumb.breadcrumb-white .breadcrumb-item {
-    color: #FFFFFF; }
+  .breadcrumb .breadcrumb-item.active a {
+    color: #000000; }
+  .breadcrumb .breadcrumb-item + .breadcrumb-item {
+    padding-left: 6px; }
+    .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      color: #909090;
+      padding-right: 6px; }
 
 /*
 |----------------------------------|
@@ -11102,77 +11099,34 @@ textarea.form-control {
 */
 table {
   background-color: #FFFFFF; }
-  table.table {
-    /*포인트배경색상*/
-    /*기본테이블*/
-    /*가로형 테이블*/ }
-    table.table thead, table.table tbody, table.table tfoot, table.table tr, table.table td, table.table th {
-      border: 0; }
-    table.table .table-bg {
-      background-color: #F5F8FB; }
-    table.table thead {
-      border-top: 1px solid #000000;
-      background: #F7F7F7; }
-      table.table thead tr {
-        border-bottom: 1px solid #D9D9D9;
-        /*
-        >:first-of-type{
-          padding-left: 60px;
-        }
-        >:last-of-type{
-          padding-right: 60px;
-        }
-        */ }
-        table.table thead tr th {
-          text-align: center;
-          vertical-align: middle;
-          padding: 25px 30px 24px;
-          line-height: 30px;
-          font-weight: bold;
-          font-size: 18px; }
-          table.table thead tr th.sub-title {
-            font-weight: 500;
-            font-size: 16px; }
-          table.table thead tr th span {
-            font-weight: 400; }
-            table.table thead tr th span.additional {
-              display: block;
-              color: #707070;
-              font-size: 16px; }
-    table.table tbody tr {
+  table.table thead, table.table tbody, table.table tfoot, table.table tr, table.table td, table.table th {
+    border: 0; }
+  table.table thead {
+    border-top: 1px solid #000000;
+    background: #F7F7F7; }
+    table.table thead tr {
       border-bottom: 1px solid #D9D9D9; }
-      table.table tbody tr th {
-        border-top: 1px solid #000000;
-        background: #F7F7F7; }
-      table.table tbody tr td {
-        color: #666666;
+      table.table thead tr th {
         text-align: center;
         vertical-align: middle;
-        padding: 25px 30px 24px;
+        padding: 25px 60px 24px;
         line-height: 30px;
-        font-weight: normal; }
-        table.table tbody tr td .list-style li {
-          position: relative; }
-          table.table tbody tr td .list-style li:before {
-            clear: both;
-            display: inline-block;
-            content: '';
-            width: 4px;
-            height: 1px;
-            position: absolute;
-            left: -10px;
-            top: 50%;
-            background-color: #707070;
-            transform: translateY(-50%); }
-    table.table.table-row tbody tr th {
-      border-top: none;
+        font-weight: bold;
+        font-size: 18px; }
+        table.table thead tr th.sub-title {
+          font-weight: 500;
+          font-size: 16px; }
+        table.table thead tr th span {
+          font-weight: 400; }
+  table.table tbody tr {
+    border-bottom: 1px solid #D9D9D9; }
+    table.table tbody tr td {
+      color: #666666;
+      text-align: center;
       vertical-align: middle;
       padding: 25px 30px 24px;
       line-height: 30px;
-      font-weight: bold;
-      font-size: 18px; }
-    table.table.table-row tbody tr:first-of-type {
-      border-top: 1px solid #000000; }
+      font-weight: normal; }
 
 /*
 .table {
