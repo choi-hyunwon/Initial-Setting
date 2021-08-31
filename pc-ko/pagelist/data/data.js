@@ -159,4 +159,15 @@ data.newsroom = {
     }
   ]
 }
+data.IR = {
+  title: 'IR',
+  list: [
+    {
+      stateClass: 'complete',
+      url: '01재무정보',
+      category: 'IR',
+      page: '01재무정보'
+    }
+  ]
+}
 
