@@ -1,0 +1,68 @@
+/*
+|----------------------------------|
+ v.0.1 (태윤) 최초 작업 -- 2021.08.31
+|----------------------------------|
+*/
+
+.section_agreement{
+  .subtitle{
+    padding: 45px 0px 183px;
+    font-weight: 500;
+  }
+  .title_area{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 2px solid #353C49;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 23px 0px;
+    margin: 0 46px;
+  }
+  .content_area{
+    margin: 0px 128px;
+    p{
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+      color: #454545;
+    }
+    .num_list{
+      counter-reset: num;
+      li{
+        >p{
+          &:nth-child(1){
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: -0.75px;
+            &:before{
+              content: counter(num)". "; counter-increment:num 1;
+            }
+          }
+
+
+        }
+      }
+    }
+    .hyphen_list{
+      li{
+        position: relative;
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #454545;
+        i{
+          overflow: hidden;
+          position: absolute;
+          top: 15px;
+          left: 0;
+          width: 5px;
+          height: 1px;
+          background-color: #454545;
+        }
+      }
+
+    }
+  }
+}

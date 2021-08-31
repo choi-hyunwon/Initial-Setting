@@ -170,4 +170,27 @@ data.IR = {
     }
   ]
 }
+data.agreement = {
+  title: 'AGREEMENT',
+  list: [
+    {
+      stateClass: 'working',
+      url: '01개인정보처리방침',
+      category: 'agreement',
+      page: '01개인정보처리방침'
+    },
+    {
+      stateClass: 'working',
+      url: '02영상정보_운영_관리',
+      category: 'agreement',
+      page: '02영상정보_운영_관리'
+    },
+    {
+      stateClass: 'working',
+      url: '03내부정보관리규정',
+      category: 'agreement',
+      page: '03내부정보관리규정'
+    }
+  ]
+}
 
