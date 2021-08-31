@@ -4,24 +4,36 @@
 |----------------------------------|
 */
 .section_IR {
-  .subtitle{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 25px;
-    .text-unit{
-      font-size: 14px;
-      color:#707070;
+  .financial_box{
+    margin-bottom: 99px;
+    &:last-of-type{
+      margin-bottom: 0;
     }
-  }
-  .table{
-    tbody{
-      .table-bg{
-        td{
-          font-weight: bold;
-          color:#000000;
+    .subtitle{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 29px;
+      .text-unit{
+        font-size: 14px;
+        color:#707070;
+      }
+    }
+    .table{
+      tbody{
+        .table-bg{
+          td{
+            font-weight: bold;
+            color:#000000;
+          }
         }
       }
     }
+  }
+  .update_text{
+    font-weight: 500;
+    color:#909090;
+    text-align: right;
+    padding-top: 9px;
   }
 }

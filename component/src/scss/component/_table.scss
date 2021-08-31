@@ -22,19 +22,17 @@ table {
 
       tr {
         border-bottom: 1px solid $line-d9d9d9;
-        /*
         >:first-of-type{
           padding-left: 60px;
         }
         >:last-of-type{
           padding-right: 60px;
         }
-        */
 
         th {
           text-align: center;
           vertical-align: middle;
-          padding: 25px 30px 24px;
+          padding: 20px 30px;
           line-height: 30px;
           font-weight: bold;
           font-size: 18px;
@@ -58,6 +56,13 @@ table {
     tbody {
       tr {
         border-bottom: 1px solid $line-d9d9d9;
+        >:first-of-type{
+          padding-left: 60px;
+        }
+        >:last-of-type{
+          padding-right: 60px;
+        }
+
         th{
           border-top: 1px solid $line-000000;
           background: $bg-f7f7f7;
@@ -91,6 +96,7 @@ table {
       }
     }
 
+
     /*가로형 테이블*/
     &.table-row{
       tbody{
@@ -112,98 +118,3 @@ table {
     }
   }
 }
-
-/*
-.table {
-  thead {
-    tr {
-      th {
-        text-align: center;
-        border-width: 1px;
-        background: #fcfcfc;
-        vertical-align: middle;
-        padding: 10px 0.75rem;
-        font-weight: normal;
-        font-size: 15px;
-      }
-    }
-  }
-
-  tbody {
-    tr {
-      th {
-        padding-left: 20px;
-        background: #f0f3f8;
-        border-bottom: 1px solid #e0e0e0;
-        border-right: 1px solid $border-color;
-        font-size: 15px;
-      }
-
-      td {
-        border-bottom: 1px solid #e0e0e0;
-        vertical-align: middle;
-        padding: 15px 0.75rem;
-        font-size: 14px;
-        text-align: left;
-        color: #666;
-
-        &.title {
-          text-align: left;
-          padding-left: 30px;
-          font-size: 15px;
-
-          .title_gongi {
-            max-width: 420px; !*430px 에서 수정([게시글 수 떨어짐]*!
-            font-weight: $font-weight-normal;
-            vertical-align: middle;
-
-            .bg{
-              opacity: 0.67;
-              background-color: #418ac9;
-              color: #fff;
-              line-height: 20px;
-              height: 20px;
-              font-weight: 350;
-              padding: 0 2px;
-            }
-
-            .text-primary {
-              margin-right: 10px;
-              font-weight: $font-weight-bold;
-            }
-          }
-        }
-        .no-data{
-          padding:65px 40px ;
-        }
-      }
-    }
-  }
-
-  .text-center{
-    text-align: center;
-  }
-  &.text-align-center {
-    tbody {
-      td {
-        text-align: center;
-      }
-    }
-  }
-
-  &.flat-row {
-    margin-bottom: 20px;
-
-    th {
-      padding: 9px 5px;
-    }
-
-    td {
-      padding: 9px 5px;
-
-      &.title {
-        padding-left: 0;
-      }
-    }
-  }
-}*/
