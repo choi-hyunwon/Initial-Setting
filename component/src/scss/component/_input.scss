@@ -17,6 +17,10 @@
     font-weight: 700;
     font-size: 22px;
     letter-spacing: -0.75px;
+    &::placeholder{
+      font-size: 18px;
+      color:$gray-d9d9d9;
+    }
   }
 
   .input-group-phone {
@@ -90,7 +94,7 @@
 /* select */
 .form-select {
   line-height: 53px;
-  padding: 0 21px 0 0;
+  padding: 0 20px 0 0;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -98,11 +102,12 @@
   border-radius: 0;
   font-size: 18px;
   letter-spacing: -0.75px;
-  color: $line-000000;
+  font-weight: bold;
+  color:$gray-454545;
   @include background-img($width: 8px, $height: 6px, $category: 'common', $img: 'ico-select-box.svg');
   width: 54px;
   height: auto;
-  background-position: right 8px center;
+  background-position: right 20px center;
   background-size: 8px 6px;
 
   &:focus {
@@ -121,6 +126,8 @@
     display: inline-block;
     width: 128px;
     margin-right: 6px;
+    font-weight: normal;
+    color: $gray-000000;
   }
 
   .input-search {

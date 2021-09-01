@@ -112,7 +112,7 @@ data.guide = {
     },
     {
       stateClass: 'complete',
-      url: 'board_05',
+      url: 'Indicator',
       category: 'guide',
       page: '인디케이터'
     }
@@ -167,6 +167,48 @@ data.IR = {
       url: '01재무정보',
       category: 'IR',
       page: '01재무정보'
+    },
+    {
+      stateClass: 'complete',
+      url: '02공시정보_01공고_01목록',
+      category: 'IR',
+      page: '02공시정보_01공고_01목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '02공시정보_01공고_02조회',
+      category: 'IR',
+      page: '02공시정보_01공고_02조회'
+    },
+    {
+      stateClass: 'working',
+      url: '02공시정보_02공시정보',
+      category: 'IR',
+      page: '02공시정보_02공시정보'
+    },
+    {
+      stateClass: 'working',
+      url: '02공시정보_03주가정보',
+      category: 'IR',
+      page: '02공시정보_03주가정보'
+    },
+    {
+      stateClass: 'complete',
+      url: '03IR소식_01목록',
+      category: 'IR',
+      page: '03IR소식_01목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '03IR소식_02조회',
+      category: 'IR',
+      page: '03IR소식_02조회'
+    },
+    {
+      stateClass: 'complete',
+      url: '04투자자문의',
+      category: 'IR',
+      page: '04투자자문의'
     }
   ]
 }
