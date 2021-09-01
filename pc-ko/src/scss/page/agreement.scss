@@ -20,13 +20,22 @@
     }
     .content_area{
       margin: 0px 82px;
+      .table{
+        thead{
+          tr{
+            th{
+              padding: 25px 0px 24px;
+            }
+          }
+        }
+      }
       p{
         font-size: 16px;
         line-height: 30px;
         font-weight: 400;
         color: #454545;
       }
-      >ol{
+      ol{
         counter-reset: num;
         li{
           >p {
@@ -60,6 +69,23 @@
             }
           }
 
+        }
+      }
+      .num_circle_list{
+        counter-reset: circle_num;
+        li{
+          &:before {
+            width: 16px;
+            height: 16px;
+            line-height: 12px;
+            font-size: 14px;
+            display: inline-block;
+            border-radius: 50%;
+            border: 1px solid #454545;
+            text-align: center;
+            content: counter(circle_num);
+            counter-increment: circle_num 1;
+          }
         }
       }
       .lookup{
