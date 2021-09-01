@@ -70,10 +70,11 @@
           }
 
         }
+
       }
       .num_circle_list{
         counter-reset: circle_num;
-        li{
+        >li{
           &:before {
             width: 16px;
             height: 16px;
