@@ -4,24 +4,67 @@
 |----------------------------------|
 */
 .section_IR {
-  .subtitle{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 25px;
-    .text-unit{
-      font-size: 14px;
-      color:#707070;
+  /*재무정보*/
+  .financial_box{
+    margin-bottom: 99px;
+    &:last-of-type{
+      margin-bottom: 0;
     }
-  }
-  .table{
-    tbody{
-      .table-bg{
-        td{
-          font-weight: bold;
-          color:#000000;
+    .subtitle{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 29px;
+      .text-unit{
+        font-size: 14px;
+        color:#707070;
+      }
+    }
+    .table{
+      tbody{
+        .table-bg{
+          td{
+            font-weight: bold;
+            color:#000000;
+          }
         }
       }
     }
   }
+  .update_text{
+    font-weight: 500;
+    color:#909090;
+    text-align: right;
+    padding-top: 9px;
+  }
+
+  /*투자자문의*/
+  .font-h5{
+    margin-bottom: 60px;
+    span{
+      font-size: 44px;
+      margin-right: 3px;
+    }
+  }
+  .input-phone-box{
+    margin-bottom: 40px;
+    .notice-text{
+      padding-left: 214px;
+      padding-top: 15.5px;
+      span{
+        vertical-align: text-top;
+        padding-left: 3px;
+        font-weight: 500;
+        color: #909090;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+  .file-box{
+    background-color: #f7f7f7;
+
+
+  }
+
 }

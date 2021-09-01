@@ -30,7 +30,7 @@ front.common = (function () {
         // console.log('UP');
         if (window.scrollY > 124){
           $('.header').show()
-              .css({'position': 'fixed'})
+              .css({'position': 'fixed','top':'0'})
               .addClass('header-sm')
         } else {
           $('.header').show()
