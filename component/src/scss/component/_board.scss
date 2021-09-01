@@ -240,6 +240,22 @@
         }
       }
     }
+
+    &.thumbnail-only-title {
+      padding-bottom: 118px;
+
+      .item {
+        height: 417px;
+
+        .img {
+          height: 260px;
+        }
+
+        .tit {
+          @include ellipsis($line: 2);
+        }
+      }
+    }
   }
 
   .list {
