@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.08.31
+ v.0.2 주연 : slider 수정 적용 -- 2021.09.01
 |----------------------------------|
 */
 .board {
@@ -8,7 +9,7 @@
     overflow: hidden;
     margin-bottom: 100px;
 
-    .info {
+    .text-slider {
       float: left;
       width: 388px;
       margin-right: 40px;
@@ -52,7 +53,7 @@
       }
     }
 
-    .swiper-container {
+    .image-slider {
       width: 816px;
       height: 520px;
 
@@ -84,7 +85,7 @@
       }
     }
 
-    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    .swiper-pagination-bullet {
       margin: 0 7.5px;
     }
   }
