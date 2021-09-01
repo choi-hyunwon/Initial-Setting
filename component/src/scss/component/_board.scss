@@ -239,6 +239,16 @@
             height: auto;
           }
         }
+        &:hover {
+          .img {
+            overflow: hidden;
+
+            img {
+              transform: scale(1.10);
+              transition: .6s
+            }
+          }
+        }
       }
     }
 
