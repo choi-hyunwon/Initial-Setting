@@ -205,7 +205,7 @@ data.IR = {
       page: '03IR소식_02조회'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '04투자자문의',
       category: 'IR',
       page: '04투자자문의'

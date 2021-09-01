@@ -3,8 +3,8 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-<!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/05IR_04투자자문의.png'})-->
-<!--    @@include('../../html/include/component/header-white.html')-->
+  <!--  @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/05IR_04투자자문의.png'})-->
+    @@include('../../html/include/component/header-white.html')
     <div class="container">
         @@include('../../html/include/common/breadcrumb.html',  {
         "depth1": "IR",
@@ -12,60 +12,76 @@
         })
         <div class="section_IR">
             <div class="font-h1">투자자 문의</div>
-            <div style="width: 1323px;height: 520px;background-color:#d9d9d9;margin-bottom: 100px"></div>
-            <div class="font-h5"><span>01.</span>정보를 입력해주세요</div>
-
-
-
-            <!-- input / text-->
-            <div class="input-group">
-                <span class="input-group-text" id="name">이름</span>
-                <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input" aria-describedby="name">
-            </div>
-            <!-- input / phone-->
-            <div class="input-group input-phone-box">
-                <span class="input-group-text" id="num1">휴대폰 번호</span>
-                <div class="input-group-phone">
-                    <select class="form-select" title="휴대폰번호 앞세자리 선택">
-                        <option selected>010</option>
-                        <option value="1">011</option>
-                        <option value="2">019</option>
-                    </select>
-                    <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리">
-                    <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리">
+            <div style="width: 1323px;height: 520px;background-color:#d9d9d9;"></div>
+            <div class="privacy_box">
+                <div class="font-h5"><span>01.</span>정보를 입력해주세요</div>
+                <!-- input / text-->
+                <div class="input-group">
+                    <span class="input-group-text" id="name">이름</span>
+                    <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input" aria-describedby="name">
                 </div>
-                <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span></p>
-            </div>
-            <!-- file / input -->
-            <div class="input-group">
-                <span class="input-group-text" id="fileUpload">첨부파일</span>
-                <label class="form-control-file _fileUpload">
-                    <span class="btn-add-file">파일 첨부</span>
-                    <input type="file" class="form-control-file" aria-describedby="fileUpload" aria-label="Upload">
-                </label>
-                <div class="file-box">
-                    <ul class="list">
-                        <li class="clearfix">
-                            <span class="file-name ">
-                             <em>마크로젠 투자자문의 내용 참고자료.pdf</em>
-                            </span>
-                            <span class="capacity">5MB</span>
-                        </li>
-
-                    </ul>
+                <!-- input / phone-->
+                <div class="input-group input-phone-box">
+                    <span class="input-group-text" id="num1">휴대폰 번호</span>
+                    <div class="input-group-phone">
+                        <select class="form-select" title="휴대폰번호 앞세자리 선택">
+                            <option selected>010</option>
+                            <option value="1">011</option>
+                            <option value="2">019</option>
+                        </select>
+                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리">
+                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리">
+                    </div>
+                    <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span></p>
+                </div>
+                <!-- file / input -->
+                <div class="input-group">
+                    <span class="input-group-text" id="fileUpload">첨부파일</span>
+                    <label class="form-control-file _fileUpload">
+                        <span class="btn-add-file">파일 첨부</span>
+                        <span class="file-box"></span>
+                        <input type="file" class="form-control-file" aria-describedby="fileUpload" aria-label="Upload">
+                    </label>
                 </div>
             </div>
-            <!-- textarea -->
-            <div class="input-group">
-                <span class="input-group-text" id="faq">문의내용</span>
-                <textarea type="text" placeholder="문의하실 내용을 입력하세요" class="form-control" aria-label="input"
-                          aria-describedby="faq"></textarea>
+            <hr class="divider"/>
+            <div class="privacy_box">
+                <div class="font-h5"><span>02.</span>문의하실 내용을 작성해주세요</div>
+                <!-- input / text-->
+                <div class="input-group">
+                    <span class="input-group-text" id="title">제목</span>
+                    <input type="text" placeholder="제목을 입력하세요" class="form-control" aria-label="input" aria-describedby="title">
+                </div>
+                <!-- textarea -->
+                <div class="input-group">
+                    <span class="input-group-text" id="faq">문의내용</span>
+                    <textarea type="text" placeholder="문의하실 내용을 입력하세요" class="form-control" aria-label="input"
+                              aria-describedby="faq"></textarea>
+                </div>
+                <!-- input / text-->
+                <div class="input-group">
+                    <span class="input-group-text" id="automatic">자동등록방지</span>
+                    <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;"></span>
+                    <input type="text" placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
+                </div>
             </div>
-            <div class="mb-5">
+            <hr class="divider"/>
+            <div class="privacy_box">
+                <div class="font-h5"><span>03.</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
+                <div class="agreement">
+                    <p><span class="font-bold">개인정보 수집 목적 :</span> 투자 문의 및 상담 문의 대응</p>
+                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호, 문의 제목, 문의 내용</p>
+                    <p><span class="font-bold">보유 및 이용기간 :</span>  3년</p>
+                    <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다.</p>
+                </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check">
+                    <input class="form-check-input" checked type="checkbox" value="" id="check">
                     <label class="form-check-label" for="check">동의합니다</label>
                 </div>
+            </div>
+            <div class="btn-box">
+                <a href="#" class="btn btn-white disabled"><span>취소</span></a>
+                <a href="#" class="btn btn-primary"><i class="icon"></i><span>문의하기</span></a>
             </div>
        </div>
     </div>
