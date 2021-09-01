@@ -1,0 +1,127 @@
+/*
+|----------------------------------|
+ v.0.1 (태윤) 최초 작업 -- 2021.08.31
+|----------------------------------|
+*/
+
+.section_agreement{
+  .subtitle{
+    padding: 45px 0px 183px;
+    font-weight: 500;
+  }
+  .terms{
+    margin: 0 46px;
+    .title_area{
+      text-align: center;
+      border-top: 2px solid #353C49;
+      border-bottom: 1px solid #d9d9d9;
+      padding: 23px 0px;
+      margin-bottom: 10px;
+    }
+    .content_area{
+      margin: 0px 82px;
+      .table{
+        thead{
+          tr{
+            th{
+              padding: 25px 0px 24px;
+            }
+          }
+        }
+      }
+      p{
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #454545;
+      }
+      ol{
+        counter-reset: num;
+        li{
+          >p {
+            &:nth-child(1) {
+              font-weight: 700;
+              &:before {
+                content: counter(num) ". ";
+                counter-increment: num 1;
+              }
+            }
+          }
+        }
+      }
+      ul {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #454545;
+        &.hyphen_list {
+          li {
+            position: relative;
+            padding-left: 10px;
+            i {
+              overflow: hidden;
+              position: absolute;
+              top: 15px;
+              left: 0;
+              width: 5px;
+              height: 1px;
+              background-color: #454545;
+            }
+          }
+
+        }
+
+      }
+      .num_circle_list{
+        counter-reset: circle_num;
+        >li{
+          &:before {
+            width: 16px;
+            height: 16px;
+            line-height: 12px;
+            font-size: 14px;
+            display: inline-block;
+            border-radius: 50%;
+            border: 1px solid #454545;
+            text-align: center;
+            content: counter(circle_num);
+            counter-increment: circle_num 1;
+          }
+        }
+      }
+      .lookup{
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+        margin-bottom: 42px;
+        .selector{
+          display: inline-block;
+          min-width: 280px;
+          height: 40px;
+          margin-right: 10px;
+          padding: 0px 15px;
+          border: 1px solid rgba(0,0,0,0.12);
+          font-size: 14px;
+          background:url('../img/common/ico-arrow-bottom-short-black.svg') no-repeat 95% 50%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          option{
+            padding: 0px 15px;
+            font-size: 14px;
+            height: 40px;
+          }
+          &:focus{
+            outline:none;
+          }
+        }
+        .btn{
+          padding: 0px 24px;
+          min-width: 88px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+}
