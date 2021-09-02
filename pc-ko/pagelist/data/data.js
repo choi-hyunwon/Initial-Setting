@@ -235,51 +235,51 @@ data.agreement = {
     }
   ]
 }
-// data.business ={
-//   title: 'BUSINESS',
-//   list: [
-//     {
-//       stateClass: 'working',
-//       url: '01연구서비스_01Genome',
-//       category: 'agreement',
-//       page: '01연구서비스_01Genome'
-//     },
-//     {
-//       stateClass: 'working',
-//       url: '01연구서비스_02Exsome',
-//       category: 'agreement',
-//       page: '01연구서비스_02Exsome'
-//     },
-//     {
-//       stateClass: 'working',
-//       url: '01연구서비스_03Transcriptome',
-//       category: 'agreement',
-//       page: '01연구서비스_03Transcriptome'
-//     },
-//     {
-//       stateClass: 'working',
-//       url: '01연구서비스_04Epigenome',
-//       category: 'agreement',
-//       page: '01연구서비스_04Epigenome'
-//     },
-//     {
-//       stateClass: 'working',
-//       url: '01연구서비스_05Cell',
-//       category: 'agreement',
-//       page: '01연구서비스_05Cell'
-//     },
-//     {
-//       stateClass: 'working',
-//       url: '01연구서비스_06ATAC',
-//       category: 'agreement',
-//       page: '01연구서비스_06ATAC'
-//     },
-//     {
-//       stateClass: 'working',
-//       url: '01연구서비스_07Spatial',
-//       category: 'agreement',
-//       page: '01연구서비스_07Spatial'
-//     }
-//   ]
-// }
+data.business ={
+  title: 'BUSINESS',
+  list: [
+    {
+      stateClass: 'working',
+      url: '01연구서비스_01Genome',
+      category: 'agreement',
+      page: '01연구서비스_01Genome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_02Exsome',
+      category: 'agreement',
+      page: '01연구서비스_02Exsome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_03Transcriptome',
+      category: 'agreement',
+      page: '01연구서비스_03Transcriptome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_04Epigenome',
+      category: 'agreement',
+      page: '01연구서비스_04Epigenome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_05Cell',
+      category: 'agreement',
+      page: '01연구서비스_05Cell'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_06ATAC',
+      category: 'agreement',
+      page: '01연구서비스_06ATAC'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_07Spatial',
+      category: 'agreement',
+      page: '01연구서비스_07Spatial'
+    }
+  ]
+}
 
