@@ -241,43 +241,43 @@ data.business ={
     {
       stateClass: 'working',
       url: '01연구서비스_01Genome',
-      category: 'agreement',
+      category: 'business',
       page: '01연구서비스_01Genome'
     },
     {
       stateClass: 'working',
       url: '01연구서비스_02Exsome',
-      category: 'agreement',
+      category: 'business',
       page: '01연구서비스_02Exsome'
     },
     {
       stateClass: 'working',
       url: '01연구서비스_03Transcriptome',
-      category: 'agreement',
+      category: 'business',
       page: '01연구서비스_03Transcriptome'
     },
     {
       stateClass: 'working',
       url: '01연구서비스_04Epigenome',
-      category: 'agreement',
+      category: 'business',
       page: '01연구서비스_04Epigenome'
     },
     {
       stateClass: 'working',
       url: '01연구서비스_05Cell',
-      category: 'agreement',
+      category: 'business',
       page: '01연구서비스_05Cell'
     },
     {
       stateClass: 'working',
       url: '01연구서비스_06ATAC',
-      category: 'agreement',
+      category: 'business',
       page: '01연구서비스_06ATAC'
     },
     {
       stateClass: 'working',
       url: '01연구서비스_07Spatial',
-      category: 'agreement',
+      category: 'business',
       page: '01연구서비스_07Spatial'
     }
   ]
