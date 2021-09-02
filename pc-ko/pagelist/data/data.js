@@ -163,7 +163,7 @@ data.IR = {
   title: 'IR',
   list: [
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '01재무정보',
       category: 'IR',
       page: '01재무정보'
