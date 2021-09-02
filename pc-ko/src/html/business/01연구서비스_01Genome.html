@@ -1,17 +1,25 @@
 <!doctype html>
 <html lang="ko">
-@@include('../../html/include/component/head_guide.html')
+@@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-    <div class="full-bg" style="background-color: #333;">
+    <div class="full-bg business_bg">
         @@include('../../html/include/component/header.html')
         <div class="frame frameB">
-            @@include('../../html/include/component/breadcrumb-white.html')
-            <div class="hero-title">히어로 타이틀</div>
-            <div class="slogan-sub">슬로건 서브카피</div>
+            @@include('../../html/include/common/breadcrumb-white-depth3.html',{
+            "depth1": "Business",
+            "depth2": "연구서비스",
+            "depth3": "NGS",
+            })
+            <div class="hero-title">NGS</div>
+            <div class="slogan-sub">Next Generation Sequencing</div>
+            <a href="#" class="btn btn-white btn-round">SERVICE</a>
         </div>
     </div>
     <div class="container">
+        <div class="section_business">
+
+        </div>
     </div>
     @@include('../../html/include/component/footer.html')
 </div>
