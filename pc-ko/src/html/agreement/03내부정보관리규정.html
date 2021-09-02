@@ -13,17 +13,77 @@
                 </div>
                 <div class="content_area">
                     <div class="lookup">
-                        <select class="selector _selector">
-                            <option selected="selected">2020. 03. 31 ~ 현재</option>
-                            <option>2019. 10. 21 ~ 2020. 03 .31</option>
-                            <option>2018. 10. 26 ~ 2019. 10 .20</option>
-                            <option>2017. 03. 31 ~ 2018. 10 .25</option>
-                            <option>2012. 12. 03 ~ 2017. 03 .31</option>
-                        </select>
+                        <div class="select_box _select_box">
+                            <div class="select_default">
+                                2020. 03. 31 ~ 현재
+                            </div>
+                            <div class="select_dropdown _dropdown">
+                                <ul>
+                                    <li><a role="button">2020.03.31 ~ 현재</a></li>
+                                    <li><a role="button">2019. 10. 21 ~ 2020. 03 .31</a></li>
+                                    <li><a role="button">2018. 10. 26 ~ 2019. 10 .20</a></li>
+                                    <li><a role="button">2017. 03. 31 ~ 2018. 10 .25</a></li>
+                                    <li><a role="button">2012. 12. 03 ~ 2017. 03 .31</a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#" class="btn btn-primary _lookup"><span>조회</span></a>
                         <!--클릭시 select box on-->
                         <script>
+                            /*드롭다운 클릭시 이벤트*/
+                            $(".select_default").click(function() {
+                                var select = $(this);
 
+                                //드롭다운 열기
+                                select.addClass("open").next('._dropdown').slideDown(100).addClass("open");
+
+                                //다른영역 클릭 시 닫기
+                                $(document).mouseup(function(e) {
+                                    var seting = $("._dropdown");
+                                    if (seting.has(e.target).length === 0) {
+                                        seting.removeClass("open").slideUp(100);
+                                        select.removeClass("open");
+                                    }
+                                });
+                                $("._dropdown a").click(function() {
+                                    var option = $(this).text();
+
+                                    //클릭 시 드롭다운 닫기
+                                    $("._dropdown a").removeClass('selected');
+                                    $("._dropdown").removeClass("open").slideUp(100);
+                                    select.removeClass("open");
+                                    $(this).addClass('selected');
+
+                                    //select에  text 넣기
+                                    select.text(option);
+                                });
+                            });
+
+                            /*버튼 클릭시 이벤트*/
+                            $("._lookup").click(function() {
+                                var select = $(this);
+
+                                //드롭다운 열기
+                                select.addClass("open").parent().find('._dropdown').slideDown(100).addClass("open");
+
+                                //다른영역 클릭 시 닫기
+                                $(document).mouseup(function(e) {
+                                    var seting = $("._dropdown");
+                                    if (seting.has(e.target).length === 0) {
+                                        seting.removeClass("open").slideUp(100);
+                                        select.removeClass("open");
+                                    }
+                                });
+                                $("._dropdown a").click(function() {
+                                    var option = $(this).text();
+
+                                    //클릭 시 드롭다운 닫기
+                                    $("._dropdown a").removeClass('selected');
+                                    $("._dropdown").removeClass("open").slideUp(100);
+                                    select.removeClass("open");
+                                    $(this).addClass('selected');
+                                });
+                            });
                         </script>
                     </div>
                     <ul>
