@@ -94,25 +94,42 @@
         align-content: center;
         justify-content: flex-end;
         margin-bottom: 42px;
-        .selector{
-          display: inline-block;
-          min-width: 280px;
-          height: 40px;
-          margin-right: 10px;
-          padding: 0px 15px;
-          border: 1px solid rgba(0,0,0,0.12);
+        .select_box{
+          padding:7px 15px;
           font-size: 14px;
+          line-height: 20px;
+          width: 250px;
+          height: 40px;
+          border: 1px solid rgba(0,0,0,0.12);
+          cursor: pointer;
           background:url('../img/common/ico-arrow-bottom-short-black.svg') no-repeat 95% 50%;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
-          option{
-            padding: 0px 15px;
-            font-size: 14px;
-            height: 40px;
+          margin-right: 10px;
+          position: relative;
+          .select_default{
+
           }
-          &:focus{
-            outline:none;
+          .select_dropdown{
+            position: absolute;
+            background-color: #fff;
+            top: 43px;
+            width: 100%;
+            left: 0;
+            &._dropdown{
+              display: none;
+            }
+            ul{
+              li{
+                padding: 7px 15px;
+                height: 40px;
+                a{
+                  display: block;
+                  font-size: 14px;
+                  color: #909090;
+                  line-height: 20px;
+                }
+              }
+
+            }
           }
         }
         .btn{
