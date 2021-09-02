@@ -35,20 +35,6 @@
         font-weight: 400;
         color: #454545;
       }
-      ol{
-        counter-reset: num;
-        li{
-          >p {
-            &:nth-child(1) {
-              font-weight: 700;
-              &:before {
-                content: counter(num) ". ";
-                counter-increment: num 1;
-              }
-            }
-          }
-        }
-      }
       ul {
         font-size: 16px;
         line-height: 30px;
@@ -71,23 +57,6 @@
 
         }
 
-      }
-      .num_circle_list{
-        counter-reset: circle_num;
-        >li{
-          &:before {
-            width: 16px;
-            height: 16px;
-            line-height: 12px;
-            font-size: 14px;
-            display: inline-block;
-            border-radius: 50%;
-            border: 1px solid #454545;
-            text-align: center;
-            content: counter(circle_num);
-            counter-increment: circle_num 1;
-          }
-        }
       }
       .lookup{
         display: flex;
