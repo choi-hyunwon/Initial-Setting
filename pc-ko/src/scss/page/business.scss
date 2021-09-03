@@ -8,9 +8,105 @@
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-image: url("../img/@temp/business/buginess_bg.svg");
+  background-image: url("../img/@temp/business/bg_banner.svg");
+  margin-bottom: 133px;
   .btn{
-    
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    border: 2px solid #fff;
+    span{
+      font-weight: 700;
+      color: #fff;
+    }
+    i{
+      margin-left: 30px;
+    }
+  }
+}
+.section_business{
+  .subject-box{
+    position: relative;
+    padding-bottom: 120px;
+    margin-bottom: 120px;
+    .title{
+      margin-bottom: 6px;
+    }
+    .desc{
+      font-size: 18px;
+      line-height: 32px;
+      color: #000;
+      font-weight: 400;
+      margin-bottom: 20px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0px;
+      }
+    }
+    .img{
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    &:after{
+      content: '';
+      display: inline-block;
+      border-top: 12px solid #F3F3F3;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .tab-box{
+    margin-bottom: 120px;
+    .title{
+      margin-bottom: 20px;
+    }
+  }
+  .info-box{
+    .title{
+      margin: 40px 0px 80px;
+    }
+    .title-desc{
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .desc{
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+    .img{
+      margin-bottom: 80px;
+    }
+    .divider{
+      margin: 20px 0px;
+    }
+    .list-area{
+      .title{}
+      .list-circle-dot{
+        li{
+          position: relative;
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #454545;
+          &:before{
+            display: inline-block;
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color:#454545;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .btn-area{
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
