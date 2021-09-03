@@ -96,13 +96,7 @@ data.guide = {
       stateClass: 'complete',
       url: 'board_02',
       category: 'guide',
-      page: '게시판 리스트 1'
-    },
-    {
-      stateClass: 'complete',
-      url: 'board_03',
-      category: 'guide',
-      page: '게시판 리스트 2'
+      page: '게시판 리스트'
     },
     {
       stateClass: 'complete',
@@ -173,6 +167,12 @@ data.RD = {
       url: '06특허,논문_01특허_01목록',
       category: 'RD',
       page: '06특허,논문_01특허_01목록'
+    },
+    {
+      stateClass: 'working',
+      url: '06특허,논문_02논문_01목록',
+      category: 'RD',
+      page: '06특허,논문_02논문_01목록'
     },
   ]
 }
