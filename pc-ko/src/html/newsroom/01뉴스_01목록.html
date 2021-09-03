@@ -15,10 +15,30 @@
             <div class="font-h1">뉴스</div>
             <div class="board">
                 <div class="slider">
-                    <div class="info">
-                        <div class="tit">마크로젠 ‘헬시송도’<br/> 프로젝트, 암·고혈압<br/> 등 주요 질병 위험…</div>
-                        <div class="cont">국내 최초로 시행되는 ‘개인 유전자 분석 검사(이하 DTC 유전자 검사) 실증 연구(이하 헬시송도 프로젝트)’에 한 달 만에 500여 명의 신청자가 모였다. 정밀의학 생명공학기업 마크로젠(대표이사 이수강)은 오는 9월 …</div>
-                        <div class="date">2021.07.15</div>
+                    <div class="swiper-container text-slider _textSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="info">
+                                    <div class="tit">마크로젠 ‘헬시송도’<br/> 프로젝트, 암·고혈압<br/> 등 주요 질병 위험…</div>
+                                    <div class="cont">국내 최초로 시행되는 ‘개인 유전자 분석 검사(이하 DTC 유전자 검사) 실증 연구(이하 헬시송도 프로젝트)’에 한 달 만에 500여 명의 신청자가 모였다. 정밀의학 생명공학기업 마크로젠(대표이사 이수강)은 오는 9월 …</div>
+                                    <div class="date">2021.07.15</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="info">
+                                    <div class="tit">마크로젠 ‘헬시송도’<br/> 프로젝트, 암·고혈압<br/> 등 주요 질병 위험…</div>
+                                    <div class="cont">국내 최초로 시행되는 ‘개인 유전자 분석 검사(이하 DTC 유전자 검사) 실증 연구(이하 헬시송도 프로젝트)’에 한 달 만에 500여 명의 신청자가 모였다. 정밀의학 생명공학기업 마크로젠(대표이사 이수강)은 오는 9월 …</div>
+                                    <div class="date">2021.07.15</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="info">
+                                    <div class="tit">마크로젠 ‘헬시송도’<br/> 프로젝트, 암·고혈압<br/> 등 주요 질병 위험…</div>
+                                    <div class="cont">국내 최초로 시행되는 ‘개인 유전자 분석 검사(이하 DTC 유전자 검사) 실증 연구(이하 헬시송도 프로젝트)’에 한 달 만에 500여 명의 신청자가 모였다. 정밀의학 생명공학기업 마크로젠(대표이사 이수강)은 오는 9월 …</div>
+                                    <div class="date">2021.07.15</div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="pagination-wrap">
                             <ul class="navigation">
                                 <li class="page-item prev">
@@ -34,7 +54,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="swiper-container _currentSlider">
+                    <div class="swiper-container image-slider _imageSlider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="../../img/@temp/big-thumb.png" alt="보도자료"></div>
                             <div class="swiper-slide"><img src="../../img/@temp/tumb-01.png" alt="보도자료"></div>
@@ -43,11 +63,22 @@
                         <div class="swiper-pagination"></div>
                     </div>
                     <script>
-                        var swiper = new Swiper("._currentSlider", {
+                        var imageSwiper = new Swiper("._imageSlider", {
                             pagination: {
                                 el: ".swiper-pagination",
-                                clickable : true
-                            }
+                                clickable : true,
+                            },
+                            navigation: {
+                                nextEl: '.page-item.next',
+                                prevEl: '.page-item.prev',
+                            },
+                        });
+
+                        var textSwiper = new Swiper("._textSlider", {
+                            navigation: {
+                                nextEl: '.page-item.next',
+                                prevEl: '.page-item.prev',
+                            },
                         });
                     </script>
                 </div>
@@ -109,7 +140,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <hr class="divider"/>
                 <div class="pagination-wrap">
                     <ul class="navigation">

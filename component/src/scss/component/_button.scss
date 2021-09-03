@@ -118,20 +118,42 @@
       }
     }
 
-    /*--예외 버튼---*/
-    &.btn-totop{
+  /*--예외 버튼---*/
+  &.btn-totop{
+      position: fixed;
+      right:50px;
+      bottom:50px;
+      opacity: 0;
+      z-index: 9;
       width: 60px;
       text-align: center;
-      .icon{
+      display: inline-block;
+      transition: 0.4s;
+
+      .icon-arrow-top-long{
         display: inline-block;
+        margin-bottom: 10px;
+        background-image: url("../img/common/ico-arrow-top-long.svg");
+        width: 12px;
+        height: 54px;
+        transition: 0.2s;
         +span{
           margin-left: 0;
           display: block;
         }
       }
+      &:hover{
+        .icon-arrow-top-long{
+          background-image: url("../img/common/ico-arrow-top-long-hover.svg");
+          width: 12px;
+          height: 84px;
+        }
+      }
     }
-    /*------------*/
+  /*------------*/
+
   }
+
   /*---예외 버튼---*/
   &.btn-round{
     border-radius: 21.5px;
@@ -184,7 +206,11 @@
     }
   }
 }
-
 .btn-indicator-box {
   margin-bottom: 95px;
+}
+
+/*페이지 하단 버튼 가운데 정렬*/
+.btn-box{
+  text-align: center;
 }

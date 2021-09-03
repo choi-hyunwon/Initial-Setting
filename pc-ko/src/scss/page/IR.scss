@@ -37,34 +37,54 @@
     text-align: right;
     padding-top: 9px;
   }
-
   /*투자자문의*/
-  .font-h5{
-    margin-bottom: 60px;
-    span{
-      font-size: 44px;
-      margin-right: 3px;
-    }
-  }
-  .input-phone-box{
-    margin-bottom: 40px;
-    .notice-text{
-      padding-left: 214px;
-      padding-top: 15.5px;
+  .privacy_box{
+    padding:100px 0 49px;
+    .font-h5{
+      margin-bottom: 60px;
+      line-height: 52px;
       span{
-        vertical-align: text-top;
-        padding-left: 3px;
-        font-weight: 500;
-        color: #909090;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 44px;
+        margin-right: 3px;
+        line-height: 1;
+      }
+    }
+    .input-phone-box{
+      margin-bottom: 45px;
+      .notice-text{
+        padding-left: 214px;
+        padding-top: 25px;
+        span{
+          vertical-align: text-bottom;
+          padding-left: 3px;
+          font-weight: 500;
+          color: #909090;
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+    .file-box{
+      background-color: #f7f7f7;
+    }
+    .agreement{
+      padding: 40px 40px 32px;
+      background-color: #e7e7e7;
+      margin-bottom: 20px;
+      p{
+        line-height: 30px;
+        color:#454545;
+        margin-bottom: 5px;
+        &.guidance{
+          padding-top: 18px;
+          font-size: 18px;
+          color:#909090;
+        }
       }
     }
   }
-  .file-box{
-    background-color: #f7f7f7;
-
-
+  /*버튼 여백*/
+  .btn-box{
+    padding-top: 91px;
   }
-
 }

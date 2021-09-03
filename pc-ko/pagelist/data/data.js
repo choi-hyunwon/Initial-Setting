@@ -163,7 +163,7 @@ data.IR = {
   title: 'IR',
   list: [
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '01재무정보',
       category: 'IR',
       page: '01재무정보'
@@ -205,10 +205,80 @@ data.IR = {
       page: '03IR소식_02조회'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '04투자자문의',
       category: 'IR',
       page: '04투자자문의'
+    }
+  ]
+}
+data.agreement = {
+  title: 'AGREEMENT',
+  list: [
+    {
+      stateClass: 'working',
+      url: '01개인정보처리방침',
+      category: 'agreement',
+      page: '01개인정보처리방침'
+    },
+    {
+      stateClass: 'working',
+      url: '02영상정보_운영_관리',
+      category: 'agreement',
+      page: '02영상정보_운영_관리'
+    },
+    {
+      stateClass: 'working',
+      url: '03내부정보관리규정',
+      category: 'agreement',
+      page: '03내부정보관리규정'
+    }
+  ]
+}
+data.business ={
+  title: 'BUSINESS',
+  list: [
+    {
+      stateClass: 'working',
+      url: '01연구서비스_01Genome',
+      category: 'business',
+      page: '01연구서비스_01Genome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_02Exsome',
+      category: 'business',
+      page: '01연구서비스_02Exsome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_03Transcriptome',
+      category: 'business',
+      page: '01연구서비스_03Transcriptome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_04Epigenome',
+      category: 'business',
+      page: '01연구서비스_04Epigenome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_05Cell',
+      category: 'business',
+      page: '01연구서비스_05Cell'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_06ATAC',
+      category: 'business',
+      page: '01연구서비스_06ATAC'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_07Spatial',
+      category: 'business',
+      page: '01연구서비스_07Spatial'
     }
   ]
 }

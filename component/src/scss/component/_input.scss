@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
- v.0.1 선미 : 최초 작업 -- 2021.08.31
+ v.0.1 주연 : 최초 작업 -- 2021.08.31
+ v.0.2 선미 : textarea.form-control {height:600px-> 400px} 변경- 2021.09.01
 |----------------------------------|
 */
 /* input-group */
@@ -284,7 +285,7 @@
 
 /* textarea */
 textarea.form-control {
-  height: 600px !important;
+  height: 400px!important;
   resize: none;
   padding: 32px 30px !important;
   border: 1px solid $gray-000000 !important;
@@ -305,7 +306,7 @@ textarea.form-control {
     font-family: inherit;
     font-size: 100%;
     line-height: 26px;
-    margin: 0 10px 0 0;
+    margin: 3px 10px 0 0;
     border-radius: 0;
     border: 2px solid $line-d9d9d9;
     background-image: url(../../dist/img/common/ico-check-gray.png);
@@ -328,6 +329,7 @@ textarea.form-control {
   }
 
   .form-check-label {
+    vertical-align: middle;
     line-height: 26px;
     font-weight: bold;
     font-size: 18px;
