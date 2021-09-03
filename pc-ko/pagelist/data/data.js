@@ -1,6 +1,6 @@
 const data = {}
 data.guide = {
-  title: 'GUIDE',
+  title: '가이드',
   list: [
     {
       stateClass: 'complete',
@@ -118,6 +118,64 @@ data.guide = {
     }
   ]
 }
+data.business ={
+  title: 'BUSINESS',
+  list: [
+    {
+      stateClass: 'working',
+      url: '01연구서비스_01Genome',
+      category: 'business',
+      page: '01연구서비스_01Genome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_02Exsome',
+      category: 'business',
+      page: '01연구서비스_02Exsome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_03Transcriptome',
+      category: 'business',
+      page: '01연구서비스_03Transcriptome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_04Epigenome',
+      category: 'business',
+      page: '01연구서비스_04Epigenome'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_05Cell',
+      category: 'business',
+      page: '01연구서비스_05Cell'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_06ATAC',
+      category: 'business',
+      page: '01연구서비스_06ATAC'
+    },
+    {
+      stateClass: 'working',
+      url: '01연구서비스_07Spatial',
+      category: 'business',
+      page: '01연구서비스_07Spatial'
+    }
+  ]
+}
+data.RD = {
+  title: 'R&D',
+  list: [
+    {
+      stateClass: 'working',
+      url: '06특허,논문_01특허_01목록',
+      category: 'RD',
+      page: '06특허,논문_01특허_01목록'
+    },
+  ]
+}
 data.newsroom = {
   title: 'NEWSROOM',
   list: [
@@ -212,73 +270,26 @@ data.IR = {
     }
   ]
 }
-data.agreement = {
-  title: 'AGREEMENT',
+data.etc = {
+  title: 'etc',
   list: [
     {
       stateClass: 'working',
       url: '01개인정보처리방침',
-      category: 'agreement',
+      category: 'etc',
       page: '01개인정보처리방침'
     },
     {
       stateClass: 'working',
       url: '02영상정보_운영_관리',
-      category: 'agreement',
+      category: 'etc',
       page: '02영상정보_운영_관리'
     },
     {
       stateClass: 'working',
       url: '03내부정보관리규정',
-      category: 'agreement',
+      category: 'etc',
       page: '03내부정보관리규정'
-    }
-  ]
-}
-data.business ={
-  title: 'BUSINESS',
-  list: [
-    {
-      stateClass: 'working',
-      url: '01연구서비스_01Genome',
-      category: 'business',
-      page: '01연구서비스_01Genome'
-    },
-    {
-      stateClass: 'working',
-      url: '01연구서비스_02Exsome',
-      category: 'business',
-      page: '01연구서비스_02Exsome'
-    },
-    {
-      stateClass: 'working',
-      url: '01연구서비스_03Transcriptome',
-      category: 'business',
-      page: '01연구서비스_03Transcriptome'
-    },
-    {
-      stateClass: 'working',
-      url: '01연구서비스_04Epigenome',
-      category: 'business',
-      page: '01연구서비스_04Epigenome'
-    },
-    {
-      stateClass: 'working',
-      url: '01연구서비스_05Cell',
-      category: 'business',
-      page: '01연구서비스_05Cell'
-    },
-    {
-      stateClass: 'working',
-      url: '01연구서비스_06ATAC',
-      category: 'business',
-      page: '01연구서비스_06ATAC'
-    },
-    {
-      stateClass: 'working',
-      url: '01연구서비스_07Spatial',
-      category: 'business',
-      page: '01연구서비스_07Spatial'
     }
   ]
 }

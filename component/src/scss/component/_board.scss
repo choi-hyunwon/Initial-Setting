@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.08.31
  v.0.2 주연 : slider 수정 적용 -- 2021.09.01
+ v.0.3 선미 : list > list-card > item {margin 수정} -- 2021.09.03
 |----------------------------------|
 */
 .board {
@@ -324,10 +325,10 @@
     &.list-card {
       .item {
         position: relative;
-        padding: 42px 67px;
+        padding: 41px 67px 41px;
         border: 1px solid $line-d9d9d9;
         border-radius: 15px;
-        margin-bottom: 24px;
+        margin-bottom: 14px;
 
         &.with-badge {
           padding: 42px 233px 42px 67px;
