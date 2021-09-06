@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.31
+ v.0.2 태윤 : icon-arrow-bottom-short-black 추가ㅣ -- 2021.09.01
 |----------------------------------|
 */
 .icon {
@@ -156,12 +157,6 @@
   height: 12px;
 }
 
-.icon-arrow-top-long {
-  background-image: url("../img/common/ico-arrow-top-long.svg");
-  width: 12px;
-  height: 66px;
-}
-
 .icon-arrow-right-short {
   background-image: url("../img/common/ico-arrow-right-short.svg");
   width: 14px;
@@ -177,6 +172,12 @@
   background-image: url("../img/common/ico-arrow-bottom-short-white.svg");
   width: 14px;
   height: 12px;
+}
+
+.icon-arrow-bottom-short-black {
+  background-image: url("../img/common/ico-arrow-bottom-short-black.svg");
+  width: 14px;
+  height: 8px;
 }
 
 .icon-arrow-left-lg {

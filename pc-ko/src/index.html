@@ -117,8 +117,13 @@
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
           .append(template(data.guide))
+          .append(template(data.business))
+          .append(template(data.RD))
           .append(template(data.newsroom))
           .append(template(data.IR))
+          .append(template(data.etc))
+
+
 </script>
 <script>
   $('.link').on('click', function () {

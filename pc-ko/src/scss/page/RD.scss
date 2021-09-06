@@ -1,0 +1,32 @@
+/*
+|----------------------------------|
+ v.0.1 (선미) 최초 작업 -- 2021.09.06
+|----------------------------------|
+*/
+.section_RD{
+  .board{
+    .list{
+      &.list-card{
+        .item{
+          .tit{
+            /*R&D에만 말줄임표 없음*/
+            display: block;
+          }
+        }
+        &.hover{
+          .item{
+            padding: 41px 140px 41px 67px ;
+              .tit-sub{
+                margin-bottom: 6px;
+              }
+              .arrow{
+                .icon-arrow-right-short{
+                  right: 65px;
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+}
