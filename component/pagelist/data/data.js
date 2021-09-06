@@ -96,13 +96,7 @@ data.guide = {
       stateClass: 'complete',
       url: 'board_02',
       category: 'guide',
-      page: '게시판 리스트 1'
-    },
-    {
-      stateClass: 'complete',
-      url: 'board_03',
-      category: 'guide',
-      page: '게시판 리스트 2'
+      page: '게시판 리스트'
     },
     {
       stateClass: 'complete',
