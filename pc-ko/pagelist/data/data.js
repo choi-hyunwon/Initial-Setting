@@ -163,16 +163,22 @@ data.RD = {
   title: 'R&D',
   list: [
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '06특허,논문_01특허_01목록',
       category: 'RD',
       page: '06특허,논문_01특허_01목록'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '06특허,논문_02논문_01목록',
       category: 'RD',
       page: '06특허,논문_02논문_01목록'
+    },
+    {
+      stateClass: 'working',
+      url: '06특허,논문_02논문_01목록없음',
+      category: 'RD',
+      page: '06특허,논문_02논문_01목록없음'
     },
   ]
 }

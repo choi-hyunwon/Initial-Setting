@@ -13,6 +13,19 @@
             display: block;
           }
         }
+        &.hover{
+          .item{
+            padding: 41px 140px 41px 67px ;
+              .tit-sub{
+                margin-bottom: 6px;
+              }
+              .arrow{
+                .icon-arrow-right-short{
+                  right: 65px;
+                }
+              }
+          }
+        }
       }
     }
   }

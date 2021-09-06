@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.31
+ v.0.2 선미 : no-data 추가 -- 2021.09.06
 |----------------------------------|
 */
 .wrap {
@@ -517,6 +518,19 @@
     }
   }
 }
+
+/*데이터 없는경우*/
+.no-data {
+  padding: 187px 0!important;
+  text-align: center;
+  p {
+    font-size: 18px;
+    color:$gray-454545;
+    padding-top: 100px;
+    background: url(../img/common/img-nodata.png) no-repeat center top;
+  }
+}
+
 
 hr.divider {
   margin: 0;
