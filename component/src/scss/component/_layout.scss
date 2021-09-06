@@ -121,6 +121,11 @@
         }
       }
     }
+    .header{
+      &-sm{
+        background-color: #333333;
+      }
+    }
   }
 
 /*  .sticky-wrapper {
@@ -313,6 +318,7 @@
 
     &-sm {
       height: 95px;
+      background-color: #ffffff;
       .inner {
         padding: 0;
         height: 95px;
