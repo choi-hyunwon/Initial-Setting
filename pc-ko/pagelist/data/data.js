@@ -193,6 +193,12 @@ data.newsroom = {
     },
     {
       stateClass: 'complete',
+      url: '01뉴스_01목록없음',
+      category: 'newsroom',
+      page: '01뉴스_01목록없음'
+    },
+    {
+      stateClass: 'complete',
       url: '01뉴스_02조회',
       category: 'newsroom',
       page: '01뉴스_02조회'
