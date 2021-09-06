@@ -5,11 +5,11 @@
 */
 
 .business_bg{
-  width: 100%;
+  width: 1920px;
   height: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/@temp/business/bg_banner.svg");
-  margin-bottom: 140px;
+  margin: 0 auto 140px;
   .btn-service{
     position: absolute;
     bottom: 100px;
@@ -38,6 +38,7 @@
       line-height: 30px;
       color: #000;
       font-weight: 400;
+      margin-bottom: 80px;
     }
     .desc{
       letter-spacing: -1.25px;
@@ -47,7 +48,6 @@
       font-weight: 400;
     }
     .img{
-      padding-top: 80px;
       margin-bottom: 60px;
     }
     &:after{
