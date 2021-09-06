@@ -110,9 +110,16 @@
   .board{
     .indicator{
       .content{
+        display: block;
         margin-bottom: 0;
         .item{
           width: auto;
+          &.next{
+            float: right;
+          }
+          &.prev{
+            float:left;
+          }
           .title{
             font-size: 18px;
           }
