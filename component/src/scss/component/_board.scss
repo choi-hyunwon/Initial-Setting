@@ -4,6 +4,7 @@
  v.0.2 주연 : slider 수정 적용 -- 2021.09.01
  v.0.3 선미 : list > list-card > item {margin 수정} -- 2021.09.03
  v.0.4 선미 : list 4타입 분류 작업 -- 2021.09.03
+ v.0.5 선미 : indicator > btn-box {padding:0}-- 2021.09.06
 |----------------------------------|
 */
 .board {
@@ -566,6 +567,7 @@
 
     .btn-box {
       text-align: center;
+      padding-top:0;
     }
   }
 }

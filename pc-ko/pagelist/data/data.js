@@ -192,7 +192,7 @@ data.newsroom = {
       page: '01뉴스_01목록'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '01뉴스_01목록없음',
       category: 'newsroom',
       page: '01뉴스_01목록없음'
@@ -204,13 +204,13 @@ data.newsroom = {
       page: '01뉴스_02조회'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '02미디어라이브러리_01목록',
       category: 'newsroom',
       page: '02미디어라이브러리_01목록'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '02미디어라이브러리_02조회',
       category: 'newsroom',
       page: '02미디어라이브러리_02조회'
@@ -233,7 +233,7 @@ data.IR = {
   title: 'IR',
   list: [
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01재무정보',
       category: 'IR',
       page: '01재무정보'
