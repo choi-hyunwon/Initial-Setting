@@ -37,12 +37,22 @@ $min-width: 1244px;
       color: $gray-454545;
       padding: 50px 30px 30px;
 
+      &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: -10px;
+        left: 17px;
+        border-bottom: 1px solid #fff;
+      }
+
       &::after {
         content: '';
         position: absolute;
-        top: -11px;
+        top: -10px;
         left: 15px;
-        @include background-img ($width: 15px, $height: 11px, $category: 'common', $img: 'tooltip-tip.png');
+        @include background-img ($width: 13px, $height: 10px, $category: 'common', $img: 'tooltip-tip.svg');
       }
     }
 
@@ -648,8 +658,18 @@ $min-width: 1244px;
       margin-bottom: 120px;
       border-bottom: 10px solid #f5f5f5;
 
+      &:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+
+        .box:last-child {
+          padding-bottom: 0;
+        }
+      }
+
       .btn-sm {
-        padding: 7px 16px 5px;
+        padding: 7px 25px 5px;
+        min-width: 124px;
       }
 
       > .title {
@@ -658,6 +678,15 @@ $min-width: 1244px;
         line-height: 81px;
         letter-spacing: -3px;
         color: $gray-000000;
+
+        .tooltip-box {
+          display: inline-block;
+          vertical-align: text-bottom;
+
+          .text-box {
+            top: 66px;
+          }
+        }
       }
 
       .title-sm {
@@ -675,24 +704,123 @@ $min-width: 1244px;
 
         > div {
           display: inline-block;
+          vertical-align: text-bottom;
         }
       }
 
       .desc {
+        display: block;
         font-size: 16px;
         line-height: 30px;
         letter-spacing: -0.75px;
         color: $gray-454545;
         margin-bottom: 30px;
+
+        &.with-date {
+          margin-bottom: 10px;
+        }
       }
 
-      .box-horizontal {
+      .date {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.75px;
+        color: $gray-909090;
+        margin-bottom: 30px;
+      }
+
+      .img-wrap {
+        padding-top: 30px;
         overflow: hidden;
-        margin-top: 80px;
+
+        .img {
+          float: left;
+          width: 381px;
+          height: auto;
+          text-align: center;
+          margin-right: 43px;
+          margin-bottom: 0;
+
+          &:first-child,
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-bottom: 70px;
+
+            .tit {
+              padding-top: 30px;
+            }
+          }
+
+          .tit {
+            display: block;
+            width: 100%;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.75px;
+            color: $gray-000000;
+            text-align: left;
+            margin-bottom: 20px;
+          }
+
+          img {
+            display: block;
+            width: 100%;
+            height: 233px;
+            margin-bottom: 23px;
+          }
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .img {
+        width: 381px;
+        height: 233px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      > .box {
+        padding: 80px 0;
         border-bottom: 1px solid $line-e9e9e9;
+
+        &::after {
+          content: '';
+          display: block;
+          clear: both;
+        }
 
         &:last-child {
           border-bottom: 0;
+        }
+
+        &.box-full-sm {
+          margin-top: 20px;
+
+          &.box-full {
+            padding-bottom: 120px;
+          }
+
+          .desc {
+            margin-bottom: 0;
+          }
+        }
+
+        &.box-full {
+          padding-bottom: 80px;
+
+          .left {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+          }
         }
 
         .left {

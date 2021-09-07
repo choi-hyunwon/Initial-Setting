@@ -325,5 +325,11 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_01기업개요'
     },
+    {
+      stateClass: 'macrogen',
+      url: '01Macrogen_05인증',
+      category: 'macrogen',
+      page: '01Macrogen_05인증'
+    },
   ]
 }
