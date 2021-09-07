@@ -123,18 +123,6 @@ data.main = {
     }
   ]
 }
-data.macrogen = {
-  title: 'Macrogen',
-  list: [
-    {
-      stateClass: 'macrogen',
-      url: '01Macrogen_01기업개요',
-      category: 'macrogen',
-      page: '01Macrogen_01기업개요'
-    },
-  ]
-}
-
 data.business ={
   title: 'BUSINESS',
   list: [
@@ -332,13 +320,13 @@ data.macrogen = {
   title: 'macrogen',
   list: [
     {
-      stateClass: 'macrogen',
+      stateClass: 'complete',
       url: '01Macrogen_01기업개요',
       category: 'macrogen',
       page: '01Macrogen_01기업개요'
     },
     {
-      stateClass: 'macrogen',
+      stateClass: 'complete',
       url: '01Macrogen_05인증',
       category: 'macrogen',
       page: '01Macrogen_05인증'
