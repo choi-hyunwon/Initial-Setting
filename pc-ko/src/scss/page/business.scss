@@ -15,6 +15,9 @@
     bottom: 100px;
     right: 0;
     border: 2px solid #fff;
+    height: 48px;
+    padding: 9px 25px;
+    border-radius: 24px;
     span{
       font-weight: 700;
       color: #fff;
@@ -99,11 +102,15 @@
         margin: 100px 0px 80px;
       }
     }
+    .list-area-group{
+      .list-area{
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+      }
+    }
     .list-area{
       margin-bottom: 60px;
-      &:nth-last-of-type(1){
-        margin-bottom: 0px;
-      }
       .title{
         line-height: 27px;
         margin-bottom: 20px;
