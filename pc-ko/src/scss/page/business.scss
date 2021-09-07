@@ -99,11 +99,15 @@
         margin: 100px 0px 80px;
       }
     }
+    .list-area-group{
+      .list-area{
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+      }
+    }
     .list-area{
       margin-bottom: 60px;
-      &:nth-last-of-type(1){
-        margin-bottom: 0px;
-      }
       .title{
         line-height: 27px;
         margin-bottom: 20px;
