@@ -116,43 +116,43 @@ data.business ={
   title: 'BUSINESS',
   list: [
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_01Genome',
       category: 'business',
       page: '01연구서비스_01Genome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_02Exsome',
       category: 'business',
       page: '01연구서비스_02Exsome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_03Transcriptome',
       category: 'business',
       page: '01연구서비스_03Transcriptome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_04Epigenome',
       category: 'business',
       page: '01연구서비스_04Epigenome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_05Cell',
       category: 'business',
       page: '01연구서비스_05Cell'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_06ATAC',
       category: 'business',
       page: '01연구서비스_06ATAC'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_07Spatial',
       category: 'business',
       page: '01연구서비스_07Spatial'
@@ -192,7 +192,7 @@ data.newsroom = {
       page: '01뉴스_01목록'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '01뉴스_01목록없음',
       category: 'newsroom',
       page: '01뉴스_01목록없음'
@@ -204,13 +204,13 @@ data.newsroom = {
       page: '01뉴스_02조회'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '02미디어라이브러리_01목록',
       category: 'newsroom',
       page: '02미디어라이브러리_01목록'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '02미디어라이브러리_02조회',
       category: 'newsroom',
       page: '02미디어라이브러리_02조회'
@@ -233,7 +233,7 @@ data.IR = {
   title: 'IR',
   list: [
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01재무정보',
       category: 'IR',
       page: '01재무정보'

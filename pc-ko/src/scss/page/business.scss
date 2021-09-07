@@ -5,12 +5,12 @@
 */
 
 .business_bg{
+  max-width: 1920px;
   width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/@temp/business/bg_banner.svg");
-  margin-bottom: 140px;
-  .btn{
+  margin: 0 auto 140px;
+  .btn-service{
     position: absolute;
     bottom: 100px;
     right: 0;
@@ -35,9 +35,10 @@
     }
     .title-desc{
       font-size: 18px;
-      line-height: 30px;
+      line-height: 32px;
       color: #000;
       font-weight: 400;
+      margin-bottom: 80px;
     }
     .desc{
       letter-spacing: -1.25px;
@@ -47,8 +48,8 @@
       font-weight: 400;
     }
     .img{
-      padding-top: 80px;
       margin-bottom: 60px;
+
     }
     &:after{
       content: '';
@@ -64,31 +65,47 @@
     margin-bottom: 120px;
     .title{
       margin-bottom: 20px;
+      line-height: 54px;
     }
   }
   .info-box{
     >.title{
       line-height: 54px;
-      margin: 0px 0px 53px;
+      margin: 0px 0px 60px;
     }
     .sub-title{
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
     .title-desc{
+      line-height: 32px;
       font-weight: 500;
       font-size: 18px;
       margin-bottom: 20px;
     }
     .desc{
       font-weight: 400;
-      margin-bottom: 40px;
+      line-height: 30px;
+      letter-spacing: -1px;
+      &.img{
+        margin-bottom: 40px;
+      }
+      &.sub{
+        margin-bottom: 60px;
+      }
     }
     .divider{
       margin: 100px 0px;
+      &:nth-last-of-type(1){
+        margin: 100px 0px 80px;
+      }
     }
     .list-area{
       margin-bottom: 60px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0px;
+      }
       .title{
+        line-height: 27px;
         margin-bottom: 20px;
       }
       .list-circle-dot{
@@ -100,10 +117,82 @@
         }
       }
     }
+    .list-area-border{
+      border: 1px solid #d9d9d9;
+      margin-bottom: 60px;
+      +.sub-title{
+        padding-top: 60px;
+      }
+      .list{
+        padding: 40px;
+        display: flex;
+        &:nth-last-of-type(1){
+          border-top: 1px solid #d9d9d9;
+        }
+        .font-h8{
+          flex: 388px 0 0;
+        }
+        ul{
+          li{
+            margin-bottom: 2px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+      }
+
+    }
     .btn-area{
       display: flex;
       justify-content: center;
       padding-top: 140px;
+    }
+    .box-gray-6{
+      border: 1px solid #d9d9d9;
+      display: flex;
+      flex-wrap: wrap;
+     margin-top: 40px;
+      margin-bottom: 80px;
+      >div{
+        flex: 33.3333% 0 0;
+        padding: 40px;
+        &:nth-child(1){
+          border-right: 1px solid #d9d9d9;
+          border-bottom: 1px solid #e9e9e9;
+        }
+        &:nth-child(2){
+          border-right: 1px solid #d9d9d9;
+          border-bottom: 1px solid #e9e9e9;
+        }
+        &:nth-child(3){
+          border-bottom: 1px solid #e9e9e9;
+        }
+        &:nth-child(4){
+          border-right: 1px solid #d9d9d9;
+        }
+        &:nth-child(5){
+          border-right: 1px solid #d9d9d9;
+        }
+        .title{
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 22px;
+          margin-bottom: 14px;
+        }
+        .desc{
+          color: #666666;
+          font-size: 16px;
+        }
+      }
+    }
+    .img{
+      + .desc{
+        padding-top: 40px;
+      }
+      + .box-gray-6{
+        margin-top: 80px;
+      }
     }
   }
   .board{
@@ -118,6 +207,7 @@
           }
           &.prev{
             float:left;
+            border-right: none;
           }
           .title{
             font-size: 18px;
