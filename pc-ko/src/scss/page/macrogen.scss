@@ -920,6 +920,56 @@ $min-width: 1244px;
           margin-right: 40px;
         }
       }
+
+      .attachment-box {
+        position: relative;
+        padding: 30px 30px 26px 144px;
+        background-color: $bg-f7f7f7;
+
+        .file {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: -0.5px;
+          color: $gray-454545;
+          margin-right: 40px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 21px;
+          left: 104px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: $line-e9e9e9;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 40px;
+          top: 50%;
+          transform: translateY(-50%);
+          @include background-img ($width: 24px, $height: 24px, $category: 'macrogen', $img: 'ic-attach.svg');
+        }
+      }
+
+      .board {
+        .detail {
+          .heading {
+            .department {
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 38px;
+              letter-spacing: -0.75px;
+              color: $gray-000000;
+              margin-bottom: 6px;
+            }
+          }
+        }
+      }
     }
   }
 }
