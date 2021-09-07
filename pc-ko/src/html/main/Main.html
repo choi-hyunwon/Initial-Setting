@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    @@include('../../html/main/Intro.html')
+    <div class="main-wrap">
+        <div class="full-bg macrogen main-bg" style="background-image: url(../../img/main/img-main_01.svg)">
+            @@include('../../html/include/component/header.html')
+            <div class="frame">
+                <div class="slogan"><span class="text-gradient">어제의</span><br>행복한 기억.</div>
+                <div class="slogan-sub">건강한 일상을<br>마크로젠이 동행합니다</div>
+                <div class="scroll-wrap">
+                    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="pink">
+            이러쿵 저러쿵
+        </div>
+        <div class="container container-fluid"></div>
+        @@include('../../html/include/component/footer.html')
+    </div>
+</div>
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function () {
+        $(".main-wrap").hide();
+
+        function introChange(e) {
+            $('.intro-wrap').slideUp(1000);
+            $('.main-bg').slideDown(500);
+            window.scrollTo({top: 0});
+            $('.header').fadeIn();
+            $('.main-wrap').show();
+        }
+
+        setTimeout(introChange, 2000)
+
+
+        $(".pink").on('click', function () {
+            if ($(this).hasClass('active') == true) {
+                $(this).removeClass('active')
+            } else {
+                $(this).addClass('active')
+            }
+        })
+    })
+</script>

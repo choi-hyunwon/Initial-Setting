@@ -120,6 +120,12 @@ data.main = {
       url: 'Intro',
       category: 'main',
       page: 'Intro'
+    },
+    {
+      stateClass: 'working',
+      url: 'Main',
+      category: 'main',
+      page: 'Main'
     }
   ]
 }
