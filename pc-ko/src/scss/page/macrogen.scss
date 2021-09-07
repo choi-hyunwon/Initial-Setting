@@ -80,6 +80,10 @@ $min-width: 1244px;
     .frame {
       position: relative;
       height: calc(980px - 124px);
+
+      &.frameC {
+        height: auto;
+      }
     }
 
     .scroll-wrap {
@@ -123,6 +127,14 @@ $min-width: 1244px;
       width: 100%;
       height: 100%;
       background-color: rgba(14, 22, 33, 0.45);
+    }
+
+    &.no-bg {
+      background-image: none;
+
+      &::before {
+        content: none;
+      }
     }
   }
 
@@ -832,6 +844,80 @@ $min-width: 1244px;
         .right {
           float: left;
           width: calc(100% - 816px - 44px);
+        }
+      }
+    }
+  }
+
+  &.recruitment-info {
+    .section {
+      padding-bottom: 100px;
+      border-bottom: 1px solid #e9e9e9;
+      margin-bottom: 100px;
+
+      .btn-sm {
+        padding: 7px 25px 5px;
+        min-width: 124px;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      > .title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 52px;
+        letter-spacing: -1px;
+        color: $gray-000000;
+      }
+
+      > .desc {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -0.75px;
+        color: $gray-707070;
+        margin-top: 15px;
+        margin-bottom: 60px;
+      }
+
+      .select-box {
+        margin-top: 62px;
+        margin-bottom: 33px;
+
+        .form-select {
+          width: 125px;
+          color: $gray-000000;
+          padding-left: 30px;
+          font-size: 18px;
+          border-bottom: 0;
+        }
+      }
+
+      .img-recruitment-info {
+        margin-top: 60px;
+        width: 1244px;
+        height: 307px;
+
+        img {
+           width: 100%;
+           height: 100%;
+        }
+      }
+
+      .file-download {
+        padding-bottom: 20px;
+
+        .item {
+          .title {
+            color: $gray-454545;
+          }
+        }
+
+        .icon {
+          margin-right: 40px;
         }
       }
     }

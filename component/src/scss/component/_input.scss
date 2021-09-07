@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.08.31
  v.0.2 선미 : textarea.form-control {height:600px-> 400px} 변경- 2021.09.01
+ v.0.3 주연 : .icon-pdf => .icon - 2021.09.07
 |----------------------------------|
 */
 /* input-group */
@@ -242,7 +243,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
 
-    .icon-pdf {
+    .icon {
       margin-right: 40px;
     }
 

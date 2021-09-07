@@ -331,5 +331,11 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_05인증'
     },
+    {
+      stateClass: 'working',
+      url: '01Macrogen_04채용_03채용안내_01목록',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_03채용안내_01목록'
+    },
   ]
 }
