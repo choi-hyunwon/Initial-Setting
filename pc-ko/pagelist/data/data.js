@@ -134,16 +134,23 @@ data.macrogen = {
     },
     {
       stateClass: 'complete',
-      url: '01Macrogen_05인증',
-      category: 'macrogen',
-      page: '01Macrogen_05인증'
-    },
-    {
-      stateClass: 'complete',
       url: '01Macrogen_04채용_03채용안내_01목록',
       category: 'macrogen',
       page: '01Macrogen_04채용_03채용안내_01목록'
     },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04채용_03채용안내_02조회',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_03채용안내_02조회'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_05인증',
+      category: 'macrogen',
+      page: '01Macrogen_05인증'
+    },
+
   ]
 }
 data.business ={
