@@ -5,8 +5,8 @@
 */
 
 .business_bg{
-  width: 1920px;
-  height: 100%;
+  max-width: 1920px;
+  width: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/@temp/business/bg_banner.svg");
   margin: 0 auto 140px;
@@ -35,7 +35,7 @@
     }
     .title-desc{
       font-size: 18px;
-      line-height: 30px;
+      line-height: 32px;
       color: #000;
       font-weight: 400;
       margin-bottom: 80px;
@@ -49,6 +49,7 @@
     }
     .img{
       margin-bottom: 60px;
+
     }
     &:after{
       content: '';
@@ -64,6 +65,7 @@
     margin-bottom: 120px;
     .title{
       margin-bottom: 20px;
+      line-height: 54px;
     }
   }
   .info-box{
@@ -75,23 +77,35 @@
       margin-bottom: 30px;
     }
     .title-desc{
+      line-height: 32px;
       font-weight: 500;
       font-size: 18px;
       margin-bottom: 20px;
     }
     .desc{
       font-weight: 400;
-      margin-bottom: 60px;
-      &:nth-last-of-type(1){
-        margin-bottom: 0;
+      line-height: 30px;
+      letter-spacing: -1px;
+      &.img{
+        margin-bottom: 40px;
+      }
+      &.sub{
+        margin-bottom: 60px;
       }
     }
     .divider{
       margin: 100px 0px;
+      &:nth-last-of-type(1){
+        margin: 100px 0px 80px;
+      }
     }
     .list-area{
       margin-bottom: 60px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0px;
+      }
       .title{
+        line-height: 27px;
         margin-bottom: 20px;
       }
       .list-circle-dot{
@@ -168,9 +182,16 @@
         }
         .desc{
           color: #666666;
-          font-size: 18px;
-          line-height: 30px;
+          font-size: 16px;
         }
+      }
+    }
+    .img{
+      + .desc{
+        padding-top: 40px;
+      }
+      + .box-gray-6{
+        margin-top: 80px;
       }
     }
   }

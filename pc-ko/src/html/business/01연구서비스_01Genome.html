@@ -3,7 +3,7 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-    <!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/02BUSINESS_01연구서비스_01NGS_01WholeGenomeSequencing.png'})-->
+<!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/02BUSINESS_01연구서비스_01NGS_01WholeGenomeSequencing.png'})-->
     <div class="full-bg business_bg">
         @@include('../../html/include/component/header.html')
         <div class="frame frameB">
@@ -22,6 +22,7 @@
     </div>
     <div class="container">
         <div class="section_business">
+            <!--메인 컨텐츠-->
             <div class="subject-box">
                 <p class="title font-h4">글로벌 톱 수준의 분석 인프라를 통해 빠르고 정확한<br>
                     NGS서비스를 합리적인 비용으로 제공합니다
@@ -39,6 +40,8 @@
                     Bioinformatics 결과를 제공하고 있습니다. 마크로젠은 오랜 기간 축적된 경험과 노하우를 바탕으로 전 세계 연구자들에게 Total Genomic Solution을
                     제시함으로써 NGS 기술을 활용한 정밀의학 분야를 선도하고 있습니다.</p>
             </div>
+
+            <!--탭 슬라이드-->
             <div class="tab-box">
                 <p class="font-h4 title">SERVICE</p>
                 <div class="slide-tab-wrap">
@@ -60,7 +63,6 @@
                     </div>
                 </div>
             </div>
-            <!--슬라이드 스크립트-->
             <script>
                 var swiper = new Swiper("._swiperTab", {
                     slidesPerView: "auto",
@@ -97,16 +99,18 @@
 
                 $('.swiper-notification').remove();
             </script>
+
+            <!--탭컨텐츠-->
             <div class="info-box">
                 <p class="font-h4 title">Whole Genome Sequencing</p>
                 <p class="title-desc">WGS(Whole Genome Sequencing)은 유전체 전체를 한 번에 읽어내어 관련 유전정보를 분석하는 방법입니다.</p>
-                <p class="desc">WGS을 통해 얻어진 변이 정보는 질병과 관련한 유전자 발굴 및 맞춤의학 연구에 활용되고 있습니다. 현재 전 세계 153개국 1만 8천여 연구기관 고객을 보유하고 있으며, 연간 30만 명의 WGS 분석 시설,  총 30PB를 저장할 수 있는 컴퓨팅 시설 등 글로벌 톱 수준의 분석 인프라를 통해 유전체 정보 기반 정밀의학 빅데이터 시대를 만들어 가고 있습니다.</p>
+                <p class="desc img">WGS을 통해 얻어진 변이 정보는 질병과 관련한 유전자 발굴 및 맞춤의학 연구에 활용되고 있습니다. 현재 전 세계 153개국 1만 8천여 연구기관 고객을 보유하고 있으며, 연간 30만 명의 WGS 분석 시설,  총 30PB를 저장할 수 있는 컴퓨팅 시설 등 글로벌 톱 수준의 분석 인프라를 통해 유전체 정보 기반 정밀의학 빅데이터 시대를 만들어 가고 있습니다.</p>
                 <div class="img">
                     <img src="../../img/@temp/business/img-thumb02.svg" alt="이미지">
                 </div>
                 <hr class="divider">
                 <p class="font-h5 sub-title">Whole Genome Resequencing</p>
-                <p class="desc">이미 알려진 참조 유전체 (Reference Genome)를 활용하여 SNP(Single Nucleotide Polymorphism), InDel(Insertion & Deletion), CNV(Copy Number Variation), 그리고 SV(Structural Variation) 등 다방면의 변이 분석이 가능한 방법입니다.</p>
+                <p class="desc sub">이미 알려진 참조 유전체 (Reference Genome)를 활용하여 SNP(Single Nucleotide Polymorphism), InDel(Insertion & Deletion), CNV(Copy Number Variation), 그리고 SV(Structural Variation) 등 다방면의 변이 분석이 가능한 방법입니다.</p>
                 <div class="list-area">
                     <p class="font-h8 title">Sequencing Platform</p>
                     <ul class="list-circle-dot">
@@ -116,7 +120,7 @@
                 </div>
                 <hr class="divider">
                 <p class="font-h5 sub-title">Whole Genome Resequencing</p>
-                <p class="desc">참조 유전체 정보가 없는 새로운 생물종의 유전체정보를 새로이 밝히는 방법으로, 지금까지 밝혀지지 않은 미생물이나 동식물의 전체 유전체 정보를 알아내는 방법입니다.</p>
+                <p class="desc desc sub">참조 유전체 정보가 없는 새로운 생물종의 유전체정보를 새로이 밝히는 방법으로, 지금까지 밝혀지지 않은 미생물이나 동식물의 전체 유전체 정보를 알아내는 방법입니다.</p>
                 <div class="list-area">
                     <p class="font-h8 title">Sequencing Platform</p>
                     <ul class="list-circle-dot">
@@ -145,6 +149,7 @@
 
                 </script>
             </div>
+
         </div>
     </div>
     @@include('../../html/include/component/footer.html')
