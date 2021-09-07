@@ -3,3 +3,567 @@
  v.0.1 (주연) 최초 작업 -- 2021.09.01
 |----------------------------------|
 */
+$min-width: 1244px;
+
+.macrogen {
+  &.full-bg {
+    position: relative;
+    background-image: url(../img/@temp/macrogen/macrogen_bg_1.png);
+    background-size: 1920px 980px;
+    background-position: center;
+
+    .frame {
+      position: relative;
+      height: calc(980px - 124px);
+    }
+
+    .scroll-wrap {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+
+      .scroll {
+        position: absolute;
+        width: 2px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        .bar {
+          position: absolute;
+          width: 2px;
+          height: 60px;
+          background-color: #fff;
+          bottom: 0;
+          left: 0;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -14px;
+          left: -1px;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(14, 22, 33, 0.45);
+    }
+  }
+
+  &.company-overview {
+    .section-info {
+      padding-top: 180px;
+      margin-bottom: 152px;
+
+      .title {
+        width: $min-width;
+        font-weight: 700;
+        font-size: 92px;
+        line-height: 86px;
+        align-items: center;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        margin: 0 auto 28px;
+      }
+
+      .title-sm {
+        width: $min-width;
+        font-size: 26px;
+        line-height: 38px;
+        letter-spacing: -0.75px;
+        margin: 0 auto 100px;
+      }
+
+      .text-box {
+        display: flex;
+        justify-content: flex-end;
+        width: $min-width;
+        margin: 0 auto 108px;
+
+        .text {
+          display: inline-block;
+          text-align: left;
+          width: 495px;
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          color: #454545;
+
+          &:first-child {
+            margin-right: 40px;
+          }
+        }
+      }
+
+      .img-box {
+        .bg {
+          @include background-img($width: 100%, $height: 602px, $category: '@temp/macrogen', $img: 'macrogen_thumb_lg_1.png');
+          background-size: 1370px 602px;
+          background-position: top right;
+          background-repeat: no-repeat;
+          padding-top: 139px;
+
+          .list {
+            width: $min-width;
+            margin: 0 auto;
+            padding-left: 379px;
+
+            li {
+              position: relative;
+              font-weight: bold;
+              font-size: 36px;
+              line-height: 52px;
+              letter-spacing: -1px;
+              color: $gray-ffffff;
+              margin-bottom: 22px;
+
+              &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 4px;
+                background-color: $gray-ffffff;
+                left: -48px;
+                top: 22px;
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-overview {
+      width: 100%;
+      height: 1375px;
+      background-color: $bg-f7f7f7;
+      padding-top: 150px;
+
+      .inner {
+        width: $min-width;
+        margin: 0 auto;
+      }
+
+      .title-sm {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: -1px;
+        margin-bottom: 50px;
+      }
+
+      .year {
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 110px;
+        line-height: 112px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 80px;
+          height: 6px;
+          background-color: $bg-000000;
+          right: -89px;
+          bottom: 24px;
+        }
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        color: $gray-454545;
+        margin-bottom: 100px;
+      }
+
+      .overview-list {
+        padding-left: 217px;
+
+        .item {
+          float: left;
+          width: 200px;
+          margin-right: 74px;
+          text-align: center;
+
+          .img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 22px;
+
+            img {
+              @include img-100;
+            }
+          }
+
+          .val {
+            display: block;
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 54px;
+            white-space: nowrap;
+          }
+
+          .desc {
+            display: block;
+            white-space: nowrap;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: -0.75px;
+          }
+
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .section-business {
+      position: relative;
+      @include background-img($width: 100%, $height: 920px, $category: '@temp/macrogen', $img: 'macrogen_thumb_lg_2.png');
+      background-size: 1920px 920px;
+      background-repeat: no-repeat;
+      padding-top: 150px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .inner {
+        position: relative;
+        width: $min-width;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .title-sm {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: -1px;
+        color: $gray-ffffff;
+        margin-bottom: 50px;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-ffffff;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        color: $gray-ffffff;
+        margin-bottom: 80px;
+      }
+
+      .category-list {
+        li {
+          position: relative;
+          float: left;
+          width: 194px;
+          height: 145px;
+          text-align: center;
+
+          .img {
+            width: 86px;
+            height: 86px;
+            margin: 0 auto 32px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .tit {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.5px;
+            color: $gray-ffffff;
+          }
+        }
+      }
+    }
+
+    .section-business-detail {
+      position: relative;
+      width: 1210px;
+      height: 1858px;
+      margin: -163px auto 150px;
+
+      .item {
+        position: absolute;
+        width: 560px;
+
+        .img {
+          position: relative;
+          width: 535px;
+          height: 560px;
+          margin-bottom: 40px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 435px;
+            height: 1px;
+            left: 50px;
+            bottom: 156px;
+            background-color: rgba(255,255,255,.2);
+          }
+
+          img {
+             width: 100%;
+             height: 100%;
+          }
+
+          .title-sm {
+            position: absolute;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $gray-ffffff;
+            bottom: 104px;
+            left: 52px;
+          }
+
+          .title {
+            position: absolute;
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 64px;
+            letter-spacing: -2px;
+            color: $gray-ffffff;
+            bottom: 40px;
+            left: 50px;
+          }
+        }
+
+        .desc {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          margin-bottom: 20px;
+        }
+
+        .desc-sm {
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: -0.75px;
+          color: $gray-454545;
+        }
+
+        &.item-1 {
+          top: 0;
+          left: 0;
+        }
+
+        &.item-2 {
+          right: 0;
+          top: 243px;
+        }
+
+        &.item-3 {
+          top: 903px;
+          left: 0;
+        }
+
+        &.item-4 {
+          right: 0;
+          top: 1116px;
+        }
+      }
+    }
+
+    .section-ci {
+      position: relative;
+      @include background-img($width: 100%, $height: 560px, $category: '@temp/macrogen', $img: 'sample_thumb_ractangle_1.png');
+      background-size: 1920px 560px;
+      background-repeat: no-repeat;
+      padding-top: 150px;
+
+      .inner {
+        width: $min-width;
+        margin: 0 auto;
+      }
+
+      .title-sm {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0.5px;
+        color: $gray-ffffff;
+        margin-bottom: 40px;
+      }
+
+      .text {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-ffffff;
+      }
+    }
+
+    .section-symbol {
+      margin-top: 120px;
+
+      .inner {
+        width: $min-width;
+        margin: 0 auto;
+      }
+
+      .item {
+        overflow: hidden;
+        margin-bottom: 150px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .title {
+          float: left;
+          width: 318px;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 27px;
+          letter-spacing: 0.5px;
+        }
+
+        .desc {
+          float: left;
+          width: calc(100% - 318px);
+
+          .bg-logo {
+            @include background-img ($width: 923px, $height: 475px, $category: 'macrogen', $img: 'box-logo.svg');
+            border: 1px solid $line-d9d9d9;
+            padding-top: 110px;
+            padding-left: 127px;
+            margin-bottom: 40px;
+
+            img {
+              width: 673px;
+              height: 252px;
+            }
+          }
+
+          .content {
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: -0.75px;
+            color: $gray-454545;
+            margin-bottom: 59px;
+          }
+
+          .download-area {
+            .btn-download {
+              display: inline-block;
+
+              span {
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: $gray-000000;
+
+                &:first-child {
+                  margin-right: 15px;
+                }
+              }
+            }
+          }
+
+          .color-list {
+            overflow: hidden;
+
+            li {
+              float: left;
+              width: 212px;
+              height: 270px;
+
+              .color {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin: 0 auto 30px;
+
+                &.color-1 {
+                  background-color: #001E62;
+                }
+
+                &.color-2 {
+                  background-color: #00BFB2;
+                }
+
+                &.color-3 {
+                  background-color: #84BD00;
+                }
+
+                &.color-4 {
+                  background-color: #E50050;
+                }
+              }
+
+              .value {
+                padding-left: 19px;
+
+                span:first-child {
+                  display: inline-block;
+                  width: 49px;
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 30px;
+                  color: $gray-454545;
+                  margin-right: 30px;
+                }
+
+                span:nth-child(2) {
+                  display: inline-block;
+                  font-size: 16px;
+                  line-height: 30px;
+                  color: $gray-454545;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
