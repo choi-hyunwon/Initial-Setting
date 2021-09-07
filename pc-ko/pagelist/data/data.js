@@ -1,6 +1,6 @@
 const data = {}
 data.guide = {
-  title: '가이드',
+  title: 'Guide',
   list: [
     {
       stateClass: 'complete',
@@ -113,16 +113,28 @@ data.guide = {
   ]
 }
 data.main = {
-  title: '메인페이지',
+  title: 'Main',
   list: [
     {
-      stateClass: 'complete',
-      url: 'main',
+      stateClass: 'working',
+      url: 'Intro',
       category: 'main',
-      page: 'main'
+      page: 'Intro'
     }
   ]
 }
+data.macrogen = {
+  title: 'Macrogen',
+  list: [
+    {
+      stateClass: 'macrogen',
+      url: '01Macrogen_01기업개요',
+      category: 'macrogen',
+      page: '01Macrogen_01기업개요'
+    },
+  ]
+}
+
 data.business ={
   title: 'BUSINESS',
   list: [
@@ -294,7 +306,7 @@ data.IR = {
   ]
 }
 data.etc = {
-  title: 'etc',
+  title: 'Etc',
   list: [
     {
       stateClass: 'working',
@@ -314,16 +326,5 @@ data.etc = {
       category: 'etc',
       page: '03내부정보관리규정'
     }
-  ]
-}
-data.macrogen = {
-  title: 'macrogen',
-  list: [
-    {
-      stateClass: 'macrogen',
-      url: '01Macrogen_01기업개요',
-      category: 'macrogen',
-      page: '01Macrogen_01기업개요'
-    },
   ]
 }
