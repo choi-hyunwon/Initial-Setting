@@ -112,6 +112,17 @@ data.guide = {
     }
   ]
 }
+data.main = {
+  title: '메인페이지',
+  list: [
+    {
+      stateClass: 'complete',
+      url: 'main',
+      category: 'main',
+      page: 'main'
+    }
+  ]
+}
 data.business ={
   title: 'BUSINESS',
   list: [
