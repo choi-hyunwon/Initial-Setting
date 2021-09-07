@@ -116,43 +116,43 @@ data.business ={
   title: 'BUSINESS',
   list: [
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_01Genome',
       category: 'business',
       page: '01연구서비스_01Genome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_02Exsome',
       category: 'business',
       page: '01연구서비스_02Exsome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_03Transcriptome',
       category: 'business',
       page: '01연구서비스_03Transcriptome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_04Epigenome',
       category: 'business',
       page: '01연구서비스_04Epigenome'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_05Cell',
       category: 'business',
       page: '01연구서비스_05Cell'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_06ATAC',
       category: 'business',
       page: '01연구서비스_06ATAC'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01연구서비스_07Spatial',
       category: 'business',
       page: '01연구서비스_07Spatial'
