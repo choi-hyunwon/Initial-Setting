@@ -109,6 +109,12 @@ data.guide = {
       url: 'Indicator',
       category: 'guide',
       page: '인디케이터'
+    },
+    {
+      stateClass: 'complete',
+      url: 'tooltip',
+      category: 'guide',
+      page: 'tooltip'
     }
   ]
 }
