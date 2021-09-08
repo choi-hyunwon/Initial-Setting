@@ -57,6 +57,14 @@ front.common = (function () {
   var commonHandler = function () {
     // $(".header").sticky({topSpacing:0});
 
+    $('._btnTooltip').on('click',function (){
+      $(this).siblings().show();
+    })
+
+    $('._btnTooltipClose').on('click',function (){
+      $(this).parent().hide();
+    })
+
     $('._fileUpload .form-control-file').on('change', function(){
       var target = $(this).parent().find('.file-box');
       if(typeof(this.files) !='undefined'){

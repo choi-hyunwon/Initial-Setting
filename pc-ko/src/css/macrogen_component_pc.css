@@ -11331,36 +11331,6 @@ table {
       line-height: 28px;
       color: #909090; }
 
-.main-wrap .slider .slider-navigation {
-  text-align: right;
-  margin-bottom: 70px; }
-
-.main-wrap .slider .swiper-container .swiper-wrapper .swiper-slide {
-  width: 380px !important; }
-  .main-wrap .slider .swiper-container .swiper-wrapper .swiper-slide .img {
-    width: 380px;
-    height: auto;
-    margin-bottom: 25px; }
-    .main-wrap .slider .swiper-container .swiper-wrapper .swiper-slide .img img {
-      width: 100%;
-      height: auto; }
-  .main-wrap .slider .swiper-container .swiper-wrapper .swiper-slide .content {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: -0.5px;
-    color: #454545;
-    margin-bottom: 25px;
-    overflow: hidden;
-    display: -webkit-box;
-    white-space: normal;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; }
-  .main-wrap .slider .swiper-container .swiper-wrapper .swiper-slide .date {
-    font-size: 16px;
-    line-height: 28px;
-    color: #909090; }
-
 /*
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.31

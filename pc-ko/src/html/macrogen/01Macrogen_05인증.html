@@ -7,16 +7,14 @@
         @@include('../../html/include/component/header.html')
         <div class="frame">
             <div class="hero-title">인증</div>
-            <div class="slogan">슬로건 정리 필요</div>
+            <div class="slogan ko">슬로건 정리 필요</div>
             <div class= "slogan-sub">질병을 예측하고 진단하며, 맞춤 치료의 방안을 제시합니다.</div>
             @@include('../../html/include/common/breadcrumb-white-depth3.html',  {
                 "depth1": "MACROGEN",
                 "depth2": "회사소개",
                 "depth3": "인증",
             })
-            <div class="scroll-wrap">
-                <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-            </div>
+            @@include('_scrollWrap.html')
         </div>
     </div>
     <div class="container">

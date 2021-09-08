@@ -109,6 +109,12 @@ data.guide = {
       url: 'Indicator',
       category: 'guide',
       page: '인디케이터'
+    },
+    {
+      stateClass: 'complete',
+      url: 'tooltip',
+      category: 'guide',
+      page: 'tooltip'
     }
   ]
 }
@@ -133,10 +139,16 @@ data.macrogen = {
   title: 'Macrogen',
   list: [
     {
-      stateClass: 'complete',
+      stateClass: 'waiting',
       url: '01Macrogen_01기업개요',
       category: 'macrogen',
       page: '01Macrogen_01기업개요'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_03지속가능경영_01윤리경영',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_01윤리경영'
     },
     {
       stateClass: 'complete',
@@ -156,7 +168,12 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_05인증'
     },
-
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_06글로벌네트워크',
+      category: 'macrogen',
+      page: '01Macrogen_06글로벌네트워크'
+    },
   ]
 }
 data.business ={
@@ -203,6 +220,24 @@ data.business ={
       url: '01연구서비스_07Spatial',
       category: 'business',
       page: '01연구서비스_07Spatial'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_01Standard',
+      category: 'business',
+      page: '02연구서비스_01Standard'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_02Identification',
+      category: 'business',
+      page: '02연구서비스_02Identification'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_03Fragment',
+      category: 'business',
+      page: '02연구서비스_03Fragment'
     }
   ]
 }

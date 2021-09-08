@@ -44,7 +44,7 @@
     <h3><span>{{title}}</span> <a class="icon_dropdown close" href="#"><i class="fas fa-angle-down"></i></a></h3>
     <div class="ing" style="display:none">
       <span><strong class="percent">{{countCompletePercent}}%</strong></span>
-      <span><em class="circle circle_waiting" title="대기중">{{countWaiting}}</em></span>
+      <span><em class="circle circle_waiting" title="디자인대기">{{countWaiting}}</em></span>
       <span><em class="circle circle_working" title="작업중">{{countWorking}}</em></span>
       <span><em class="circle circle_complete" title="완료">{{countComplete}}</em></span>
     </div>
@@ -76,7 +76,8 @@
 <script>
   Handlebars.registerHelper('fnStateClass', function (options) {
     // console.log(options)
-    if (options.data.root.list[options.data.index].stateClass == 'waiting') {
+    // if (options.data.root.list[options.data.index].stateClass == 'waiting') {
+    if (options.data.root.list[options.data.index].stateClass == 'disabled') {
       return options.inverse(this)
     } else {
       return options.fn(this)

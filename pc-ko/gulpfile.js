@@ -132,7 +132,7 @@ gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg ))
 
 gulp.task('browser-sync', function() {
   browserSync.init({
-    port: 1000,
+    port: 1001,
     server: {
       baseDir: "./",
       index: "dist/index.html"
