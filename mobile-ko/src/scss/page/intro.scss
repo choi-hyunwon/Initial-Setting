@@ -1,3 +1,241 @@
+/*
+|----------------------------------|
+ v.0.1 선미 : 최초 작업 -- 2021.09.08
+|----------------------------------|
+*/
+body {
+  margin: 0;
+}
+.wrap {
+  position: relative;
+  width: 100%;
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 803px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgba(14, 22, 33, 0.45);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .font-slogan {
+      font-weight: bold;
+      font-size: 48.3px;
+      line-height: 45px;
+      text-align: center;
+      letter-spacing: -0.2625px;
+      text-transform: uppercase;
+      padding-top: 325px;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .font-desc {
+      font-size: 22px;
+      width: 295px;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 36px;
+      letter-spacing: -0.75px;
+      color: #FFFFFF;
+    }
+
+    .full-bg {
+      position: relative;
+      width: 100%;
+      height: 803px;
+      background-size: 375px 803px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .scroll-wrap {
+        position: absolute;
+        bottom: 100px;
+        left: 30px;
+        z-index: 1;
+
+        .scroll {
+          position: absolute;
+          width: 2px;
+          height: 100px;
+          background-color: rgba(255, 255, 255, 0.2);
+
+          .bar {
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: -14px;
+            left: -1px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .section-text {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.75px;
+    color: #454545;
+    padding: 80px 30px 60px;
+  }
+
+  .section-banner {
+    padding-left: 30px;
+    padding-bottom: 100px;
+
+    .img {
+      text-align: right;
+      margin-bottom: 60px;
+    }
+    .list {
+      .item {
+        position: relative;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.75px;
+        color: #000000;
+        padding-left: 30px;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 10px;
+          width: 20px;
+          height: 3px;
+          background-color: #000;
+        }
+      }
+    }
+  }
+
+  .section-list {
+    background: #F7F7F7;
+    padding: 100px 30px 24px;
+
+    .title {
+      position: relative;
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 68px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 153px;
+        bottom: 15px;
+        width: 60px;
+        height: 5px;
+        background-color: #000;
+      }
+    }
+
+    .desc {
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: -0.75px;
+      color: #454545;
+      margin-bottom: 60px;
+    }
+
+    .list {
+      width: 313px;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .item {
+        float: left;
+        margin-right: 33px;
+        margin-bottom: 76px;
+
+        .txt-lg {
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 34px;
+          text-align: center;
+          letter-spacing: 0.5px;
+          color: #000000;
+        }
+
+        .txt {
+          font-size: 18px;
+          line-height: 26px;
+          text-align: center;
+          letter-spacing: -0.75px;
+          color: #000000;
+        }
+
+        .img {
+          width: 140px;
+          height: 140px;
+          margin-bottom: 20px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
 
 .footer{
   height: 300px;
@@ -67,6 +305,29 @@
 }
 /*------------------icon 공통 end -------------*/
 
+
+
+/*--------------reboot 공통----------------------*/
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body{
+  margin: 0;
+}
+/*------------------reboot 공통 end -------------*/
 
 
 /*--------------reboot 공통----------------------*/
