@@ -941,12 +941,15 @@ $min-width: 1244px;
         background-color: $bg-f7f7f7;
 
         .file {
+          display: inline-block;
           font-weight: 700;
           font-size: 18px;
-          line-height: 26px;
+          line-height: 30px;
           letter-spacing: -0.5px;
           color: $gray-454545;
           margin-right: 40px;
+          max-width: 1060px;
+          @include ellipsis($line: 1);
         }
 
         &::after {
