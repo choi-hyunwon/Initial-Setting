@@ -13,7 +13,7 @@ body {
   .bg {
     position: absolute;
     width: 100%;
-    height: 803px;
+    height: 718px;
     left: 50%;
     transform: translateX(-50%);
     top: 0;
@@ -36,35 +36,35 @@ body {
   }
 
   .logo {
+    margin: 0;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 30px;
+    top: 20px;
   }
 
   .inner {
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: 678px;
+    padding: 20px 30px;
 
     .font-slogan {
       font-weight: bold;
       font-size: 48.3px;
       line-height: 45px;
-      text-align: center;
-      letter-spacing: -0.2625px;
+      text-align: left;
+      letter-spacing: -2px;
       text-transform: uppercase;
-      padding-top: 325px;
+      padding-top: 300px;
       color: #fff;
-      margin-bottom: 18px;
+      margin-bottom: 24px;
     }
 
     .font-desc {
       font-size: 22px;
-      width: 295px;
       margin: 0 auto;
       text-align: left;
       line-height: 36px;
-      letter-spacing: -0.75px;
+      letter-spacing: -2.75px;
       color: #FFFFFF;
     }
 
@@ -110,12 +110,45 @@ body {
         }
       }
     }
+
+    .scroll-wrap {
+      position: absolute;
+      bottom: 100px;
+      left: 30px;
+
+      .scroll {
+        position: absolute;
+        width: 2px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        .bar {
+          position: absolute;
+          width: 2px;
+          height: 60px;
+          background-color: #fff;
+          bottom: 0;
+          left: 0;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -14px;
+          left: -1px;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+      }
+    }
   }
 
   .section-text {
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: -0.75px;
+    letter-spacing: -2.4px;
     color: #454545;
     padding: 80px 30px 60px;
   }
@@ -126,7 +159,7 @@ body {
 
     .img {
       text-align: right;
-      margin-bottom: 60px;
+      margin-bottom: 55px;
     }
     .list {
       .item {
@@ -134,7 +167,7 @@ body {
         font-weight: bold;
         font-size: 18px;
         line-height: 26px;
-        letter-spacing: -0.75px;
+        letter-spacing: -2.5px;
         color: #000000;
         padding-left: 30px;
         margin-bottom: 15px;
@@ -158,22 +191,20 @@ body {
 
   .section-list {
     background: #F7F7F7;
-    padding: 100px 30px 24px;
+    padding: 107px 30px 50px;
 
     .title {
+      background: url(../img/common/img-1997.svg) no-repeat 0 0;
+      width: 151px;
+      height: 49px;
       position: relative;
-      font-weight: bold;
-      font-size: 70px;
-      line-height: 68px;
-      text-transform: uppercase;
-      color: #000000;
-      margin-bottom: 20px;
+      margin-bottom: 32px;
 
       &::after {
         content: '';
         position: absolute;
-        left: 153px;
-        bottom: 15px;
+        right: -71px;
+        bottom: -1px;
         width: 60px;
         height: 5px;
         background-color: #000;
@@ -183,7 +214,7 @@ body {
     .desc {
       font-size: 18px;
       line-height: 32px;
-      letter-spacing: -0.75px;
+      letter-spacing: -2.5px;
       color: #454545;
       margin-bottom: 60px;
     }
@@ -196,29 +227,29 @@ body {
       .item {
         float: left;
         margin-right: 33px;
-        margin-bottom: 76px;
+        margin-bottom: 48px;
 
         .txt-lg {
           font-weight: bold;
           font-size: 28px;
           line-height: 34px;
           text-align: center;
-          letter-spacing: 0.5px;
+          letter-spacing: -0.5px;
           color: #000000;
         }
 
         .txt {
           font-size: 18px;
-          line-height: 26px;
+          line-height: 28px;
           text-align: center;
-          letter-spacing: -0.75px;
+          letter-spacing: -2px;
           color: #000000;
         }
 
         .img {
           width: 140px;
           height: 140px;
-          margin-bottom: 20px;
+          margin-bottom: 18px;
 
           img {
             width: 100%;
@@ -233,13 +264,88 @@ body {
       }
     }
   }
+
+  .section-businessArea{
+    .info-box{
+      &:nth-of-type(1){
+        .title-area{
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%),url('../img/@temp/bg-01.svg') no-repeat 0 0;
+        }
+      }
+      &:nth-of-type(2){
+        .title-area{
+          background: url('../img/@temp/bg-02.svg') no-repeat 0 0;
+        }
+      }
+      &:nth-of-type(3){
+        .title-area{
+          background: url('../img/@temp/bg-03.svg') no-repeat 0 0;
+        }
+      }
+      &:nth-of-type(4){
+        .title-area{
+          background: url('../img/@temp/bg-04.svg') no-repeat 0 0;
+        }
+      }
+      .title-area{
+        width: 100%;
+        height: 392px;
+        position: relative;
+        >div{
+          position: absolute;
+          bottom: 26px;
+          display: block;
+          width: 100%;
+          padding: 0 30px;
+          box-sizing: border-box;
+           &:before{
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            border-top:1px solid #ffffff;
+          }
+        }
+        p{
+          color:#ffffff;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 52px;
+          letter-spacing: -4px;
+          &.text-en{
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .desc-area{
+        font-size: 22px;
+        padding: 40px 30px;
+        .sub-title{
+          font-size:22px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          margin-bottom:20px;
+        }
+        .text{
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: -0.75px;
+        }
+      }
+
+    }
+  }
 }
 
 
 
 .footer{
   height: 300px;
-  width: 100%;
   padding: 50px 30px;
   border:1px solid red;
   .top{
