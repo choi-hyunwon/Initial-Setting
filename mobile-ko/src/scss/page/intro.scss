@@ -1,6 +1,92 @@
-/*
-|----------------------------------|
- v.0.1 선미 : 최초 작업 -- 2021.09.08
-|----------------------------------|
-*/
 
+.footer{
+  height: 300px;
+  width: 100%;
+  padding: 50px 30px;
+  border:1px solid red;
+  .top{
+    margin-bottom: 50px;
+    .copyright{
+      font-size: 16px;
+      line-height: 25px;
+      color:#000000;
+      margin-bottom: 30px;
+    }
+    .sns {
+      li {
+        display: inline-block;
+        margin-right: 26px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*---------------icon 공통------------------------------*/
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+/*footer*/
+.icon-facebook-square {
+  background-image: url("../img/common/ico-facebook-square.svg");
+  width: 18px;
+  height: 18px;
+}
+
+.icon-youtube-square {
+  background-image: url("../img/common/ico-youtube-square.svg");
+  width: 23px;
+  height: 16px;
+}
+
+.icon-blog-square {
+  background-image: url("../img/common/ico-blog-square.svg");
+  width: 22px;
+  height: 18px;
+}
+
+.icon-linkedin-square {
+  background-image: url("../img/common/ico-linkedin-square.svg");
+  width: 18px;
+  height: 18px;
+}
+/*------------------icon 공통 end -------------*/
+
+
+
+/*--------------reboot 공통----------------------*/
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body{
+  margin: 0;
+}
+/*------------------reboot 공통 end -------------*/
