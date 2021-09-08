@@ -5,21 +5,116 @@
 <div class="wrap">
     @@include('../../html/main/Intro.html')
     <div class="main-wrap">
-        <div class="full-bg macrogen main-bg" style="background-image: url(../../img/main/img-main_01.svg)">
-            @@include('../../html/include/component/header.html')
-            <div class="frame">
-                <div class="slogan"><span class="text-gradient">어제의</span><br>행복한 기억.</div>
-                <div class="slogan-sub">건강한 일상을<br>마크로젠이 동행합니다</div>
+        @@include('../../html/include/component/header.html')
+        <div class="full-bg main-bg">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide visual_01">
+                        1번 슬라이드입니다.<br>마우스로 움직여보세요.
+                    </div>
+                    <div class="swiper-slide visual_02">
+                        2번 슬라이드입니다.<br>
+                        레이아웃만 제대로 설정되어 있다면 슬라이드에 어떤 것이든 넣을 수 있습니다.
+                    </div>
+                    <div class="swiper-slide visual_03">
+                        <img src="https://image.flaticon.com/icons/png/128/1933/1933588.png" alt=""><br>
+                        이렇게 이미지도 넣을 수 있습니다.
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+            <script>
+                var mainSwiper = new Swiper('.swiper-container', {
+                    loop: true, //반복
+
+                    /*자동*/
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    //페이징
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    },
+                    //방향표
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+                })
+            </script>
+            <!--  <div class="slider">
+                  <div class="slider-navigation">
+                      <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+                      <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+                  </div>
+                  <div class="swiper-container _mainSlider">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide hero_01">
+                              <div class="img"><img src="../../img/main/img-main_01.svg" alt=""></div>
+                              <div class="slogan"><span class="text-gradient">어제의</span><br>행복한 기억.</div>
+                              <div class="slogan-sub">건강한 일상을<br>마크로젠이 동행합니다</div>
+                          </div>
+                          <div class="swiper-slide hero_02">
+                              <div class="img"><img src="../../img/main/img-main_01.svg" alt=""></div>
+                              <div class="slogan"><span class="text-gradient">어제의</span><br>행복한 기억.</div>
+                              <div class="slogan-sub">건강한 일상을<br>마크로젠이 동행합니다</div>
+                          </div>
+                          <div class="swiper-slide hero_03">
+                              <div class="img"><img src="../../img/main/img-main_01.svg" alt=""></div>
+                              <div class="slogan"><span class="text-gradient">어제의</span><br>행복한 기억.</div>
+                              <div class="slogan-sub">건강한 일상을<br>마크로젠이 동행합니다</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  var swiper = new Swiper("._mainSlider", {
+                      slidesPerView: 1,
+                      centeredSlides: false,
+                      spaceBetween: 0,
+                      grabCursor: true,
+                      navigation: {
+                          nextEl: "._btnNext",
+                          prevEl: "._btnPrev",
+                      },
+                  });
+              </script>-->
+
+
+     <!--       <div class="frame">
+                <ul>
+                    <li class="hero_01">
+                        <div class="slogan"><span class="text-gradient">어제의</span><br>행복한 기억.</div>
+                        <div class="slogan-sub">건강한 일상을<br>마크로젠이 동행합니다</div>
+                    </li>
+                    <li class="hero_02"></li>
+                    <li class="hero_03"></li>
+                </ul>
+
+
                 <div class="scroll-wrap">
                     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
-        <div class="pink">
+        <div class="stock_information">
             이러쿵 저러쿵
         </div>
-        <div class="container container-fluid"></div>
+        <div class="container container-fluid">
+
+        </div>
         @@include('../../html/include/component/footer.html')
     </div>
 </div>
@@ -42,7 +137,7 @@
         setTimeout(introChange, 2000)
 
 
-        $(".pink").on('click', function () {
+        $(".stock_information").on('click', function () {
             if ($(this).hasClass('active') == true) {
                 $(this).removeClass('active')
             } else {
@@ -51,3 +146,4 @@
         })
     })
 </script>
+
