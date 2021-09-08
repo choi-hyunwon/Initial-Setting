@@ -226,6 +226,12 @@ data.business ={
       url: '02연구서비스_03Fragment',
       category: 'business',
       page: '02연구서비스_03Fragment'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_04Customized',
+      category: 'business',
+      page: '02연구서비스_04Customized'
     }
   ]
 }
