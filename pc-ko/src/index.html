@@ -76,7 +76,8 @@
 <script>
   Handlebars.registerHelper('fnStateClass', function (options) {
     // console.log(options)
-    if (options.data.root.list[options.data.index].stateClass == 'waiting') {
+    // if (options.data.root.list[options.data.index].stateClass == 'waiting') {
+    if (options.data.root.list[options.data.index].stateClass == 'disabled') {
       return options.inverse(this)
     } else {
       return options.fn(this)
