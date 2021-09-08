@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+<!--@@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/04Newsroom_01뉴스_01목록_없음.png'})-->
+    @@include('../../html/include/component/header-white.html')
+    <div class="container">
+        @@include('../../html/include/common/breadcrumb.html',  {
+            "depth1": "Newsroom",
+            "depth2": "뉴스",
+            "depth3": "",
+        })
+        <div class="section_newsroom">
+            <div class="font-h1">뉴스</div>
+            <div class="board">
+                <div class="search-wrap">
+                    <div class="input-search">
+                        <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요" aria-describedby="search2">
+                        <button class="btn-search" type="button" id="search2"><span class="sr-only">검색</span></button>
+                    </div>
+                </div>
+                <div class="no-data">
+                    <p>등록된 게시물이 없습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('../../html/include/component/footer.html')
+    @@include('../../html/include/component/toTop.html')
+</div>
+<script>
+    // http://suprb.com/apps/gridalicious/
+    $(function () {
+        $('._thumbnailGrid').gridalicious({
+            selector: '.item',
+            width: 388
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/*
+|----------------------------------|
+ v.0.1 (태윤) 최초 작업 -- 2021.08.31
+|----------------------------------|
+*/
+
+.section_agreement{
+  .subtitle{
+    padding: 45px 0px 183px;
+    font-weight: 500;
+  }
+  .terms{
+    margin: 0 46px;
+    .title_area{
+      text-align: center;
+      border-top: 2px solid #353C49;
+      border-bottom: 1px solid #d9d9d9;
+      padding: 23px 0px;
+      margin-bottom: 10px;
+    }
+    .content_area{
+      margin: 0px 82px;
+      .table{
+        thead{
+          tr{
+            th{
+              padding: 25px 0px 24px;
+            }
+          }
+        }
+      }
+      p{
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #454545;
+      }
+      ul {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #454545;
+        &.hyphen_list {
+          li {
+            position: relative;
+            padding-left: 10px;
+            i {
+              overflow: hidden;
+              position: absolute;
+              top: 15px;
+              left: 0;
+              width: 5px;
+              height: 1px;
+              background-color: #454545;
+            }
+          }
+
+        }
+
+      }
+      .lookup{
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+        margin-bottom: 42px;
+        .select_box{
+          padding:7px 15px;
+          font-size: 14px;
+          line-height: 20px;
+          width: 250px;
+          height: 40px;
+          border: 1px solid rgba(0,0,0,0.12);
+          cursor: pointer;
+          background:url('../img/common/ico-arrow-bottom-short-black.svg') no-repeat 95% 50%;
+          margin-right: 10px;
+          position: relative;
+          .select_default{
+
+          }
+          .select_dropdown{
+            position: absolute;
+            background-color: #fff;
+            top: 43px;
+            width: 100%;
+            left: 0;
+            &._dropdown{
+              display: none;
+            }
+            ul{
+              li{
+                padding: 7px 15px;
+                height: 40px;
+                a{
+                  display: block;
+                  font-size: 14px;
+                  color: #909090;
+                  line-height: 20px;
+                }
+              }
+
+            }
+          }
+        }
+        .btn{
+          padding: 0px 24px;
+          min-width: 88px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+}
