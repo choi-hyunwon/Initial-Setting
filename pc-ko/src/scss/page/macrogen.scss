@@ -32,6 +32,19 @@ $min-width: 1244px;
       position: relative;
       height: calc(980px - 124px);
 
+      .slogan {
+        &.ko {
+          font-size: 80px;
+          line-height: 98px;
+          margin-bottom: 32px;
+        }
+      }
+
+      .slogan-sub {
+        font-size: 26px;
+        line-height: 38px;
+      }
+
       &.frameC {
         height: auto;
       }
@@ -1185,6 +1198,12 @@ $min-width: 1244px;
           }
         }
       }
+    }
+  }
+
+  &.ethical-management {
+    .section {
+
     }
   }
 }
