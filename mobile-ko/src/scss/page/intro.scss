@@ -13,7 +13,7 @@ body {
   .bg {
     position: absolute;
     width: 100%;
-    height: 718px;
+    height: 803px;
     left: 50%;
     transform: translateX(-50%);
     top: 0;
@@ -44,7 +44,8 @@ body {
 
   .inner {
     position: relative;
-    height: 678px;
+    width: 100%;
+    height: 803px;
     padding: 20px 30px;
 
     .font-slogan {
@@ -159,7 +160,7 @@ body {
 
     .img {
       text-align: right;
-      margin-bottom: 55px;
+      margin-bottom: 60px;
     }
     .list {
       .item {
@@ -167,7 +168,7 @@ body {
         font-weight: bold;
         font-size: 18px;
         line-height: 26px;
-        letter-spacing: -2.5px;
+        letter-spacing: -0.75px;
         color: #000000;
         padding-left: 30px;
         margin-bottom: 15px;
@@ -191,20 +192,22 @@ body {
 
   .section-list {
     background: #F7F7F7;
-    padding: 107px 30px 50px;
+    padding: 100px 30px 24px;
 
     .title {
-      background: url(../img/common/img-1997.svg) no-repeat 0 0;
-      width: 151px;
-      height: 49px;
       position: relative;
-      margin-bottom: 32px;
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 68px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 20px;
 
       &::after {
         content: '';
         position: absolute;
-        right: -71px;
-        bottom: -1px;
+        left: 153px;
+        bottom: 15px;
         width: 60px;
         height: 5px;
         background-color: #000;
@@ -214,7 +217,7 @@ body {
     .desc {
       font-size: 18px;
       line-height: 32px;
-      letter-spacing: -2.5px;
+      letter-spacing: -0.75px;
       color: #454545;
       margin-bottom: 60px;
     }
@@ -227,14 +230,14 @@ body {
       .item {
         float: left;
         margin-right: 33px;
-        margin-bottom: 48px;
+        margin-bottom: 76px;
 
         .txt-lg {
           font-weight: bold;
           font-size: 28px;
           line-height: 34px;
           text-align: center;
-          letter-spacing: -0.5px;
+          letter-spacing: 0.5px;
           color: #000000;
         }
 
@@ -372,88 +375,3 @@ body {
     }
   }
 }
-
-
-
-/*---------------icon 공통------------------------------*/
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-indent: -999em;
-  overflow: hidden;
-}
-
-/*footer*/
-.icon-facebook-square {
-  background-image: url("../img/common/ico-facebook-square.svg");
-  width: 18px;
-  height: 18px;
-}
-
-.icon-youtube-square {
-  background-image: url("../img/common/ico-youtube-square.svg");
-  width: 23px;
-  height: 16px;
-}
-
-.icon-blog-square {
-  background-image: url("../img/common/ico-blog-square.svg");
-  width: 22px;
-  height: 18px;
-}
-
-.icon-linkedin-square {
-  background-image: url("../img/common/ico-linkedin-square.svg");
-  width: 18px;
-  height: 18px;
-}
-/*------------------icon 공통 end -------------*/
-
-
-
-/*--------------reboot 공통----------------------*/
-ol,
-ul,
-dl {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-}
-
-body{
-  margin: 0;
-}
-/*------------------reboot 공통 end -------------*/
-
-
-/*--------------reboot 공통----------------------*/
-ol,
-ul,
-dl {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-}
-
-body{
-  margin: 0;
-}
-/*------------------reboot 공통 end -------------*/
