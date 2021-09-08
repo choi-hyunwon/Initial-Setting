@@ -116,6 +116,9 @@
       font-weight: 500;
       font-size: 18px;
       margin-bottom: 20px;
+      &.figure-des{
+        margin-bottom: 50px;
+      }
     }
     .desc{
       font-weight: 400;
@@ -134,18 +137,19 @@
         margin: 100px 0px 80px;
       }
     }
-
     .list-area-group{
       .list-area{
         &:nth-last-of-type(1){
           margin-bottom: 0;
         }
       }
+      .table{
+        margin-bottom: 0;
+      }
     }
-
     .list-area{
       margin-bottom: 60px;
-      &.bottom-figure{
+      &.figure-des{
         margin-bottom: 25px;
       }
       .title{
@@ -245,6 +249,12 @@
     .border-gray-box{
       border: 1px solid #e9e9e9;
       padding: 40px;
+    }
+    .table{
+      margin-bottom: 60px;
+      + .sub-title{
+        padding-top: 60px;
+      }
     }
   }
   .board{
