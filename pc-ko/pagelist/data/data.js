@@ -127,7 +127,7 @@ data.macrogen = {
   title: 'Macrogen',
   list: [
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '01Macrogen_01기업개요',
       category: 'macrogen',
       page: '01Macrogen_01기업개요'
@@ -151,7 +151,7 @@ data.macrogen = {
       page: '01Macrogen_05인증'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '01Macrogen_06글로벌네트워크',
       category: 'macrogen',
       page: '01Macrogen_06글로벌네트워크'
