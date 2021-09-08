@@ -150,7 +150,12 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_05인증'
     },
-
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_06글로벌네트워크',
+      category: 'macrogen',
+      page: '01Macrogen_06글로벌네트워크'
+    },
   ]
 }
 data.business ={
