@@ -7,69 +7,6 @@ $min-width: 1244px;
 
 .macrogen {
   /* s 공통 */
-  .tooltip-box {
-    position: relative;
-
-    .btn-tooltip {
-      display: inline-block;
-
-      .icon-tooltip {
-        display: inline-block;
-        vertical-align: middle;
-        @include background-img($width: 26px, $height: 26px, $category: 'macrogen', $img: 'btn-tooltip.svg');
-      }
-    }
-
-    .text-box {
-      display: none;
-      position: absolute;
-      width: 450px;
-      top: 47px;
-      left: -10px;
-      background: #FFFFFF;
-      border: 1px solid $bg-222222;
-      box-shadow: 0 8px 6px rgba(0, 0, 0, 0.08);
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 30px;
-      letter-spacing: -0.75px;
-      color: $gray-454545;
-      padding: 50px 30px 30px;
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        top: -10px;
-        left: 17px;
-        border-bottom: 1px solid #fff;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: -10px;
-        left: 15px;
-        @include background-img($width: 13px, $height: 10px, $category: 'common', $img: 'tooltip-tip.svg');
-      }
-    }
-
-    .btn-tooltip-close {
-      position: absolute;
-      display: block;
-      right: 10px;
-      top: 10px;
-
-      .icon-tooltip-close {
-        display: inline-block;
-        vertical-align: middle;
-        @include background-img($width: 34px, $height: 34px, $category: 'common', $img: 'btn-tootip-close.svg');
-      }
-    }
-  }
-
   .badge {
     display: inline-block;
     vertical-align: middle;
@@ -94,6 +31,19 @@ $min-width: 1244px;
     .frame {
       position: relative;
       height: calc(980px - 124px);
+
+      .slogan {
+        &.ko {
+          font-size: 80px;
+          line-height: 98px;
+          margin-bottom: 32px;
+        }
+      }
+
+      .slogan-sub {
+        font-size: 26px;
+        line-height: 38px;
+      }
 
       &.frameC {
         height: auto;
@@ -861,6 +811,12 @@ $min-width: 1244px;
         }
       }
     }
+
+    .tooltip-box {
+      .text-box {
+        top: 46px;
+      }
+    }
   }
 
   &.recruitment-info {
@@ -983,6 +939,20 @@ $min-width: 1244px;
               letter-spacing: -0.75px;
               color: $gray-000000;
               margin-bottom: 6px;
+            }
+
+            &.with-badge {
+              position: relative;
+
+              .title {
+                width: calc(100% - 110px);
+              }
+
+              .badge-recruit {
+                top: 0;
+                right: 0;
+                transform: none;
+              }
             }
           }
         }
@@ -1228,6 +1198,12 @@ $min-width: 1244px;
           }
         }
       }
+    }
+  }
+
+  &.ethical-management {
+    .section {
+
     }
   }
 }
