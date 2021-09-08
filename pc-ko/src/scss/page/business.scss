@@ -116,6 +116,9 @@
       font-weight: 500;
       font-size: 18px;
       margin-bottom: 20px;
+      &.figure-des{
+        margin-bottom: 50px;
+      }
     }
     .desc{
       font-weight: 400;
@@ -145,7 +148,7 @@
 
     .list-area{
       margin-bottom: 60px;
-      &.bottom-figure{
+      &.figure-des{
         margin-bottom: 25px;
       }
       .title{

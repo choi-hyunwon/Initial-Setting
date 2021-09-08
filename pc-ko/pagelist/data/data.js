@@ -197,11 +197,18 @@ data.business ={
       url: '01연구서비스_07Spatial',
       category: 'business',
       page: '01연구서비스_07Spatial'
-    }, {
+    },
+    {
       stateClass: 'working',
       url: '02연구서비스_01Standard',
       category: 'business',
       page: '02연구서비스_01Standard'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_02Identification',
+      category: 'business',
+      page: '02연구서비스_02Identification'
     }
   ]
 }
