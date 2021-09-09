@@ -263,27 +263,6 @@
       }
     }
   }
-  .board{
-    .indicator{
-      .content{
-        display: block;
-        margin-bottom: 0;
-        .item{
-          width: auto;
-          &.next{
-            float: right;
-          }
-          &.prev{
-            float:left;
-            border-right: none;
-          }
-          .title{
-            font-size: 18px;
-          }
-        }
-      }
-    }
-  }
 }
 
 //컴퍼넌트 예정

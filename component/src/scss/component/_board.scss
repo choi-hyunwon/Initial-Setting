@@ -573,6 +573,8 @@
   }
 
   .navigation {
+    position: static;
+    height: auto;
     .content {
       display: block;
       margin-bottom: 0;
