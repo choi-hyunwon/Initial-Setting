@@ -210,37 +210,37 @@ data.business ={
       page: '01연구서비스_07Spatial'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_01Standard',
       category: 'business',
       page: '02연구서비스_01Standard'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_02Identification',
       category: 'business',
       page: '02연구서비스_02Identification'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_03Fragment',
       category: 'business',
       page: '02연구서비스_03Fragment'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_04Customized',
       category: 'business',
       page: '02연구서비스_04Customized'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_05Humanid',
       category: 'business',
       page: '02연구서비스_05Humanid'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_06GeneSythesis',
       category: 'business',
       page: '02연구서비스_06GeneSythesis'
