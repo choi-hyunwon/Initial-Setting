@@ -233,11 +233,17 @@ data.business ={
     //   category: 'business',
     //   page: '02연구서비스_04Customized'
     // },
+    // {
+    //   stateClass: 'working',
+    //   url: '02연구서비스_05Humanid',
+    //   category: 'business',
+    //   page: '02연구서비스_05Humanid'
+    // },
     {
       stateClass: 'working',
-      url: '02연구서비스_05Humanid',
+      url: '02연구서비스_06GeneSythesis',
       category: 'business',
-      page: '02연구서비스_05Humanid'
+      page: '02연구서비스_06GeneSythesis'
     },
 
 
