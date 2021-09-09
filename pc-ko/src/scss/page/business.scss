@@ -140,16 +140,6 @@
         margin: 100px 0px 80px;
       }
     }
-    .list-area-group{
-      .list-area{
-        &:nth-last-of-type(1){
-          margin-bottom: 0;
-        }
-      }
-      .table{
-        margin-bottom: 0;
-      }
-    }
     .list-area{
       margin-bottom: 60px;
       &.figure-des{
@@ -162,8 +152,6 @@
         line-height: 27px;
         margin-bottom: 20px;
       }
-
-
     }
     .list-area-border{
       border: 1px solid #d9d9d9;
@@ -253,6 +241,18 @@
       margin-bottom: 60px;
       + .sub-title{
         padding-top: 60px;
+      }
+    }
+    .list-gallery{
+      .title{
+        line-height: 52px;
+        margin-bottom: 40px;
+      }
+      .list{
+        display: flex;
+        .desc{
+          margin-left: 40px;
+        }
       }
     }
   }
