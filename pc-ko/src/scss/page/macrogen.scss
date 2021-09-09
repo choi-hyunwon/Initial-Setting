@@ -1860,6 +1860,184 @@ $min-width: 1244px;
     }
   }
 
+  &.talent {
+    .section-description {
+      padding: 150px 0 120px;
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+      }
+
+      .underline {
+        display: inline-block;
+        width: 60px;
+        height: 5px;
+        background-color: $gray-000000;
+        margin-left: 12px;
+      }
+
+      .text-lg {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-000000;
+        margin-bottom: 28px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        color: $gray-000000;
+      }
+    }
+
+    .section-bg {
+      position: relative;
+      width: 100%;
+      height: 600px;
+
+      .inner {
+        position: absolute;
+        width: $min-width;
+        height: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+      }
+
+      .img {
+        width: 100%;
+        padding: 0 50px;
+        height: 600px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .txt-box {
+        position: absolute;
+        right: 82px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        li {
+          position: relative;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 52px;
+          letter-spacing: -1px;
+          color: $gray-ffffff;
+          margin-bottom: 22px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background-color: $gray-ffffff;
+            left: -48px;
+            top: 17px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .section-core-talent {
+      position: relative;
+      width: 100%;
+      height: calc(2268px - 150px);
+      padding-top: 180px;
+      padding-bottom: 2px;
+      overflow: hidden;
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+      }
+
+      .font-h6 {
+        margin-bottom: 30px;
+      }
+
+      .list {
+        .item {
+          width: 100%;
+          height: 540px;
+          overflow: hidden;
+          margin-bottom: 120px;
+
+          &:nth-child(2) {
+            .img {
+              margin-right: 100px;
+            }
+            .desc-area {
+              width: calc(100% - 540px - 100px);
+            }
+          }
+
+          .desc-area {
+            float: left;
+            display: flex;
+            width: calc(100% - 540px);
+            height: 100%;
+            justify-content: center;
+            flex-direction: column;
+
+            .font-h3 {
+              margin-bottom: 60px;
+            }
+
+            .font-body-h {
+              color: $point-primary;
+              margin-bottom: 20px;
+            }
+
+            .font-8 {
+              font-weight: normal;
+            }
+          }
+
+          .img {
+            float: left;
+            width: 540px;
+            height: 540px;
+
+            img {
+               width: 100%;
+               height: 100%;
+            }
+          }
+        }
+      }
+
+      .DNA {
+        position: absolute;
+        background-size: contain;
+
+        &.DNA-1 {
+          @include background-img ($width: 647px, $height: 674px, $category: 'macrogen', $img: 'img-DNA.svg');
+          top: -295px;
+          right: 292px;
+        }
+
+        &.DNA-2 {
+          @include background-img ($width: 647px, $height: 584px, $category: 'macrogen', $img: 'img-DNA2.svg');
+          bottom: 150px;
+          right: 216px;
+        }
+      }
+    }
+  }
+
   .modal-dialog {
     .modal-content {
       .modal-body {

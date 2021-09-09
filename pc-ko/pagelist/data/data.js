@@ -169,6 +169,12 @@ data.macrogen = {
       page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
     },
     {
+      stateClass: 'waiting',
+      url: '01Macrogen_04채용_01인재상',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_01인재상'
+    },
+    {
       stateClass: 'complete',
       url: '01Macrogen_04채용_03채용안내_01목록',
       category: 'macrogen',
