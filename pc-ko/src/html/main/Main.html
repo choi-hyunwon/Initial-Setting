@@ -3,7 +3,7 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-     @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/00Main_00전체.png'})
+<!--     @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/00Main_00전체.png'})-->
     @@include('../../html/main/Intro.html')
     <div class="main-wrap">
 
@@ -51,39 +51,27 @@
                 <div class="swiper-button-next swiper_btn"></div>
             </div>
             <script>
-
-
-
                 var mainSwiper = new Swiper ('.swiper-container', {
                     loop: true, //반복
                     speed: 1500,//속도
-                    /*자동*/
                     autoplay: {
                         delay: 4000,
                         waitForTransition: true,
                         disableOnInteraction: false,
                     },
-                    //페이징
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,
                         renderBullet: function (index, className)  {
-                            return '<span class="' + className + '">'+'<svg class="fp-arc-loader" width="47" height="47" viewBox="0 0 16 16">'+
+                            return '<span class="' + className + '">'+'<svg class="fp-arc-loader" width="50" height="50" viewBox="0 0 25 25">'+
                                 '<circle class="path" cx="8" cy="8" r="5" fill="none" transform="rotate(-90 8 8)" stroke="#FFF"'+
                                 'stroke-opacity="1" stroke-width="1px"></circle>'+
                                 '<circle cx="8" cy="8" r="1" fill="#FFF"></circle>'+
                                 '</svg></span>';
                         },
-
-                    },
-                    //방향표
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
                     },
                 })
             </script>
-
 
         </div>
         <div class="stock_information">
@@ -104,8 +92,8 @@
 
 <script>
     $(document).ready(function () {
+        /*인트로 영역*/
         $(".main-wrap").hide();
-
         function introChange(e) {
             $('.intro-wrap').slideUp(1000);
             $('.main-bg').slideDown(500);
@@ -113,10 +101,9 @@
             $('.header').fadeIn();
             $('.main-wrap').show();
         }
-
         setTimeout(introChange, 2000)
 
-
+        /*주가 정보 영역*/
         $(".stock_information").on('click', function () {
             if ($(this).hasClass('active') == true) {
                 $(this).removeClass('active')
