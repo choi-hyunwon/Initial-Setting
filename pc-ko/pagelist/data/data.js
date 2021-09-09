@@ -115,6 +115,12 @@ data.guide = {
       url: 'tooltip',
       category: 'guide',
       page: 'tooltip'
+    },
+    {
+      stateClass: 'complete',
+      url: 'modal',
+      category: 'guide',
+      page: 'modal'
     }
   ]
 }
