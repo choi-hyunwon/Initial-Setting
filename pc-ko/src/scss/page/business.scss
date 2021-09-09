@@ -130,6 +130,9 @@
       &.sub{
         margin-bottom: 60px;
       }
+      &.figure-des{
+        margin-bottom: 25px;
+      }
     }
     .divider{
       margin: 100px 0px;
@@ -159,14 +162,7 @@
         line-height: 27px;
         margin-bottom: 20px;
       }
-      .list-circle-dot{
-        li{
-          margin-bottom: 10px;
-          &:nth-last-of-type(1){
-            margin-bottom: 0px;
-          }
-        }
-      }
+
 
     }
     .list-area-border{
@@ -285,12 +281,13 @@
 
 //컴퍼넌트 예정
 .list-circle-dot{
-  li{
-    position: relative;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #454545;
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #454545;
+
+  >li{
     &:before{
       display: inline-block;
       content: '';
@@ -301,6 +298,22 @@
       vertical-align: middle;
       margin-right: 10px;
     }
+    margin-bottom: 10px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0px;
+    }
+  }
+  .list-hypen{
+    padding-top: 8px;
+    margin-left: 10px;
+    li{
+      font-size: 14px;
+      color: #707070;
+      line-height: 28px;
+      margin-bottom: 8px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+    }
   }
 }
-

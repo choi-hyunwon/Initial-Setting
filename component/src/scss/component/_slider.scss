@@ -76,3 +76,46 @@
     }
   }
 }
+
+.main-wrap{
+  .slider {
+    .slider-navigation {
+      text-align: right;
+      margin-bottom: 70px;
+    }
+
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 380px !important;
+
+          .img  {
+            width: 380px;
+            height: auto;
+            margin-bottom: 25px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .content {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.5px;
+            color: $gray-454545;
+            margin-bottom: 25px;
+            @include ellipsis($line: 3);
+          }
+          .date {
+            font-size: 16px;
+            line-height: 28px;
+            color: $gray-909090;
+          }
+        }
+      }
+    }
+  }
+}
