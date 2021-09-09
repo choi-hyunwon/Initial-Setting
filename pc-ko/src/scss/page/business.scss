@@ -44,7 +44,7 @@
       margin-bottom: 80px;
     }
     .desc{
-      letter-spacing: -1.25px;
+      letter-spacing: -0.75px;
       font-size: 16px;
       line-height: 30px;
       color: #000;
@@ -123,7 +123,7 @@
     .desc{
       font-weight: 400;
       line-height: 30px;
-      letter-spacing: -1px;
+      letter-spacing: -0.75px;
       &.img{
         margin-bottom: 40px;
       }
@@ -140,16 +140,6 @@
         margin: 100px 0px 80px;
       }
     }
-    .list-area-group{
-      .list-area{
-        &:nth-last-of-type(1){
-          margin-bottom: 0;
-        }
-      }
-      .table{
-        margin-bottom: 0;
-      }
-    }
     .list-area{
       margin-bottom: 60px;
       &.figure-des{
@@ -161,9 +151,10 @@
       .title{
         line-height: 27px;
         margin-bottom: 20px;
+        &.img{
+          margin-bottom: 35px;
+        }
       }
-
-
     }
     .list-area-border{
       border: 1px solid #d9d9d9;
@@ -248,11 +239,27 @@
     .border-gray-box{
       border: 1px solid #e9e9e9;
       padding: 40px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
     .table{
-      margin-bottom: 60px;
+      margin-bottom: 0;
       + .sub-title{
-        padding-top: 60px;
+        padding-top: 120px;
+      }
+    }
+    .list-gallery{
+      .title{
+        line-height: 52px;
+        margin-bottom: 40px;
+      }
+      .list{
+        display: flex;
+        .desc{
+          margin-left: 40px;
+        }
       }
     }
   }
