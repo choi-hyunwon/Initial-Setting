@@ -209,36 +209,36 @@ data.business ={
       category: 'business',
       page: '01연구서비스_07Spatial'
     },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_01Standard',
-    //   category: 'business',
-    //   page: '02연구서비스_01Standard'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_02Identification',
-    //   category: 'business',
-    //   page: '02연구서비스_02Identification'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_03Fragment',
-    //   category: 'business',
-    //   page: '02연구서비스_03Fragment'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_04Customized',
-    //   category: 'business',
-    //   page: '02연구서비스_04Customized'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_05Humanid',
-    //   category: 'business',
-    //   page: '02연구서비스_05Humanid'
-    // },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_01Standard',
+      category: 'business',
+      page: '02연구서비스_01Standard'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_02Identification',
+      category: 'business',
+      page: '02연구서비스_02Identification'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_03Fragment',
+      category: 'business',
+      page: '02연구서비스_03Fragment'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_04Customized',
+      category: 'business',
+      page: '02연구서비스_04Customized'
+    },
+    {
+      stateClass: 'working',
+      url: '02연구서비스_05Humanid',
+      category: 'business',
+      page: '02연구서비스_05Humanid'
+    },
     {
       stateClass: 'working',
       url: '02연구서비스_06GeneSythesis',
