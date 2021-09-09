@@ -92,6 +92,18 @@ $link-decoration: none !default;
 
 $font-family-base : 'Noto Sans KR' !default;
 $font-family-sans-serif: $font-family-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+/* modal */
+$modal-backdrop-opacity:            .5;
+$modal-sm:                          300px;
+$modal-md:                          500px;
+$modal-lg:                          1000px;
+$modal-xl:                          1140px;
+
+$modal-fade-transform:              translate(0, -50px);
+$modal-show-transform:              none;
+$modal-transition:                  transform .3s ease-out;
+$modal-scale-transform:             scale(1);
 /*
 |----------------------------------|
 */
