@@ -272,6 +272,18 @@
         }
       }
     }
+    .table-wrap{
+      display: flex;
+      justify-content: space-between;
+      .table-title-box{
+        .sub-title{
+          margin-bottom: 25px;
+        }
+      }
+      .table{
+        width: calc(50% - 20px);
+      }
+    }
   }
 }
 
