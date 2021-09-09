@@ -155,12 +155,17 @@
           margin-bottom: 35px;
         }
       }
+      .table{
+        margin-bottom: 0;
+      }
     }
     .list-area-border{
       border: 1px solid #d9d9d9;
       margin-bottom: 60px;
       +.sub-title{
         padding-top: 60px;
+
+
       }
       .list{
         padding: 40px;
@@ -245,10 +250,11 @@
       }
     }
     .table{
-      margin-bottom: 0;
-      + .sub-title{
-        padding-top: 120px;
+      margin-bottom: 60px;
+      + .sub-title.font-h5{
+        padding-top: 60px;
       }
+
     }
     .list-gallery{
       .title{
