@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <div class="full-bg macrogen" style="background-image: url(../../img/@temp/macrogen/macrogen_bg_1.png);">
+        @@include('../../html/include/component/header.html')
+        <div class="frame">
+            <div class="hero-title">경영진</div>
+            <div class="slogan ko">널리 인간을<br/>이롭게 하다</div>
+            <div class= "slogan-sub">‘홍익인간’의 가치를 실현하기 위해 오늘도 밤을 밝힙니다</div>
+            @@include('../../html/include/common/breadcrumb-white-depth3.html',  {
+                "depth1": "MACROGEN",
+                "depth2": "회사소개",
+                "depth3": "경영진",
+            })
+            @@include('_scrollWrap.html')
+        </div>
+    </div>
+    <div class="container container-fluid">
+        <div class="macrogen macrogen-management">
+            <!-- s  기업 설명 -->
+            <div class="section-management">
+                <div class="tab-wrap _tabWrap">
+                    <ul>
+                        <li class="active"><a href="#">회장</a></li>
+                        <li><a href="#">대표이사</a></li>
+                    </ul>
+                </div>
+                <script>
+                    $('._tabWrap li a').on('click',function (){
+                        $(this).parent().addClass('active').siblings().removeClass('active')
+                    })
+                </script>
+                <div class="font-h3">
+                    안녕하세요,<br/>
+                    마크로젠 회장 서정선입니다.
+                </div>
+            </div>
+            <!-- e  기업 설명 -->
+        </div>
+    </div>
+    @@include('../../html/include/component/footer.html')
+</div>
+</body>
+</html>
