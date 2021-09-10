@@ -187,6 +187,12 @@ data.macrogen = {
       page: '01Macrogen_04채용_01인재상'
     },
     {
+      stateClass: 'waiting',
+      url: '01Macrogen_04채용_02인사제도',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_02인사제도'
+    },
+    {
       stateClass: 'complete',
       url: '01Macrogen_04채용_03채용안내_01목록',
       category: 'macrogen',
