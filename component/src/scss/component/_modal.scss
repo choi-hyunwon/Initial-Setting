@@ -1,0 +1,68 @@
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.09.09
+|----------------------------------|
+*/
+.modal {
+  overflow-x: auto;
+
+  .modal-dialog {
+    &.modal-lg {
+      min-width: 1000px !important;
+      max-width: 1000px !important;
+    }
+    .modal-content {
+      border-radius: 0;
+      border: 0;
+
+      .modal-header {
+        padding: 0 40px;
+        background-color: #222;
+        border-radius: 0;
+        height: 70px;
+
+        .modal-title {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          color: $gray-ffffff;
+          padding-top: 3px;
+        }
+
+        .btn-close {
+          width: 20px;
+          height: 20px;
+          color: $gray-ffffff;
+          background: transparent url(../img/common/btn-popup-close.svg) center/1em auto no-repeat;
+          opacity: 1;
+
+          &:hover {
+            color: $gray-ffffff;
+            opacity: 1;
+          }
+        }
+      }
+
+      .modal-body {
+        padding: 60px;
+      }
+
+      .modal-footer {
+        justify-content: center;
+        border-radius: 0;
+        padding: 15px;
+
+        .pagination-wrap {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &.modal-static {
+    .modal-dialog {
+      transform: scale(1);
+    }
+  }
+}

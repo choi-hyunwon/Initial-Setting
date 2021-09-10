@@ -115,6 +115,12 @@ data.guide = {
       url: 'tooltip',
       category: 'guide',
       page: 'tooltip'
+    },
+    {
+      stateClass: 'complete',
+      url: 'modal',
+      category: 'guide',
+      page: 'modal'
     }
   ]
 }
@@ -126,6 +132,12 @@ data.main = {
       url: 'Intro',
       category: 'main',
       page: 'Intro'
+    },
+    {
+      stateClass: 'working',
+      url: 'Main',
+      category: 'main',
+      page: 'Main'
     }
   ]
 }
@@ -140,9 +152,33 @@ data.macrogen = {
     },
     {
       stateClass: 'waiting',
+      url: '01Macrogen_02경영진',
+      category: 'macrogen',
+      page: '01Macrogen_02경영진'
+    },
+    {
+      stateClass: 'waiting',
       url: '01Macrogen_03지속가능경영_01윤리경영',
       category: 'macrogen',
       page: '01Macrogen_03지속가능경영_01윤리경영'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_04채용_01인재상',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_01인재상'
     },
     {
       stateClass: 'complete',
@@ -216,23 +252,43 @@ data.business ={
       page: '01연구서비스_07Spatial'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_01Standard',
       category: 'business',
       page: '02연구서비스_01Standard'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_02Identification',
       category: 'business',
       page: '02연구서비스_02Identification'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02연구서비스_03Fragment',
       category: 'business',
       page: '02연구서비스_03Fragment'
-    }
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_04Customized',
+      category: 'business',
+      page: '02연구서비스_04Customized'
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_05Humanid',
+      category: 'business',
+      page: '02연구서비스_05Humanid'
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_06GeneSythesis',
+      category: 'business',
+      page: '02연구서비스_06GeneSythesis'
+    },
+
+
   ]
 }
 data.RD = {

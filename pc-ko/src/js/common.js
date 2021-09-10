@@ -15,6 +15,7 @@ front.common = (function () {
     this.a();
     this.commonHandler();
     this.scrollHeader();
+
   };
 
   var a = function () {
@@ -53,7 +54,6 @@ front.common = (function () {
     }
   }
 
-
   var commonHandler = function () {
     // $(".header").sticky({topSpacing:0});
 
@@ -86,7 +86,7 @@ front.common = (function () {
     a : a,
     commonHandler : commonHandler,
     scrollHeader : scrollHeader,
-    init : init
+    init : init,
   }
 })();
 
