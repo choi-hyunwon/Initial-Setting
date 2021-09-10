@@ -163,40 +163,10 @@ data.macrogen = {
       page: '01Macrogen_03연혁'
     },
     {
-      stateClass: 'waiting',
-      url: '01Macrogen_03지속가능경영_01윤리경영',
+      stateClass: 'working',
+      url: '01Macrogen_04비전',
       category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_01윤리경영'
-    },
-    {
-      stateClass: 'waiting',
-      url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
-      category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
-    },
-    {
-      stateClass: 'waiting',
-      url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
-      category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
-    },
-    {
-      stateClass: 'waiting',
-      url: '01Macrogen_04채용_01인재상',
-      category: 'macrogen',
-      page: '01Macrogen_04채용_01인재상'
-    },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_04채용_03채용안내_01목록',
-      category: 'macrogen',
-      page: '01Macrogen_04채용_03채용안내_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_04채용_03채용안내_02조회',
-      category: 'macrogen',
-      page: '01Macrogen_04채용_03채용안내_02조회'
+      page: '01Macrogen_04비전'
     },
     {
       stateClass: 'complete',
@@ -209,6 +179,48 @@ data.macrogen = {
       url: '01Macrogen_06글로벌네트워크',
       category: 'macrogen',
       page: '01Macrogen_06글로벌네트워크'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03지속가능경영_01윤리경영',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_01윤리경영'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_04채용_01인재상',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_01인재상'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_04채용_02인사제도',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_02인사제도'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04채용_03채용안내_01목록',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_03채용안내_01목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04채용_03채용안내_02조회',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_03채용안내_02조회'
     },
   ]
 }
