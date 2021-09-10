@@ -36,7 +36,9 @@ front.common = (function () {
         } else {
           $('.header').show()
               .css({'position': 'relative'})
-              .removeClass('header-sm')
+              .removeClass('header-sm');
+          $('.header-main').show()
+              .css({'position': 'absolute'})
         }
       } else {
         // console.log('Down');

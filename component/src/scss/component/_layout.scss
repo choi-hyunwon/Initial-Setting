@@ -167,7 +167,7 @@
     }
   }*/
 
-  .header {
+  .header , .header-main{
     width: 100%;
     height: 124px;
     //position: fixed; //레이아웃 요소 변경으로 수정
@@ -279,7 +279,7 @@
       }
     }
 
-    &-bg-white {
+    &.header-bg-white {
       background-color: $gray-ffffff;
       &:before {
         border-bottom: 1px solid #e9e9e9;

@@ -118,26 +118,16 @@ data.guide = {
     }
   ]
 }
-data.main = {
-  title: 'Main',
-  list: [
-    {
-      stateClass: 'working',
-      url: 'Intro',
-      category: 'main',
-      page: 'Intro'
-    },
-    {
-      stateClass: 'working',
-      url: 'Main',
-      category: 'main',
-      page: 'Main'
-    }
-  ]
-}
+
 data.macrogen = {
   title: 'Macrogen',
   list: [
+    {
+      stateClass: 'working',
+      url: 'Main',
+      category: 'macrogen',
+      page: 'Main'
+    },
     {
       stateClass: 'waiting',
       url: '01Macrogen_01기업개요',
