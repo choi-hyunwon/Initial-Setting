@@ -124,7 +124,7 @@ data.guide = {
     }
   ]
 }
-data.main = {
+/*data.main = {
   title: 'Main',
   list: [
     {
@@ -140,7 +140,7 @@ data.main = {
       page: 'Main'
     }
   ]
-}
+}*/
 data.macrogen = {
   title: 'Macrogen',
   list: [
