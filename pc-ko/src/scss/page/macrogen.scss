@@ -2762,6 +2762,160 @@ $min-width: 1244px;
     }
   }
 
+  &.macrogen-human-resource {
+    .inner {
+      width: $min-width;
+      margin: 0 auto;
+    }
+
+    .section-management {
+      padding-top: 150px;
+      padding-bottom: 179px;
+
+      .font-h7 {
+        line-height: 38px;
+        margin-bottom: 60px;
+      }
+      .font-h3 {
+        line-height: 81px;
+        margin-bottom: 154px;
+      }
+      .step {
+        .row {
+          .col {
+            .item {
+              @include background-img ($width: 388px, $height: 580px, $category: 'macrogen', $img: 'thumb-human-resource-1.png');
+              padding: 50px;
+
+              .tit {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 52px;
+                letter-spacing: -1px;
+                margin-bottom: 15px;
+              }
+              .desc {
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: -0.75px;
+                color: $gray-454545;
+              }
+              &.item-1 {
+
+              }
+              &.item-2 {
+                margin-top: -50px;
+                background-image: url(../img/macrogen/thumb-human-resource-2.png);
+              }
+              &.item-3 {
+                margin-top: -100px;
+                background-image: url(../img/macrogen/thumb-human-resource-3.png);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-rank-system {
+      @include background-img ($width: 1821px, $height: 1100px, $category: 'macrogen', $img: 'bg-human-resource-2.png');
+      width: auto;
+      padding: 170px 50px 0;
+
+      .font-h7 {
+        line-height: 38px;
+        margin-bottom: 60px;
+        color: $gray-ffffff;
+      }
+
+      .font-h3 {
+        line-height: 81px;
+        margin-bottom: 120px;
+        color: $gray-ffffff;
+      }
+
+      .flow-bg {
+        @include background-img ($width: 1244px, $height: 333px, $category: 'macrogen', $img: 'human-resource-flow.png');
+      }
+    }
+
+    .section-welfare {
+      padding-top: 150px;
+
+      .inner {
+        position: relative;
+        height: 338px;
+      }
+
+      .font-h7 {
+        line-height: 38px;
+        margin-bottom: 60px;
+      }
+
+      .font-h3 {
+        line-height: 81px;
+        margin-bottom: 198px;
+      }
+
+      .click-area {
+        position: absolute;
+        width: 360px;
+        bottom: 0;
+        right: 0;
+
+        .font-body-h {
+          font-weight: normal;
+          margin-bottom: 60px;
+        }
+      }
+
+      .item {
+        @include background-img ($width: 1821px, $height: 580px, $category: 'macrogen', $img: 'banner-human-resource-1.png');
+        width: auto;
+        padding: 140px 50px 0;
+        margin-bottom: 80px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .font-h5 {
+          margin-bottom: 138px;
+          color: $gray-ffffff;
+        }
+
+        li {
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 230px;
+          height: 150px;
+          font-size: 22px;
+          line-height: 36px;
+          text-align: center;
+          letter-spacing: -0.75px;
+          color: $gray-000000;
+          @include background-img ($width: 230px, $height: 150px, $category: 'macrogen', $img: 'bg-human-resource-rect.svg');
+          margin-right: 22px;
+          border-radius: 5px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        &.item-2 {
+          background-image: url(../img/macrogen/banner-human-resource-2.png);
+        }
+
+        &.item-3 {
+          background-image: url(../img/macrogen/banner-human-resource-3.png);
+        }
+      }
+    }
+  }
+
   .modal-dialog {
     .modal-content {
       .modal-body {
