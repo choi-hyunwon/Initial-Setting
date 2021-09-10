@@ -151,7 +151,7 @@ data.macrogen = {
       page: '01Macrogen_01기업개요'
     },
     {
-      stateClass: 'working',
+      stateClass: 'waiting',
       url: '01Macrogen_02경영진',
       category: 'macrogen',
       page: '01Macrogen_02경영진'
