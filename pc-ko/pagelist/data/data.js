@@ -163,19 +163,37 @@ data.macrogen = {
       page: '01Macrogen_03연혁'
     },
     {
+      stateClass: 'working',
+      url: '01Macrogen_04비전',
+      category: 'macrogen',
+      page: '01Macrogen_04비전'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_05인증',
+      category: 'macrogen',
+      page: '01Macrogen_05인증'
+    },
+    {
       stateClass: 'waiting',
+      url: '01Macrogen_06글로벌네트워크',
+      category: 'macrogen',
+      page: '01Macrogen_06글로벌네트워크'
+    },
+    {
+      stateClass: 'complete',
       url: '01Macrogen_03지속가능경영_01윤리경영',
       category: 'macrogen',
       page: '01Macrogen_03지속가능경영_01윤리경영'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
       category: 'macrogen',
       page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
       category: 'macrogen',
       page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
@@ -203,18 +221,6 @@ data.macrogen = {
       url: '01Macrogen_04채용_03채용안내_02조회',
       category: 'macrogen',
       page: '01Macrogen_04채용_03채용안내_02조회'
-    },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_05인증',
-      category: 'macrogen',
-      page: '01Macrogen_05인증'
-    },
-    {
-      stateClass: 'waiting',
-      url: '01Macrogen_06글로벌네트워크',
-      category: 'macrogen',
-      page: '01Macrogen_06글로벌네트워크'
     },
   ]
 }
