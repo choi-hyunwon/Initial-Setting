@@ -151,10 +151,16 @@ data.macrogen = {
       page: '01Macrogen_01기업개요'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_02경영진',
       category: 'macrogen',
       page: '01Macrogen_02경영진'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03연혁',
+      category: 'macrogen',
+      page: '01Macrogen_03연혁'
     },
     {
       stateClass: 'waiting',
@@ -287,7 +293,42 @@ data.business ={
       category: 'business',
       page: '02연구서비스_06GeneSythesis'
     },
-
+    {
+      stateClass: 'working',
+      url: '03연구서비스_01Standard',
+      category: 'business',
+      page: '03연구서비스_01Standard'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_02Modified',
+      category: 'business',
+      page: '03연구서비스_02Modified'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_03Premade',
+      category: 'business',
+      page: '03연구서비스_03Premade'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_04Plate',
+      category: 'business',
+      page: '03연구서비스_04Plate'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_05Duplex',
+      category: 'business',
+      page: '03연구서비스_05Duplex'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_06RAPD',
+      category: 'business',
+      page: '03연구서비스_06RAPD'
+    },
 
   ]
 }
