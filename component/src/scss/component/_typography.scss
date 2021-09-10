@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.08.31
+ v.0.2 태윤 : .font-h8 font-weight: 700 추가 -- 2021.09.10
 |----------------------------------|
 */
 @import "variables";
@@ -65,6 +66,7 @@
 
 .font-h8 {
   font-size: 22px;
+  font-weight: 700;
   line-height: 36px;
   letter-spacing: -0.75px;
 }
