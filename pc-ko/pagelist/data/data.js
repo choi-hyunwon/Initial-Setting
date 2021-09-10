@@ -115,19 +115,29 @@ data.guide = {
       url: 'tooltip',
       category: 'guide',
       page: 'tooltip'
+    },
+    {
+      stateClass: 'complete',
+      url: 'modal',
+      category: 'guide',
+      page: 'modal'
     }
   ]
 }
-
-data.macrogen = {
-  title: 'Macrogen',
+/*data.main = {
+  title: 'Main',
   list: [
     {
       stateClass: 'working',
       url: 'Main',
-      category: 'macrogen',
+      category: 'main',
       page: 'Main'
-    },
+    }
+  ]
+}*/
+data.macrogen = {
+  title: 'Macrogen',
+  list: [
     {
       stateClass: 'waiting',
       url: '01Macrogen_01기업개요',
@@ -135,22 +145,22 @@ data.macrogen = {
       page: '01Macrogen_01기업개요'
     },
     {
-      stateClass: 'waiting',
-      url: '01Macrogen_03지속가능경영_01윤리경영',
+      stateClass: 'complete',
+      url: '01Macrogen_02경영진',
       category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_01윤리경영'
+      page: '01Macrogen_02경영진'
     },
     {
       stateClass: 'complete',
-      url: '01Macrogen_04채용_03채용안내_01목록',
+      url: '01Macrogen_03연혁',
       category: 'macrogen',
-      page: '01Macrogen_04채용_03채용안내_01목록'
+      page: '01Macrogen_03연혁'
     },
     {
-      stateClass: 'complete',
-      url: '01Macrogen_04채용_03채용안내_02조회',
+      stateClass: 'working',
+      url: '01Macrogen_04비전',
       category: 'macrogen',
-      page: '01Macrogen_04채용_03채용안내_02조회'
+      page: '01Macrogen_04비전'
     },
     {
       stateClass: 'complete',
@@ -163,6 +173,48 @@ data.macrogen = {
       url: '01Macrogen_06글로벌네트워크',
       category: 'macrogen',
       page: '01Macrogen_06글로벌네트워크'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03지속가능경영_01윤리경영',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_01윤리경영'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_04채용_01인재상',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_01인재상'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_04채용_02인사제도',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_02인사제도'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04채용_03채용안내_01목록',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_03채용안내_01목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04채용_03채용안내_02조회',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_03채용안내_02조회'
     },
   ]
 }
@@ -211,30 +263,79 @@ data.business ={
       category: 'business',
       page: '01연구서비스_07Spatial'
     },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_01Standard',
-    //   category: 'business',
-    //   page: '02연구서비스_01Standard'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_02Identification',
-    //   category: 'business',
-    //   page: '02연구서비스_02Identification'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_03Fragment',
-    //   category: 'business',
-    //   page: '02연구서비스_03Fragment'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '02연구서비스_04Customized',
-    //   category: 'business',
-    //   page: '02연구서비스_04Customized'
-    // }
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_01Standard',
+      category: 'business',
+      page: '02연구서비스_01Standard'
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_02Identification',
+      category: 'business',
+      page: '02연구서비스_02Identification'
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_03Fragment',
+      category: 'business',
+      page: '02연구서비스_03Fragment'
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_04Customized',
+      category: 'business',
+      page: '02연구서비스_04Customized'
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_05Humanid',
+      category: 'business',
+      page: '02연구서비스_05Humanid'
+    },
+    {
+      stateClass: 'complete',
+      url: '02연구서비스_06GeneSythesis',
+      category: 'business',
+      page: '02연구서비스_06GeneSythesis'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_01Standard',
+      category: 'business',
+      page: '03연구서비스_01Standard'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_02Modified',
+      category: 'business',
+      page: '03연구서비스_02Modified'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_03Premade',
+      category: 'business',
+      page: '03연구서비스_03Premade'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_04Plate',
+      category: 'business',
+      page: '03연구서비스_04Plate'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_05Duplex',
+      category: 'business',
+      page: '03연구서비스_05Duplex'
+    },
+    {
+      stateClass: 'working',
+      url: '03연구서비스_06RAPD',
+      category: 'business',
+      page: '03연구서비스_06RAPD'
+    },
+
   ]
 }
 data.RD = {

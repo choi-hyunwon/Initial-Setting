@@ -137,38 +137,43 @@ $min-width: 1244px;
       }
 
       .text-box {
-        display: flex;
-        justify-content: flex-end;
         width: $min-width;
         margin: 0 auto 108px;
+        padding-left: 215px;
 
-        .text {
+        .font-body-h {
           display: inline-block;
+          font-weight: 400;
           text-align: left;
-          width: 495px;
-          font-size: 18px;
-          line-height: 32px;
-          letter-spacing: -0.75px;
           color: #454545;
-
-          &:first-child {
-            margin-right: 40px;
-          }
         }
       }
 
       .img-box {
-        .bg {
-          @include background-img($width: 100%, $height: 602px, $category: '@temp/macrogen', $img: 'macrogen_thumb_lg_1.png');
-          background-size: 1370px 602px;
-          background-position: top right;
-          background-repeat: no-repeat;
-          padding-top: 139px;
+        width: 100%;
+        height: 602px;
+        margin-bottom: 152px;
+        overflow: hidden;
+
+        .inner {
+          position: absolute;
+          width: 100%;
+          height: 602px;
+
+          .img {
+            text-align: right;
+
+            img {
+              display: inline-block;
+              width: 1370px;
+              height: 602px;
+            }
+          }
 
           .list {
-            width: $min-width;
-            margin: 0 auto;
-            padding-left: 379px;
+            position: absolute;
+            right: 611px;
+            top: 139px;
 
             li {
               position: relative;
@@ -1217,7 +1222,7 @@ $min-width: 1244px;
       min-width: 124px;
     }
 
-    .section {
+    .section-description {
       padding: 150px 0;
 
       &:last-child {
@@ -1240,20 +1245,35 @@ $min-width: 1244px;
         margin-bottom: 28px;
       }
 
-      .text-md {
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 64px;
-        letter-spacing: -2px;
-        color: $gray-000000;
-        margin-bottom: 20px;
-      }
-
       .desc {
         font-size: 18px;
         line-height: 32px;
         letter-spacing: -0.75px;
         color: $gray-000000;
+      }
+    }
+
+    .section-bg {
+      padding: 150px 0;
+      position: relative;
+      @include background-img($width: 100%, $height: 1180px, $category: 'macrogen', $img: 'bg-sub-ethical-management.svg');
+      background-size: 1920px 1180px;
+      background-repeat: no-repeat;
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .text-lg {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-000000;
+        margin-bottom: 20px;
       }
 
       .content {
@@ -1288,6 +1308,31 @@ $min-width: 1244px;
         }
       }
 
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(100, 109, 118, 0.35) 0%, rgba(42, 76, 83, 0.7) 100%);
+      }
+    }
+
+    .section-tip {
+      padding: 150px 0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
       .row {
         margin-left: 0;
         padding-right: 0;
@@ -1297,6 +1342,22 @@ $min-width: 1244px;
           padding-left: 5px;
           padding-right: 5px;
         }
+      }
+
+      .text-md {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 64px;
+        letter-spacing: -2px;
+        color: $gray-000000;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        color: $gray-000000;
       }
 
       .subject-to-report {
@@ -1415,7 +1476,7 @@ $min-width: 1244px;
               letter-spacing: -0.75px;
               color: $gray-909090;
               padding-left: 27px;
-              margin-top: 20px;
+              margin-top: 21px;
 
               &::after {
                 content: '';
@@ -1429,7 +1490,7 @@ $min-width: 1244px;
             .link {
               font-weight: bold;
               font-size: 18px;
-              line-height: 26px;
+              line-height: 22px;
               letter-spacing: -0.75px;
               color: $point-primary;
               margin-top: 40px;
@@ -1499,27 +1560,6 @@ $min-width: 1244px;
           }
         }
       }
-
-      &.section-bg {
-        position: relative;
-        @include background-img($width: 100%, $height: 1180px, $category: 'macrogen', $img: 'bg-sub-ethical-management.svg');
-        background-size: 1920px 1180px;
-        background-repeat: no-repeat;
-
-        .text-lg {
-          margin-bottom: 20px;
-        }
-
-        &::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(180deg, rgba(100, 109, 118, 0.35) 0%, rgba(42, 76, 83, 0.7) 100%);
-        }
-      }
     }
 
     .section-banner {
@@ -1563,7 +1603,6 @@ $min-width: 1244px;
         .item {
           padding: 100px 0;
           border-bottom: 1px solid $line-e9e9e9;
-          margin-bottom: 100px;
 
           &::after {
             content: '';
@@ -1579,7 +1618,6 @@ $min-width: 1244px;
 
           &:first-child {
             padding-top: 0;
-            padding-bottom: 100px;
           }
 
           .list-header {
@@ -1711,6 +1749,7 @@ $min-width: 1244px;
                           color: $gray-454545;
                           padding-left: 15px;
                           margin-bottom: 2px;
+                          @include ellipsis($line: 2);
 
                           &:last-child {
                             margin-bottom: 0;
@@ -1730,11 +1769,1384 @@ $min-width: 1244px;
                         }
                       }
                     }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
-                    .btn-wrap {
+    .section-activity {
+      padding: 150px 0 30px;
+
+      .main-img {
+        text-align: right;
+        margin-bottom: 120px;
+
+        img {
+          width: 1582px;
+          height: 610px;
+        }
+      }
+
+      .box {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        > .title {
+          font-weight: bold;
+          font-size: 56px;
+          line-height: 81px;
+          letter-spacing: -3px;
+          color: $gray-000000;
+          margin-bottom: 20px;
+        }
+
+        > .desc {
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          color: $gray-454545;
+          margin-bottom: 80px;
+        }
+
+        .multi-stage {
+          //position: relative;
+          width: 100%;
+          //height: 990px;
+
+          .row {
+            margin-left: 0;
+            margin-right: 0;
+
+            .col {
+              padding: 0;
+
+              &:first-child {
+                margin-right: 84px;
+
+                .item {
+                  &.item-img {
+                    margin-top: 80px;
+                    margin-bottom: 0;
+                  }
+                }
+              }
+
+              .item {
+                .tit {
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 36px;
+                  letter-spacing: -0.75px;
+                  color: $gray-000000;
+                  margin-bottom: 20px;
+                }
+
+                .desc {
+                  font-size: 16px;
+                  line-height: 30px;
+                  letter-spacing: -0.75px;
+                  color: $gray-454545;
+                }
+
+                &.item-img {
+                  margin-bottom: 80px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.talent {
+    .section-description {
+      padding: 150px 0 120px;
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+      }
+
+      .underline {
+        display: inline-block;
+        width: 60px;
+        height: 5px;
+        background-color: $gray-000000;
+        margin-left: 12px;
+      }
+
+      .text-lg {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-000000;
+        margin-bottom: 28px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        color: $gray-000000;
+      }
+    }
+
+    .section-bg {
+      position: relative;
+      width: 100%;
+      height: 600px;
+
+      .inner {
+        position: absolute;
+        width: $min-width;
+        height: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+      }
+
+      .img {
+        width: 100%;
+        padding: 0 50px;
+        height: 600px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .txt-box {
+        position: absolute;
+        right: 82px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        li {
+          position: relative;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 52px;
+          letter-spacing: -1px;
+          color: $gray-ffffff;
+          margin-bottom: 22px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background-color: $gray-ffffff;
+            left: -48px;
+            top: 17px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .section-core-talent {
+      position: relative;
+      width: 100%;
+      height: calc(2268px - 150px);
+      padding-top: 180px;
+      padding-bottom: 2px;
+      overflow: hidden;
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+      }
+
+      .font-h6 {
+        margin-bottom: 30px;
+      }
+
+      .list {
+        .item {
+          width: 100%;
+          height: 540px;
+          overflow: hidden;
+          margin-bottom: 120px;
+
+          &:nth-child(2) {
+            .img {
+              margin-right: 100px;
+            }
+
+            .desc-area {
+              width: calc(100% - 540px - 100px);
+            }
+          }
+
+          .desc-area {
+            float: left;
+            display: flex;
+            width: calc(100% - 540px);
+            height: 100%;
+            justify-content: center;
+            flex-direction: column;
+
+            .font-h3 {
+              margin-bottom: 60px;
+            }
+
+            .font-body-h {
+              color: $point-primary;
+              margin-bottom: 20px;
+            }
+
+            .font-8 {
+              font-weight: normal;
+            }
+          }
+
+          .img {
+            float: left;
+            width: 540px;
+            height: 540px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      .DNA {
+        position: absolute;
+        background-size: contain;
+
+        &.DNA-1 {
+          @include background-img($width: 647px, $height: 674px, $category: 'macrogen', $img: 'img-DNA.svg');
+          top: -295px;
+          right: 292px;
+        }
+
+        &.DNA-2 {
+          @include background-img($width: 647px, $height: 584px, $category: 'macrogen', $img: 'img-DNA2.svg');
+          bottom: 150px;
+          right: 216px;
+        }
+      }
+    }
+  }
+
+  &.macrogen-management {
+    .tab-wrap {
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(90deg, $gray-ffffff 50%, $line-f3f3f3 50%);
+
+      .nav-tabs {
+        width: $min-width;
+        height: 100%;
+        margin: 0 auto;
+        border-bottom: 0;
+
+        .nav-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1 0 0;
+          height: 100%;
+          text-align: center;
+          padding: 0.5rem 1rem;
+          margin-bottom: -1px;
+          color: $gray-909090;
+          background-color: $line-f3f3f3;
+          border-color: rgba(233, 233, 233, .4);
+          border-right: 1px solid rgba(233, 233, 233, .4);
+          border-left: 0;
+          border-top: 0;
+          border-bottom: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          font-weight: bold;
+          font-size: 22px;
+          letter-spacing: -0.75px;
+
+          span {
+            position: relative;
+            display: inline-block;
+          }
+
+          &.active {
+            color: $gray-000000;
+            background-color: $gray-ffffff;
+
+            span {
+              &::after {
+                content: '';
+                position: absolute;
+                right: -16px;
+                top: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $point-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-chairman {
+      padding-top: 150px;
+      text-align: right;
+
+      .inner {
+        display: inline-block;
+        width: 1586px;
+        text-align: left;
+
+        .font-h3 {
+          margin-bottom: 100px;
+        }
+
+        .chairman-info {
+          overflow: hidden;
+          margin-bottom: 180px;
+
+          .info {
+            float: left;
+            width: 582px;
+            margin-right: 60px;
+
+            .font-h7 {
+              margin-bottom: 60px;
+              line-height: 40px;
+            }
+
+            .font-body {
+              font-weight: normal;
+              color: $gray-454545;
+              margin-bottom: 130px;
+            }
+
+            .sign {
+              text-align: right;
+              height: 46px;
+
+              .font-body-h {
+                font-weight: normal;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-right: 10px;
+              }
+
+              .font-h6 {
+                display: inline-block;
+                vertical-align: bottom;
+              }
+            }
+          }
+
+          .img {
+            float: left;
+            width: 940px;
+            height: 850px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .section-ceo {
+      padding-top: 150px;
+      padding-bottom: 180px;
+
+      .img {
+        width: 1585px;
+        height: 640px;
+        margin-bottom: 100px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+
+        .font-h3 {
+          margin-bottom: 80px;
+        }
+
+        .info {
+          .item {
+            margin-bottom: 80px;
+            overflow: hidden;
+          }
+
+          .font-h7 {
+            float: left;
+            width: 495px;
+            margin-right: 40px;
+          }
+
+          .font-body {
+            float: left;
+            width: 709px;
+            font-weight: normal;
+            color: $gray-454545;
+            letter-spacing: -0.85px;
+          }
+        }
+
+        .sign {
+          text-align: right;
+          height: 46px;
+
+          .font-body-h {
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 10px;
+          }
+
+          .font-h6 {
+            display: inline-block;
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+
+    .section-chairman-career {
+      padding-top: 130px;
+      @include background-img($width: 1920px, $height: 1009px, $category: 'macrogen', $img: 'bg-chairman-career.svg');
+      width: auto;
+      background-position: center;
+      margin: 0 auto;
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+
+        .item {
+          overflow: hidden;
+          margin-bottom: 60px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .title {
+            float: left;
+            position: relative;
+            width: 214px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: -1px;
+            color: $gray-ffffff;
+
+            span {
+              position: relative;
+              display: inline-block;
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                right: -58px;
+                bottom: 12px;
+                background: $bg-ffffff;
+              }
+            }
+          }
+
+          .list {
+            float: left;
+            width: calc(100% - 214px);
+            padding-top: 37px;
+
+            .row {
+              padding: 0;
+              margin: 0;
+
+              .col {
+                padding: 0;
+                margin: 0;
+              }
+            }
+
+            li {
+              overflow: hidden;
+              width: 495px;
+              margin-bottom: 14px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              span {
+                float: left;
+                white-space: nowrap;
+                display: inline-block;
+
+                em {
+                  font-style: normal;
+                  letter-spacing: -0.75px;
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+
+                &:first-child {
+                  position: relative;
+                  width: 160px;
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 30px;
+                  letter-spacing: 0.5px;
+                  color: $gray-ffffff;
+                  padding-left: 20px;
+
+                  &::before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $bg-ffffff;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+
+                &:nth-child(2) {
+                  width: 335px;
+                  font-size: 16px;
+                  line-height: 30px;
+                  letter-spacing: -0.75px;
+                  color: $gray-ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-ceo-career {
+      padding-top: 130px;
+      @include background-img($width: 1920px, $height: 800px, $category: 'macrogen', $img: 'bg-ceo-career.svg');
+      width: auto;
+      background-position: center;
+      margin: 0 auto;
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+
+        .item {
+          overflow: hidden;
+          margin-bottom: 60px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .title {
+            float: left;
+            position: relative;
+            width: 312px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: -1px;
+            color: $gray-ffffff;
+
+            span {
+              position: relative;
+              display: inline-block;
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                right: -58px;
+                bottom: 12px;
+                background: $bg-ffffff;
+              }
+            }
+          }
+
+          .list {
+            float: left;
+            width: calc(100% - 312px);
+            padding-top: 37px;
+
+            .row {
+              padding: 0;
+              margin: 0;
+
+              .col {
+                padding: 0;
+                margin: 0;
+              }
+            }
+
+            li {
+              overflow: hidden;
+              width: 495px;
+              margin-bottom: 14px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              span {
+                float: left;
+                white-space: nowrap;
+                display: inline-block;
+
+                em {
+                  font-style: normal;
+                  letter-spacing: -0.75px;
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+
+                &:first-child {
+                  position: relative;
+                  width: 160px;
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 30px;
+                  letter-spacing: 0.5px;
+                  color: $gray-ffffff;
+                  padding-left: 20px;
+
+                  &::before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $bg-ffffff;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+
+                &:nth-child(2) {
+                  width: 335px;
+                  font-size: 16px;
+                  line-height: 30px;
+                  letter-spacing: -0.75px;
+                  color: $gray-ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.macrogen-history {
+    .slide-tab-wrap {
+      width: $min-width;
+      margin: 140px auto 0;
+    }
+
+    .section {
+      padding: 140px 0;
+
+      .inner {
+        width: $min-width;
+        margin: 0 auto;
+
+        .year {
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 39px;
+          letter-spacing: 0.5px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          position: relative;
+          display: inline-block;
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 93px;
+          letter-spacing: -3px;
+          color: $point-primary;
+          margin-bottom: 68px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 5px;
+            background-color: $point-primary;
+            right: -70px;
+            bottom: 20px;
+          }
+        }
+      }
+
+      .history-slider {
+        position: relative;
+        width: 100%;
+        height: 740px;
+
+        .inner {
+          position: absolute;
+          width: $min-width;
+          height: 740px;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1;
+
+          .year {
+            position: absolute;
+            font-weight: bold;
+            font-size: 150px;
+            line-height: 183px;
+            letter-spacing: -2px;
+            color: $gray-ffffff;
+            bottom: 102px;
+            left: 0;
+            margin-bottom: 0;
+          }
+
+          .desc {
+            position: absolute;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: -0.75px;
+            color: $gray-ffffff;
+            bottom: 80px;
+            left: 0;
+          }
+        }
+
+        .swiper-container {
+          text-align: center;
+
+          &::after {
+            content: '';
+            position: absolute;
+            @include background-img($width: 1260px, $height: 600px, $category: 'macrogen', $img: 'bg-history-circle.svg');
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+          }
+        }
+
+        .pagination-wrap {
+          position: absolute;
+          width: 100%;
+          height: 45px;
+          bottom: 80px;
+          right: 0;
+
+          .navigation {
+            position: static;
+            top: auto;
+            left: auto;
+            text-align: right;
+
+            .page-item {
+              position: static;
+
+              &.prev {
+                margin-right: 8px;
+
+                .page-link {
+                  background-image: url(../img/macrogen/btn-nav-prev.svg);
+                }
+              }
+
+              &.next {
+                .page-link {
+                  background-image: url(../img/macrogen/btn-nav-next.svg);
+                }
+              }
+            }
+          }
+        }
+
+        .swiper-pagination {
+          bottom: auto;
+          top: 55px;
+          right: 0;
+          text-align: right;
+
+          .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 1;
+            margin: 0 7.5px;
+
+            &.swiper-pagination-bullet-active {
+              background-color: $bg-ffffff;
+            }
+          }
+        }
+      }
+
+      .history-list {
+        padding-top: 57px + 66px;
+        overflow: hidden;
+
+        .year-info {
+          float: left;
+          width: 428px;
+
+          li {
+            position: relative;
+            padding-left: 107px;
+            margin-bottom: 40px;
+
+            span {
+              position: relative;
+              display: block;
+              font-weight: bold;
+              font-size: 23px;
+              line-height: 39px;
+              letter-spacing: 0.5px;
+              color: $disabled-d9d9d9;
+
+              &::before {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: $gray-000000;
+                left: -99px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+              }
+
+              &::after {
+                content: '';
+                position: absolute;
+                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
+                left: -97px;
+                bottom: -49px;
+              }
+            }
+
+            &:first-child {
+              &::before {
+                content: '';
+                position: absolute;
+                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
+                left: 10px;
+                top: -41px;
+              }
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: $gray-909090;
+                border-radius: 50%;
+                left: 8px;
+                top: -62px;
+              }
+
+              span {
+                font-size: 58px;
+                line-height: 71px;
+                color: $gray-000000;
+
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: -107px;
+                  background-color: transparent;
+                  @include background-img($width: 23px, $height: 23px, $category: 'macrogen', $img: 'bg-history-dot.svg');
+                }
+
+                &::after {
+                  bottom: -41px;
+                }
+              }
+            }
+
+            &:last-child {
+              span {
+                &::after {
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+
+        .desc-info {
+          float: left;
+          width: calc(100% - 428px);
+
+          ul {
+            margin-bottom: 100px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            li {
+              margin-bottom: 22px;
+              overflow: hidden;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              .num {
+                float: left;
+                display: inline-block;
+                width: 67px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                color: $gray-000000;
+              }
+
+              .desc {
+                float: left;
+                display: inline-block;
+                width: calc(100% - 67px);
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.75px;
+                color: $gray-454545;
+
+
+                &.desc-lg {
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &.macrogen-human-resource {
+    .inner {
+      width: $min-width;
+      margin: 0 auto;
+    }
+
+    .section-management {
+      padding-top: 150px;
+      padding-bottom: 179px;
+
+      .font-h7 {
+        line-height: 38px;
+        margin-bottom: 60px;
+      }
+      .font-h3 {
+        line-height: 81px;
+        margin-bottom: 154px;
+      }
+      .step {
+        .row {
+          .col {
+            .item {
+              @include background-img ($width: 388px, $height: 580px, $category: 'macrogen', $img: 'thumb-human-resource-1.png');
+              padding: 50px;
+
+              .tit {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 52px;
+                letter-spacing: -1px;
+                margin-bottom: 15px;
+              }
+              .desc {
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: -0.75px;
+                color: $gray-454545;
+              }
+              &.item-1 {
+
+              }
+              &.item-2 {
+                margin-top: -50px;
+                background-image: url(../img/macrogen/thumb-human-resource-2.png);
+              }
+              &.item-3 {
+                margin-top: -100px;
+                background-image: url(../img/macrogen/thumb-human-resource-3.png);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-rank-system {
+      @include background-img ($width: 1821px, $height: 1100px, $category: 'macrogen', $img: 'bg-human-resource-2.png');
+      width: auto;
+      padding: 170px 50px 0;
+
+      .font-h7 {
+        line-height: 38px;
+        margin-bottom: 60px;
+        color: $gray-ffffff;
+      }
+
+      .font-h3 {
+        line-height: 81px;
+        margin-bottom: 120px;
+        color: $gray-ffffff;
+      }
+
+      .flow-bg {
+        @include background-img ($width: 1244px, $height: 333px, $category: 'macrogen', $img: 'human-resource-flow.png');
+      }
+    }
+
+    .section-welfare {
+      padding-top: 150px;
+
+      .inner {
+        position: relative;
+        height: 338px;
+      }
+
+      .font-h7 {
+        line-height: 38px;
+        margin-bottom: 60px;
+      }
+
+      .font-h3 {
+        line-height: 81px;
+        margin-bottom: 198px;
+      }
+
+      .click-area {
+        position: absolute;
+        width: 360px;
+        bottom: 0;
+        right: 0;
+
+        .font-body-h {
+          font-weight: normal;
+          margin-bottom: 60px;
+        }
+      }
+
+      .item {
+        @include background-img ($width: 1821px, $height: 580px, $category: 'macrogen', $img: 'banner-human-resource-1.png');
+        width: auto;
+        padding: 140px 50px 0;
+        margin-bottom: 80px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .font-h5 {
+          margin-bottom: 138px;
+          color: $gray-ffffff;
+        }
+
+        li {
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 230px;
+          height: 150px;
+          font-size: 22px;
+          line-height: 36px;
+          text-align: center;
+          letter-spacing: -0.75px;
+          color: $gray-000000;
+          @include background-img ($width: 230px, $height: 150px, $category: 'macrogen', $img: 'bg-human-resource-rect.svg');
+          margin-right: 22px;
+          border-radius: 5px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        &.item-2 {
+          background-image: url(../img/macrogen/banner-human-resource-2.png);
+        }
+
+        &.item-3 {
+          background-image: url(../img/macrogen/banner-human-resource-3.png);
+        }
+      }
+    }
+  }
+
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        .list-of-winners {
+          > .title {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: -1px;
+            color: $gray-000000;
+            margin-bottom: 45px;
+          }
+
+          ul {
+            padding: 20px;
+
+            li {
+              float: left;
+              width: 180px;
+              margin-bottom: 58px;
+              margin-right: 40px;
+
+              &:nth-child(4n) {
+                margin-right: 0;
+              }
+
+              &:nth-child(5),
+              &:nth-child(6),
+              &:nth-child(7),
+              &:nth-child(8) {
+                margin-bottom: 0;
+              }
+
+              .img {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 20px;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              .name {
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: -0.75px;
+                margin-bottom: 2px;
+              }
+
+              .desc {
+                font-size: 18px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: -0.75px;
+                color: $gray-666666;
+              }
+            }
+          }
+        }
+
+        .list-of-winners-detail {
+          .list-header {
+            padding: 50px 0 62px;
+            overflow: hidden;
+            border-bottom: 1px solid $line-e9e9e9;
+            margin-bottom: 60px;
+
+            .img {
+              float: left;
+              width: 220px;
+              height: 282px;
+              margin-right: 50px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .info {
+              float: left;
+              width: calc(100% - 220px - 50px);
+
+              .sub {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: -0.75px;
+                color: $point-primary;
+                margin-bottom: 20px;
+              }
+
+              .name {
+                font-weight: bold;
+                font-size: 44px;
+                line-height: 64px;
+                letter-spacing: -2px;
+                color: $gray-000000;
+                margin-bottom: 4px;
+              }
+
+              .job {
+                position: relative;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.75px;
+                color: $gray-707070;
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  @include background-img($width: 610px, $height: 1px, $category: 'macrogen', $img: 'bg-line.svg');
+                  background-repeat: repeat-x;
+                  background-size: 418px 2px;
+                }
+              }
+
+              .career {
+                .tit {
+                  font-size: 16px;
+                  line-height: 24px;
+                  letter-spacing: -0.75px;
+                  margin-bottom: 10px;
+                }
+
+                ul {
+                  li {
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: -0.75px;
+                    color: $gray-454545;
+                    padding-left: 15px;
+                    margin-bottom: 2px;
+                    @include ellipsis($line: 2);
+
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      left: 0;
+                      top: 11px;
+                      width: 5px;
+                      height: 5px;
+                      border-radius: 50%;
+                      background-color: $gray-454545;
+                      vertical-align: middle;
                     }
                   }
                 }
+              }
+            }
+          }
+
+          .list-body {
+            .title {
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 26px;
+              letter-spacing: -0.75px;
+              margin-bottom: 30px;
+            }
+
+            .desc {
+              font-size: 16px;
+              line-height: 30px;
+              letter-spacing: -0.75px;
+              color: $gray-454545;
+            }
+          }
+        }
+      }
+
+      .modal-footer {
+        display: block;
+        padding: 15px 45px;
+
+        .board {
+          margin: 0;
+
+          .navigation {
+            padding: 0 15px;
+
+            .content {
+              .item {
+                padding: 0;
+
+                &::before {
+                  width: 12px;
+                  height: 25px;
+                  background-size: 12px 25px;
+                  background-repeat: no-repeat;
+                }
+
+                &.prev {
+                  padding-left: 36px;
+
+                  .title {
+                    text-align: left;
+                  }
+                }
+
+                &.next {
+                  padding-right: 36px;
+
+                  .title {
+                    text-align: right;
+                  }
+                }
+              }
+
+              .title {
+                display: block;
+                width: 354px;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.75px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
               }
             }
           }

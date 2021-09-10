@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <div class="full-bg macrogen" style="background-image: url(../../img/@temp/macrogen/macrogen_bg_1.png);">
+        @@include('../../html/include/component/header.html')
+        <div class="frame">
+            <div class="hero-title">비전</div>
+            <div class="slogan ko">글로벌 정밀의학<br/>선도기업입니다</div>
+            <div class= "slogan-sub">질병을 예측하고 진단하며, 맞춤 치료의 방안을 제시합니다</div>
+            @@include('../../html/include/common/breadcrumb-white-depth3.html',  {
+                "depth1": "MACROGEN",
+                "depth2": "회사소개",
+                "depth3": "비전",
+            })
+            @@include('_scrollWrap.html')
+        </div>
+    </div>
+    <div class="container container-fluid"></div>
+    @@include('../../html/include/component/footer.html')
+</div>
+<script>
+    $('#tab a').on('click', function (event) {
+        event.preventDefault()
+        $(this).tab('show')
+    })
+</script>
+</body>
+</html>
