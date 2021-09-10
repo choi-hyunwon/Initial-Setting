@@ -1923,6 +1923,7 @@ $min-width: 1244px;
           height: 100%;
         }
       }
+
       .txt-box {
         position: absolute;
         right: 82px;
@@ -1984,6 +1985,7 @@ $min-width: 1244px;
             .img {
               margin-right: 100px;
             }
+
             .desc-area {
               width: calc(100% - 540px - 100px);
             }
@@ -2017,8 +2019,8 @@ $min-width: 1244px;
             height: 540px;
 
             img {
-               width: 100%;
-               height: 100%;
+              width: 100%;
+              height: 100%;
             }
           }
         }
@@ -2029,13 +2031,13 @@ $min-width: 1244px;
         background-size: contain;
 
         &.DNA-1 {
-          @include background-img ($width: 647px, $height: 674px, $category: 'macrogen', $img: 'img-DNA.svg');
+          @include background-img($width: 647px, $height: 674px, $category: 'macrogen', $img: 'img-DNA.svg');
           top: -295px;
           right: 292px;
         }
 
         &.DNA-2 {
-          @include background-img ($width: 647px, $height: 584px, $category: 'macrogen', $img: 'img-DNA2.svg');
+          @include background-img($width: 647px, $height: 584px, $category: 'macrogen', $img: 'img-DNA2.svg');
           bottom: 150px;
           right: 216px;
         }
@@ -2044,7 +2046,422 @@ $min-width: 1244px;
   }
 
   &.macrogen-management {
+    .tab-wrap {
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(90deg, $gray-ffffff 50%, $line-f3f3f3 50%);
 
+      .nav-tabs {
+        width: $min-width;
+        height: 100%;
+        margin: 0 auto;
+        border-bottom: 0;
+
+        .nav-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1 0 0;
+          height: 100%;
+          text-align: center;
+          padding: 0.5rem 1rem;
+          margin-bottom: -1px;
+          color: $gray-909090;
+          background-color: $line-f3f3f3;
+          border-color: rgba(233, 233, 233, .4);
+          border-right: 1px solid rgba(233, 233, 233, .4);
+          border-left: 0;
+          border-top: 0;
+          border-bottom: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          font-weight: bold;
+          font-size: 22px;
+          letter-spacing: -0.75px;
+
+          span {
+            position: relative;
+            display: inline-block;
+          }
+
+          &.active {
+            color: $gray-000000;
+            background-color: $gray-ffffff;
+
+            span {
+              &::after {
+                content: '';
+                position: absolute;
+                right: -16px;
+                top: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $point-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-chairman {
+      padding-top: 150px;
+      text-align: right;
+
+      .inner {
+        display: inline-block;
+        width: 1586px;
+        text-align: left;
+
+        .font-h3 {
+          margin-bottom: 100px;
+        }
+
+        .chairman-info {
+          overflow: hidden;
+          margin-bottom: 180px;
+
+          .info {
+            float: left;
+            width: 582px;
+            margin-right: 60px;
+
+            .font-h7 {
+              margin-bottom: 60px;
+              line-height: 40px;
+            }
+
+            .font-body {
+              font-weight: normal;
+              color: $gray-454545;
+              margin-bottom: 130px;
+            }
+
+            .sign {
+              text-align: right;
+              height: 46px;
+
+              .font-body-h {
+                font-weight: normal;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-right: 10px;
+              }
+              .font-h6 {
+                display: inline-block;
+                vertical-align: bottom;
+              }
+            }
+          }
+          .img {
+            float: left;
+            width: 940px;
+            height: 850px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .section-ceo {
+      padding-top: 150px;
+      padding-bottom: 180px;
+
+      .img {
+        width: 1585px;
+        height: 640px;
+        margin-bottom: 100px;
+
+        img {
+           width: 100%;
+           height: 100%;
+        }
+      }
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+
+        .font-h3 {
+          margin-bottom: 80px;
+        }
+
+        .info {
+          .item {
+            margin-bottom: 80px;
+            overflow: hidden;
+          }
+
+          .font-h7 {
+            float: left;
+            width: 495px;
+            margin-right: 40px;
+          }
+          .font-body {
+            float: left;
+            width: 709px;
+            font-weight: normal;
+            color: $gray-454545;
+            letter-spacing: -0.85px;
+          }
+        }
+
+        .sign {
+          text-align: right;
+          height: 46px;
+
+          .font-body-h {
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 10px;
+          }
+          .font-h6 {
+            display: inline-block;
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+
+    .section-chairman-career {
+      padding-top: 130px;
+      @include background-img ($width: 1920px, $height: 1009px, $category: 'macrogen', $img: 'bg-chairman-career.svg');
+      background-position: center;
+      margin: 0 auto;
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+
+        .item {
+          overflow: hidden;
+          margin-bottom: 60px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .title {
+            float: left;
+            position: relative;
+            width: 214px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: -1px;
+            color: $gray-ffffff;
+
+            span {
+              position: relative;
+              display: inline-block;
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                right: -58px;
+                bottom: 12px;
+                background: $bg-ffffff;
+              }
+            }
+          }
+
+          .list {
+            float: left;
+            width: calc(100% - 214px);
+            padding-top: 37px;
+
+            .row {
+              padding: 0;
+              margin: 0;
+
+              .col {
+                padding: 0;
+                margin: 0;
+              }
+            }
+
+            li {
+              overflow: hidden;
+              width: 495px;
+              margin-bottom: 14px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              span {
+                float: left;
+                white-space: nowrap;
+                display: inline-block;
+
+                em {
+                  font-style: normal;
+                  letter-spacing: -0.75px;
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+
+                &:first-child {
+                  position: relative;
+                  width: 160px;
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 30px;
+                  letter-spacing: 0.5px;
+                  color: $gray-ffffff;
+                  padding-left: 20px;
+
+                  &::before {
+                    content:  '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $bg-ffffff;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+
+                &:nth-child(2) {
+                  width: 335px;
+                  font-size: 16px;
+                  line-height: 30px;
+                  letter-spacing: -0.75px;
+                  color: $gray-ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-ceo-career {
+      padding-top: 130px;
+      @include background-img ($width: 1920px, $height: 800px, $category: 'macrogen', $img: 'bg-ceo-career.svg');
+      background-position: center;
+      margin: 0 auto;
+
+      .inner {
+        width: 1244px;
+        margin: 0 auto;
+
+        .item {
+          overflow: hidden;
+          margin-bottom: 60px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .title {
+            float: left;
+            position: relative;
+            width: 312px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: -1px;
+            color: $gray-ffffff;
+
+            span {
+              position: relative;
+              display: inline-block;
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                right: -58px;
+                bottom: 12px;
+                background: $bg-ffffff;
+              }
+            }
+          }
+
+          .list {
+            float: left;
+            width: calc(100% - 312px);
+            padding-top: 37px;
+
+            .row {
+              padding: 0;
+              margin: 0;
+
+              .col {
+                padding: 0;
+                margin: 0;
+              }
+            }
+
+            li {
+              overflow: hidden;
+              width: 495px;
+              margin-bottom: 14px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              span {
+                float: left;
+                white-space: nowrap;
+                display: inline-block;
+
+                em {
+                  font-style: normal;
+                  letter-spacing: -0.75px;
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+
+                &:first-child {
+                  position: relative;
+                  width: 160px;
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 30px;
+                  letter-spacing: 0.5px;
+                  color: $gray-ffffff;
+                  padding-left: 20px;
+
+                  &::before {
+                    content:  '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $bg-ffffff;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+
+                &:nth-child(2) {
+                  width: 335px;
+                  font-size: 16px;
+                  line-height: 30px;
+                  letter-spacing: -0.75px;
+                  color: $gray-ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .modal-dialog {
@@ -2059,6 +2476,7 @@ $min-width: 1244px;
             color: $gray-000000;
             margin-bottom: 45px;
           }
+
           ul {
             padding: 20px;
 
@@ -2219,6 +2637,7 @@ $min-width: 1244px;
               letter-spacing: -0.75px;
               margin-bottom: 30px;
             }
+
             .desc {
               font-size: 16px;
               line-height: 30px;
@@ -2228,6 +2647,7 @@ $min-width: 1244px;
           }
         }
       }
+
       .modal-footer {
         display: block;
         padding: 15px 45px;
@@ -2237,6 +2657,7 @@ $min-width: 1244px;
 
           .navigation {
             padding: 0 15px;
+
             .content {
               .item {
                 padding: 0;
@@ -2255,6 +2676,7 @@ $min-width: 1244px;
                     text-align: left;
                   }
                 }
+
                 &.next {
                   padding-right: 36px;
 
@@ -2263,6 +2685,7 @@ $min-width: 1244px;
                   }
                 }
               }
+
               .title {
                 display: block;
                 width: 354px;
