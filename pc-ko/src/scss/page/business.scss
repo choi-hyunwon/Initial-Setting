@@ -166,11 +166,15 @@
 
     /*리스트 관련*/
     .list-area-group{
+      &.figure_bottom{
+        margin-bottom: 25px;
+      }
       .list-area{
         margin-bottom: 60px;
         &:last-of-type{
           margin-bottom: 0;
         }
+
       }
     }
     .list-area{
@@ -295,7 +299,10 @@
     }
     .table{
       margin-bottom: 0;
-      + .sub-title.font-h5{
+      + .sub-title{
+        padding-top: 60px;
+      }
+      + .list-area-group{
         padding-top: 60px;
       }
     }
