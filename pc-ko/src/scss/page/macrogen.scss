@@ -2148,12 +2148,14 @@ $min-width: 1244px;
                 vertical-align: bottom;
                 margin-right: 10px;
               }
+
               .font-h6 {
                 display: inline-block;
                 vertical-align: bottom;
               }
             }
           }
+
           .img {
             float: left;
             width: 940px;
@@ -2178,8 +2180,8 @@ $min-width: 1244px;
         margin-bottom: 100px;
 
         img {
-           width: 100%;
-           height: 100%;
+          width: 100%;
+          height: 100%;
         }
       }
 
@@ -2202,6 +2204,7 @@ $min-width: 1244px;
             width: 495px;
             margin-right: 40px;
           }
+
           .font-body {
             float: left;
             width: 709px;
@@ -2221,6 +2224,7 @@ $min-width: 1244px;
             vertical-align: bottom;
             margin-right: 10px;
           }
+
           .font-h6 {
             display: inline-block;
             vertical-align: bottom;
@@ -2231,7 +2235,8 @@ $min-width: 1244px;
 
     .section-chairman-career {
       padding-top: 130px;
-      @include background-img ($width: 1920px, $height: 1009px, $category: 'macrogen', $img: 'bg-chairman-career.svg');
+      @include background-img($width: 1920px, $height: 1009px, $category: 'macrogen', $img: 'bg-chairman-career.svg');
+      width: auto;
       background-position: center;
       margin: 0 auto;
 
@@ -2320,7 +2325,7 @@ $min-width: 1244px;
                   padding-left: 20px;
 
                   &::before {
-                    content:  '';
+                    content: '';
                     position: absolute;
                     width: 5px;
                     height: 5px;
@@ -2348,7 +2353,8 @@ $min-width: 1244px;
 
     .section-ceo-career {
       padding-top: 130px;
-      @include background-img ($width: 1920px, $height: 800px, $category: 'macrogen', $img: 'bg-ceo-career.svg');
+      @include background-img($width: 1920px, $height: 800px, $category: 'macrogen', $img: 'bg-ceo-career.svg');
+      width: auto;
       background-position: center;
       margin: 0 auto;
 
@@ -2437,7 +2443,7 @@ $min-width: 1244px;
                   padding-left: 20px;
 
                   &::before {
-                    content:  '';
+                    content: '';
                     position: absolute;
                     width: 5px;
                     height: 5px;
@@ -2460,6 +2466,298 @@ $min-width: 1244px;
             }
           }
         }
+      }
+    }
+  }
+
+  &.macrogen-history {
+    .slide-tab-wrap {
+      width: $min-width;
+      margin: 140px auto 0;
+    }
+
+    .section {
+      padding: 140px 0;
+
+      .inner {
+        width: $min-width;
+        margin: 0 auto;
+
+        .year {
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 39px;
+          letter-spacing: 0.5px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          position: relative;
+          display: inline-block;
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 93px;
+          letter-spacing: -3px;
+          color: $point-primary;
+          margin-bottom: 68px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 5px;
+            background-color: $point-primary;
+            right: -70px;
+            bottom: 20px;
+          }
+        }
+      }
+
+      .history-slider {
+        position: relative;
+        width: 100%;
+        height: 740px;
+
+        .inner {
+          position: absolute;
+          width: $min-width;
+          height: 740px;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1;
+
+          .year {
+            position: absolute;
+            font-weight: bold;
+            font-size: 150px;
+            line-height: 183px;
+            letter-spacing: -2px;
+            color: $gray-ffffff;
+            bottom: 102px;
+            left: 0;
+            margin-bottom: 0;
+          }
+
+          .desc {
+            position: absolute;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: -0.75px;
+            color: $gray-ffffff;
+            bottom: 80px;
+            left: 0;
+          }
+        }
+
+        .swiper-container {
+          text-align: center;
+
+          &::after {
+            content: '';
+            position: absolute;
+            @include background-img($width: 1260px, $height: 600px, $category: 'macrogen', $img: 'bg-history-circle.svg');
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+          }
+        }
+
+        .pagination-wrap {
+          position: absolute;
+          width: 100%;
+          height: 45px;
+          bottom: 80px;
+          right: 0;
+
+          .navigation {
+            position: static;
+            top: auto;
+            left: auto;
+            text-align: right;
+
+            .page-item {
+              position: static;
+
+              &.prev {
+                margin-right: 8px;
+
+                .page-link {
+                  background-image: url(../img/macrogen/btn-nav-prev.svg);
+                }
+              }
+
+              &.next {
+                .page-link {
+                  background-image: url(../img/macrogen/btn-nav-next.svg);
+                }
+              }
+            }
+          }
+        }
+
+        .swiper-pagination {
+          bottom: auto;
+          top: 55px;
+          right: 0;
+          text-align: right;
+
+          .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 1;
+            margin: 0 7.5px;
+
+            &.swiper-pagination-bullet-active {
+              background-color: $bg-ffffff;
+            }
+          }
+        }
+      }
+
+      .history-list {
+        padding-top: 57px + 66px;
+        overflow: hidden;
+
+        .year-info {
+          float: left;
+          width: 428px;
+
+          li {
+            position: relative;
+            padding-left: 107px;
+            margin-bottom: 40px;
+
+            span {
+              position: relative;
+              display: block;
+              font-weight: bold;
+              font-size: 23px;
+              line-height: 39px;
+              letter-spacing: 0.5px;
+              color: $disabled-d9d9d9;
+
+              &::before {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: $gray-000000;
+                left: -99px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+              }
+
+              &::after {
+                content: '';
+                position: absolute;
+                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
+                left: -97px;
+                bottom: -49px;
+              }
+            }
+
+            &:first-child {
+              &::before {
+                content: '';
+                position: absolute;
+                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
+                left: 10px;
+                top: -41px;
+              }
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: $gray-909090;
+                border-radius: 50%;
+                left: 8px;
+                top: -62px;
+              }
+
+              span {
+                font-size: 58px;
+                line-height: 71px;
+                color: $gray-000000;
+
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: -107px;
+                  background-color: transparent;
+                  @include background-img($width: 23px, $height: 23px, $category: 'macrogen', $img: 'bg-history-dot.svg');
+                }
+
+                &::after {
+                  bottom: -41px;
+                }
+              }
+            }
+
+            &:last-child {
+              span {
+                &::after {
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+
+        .desc-info {
+          float: left;
+          width: calc(100% - 428px);
+
+          ul {
+            margin-bottom: 100px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            li {
+              margin-bottom: 22px;
+              overflow: hidden;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              .num {
+                float: left;
+                display: inline-block;
+                width: 67px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                color: $gray-000000;
+              }
+
+              .desc {
+                float: left;
+                display: inline-block;
+                width: calc(100% - 67px);
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.75px;
+                color: $gray-454545;
+
+
+                &.desc-lg {
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
       }
     }
   }

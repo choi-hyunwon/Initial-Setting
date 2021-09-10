@@ -151,10 +151,16 @@ data.macrogen = {
       page: '01Macrogen_01기업개요'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_02경영진',
       category: 'macrogen',
       page: '01Macrogen_02경영진'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_03연혁',
+      category: 'macrogen',
+      page: '01Macrogen_03연혁'
     },
     {
       stateClass: 'waiting',
