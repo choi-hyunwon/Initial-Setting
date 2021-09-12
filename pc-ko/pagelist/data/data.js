@@ -140,6 +140,12 @@ data.macrogen = {
   list: [
     {
       stateClass: 'waiting',
+      url: 'Main',
+      category: 'macrogen',
+      page: 'Main'
+    },
+    {
+      stateClass: 'waiting',
       url: '01Macrogen_01기업개요',
       category: 'macrogen',
       page: '01Macrogen_01기업개요'
