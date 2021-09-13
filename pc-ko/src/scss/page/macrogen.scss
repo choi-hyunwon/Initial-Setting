@@ -1877,7 +1877,7 @@ $min-width: 1244px;
     }
   }
 
-  &.talent {
+  &.macrogen-talent {
     .section-description {
       padding: 150px 0 120px;
 
@@ -2514,9 +2514,15 @@ $min-width: 1244px;
           letter-spacing: -3px;
           color: $point-primary;
           margin-bottom: 68px;
+          
+          &::before {
+            content: '';
+            display: block;
+          }
 
           &::after {
             content: '';
+            display: block;
             position: absolute;
             width: 60px;
             height: 5px;
@@ -2569,6 +2575,7 @@ $min-width: 1244px;
 
           &::after {
             content: '';
+            display: block;
             position: absolute;
             @include background-img($width: 1260px, $height: 600px, $category: 'macrogen', $img: 'bg-history-circle.svg');
             left: 0;
@@ -3407,6 +3414,18 @@ $min-width: 1244px;
             }
           }
         }
+      }
+    }
+  }
+}
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .macrogen {
+    &.macrogen-history {
+      .slide-tab-wrap .swiper-container .swiper-slide {
+        width: auto;
+      }
+      .swiper-container {
       }
     }
   }
