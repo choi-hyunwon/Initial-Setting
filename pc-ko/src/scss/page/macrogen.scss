@@ -24,7 +24,6 @@ $min-width: 1244px;
   .color-white {
     color: $gray-ffffff !important;
   }
-
   /* e 공통 */
 
   &.full-bg {
@@ -3173,21 +3172,15 @@ $min-width: 1244px;
             line-height: 52px;
             letter-spacing: -1px;
             color: $gray-000000;
-            margin-bottom: 45px;
+            margin-bottom: 60px;
           }
 
           ul {
-            padding: 20px;
-
             li {
               float: left;
-              width: 180px;
+              width: 220px;
+              padding: 0 20px;
               margin-bottom: 58px;
-              margin-right: 40px;
-
-              &:nth-child(4n) {
-                margin-right: 0;
-              }
 
               &:nth-child(5),
               &:nth-child(6),
@@ -3214,6 +3207,9 @@ $min-width: 1244px;
                 text-align: center;
                 letter-spacing: -0.75px;
                 margin-bottom: 2px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
               }
 
               .desc {
@@ -3349,14 +3345,12 @@ $min-width: 1244px;
 
       .modal-footer {
         display: block;
-        padding: 15px 45px;
+        padding: 15px 60px;
 
         .board {
           margin: 0;
 
           .navigation {
-            padding: 0 15px;
-
             .content {
               .item {
                 padding: 0;
