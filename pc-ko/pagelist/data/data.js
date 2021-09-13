@@ -145,7 +145,6 @@ data.macrogen = {
       page: 'Main'
     },
     {
-      stateClass: 'waiting',
       stateClass: 'complete',
       url: '01Macrogen_01기업개요',
       category: 'macrogen',
@@ -361,7 +360,7 @@ data.RD = {
       page: '06특허,논문_02논문_01목록'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '06특허,논문_02논문_01목록없음',
       category: 'RD',
       page: '06특허,논문_02논문_01목록없음'
