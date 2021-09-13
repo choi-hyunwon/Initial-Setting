@@ -139,7 +139,7 @@ data.macrogen = {
   title: 'Macrogen',
   list: [
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_01기업개요',
       category: 'macrogen',
       page: '01Macrogen_01기업개요'
@@ -157,7 +157,7 @@ data.macrogen = {
       page: '01Macrogen_03연혁'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01Macrogen_04비전',
       category: 'macrogen',
       page: '01Macrogen_04비전'
@@ -169,7 +169,7 @@ data.macrogen = {
       page: '01Macrogen_05인증'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_06글로벌네트워크',
       category: 'macrogen',
       page: '01Macrogen_06글로벌네트워크'
@@ -193,13 +193,13 @@ data.macrogen = {
       page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_04채용_01인재상',
       category: 'macrogen',
       page: '01Macrogen_04채용_01인재상'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_04채용_02인사제도',
       category: 'macrogen',
       page: '01Macrogen_04채용_02인사제도'
