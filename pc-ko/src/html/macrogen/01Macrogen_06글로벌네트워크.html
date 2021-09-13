@@ -23,18 +23,23 @@
                 <div class="title">GLOBAL MACROGEN</div>
                 <div class="desc">마크로젠은 세계 어디에서나 현지 고객 맞춤형 서비스를 제공하며 신속하고 체계적인 고객 대응으로<br/>글로벌 정밀의학 선도기업으로 자리매김하고 있습니다. </div>
                 <div class="map">
-                    <a class="pin amsterdam active" href="#"><span>Amsterdam, The Netherlands</span></a>
-                    <a class="pin seoul" href="#"><span>Seoul, Korea</span></a>
+                    <a class="pin amsterdam active" href="#amsterdam"><span>Amsterdam, The Netherlands</span></a>
+                    <a class="pin seoul" href="#seoul"><span>Seoul, Korea</span></a>
                     <a class="pin boston" href="#"><span>Boston, USA</span></a>
                     <a class="pin tokyo" href="#"><span>Tokyo, japan</span></a>
                     <a class="pin virginia" href="#"><span>Virginia, USA</span></a>
-                    <a class="pin madrid" href="#"><span>Madrid, Spain</span></a>
+                    <a class="pin madrid" href="#madrid"><span>Madrid, Spain</span></a>
                     <a class="pin kyoto" href="#"><span>Kyoto, japan</span></a>
                     <a class="pin newyork" href="#"><span>New york, USA</span></a>
-                    <a class="pin synapse" href="#"><span>Synapse, Singapore</span></a>
-                    <a class="pin rockville" href="#"><span>Rockville, USA</span></a>
+                    <a class="pin synapse" href="#synapse"><span>Synapse, Singapore</span></a>
+                    <a class="pin rockville" href="#rockville"><span>Rockville, USA</span></a>
                 </div>
             </div>
+            <script>
+                $('.map .pin').on('click',function (){
+                    $(this).addClass('active').siblings().removeClass('active')
+                })
+            </script>
             <!-- e  map -->
 
             <!-- s  map 상세 -->
@@ -42,7 +47,7 @@
                 <div class="box">
                     <div class="title">국내</div>
                     <div class="detail">
-                        <ul>
+                        <ul id="seoul">
                             <li class="item">
                                 <div class="name">마크로젠 강남본사</div>
                                 <div class="img"><img src="../../img/@temp/macrogen/global_thumb_1.png" alt="마크로젠 강남본사"></div>
@@ -118,7 +123,7 @@
                     <div class="title">글로벌</div>
                     <div class="detail">
                         <ul>
-                            <li class="item">
+                            <li class="item" id="rockville">
                                 <div class="name">소마젠 (Psomagen) <span class="badge">관계사</span></div>
                                 <div class="img"><img src="../../img/@temp/macrogen/global_thumb_1.png" alt="소마젠 (Psomagen)"></div>
                                 <div class="info">
@@ -137,7 +142,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
+                            <li class="item" id="tokyo">
                                 <div class="name">일본법인</div>
                                 <div class="img"><img src="../../img/@temp/macrogen/global_thumb_1.png" alt="일본법인"></div>
                                 <div class="info">
@@ -154,7 +159,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
+                            <li class="item" id="amsterdam">
                                 <div class="name">유럽법인</div>
                                 <div class="img"><img src="../../img/@temp/macrogen/global_thumb_1.png" alt="유럽법인"></div>
                                 <div class="info">
@@ -166,10 +171,12 @@
                                     <div class="tel">
                                         <span>TEL.</span>
                                         <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
+                                        <span>WEB.</span>
+                                        <a href="http://www.psomagen.com">http://www.psomagen.com</a>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
+                            <li class="item" id="synapse">
                                 <div class="name">싱가포르법인</div>
                                 <div class="img"><img src="../../img/@temp/macrogen/global_thumb_1.png" alt="싱가포르법인"></div>
                                 <div class="info">
@@ -186,7 +193,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
+                            <li class="item" id="madrid">
                                 <div class="name">스페인지사</div>
                                 <div class="img"><img src="../../img/@temp/macrogen/global_thumb_1.png" alt="스페인지사"></div>
                                 <div class="info">
