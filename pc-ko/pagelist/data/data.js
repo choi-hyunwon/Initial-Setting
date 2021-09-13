@@ -288,37 +288,37 @@ data.business ={
       page: '02연구서비스_06GeneSythesis'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03연구서비스_01Standard',
       category: 'business',
       page: '03연구서비스_01Standard'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03연구서비스_02Modified',
       category: 'business',
       page: '03연구서비스_02Modified'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03연구서비스_03Premade',
       category: 'business',
       page: '03연구서비스_03Premade'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03연구서비스_04Plate',
       category: 'business',
       page: '03연구서비스_04Plate'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03연구서비스_05Duplex',
       category: 'business',
       page: '03연구서비스_05Duplex'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03연구서비스_06RAPD',
       category: 'business',
       page: '03연구서비스_06RAPD'
