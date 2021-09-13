@@ -74,23 +74,34 @@
         li{
           padding-left: 0;
           ul{
-            .sub-title{
-              padding-top: 0;
-              margin-bottom: 15px;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 32px;
-              letter-spacing: -0.75px;
-            }
-            .desc{
-              margin-bottom: 32px;
-              li{
-                padding-left: 22px;
-              }
-              +.sub-title{
+            &.content{
+              .sub-title{
                 padding-top: 0;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 32px;
+                letter-spacing: -0.75px;
+                color: #000000;
               }
+              .desc{
+                li{
+                  padding-left: 22px;
+                }
+                +.sub-title{
+                  padding-top: 0;
+                }
+              }
+              >li{
+                margin-bottom: 32px;
+                &:nth-last-of-type(1){
+                  margin-bottom: 0;
+                }
+              }
+
             }
+
+
           }
         }
       }
