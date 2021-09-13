@@ -471,19 +471,19 @@ data.etc = {
   title: 'Etc',
   list: [
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01개인정보처리방침',
       category: 'etc',
       page: '01개인정보처리방침'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02영상정보_운영_관리',
       category: 'etc',
       page: '02영상정보_운영_관리'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03내부정보관리규정',
       category: 'etc',
       page: '03내부정보관리규정'
