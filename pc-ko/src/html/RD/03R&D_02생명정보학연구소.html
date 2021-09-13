@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap research-wrap">
+    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/03R&D_02생명정보학연구소.png'})
+    <div class="full-bg research_bg">
+        @@include('../../html/include/component/header.html')
+        <div class="frame frameB">
+            @@include('../../html/include/common/breadcrumb-white.html',{
+            "depth1": "R&D",
+            "depth2": "생명정보학연구소",
+            })
+            <div class="hero-title">생명정보학연구소</div>
+            <div class="slogan-sub">Bioinformatics Institute</div>
+        </div>
+    </div>
+
+    <div class="container container-fluid">
+        <div class="section_lifeInformation">
+            <div class="info-box">
+                <div class="title">유전체 정보를 기반으로<br>생명의 비밀을 밝혀냅니다 </div>
+                <div class="desc">유전체 분석 분야에서 다양한 연구를 진행해 나갑니다</div>
+            </div>
+            <div class="img"><img src="../../img/RD/img-microscope.svg" alt="현미경사진"></div>
+
+        </div>
+    </div>
+    @@include('../../html/include/component/footer.html')
+    @@include('../../html/include/component/toTop.html')
+</div>
+</body>
+</html>
+
