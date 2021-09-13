@@ -70,6 +70,30 @@
       }
     }
     .terms{
+      &.management{
+        li{
+          padding-left: 0;
+          ul{
+            .sub-title{
+              padding-top: 0;
+              margin-bottom: 15px;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 32px;
+              letter-spacing: -0.75px;
+            }
+            .desc{
+              margin-bottom: 32px;
+              li{
+                padding-left: 22px;
+              }
+              +.sub-title{
+                padding-top: 0;
+              }
+            }
+          }
+        }
+      }
       .hyphen_list {
         li {
           padding-left: 0;
