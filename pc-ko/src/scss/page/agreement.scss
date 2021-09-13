@@ -5,7 +5,7 @@
 */
 
 .section_agreement{
-  .subtitle{
+  .main-title{
     padding: 140px 0px 130px;
     font-weight: 500;
   }
@@ -70,6 +70,12 @@
       }
     }
     .terms{
+      .hyphen_list {
+        li {
+          padding-left: 0;
+        }
+
+      }
       li{
         word-break: keep-all;
         .title{
@@ -96,6 +102,7 @@
         .caption_bottom{
           padding-top: 20px;
         }
+
         ul{
           >li{
             padding-left: 22px;
@@ -109,7 +116,7 @@
               text-align: left;
             }
             .table{
-              margin: 15px -20px 0;
+              margin: 15px -22px 0;
             }
             >ol{
               li{
@@ -201,24 +208,6 @@
       line-height: 30px;
       font-weight: 400;
       color: #454545;
-      &.hyphen_list {
-        li {
-          position: relative;
-          padding-left: 10px;
-
-          i {
-            overflow: hidden;
-            position: absolute;
-            top: 15px;
-            left: 0;
-            width: 5px;
-            height: 1px;
-            background-color: #454545;
-          }
-        }
-
-      }
-
     }
 
   }
