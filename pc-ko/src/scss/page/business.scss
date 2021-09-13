@@ -287,18 +287,50 @@
     /*테이블 관련*/
     .table-wrap{
       display: flex;
-      justify-content: space-between;
+
       .table-title-box{
+        width: calc(50% - 10px);
+        &:nth-of-type(1){
+          margin-right: 10px;
+        }
+        &:nth-of-type(2){
+          margin-left: 10px;
+        }
         .sub-title{
           margin-bottom: 25px;
         }
       }
       .table{
-        width: calc(50% - 20px);
+        &:nth-of-type(1){
+          margin-right: 10px;
+        }
+        &:nth-of-type(2){
+          margin-left: 10px;
+        }
+        thead{
+          th{
+            padding: 15px;
+          }
+        }
+        tbody{
+          td{
+            padding: 15px;
+          }
+        }
       }
     }
     .table{
       margin-bottom: 0;
+      thead{
+        th{
+          padding: 15px 30px;
+        }
+      }
+      tbody{
+        td{
+          padding: 15px 30px;
+        }
+      }
       + .sub-title{
         padding-top: 60px;
       }
