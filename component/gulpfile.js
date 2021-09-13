@@ -57,6 +57,8 @@ function jsLib() {
     'src/js/lib/swiper.min.js',
     'src/js/lib/jquery.sticky.js',
     'src/js/lib/jquery.grid-a-licious.js',
+    'src/js/lib/aos.js',
+    'src/js/lib/rellax.js',
   ];
   return gulp.src(sourceLib)
     .pipe(concat('bundle.js'))
