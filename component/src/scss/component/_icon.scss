@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.31
  v.0.2 태윤 : icon-arrow-bottom-short-black 추가ㅣ -- 2021.09.01
+ v.0.3 선미 : icon-arrow-right-long-white 추가ㅣ -- 2021.09.13
 |----------------------------------|
 */
 .icon {
@@ -147,6 +148,11 @@
 /*화살표*/
 .icon-arrow-right-long {
   background-image: url("../img/common/ico-arrow-right-long.svg");
+  width: 66px;
+  height: 12px;
+}
+.icon-arrow-right-long-white {
+  background-image: url("../img/common/ico-arrow-right-long-white.svg");
   width: 66px;
   height: 12px;
 }

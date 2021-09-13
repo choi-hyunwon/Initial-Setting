@@ -3,9 +3,9 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-   @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/00Main_00전체.png'})
+<!--   @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/00Main_00전체.png'})-->
     <div class="full-bg main-bg">
-<!--        @@include('../../html/include/component/header-main.html')-->
+        @@include('../../html/include/component/header-main.html')
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -40,23 +40,32 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev swiper_btn"></div>
             <div class="swiper-button-next swiper_btn"></div>
+
+            <div class="bg-DNA bg-DNA-right-bottom"></div>
         </div>
         <script>
             var mainSwiper = new Swiper ('.swiper-container', {
                 loop: true, //반복
                 speed: 1500,//속도
-           /*     autoplay: {
-                    delay: 300,
+                autoplay: {
+                    delay: 3500,
                     waitForTransition: true,
                     disableOnInteraction: false,
-                },*/
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
                 },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className)  {
+                        return '<span class="' + className + '">'+'<svg class="fp-arc-loader" width="50" height="50" viewBox="0 0 25 25">'+
+                            '<circle class="path" cx="8" cy="8" r="5" fill="none" transform="rotate(-90 8 8)" stroke="#FFF"'+
+                            'stroke-opacity="1" stroke-width="1px"></circle>'+
+                            '<circle cx="8" cy="8" r="1" fill="#FFF"></circle>'+
+                            '</svg></span>';
+                    },
                 },
             })
         </script>
@@ -141,6 +150,7 @@
                     <div class="desc">유전체 정보, 의료 정보 및 생활 정보 통합 빅데이터를 구축하고 질병을 예측하여<br/>미래의학을 혁신하는 글로벌 정밀의학 선도기업으로서 인간 유전체 연구로 인류의 건강과 행복에 이바지합니다</div>
                 </div>
                 @@include('../../html/include/common/main/business-slider.html')
+                <div class="bg-DNA bg-DNA-right-bottom"></div>
             </div>
             <!-- e  s  business slide -->
 
@@ -171,7 +181,13 @@
                     <a href="#" class="btn btn-text"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
                 </div>
                 <div class="video-box">
-
+                    <div class="info-box">
+                        <div class="title">Clinical Diagnostics</div>
+                        <div class="desc">개개인의 건강한 삶을 위한 다양한 솔루션을 제공하는 임상진단 서비스를 영상으로 만나보세요</div>
+                        <a href="#" class="btn-play"><span class="sr-only">재생 버튼</span></a>
+                    </div>
+                    <a href="#" class="btn btn-text"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a>
+                    <div class="bg-DNA bg-DNA-right-top"></div>
                 </div>
             </div>
             <!-- e  news -->
@@ -186,9 +202,37 @@
             </div>
             <!-- e  media -->
 
+            <!-- s  global map -->
+            <div class="section-map">
+                <div class="inner">
+                    <div class="info-box">
+                        <div class="title">Global Macrogen</div>
+                        <div class="desc">국내 지사를 포함하여 세계 각지의 글로벌 네트워크를 통해<br/>현지 고객의 다양한 요구에 부합하는 맞춤형 서비스를 더욱 신속하고 체계적으로
+                            제공합니다
+                        </div>
+                    </div>
+                    <div class="map">
+                        <a class="pin amsterdam active" href="#"><span>Amsterdam, The Netherlands</span></a>
+                        <a class="pin seoul" href="#"><span>Seoul, Korea</span></a>
+                        <a class="pin boston" href="#"><span>Boston, USA</span></a>
+                        <a class="pin tokyo" href="#"><span>Tokyo, japan</span></a>
+                        <a class="pin virginia" href="#"><span>Virginia, USA</span></a>
+                        <a class="pin madrid" href="#"><span>Madrid, Spain</span></a>
+                        <a class="pin kyoto" href="#"><span>Kyoto, japan</span></a>
+                        <a class="pin newyork" href="#"><span>New york, USA</span></a>
+                        <a class="pin synapse" href="#"><span>Synapse, Singapore</span></a>
+                        <a class="pin rockville" href="#"><span>Rockville, USA</span></a>
+                    </div>
+                </div>
+                <div class="bg-DNA bg-DNA-left-bottom"></div>
+            </div>
+            <!-- e  global map -->
+
+
         </div>
     </div>
     @@include('../../html/include/component/footer.html')
+    @@include('../../html/include/component/toTop.html')
 </div>
 </body>
 </html>
