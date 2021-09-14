@@ -371,6 +371,12 @@ data.business ={
       category: 'business',
       page: '05연구서비스_01crisprknock'
     },
+    {
+      stateClass: 'complete',
+      url: '05연구서비스_03MassReproduction',
+      category: 'business',
+      page: '05연구서비스_03MassReproduction'
+    },
 
   ]
 }
