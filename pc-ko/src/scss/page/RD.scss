@@ -59,12 +59,23 @@
     }
   }
   .desc-box{
+    width: 1244px;
+    margin: 0 auto;
     p{
       font-size: 16px;
       line-height: 30px;
-      &.sub_title{
-
+      color: #454545;
+      &.sub-title{
+        font-size: 22px;
+        line-height: 36px;
+        color: #000000;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: -1.3px;
       }
+    }
+    .divider{
+      margin-top: 120px;
     }
   }
 
@@ -117,8 +128,10 @@
 
   /*빅데이터여연구소*/
   .section_bigData{
+    margin-bottom: 120px;
     .img{
       margin-left: 338px;
+      margin-bottom: 100px;
     }
   }
 
