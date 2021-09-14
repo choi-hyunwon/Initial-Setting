@@ -354,12 +354,17 @@ data.business ={
     //   page: '03연구서비스_06RAPD'
     // },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '04연구서비스_03Epigenome',
       category: 'business',
       page: '04연구서비스_03Epigenome'
     },
-
+    {
+      stateClass: 'complete',
+      url: '05연구서비스_01crisprknock',
+      category: 'business',
+      page: '05연구서비스_01crisprknock'
+    },
 
   ]
 }
