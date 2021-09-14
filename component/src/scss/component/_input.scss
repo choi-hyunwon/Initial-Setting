@@ -255,12 +255,14 @@ select::-ms-expand {
     }
 
     .title {
+      display: block;
       margin-bottom: 0;
       font-weight: 700;
       font-size: 16px;
       line-height: 30px;
-      max-width: 380px;
+      width: 380px;
       @include ellipsis($line:1);
+      padding-right: 5px;
     }
 
     .btn-download {
