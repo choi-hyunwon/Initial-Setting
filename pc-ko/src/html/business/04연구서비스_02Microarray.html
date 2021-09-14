@@ -1,10 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
 <body>
+<div class="wrap">
+    <!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/02BUSINESS_01연구서비스_01NGS_01WholeGenomeSequencing.png'})-->
+    <div class="full-bg business_bg">
+        @@include('../../html/include/component/header.html')
+        <div class="frame frameB">
+            @@include('../../html/include/common/breadcrumb-white-depth3.html',{
+            "depth1": "Business",
+            "depth2": "연구서비스",
+            "depth3": "OLIGO",
+            })
+            <div class="hero-title">MICROARRAY</div>
+            <a href="#" class="btn btn-round btn-service">
+                <span>SERVICE</span>
+                <i class="icon icon-arrow-bottom-short-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section_business">
+            <!--메인 컨텐츠-->
+            @@include('../../html/include/component/busniess/subject-box_microarray.html')
+            <!--탭 링크-->
+            <div class="tab-box">
+                <p class="font-h4 title">DNA Synthesis SERVICE</p>
+                <div class="tab-wrap">
+                    <div class="tab-list">
+                        <div class="tab"><a href="#">Expression Microarray</a></div>
+                        <div class="tab active"><a href="#">Genome Microarray</a></div>
+                        <div class="tab"><a href="#">Epigenome Microarray</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--탭컨텐츠-->
+            <div class="info-box">
+                <p class="font-h4 main-title">Genome Microarray</p>
+                <p class="subject">DNA상의 다양한 염기서열 변이나 구조적 변화에 대해 분석하는 방법입니다.</p>
+                <div class="img">
+                    <img src="../../img/@temp/business/img-thumb04.svg" alt="이미지">
+                </div>
+                <hr class="divider">
+                <p class="font-h4 main-title">SNP Genotyping Microarray</p>
+                <p class="desc list_bottom">약 30억 쌍의 염기로 구성된 인간 유전체의 경우 개인의 DNA 염기서열이 대부분 일치하지만  0.1% 정도 차이가 나는 단일염기다형성(SNP, Single Nucleotide Polymorphism) 부위를 가지고 있습니다.
+                    이러한 SNP에 의해 개인의 유전적 다양성이 나타나며 서로 다른 질병에 대한 감수성의 차이를 만들어 냅니다. SNP Genotyping Microarray를 사용하면 수백만 개의 SNP를 동시에 분석할 수 있습니다.
+                    마크로젠은 국내 최대 SNP 칩 데이터 자동화 생산 시설을 갖추고 있으며, 데이터 QC 프로세스를 적용하여 정확한 분석 결과를 제공하고 있습니다.</p>
+                <div class="list-area-group">
+                    <div class="list-area">
+                        <p class="font-h8 title">mRNA Expression Microarray Platforms</p>
+                        <table class="table">
+                            <colgroup>
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>제조사</th>
+                                <th>연구 종</th>
+                                <th>분류</th>
+                                <th>플랫폼</th>
+                                <th>SNP contents</th>
+                            </tr>
+
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td rowspan="16">Agilent</td>
+                                <td rowspan="16" class="table-bg">- Human<br>
+                                <td rowspan="10" class="text-start">- SurePrint G3 Gene Expression<br>
+                                <td>Infinium Omni5Exome-4</td>
+                                <td>4.5M</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium Omni5-4</td>
+                                <td>2.7M</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium Omni2.5-8</td>
+                                <td>2.5M</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium OmniExpressExome-8</td>
+                                <td>950K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium OmniExpress-24</td>
+                                <td>715K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium CoreExome-24</td>
+                                <td>540K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium Core-24</td>
+                                <td>300K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium GlobalScreeningArray</td>
+                                <td>4.3M</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium Omni5-4</td>
+                                <td>660K</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">ETC</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="6">Targeted Array</td>
+                                <td>Infinium QC Array-24</td>
+                                <td>16K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium Exome-24</td>
+                                <td>250K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium OncoArray-500K</td>
+                                <td>500K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium ImmunoArray-24</td>
+                                <td>250K</td>
+                            </tr>
+                            <tr>
+                                <td>Infinium PsychArray-24</td>
+                                <td>590K</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">ETC</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Life Technologies</td>
+                                <td class="table-bg" rowspan="2">- Pre-designed probes<br>
+                                    - Customized probes</td>
+                                <td rowspan="2">-</td>
+                                <td>Openarray Customization</td>
+                                <td>up to 240 SNPs</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Taqman genotyping</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="list-area">
+                        <p class="font-h8 title">Analysis</p>
+                        <table class="table">
+                            <colgroup>
+                                <col style="width:calc(100% - 66.7202%);">
+                                <col style="width:66.7202%;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>분석항목</th>
+                                <th>내용</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td rowspan="3">SNP analysis</td>
+                                <td class="text-start">SNP analysis</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Single Based Association Study (PLINK, R)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Gene Based Association Study (SKAT, Score-Seqetc)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Functional analysis</td>
+                                <td class="text-start">CNV segments Data (cnvPartition)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">CNVR define</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">DGV mapping</td>
+                            </tr>
+                            <tr>
+                                <td>Customized analysis</td>
+                                <td class="text-start">Additional plotting, annotation, etc</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
 </body>
 </html>
