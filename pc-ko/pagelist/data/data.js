@@ -200,6 +200,12 @@ data.macrogen = {
     },
     {
       stateClass: 'complete',
+      url: '01Macrogen_03지속가능경영_02사회공헌_03과학자상상세',
+      category: 'macrogen',
+      page: '01Macrogen_03지속가능경영_02사회공헌_03과학자상상세'
+    },
+    {
+      stateClass: 'complete',
       url: '01Macrogen_04채용_01인재상',
       category: 'macrogen',
       page: '01Macrogen_04채용_01인재상'
@@ -371,6 +377,12 @@ data.RD = {
       url: '03R&D_02생명정보학연구소',
       category: 'RD',
       page: '03R&D_02생명정보학연구소'
+    },
+    {
+      stateClass: 'complete',
+      url: '03R&D_05빅데이터연구소',
+      category: 'RD',
+      page: '03R&D_05빅데이터연구소'
     },
     {
       stateClass: 'complete',
