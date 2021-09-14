@@ -342,22 +342,22 @@ data.business ={
       page: '03연구서비스_06RAPD'
     },
     {
-      stateClass: 'working',
-      url: '03연구서비스_06RAPD',
+      stateClass: 'complete',
+      url: '04연구서비스_01Expression',
       category: 'business',
-      page: '03연구서비스_06RAPD'
+      page: '04연구서비스_01Expression'
     },
+    // {
+    //   stateClass: 'working',
+    //   url: '03연구서비스_06RAPD',
+    //   category: 'business',
+    //   page: '03연구서비스_06RAPD'
+    // },
     {
       stateClass: 'working',
-      url: '03연구서비스_06RAPD',
+      url: '04연구서비스_03Epigenome',
       category: 'business',
-      page: '03연구서비스_06RAPD'
-    },
-    {
-      stateClass: 'working',
-      url: '03연구서비스_06RAPD',
-      category: 'business',
-      page: '03연구서비스_06RAPD'
+      page: '04연구서비스_03Epigenome'
     },
 
 
