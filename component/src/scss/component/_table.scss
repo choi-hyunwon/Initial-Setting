@@ -18,41 +18,42 @@ table {
     /*기본테이블*/
     thead {
       border-top: 1px solid $line-000000;
-      background: $bg-f7f7f7;
+      background-color: $bg-f7f7f7;
+    }
+    tr {
+      border-bottom: 1px solid $line-d9d9d9;
+      >:first-of-type{
+        padding-left: 60px;
+      }
+      >:last-of-type{
+        padding-right: 60px;
+      }
 
-      tr {
-        border-bottom: 1px solid $line-d9d9d9;
-        >:first-of-type{
-          padding-left: 60px;
+      th {
+        text-align: center;
+        vertical-align: middle;
+        padding: 20px 30px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 18px;
+
+        &.sub-title {
+          font-weight: 500;
+          font-size: 16px;
         }
-        >:last-of-type{
-          padding-right: 60px;
-        }
-
-        th {
-          text-align: center;
-          vertical-align: middle;
-          padding: 20px 30px;
-          line-height: 30px;
-          font-weight: bold;
-          font-size: 18px;
-
-          &.sub-title {
-            font-weight: 500;
+        span {
+          font-weight: 400;
+          &.additional{
+            display: block;
+            color: $gray-707070;
             font-size: 16px;
-          }
-          span {
-            font-weight: 400;
-            &.additional{
-              display: block;
-              color: $gray-707070;
-              font-size: 16px;
 
-            }
           }
         }
       }
     }
+
+
     tbody {
       tr {
         border-bottom: 1px solid $line-d9d9d9;
@@ -65,7 +66,7 @@ table {
 
         th{
           border-top: 1px solid $line-000000;
-          background: $bg-f7f7f7;
+          background-color: $bg-f7f7f7;
         }
 
         td {
