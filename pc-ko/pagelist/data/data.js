@@ -395,6 +395,12 @@ data.business ={
       category: 'business',
       page: '임상진단서비스_02암발생원인'
     },
+    {
+      stateClass: 'working',
+      url: '임상진단서비스_03암발생모니터링',
+      category: 'business',
+      page: '임상진단서비스_03암발생모니터링'
+    },
 
 
   ]
