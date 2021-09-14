@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/02BUSINESS_01연구서비스_01NGS_01WholeGenomeSequencing.png'})-->
+    <div class="full-bg business_bg">
+        @@include('../../html/include/component/header.html')
+        <div class="frame frameB">
+            @@include('../../html/include/common/breadcrumb-white-depth3.html',{
+            "depth1": "Business",
+            "depth2": "임상진단서비스",
+            "depth3": "암 유전체 검사",
+            })
+            <div class="hero-title">임상진단서비스</div>
+            <div class="slogan-sub">FFPE, Tissue, Liquid Biopsy(액체생검)등을 이용한 암유전체 검사</div>
+            <a href="#" class="btn btn-round btn-service">
+                <span>SERVICE</span>
+                <i class="icon icon-arrow-bottom-short-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section_business">
+            <!--탭 링크-->
+            <div class="tab-box">
+                <div class="tab-wrap">
+                    <div class="tab-list">
+                        <div class="tab active"><a href="#">암 발생 위험 예측</a></div>
+                        <div class="tab"><a href="#">암 발생 원인 분석</a></div>
+                        <div class="tab"><a href="#">암 발생 모니터링</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--탭컨텐츠-->
+            <div class="info-box">
+                <p class="font-h4 main-title">암 발생 위험 예측</p>
+                <p class="subject">암은 다양한 원인에 의해 발생하지만, 일부 암은 타고난 특정 유전자의 변이 때문에 발생합니다. </p>
+                <p class="desc img_bottom">유전성 암은 부모로부터 물려받은 유전자 이상에 의해 발생하며 동일 가계 내 암 환자 발생 확률이 높아집니다. 암과 관련된 변이를 가진 경우 그렇지 않은 사람에 비해 암이 발생할 가능성이 매우 커지므로 유전자 진단을 통한 조기 발견과 정확한 원인 파악이 필요합니다. 유방암, 난소암, 대장암은 대표적인 유전성 암입니다. 유방암 환자의 5~10%가 유전적 원인에 의해 발병한다고 알려져 있으며, 이 중 절반 이상이 BRCA1, BRCA2 유전자 이상을 가지고 있습니다. 이 외에도 다양한 암 발생 주요 원인 유전자를 보유하는 경우 암 발생률이 급격하게 증가하게 됩니다.</p>
+                <div class="border-gray-box">
+                    <div class="img">
+                        <img src="../../img/@temp/business/img_familyline.svg" alt="암발생가족도">
+                    </div>
+                </div>
+                <hr class="divider">
+                <p class="font-h4 main-title">유전성 암 감수성 검사 (Hereditary Cancer Panel)</p>
+                <p class="desc data_bottom">유전성 암과 관련된 원인 유전자를 분석해 암에 대한 유전적 위험률을 진단합니다. BRCA1/2 유전자를 포함하여 대장암의 주원인이 되는 Lynch Syndrome과 관련된 유전자 등 총 16개 유전자에 대한 변이를
+                    분석합니다.</p>
+                <table class="table">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:25%;">
+                        <col style="width:50%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>Gene List</th>
+                        <th>Target</th>
+                        <th>Description (related cancer type)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>APC, MUTYH</td>
+                        <td>Large Intestine</td>
+                        <td class="text-start">Germline mutations associated with familial adenomatous polyposis (FAP)</td>
+                    </tr>
+                    <tr>
+                        <td>BRCA1, BRCA2</td>
+                        <td>Breast Ovary</td>
+                        <td class="text-start">Related to breast/ovarian cancer</td>
+                    </tr>
+                    <tr>
+                        <td>CDH1</td>
+                        <td>Stomach Large Intestine</td>
+                        <td class="text-start">Responsible for cell-to-cell adhesion llmplicated in cancer progression and metastasis</td>
+                    </tr>
+                    <tr>
+                        <td>EPCAM, PMS2, MLH1, MSH2, MSH6</td>
+                        <td>Large Intestine Rectum</td>
+                        <td class="text-start">Related to the mismatch repair of DNA Lynch syndrome<br>(hereditary non-polyposis colorectal cancer, HNPCC)</td>
+                    </tr>
+                    <tr>
+                        <td>MEN1</td>
+                        <td>Endocrine System</td>
+                        <td class="text-start">Multiple endocrine neoplasia type 1 (MEN-1 syndrome)<br>
+                            Familial neoplasia affecting the network of hormone-producing glands</td>
+                    </tr>
+                    <tr>
+                        <td>PTEN</td>
+                        <td>Thyroid Breast</td>
+                        <td class="text-start">Cowden syndrome Tumor - suppressor gene</td>
+                    </tr>
+                    <tr>
+                        <td>RB1</td>
+                        <td>Eye</td>
+                        <td class="text-start">Retinoblastoma</td>
+                    </tr>
+                    <tr>
+                        <td>RET</td>
+                        <td>Endocrine System Thyroid</td>
+                        <td class="text-start">Proto-oncogene Multiple endocrine neoplasia type 2 Medullary thyroid carcinoma</td>
+                    </tr>
+                    <tr>
+                        <td>TP53</td>
+                        <td>Breast Bone Etc.</td>
+                        <td class="text-start">Li - Fraumeni syndrome</td>
+                    </tr>
+                    <tr>
+                        <td>VHL</td>
+                        <td>Eye Kidny Central Nervous System</td>
+                        <td class="text-start">Tumor - suppressor gene von Hippel - Lindau Syndrome</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="font-h5 sub-title">BRCA1/2 유전자 검사</p>
+                <p class="desc data_bottom">유전성 유방암의 대표적 원인이 되는 BRCA1/2 유전자의 전 영역을 분석해 유방암 발생 위험을 진단합니다. BRCA 1/2 유전자 변이가 있는 경우 유방암 발생 위험이 급격하게 증가합니다.
+                </p>
+                <div class="border-gray-box">
+                    <img src="../../img/@temp/business/img-dnatest.svg" alt="dna테스트">
+                </div>
+                <div class="btn-area">
+                    <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                </div>
+                <hr class="divider">
+                <div class="board">
+                    <div class="navigation">
+                        <div class="content clearfix">
+                            <a href="#" class="item prev">
+                                <div class="title">암 발생 원인 발굴</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+
+                </script>
+            </div>
+
+        </div>
+    </div>
+    @@include('../../html/include/component/footer.html')
+    @@include('../../html/include/component/toTop.html')
+</div>
+</body>
+</html>

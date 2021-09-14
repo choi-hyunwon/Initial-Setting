@@ -378,10 +378,16 @@ data.business ={
       page: '05연구서비스_03MassReproduction'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '05연구서비스_04Addition',
       category: 'business',
       page: '05연구서비스_04Addition'
+    },
+    {
+      stateClass: 'working',
+      url: '임상진단서비스_01암유전체검사',
+      category: 'business',
+      page: '임상진단서비스_01암유전체검사'
     },
 
 

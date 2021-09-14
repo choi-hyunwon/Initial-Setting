@@ -168,6 +168,9 @@
       &.list_bottom{
         margin-bottom: 60px;
       }
+      &.data_bottom{
+        margin-bottom: 60px;
+      }
       &.figure_bottom{
         margin-bottom: 25px;
       }
@@ -488,6 +491,9 @@
       }
       + .sub-title{
         padding-top: 60px;
+      }
+      + .sub-title.font-h5{
+        padding-top: 120px;
       }
       + .list-area-group{
         padding-top: 60px;
