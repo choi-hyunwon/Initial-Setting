@@ -20,18 +20,23 @@
         color:#707070;
       }
     }
+
+
     .table{
+      border-collapse: unset;
       &.table-rotate{
         width: 100%;
         tr{
+          display: inline-block;
           width: 25%;
-          >:first-of-type{
-            th{
+
+          &:first-of-type{
+            th,td{
               padding-left: 60px;
             }
           }
-          >:last-of-type{
-            th{
+          &:last-of-type{
+            th,td{
               padding-right: 60px;
             }
           }
@@ -41,16 +46,27 @@
             text-align: center;
             justify-content: center;
             flex-direction: column;
+            padding: 20px 30px;
+            border-bottom: 1px solid #d9d9d9;
+            border-spacing: 0;
+            border-right: 1px solid #f7f7f7;
+            background-color: #f7f7f7;
+            &:last-of-type{
+              border-right: none;
+            }
+          }
+          td{
+            display: block;
+            border-bottom: 1px solid #D9D9D9;
+            padding: 25px 30px 24px;
+            border-spacing: 0;
+          &.table-bg{
+              font-weight: bold;
+              color:#000000;
+            }
           }
         }
       }
-
-        .table-bg{
-          td{
-            font-weight: bold;
-            color:#000000;
-          }
-        }
     }
   }
   .update_text{
@@ -59,6 +75,8 @@
     text-align: right;
     padding-top: 9px;
   }
+
+
   /*투자자문의*/
   .privacy_box{
     padding:100px 0 50px;
