@@ -67,6 +67,15 @@ function jsLib() {
     .pipe(gulp.dest('dist/js'))
 }
 
+function cssIE() {
+  let sourceLib = [
+    'src/scss/lib/bootstrap-ie11.css',
+  ];
+  return gulp.src(sourceLib)
+      .pipe(concat('bootstrap-ie11.css'))
+      .pipe(gulp.dest('dist/css'))
+}
+
 function jsCommon() {
   let sourceUi = ['src/js/common.js'];
   return gulp.src(sourceUi)
@@ -127,7 +136,7 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, copyCSS,copyJS, htmlPage,delInclude));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, cssIE, scss, copyIndex, copyImg, copyFonts, copyCSS,copyJS, htmlPage,delInclude));
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS,copyJS,  htmlPage, delInclude,beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg ));
 
