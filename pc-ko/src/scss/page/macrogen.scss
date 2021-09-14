@@ -24,7 +24,6 @@ $min-width: 1244px;
   .color-white {
     color: $gray-ffffff !important;
   }
-
   /* e 공통 */
 
   &.full-bg {
@@ -2065,67 +2064,6 @@ $min-width: 1244px;
   }
 
   &.macrogen-management {
-    .tab-wrap {
-      width: 100%;
-      height: 100px;
-      background: linear-gradient(90deg, $gray-ffffff 50%, $line-f3f3f3 50%);
-
-      .nav-tabs {
-        width: $min-width;
-        height: 100%;
-        margin: 0 auto;
-        border-bottom: 0;
-
-        .nav-link {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-grow: 1;
-          flex-shrink: 0;
-          flex-basis: 0;
-          height: 100%;
-          text-align: center;
-          padding: 0.5rem 1rem;
-          margin-bottom: -1px;
-          color: $gray-909090;
-          background-color: $line-f3f3f3;
-          border-color: rgba(233, 233, 233, .4);
-          border-right: 1px solid rgba(233, 233, 233, .4);
-          border-left: 0;
-          border-top: 0;
-          border-bottom: 0;
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
-          font-weight: bold;
-          font-size: 22px;
-          letter-spacing: -0.75px;
-
-          span {
-            position: relative;
-            display: inline-block;
-          }
-
-          &.active {
-            color: $gray-000000;
-            background-color: $gray-ffffff;
-
-            span {
-              &::after {
-                content: '';
-                position: absolute;
-                right: -16px;
-                top: 0;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background: $point-primary;
-              }
-            }
-          }
-        }
-      }
-    }
-
     .section-chairman {
       padding-top: 150px;
       text-align: right;

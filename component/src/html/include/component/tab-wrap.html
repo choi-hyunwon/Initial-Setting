@@ -1,12 +1,16 @@
-<div class="tab-wrap _tabWrap">
-    <ul>
-        <li class="active"><a href="#">CHAIRMAN</a></li>
-        <li><a href="#">CEO</a></li>
-        <li><a href="#">CHAIRMAN</a></li>
-    </ul>
-</div>
+<nav class="tab-wrap">
+    <div class="nav nav-tabs" id="tab" role="tablist">
+        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">
+            <span>회장</span>
+        </a>
+        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">
+            <span>대표이사</span>
+        </a>
+    </div>
+</nav>
 <script>
-    $('._tabWrap li a').on('click',function (){
-        $(this).parent().addClass('active').siblings().removeClass('active')
+    $('#tab a').on('click', function (event) {
+        event.preventDefault()
+        $(this).tab('show')
     })
 </script>

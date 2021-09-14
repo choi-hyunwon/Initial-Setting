@@ -4,7 +4,7 @@
 <body>
 <div class="wrap">
     @@include('../../html/include/component/header-white.html')
-    <div class="container">
+    <div class="container container-fluid">
         <div class="guide">
             <div class="mb-5">
                 <div class="box">
@@ -19,10 +19,8 @@
                 </div>
             </div>
             <div>
-                <div class="box">
-                    <p class="font-h7 mb-5">탭 type 3</p>
-                    @@include('../../html/include/component/tab-wrap.html')
-                </div>
+                <p class="font-h7 mb-5">탭 type 3</p>
+                @@include('../../html/include/component/tab-wrap.html')
             </div>
         </div>
     </div>
@@ -32,6 +30,7 @@
 </html>
 <style>
     .box{
+        width: 1366px;
         padding: 30px;
         border-radius: 10px;
         border:1px solid #d9d9d9;
