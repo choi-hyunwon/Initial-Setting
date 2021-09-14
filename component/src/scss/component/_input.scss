@@ -111,12 +111,19 @@
   height: auto;
   background-position: right 20px center;
   background-size: 8px 6px;
+  appearance: none;  /*Removes default chrome and safari style*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none;  /*Removes default style Firefox*/
 
   &:focus {
     outline: none;
     box-shadow: none;
     border-color: $gray-000000;
   }
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 /* search */
