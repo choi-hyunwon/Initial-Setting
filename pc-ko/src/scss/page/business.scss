@@ -110,6 +110,7 @@
     .main-title{
       line-height: 54px;
       margin: 0px 0px 60px;
+
     }
     .subject{
       line-height: 32px;
@@ -175,6 +176,10 @@
           margin-bottom: 0;
         }
 
+      }
+
+      + .main-title{
+        padding-top: 60px;
       }
     }
     .list-area{
