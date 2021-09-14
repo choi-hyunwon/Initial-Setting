@@ -3420,15 +3420,10 @@ $min-width: 1244px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .macrogen {
-    &.macrogen-history {
-      .slide-tab-wrap .swiper-container .swiper-slide {
-        width: auto;
-      }
-    }
-  }
-
   /* 공통 */
+  .slide-tab-wrap .swiper-container .swiper-slide {
+    width: auto;
+  }
   .btn.btn-text { text-align : left; }
   .btn.btn-circle { min-width: auto; }
 }

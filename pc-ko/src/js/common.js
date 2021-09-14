@@ -77,7 +77,7 @@ front.common = (function () {
           var file = this.files[0];
           var name = file.name;
           target.parent().addClass('withFile');
-          target.html(`<span>${name}</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>`);
+          target.html('<span>'+ name +'</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>');
         }
       }
       return false;
