@@ -40,8 +40,9 @@
 
   /*폰트 공통*/
   .info-box{
-    min-width: 1244px;
+    width: 1244px;
     padding-top: 150px;
+    padding-bottom: 80px;
     margin: 0 auto;
 
     .title{
@@ -58,14 +59,49 @@
     }
   }
 
+  /*이미지 공통*/
+  .img{
+    margin-bottom: 120px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .section_lifeInformation{
-    .img{margin-right: 338px;
-      img{
-        width: 100%;
-        height: 100%;
+    .img{
+      margin-right: 338px;
+    }
+  }
+  .section_possession{
+    width: 1244px;
+    margin: 0 auto;
+    .box{
+      margin-bottom: 120px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      .sub_title{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 46px;
+        display: inline-block;
+        float: left;
+        width: 428px;
+      }
+      .sub_desc{
+        font-size: 16px;
+        line-height: 30px;
+        color:#454545;
+        display: inline-block;
+        float: left;
+        letter-spacing: -1px;
+        width: calc(100% - 428px);
+        img{
+          margin-bottom: 40px;
+        }
       }
     }
-
   }
 
 }
