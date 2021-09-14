@@ -377,6 +377,13 @@ data.business ={
       category: 'business',
       page: '05연구서비스_03MassReproduction'
     },
+    {
+      stateClass: 'working',
+      url: '05연구서비스_04Addition',
+      category: 'business',
+      page: '05연구서비스_04Addition'
+    },
+
 
   ]
 }
