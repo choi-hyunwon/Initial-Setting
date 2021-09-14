@@ -175,6 +175,12 @@ data.macrogen = {
       page: '01Macrogen_05인증'
     },
     {
+      stateClass: 'waiting',
+      url: '01Macrogen_06ContactUs',
+      category: 'macrogen',
+      page: '01Macrogen_06ContactUs'
+    },
+    {
       stateClass: 'complete',
       url: '01Macrogen_06글로벌네트워크',
       category: 'macrogen',
@@ -205,13 +211,13 @@ data.macrogen = {
       page: '01Macrogen_03지속가능경영_02사회공헌_03과학자상상세'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'waiting',
       url: '01Macrogen_04채용_01인재상',
       category: 'macrogen',
       page: '01Macrogen_04채용_01인재상'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'waiting',
       url: '01Macrogen_04채용_02인사제도',
       category: 'macrogen',
       page: '01Macrogen_04채용_02인사제도'
