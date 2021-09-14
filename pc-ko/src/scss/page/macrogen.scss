@@ -2514,7 +2514,7 @@ $min-width: 1244px;
           letter-spacing: -3px;
           color: $point-primary;
           margin-bottom: 68px;
-          
+
           &::before {
             content: '';
             display: block;
@@ -3418,7 +3418,7 @@ $min-width: 1244px;
     }
   }
 }
-/* IE10+ */
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .macrogen {
     &.macrogen-history {
@@ -3429,4 +3429,8 @@ $min-width: 1244px;
       }
     }
   }
+
+  /* 공통 */
+  .btn.btn-text { text-align : left; }
+  .btn.btn-circle { min-width: auto; }
 }
