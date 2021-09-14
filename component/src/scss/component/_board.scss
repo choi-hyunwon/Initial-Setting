@@ -159,7 +159,7 @@
         letter-spacing: -0.75px;
         color: $gray-000000;
         margin-bottom: 22px;
-        @include ellipsis($line: 1);
+        @include ellipsis($line: 2);
       }
 
       .cont {
