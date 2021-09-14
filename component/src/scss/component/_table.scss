@@ -18,7 +18,7 @@ table {
     /*기본테이블*/
     thead {
       border-top: 1px solid $line-000000;
-      background: $bg-f7f7f7;
+      background-color: $bg-f7f7f7;
     }
     tr {
       border-bottom: 1px solid $line-d9d9d9;
@@ -66,7 +66,7 @@ table {
 
         th{
           border-top: 1px solid $line-000000;
-          background: $bg-f7f7f7;
+          background-color: $bg-f7f7f7;
         }
 
         td {
