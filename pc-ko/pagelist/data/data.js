@@ -355,6 +355,12 @@ data.RD = {
     },
     {
       stateClass: 'complete',
+      url: '03R&D_05빅데이터연구소',
+      category: 'RD',
+      page: '03R&D_05빅데이터연구소'
+    },
+    {
+      stateClass: 'complete',
       url: '06특허,논문_01특허_01목록',
       category: 'RD',
       page: '06특허,논문_01특허_01목록'
