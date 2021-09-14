@@ -58,6 +58,15 @@
       letter-spacing: -1.3px;
     }
   }
+  .desc-box{
+    p{
+      font-size: 16px;
+      line-height: 30px;
+      &.sub_title{
+
+      }
+    }
+  }
 
   /*이미지 공통*/
   .img{
@@ -68,6 +77,8 @@
     }
   }
 
+
+  /*생명정보학연구소*/
   .section_lifeInformation{
     .img{
       margin-right: 338px;
@@ -101,6 +112,13 @@
           margin-bottom: 40px;
         }
       }
+    }
+  }
+
+  /*빅데이터여연구소*/
+  .section_bigData{
+    .img{
+      margin-left: 338px;
     }
   }
 
