@@ -3,8 +3,8 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-<!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/05IR_01재무정보.png'})-->
-    @@include('../../html/include/component/header-white.html')
+    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/05IR_01재무정보.png'})
+<!--    @@include('../../html/include/component/header-white.html')-->
     <div class="container">
         @@include('../../html/include/common/breadcrumb.html',  {
             "depth1": "IR",
@@ -120,15 +120,15 @@
                     </tr>
                     </tbody>
                 </table>
-    
-    
-    
+
+
+
                 <table class="table table-rotate">
                     <tr>
                         <th>구분</th>
                         <td>유동자산</td>
                         <td>비유동자산</td>
-                        <td>자산 총계</td>
+                        <td class="table-bg">자산 총계</td>
                         <td>유동부채</td>
                         <td>비유동부채</td>
                         <td>부채 총계</td>
@@ -194,10 +194,6 @@
                     </tr>
                 </table>
                 <style>
-                    .table-rotate {
-                        display: block;
-                        width: 100%;
-                    }
                     .table-rotate tr {
                         display: inline-block;
                     }
@@ -205,18 +201,9 @@
                     .table-rotate tr td {
                         display: block;
                     }
-                    .table-rotate tr th {
-                        width: 300px;
-                    }
-                    .table-rotate tr td {
-                        width: 300px;
-                    }
-                    
-                    
-                    
                 </style>
-                
-                
+
+
             </div>
             <div class="financial_box">
                 <div class="subtitle">
