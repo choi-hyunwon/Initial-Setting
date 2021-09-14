@@ -2577,7 +2577,7 @@ $min-width: 1244px;
             content: '';
             display: block;
             position: absolute;
-            @include background-img($width: 1260px, $height: 600px, $category: 'macrogen', $img: 'bg-history-circle.svg');
+            @include background-img($width: 1260px, $height: 600px, $category: 'macrogen', $img: 'bg-history-circle.png');
             left: 0;
             bottom: 0;
             z-index: 1;
@@ -3424,8 +3424,6 @@ $min-width: 1244px;
     &.macrogen-history {
       .slide-tab-wrap .swiper-container .swiper-slide {
         width: auto;
-      }
-      .swiper-container {
       }
     }
   }
