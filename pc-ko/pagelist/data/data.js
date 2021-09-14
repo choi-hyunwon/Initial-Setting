@@ -349,6 +349,12 @@ data.RD = {
   list: [
     {
       stateClass: 'complete',
+      url: '03R&D_02생명정보학연구소',
+      category: 'RD',
+      page: '03R&D_02생명정보학연구소'
+    },
+    {
+      stateClass: 'complete',
       url: '06특허,논문_01특허_01목록',
       category: 'RD',
       page: '06특허,논문_01특허_01목록'
