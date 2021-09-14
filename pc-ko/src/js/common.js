@@ -36,7 +36,9 @@ front.common = (function () {
         } else {
           $('.header').show()
               .css({'position': 'relative'})
-              .removeClass('header-sm')
+              .removeClass('header-sm');
+          $('.header-main').show()
+              .css({'position': 'absolute'})
         }
       } else {
         // console.log('Down');
@@ -75,7 +77,7 @@ front.common = (function () {
           var file = this.files[0];
           var name = file.name;
           target.parent().addClass('withFile');
-          target.html(`<span>${name}</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>`);
+          target.html('<span>'+ name +'</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>');
         }
       }
       return false;

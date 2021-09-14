@@ -60,10 +60,20 @@ function jsLib() {
     'src/js/lib/swiper.min.js',
     'src/js/lib/jquery.sticky.js',
     'src/js/lib/jquery.grid-a-licious.js',
+    'src/js/lib/aos.js',
   ];
   return gulp.src(sourceLib)
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('dist/js'))
+}
+
+function cssIE() {
+  let sourceLib = [
+    'src/scss/lib/bootstrap-ie11.css',
+  ];
+  return gulp.src(sourceLib)
+      .pipe(concat('bootstrap-ie11.css'))
+      .pipe(gulp.dest('dist/css'))
 }
 
 function jsCommon() {
@@ -126,7 +136,7 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, copyCSS,copyJS, htmlPage,delInclude));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, cssIE, scss, copyIndex, copyImg, copyFonts, copyCSS,copyJS, htmlPage,delInclude));
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS,copyJS,  htmlPage, delInclude,beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg ));
 

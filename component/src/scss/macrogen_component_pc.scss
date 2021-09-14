@@ -1,6 +1,6 @@
 /*
 |---------------------------------------|
- component 공통관리 버전 v.0.2 / 0907
+ component 공통관리 버전 v.0.4 / 0914
 |---------------------------------------|
 */
 
@@ -54,7 +54,8 @@
 @import "fonts/ProximaNova";
 
 // library
-@import "lib/swiper.min";
+@import "lib/swiper";
+@import "lib/aos";
 
 // component
 @import "component/config";
@@ -74,6 +75,7 @@
 @import "component/slider";
 @import "component/tooltip";
 @import "component/modal";
+@import "component/etc";
 
 // guide
 @import "component/guide";

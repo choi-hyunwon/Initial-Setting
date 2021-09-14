@@ -124,15 +124,9 @@ data.guide = {
     }
   ]
 }
-data.main = {
+/*data.main = {
   title: 'Main',
   list: [
-    {
-      stateClass: 'working',
-      url: 'Intro',
-      category: 'main',
-      page: 'Intro'
-    },
     {
       stateClass: 'working',
       url: 'Main',
@@ -140,45 +134,81 @@ data.main = {
       page: 'Main'
     }
   ]
-}
+}*/
 data.macrogen = {
   title: 'Macrogen',
   list: [
     {
       stateClass: 'waiting',
+      url: 'Main',
+      category: 'macrogen',
+      page: 'Main'
+    },
+    {
+      stateClass: 'complete',
       url: '01Macrogen_01기업개요',
       category: 'macrogen',
       page: '01Macrogen_01기업개요'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_02경영진',
       category: 'macrogen',
       page: '01Macrogen_02경영진'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
+      url: '01Macrogen_03연혁',
+      category: 'macrogen',
+      page: '01Macrogen_03연혁'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04비전',
+      category: 'macrogen',
+      page: '01Macrogen_04비전'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_05인증',
+      category: 'macrogen',
+      page: '01Macrogen_05인증'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_06글로벌네트워크',
+      category: 'macrogen',
+      page: '01Macrogen_06글로벌네트워크'
+    },
+    {
+      stateClass: 'complete',
       url: '01Macrogen_03지속가능경영_01윤리경영',
       category: 'macrogen',
       page: '01Macrogen_03지속가능경영_01윤리경영'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
       category: 'macrogen',
       page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
       category: 'macrogen',
       page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_04채용_01인재상',
       category: 'macrogen',
       page: '01Macrogen_04채용_01인재상'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04채용_02인사제도',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_02인사제도'
     },
     {
       stateClass: 'complete',
@@ -191,18 +221,6 @@ data.macrogen = {
       url: '01Macrogen_04채용_03채용안내_02조회',
       category: 'macrogen',
       page: '01Macrogen_04채용_03채용안내_02조회'
-    },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_05인증',
-      category: 'macrogen',
-      page: '01Macrogen_05인증'
-    },
-    {
-      stateClass: 'waiting',
-      url: '01Macrogen_06글로벌네트워크',
-      category: 'macrogen',
-      page: '01Macrogen_06글로벌네트워크'
     },
   ]
 }
@@ -350,6 +368,12 @@ data.RD = {
   list: [
     {
       stateClass: 'complete',
+      url: '03R&D_02생명정보학연구소',
+      category: 'RD',
+      page: '03R&D_02생명정보학연구소'
+    },
+    {
+      stateClass: 'complete',
       url: '06특허,논문_01특허_01목록',
       category: 'RD',
       page: '06특허,논문_01특허_01목록'
@@ -361,7 +385,7 @@ data.RD = {
       page: '06특허,논문_02논문_01목록'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '06특허,논문_02논문_01목록없음',
       category: 'RD',
       page: '06특허,논문_02논문_01목록없음'
@@ -378,7 +402,7 @@ data.newsroom = {
       page: '01뉴스_01목록'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01뉴스_01목록없음',
       category: 'newsroom',
       page: '01뉴스_01목록없음'
@@ -390,13 +414,13 @@ data.newsroom = {
       page: '01뉴스_02조회'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02미디어라이브러리_01목록',
       category: 'newsroom',
       page: '02미디어라이브러리_01목록'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02미디어라이브러리_02조회',
       category: 'newsroom',
       page: '02미디어라이브러리_02조회'
@@ -437,13 +461,13 @@ data.IR = {
       page: '02공시정보_01공고_02조회'
     },
     {
-      stateClass: 'working',
+      stateClass: 'waiting',
       url: '02공시정보_02공시정보',
       category: 'IR',
       page: '02공시정보_02공시정보'
     },
     {
-      stateClass: 'working',
+      stateClass: 'waiting',
       url: '02공시정보_03주가정보',
       category: 'IR',
       page: '02공시정보_03주가정보'
@@ -472,19 +496,19 @@ data.etc = {
   title: 'Etc',
   list: [
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '01개인정보처리방침',
       category: 'etc',
       page: '01개인정보처리방침'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '02영상정보_운영_관리',
       category: 'etc',
       page: '02영상정보_운영_관리'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '03내부정보관리규정',
       category: 'etc',
       page: '03내부정보관리규정'
