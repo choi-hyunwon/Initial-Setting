@@ -389,6 +389,12 @@ data.business ={
       category: 'business',
       page: '임상진단서비스_01암유전체검사'
     },
+    {
+      stateClass: 'working',
+      url: '임상진단서비스_02암발생원인',
+      category: 'business',
+      page: '임상진단서비스_02암발생원인'
+    },
 
 
   ]
