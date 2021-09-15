@@ -476,6 +476,12 @@ data.RD = {
     },
     {
       stateClass: 'complete',
+      url: '03R&D_04싱크진연구소',
+      category: 'RD',
+      page: '03R&D_04싱크진연구소'
+    },
+    {
+      stateClass: 'complete',
       url: '03R&D_05빅데이터연구소',
       category: 'RD',
       page: '03R&D_05빅데이터연구소'

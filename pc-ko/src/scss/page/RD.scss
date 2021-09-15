@@ -113,10 +113,23 @@
   }
 
 
-  /*생명정보학/정밀의학/더바이옴 공통*/
+  /*생명정보학/정밀의학/더바이옴/싱크진 공통*/
   .section_info_list{
     width: $min-width;
     margin: 0 auto;
+    &.syncgenes-area{
+     .box{
+       margin-bottom: 80px;
+       .sub_title{
+         font-size: 36px;
+       }
+       .sub_desc{
+         img{
+           margin-bottom: 0;
+         }
+       }
+     }
+    }
     .box{
       margin-bottom: 120px;
       &:last-of-type{
@@ -129,6 +142,14 @@
         display: inline-block;
         float: left;
         width: 428px;
+        >span{
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          color: #454545;
+          display: block;
+          padding-top: 20px;
+        }
       }
       .sub_desc{
         display: inline-block;
@@ -300,7 +321,17 @@
     }
   }
 
-
+ /*싱크진 연구소*/
+  .section_syncgenes{
+    margin-bottom: 120px;
+    .img{
+      margin-bottom: 100px;
+      height: 560px;
+    }
+    .divider{
+      margin-top: 90px;
+    }
+  }
 
 }
 
