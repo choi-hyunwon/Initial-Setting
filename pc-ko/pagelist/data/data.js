@@ -235,46 +235,46 @@ data.business ={
   list: [
     {
       stateClass: 'complete',
-      url: '01연구서비스_01Genome',
+      url: '연구서비스_NGS',
       category: 'business',
-      page: '01연구서비스_01Genome'
+      page: '연구서비스_NGS'
     },
-    {
-      stateClass: 'complete',
-      url: '01연구서비스_02Exsome',
-      category: 'business',
-      page: '01연구서비스_02Exsome'
-    },
-    {
-      stateClass: 'complete',
-      url: '01연구서비스_03Transcriptome',
-      category: 'business',
-      page: '01연구서비스_03Transcriptome'
-    },
-    {
-      stateClass: 'complete',
-      url: '01연구서비스_04Epigenome',
-      category: 'business',
-      page: '01연구서비스_04Epigenome'
-    },
-    {
-      stateClass: 'complete',
-      url: '01연구서비스_05Cell',
-      category: 'business',
-      page: '01연구서비스_05Cell'
-    },
-    {
-      stateClass: 'complete',
-      url: '01연구서비스_06ATAC',
-      category: 'business',
-      page: '01연구서비스_06ATAC'
-    },
-    {
-      stateClass: 'complete',
-      url: '01연구서비스_07Spatial',
-      category: 'business',
-      page: '01연구서비스_07Spatial'
-    },
+    // {
+    //   stateClass: 'complete',
+    //   url: '01연구서비스_02Exsome',
+    //   category: 'business',
+    //   page: '01연구서비스_02Exsome'
+    // },
+    // {
+    //   stateClass: 'complete',
+    //   url: '01연구서비스_03Transcriptome',
+    //   category: 'business',
+    //   page: '01연구서비스_03Transcriptome'
+    // },
+    // {
+    //   stateClass: 'complete',
+    //   url: '01연구서비스_04Epigenome',
+    //   category: 'business',
+    //   page: '01연구서비스_04Epigenome'
+    // },
+    // {
+    //   stateClass: 'complete',
+    //   url: '01연구서비스_05Cell',
+    //   category: 'business',
+    //   page: '01연구서비스_05Cell'
+    // },
+    // {
+    //   stateClass: 'complete',
+    //   url: '01연구서비스_06ATAC',
+    //   category: 'business',
+    //   page: '01연구서비스_06ATAC'
+    // },
+    // {
+    //   stateClass: 'complete',
+    //   url: '01연구서비스_07Spatial',
+    //   category: 'business',
+    //   page: '01연구서비스_07Spatial'
+    // },
     {
       stateClass: 'complete',
       url: '02연구서비스_01Standard',
