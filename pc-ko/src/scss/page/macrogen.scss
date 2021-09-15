@@ -31,6 +31,10 @@ $min-width: 1244px;
     background-image: url(../img/@temp/macrogen/macrogen_bg_1.png);
     background-size: 1920px 980px;
     background-position: center;
+    animation-duration: 2s;
+    transition: 2s;
+    animation-name: subAnimation;
+    background-attachment: fixed;
 
     .frame {
       position: relative;
@@ -110,6 +114,7 @@ $min-width: 1244px;
 
     &.no-bg {
       background-image: none;
+      animation: none;
 
       &::before {
         content: none;
@@ -2043,22 +2048,22 @@ $min-width: 1244px;
           }
         }
       }
+    }
 
-      .DNA {
-        position: absolute;
-        background-size: contain;
+    .DNA {
+      position: absolute;
+      background-size: contain;
 
-        &.DNA-1 {
-          @include background-img($width: 647px, $height: 674px, $category: 'macrogen', $img: 'img-DNA.svg');
-          top: -295px;
-          right: 292px;
-        }
+      &.DNA-1 {
+        @include background-img($width: 732px, $height: 777px, $category: 'macrogen', $img: 'img-DNA.svg');
+        top: 2800px;
+        right: 292px;
+      }
 
-        &.DNA-2 {
-          @include background-img($width: 647px, $height: 584px, $category: 'macrogen', $img: 'img-DNA2.svg');
-          bottom: 150px;
-          right: 216px;
-        }
+      &.DNA-2 {
+        @include background-img($width: 732px, $height: 777px, $category: 'macrogen', $img: 'img-DNA2.svg');
+        top: 5115px;
+        right: 476px;
       }
     }
   }
@@ -2817,6 +2822,7 @@ $min-width: 1244px;
       .inner {
         position: relative;
         height: 338px;
+        margin-bottom: 120px;
       }
 
       .font-h7 {
@@ -2961,6 +2967,8 @@ $min-width: 1244px;
         margin: 0 auto;
 
         .inner {
+          position: relative;
+          z-index: 1;
           padding-top: 180px;
           padding-left: 50px;
           color: $gray-ffffff;
@@ -3001,20 +3009,21 @@ $min-width: 1244px;
 
         .img {
           position: absolute;
+          opacity: 1 !important;
 
           &.img-1 {
             right: 252px;
-            top: 199px;
+            top: 300px;
           }
 
           &.img-2 {
-            right: 337px;
-            top: 389px;
+            right: 320px;
+            top: 500px;
           }
 
           &.img-3 {
             right: 298px;
-            top: 808px;
+            top: 800px;
           }
         }
       }
@@ -3604,6 +3613,18 @@ $min-width: 1244px;
         }
       }
     }
+  }
+}
+
+@keyframes subAnimation {
+  from {
+    opacity: 0;
+    background-size: 1920px * 2 980px * 2;
+  }
+
+  to {
+    opacity: 1;
+    background-size: 1920px 980px;
   }
 }
 
