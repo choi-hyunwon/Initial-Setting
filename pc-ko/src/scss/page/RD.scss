@@ -38,6 +38,10 @@
     @include background-img($width: 100%, $height: 600px, $category: 'RD', $img: 'bg-visual.svg');
   }
 
+  .divider{
+    margin-top: 120px;
+  }
+
   /*폰트 공통*/
   .info-box{
     width: $min-width;
@@ -74,9 +78,6 @@
         letter-spacing: -1.3px;
       }
     }
-    .divider{
-      margin-top: 120px;
-    }
   }
 
   /*이미지 공통*/
@@ -95,8 +96,24 @@
       margin-right: 338px;
     }
   }
+  /*더바이옴연구소*/
+  .section_theBiome{
+    .img{
+      margin-left: 338px;
+    }
+  }
+  .biome_area{
+    padding-top: 120px;
+    .sub_title{
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 40px;
+    }
+  }
 
-  /*생명정보학/정밀의학 공통*/
+
+  /*생명정보학/정밀의학/더바이옴 공통*/
   .section_info_list{
     width: $min-width;
     margin: 0 auto;
@@ -282,6 +299,9 @@
       }
     }
   }
+
+
+
 }
 
 
