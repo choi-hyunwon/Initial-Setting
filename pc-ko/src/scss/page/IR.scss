@@ -81,20 +81,29 @@
 
   /*투자자문의*/
   .question_box{
+    margin-bottom: 120px;
     .text-area{
       position: relative;
       width: $min-width;
-      margin:0 auto;
+      margin:0 auto 80px;
+      .font-h4{
+        line-height: 64px;
+        letter-spacing: -3px;
+        margin-bottom: 58px;
+      }
       .number{
         font-size: 26px;
         line-height: 32px;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.25px;
       }
       .btn{
         border:2px solid #000000;
         position: absolute;
         right: 0;
         bottom: 0;
+        span{
+          margin-right: 30px;
+        }
       }
 
     }
@@ -122,7 +131,7 @@
         padding-top: 25px;
         span{
           vertical-align: text-bottom;
-          padding-left: 3px;
+          padding-left: 7px;
           font-weight: 500;
           color: #909090;
           font-size: 18px;
@@ -149,11 +158,11 @@
       }
     }
     .divider{
-      margin: 100px 0;
+      margin: 102px 0;
     }
   }
   /*버튼 여백*/
   .btn-box{
-    padding-top: 91px;
+    padding-top: 140px;
   }
 }

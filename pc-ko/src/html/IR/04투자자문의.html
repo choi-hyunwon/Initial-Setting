@@ -3,8 +3,8 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap">
-    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/05IR_04투자자문의.png'})
-<!--    @@include('../../html/include/component/header-white.html')-->
+<!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/05IR_04투자자문의.png'})-->
+    @@include('../../html/include/component/header-white.html')
     <div class="container container-fluid">
         <div class="section_IR">
             <div class="question_box">
@@ -16,7 +16,7 @@
                     <div class="font-h1">투자자 문의</div>
                     <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
                     <span class="number">Tel. 02-3489-7558</span>
-                    <a href="#" class="btn btn-white btn-round"><i class="icon icon-earth-black"></i><span>btn-round</span></a>
+                    <a href="#" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
 
                 </div>
                 <div class="img-area"></div>
@@ -38,8 +38,16 @@
                             <option value="1">011</option>
                             <option value="2">019</option>
                         </select>
-                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리">
-                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리">
+                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                        <script>
+                            /*숫자 글자수 제한*/
+                            function lengthLimit4(e){
+                                if(e.value.length > 4){
+                                    e.value = e.value.slice(0, 4)
+                                }
+                            }
+                        </script>
                     </div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span></p>
                 </div>

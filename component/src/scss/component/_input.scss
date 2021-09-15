@@ -3,8 +3,19 @@
  v.0.1 주연 : 최초 작업 -- 2021.08.31
  v.0.2 선미 : textarea.form-control {height:600px-> 400px} 변경- 2021.09.01
  v.0.3 주연 : .icon-pdf => .icon - 2021.09.07
+ v.0.4 선미 : input number 증가 감소 버튼 제거 - 2021.09.15
 |----------------------------------|
 */
+
+/*input number 증가 감소 버튼 제거*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
 /* input-group */
 .input-group {
   margin-bottom: 50px;

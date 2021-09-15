@@ -503,7 +503,7 @@ data.IR = {
       page: '03IR소식_02조회'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '04투자자문의',
       category: 'IR',
       page: '04투자자문의'
