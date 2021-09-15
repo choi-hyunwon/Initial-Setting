@@ -239,6 +239,18 @@ data.business ={
       category: 'business',
       page: '연구서비스_NGS'
     },
+    {
+      stateClass: 'complete',
+      url: '연구서비스_CES',
+      category: 'business',
+      page: '연구서비스_CES'
+    },
+    {
+      stateClass: 'complete',
+      url: '연구서비스_Oligo',
+      category: 'business',
+      page: '연구서비스_Oligo'
+    },
     // {
     //   stateClass: 'complete',
     //   url: '01연구서비스_02Exsome',
@@ -275,12 +287,12 @@ data.business ={
     //   category: 'business',
     //   page: '01연구서비스_07Spatial'
     // },
-    {
-      stateClass: 'complete',
-      url: '02연구서비스_01Standard',
-      category: 'business',
-      page: '02연구서비스_01Standard'
-    },
+    // {
+    //   stateClass: 'complete',
+    //   url: '02연구서비스_01Standard',
+    //   category: 'business',
+    //   page: '02연구서비스_01Standard'
+    // },
     {
       stateClass: 'complete',
       url: '02연구서비스_02Identification',
