@@ -30,37 +30,8 @@
                     </div>
                 </div>
             </div>
-            <!--슬라이드 스크립트-->
+            <!--스크립트-->
             <script>
-                var swiper = new Swiper("._swiperTab", {
-                    slidesPerView: "auto",
-                    spaceBetween: 0,
-                    centeredSlides: false,
-                    watchActiveIndex: true,
-                    navigation: {
-                        nextEl: "._slideRight",
-                        prevEl: "._slideLeft",
-                    },
-                });
-
-                $(document).ready(function (){
-                    var idx = $('._swiperTab .swiper-slide').length;
-                    var sum= 0;
-
-                    // slide wrap width
-                    for (var j = 0; j < idx; j++) {
-                        sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-                    }
-                    $('.swiper-wrapper').css('width',sum)
-
-                    // slide width
-                    for (var i = 0; i <= idx; i++) {
-                        var target = $(`.swiper-slide:eq(${i})`);
-                        var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
-                        target.css('width',idxWidth)
-                    }
-                })
-
                 $('._swiperTab .swiper-slide').on('click', function(){
                     var idx = $(this).index();
                     $(this).addClass('active').siblings().removeClass('active');
@@ -69,12 +40,9 @@
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                 });
-
-                $('.swiper-notification').remove();
-
             </script>
             <div class="info-box-wrap">
-                <!--탭컨텐츠-->
+                <!--Axen™ COVID-19 RT 진단키트-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Axen™ COVID-19 RT 진단키트</p>
                     <p class="subject">코로나바이러스감염증-19(COVID-19)의 감염 여부를 2시간 내 확인할 수 있는 체외진단 의료기기입니다.</p>
@@ -232,6 +200,89 @@
                             <div class="content clearfix">
                                 <a href="#" class="item next">
                                     <div class="title">암 발생 원인 발굴</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+
+                    </script>
+                </div>
+                <!--스마트 모바일 랩-->
+                <div class="info-box">
+                    <p class="font-h4 main-title">스마트 모바일 랩</p>
+                    <p class="subject">스마트 모바일 랩(Smart Mobile Lab)은 마크로젠이 전 세계 코로나19 대응을 위해 국내 최초로 구축한 ‘코로나19 현장 검사 시스템’입니다.</p>
+                    <p class="desc img_bottom">코로나 현장 검사를 위한 이동형 소형 검사실로, 바이러스 핵산 추출, 유전자 검사 및 분석 결과 도출까지 전 과정을 진행할 수 있는 올인원(all-in-one) 시스템으로 구성되어 있습니다.</p>
+                    <div class="img">
+                        <img src="../../img/@temp/business/img-smartmobile-intro.svg" alt="스마트모바일랩">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-h8 title img">Brochure</p>
+                            <div class="file-download">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="item">
+                                            <i class="icon icon-pdf"></i>
+                                            <span class="title">Smart Mobile Lab Brochure.pdf</span>
+                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title img">Detection Target Region</p>
+                            <ul class="list-circle-dot">
+                                <li>K-방역모델 사용</li>
+                                <li>실험 및 예산에 따른 브랜드별 장비 선택 가능</li>
+                                <li>전원 공급 방식 선택 가능 (외부전원 / 태양열 발전 선택 가능)</li>
+                                <li>유지/보수 서비스 제공</li>
+                                <li>검사자 교육 제공 (온라인/오프라인)</li>
+                                <li>설치/이동 용이</li>
+                                <li>이동식 실험 / 음압병동 전문 설계 /시공 업체 협력</li>
+                            </ul>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title data_bottom">Specifications</p>
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:33.3333%;">
+                                    <col style="width:33.3333%;">
+                                    <col style="width:33.3333%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>Name of Kit</th>
+                                    <th>Cat.No.</th>
+                                    <th>BSL-Level</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Smart Mobile Lab(40ft)</td>
+                                    <td>SML01-100</td>
+                                    <td>BSL- 2 Level</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title img">Process</p>
+                            <div class="img">
+                                <img src="../../img/@temp/business/img_workflow-level7.svg" alt="workflow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                    </div>
+                    <hr class="divider">
+                    <div class="board">
+                        <div class="navigation">
+                            <div class="content clearfix">
+                                <a href="#" class="item prev">
+                                    <div class="title">Axen™ COVID-19 RT 진단키트</div>
                                 </a>
                             </div>
                         </div>
