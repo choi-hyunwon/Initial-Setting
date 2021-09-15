@@ -29,14 +29,20 @@
                     </a>
                 </div>
             </nav>
+            <script>
+                $('#tab a').on('click', function (event) {
+                    event.preventDefault()
+                    $(this).tab('show')
+                })
+            </script>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">
                     <!-- s  회장 -->
                     <div class="section-chairman">
-                        <div class="inner">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                             <div class="font-h3">
-                                안녕하세요,<br/>
-                                마크로젠 회장 서정선입니다.
+                                마크로젠의 목표는 전세계 모두에게<br/>
+                                DNA 설계도를 드리는 것입니다.
                             </div>
                             <div class="chairman-info">
                                 <div class="info">
@@ -64,7 +70,7 @@
 
                     <!-- s  회장 경력-->
                     <div class="section-chairman-career">
-                        <div class="inner">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                             <div class="item">
                                 <div class="title"><span>학력</span></div>
                                 <div class="list">
@@ -195,16 +201,16 @@
                 <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
                     <!-- s  CEO -->
                     <div class="section-ceo">
-                        <div class="inner">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                             <div class="font-h3">
                                 대한민국 대표 생명공학 기업 마크로젠<br/>
                                 대표이사 이수강입니다.
                             </div>
                         </div>
-                        <div class="img">
+                        <div class="img" data-aos="fade-up" data-aos-duration="2000">
                             <img src="../../img/macrogen/img-ceo.png" alt="대표이사 이수강">
                         </div>
-                        <div class="inner">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                             <div class="info">
                                 <div class="item">
                                     <div class="font-h7">
@@ -242,7 +248,7 @@
 
                     <!-- s  CEO 경력-->
                     <div class="section-ceo-career">
-                        <div class="inner">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                             <div class="item">
                                 <div class="title"><span>학력 및 약력</span></div>
                                 <div class="list">
@@ -303,11 +309,5 @@
     </div>
     @@include('../../html/include/component/footer.html')
 </div>
-<script>
-    $('#tab a').on('click', function (event) {
-        event.preventDefault()
-        $(this).tab('show')
-    })
-</script>
 </body>
 </html>

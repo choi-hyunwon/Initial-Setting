@@ -21,7 +21,7 @@
         <div class="macrogen macrogen-vision">
             <!-- s vision -->
             <div class="section-vision">
-                <div class="inner">
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="title">Vision</div>
                     <div class="diagram">
                         <div class="img img-ko">
@@ -49,24 +49,24 @@
 
             <div class="parallax-DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
             <script>
-                var rellax = new Rellax('._DNA1');
+                var rellax1 = new Rellax('._DNA1');
             </script>
 
             <!-- s vision -->
             <div class="section-slogan">
                 <div class="bg">
-                    <div class="inner">
+                    <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                         <div class="font-h7">슬로건</div>
                         <div class="title">Humanizing<br/>Genomics</div>
                         <div class="font-body-h">인간의 유전체 정보 및 데이터 분석 기술을 통해<br/>환자 개개인의 유전적 특성에 따른<br/>맞춤 의학을 제시한다는 뜻을 담고 있습니다.<br/>널리 인간 세계를 이롭게 한다는<br/>‘홍익인간(弘益人間)’의 사상이 바탕 되었습니다.</div>
                     </div>
-                    <div class="img img-1" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="img img-1" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="4" data-rellax-percentage="0.5">
                         <img src="../../img/macrogen/img-vision-parallax-1.png" alt="dna">
                     </div>
-                    <div class="img img-2" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="img img-2" data-aos="fade-down" data-aos-duration="2000" data-rellax-speed="4" data-rellax-percentage="0.5">
                         <img src="../../img/macrogen/img-vision-parallax-2.png" alt="dna">
                     </div>
-                    <div class="img img-3" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="img img-3" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="4" data-rellax-percentage="0.5">
                         <img src="../../img/macrogen/img-vision-parallax-3.png" alt="dna">
                     </div>
                 </div>
@@ -75,11 +75,14 @@
 
             <div class="parallax-DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
             <script>
-                var rellax = new Rellax('._DNA2');
+                var rellax2 = new Rellax('._DNA2');
+                var rellax3 = new Rellax('.img-1');
+                var rellax4 = new Rellax('.img-2');
+                var rellax5 = new Rellax('.img-3');
             </script>
 
             <!-- s 경영이념 -->
-            <div class="section-management-philosophy">
+            <div class="section-management-philosophy" data-aos="fade-up" data-aos-duration="2000">
                 <div class="img"><img src="../../img/macrogen/img-management-philosophy.png" alt="경영이념"></div>
                 <div class="info">
                     <div class="font-h7">경영이념</div>
@@ -99,8 +102,13 @@
             </div>
             <!-- e 경영이념 -->
 
+            <div class="parallax-DNA DNA-3 _DNA3" data-rellax-speed="10"></div>
+            <script>
+                var rellax6 = new Rellax('._DNA3');
+            </script>
+
             <!-- s 핵심가치 -->
-            <div class="section-core-values">
+            <div class="section-core-values" data-aos="fade-up" data-aos-duration="2000">
                 <div class="inner">
                     <div class="font-h7">핵심가치</div>
                     <div class="values">
@@ -139,8 +147,5 @@
     </div>
     @@include('../../html/include/component/footer.html')
 </div>
-<script>
-    AOS.init();
-</script>
 </body>
 </html>

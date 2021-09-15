@@ -31,6 +31,7 @@ img-DNA3 ->왼쪽히단
 .main-bg{
   overflow-x: hidden;
   position: relative;
+  z-index: 10; /*totop 으로 인해 추가*/
   .header-main {
     background: transparent;
     position: absolute;
@@ -60,13 +61,13 @@ img-DNA3 ->왼쪽히단
         }
 
         &.visual_01{
-          background: url("../img/main/img-main_01.svg") no-repeat center center;
+          background: url("../img/main/img-main_01.svg") no-repeat center center / cover;
         }
         &.visual_02{
-          background: url("../img/main/img-main_01.svg") no-repeat center center;
+          background: url("../img/main/img-main_01.svg") no-repeat center center / cover;
         }
         &.visual_03{
-          background: url("../img/main/img-main_01.svg") no-repeat center center;
+          background: url("../img/main/img-main_01.svg") no-repeat center center / cover;
         }
 
         .text-box{
@@ -99,35 +100,36 @@ img-DNA3 ->왼쪽히단
           }
 
         }
-        .scroll-wrap {
-          position: absolute;
-          bottom: -85px;
-          left:5px;
-          .scroll {
-            position: absolute;
-            width: 2px;
-            height: 100px;
-            background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+    .scroll-wrap {
+      position: absolute;
+      bottom: 100px;
+      z-index: 11;
+      left: 342px;
+      .scroll {
+        position: absolute;
+        width: 2px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.2);
 
-            .bar {
-              position: absolute;
-              width: 2px;
-              height: 60px;
-              background-color: #fff;
-              bottom: 0;
-              left: 0;
-            }
-            &::after {
-              content: '';
-              position: absolute;
-              top: -14px;
-              left: -1px;
-              width: 4px;
-              height: 4px;
-              border-radius: 50%;
-              background-color: #fff;
-            }
-          }
+        .bar {
+          position: absolute;
+          width: 2px;
+          height: 60px;
+          background-color: #fff;
+          bottom: 0;
+          left: 0;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: -14px;
+          left: -1px;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #fff;
         }
       }
     }
@@ -136,46 +138,6 @@ img-DNA3 ->왼쪽히단
       right: 160px;
       top:-207px;
     }
-   /* .swiper-pagination{
-            top:295px;
-            left:340px;
-            height: 50px;
-            width: 180px;
-            text-align: left;
-            display: inline-block;
-            .swiper-pagination-bullet{
-              vertical-align: middle;
-              display: inline-block;
-              width: 10px;
-              height: 10px;
-              background-color: #ffffff;
-              opacity: 0.2;
-              margin: 0 25px;
-            }
-            .swiper-pagination-bullet-active{
-              opacity: 1;
-              position: relative;
-              &:after{
-                content: '';
-                display: inline-block;
-                width: 43px;
-                height: 48px;
-                position: absolute;
-                left: -19px;
-                top:-19px;
-                background: url("../img/main/ico-loading-active.svg") no-repeat center center;
-                animation: rotate-loading 2s linear infinite;
-              }
-              @keyframes rotate-loading {
-                0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
-                100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
-              }
-            }
-
-
-
-          }*/
-
     .swiper-pagination {
       top: 295px;
       left: 340px;
@@ -226,9 +188,15 @@ img-DNA3 ->왼쪽히단
     }
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
       bottom: 40px;
+      background: rgba(255, 255, 255, 0.1) url("../img/common/ico-arrow-left-md-white.svg") no-repeat center center;
+      z-index: 10;
+
+
     }
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+      z-index: 10;
       bottom: 93px;
+      background: rgba(255, 255, 255, 0.1) url("../img/common/ico-arrow-right-md-white.svg") no-repeat center center;
     }
   }
   .stock_information{
@@ -240,27 +208,27 @@ img-DNA3 ->왼쪽히단
     transition: right 1s;
     right: -100%;
     top:0;
-    &:before{
-      content: '';
+
+    .close_btn{
       width: 37px;
       height: 100%;
       position: absolute;
       left: -37px;
-      background: url("../img/main/img-slideBar.svg") no-repeat left center;
+      background: url("../img/main/img-slideBar.svg") no-repeat left center / cover;
+      cursor: pointer;
+      display: inline-block;
     }
     &.active{
       right: 0;
       transition: right 1s;
-      &:before{
-        content: '';
-        width: 37px;
-        height: 100%;
-        position: absolute;
+      overflow-y: hidden;
+      .close_btn{
         left: 0;
-        background: url("../img/main/img-slideBar.svg") no-repeat left center;
         transform: rotate(-180deg);
       }
     }
+
+
     .stock_box{
       padding: 180px 290px;
       .title{
@@ -278,6 +246,7 @@ img-DNA3 ->왼쪽히단
 }
 
 .main-page{
+  overflow-x: hidden;
   /*공통폰트*/
   .info-box{
     width: $min-width;
@@ -338,7 +307,6 @@ img-DNA3 ->왼쪽히단
       .btn-list{
         display: flex;
         height: 100%;
-        margin: 0 50px;
         padding: 0 290px;
         background: url("../img/main/img-shortcuts_01.svg") no-repeat center center /cover;
         li{
@@ -601,7 +569,9 @@ img-DNA3 ->왼쪽히단
   }
   .section-map {
     position: relative;
-    @include background-img($width: 1920px, $height: 920px, $category: 'main', $img: 'bg-map.svg');
+    background: url("../img/main/bg-map.svg") no-repeat center center /cover;
+    width: 100%;
+    height: 920px;
     .inner{
       width: $min-width;
       margin: 0 auto;

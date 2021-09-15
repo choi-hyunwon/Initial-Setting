@@ -338,56 +338,6 @@
 
     }
   }
-
-  .section-webVersion{
-    position: relative;
-    width: 100%;
-    height: 280px;
-    background: url('../img/@temp/bg-webVersion.svg' ) no-repeat center center / cover;
-    padding: 60px 30px;
-    box-sizing: border-box;
-    z-index: 0;
-    &:before{
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,3,99,0.65);
-      z-index: 1;
-    }
-    .info-box {
-     position: relative;
-      z-index: 2;
-      p {
-        color: #ffffff;
-        font-weight: bold;
-        font-size: 18px;
-        Line-height: 32px;
-        margin-bottom: 30px;
-      }
-
-      .btn {
-        text-decoration: none;
-        border: 1px solid #2E87EF;
-        background-color: #2E87EF;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-        padding: 13px 30px;
-        width: 100%;
-        height: 64px;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 6px;
-        vertical-align: middle;
-      }
-    }
-  }
 }
 
 .footer{

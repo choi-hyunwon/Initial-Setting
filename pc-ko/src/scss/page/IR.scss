@@ -20,12 +20,52 @@
         color:#707070;
       }
     }
+
     .table{
-      tbody{
-        .table-bg{
+      &.table-rotate{
+        width: 100%;
+        tr{
+          display: inline-block;
+          width: 25%;
+          &:first-of-type{
+            th,td{
+              padding-left: 60px;
+            }
+          }
+          &:last-of-type{
+            th,td{
+              padding-right: 60px;
+            }
+          }
+          th{
+            height: 100px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px 30px;
+            border-bottom: 1px solid #d9d9d9;
+            border-spacing: 0;
+            border-right: 1px solid #f7f7f7;
+            background-color: #f7f7f7!important;
+            &:last-of-type{
+              border-right: none;
+            }
+          }
           td{
-            font-weight: bold;
-            color:#000000;
+            display: block;
+            border-bottom: 1px solid #D9D9D9;
+            padding: 25px 30px 24px;
+            border-spacing: 0;
+          &.table-bg{
+            background-color: #f5f8fb!important;
+              font-weight: bold;
+              color:#000000;
+            }
+          }
+          .font-medium{
+            font-weight: 500;
+            color:#454545;
           }
         }
       }
@@ -37,9 +77,45 @@
     text-align: right;
     padding-top: 9px;
   }
+
+
   /*투자자문의*/
+  .question_box{
+    margin-bottom: 120px;
+    .text-area{
+      position: relative;
+      width: $min-width;
+      margin:0 auto 80px;
+      .font-h4{
+        line-height: 64px;
+        letter-spacing: -3px;
+        margin-bottom: 58px;
+      }
+      .number{
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.25px;
+      }
+      .btn{
+        border:2px solid #000000;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        span{
+          margin-right: 30px;
+        }
+      }
+
+    }
+    .img-area{
+      background: url('../img/IR/img-handshake.svg') no-repeat center center / cover;
+      height: 560px;
+    }
+
+  }
   .privacy_box{
-    padding:100px 0 50px;
+    margin:0 auto;
+    width: $min-width;
     .font-h5{
       margin-bottom: 60px;
       line-height: 52px;
@@ -55,7 +131,7 @@
         padding-top: 25px;
         span{
           vertical-align: text-bottom;
-          padding-left: 3px;
+          padding-left: 7px;
           font-weight: 500;
           color: #909090;
           font-size: 18px;
@@ -81,9 +157,12 @@
         }
       }
     }
+    .divider{
+      margin: 102px 0;
+    }
   }
   /*버튼 여백*/
   .btn-box{
-    padding-top: 91px;
+    padding-top: 140px;
   }
 }

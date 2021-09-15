@@ -175,6 +175,12 @@ data.macrogen = {
       page: '01Macrogen_05인증'
     },
     {
+      stateClass: 'waiting',
+      url: '01Macrogen_06ContactUs',
+      category: 'macrogen',
+      page: '01Macrogen_06ContactUs'
+    },
+    {
       stateClass: 'complete',
       url: '01Macrogen_06글로벌네트워크',
       category: 'macrogen',
@@ -575,7 +581,7 @@ data.IR = {
       page: '03IR소식_02조회'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '04투자자문의',
       category: 'IR',
       page: '04투자자문의'

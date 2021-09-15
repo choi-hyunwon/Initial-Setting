@@ -20,6 +20,8 @@
       line-height: 17px;
       text-transform: uppercase;
       color: $gray-909090;
+      display: flex;
+      align-items: center;
 
     &.active {
         color: $gray-000000;
