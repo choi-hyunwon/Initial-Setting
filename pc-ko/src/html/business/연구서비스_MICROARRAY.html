@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+  <!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/02BUSINESS_01연구서비스_01NGS_01WholeGenomeSequencing.png'})-->
+  <div class="full-bg business_bg">
+    @@include('../../html/include/component/header.html')
+    <div class="frame frameB">
+      @@include('../../html/include/common/breadcrumb-white-depth3.html',{
+      "depth1": "Business",
+      "depth2": "연구서비스",
+      "depth3": "OLIGO",
+      })
+      <div class="hero-title">MICROARRAY</div>
+      <a href="#" class="btn btn-round btn-service">
+        <span>SERVICE</span>
+        <i class="icon icon-arrow-bottom-short-white"></i>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section_business">
+      <!--메인 컨텐츠-->
+      @@include('../../html/include/component/busniess/subject-box_microarray.html')
+      <!--탭 슬라이드-->
+      <div class="tab-box">
+        <p class="font-h4 title">SERVICE</p>
+        <div class="slide-tab-wrap">
+          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
+              <div class="swiper-slide active"><a href="#">Expression Microarray</a></div>
+              <div class="swiper-slide "><a href="#">Genome Microarray</a></div>
+              <div class="swiper-slide"><a href="#">Epigenome Microarray</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--슬라이드 스크립트-->
+      <script>
+        var swiper = new Swiper("._swiperTab", {
+          slidesPerView: "auto",
+          spaceBetween: 0,
+          centeredSlides: false,
+          watchActiveIndex: true,
+          navigation: {
+            nextEl: "._slideRight",
+            prevEl: "._slideLeft",
+          },
+        });
+
+        $(document).ready(function (){
+          var idx = $('._swiperTab .swiper-slide').length;
+          var sum= 0;
+
+          // slide wrap width
+          for (var j = 0; j < idx; j++) {
+            sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
+          }
+          $('.swiper-wrapper').css('width',sum)
+
+          // slide width
+          for (var i = 0; i <= idx; i++) {
+            var target = $(`.swiper-slide:eq(${i})`);
+            var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
+            target.css('width',idxWidth)
+          }
+        })
+
+        $('._swiperTab .swiper-slide').on('click', function(){
+          var idx = $(this).index();
+          $(this).addClass('active').siblings().removeClass('active');
+
+          <!--탭메뉴 클릭시 페이지 변경-->
+          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        });
+
+        $('.swiper-notification').remove();
+
+      </script>
+      <div class="info-box-wrap">
+        <!--탭컨텐츠-->
+        <div class="info-box show">
+          <p class="font-h4 main-title">Expression Microarray</p>
+          <p class="subject">생물학적 환경에 따라 발현 정도가 달라지는 특징을 가진 유전체를 분석하는 방법입니다.</p>
+          <div class="img">
+            <img src="../../img/@temp/business/img-thumb04.svg" alt="이미지">
+          </div>
+          <hr class="divider">
+          <p class="font-h4 main-title">mRNA Expression Microarray</p>
+          <p class="desc list_bottom">mRNA(messenger RNA)는 DNA가 전사될 때 생성되는 RNA의 일종입니다. mRNA는 단백질 정보를 담고 있는 coding region을 포함합니다. 특정 환경에서 주요 기능을 수행하는 유전자와
+            그 유전자의 pathway를 찾기 위해서는 mRNA의 발현패턴을 분석하는 것이 중요합니다. mRNA Expression Microarray를 이용하여 Organism의 전체 유전자 발현 정도를 분석할 수 있습니다.
+            생물학적 환경 조건의 변화에 따라 발현이 달라지는 유전자 정보를 확인해야 할 때도 Microarray 스크리닝을 통해 빠르게 결과를 얻을 수 있습니다.</p>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">mRNA Expression Microarray Platforms</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>제조사</th>
+                  <th>연구 종</th>
+                  <th>플랫폼</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Agilent</td>
+                  <td class="text-start" rowspan="3">- Human<br>
+                    - Mouse<br>
+                    - Rat<br>
+                    - Model Org/Non-Human</td>
+                  <td class="text-start">- SurePrint G3 Gene Expression<br>
+                    - SurePrint G3 Exon<br>
+                    - Customization<br>
+                    - 기타</td>
+                </tr>
+                <tr>
+                  <td>Affymetrix</td>
+                  <td class="text-start">- Gene ST (Whole Transcript)<br>
+                    - GenomeArray (3'IVT)<br>
+                    - 기타</td>
+                </tr>
+                <tr>
+                  <td>Life Technologies</td>
+                  <td class="text-start">- Taqman mRNA Expression<br>
+                    - Openarray Customization</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="list-area">
+              <p class="font-h8 title">Analysis</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:calc(100% - 66.7202%);">
+                  <col style="width:66.7202%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>분석항목</th>
+                  <th>내용</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td rowspan="4">Data analysis of DE</td>
+                  <td class="text-start">Basic statistics(Fold change, group mean, sd etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Identifying differentially expressed genes(T-test, LPE test, ANOVA etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Multiple testing correction (FDR, Bonferroni etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Clustering Analysis for DEG ( Hierarchical clustering, K-means etc.)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Functional analysis</td>
+                  <td class="text-start">KEGG pathway, GeneOntologyannotation(DAVID, goProfiles, GOstats etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">GeneSet Enrichment Analysis</td>
+                </tr>
+                <tr>
+                  <td>Customized analysis</td>
+                  <td class="text-start">Integrative analysis (mRNA-miRNA, methylation~mRNA, mRNA-CNV etc.)</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p class="font-h4 main-title">microRNA Expression Microarray</p>
+          <p class="desc list_bottom">번역(Translation) 과정에서 유전자의 발현을 조절하는 다양한 microRNA에 대한 정보를 빠르게 스크리닝하여 한번에 얻을 수 있는 분석방법입니다.
+            microRNA는 21-25개 뉴클레오타이드(Nucleotide)로 이루어진 단일서열의 작은 RNA로 mRNA가 번역과정을 거쳐 단백질이 형성되는 기능을 방해함으로써 유전자 발현을 제어하는 역할을 합니다.
+            해당 microRNA 연구를 통하여 RNA silencing에 대한 이해를 넓힐 수 있습니다. miRNA Expression Microarray를 사용하여 다양한 Organism의 전체 miRNA를 손쉽게 분석할 수 있습니다.
+            세포나 조직에서의 miRNA 분석뿐만 아니라 최근에 세포간 상호작용에서의 miRNA의 역할에 대한 연구를 위해서 exosome샘플에 대한 관심도가 높아지고 있습니다. 마크로젠은 수많은 exosomalRNA miRNA 분석 경험을 통해 신뢰도 높은 결과를 제공하고 있습니다. </p>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">miRNA Expression Microarray Platforms</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>제조사</th>
+                  <th>연구 종</th>
+                  <th>플랫폼</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Agilent</td>
+                  <td class="text-start" rowspan="3">- Human<br>
+                    - Mouse<br>
+                    - Rat<br>
+                    - Model Org/Non-Human</td>
+                  <td class="text-start">- SurePrint G3 miRNA Expression<br>- Customization
+                </tr>
+                <tr>
+                  <td>Affymetrix</td>
+                  <td class="text-start">- miRNA 4.0 (203 specimens)
+                </tr>
+                <tr>
+                  <td>Life Technologies</td>
+                  <td class="text-start">- Taqman miRNA Expression</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="list-area">
+              <p class="font-h8 title">Analysis</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:calc(100% - 66.7202%);">
+                  <col style="width:66.7202%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>분석항목</th>
+                  <th>내용</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td rowspan="4">Data analysis of DE</td>
+                  <td class="text-start">Basic statistics(Fold change, group mean, sd etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Identifying differentially expressed genes(T-test, LPE test, ANOVA etc.)</td>˚
+                </tr>
+                <tr>
+                  <td class="text-start">Multiple testing correction (FDR, Bonferroni etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Clustering Analysis for DEG ( Hierarchical clustering, K-means etc.)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Customized analysis</td>
+                  <td class="text-start">Target gene prediction</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Integrative analysis (mRNA-miRNA)</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="btn-area">
+            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+          </div>
+          <hr class="divider">
+          <div class="board">
+            <div class="navigation">
+              <div class="content clearfix">
+                <a href="#" class="item prev">
+                  <div class="title">Duplex Oligo</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <script>
+
+          </script>
+        </div>
+
+        <!--탭컨텐츠-->
+        <div class="info-box">
+          <p class="font-h4 main-title">아직안함</p>
+          <p class="subject">수많은 DNA 부위의 메틸화 정도를 동시에 수치화하여 분석하는 방법입니다. </p>
+          <div class="img">
+            <img src="../../img/@temp/business/img-epigenome.svg" alt="EpigenomeMicroarray">
+          </div>
+          <hr class="divider">
+          <p class="font-h4 main-title">DNA Methylation Microarray</p>
+          <p class="desc list_bottom">DNA 메틸화(DNA methylation)란 유전자의 발현을 조절하는 화학적 변형으로서 유전자의 전사조절영역을 중심으로 존재하는 CpG site의 시토신(Cytosine)에 메틸기가 생성되는 현상입니다.
+            질병이나 표현형에 영향을 주는 원인이 특정 CpG 부위의 메틸기 변화에 있으면 그룹 간 통계 분석을 통해 해당 CpG부위가 어디인지 전체 DNA에서 찾을 수 있습니다.  종양억제유전자과 같이 종양을 억제하는 데 중요한 역할을 하는 유전자에 메틸기가 작용하게 되면 암을 유발하는 치명적인 결과를 초래할 수 있습니다.  마크로젠은 Illumina Microarray를 이용하여 DNA의 메틸화 여부를 정확하게 확인하며, 통계분석을 통해 생물학적인 의미를 부여하는 작업을 진행합니다. 메틸레이션 칩 국내 최다 분석 경험을 보유하고 있으며 메틸레이션 데이터와 유전자 발현 데이터를 통해 상호연관성을 분석하는 프리미엄 서비스를 제공합니다.</p>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">DNA Methylation Microarray Platforms</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>제품</th>
+                  <th>컨텐츠</th>
+                  <th>특징</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Illumina infinium<br>
+                    Methylation EPIC Chip
+                  </td>
+                  <td>
+                    >860,000 CpG sites<br>
+                    (>26,000 genes)
+                  </td>
+                  <td>칩 당 8개 샘플 실험<br>
+                    FFPE 시료 실험가능
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="list-area">
+              <p class="font-h8 title">Analysis</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:calc(100% - 66.7202%);">
+                  <col style="width:66.7202%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>분석항목</th>
+                  <th>내용</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td rowspan="4">Data analysis of DE</td>
+                  <td class="text-start">Basic statistics(delta_mean, group mean, sd etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Identifying differentially methylated CpGs(T-test,  ANOVA etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Multiple testing correction (FDR, Bonferroni etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Clustering Analysis for DM CpGs( Hierarchical clustering, K-means etc.)</td>
+                </tr>
+                <tr>
+                  <td>Functional analysis</td>
+                  <td class="text-start">KEGG pathway, GeneOntologyannotation(DAVID, goProfiles, GOstats etc.)</td>
+                </tr>
+                <tr>
+                  <td>Customized analysis</td>
+                  <td class="text-start">Integrative analysis (methylation, etc.)</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+          </div>
+          <hr class="divider">
+          <div class="board">
+            <div class="navigation">
+              <div class="content clearfix">
+                <a href="#" class="item prev">
+                  <div class="title">Genome Microarray</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <script>
+
+          </script>
+        </div>
+
+        <!--탭컨텐츠-->
+        <div class="info-box">
+          <p class="font-h4 main-title">Epigenome Microarray</p>
+          <p class="subject">수많은 DNA 부위의 메틸화 정도를 동시에 수치화하여 분석하는 방법입니다. </p>
+          <div class="img">
+            <img src="../../img/@temp/business/img-epigenome.svg" alt="EpigenomeMicroarray">
+          </div>
+          <hr class="divider">
+          <p class="font-h4 main-title">DNA Methylation Microarray</p>
+          <p class="desc list_bottom">DNA 메틸화(DNA methylation)란 유전자의 발현을 조절하는 화학적 변형으로서 유전자의 전사조절영역을 중심으로 존재하는 CpG site의 시토신(Cytosine)에 메틸기가 생성되는 현상입니다.
+            질병이나 표현형에 영향을 주는 원인이 특정 CpG 부위의 메틸기 변화에 있으면 그룹 간 통계 분석을 통해 해당 CpG부위가 어디인지 전체 DNA에서 찾을 수 있습니다.  종양억제유전자과 같이 종양을 억제하는 데 중요한 역할을 하는 유전자에 메틸기가 작용하게 되면 암을 유발하는 치명적인 결과를 초래할 수 있습니다.  마크로젠은 Illumina Microarray를 이용하여 DNA의 메틸화 여부를 정확하게 확인하며, 통계분석을 통해 생물학적인 의미를 부여하는 작업을 진행합니다. 메틸레이션 칩 국내 최다 분석 경험을 보유하고 있으며 메틸레이션 데이터와 유전자 발현 데이터를 통해 상호연관성을 분석하는 프리미엄 서비스를 제공합니다.</p>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">DNA Methylation Microarray Platforms</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                  <col style="width:33.3333%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>제품</th>
+                  <th>컨텐츠</th>
+                  <th>특징</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Illumina infinium<br>
+                    Methylation EPIC Chip
+                  </td>
+                  <td>
+                    >860,000 CpG sites<br>
+                    (>26,000 genes)
+                  </td>
+                  <td>칩 당 8개 샘플 실험<br>
+                    FFPE 시료 실험가능
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="list-area">
+              <p class="font-h8 title">Analysis</p>
+              <table class="table">
+                <colgroup>
+                  <col style="width:calc(100% - 66.7202%);">
+                  <col style="width:66.7202%;">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th>분석항목</th>
+                  <th>내용</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td rowspan="4">Data analysis of DE</td>
+                  <td class="text-start">Basic statistics(delta_mean, group mean, sd etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Identifying differentially methylated CpGs(T-test,  ANOVA etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Multiple testing correction (FDR, Bonferroni etc.)</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Clustering Analysis for DM CpGs( Hierarchical clustering, K-means etc.)</td>
+                </tr>
+                <tr>
+                  <td>Functional analysis</td>
+                  <td class="text-start">KEGG pathway, GeneOntologyannotation(DAVID, goProfiles, GOstats etc.)</td>
+                </tr>
+                <tr>
+                  <td>Customized analysis</td>
+                  <td class="text-start">Integrative analysis (methylation, etc.)</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+          </div>
+          <hr class="divider">
+          <div class="board">
+            <div class="navigation">
+              <div class="content clearfix">
+                <a href="#" class="item prev">
+                  <div class="title">Genome Microarray</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <script>
+
+          </script>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  @@include('../../html/include/component/footer.html')
+  @@include('../../html/include/component/toTop.html')
+</div>
+</body>
+</html>
