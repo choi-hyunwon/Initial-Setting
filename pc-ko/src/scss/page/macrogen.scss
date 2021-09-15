@@ -2287,6 +2287,7 @@ $min-width: 1244px;
                   letter-spacing: 0.5px;
                   color: $gray-ffffff;
                   padding-left: 20px;
+                  margin-right: 18px;
 
                   &::before {
                     content: '';
@@ -2302,7 +2303,7 @@ $min-width: 1244px;
                 }
 
                 &:nth-child(2) {
-                  width: 335px;
+                  width: 317px;
                   font-size: 16px;
                   line-height: 30px;
                   letter-spacing: -0.75px;
@@ -3638,5 +3639,10 @@ $min-width: 1244px;
   }
   .btn.btn-circle {
     min-width: auto;
+  }
+
+  /* macrogen */
+  .macrogen.macrogen-authorization .section .title-sm > div {
+    transform: translateY(-2px);
   }
 }
