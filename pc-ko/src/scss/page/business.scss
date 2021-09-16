@@ -32,6 +32,25 @@
     position: relative;
     padding-bottom: 120px;
     margin-bottom: 120px;
+    .img-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .content{
+        text-align: center;
+        .img{
+          margin-bottom: 35px;
+        }
+        .desc{
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          text-align: center;
+        }
+      }
+    }
     .title{
       line-height: 64px;
       margin-bottom: 20px;
@@ -127,6 +146,9 @@
     .main-title{
       line-height: 54px;
       margin: 0px 0px 60px;
+      &.no-desc{
+        margin: 0px 0px 80px;
+      }
 
     }
     .subject{
