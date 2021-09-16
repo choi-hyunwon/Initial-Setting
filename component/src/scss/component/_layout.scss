@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.31
  v.0.2 선미 : no-data 추가 -- 2021.09.06
+ v.0.3 선미 : slogan-sub {text-transform: uppercase} 제거 -- 2021.09.15
 |----------------------------------|
 */
 .wrap {
@@ -40,7 +41,7 @@
         font-size: 28px;
         line-height: 42px;
         letter-spacing: -1px;
-        text-transform: uppercase;
+       /* text-transform: uppercase;*/
         color: $gray-ffffff;
       }
 

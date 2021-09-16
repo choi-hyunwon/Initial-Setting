@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.31
+ v.0.2 선미 : .breadcrumb-item {letter-spacing: -0.5px}추가 -- 2021.09.15
 |----------------------------------|
 */
 .breadcrumb {
@@ -22,6 +23,8 @@
       color: $gray-909090;
       display: flex;
       align-items: center;
+      letter-spacing: -0.5px;
+
 
     &.active {
         color: $gray-000000;
