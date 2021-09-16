@@ -67,11 +67,15 @@
                               aria-describedby="faq"></textarea>
                 </div>
                 <!-- input / text-->
+
+                <!--s 개발영역-->
                 <div class="input-group">
                     <span class="input-group-text" id="automatic">자동등록방지</span>
                     <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;"></span>
                     <input type="text" placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
                 </div>
+                <!--e 개발영역-->
+
                 <hr class="divider"/>
             </div>
 
@@ -89,10 +93,17 @@
                 </div>
             </div>
             <div class="btn-box">
-                <a href="#" class="btn btn-white disabled"><span>취소</span></a>
-                <a href="#" class="btn btn-primary"><i class="icon"></i><span>문의하기</span></a>
+                <a href="#" class="btn btn-white"><span>취소</span></a>
+                <a href="#" class="btn btn-primary"><i class="icon icon-pen"></i><span>문의하기</span></a>
             </div>
+
+            <script>
+                $('.form-check').on('click',function (){
+                    $(this).parent().next('.btn-box').children('.btn').toggleClass('disabled')
+                });
+            </script>
        </div>
+
     </div>
 
     @@include('../../html/include/component/footer.html')

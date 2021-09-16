@@ -4,6 +4,7 @@
  v.0.2 태윤 : icon-arrow-bottom-short-black 추가ㅣ -- 2021.09.01
  v.0.3 선미 : icon-arrow-right-long-white 추가ㅣ -- 2021.09.13
  v.0.4 선미 : icon-arrow-bottom-short 추가ㅣ icon-arrow-bottom-short-black -> icon-arrow-bottom-sm 변경-- 2021.09.15
+ v.0.5 선미 : icon-pen 추가 - 2021.09.16
 
 |----------------------------------|
 */
@@ -327,6 +328,12 @@
   background-image: url("../img/common/ico-attention.svg");
   width: 20px;
   height: 20px;
+}
+
+.icon-pen{
+  background-image: url("../img/common/ico-pen.svg");
+  width: 24px;
+  height: 24px;
 }
 
 /*체크박스 사용*/
