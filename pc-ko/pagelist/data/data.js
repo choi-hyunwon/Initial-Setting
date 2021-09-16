@@ -587,12 +587,6 @@ data.IR = {
       page: '02공시정보_02공시정보'
     },
     {
-      stateClass: 'waiting',
-      url: '02공시정보_03주가정보',
-      category: 'IR',
-      page: '02공시정보_03주가정보'
-    },
-    {
       stateClass: 'complete',
       url: '03IR소식_01목록',
       category: 'IR',
@@ -605,7 +599,7 @@ data.IR = {
       page: '03IR소식_02조회'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '04투자자문의',
       category: 'IR',
       page: '04투자자문의'

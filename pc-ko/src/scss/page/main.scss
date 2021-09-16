@@ -61,13 +61,13 @@ img-DNA3 ->왼쪽히단
         }
 
         &.visual_01{
-          background: url("../img/main/img-main_01.svg") no-repeat center center / cover;
+          background: url("../img/main/img-main_01.png") no-repeat center center / cover;
         }
         &.visual_02{
-          background: url("../img/main/img-main_01.svg") no-repeat center center / cover;
+          background: url("../img/main/img-main_02.png") no-repeat center center / cover;
         }
         &.visual_03{
-          background: url("../img/main/img-main_01.svg") no-repeat center center / cover;
+          background: url("../img/main/img-main_03.png") no-repeat center center / cover;
         }
 
         .text-box{
@@ -247,6 +247,7 @@ img-DNA3 ->왼쪽히단
 
 .main-page{
   overflow-x: hidden;
+  overflow-y: hidden;
   /*공통폰트*/
   .info-box{
     width: $min-width;
@@ -269,29 +270,34 @@ img-DNA3 ->왼쪽히단
       margin: 0 auto;
       padding: 145px 0 120px;
       display: flex;
-      justify-content: space-between;
       .title{
         font-weight: bold;
         font-size: 60px;
         line-height: 75px;
-        align-items: center;
         letter-spacing: 12px;
         text-transform: uppercase;
-        position: relative;
         display: inline-block;
-        &:after{
-          content: '';
+        span{
           display: inline-block;
-          position: absolute;
-          width: 85px;
-          height: 6px;
-          right: -6px;
-          top: 130px;
-          background: #000000;
+          &:last-of-type{
+            position: relative;
+            &:after{
+              content: '';
+              display: inline-block;
+              position: absolute;
+              width: 85px;
+              height: 6px;
+              right: -100px;
+              bottom: 13px;
+              background: #000000;
+            }
+          }
         }
+
       }
       .text-box{
         display: inline-block;
+        width: 50%;
         margin: 85px 70px 0 0;
         .text{
           font-size: 18px;
@@ -384,6 +390,7 @@ img-DNA3 ->왼쪽히단
           &.swiper-slide-active{
             width: 1030px;
           }
+
           .title{
             font-weight: bold;
             margin-bottom: 18px;
