@@ -163,6 +163,10 @@
       line-height: 20px;
       letter-spacing: -0.75px;
       color: #909090;
+      &.img-caption{
+        padding-top: 20px;
+        margin-bottom: 40px;
+      }
     }
     .desc{
       word-break: keep-all;
@@ -257,6 +261,30 @@
           justify-content: space-between;
           .picture{
             margin-right: 40px;
+          }
+          .cont{
+            .desc{
+              margin-bottom: 30px;
+              + .btn-wrap{
+                padding-top: 20px;
+              }
+            }
+            .caption{
+              padding-top: 0;
+              margin: -20px 0 30px;
+            }
+            .list-circle-dot{
+              >li{
+                color: #707070;
+                margin-bottom: 6px;
+                &:last-of-type{
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .btn-wrap{
+              padding-top: 50px;
+            }
           }
         }
       }
