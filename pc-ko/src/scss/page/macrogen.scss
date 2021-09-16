@@ -2310,7 +2310,7 @@ $min-width: 1244px;
 
                 &:first-child {
                   position: relative;
-                  width: 160px;
+                  width: 142px;
                   font-weight: bold;
                   font-size: 22px;
                   line-height: 30px;
@@ -2429,13 +2429,14 @@ $min-width: 1244px;
 
                 &:first-child {
                   position: relative;
-                  width: 160px;
+                  width: 142px;
                   font-weight: bold;
                   font-size: 22px;
                   line-height: 30px;
                   letter-spacing: 0.5px;
                   color: $gray-ffffff;
                   padding-left: 20px;
+                  margin-right: 18px;
 
                   &::before {
                     content: '';
