@@ -457,7 +457,7 @@ data.RD = {
   title: 'R&D',
   list: [
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '03R&D_01정밀의학연구소_01소개',
       category: 'RD',
       page: '03R&D_01정밀의학연구소_01소개'
