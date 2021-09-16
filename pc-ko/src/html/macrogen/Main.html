@@ -2,7 +2,23 @@
 <html lang="ko">
 @@include('../../html/include/common/head.html')
 <body>
-<div class="wrap">
+<div class="wrap intro-wrap">
+    @@include('../../html/include/component/header-white.html')
+    <div class="intro-inner">
+        <!--  @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/00Main_00Intro.png'})-->
+        <div class="intro">
+            <div class="text-box">
+                <p class="text">건강한 일상을</p>
+                <p class="text">동행합니다</p>
+                <p class="text"><span class="text-gradient">마크로젠</span></p>
+            </div>
+            <div class="baby-bg"></div>
+        </div>
+        <div class="DNA-bg"></div>
+    </div>
+</div>
+
+<div class="wrap main-wrap">
 <!--   @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/00Main_00전체.png'})-->
     <div class="full-bg main-bg">
         @@include('../../html/include/component/header-main.html')
@@ -245,3 +261,16 @@
 </div>
 </body>
 </html>
+
+
+<script>
+    $(document).ready(function(){
+        if($('.intro-wrap').length) {
+            if($('.intro-wrap').scrollTop() === 0) {
+                setTimeout(function() {
+                    $('.main-wrap').animate({scrollTop: 980}, 200);
+                }, 3000);
+            }
+        }
+    });
+</script>
