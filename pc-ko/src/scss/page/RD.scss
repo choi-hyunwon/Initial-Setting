@@ -38,6 +38,10 @@
     @include background-img($width: 100%, $height: 600px, $category: 'RD', $img: 'bg-visual.svg');
   }
 
+  .divider{
+    margin-top: 120px;
+  }
+
   /*폰트 공통*/
   .info-box{
     width: $min-width;
@@ -74,9 +78,6 @@
         letter-spacing: -1.3px;
       }
     }
-    .divider{
-      margin-top: 120px;
-    }
   }
 
   /*이미지 공통*/
@@ -95,9 +96,40 @@
       margin-right: 338px;
     }
   }
-  .section_possession{
+  /*더바이옴연구소*/
+  .section_theBiome{
+    .img{
+      margin-left: 338px;
+    }
+  }
+  .biome_area{
+    padding-top: 120px;
+    .sub_title{
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 40px;
+    }
+  }
+
+
+  /*생명정보학/정밀의학/더바이옴/싱크진 공통*/
+  .section_info_list{
     width: $min-width;
     margin: 0 auto;
+    &.syncgenes-area{
+     .box{
+       margin-bottom: 80px;
+       .sub_title{
+         font-size: 36px;
+       }
+       .sub_desc{
+         img{
+           margin-bottom: 0;
+         }
+       }
+     }
+    }
     .box{
       margin-bottom: 120px;
       &:last-of-type{
@@ -110,15 +142,30 @@
         display: inline-block;
         float: left;
         width: 428px;
+        >span{
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          color: #454545;
+          display: block;
+          padding-top: 20px;
+        }
       }
       .sub_desc{
-        font-size: 16px;
-        line-height: 30px;
-        color:#454545;
         display: inline-block;
         float: left;
-        letter-spacing: -1px;
         width: calc(100% - 428px);
+
+        >p{
+          font-size: 16px;
+          line-height: 30px;
+          color:#454545;
+          letter-spacing: -1px;
+          +img{
+            padding-top: 40px;
+            margin-bottom: 0;
+          }
+        }
         img{
           margin-bottom: 40px;
         }
@@ -126,7 +173,7 @@
     }
   }
 
-  /*빅데이터여연구소*/
+  /*빅데이터연구소*/
   .section_bigData{
     margin-bottom: 120px;
     .img{
@@ -168,5 +215,124 @@
     }
   }
 
+  /*정밀의학연구소*/
+  .section_customMedicine{
+    .info-box{
+      padding-bottom: 108px;
+    }
+    .img{
+      margin-left: 338px;
+      margin-bottom: 150px;
+      img{
+        height: 600px;
+      }
+    }
+  }
+  .section_status{
+    height: 980px;
+    background: url('../img/RD/bg-status.svg') no-repeat center center / cover;
+    margin-top: 150px;
+    padding-top: 150px;
+
+    .font-h4{
+      width: $min-width;
+      margin: 0 auto 100px;
+      color: $gray-ffffff;
+      letter-spacing: -3px;
+    }
+    .tab-basic{
+      width: $min-width;
+      margin: 0 auto 50px;
+      .tab-list{
+        .nav-link{
+          color:$gray-909090;
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 32px;
+          padding: 8px 25px;
+          position: relative;
+          &:first-of-type{
+            padding-left: 0;
+            &:before{
+              background-color: transparent;
+            }
+          }
+          &:before{
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 16px;
+            background-color: $line-e9e9e9;
+            position: absolute;
+            top:50%;
+            left: 0;
+            transform: translateY(-50%);
+          }
+          &.active{
+            color:$gray-ffffff;
+          }
+
+        }
+      }
+    }
+
+    .tab-content{
+      .tab-pane{
+        /*slide 영역 공통*/
+        .slide-box{
+          .slider{
+            .swiper-container{
+              overflow: hidden;
+              .swiper-wrapper{
+                padding-left: 338px;
+                .swiper-slide{
+                  &.item{
+                    width: 296px!important;
+                    a{
+                      display: block;
+                      .img{
+                        width: 296px;
+                        height: 198px;
+                        img{
+                          @include img-100;
+                        }
+                      }
+                      .txt{
+                        display: block;
+                        background-color:$gray-ffffff;
+                        height: 124px;
+                        padding: 30px;
+                        color:$gray-000000;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 32px;
+                        @include ellipsis(2);
+
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+ /*싱크진 연구소*/
+  .section_syncgenes{
+    margin-bottom: 120px;
+    .img{
+      margin-bottom: 100px;
+      height: 560px;
+    }
+    .divider{
+      margin-top: 90px;
+    }
+  }
+
 }
+
 
