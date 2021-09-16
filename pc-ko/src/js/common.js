@@ -92,10 +92,9 @@ front.common = (function () {
             }, 3000);
           }
         }
+        // 스크롤 애니메이션
+        AOS.init();
       }
-
-      // 스크롤 애니메이션
-      AOS.init();
   }
 
 
