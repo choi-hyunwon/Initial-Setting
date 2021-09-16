@@ -39,6 +39,10 @@ function copyImg() {
   return gulp.src('src/img/**/**')
     .pipe(gulp.dest('dist/img'));
 }
+function copyFavicon() {
+  return gulp.src('src/favicon/**')
+      .pipe(gulp.dest('dist/favicon'));
+}
 
 function copyFonts() {
   return gulp.src('src/fonts/**/**')
@@ -145,7 +149,7 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, cssIE, cssMapIE, scss, copyIndex, copyImg, copyFonts, copyCSS,copyJS, htmlPage,delInclude));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, cssIE, cssMapIE, scss, copyIndex, copyImg, copyFavicon, copyFonts, copyCSS,copyJS, htmlPage,delInclude));
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS,copyJS,  htmlPage, delInclude,beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg ));
 
