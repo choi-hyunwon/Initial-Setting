@@ -295,9 +295,15 @@ data.business ={
     },
     {
       stateClass: 'complete',
-      url: '임상진단서비스_covid19',
+      url: '임상진단서비스_신생아유전자검사',
       category: 'business',
-      page: '임상진단서비스_covid19'
+      page: '임상진단서비스_신생아유전자검사'
+    },
+    {
+      stateClass: 'complete',
+      url: '임상진단서비스_암유전체검사',
+      category: 'business',
+      page: '임상진단서비스_암유전체검사'
     },
     {
       stateClass: 'complete',
@@ -312,181 +318,11 @@ data.business ={
       page: '헬스케어서비스_장내미생물분석'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '헬스케어서비스_반려동물유전자분석',
       category: 'business',
       page: '헬스케어서비스_반려동물유전자분석'
     },
-    // {
-    //   stateClass: 'complete',
-    //   url: '01연구서비스_02Exsome',
-    //   category: 'business',
-    //   page: '01연구서비스_02Exsome'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '01연구서비스_03Transcriptome',
-    //   category: 'business',
-    //   page: '01연구서비스_03Transcriptome'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '01연구서비스_04Epigenome',
-    //   category: 'business',
-    //   page: '01연구서비스_04Epigenome'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '01연구서비스_05Cell',
-    //   category: 'business',
-    //   page: '01연구서비스_05Cell'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '01연구서비스_06ATAC',
-    //   category: 'business',
-    //   page: '01연구서비스_06ATAC'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '01연구서비스_07Spatial',
-    //   category: 'business',
-    //   page: '01연구서비스_07Spatial'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '02연구서비스_01Standard',
-    //   category: 'business',
-    //   page: '02연구서비스_01Standard'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '02연구서비스_02Identification',
-    //   category: 'business',
-    //   page: '02연구서비스_02Identification'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '02연구서비스_03Fragment',
-    //   category: 'business',
-    //   page: '02연구서비스_03Fragment'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '02연구서비스_04Customized',
-    //   category: 'business',
-    //   page: '02연구서비스_04Customized'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '02연구서비스_05Humanid',
-    //   category: 'business',
-    //   page: '02연구서비스_05Humanid'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '02연구서비스_06GeneSythesis',
-    //   category: 'business',
-    //   page: '02연구서비스_06GeneSythesis'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '03연구서비스_01Standard',
-    //   category: 'business',
-    //   page: '03연구서비스_01Standard'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '03연구서비스_02Modified',
-    //   category: 'business',
-    //   page: '03연구서비스_02Modified'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '03연구서비스_03Premade',
-    //   category: 'business',
-    //   page: '03연구서비스_03Premade'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '03연구서비스_04Plate',
-    //   category: 'business',
-    //   page: '03연구서비스_04Plate'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '03연구서비스_05Duplex',
-    //   category: 'business',
-    //   page: '03연구서비스_05Duplex'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '03연구서비스_06RAPD',
-    //   category: 'business',
-    //   page: '03연구서비스_06RAPD'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '03연구서비스_06RAPD',
-    //   category: 'business',
-    //   page: '03연구서비스_06RAPD'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '04연구서비스_01Expression',
-    //   category: 'business',
-    //   page: '04연구서비스_01Expression'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '04연구서비스_03Epigenome',
-    //   category: 'business',
-    //   page: '04연구서비스_03Epigenome'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '05연구서비스_01crisprknock',
-    //   category: 'business',
-    //   page: '05연구서비스_01crisprknock'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '05연구서비스_03MassReproduction',
-    //   category: 'business',
-    //   page: '05연구서비스_03MassReproduction'
-    // },
-    // {
-    //   stateClass: 'complete',
-    //   url: '05연구서비스_04Addition',
-    //   category: 'business',
-    //   page: '05연구서비스_04Addition'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '임상진단서비스_01암유전체검사',
-    //   category: 'business',
-    //   page: '임상진단서비스_01암유전체검사'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '임상진단서비스_02암발생원인',
-    //   category: 'business',
-    //   page: '임상진단서비스_02암발생원인'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '임상진단서비스_03암발생모니터링',
-    //   category: 'business',
-    //   page: '임상진단서비스_03암발생모니터링'
-    // },
-    // {
-    //   stateClass: 'working',
-    //   url: '임상진단서비스_04진단키트',
-    //   category: 'business',
-    //   page: '임상진단서비스_04진단키트'
-    // },
-
-
   ]
 }
 data.RD = {
