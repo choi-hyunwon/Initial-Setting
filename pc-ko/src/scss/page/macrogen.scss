@@ -2333,7 +2333,8 @@ $min-width: 1244px;
                 }
 
                 &:nth-child(2) {
-                  width: 317px;
+                  display: inline-block;
+                  width: 335px;
                   font-size: 16px;
                   line-height: 30px;
                   letter-spacing: -0.75px;
@@ -2452,6 +2453,7 @@ $min-width: 1244px;
                 }
 
                 &:nth-child(2) {
+                  display: inline-block;
                   width: 335px;
                   font-size: 16px;
                   line-height: 30px;
