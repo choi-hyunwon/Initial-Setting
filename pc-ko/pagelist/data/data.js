@@ -121,6 +121,12 @@ data.guide = {
       url: 'modal',
       category: 'guide',
       page: 'modal'
+    },
+    {
+      stateClass: 'complete',
+      url: 'loading',
+      category: 'guide',
+      page: 'loading'
     }
   ]
 }
@@ -233,6 +239,18 @@ data.macrogen = {
       url: '01Macrogen_04채용_03채용안내_02조회',
       category: 'macrogen',
       page: '01Macrogen_04채용_03채용안내_02조회'
+    },
+    {
+      stateClass: 'complete',
+      url: '01Macrogen_04채용_03채용안내_02조회',
+      category: 'macrogen',
+      page: '01Macrogen_04채용_03채용안내_02조회'
+    },
+    {
+      stateClass: 'waiting',
+      url: '01Macrogen_06ESG경영',
+      category: 'macrogen',
+      page: '01Macrogen_06ESG경영'
     },
   ]
 }
@@ -475,7 +493,7 @@ data.RD = {
   title: 'R&D',
   list: [
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '03R&D_01정밀의학연구소_01소개',
       category: 'RD',
       page: '03R&D_01정밀의학연구소_01소개'
@@ -593,7 +611,7 @@ data.IR = {
       page: '02공시정보_01공고_02조회'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '02공시정보_02공시정보',
       category: 'IR',
       page: '02공시정보_02공시정보'
@@ -617,7 +635,7 @@ data.IR = {
       page: '03IR소식_02조회'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'working',
       url: '04투자자문의',
       category: 'IR',
       page: '04투자자문의'

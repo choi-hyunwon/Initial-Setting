@@ -121,6 +121,12 @@ data.guide = {
       url: 'modal',
       category: 'guide',
       page: 'modal'
+    },
+    {
+      stateClass: 'complete',
+      url: 'loading',
+      category: 'guide',
+      page: 'loading'
     }
   ]
 }
