@@ -9,42 +9,20 @@
         <div class="frame frameB">
             @@include('../../html/include/common/breadcrumb-white-depth3.html',{
             "depth1": "Business",
-            "depth2": "임상진단서비스",
-            "depth3": "MICROARRAY",
+            "depth2": "헬스케어서비스",
+            "depth3": "개인유전체분석",
             })
-            <div class="hero-title">COVID-19</div>
-            <div class="slogan-sub">감염성 질환 전달을 위한 검사</div>
+            <div class="hero-title">개인유전체분석</div>
+            <div class="slogan-sub">마이지놈스토리</div>
         </div>
     </div>
     <div class="container">
         <div class="section_business">
-            <!--탭 링크-->
-            <div class="tab-box">
-                <p class="font-h4 title">SERVICE</p>
-                <div class="slide-tab-wrap">
-                    <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
-                        <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active"><a href="#">Axen™ COVID-19 RT 진단키트</a></div>
-                            <div class="swiper-slide "><a href="#">스마트 모바일 랩</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--스크립트-->
-            <script>
-                $('._swiperTab .swiper-slide').on('click', function(){
-                    var idx = $(this).index();
-                    $(this).addClass('active').siblings().removeClass('active');
-
-                    <!--탭메뉴 클릭시 페이지 변경-->
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                });
-            </script>
-            <div class="info-box-wrap tab-content">
+            <div class="info-box-wrap">
                 <!--Axen™ COVID-19 RT 진단키트-->
-                <div class="info-box show">
-                    <p class="font-h4 main-title">Axen™ COVID-19 RT 진단키트</p>
+                <div class="info-box">
+                    <p class="font-h4 main-title">마이지놈스토리는 사람마다 다른 유전자 특성에 맞춰<br>
+                        건강 관리에 도움을 주는 개인 맞춤형 헬스케어 서비스입니다.</p>
                     <p class="subject">코로나바이러스감염증-19(COVID-19)의 감염 여부를 2시간 내 확인할 수 있는 체외진단 의료기기입니다.</p>
                     <p class="desc img_bottom">해당 제품은 실시간 유전자 증폭(Real Time-PCR, RT-PCR) 방식을 활용해 미량의 신종 코로나바이러스를 가진 환자를 정확하게 선별합니다.<br>
                         Axen™ COVID-19 RT 진단키트는 식품의약품안전처의 수출 허가를 승인받았으며, 유럽 체외진단시약 인증(CE-IVD)을 획득해 해외 고객을 대상으로 신뢰도 높은 진단 서비스를 제공하고 있습니다.</p>

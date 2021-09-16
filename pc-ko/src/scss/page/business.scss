@@ -104,11 +104,19 @@
     }
 
   }
-  .info-box{
-    display: none;
-    &.show{
-      display: block;
+  .info-box-wrap{
+    &.tab-content{
+      .info-box{
+        display: none;
+        &.show{
+          display: block;
+        }
+      }
+
+
     }
+  }
+  .info-box{
     /*텍스트 관련*/
     .main-title{
       line-height: 54px;
