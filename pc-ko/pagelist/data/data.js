@@ -252,13 +252,13 @@ data.business ={
       page: '연구서비스_CES'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'waiting',
       url: '연구서비스_Oligo',
       category: 'business',
       page: '연구서비스_Oligo'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'waiting',
       url: '연구서비스_MICROARRAY',
       category: 'business',
       page: '연구서비스_MICROARRAY'
@@ -276,7 +276,7 @@ data.business ={
       page: '임상진단서비스_암유전체검사'
     },
     {
-      stateClass: 'working',
+      stateClass: 'complete',
       url: '임상진단서비스_covid19',
       category: 'business',
       page: '임상진단서비스_covid19'
