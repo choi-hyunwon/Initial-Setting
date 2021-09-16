@@ -24,13 +24,15 @@ $min-width: 1244px;
   .color-white {
     color: $gray-ffffff !important;
   }
+
   /* e 공통 */
 
   &.full-bg {
     position: relative;
     background-image: url(../img/@temp/macrogen/macrogen_bg_1.png);
     background-size: 1920px 980px;
-    background-position: center;
+    background-position: top center;
+    background-repeat: no-repeat;
     animation-duration: 2s;
     transition: 2s;
     animation-name: subAnimation;
@@ -155,7 +157,7 @@ $min-width: 1244px;
           display: inline-block;
           font-weight: 400;
           text-align: left;
-          color: #454545;
+          color: $gray-454545;
         }
       }
 
@@ -991,6 +993,7 @@ $min-width: 1244px;
             }
           }
         }
+
         .list {
           .item {
             &:hover {
@@ -998,9 +1001,11 @@ $min-width: 1244px;
               .tit-sub {
                 color: $point-active;
               }
+
               .tit {
                 color: $point-active;
               }
+
               .date {
                 color: $point-active;
               }
@@ -3288,10 +3293,11 @@ $min-width: 1244px;
           .pin {
             display: inline-block;
             vertical-align: middle;
-            @include background-img ($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-pin.svg');
+            @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-pin.svg');
             margin-right: 6px;
             transform: translateY(-1px);
           }
+
           .tit {
             display: inline-block;
             vertical-align: middle;
@@ -3301,6 +3307,7 @@ $min-width: 1244px;
             letter-spacing: -0.75px;
             margin-right: 20px;
           }
+
           .address {
             display: inline-block;
             vertical-align: middle;
@@ -3315,9 +3322,10 @@ $min-width: 1244px;
           .google-pin {
             display: inline-block;
             vertical-align: middle;
-            @include background-img ($width: 12px, $height: 17px, $category: 'macrogen', $img: 'ic-pin-google.svg');
+            @include background-img($width: 12px, $height: 17px, $category: 'macrogen', $img: 'ic-pin-google.svg');
             margin-right: 8px;
           }
+
           span {
             display: inline-block;
             vertical-align: middle;
@@ -3405,6 +3413,7 @@ $min-width: 1244px;
               color: $gray-454545;
               margin-right: 4px;
             }
+
             a {
               font-size: 16px;
               line-height: 30px;
@@ -3418,6 +3427,177 @@ $min-width: 1244px;
     .btn-wrap {
       display: flex;
       justify-content: flex-end;
+    }
+  }
+
+  &.macrogen-esg {
+    .inner {
+      width: $min-width;
+      margin: 0 auto;
+    }
+
+    .section-phrase {
+      padding-top: 150px;
+      padding-bottom: 120px;
+
+      .font-h3 {
+        line-height: 81px;
+      }
+    }
+
+    .section-banner {
+      padding: 0 50px;
+
+      .banner {
+        @include background-img($width: 1920px, $height: 820px, $category: 'macrogen', $img: 'bg-esg-thumb-1.png');
+        width: auto;
+        padding-top: 150px;
+
+        .font-h6 {
+          display: inline-block;
+          position: relative;
+          line-height: 39px;
+          color: $gray-ffffff;
+          margin-bottom: 80px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            right: -58px;
+            bottom: 12px;
+            width: 50px;
+            height: 3px;
+            background-color: $gray-ffffff;
+          }
+        }
+
+        .font-h4 {
+          color: $gray-ffffff;
+          line-height: 63px;
+        }
+
+        &.banner-1 {
+          margin-bottom: 50px;
+        }
+
+        &.banner-2 {
+          background-image: url(../img/macrogen/bg-esg-thumb-2.png);
+        }
+      }
+    }
+
+    .section-management-goals {
+      padding-top: 150px;
+
+      .font-h6 {
+        display: inline-block;
+        position: relative;
+        line-height: 46px;
+        margin-bottom: 150px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: -58px;
+          bottom: 12px;
+          width: 50px;
+          height: 3px;
+          background-color: $gray-000000;
+        }
+      }
+
+      .list-goals {
+        .goal {
+          margin-bottom: 150px;
+          text-align: right;
+          height: 600px;
+
+          .box {
+            display: inline-block;
+          }
+
+          &:nth-child(2n) {
+            text-align: left;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+
+          .item {
+            float: left;
+
+            &:first-child {
+              &.text {
+                margin-right: 40px;
+              }
+            }
+
+            &:nth-child(2) {
+              &.text {
+                margin-left: 147px;
+              }
+            }
+
+            &.text {
+              width: 495px;
+              padding-top: 100px;
+              text-align: left;
+
+              .font-h7 {
+                line-height: 38px;
+                color: $point-primary;
+                margin-bottom: 60px;
+              }
+
+              .font-h3 {
+                line-height: 81px;
+                margin-bottom: 40px;
+              }
+
+              .font-body-h {
+                ul {
+                  li {
+                    position: relative;
+                    font-size: 16px;
+                    font-weight: normal;
+                    padding-left: 30px;
+                    line-height: 40px;
+                    color: $gray-454545;
+                    white-space: nowrap;
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      width: 15px;
+                      height: 1px;
+                      background-color: $gray-454545;
+                      top: 18px;
+                      left: 0;
+                    }
+                  }
+                }
+              }
+            }
+
+            &.bg {
+              width: 940px;
+              height: 600px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -3683,5 +3863,22 @@ $min-width: 1244px;
   /* macrogen */
   .macrogen.macrogen-authorization .section .title-sm > div {
     transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 1600px) {
+  .macrogen.macrogen-esg .section-management-goals .list-goals .goal {
+    height: 600px * 0.8;
+  }
+  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text {
+    transform: scale(0.8);
+    padding-top: 60px;
+  }
+  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item:nth-child(2).text {
+    margin-left: 107px;
+  }
+  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.bg {
+    width: 940px * 0.8;
+    height: 600px * 0.8;
   }
 }
