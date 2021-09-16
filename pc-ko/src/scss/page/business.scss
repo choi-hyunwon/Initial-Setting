@@ -150,6 +150,7 @@
         margin: 0px 0px 80px;
       }
 
+
     }
     .subject{
       line-height: 32px;
@@ -238,9 +239,20 @@
 
       + .main-title{
         padding-top: 60px;
+        &.list-area-group_top{
+          padding-top: 120px;
+        }
       }
     }
     .list-area{
+
+      .sub-list-title{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 12px;
+      }
       >.title{
         line-height: 27px;
         margin-bottom: 20px;
