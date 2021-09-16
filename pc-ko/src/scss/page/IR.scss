@@ -5,7 +5,7 @@
 */
 .section_IR {
   position: relative;
-  height: 1560px;
+
   /*재무정보*/
   .financial_box{
     margin-bottom: 99px;
@@ -98,6 +98,7 @@
   .iframe-box{
     position: relative;
     width: 100%;
+    height: 1560px;
     padding-bottom: 100%;
     iframe{
       position: absolute;
