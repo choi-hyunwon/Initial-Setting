@@ -287,6 +287,12 @@ data.business ={
       category: 'business',
       page: '헬스케어서비스_개인유전자분석'
     },
+    {
+      stateClass: 'working',
+      url: '헬스케어서비스_장내미생물분석',
+      category: 'business',
+      page: '헬스케어서비스_장내미생물분석'
+    },
     // {
     //   stateClass: 'complete',
     //   url: '01연구서비스_02Exsome',

@@ -53,7 +53,13 @@
     }
     .img{
       margin-bottom: 60px;
-
+    }
+    &.no-line{
+      padding-bottom: 50px;
+      margin: 0;
+      &:after{
+        display: none;
+      }
     }
     &:after{
       content: '';
@@ -129,6 +135,9 @@
       font-size: 18px;
       margin-bottom: 20px;
       letter-spacing: -0.75px;
+      &.img_bottom{
+        margin-bottom: 60px;
+      }
       + .img{
         padding-top: 20px;
       }
