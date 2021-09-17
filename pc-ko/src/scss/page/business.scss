@@ -241,9 +241,9 @@
 
       + .main-title{
         padding-top: 60px;
-        &.list-area-group_top{
-          padding-top: 120px;
-        }
+      }
+      + .sub-title{
+        padding-top: 120px;
       }
     }
     .list-area{
@@ -328,6 +328,8 @@
                   margin-bottom: 0;
                 }
               }
+
+
             }
             .btn-wrap{
               padding-top: 50px;
