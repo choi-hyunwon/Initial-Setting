@@ -387,13 +387,22 @@ img-DNA3 ->왼쪽히단
 
             &.swiper-slide-prev, &.swiper-slide-next{
               width: 1180px;
+
+           /* s business 내부 text slide */
+              .text-area{
+                transform: translate3d(100px, 0, 0);
+                opacity: 0;
+                transition-duration: 0s;
+              }
             }
             &.swiper-slide-active{
               width: 1030px;
-              .title{
-                display: block;
+              .text_animate{
+                transform: translateZ(0);
+                transition-duration: .5s;
               }
             }
+           /* e business 내부 text slide */
 
             &:nth-of-type(1){
               background: url("../img/main/img-dielectric_01.svg") no-repeat center center;
@@ -601,27 +610,27 @@ img-DNA3 ->왼쪽히단
             padding: 0 16px 0 40px;
             height: 38px;
             line-height: 36px;
-            background-color: #FFFFFF;
-            border: 1px solid $line-c9c9c9;
+            background-color: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.6);
             box-sizing: border-box;
-            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
-            border-radius: 100px;
+            border-radius: 19px;
             font-weight: 700;
             font-size: 13px;
             letter-spacing: 0.02em;
             text-transform: uppercase;
-            color: $gray-000000;
-            background-image: url(../img/macrogen/ic-pin.svg);
+            color: $gray-ffffff;
+            background-image: url(../img/main/ic-pin-white.svg);
             background-size: 16px 16px;
             background-position: left 16px center;
             background-repeat: no-repeat;
 
             &:hover, &.active {
-              background-color: $point-active;
-              border-color: $point-active;
+              background-color: $bg-ffffff;
+              border-color: $line-ffffff;
               box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2);
-              color: $gray-ffffff;
-              background-image: url(../img/macrogen/ic-pin-foc.svg);
+              color: $point-active;
+              background-image: url(../img/main/ico-pin-pink.svg);
+
             }
 
             &.amsterdam {
