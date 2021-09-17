@@ -387,13 +387,22 @@ img-DNA3 ->왼쪽히단
 
             &.swiper-slide-prev, &.swiper-slide-next{
               width: 1180px;
+
+           /* s business 내부 text slide */
+              .text-area{
+                transform: translate3d(100px, 0, 0);
+                opacity: 0;
+                transition-duration: 0s;
+              }
             }
             &.swiper-slide-active{
               width: 1030px;
-              .title{
-                display: block;
+              .text_animate{
+                transform: translateZ(0);
+                transition-duration: .5s;
               }
             }
+           /* e business 내부 text slide */
 
             &:nth-of-type(1){
               background: url("../img/main/img-dielectric_01.svg") no-repeat center center;
