@@ -3,6 +3,7 @@
  v.0.1 선미 : 최초 작업 -- 2021.08.31
  v.0.2 선미 : no-data 추가 -- 2021.09.06
  v.0.3 선미 : slogan-sub {text-transform: uppercase} 제거 -- 2021.09.15
+ v.0.4 선미 : header -> index 5->10 변경 - 2021.09.18
 |----------------------------------|
 */
 .wrap {
@@ -173,7 +174,7 @@
     height: 124px;
     //position: fixed; //레이아웃 요소 변경으로 수정
     background-color: transparent;
-    z-index: 5 !important;
+    z-index: 10 !important; //DNA 이미지 위로 올림
     position: relative;
 
     &:before {

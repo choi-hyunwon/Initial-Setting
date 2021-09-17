@@ -1,37 +1,34 @@
-/*-----DNA공통------
-img-DNA ->오른쪽하단
-img-DNA2 ->오른쪽상단
-img-DNA3 ->왼쪽히단
---------------------*/
-.bg-DNA{
-  position: absolute;
-  z-index: 9;
-  transform: rotate(-0deg);
-  display: inline-block;
-  width: 721px;
-  height: 777px;
-  animation:background 4s  infinite;
-  &.bg-DNA-right-bottom{
-    background: url("../img/main/bg-DNA-right-bottom.svg") no-repeat 0 0;
-  }
-  &.bg-DNA-right-top{
-    background: url("../img/main/bg-DNA-right-top.svg") no-repeat  0 0;
-  }
-  &.bg-DNA-left-bottom{
-    background: url("../img/main/bg-DNA-left-bottom.svg") no-repeat  0 0;
-  }
-}
-@keyframes background{
-  0%   {transform:rotate(0deg)}
-  50%   {transform:rotate(-5deg);top:-260px}
-  100%  {transform:rotate(0deg)}
-}
-
-
 .main-wrap{
+
+  .bg-DNA{
+    position: absolute;
+    z-index: 9;
+    display: inline-block;
+    width: 721px;
+    height: 777px;
+    transform: rotate(-15deg);
+    right: 8.3333vw/*160px*/;
+    top: -30.6122vh/*-300px*/;
+    background: url("../img/main/img-vision-DNA.png") no-repeat 0 0;
+    &.down{
+      transform: rotate(-15deg);
+      top:-21.0204vh/*-206px*/;
+      transition: top 4s;
+      animation:background 7s infinite;
+    }
+    @keyframes background{
+      0%   {transform:rotate(-15deg);}
+      25%   {transform:rotate(-5deg);top:-20.4082vh/*-200px*/}
+      50%   {transform:rotate(-10deg);}
+      75%   {transform:rotate(-5deg);top:-20.4082vh/*-200px*/}
+      100%  {transform:rotate(-13deg);}
+    }
+  }
+
   .main-bg{
     position: relative;
     z-index: 10; /*totop 으로 인해 추가*/
+
     .header-main {
       background: transparent;
       position: absolute;
@@ -42,13 +39,66 @@ img-DNA3 ->왼쪽히단
         border-bottom: none;
       }
     }
+
+    .intro{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .box{
+        position: absolute;
+        left: 17.4479vw;
+        top: 28.0612vh;
+        p{
+          font-size: 76px;
+          line-height: 100px;
+          letter-spacing: -0.0em;
+          color: $gray-000000;
+          font-weight: bold;
+        }
+        .text-gradient {
+          position: relative;
+          line-height: 1;
+          background: #55ffaa;
+          background: -webkit-linear-gradient(left, #00ADA9, #377EF9);
+          background:    -moz-linear-gradient(right, #00ADA9, #377EF9);
+          background:      -o-linear-gradient(right, #00ADA9, #377EF9);
+          background:         linear-gradient(to right, #00ADA9, #377EF9);
+          -webkit-background-clip: text;
+          color: transparent;
+          &:before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: -97px;
+            bottom: 14px;
+            width: 75px;
+            height: 5px;
+            background-color: #1c81f9;
+          }
+          &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: -112px;
+            bottom: 12px;
+            width: 9px;
+            height: 9px;
+            background-color: #1c81f9;
+            border-radius: 50%;
+
+
+          }
+        }
+      }
+    }
+
     .swiper-container{
       width: 100%;
       height: 100vh;
       position: relative;
       .swiper-wrapper{
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         overflow: hidden;
         height: 450px;
         transform: translateY(150px);
@@ -59,6 +109,7 @@ img-DNA3 ->왼쪽히단
             position: absolute;
             top: 0;
             left: 0;
+
             width: 100%;
             height: 100%;
             background: rgba(0,0,0,0.25);
@@ -77,8 +128,8 @@ img-DNA3 ->왼쪽히단
           .text-box{
             display: none;
             position: absolute;
-            left: 335px;
-            top: 485px;
+            left: 17.4479vw/*335px*/;
+            top: 49.4898vh/*485px*/;
             p{
               font-size: 84px;
               line-height: 98px;
@@ -103,8 +154,40 @@ img-DNA3 ->왼쪽히단
               -webkit-background-clip: text;
               color: transparent;
             }
-
           }
+
+         /* &.swiper-slide-active{
+            .text-box{
+              display: block;
+              left: 17.4479vw;
+              top: 49.4898vh;
+              p{
+                font-size: 84px;
+                line-height: 98px;
+                letter-spacing: -0.06em;
+                color:#ffffff;
+                font-weight: bold;
+                &.desc{
+                  font-weight: 500;
+                  font-size: 24px;
+                  line-height: 40px;
+                  letter-spacing: -0.05em;
+                  margin-top: 35px;
+                }
+              }
+              .text-gradient {
+                display: inline-block;
+                background: #55ffaa;
+                background: -webkit-linear-gradient(left, #00ADA9, #377EF9);
+                background:    -moz-linear-gradient(right, #00ADA9, #377EF9);
+                background:      -o-linear-gradient(right, #00ADA9, #377EF9);
+                background:         linear-gradient(to right, #00ADA9, #377EF9);
+                -webkit-background-clip: text;
+                color: transparent;
+              }
+            }
+
+          }*/
         }
       }
       .scroll-wrap {
@@ -112,7 +195,7 @@ img-DNA3 ->왼쪽히단
         position: absolute;
         bottom: 100px;
         z-index: 11;
-        left: 342px;
+        left: 17.8125vw/*342px*/;
         .scroll {
           position: absolute;
           width: 2px;
@@ -140,10 +223,6 @@ img-DNA3 ->왼쪽히단
         }
       }
 
-      .bg-DNA{
-        right: 160px;
-        top:-207px;
-      }
       .swiper-pagination {
 
         top: 295px;
@@ -217,7 +296,7 @@ img-DNA3 ->왼쪽히단
       right: 0;
       top:0;
       .stock_cont {
-        width: 0px;
+        width: 0;
         overflow: hidden;
         transition: width 1s;
         &.active{
@@ -244,13 +323,12 @@ img-DNA3 ->왼쪽히단
           }
         }
       }
-
       .close_btn{
         width: 37px;
         height: 100%;
         position: absolute;
         left: -37px;
-        background: url("../img/main/img-slideBar.svg") no-repeat left center / cover;
+        background: url("../img/main/img-slideBar.png") no-repeat left center / cover;
         cursor: pointer;
         display: inline-block;
         z-index: 20;
@@ -259,10 +337,6 @@ img-DNA3 ->왼쪽히단
           transform: rotate(-180deg);
         }
       }
-
-
-
-
     }
   }
   .main-page{
@@ -388,7 +462,7 @@ img-DNA3 ->왼쪽히단
           height: 506px;
           width: 100%;
           top: 0;
-          background: url("../img/main/img-shortcuts_01.svg") no-repeat center center /cover;
+          background: url("../img/main/img-shortcuts_01.png") no-repeat center center /cover;
           transform: translateY(510px);
           transition-duration: 0.3s;
           &.active {
@@ -400,14 +474,14 @@ img-DNA3 ->왼쪽히단
 
           }
           &.bg1 {
-            background-image: url("../img/main/img-shortcuts_01.svg");
+            background-image: url("../img/main/img-shortcuts_01.png");
           }
           &.bg2 {
-            background-image: url("../img/main/img-shortcuts_02.svg");
+            background-image: url("../img/main/img-shortcuts_02.png");
 
           }
           &.bg3 {
-            background-image: url("../img/main/img-shortcuts_03.svg");
+            background-image: url("../img/main/img-shortcuts_03.png");
           }
 
         }
@@ -415,11 +489,6 @@ img-DNA3 ->왼쪽히단
     }
     .section-business{
       position: relative;
-      .bg-DNA{
-        right: 0;
-        top:-207px;
-      }
-
       .info-box{
         margin: 145px auto 100px;
         .title{
@@ -450,22 +519,22 @@ img-DNA3 ->왼쪽히단
               width: 1030px;
               .text_animate{
                 transform: translateZ(0);
-                transition-duration: .5s;
+                transition-duration: 2s;
               }
             }
            /* e business 내부 text slide */
 
             &:nth-of-type(1){
-              background: url("../img/main/img-dielectric_01.svg") no-repeat center center;
+              background: url("../img/main/img-business_01.png") no-repeat center center;
             }
             &:nth-of-type(2){
-              background: url("../img/main/img-dielectric_02.svg") no-repeat center center;
+              background: url("../img/main/img-business_02.png") no-repeat center center;
             }
             &:nth-of-type(3){
-              background: url("../img/main/img-dielectric_03.svg") no-repeat center center;
+              background: url("../img/main/img-business_03.png") no-repeat center center;
             }
             &:nth-of-type(4){
-              background: url("../img/main/img-dielectric_04.svg") no-repeat center center;
+              background: url("../img/main/img-business_04.png") no-repeat center center;
             }
           }
         }
@@ -530,12 +599,8 @@ img-DNA3 ->왼쪽히단
       .video-box{
         width: 100%;
         height: 720px;
-        background: url("../img/main/img-research.svg") no-repeat center center / cover;
+        background: url("../img/main/img-research.png") no-repeat center center / cover;
         position: relative;
-        .bg-DNA{
-          left: 0;
-          top:-288px;
-        }
         .info-box{
           text-align: center;
           padding-left: 0;
@@ -631,7 +696,7 @@ img-DNA3 ->왼쪽히단
     }
     .section-map {
       position: relative;
-      background: url("../img/main/bg-map.svg") no-repeat center center /cover;
+      background: url("../img/main/bg-map.png") no-repeat center center /cover;
       width: 100%;
       height: 920px;
       .inner{
@@ -686,7 +751,7 @@ img-DNA3 ->왼쪽히단
             }
             &:hover {
               color: $point-active;
-              box-shadow: inset 0 -3.25em 0 0 $bg-ffffff;
+              box-shadow: inset 0 -3em 0 0 $bg-ffffff;
               & i {
                 background-image: url(../img/main/ico-pin-pink.svg);
                 animation: fadeInUp;
@@ -705,7 +770,7 @@ img-DNA3 ->왼쪽히단
             }
 
             & span {
-              vertical-align: middle;
+              vertical-align: bottom;
               margin-left: 5px;
             }
             &.amsterdam {
@@ -760,11 +825,6 @@ img-DNA3 ->왼쪽히단
           }
         }
       }
-      .bg-DNA{
-        top:-203px;
-        right: -112px;
-      }
-
 
 
 
@@ -772,93 +832,3 @@ img-DNA3 ->왼쪽히단
     }
   }
 }
-
-
-/*test작업*/
-/*.intro-wrap{
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  width: 100%;
-  z-index: 50;
-  background-color: #fff;
-  .intro-inner{
-  }
-
-  .intro {
-    !* background-color: #ffffff;*!
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    .text-box{
-      padding: 275px 0 105px 335px;
-      .text{
-        font-size: 76px;
-        line-height: 100px;
-        letter-spacing: -5px;
-        color:#000000;
-        font-weight: bold;
-        .text-gradient {
-          position: relative;
-          line-height: 1;
-          background: #55ffaa;
-          background: -webkit-linear-gradient(left, #00ADA9, #377EF9);
-          background:    -moz-linear-gradient(right, #00ADA9, #377EF9);
-          background:      -o-linear-gradient(right, #00ADA9, #377EF9);
-          background:         linear-gradient(to right, #00ADA9, #377EF9);
-          -webkit-background-clip: text;
-          color: transparent;
-          &:before{
-            content: '';
-            display: inline-block;
-            position: absolute;
-            right: -97px;
-            bottom: 14px;
-            width: 75px;
-            height: 5px;
-            background-color: #1c81f9;
-          }
-          &:after{
-            content: '';
-            display: inline-block;
-            position: absolute;
-            right: -112px;
-            bottom: 12px;
-            width: 9px;
-            height: 9px;
-            background-color: #1c81f9;
-            border-radius: 50%;
-
-
-          }
-        }
-      }
-    }
-    .baby-bg{
-      width: 1820px;
-      height: 300px;
-      margin: 0 auto;
-      background: url("../img/main/img-main-intro.svg") no-repeat center bottom;
-    }
-
-  }
-  .DNA-bg{
-    position: absolute;
-    right: 197px;
-    top:-300px;
-    transform: rotate(-15deg);
-    display: inline-block;
-    width: 721px;
-    height: 777px;
-    background: url("../img/main/bg-DNA-right-bottom.svg") no-repeat right top;
-    animation:background 4s  infinite;
-  }
-  @keyframes background{
-    0%   {transform:rotate(-15deg)}
-    50%   {transform:rotate(-13deg);top:-280px}
-    100%  {transform:rotate(-15deg)}
-  }
-}*/
-/*-------*/
