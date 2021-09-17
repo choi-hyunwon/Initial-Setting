@@ -630,6 +630,7 @@ img-DNA3 ->왼쪽히단
               box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2);
               color: $point-active;
               background-image: url(../img/main/ico-pin-pink.svg);
+              transition: all 0.5s ease;
 
             }
 
@@ -700,7 +701,7 @@ img-DNA3 ->왼쪽히단
 
 
 /*test작업*/
-.intro-wrap{
+/*.intro-wrap{
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -711,7 +712,7 @@ img-DNA3 ->왼쪽히단
   }
 
   .intro {
-    /* background-color: #ffffff;*/
+    !* background-color: #ffffff;*!
     position: absolute;
     top: 0;
     left: 0;
@@ -785,5 +786,5 @@ img-DNA3 ->왼쪽히단
     50%   {transform:rotate(-13deg);top:-280px}
     100%  {transform:rotate(-15deg)}
   }
-}
+}*/
 /*-------*/
