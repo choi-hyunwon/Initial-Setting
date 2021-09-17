@@ -3,8 +3,8 @@
         <div class="section_gnb">
             <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
             <nav>
-                <ul>
-                    <li><a href="#" class="font-bold">macrogen</a></li>
+                <ul id="gnb">
+                    <li><a href="#" class="font-bold">macrogen</a></li> <!-- active 시, 활성화 -->
                     <li><a href="#" class="font-bold">business</a></li>
                     <li><a href="#" class="font-bold">r&d</a></li>
                     <li><a href="#" class="font-bold">newsroom</a></li>
@@ -62,19 +62,22 @@
 </header>
 <script>
     $('#gnb2Depth').hide();
-
     $('#gnb li a').on({
         "mouseenter focusin" : function () {
-            console.log('hover')
-            $('#header').addClass('active');
+            $('#header').addClass('active header-bg-white');
             $('#gnb2Depth').slideDown('500','linear');
+            $('body, html').scroll(function(){
+                $('#header').removeClass('active');
+                $('#gnb2Depth').slideUp('500','linear');
+            });
         },
     })
-    $('#gnb2Depth').on({
+    $('#header').on({
         "mouseleave focusout" : function () {
-            console.log('noHover')
-            $('#header').removeClass('active');
-            $('#gnb2Depth').slideUp('500','linear');
+            setTimeout(function() {
+                $('#header').removeClass('active header-bg-white');
+                }, 300);
+            $('#gnb2Depth').slideUp('400','linear');
         }
     })
 </script>

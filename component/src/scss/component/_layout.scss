@@ -239,6 +239,12 @@
                 color: $gray-ffffff;
                 text-decoration: none;
               }
+
+              &.active, &:hover {
+                a {
+                  color: $point-active !important;
+                }
+              }
             }
           }
         }
@@ -322,9 +328,9 @@
     }
 
     &-sm {
-      height: 95px;
+      height: 96px;
       background-color: #ffffff;
-      border: 1px solid $line-e9e9e9;
+      border-bottom: 1px solid $line-e9e9e9;
 
       .inner {
         padding: 0;
@@ -381,6 +387,10 @@
             }
           }
         }
+      }
+
+      &::after {
+        top: -29px !important;
       }
     }
 
