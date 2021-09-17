@@ -32,6 +32,25 @@
     position: relative;
     padding-bottom: 120px;
     margin-bottom: 120px;
+    .img-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .content{
+        text-align: center;
+        .img{
+          margin-bottom: 35px;
+        }
+        .desc{
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          text-align: center;
+        }
+      }
+    }
     .title{
       line-height: 64px;
       margin-bottom: 20px;
@@ -53,7 +72,13 @@
     }
     .img{
       margin-bottom: 60px;
-
+    }
+    &.no-line{
+      padding-bottom: 50px;
+      margin: 0;
+      &:after{
+        display: none;
+      }
     }
     &:after{
       content: '';
@@ -104,15 +129,27 @@
     }
 
   }
-  .info-box{
-    display: none;
-    &.show{
-      display: block;
+  .info-box-wrap{
+    &.tab-content{
+      .info-box{
+        display: none;
+        &.show{
+          display: block;
+        }
+      }
+
+
     }
+  }
+  .info-box{
     /*텍스트 관련*/
     .main-title{
       line-height: 54px;
       margin: 0px 0px 60px;
+      &.no-desc{
+        margin: 0px 0px 80px;
+      }
+
 
     }
     .subject{
@@ -121,6 +158,9 @@
       font-size: 18px;
       margin-bottom: 20px;
       letter-spacing: -0.75px;
+      &.img_bottom{
+        margin-bottom: 60px;
+      }
       + .img{
         padding-top: 20px;
       }
@@ -155,6 +195,10 @@
       line-height: 20px;
       letter-spacing: -0.75px;
       color: #909090;
+      &.img-caption{
+        padding-top: 20px;
+        margin-bottom: 40px;
+      }
     }
     .desc{
       word-break: keep-all;
@@ -195,9 +239,20 @@
 
       + .main-title{
         padding-top: 60px;
+        &.list-area-group_top{
+          padding-top: 120px;
+        }
       }
     }
     .list-area{
+
+      .sub-list-title{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 12px;
+      }
       >.title{
         line-height: 27px;
         margin-bottom: 20px;
@@ -249,6 +304,30 @@
           justify-content: space-between;
           .picture{
             margin-right: 40px;
+          }
+          .cont{
+            .desc{
+              margin-bottom: 30px;
+              + .btn-wrap{
+                padding-top: 20px;
+              }
+            }
+            .caption{
+              padding-top: 0;
+              margin: -20px 0 30px;
+            }
+            .list-circle-dot{
+              >li{
+                color: #707070;
+                margin-bottom: 6px;
+                &:last-of-type{
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .btn-wrap{
+              padding-top: 50px;
+            }
           }
         }
       }
