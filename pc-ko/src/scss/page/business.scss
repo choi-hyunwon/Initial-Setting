@@ -169,6 +169,9 @@
       &.figure_bottom{
         margin-bottom: 25px;
       }
+      &.graph_bottom{
+        margin-bottom: 20px;
+      }
     }
     .img{
       + .desc{
@@ -244,7 +247,6 @@
       }
     }
     .list-area{
-
       .sub-list-title{
         font-size: 18px;
         font-style: normal;
@@ -263,6 +265,9 @@
         }
       }
       &.figure_bottom{
+        margin-bottom: 25px;
+      }
+      .figure_bottom{
         margin-bottom: 25px;
       }
     }
