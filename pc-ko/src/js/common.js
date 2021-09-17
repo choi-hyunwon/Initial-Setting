@@ -83,20 +83,20 @@ front.common = (function () {
       return false;
     });
 
-      if(!$('.full-bg.macrogen.no-bg').length) {
-        if($('.full-bg.macrogen').length) {
-          if($('html, body').scrollTop() === 0) {
-            // 서브 배경 애니메이션
-            var sub = setTimeout(function() {
-              console.log($('html, body').scrollTop())
-              if($('html, body').scrollTop() !== 0) clearTimeout(sub)
-              else $('html, body').animate({scrollTop: 980}, 200);
-            }, 3000);
-          }
+    if(!$('.full-bg.macrogen.no-bg').length) {
+      if($('.full-bg.macrogen').length) {
+        if($('html, body').scrollTop() === 0) {
+          // 서브 배경 애니메이션
+          var sub = setTimeout(function() {
+            console.log($('html, body').scrollTop())
+            if($('html, body').scrollTop() !== 0) clearTimeout(sub)
+            else $('html, body').animate({scrollTop: 980}, 200);
+          }, 3000);
         }
-        // 스크롤 애니메이션
-        AOS.init();
       }
+      // 스크롤 애니메이션
+      AOS.init();
+    }
   }
 
 
