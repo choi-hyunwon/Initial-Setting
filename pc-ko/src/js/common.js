@@ -88,7 +88,9 @@ front.common = (function () {
           if($('html, body').scrollTop() === 0) {
             // 서브 배경 애니메이션
             var sub = setTimeout(function() {
-              $('html, body').animate({scrollTop: 980}, 200);
+              console.log($('html, body').scrollTop())
+              if($('html, body').scrollTop() !== 0) clearTimeout(sub)
+              else $('html, body').animate({scrollTop: 980}, 200);
             }, 3000);
           }
         }
