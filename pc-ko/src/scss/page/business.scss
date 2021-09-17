@@ -150,7 +150,6 @@
         margin: 0px 0px 80px;
       }
 
-
     }
     .subject{
       line-height: 32px;
@@ -256,8 +255,8 @@
       >.title{
         line-height: 27px;
         margin-bottom: 20px;
-        &.img{
-          margin-bottom: 35px;
+        &.figure_bottom{
+          margin-bottom: 25px;
         }
         &.data_bottom{
           margin-bottom: 25px;
@@ -599,6 +598,9 @@
       display: flex;
       justify-content: center;
       padding-top: 140px;
+      + .divider{
+        margin:140px auto 80px;
+      }
     }
   }
 }
