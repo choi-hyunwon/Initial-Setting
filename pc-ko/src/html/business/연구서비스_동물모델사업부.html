@@ -39,35 +39,6 @@
             </div>
             <!--슬라이드 스크립트-->
             <script>
-                var swiper = new Swiper("._swiperTab", {
-                    slidesPerView: "auto",
-                    spaceBetween: 0,
-                    centeredSlides: false,
-                    watchActiveIndex: true,
-                    navigation: {
-                        nextEl: "._slideRight",
-                        prevEl: "._slideLeft",
-                    },
-                });
-
-                $(document).ready(function (){
-                    var idx = $('._swiperTab .swiper-slide').length;
-                    var sum= 0;
-
-                    // slide wrap width
-                    for (var j = 0; j < idx; j++) {
-                        sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-                    }
-                    $('.swiper-wrapper').css('width',sum)
-
-                    // slide width
-                    for (var i = 0; i <= idx; i++) {
-                        var target = $(`.swiper-slide:eq(${i})`);
-                        var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
-                        target.css('width',idxWidth)
-                    }
-                })
-
                 $('._swiperTab .swiper-slide').on('click', function(){
                     var idx = $(this).index();
                     $(this).addClass('active').siblings().removeClass('active');
@@ -76,9 +47,6 @@
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                 });
-
-                $('.swiper-notification').remove();
-
             </script>
 
             <div class="info-box-wrap tab-content">
