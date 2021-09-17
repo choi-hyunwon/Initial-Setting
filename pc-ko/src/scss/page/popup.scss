@@ -1,0 +1,117 @@
+.modal{
+  .modal-dialog{
+    &.layer-modal{
+      max-width: 540px;
+      .modal-content{
+        background-color: #2E87EF;
+        border: 5px solid #2E87EF;
+        background-clip: initial;
+        .modal-header{
+          padding: 0;
+          background-color: #fff;
+          border-bottom: none;
+          position: relative;
+          display: block;
+          height: 35px;
+          .blue-circle{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -25px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(180deg, rgba(46, 77, 239, 0) 49.17%, rgba(27, 59, 227, 0.4) 100%), linear-gradient(0deg, #2E87EF, #2E87EF);
+            border-radius: 50%;
+            .icon-union{
+              background-image: url("../img/common/ico-union.svg");
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .modal-body{
+          background-color: #fff;
+          padding: 40px;
+          .title{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 46px;
+            text-align: center;
+            letter-spacing: -1px;
+            margin-bottom: 30px;
+          }
+          .desc{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            letter-spacing: -0.75px;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          .btn-area{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            .btn{
+              font-weight: 700;
+            }
+          }
+        }
+        .modal-footer{
+          margin: 0;
+          padding: 0;
+          background-color: #2E87EF;
+          border-top: none;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding:0px 15px;
+          .close-box{
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0;
+            position: relative;
+            &:before{
+              opacity: 10%;
+              content: '';
+              border: 1px solid #fff;
+              position: absolute;
+              left: -20px;
+              height: 12px;
+              top: 9px;
+            }
+            .icon{
+              margin-left: 10px;
+            }
+          }
+          .form-check{
+            margin: 0px;
+
+            .form-check-input{
+              border: 2px solid rgba(255,255,255,0.4);
+              background-color: #2E87EF;
+              &:checked{
+                border: 2px solid #fff;
+              }
+            }
+            .form-check-label{
+              color: #fff;
+            }
+
+          }
+          .ico-close-white{
+            background-image: url("../img/common/ico-close-white.svg");
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+      }
+    }
+
+  }
+}
