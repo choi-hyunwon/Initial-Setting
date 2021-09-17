@@ -30,7 +30,6 @@ img-DNA3 ->왼쪽히단
 
 .main-wrap{
   .main-bg{
-    overflow-x: hidden;
     position: relative;
     z-index: 10; /*totop 으로 인해 추가*/
     .header-main {
@@ -48,7 +47,11 @@ img-DNA3 ->왼쪽히단
       height: 100vh;
       position: relative;
       .swiper-wrapper{
-        position: relative;
+        position: absolute;
+        bottom: 0px;
+        overflow: hidden;
+        height: 450px;
+        transform: translateY(150px);
         .swiper-slide{
           &:before{
             content: '';
@@ -62,7 +65,7 @@ img-DNA3 ->왼쪽히단
           }
 
           &.visual_01{
-            background: url("../img/main/img-main_01.png") no-repeat center center / cover;
+            background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;
           }
           &.visual_02{
             background: url("../img/main/img-main_02.png") no-repeat center center / cover;
@@ -72,6 +75,7 @@ img-DNA3 ->왼쪽히단
           }
 
           .text-box{
+            display: none;
             position: absolute;
             left: 335px;
             top: 485px;
@@ -104,6 +108,7 @@ img-DNA3 ->왼쪽히단
         }
       }
       .scroll-wrap {
+        display: none;
         position: absolute;
         bottom: 100px;
         z-index: 11;
@@ -140,6 +145,7 @@ img-DNA3 ->왼쪽히단
         top:-207px;
       }
       .swiper-pagination {
+
         top: 295px;
         left: 340px;
         height: 50px;
@@ -160,6 +166,9 @@ img-DNA3 ->왼쪽히단
 
 
       }
+      #key-swiper-pagination {
+        display: none;
+      }
       @keyframes dash {
         from {
           stroke-dashoffset: 1000;
@@ -171,6 +180,7 @@ img-DNA3 ->왼쪽히단
       }
 
       .swiper_btn{
+        display: none;
         border-radius: 100px;
         width: 45px;
         height: 45px;
@@ -201,14 +211,39 @@ img-DNA3 ->왼쪽히단
       }
     }
     .stock_information{
-      width: 100%;
-      height: 100vh;
-      background: #ffffff;
+      display: none;
       position: absolute;
       z-index: 10;
-      transition: right 1s;
-      right: -100%;
+      right: 0;
       top:0;
+      .stock_cont {
+        width: 0px;
+        overflow: hidden;
+        transition: width 1s;
+        &.active{
+          width: 100vw;
+          transition: width 1s;
+          overflow-y: hidden;
+
+        }
+        .stock_box{
+          width: 100vw;
+          height: 100vh;
+          background: #ffffff;
+          position: relative;
+          padding: 180px 290px;
+          .title{
+            font-size: 60px;
+            line-height: 72px;
+            font-weight: bold;
+            margin-bottom: 70px;
+          }
+          .content{
+            width: 1070px;
+            height: 432px;
+          }
+        }
+      }
 
       .close_btn{
         width: 37px;
@@ -218,31 +253,16 @@ img-DNA3 ->왼쪽히단
         background: url("../img/main/img-slideBar.svg") no-repeat left center / cover;
         cursor: pointer;
         display: inline-block;
-      }
-      &.active{
-        right: 0;
-        transition: right 1s;
-        overflow-y: hidden;
-        .close_btn{
+        z-index: 20;
+        &.active.close_btn{
           left: 0;
           transform: rotate(-180deg);
         }
       }
 
 
-      .stock_box{
-        padding: 180px 290px;
-        .title{
-          font-size: 60px;
-          line-height: 72px;
-          font-weight: bold;
-          margin-bottom: 70px;
-        }
-        .content{
-          width: 1070px;
-          height: 432px;
-        }
-      }
+
+
     }
   }
   .main-page{
@@ -310,11 +330,14 @@ img-DNA3 ->왼쪽히단
       }
       .shortcuts-box{
         height: 506px;
+        position: relative;
+        overflow: hidden;
         .btn-list{
           display: flex;
           height: 100%;
           padding: 0 290px;
-          background: url("../img/main/img-shortcuts_01.svg") no-repeat center center /cover;
+          position: relative;
+          z-index: 1;
           li{
             height: 100%;
             width: 100%;
@@ -359,6 +382,34 @@ img-DNA3 ->왼쪽히단
               }
             }
           }
+        }
+        .bg_section {
+          position: absolute;
+          height: 506px;
+          width: 100%;
+          top: 0;
+          background: url("../img/main/img-shortcuts_01.svg") no-repeat center center /cover;
+          transform: translateY(510px);
+          transition-duration: 0.3s;
+          &.active {
+            transform: translateY(0);
+          }
+          &.bg0 {
+            background: #080428;
+            transform: translateY(0) !important;
+
+          }
+          &.bg1 {
+            background-image: url("../img/main/img-shortcuts_01.svg");
+          }
+          &.bg2 {
+            background-image: url("../img/main/img-shortcuts_02.svg");
+
+          }
+          &.bg3 {
+            background-image: url("../img/main/img-shortcuts_03.svg");
+          }
+
         }
       }
     }
@@ -607,7 +658,7 @@ img-DNA3 ->왼쪽히단
           position: relative;
           .pin {
             position: absolute;
-            padding: 0 16px 0 40px;
+            padding: 0 16px;
             height: 38px;
             line-height: 36px;
             background-color: rgba(255,255,255,0.15);
@@ -619,21 +670,44 @@ img-DNA3 ->왼쪽히단
             letter-spacing: 0.02em;
             text-transform: uppercase;
             color: $gray-ffffff;
-            background-image: url(../img/main/ic-pin-white.svg);
-            background-size: 16px 16px;
-            background-position: left 16px center;
-            background-repeat: no-repeat;
+            overflow: hidden;
 
-            &:hover, &.active {
+            transition: 0.25s;
+
+            & i {
+              width: 16px;
+              height: 16px;
+              display: inline-block;
+              background-image: url(../img/main/ico-pin-white.svg);
+              background-size: 16px 16px;
+              background-position: 0 0 ;
+              background-repeat: no-repeat;
+              vertical-align: middle;
+            }
+            &:hover {
+              color: $point-active;
+              box-shadow: inset 0 -3.25em 0 0 $bg-ffffff;
+              & i {
+                background-image: url(../img/main/ico-pin-pink.svg);
+                animation: fadeInUp;
+                animation-duration: 0.5s;
+              }
+            }
+            &.active {
               background-color: $bg-ffffff;
               border-color: $line-ffffff;
               box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2);
               color: $point-active;
-              background-image: url(../img/main/ico-pin-pink.svg);
               transition: all 0.5s ease;
-
+              & i {
+                background-image: url(../img/main/ico-pin-pink.svg);
+              }
             }
 
+            & span {
+              vertical-align: middle;
+              margin-left: 5px;
+            }
             &.amsterdam {
               top: 76px;
               left: 123px;
