@@ -293,12 +293,21 @@
           margin-bottom: 20px;
           max-height: 80px;
           @include ellipsis($line: 2);
+
+          a {
+            color: $gray-000000;
+          }
         }
         .date {
           display: block;
           font-size: 16px;
           line-height: 19px;
           color: #909090;
+        }
+        &:hover {
+          a {
+            color: $point-active;
+          }
         }
       }
     }
