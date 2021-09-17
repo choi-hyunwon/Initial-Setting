@@ -150,7 +150,6 @@
         margin: 0px 0px 80px;
       }
 
-
     }
     .subject{
       line-height: 32px;
@@ -169,6 +168,9 @@
       margin-bottom: 30px;
       &.figure_bottom{
         margin-bottom: 25px;
+      }
+      &.graph_bottom{
+        margin-bottom: 20px;
       }
     }
     .img{
@@ -239,13 +241,12 @@
 
       + .main-title{
         padding-top: 60px;
-        &.list-area-group_top{
-          padding-top: 120px;
-        }
+      }
+      + .sub-title{
+        padding-top: 120px;
       }
     }
     .list-area{
-
       .sub-list-title{
         font-size: 18px;
         font-style: normal;
@@ -256,14 +257,17 @@
       >.title{
         line-height: 27px;
         margin-bottom: 20px;
-        &.img{
-          margin-bottom: 35px;
-        }
-        &.data_bottom{
+        &.figure_bottom{
           margin-bottom: 25px;
+        }
+        &.img_bottom{
+          margin-bottom: 35px;
         }
       }
       &.figure_bottom{
+        margin-bottom: 25px;
+      }
+      .figure_bottom{
         margin-bottom: 25px;
       }
     }
@@ -324,6 +328,8 @@
                   margin-bottom: 0;
                 }
               }
+
+
             }
             .btn-wrap{
               padding-top: 50px;
@@ -533,7 +539,7 @@
 
     }
     .file-download{
-      margin-bottom: -10px;
+      margin-bottom: -20px;
     }
 
     /*테이블 관련*/
@@ -599,6 +605,9 @@
       display: flex;
       justify-content: center;
       padding-top: 140px;
+      + .divider{
+        margin:140px auto 80px;
+      }
     }
   }
 }
