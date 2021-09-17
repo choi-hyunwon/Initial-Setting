@@ -13,14 +13,14 @@
     &.down{
       transform: rotate(-15deg);
       top:-21.0204vh/*-206px*/;
-      transition: top 4s;
-      animation:background 7s infinite;
+      transition: top 2s;
+      animation:background 5s ease-in;
     }
     @keyframes background{
       0%   {transform:rotate(-15deg);}
-      25%   {transform:rotate(-5deg);top:-20.4082vh/*-200px*/}
+      25%   {transform:rotate(-5deg);}
       50%   {transform:rotate(-10deg);}
-      75%   {transform:rotate(-5deg);top:-20.4082vh/*-200px*/}
+      75%   {transform:rotate(-5deg);}
       100%  {transform:rotate(-13deg);}
     }
   }

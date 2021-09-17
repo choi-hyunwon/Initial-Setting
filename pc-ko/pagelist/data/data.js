@@ -130,17 +130,7 @@ data.guide = {
     }
   ]
 }
-/*data.main = {
-  title: 'Main',
-  list: [
-    {
-      stateClass: 'working',
-      url: 'Main',
-      category: 'main',
-      page: 'Main'
-    }
-  ]
-}*/
+
 data.macrogen = {
   title: 'Macrogen',
   list: [
