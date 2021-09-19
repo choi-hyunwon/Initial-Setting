@@ -10,18 +10,27 @@
     right: 8.3333vw/*160px*/;
     top: -30.6122vh/*-300px*/;
     background: url("../img/main/img-vision-DNA.png") no-repeat 0 0;
-    &.down{
-      transform: rotate(-15deg);
+    opacity: 0.7;
+    animation:DNA-down 4s 3s forwards;
+    @keyframes DNA-down{
+      0%   {top: -30.6122vh/*-300px*/; opacity: 0.7;}
+      100%  { top:-21.0204vh/*-206px*/;opacity: 1}
+    }
+    &.DNA-move{
       top:-21.0204vh/*-206px*/;
-      transition: top 2s;
-      animation:background 5s ease-in;
+      transform: rotate(-15deg);
+      opacity: 1;
+      animation:background 7s infinite;
     }
     @keyframes background{
-      0%   {transform:rotate(-15deg);}
-      25%   {transform:rotate(-5deg);}
-      50%   {transform:rotate(-10deg);}
-      75%   {transform:rotate(-5deg);}
-      100%  {transform:rotate(-13deg);}
+      0%   {transform:rotate(-15deg);top:-21.0204vh/*-206px*/}
+      20%   {top:-18.3673vh/*-180px*/}
+      25%   {transform:rotate(-10deg);}
+      40%   {top:-20.4082vh/*-200px*/}
+      50%   {transform:rotate(-13deg);}
+      60%   {top:-18.3673vh/*-180px*/}
+      75%   {transform:rotate(-10deg);}
+      90%   {top:-20.4082vh/*-200px*/}
     }
   }
 
