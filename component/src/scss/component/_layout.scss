@@ -6,6 +6,7 @@
  v.0.4 주연 : header / 2depth 추가 -- 2021.09.17
  v.0.5 태윤 : footer 사이트 연동 a태그 속성 추가 -- 2021.09.17
  v.0.6 선미 : header -> index 5->10 변경 - 2021.09.18
+ v.0.7 선미 : header -> gnb-2depth 재작업 - 2021.09.22
 |----------------------------------|
 */
 .wrap {
@@ -130,49 +131,18 @@
     }
   }
 
-/*  .sticky-wrapper {
-    &.is-sticky {
-      .header {
-        background-color: $gray-ffffff;
 
-        &:before {
-          border-bottom: 1px solid #e9e9e9;
-        }
 
-        .inner {
-          .section_gnb {
-            .logo {
-              a {
-                background: url("../img/common/logo-default.svg") no-repeat left center / 100%;
-              }
-            }
 
-            nav {
-              li {
-                a {
-                  color: $gray-000000;
-                }
-              }
-            }
-          }
 
-          .section_btn {
-            .btn_eng {
-              .btn-round {
-                color: $gray-000000;
-                background-color: rgba(255, 255, 255, 0.1);
-                border: 1px solid $line-e9e9e9;
 
-                .icon {
-                  background-image: url(../img/common/ico-earth-black.svg);
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }*/
+
+
+
+
+
+
+
 
   .header, .header-main {
     width: 100%;
@@ -191,6 +161,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
+      z-index: 1;
     }
 
     .inner {
@@ -288,8 +259,7 @@
               background-image: url("../img/common/ico-earth-white.svg");
             }
           }
-        }
-      }
+        }      }
     }
 
     &.header-bg-white {
@@ -391,6 +361,63 @@
         }
       }
     }
+
+    .gnb-2depth{
+      position: absolute;
+      width: 100%;
+      background-color: $bg-ffffff;
+      border-bottom: 1px solid $line-f3f3f3;
+      .box{
+        display: none;
+        max-width: 1920px;
+        overflow-x: hidden;
+        padding: 40px 50px 50px 338px;
+        margin: 0 auto;
+        .item{
+          float: left;
+          margin-right: 50px;
+          &:last-of-type{
+            margin-right: 0;
+          }
+          .title{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 30px;
+            a{
+              color: $gray-000000;
+              &:hover, &:active {
+                color: $point-active;
+              }
+            }
+          }
+          ul{
+            li{
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 23px;
+              margin-bottom: 15px;
+              &:last-of-type{
+                margin-bottom: 0;
+              }
+              a{
+                color: $gray-666666;
+                &:hover, &:active {
+                  color: $point-active;
+                }
+              }
+
+            }
+          }
+        }
+        &.active{
+          display: block;
+        }
+
+      }
+
+    }
+
   }
 
   .container {
