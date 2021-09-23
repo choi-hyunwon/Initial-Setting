@@ -41,6 +41,9 @@
     .header-main {
       background: transparent;
       position: absolute;
+      .gnb-2depth{
+        border:none;
+      }
       &.header-sm{
         background-color: #ffffff;
       }
@@ -233,13 +236,16 @@
       }
 
       .swiper-pagination {
-
-        top: 295px;
-        left: 340px;
-        height: 50px;
-        width: 180px;
+        /*top: 295px;
+        left: 340px;*/
+        top: 275px;
+        left: 332px;
+        height: 60px;
+        width: 200px;
         .swiper-pagination-bullet {
           background: transparent;
+          transform: scale(2.5);
+          margin-right: 48px;
           .path {
             display: none;
           }
