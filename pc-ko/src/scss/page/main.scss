@@ -157,14 +157,9 @@
               }
             }
             .text-gradient {
-              display: inline-block;
-              background: #55ffaa;
-              background: -webkit-linear-gradient(left, #00ADA9, #377EF9);
-              background:    -moz-linear-gradient(right, #00ADA9, #377EF9);
-              background:      -o-linear-gradient(right, #00ADA9, #377EF9);
-              background:         linear-gradient(to right, #00ADA9, #377EF9);
-              -webkit-background-clip: text;
-              color: transparent;
+              background: linear-gradient(to right, #00ADA9, #377EF9);
+              -webkit-background-clip:text;
+              -webkit-text-fill-color:transparent;
             }
           }
 
