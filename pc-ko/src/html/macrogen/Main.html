@@ -164,7 +164,7 @@
                 </div>
             </div>
         </header>
-      <!--  <script>
+        <script>
             var gnb2depth = $('#gnb2Depth .box')
             let gnbIndex = $('#gnb li')
 
@@ -190,10 +190,13 @@
                     $('.header-main').css('background','none');
                     gnb2depth.removeClass('active')
                     gnbIndex.removeClass('active')
-                    $('#header').removeClass('header-bg-white')
+
+                    if ($('html').is('.animated')) {
+                        $('#header').removeClass('header-bg-white')
+                    }
                 }
             })
-        </script>-->
+        </script>
 
         <!-- s intro -->
         <div class="intro">
@@ -259,6 +262,8 @@
                 }, 1000, function () {
                     $('.swiper-wrapper').css({'overflow': 'visible'})
                     setSlider()
+
+                    $('html').addClass('animated')
                 })
             }
 
