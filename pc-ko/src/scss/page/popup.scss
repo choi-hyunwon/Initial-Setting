@@ -5,6 +5,7 @@
       .modal-content{
         background-color: #2E87EF;
         border: 5px solid #2E87EF;
+        border-bottom: none;
         background-clip: initial;
         .modal-header{
           padding: 0;
@@ -92,6 +93,7 @@
             margin: 0px;
 
             .form-check-input{
+              margin: 0px 10px 0px 0px;
               border: 2px solid rgba(255,255,255,0.4);
               background-color: #2E87EF;
               &:checked{
