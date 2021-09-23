@@ -540,6 +540,9 @@
                 > span {
                   margin: 0 12px;
                   position: relative;
+                  a{
+                    color: #707070;
+                  }
 
                   &:first-of-type {
                     margin-left: 0;
@@ -577,7 +580,6 @@
               display: inline-block;
               margin: 0 26px;
               position: relative;
-
               &:before {
                 content: '';
                 display: inline-block;
