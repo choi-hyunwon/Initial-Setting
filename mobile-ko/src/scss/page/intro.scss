@@ -17,6 +17,8 @@
     top: 0;
     z-index: 0;
 
+
+   /* dimmed
     &::before {
       content: '';
       position: absolute;
@@ -25,7 +27,7 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgba(14, 22, 33, 0.45);
-    }
+    }*/
 
     img {
       width: 100%;
@@ -267,23 +269,23 @@
       margin-bottom: 39px;
       &:nth-of-type(1){
         .title-area{
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%),url('../img/@temp/bg-01.svg') no-repeat center center / cover;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%) ,url('../img/@temp/bg-01.png') no-repeat center center / cover;
         }
       }
       &:nth-of-type(2){
         .title-area{
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%),url('../img/@temp/bg-02.svg') no-repeat center center / cover;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%) ,url('../img/@temp/bg-02.png') no-repeat center center / cover;
         }
       }
       &:nth-of-type(3){
         .title-area{
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%),url('../img/@temp/bg-03.svg') no-repeat center center / cover;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%) ,url('../img/@temp/bg-03.png') no-repeat center center / cover;
         }
       }
       &:nth-of-type(4){
         margin-bottom: 56px;
         .title-area{
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%),url('../img/@temp/bg-04.svg') no-repeat center center / cover;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%) ,url('../img/@temp/bg-04.png') no-repeat center center / cover;
         }
       }
       .title-area{
@@ -298,11 +300,12 @@
           padding: 0 30px;
           box-sizing: border-box;
            &:before{
-            content: '';
-            display: inline-block;
-            width: 100%;
-            height: 1px;
-            border-top:1px solid #ffffff;
+             content: '';
+             display: inline-block;
+             width: 100%;
+             height: 1px;
+             opacity: 0.2;
+             border-top:1px solid #ffffff;
              margin-bottom: 23px;
           }
         }
