@@ -4,12 +4,12 @@
     position: absolute;
     z-index: 9;
     display: inline-block;
-    width: 721px;
-    height: 777px;
+    width: 37.5521vw;/*721px;*/
+    height: 79.2857vh;/*777px;*/
     transform: rotate(-15deg);
     right: 8.3333vw/*160px*/;
     top: -30.6122vh/*-300px*/;
-    background: url("../img/main/img-vision-DNA.png") no-repeat 0 0;
+    background: url("../img/main/img-vision-DNA.png") no-repeat center center / cover;
     opacity: 0.7;
     animation:DNA-down 4s 3s forwards;
     @keyframes DNA-down{
@@ -61,8 +61,8 @@
         left: 17.4479vw;
         top: 28.0612vh;
         p{
-          font-size: 76px;
-          line-height: 100px;
+          font-size: 3.9583vw;/*76px;*/
+          line-height:5.2083vw;/*100px;*/
           letter-spacing: -0.0em;
           color: $gray-000000;
           font-weight: bold;
@@ -112,8 +112,8 @@
         position: absolute;
         bottom: 0;
         overflow: hidden;
-        height: 450px;
-        transform: translateY(150px);
+        height: 550px;
+        transform: translateY(250px);
         .swiper-slide{
           &:before{
             content: '';
@@ -121,7 +121,6 @@
             position: absolute;
             top: 0;
             left: 0;
-
             width: 100%;
             height: 100%;
             background: rgba(0,0,0,0.25);
@@ -136,6 +135,9 @@
           &.visual_03{
             background: url("../img/main/img-main_03.png") no-repeat center center / cover;
           }
+          &.visual_04{
+            background: url("../img/main/img-main_04.png") no-repeat center center / cover;
+          }
 
           .text-box{
             display: none;
@@ -143,15 +145,15 @@
             left: 17.4479vw/*335px*/;
             top: 49.4898vh/*485px*/;
             p{
-              font-size: 84px;
-              line-height: 98px;
+              font-size: 4.3750vw;/*84px;*/
+              line-height: 5.1042vw;/*98px;*/
               letter-spacing: -0.06em;
               color:#ffffff;
               font-weight: bold;
               &.desc{
                 font-weight: 500;
-                font-size: 24px;
-                line-height: 40px;
+                font-size: 1.2500vw;/*24px;*/
+                line-height: 2.0833vw;/*40px;*/
                 letter-spacing: -0.05em;
                 margin-top: 35px;
               }
@@ -161,46 +163,86 @@
               -webkit-background-clip:text;
               -webkit-text-fill-color:transparent;
             }
-          }
-
-         /* &.swiper-slide-active{
-            .text-box{
-              display: block;
-              left: 17.4479vw;
-              top: 49.4898vh;
+            &.phrase{
+              left: 50%;
+              top: 48%;
+              transform: translate(-50% ,-50%);
+              color: $gray-ffffff;
+              position: relative;
+              display: inline-block;
+              text-align: center;
               p{
-                font-size: 84px;
-                line-height: 98px;
+                font-size: 2.3958vw/*46px*/;
+                line-height: 3.4375vw;/*66px;*/
                 letter-spacing: -0.06em;
-                color:#ffffff;
-                font-weight: bold;
-                &.desc{
-                  font-weight: 500;
-                  font-size: 24px;
-                  line-height: 40px;
-                  letter-spacing: -0.05em;
-                  margin-top: 35px;
+                margin: 0 30px;
+              }
+              >.name{
+                position: absolute;
+                bottom: -60px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 0.8333vw;/*16px;*/
+                font-weight: normal;
+                &:before{
+                  content: '';
+                  display: inline-block;
+                  position: absolute;
+                  left: -30px;
+                  top:50%;
+                  width: 25px;
+                  height: 1px;
+                  background-color: $gray-ffffff;
+                }
+                &:after{
+                  content: '';
+                  display: inline-block;
+                  position: absolute;
+                  right: -30px;
+                  top:50%;
+                  width: 25px;
+                  height: 1px;
+                  background-color: $gray-ffffff;
+                }
+
+                span{
+                  margin-left: 10px;
+                  font-size: 1.1458vw;/*22px;*/
+                  font-weight: bold;
                 }
               }
-              .text-gradient {
-                display: inline-block;
-                background: #55ffaa;
-                background: -webkit-linear-gradient(left, #00ADA9, #377EF9);
-                background:    -moz-linear-gradient(right, #00ADA9, #377EF9);
-                background:      -o-linear-gradient(right, #00ADA9, #377EF9);
-                background:         linear-gradient(to right, #00ADA9, #377EF9);
-                -webkit-background-clip: text;
-                color: transparent;
-              }
-            }
 
-          }*/
+              &:before{
+                content: '[';
+                font-size: 10.4167vw;/*200px;*/
+                display: inline-block;
+                line-height: 1;
+                margin: 0 auto;
+                position: absolute;
+                left:-52px;
+                top: -50px;
+              }
+              &:after{
+                content: ']';
+                font-size: 10.4167vw;/*200px;*/
+                display: inline-block;
+                line-height: 1;
+                margin: 0 auto;
+                position: absolute;
+                right: -52px;
+                top: -50px;
+              }
+
+            }
+          }
+
+
         }
       }
       .scroll-wrap {
         display: none;
         position: absolute;
-        bottom: 100px;
+        top: 89.7959vh;/*bottom100px*/
         z-index: 11;
         left: 17.8125vw/*342px*/;
         .scroll {
@@ -231,12 +273,10 @@
       }
 
       .swiper-pagination {
-        /*top: 295px;
-        left: 340px;*/
-        top: 275px;
-        left: 332px;
+        top: 28.0612vh;/*275px;*/
+        left:17.2917vw;/* 332px;*/
         height: 60px;
-        width: 200px;
+        width: 300px;
         .swiper-pagination-bullet {
           background: transparent;
           transform: scale(2.5);
