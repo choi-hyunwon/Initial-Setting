@@ -44,6 +44,33 @@
                         <a href="#" class="btn btn-circle btn-white btn-sm _slideRight swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-disabled="true"><i class="icon icon-arrow-right-sm"></i></a>
                         <a href="#" class="btn btn-circle btn-black btn-sm _btnMenu"><i class="icon icon-menu-white"></i></a>
                     </div>
+                    <div class="tab-modal">
+                        <div class="tab-modal-header">
+                            <div class="close-btn _closebtn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="tab-modal-body">
+                            <li><a href="#">Whole Genome Sequencing</a></li>
+                            <li><a href="#">Whole Exome Sequencing</a></li>
+                            <li><a href="#">Transcriptome Sequencing</a></li>
+                            <li><a href="#">Epigenome Sequencing</a></li>
+                            <li><a href="#">Single Cell Multi-omics analysis</a></li>
+                            <li><a href="#">ATAC analysis</a></li>
+                            <li><a href="#">Spatial Gene Expression analysis</a></li>
+                        </ul>
+                    </div>
+
+                    <!--탭모달 스크립트-->
+                    <script>
+                        $("._btnMenu").click(function() {
+                            $(".tab-modal").show();
+                        });
+                        $("._closebtn").click(function() {
+                            $(".tab-modal").hide();
+                        });
+                    </script>
                 </div>
             </div>
             <!--슬라이드 스크립트-->
