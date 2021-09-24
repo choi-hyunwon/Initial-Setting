@@ -165,7 +165,10 @@
         gnb2depth.removeClass('active');
         let idx = $(this).index();
         gnb2depth.eq(idx).addClass('active');
-    });
+        $('#gnb2Depth').css({
+            borderBottom:"1px solid #e9e9e9",
+            borderTop:"1px solid #e9e9e9"
+            })
 
      gnb2depth.mouseover(function () {
          gnbIndex.removeClass('active');
@@ -178,6 +181,7 @@
             gnb2depth.removeClass('active')
             gnbIndex.removeClass('active')
             $('#header').removeClass('header-bg-white')
+            $('#gnb2Depth').css('border','none')
         }
     })
 </script>

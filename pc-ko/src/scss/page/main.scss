@@ -72,16 +72,8 @@
       background: transparent;
       position: absolute;
 
-      .gnb-2depth {
-        border: none;
-      }
-
       &.header-sm {
         background-color: #ffffff !important;
-      }
-
-      &:before {
-        border-bottom: none;
       }
     }
 

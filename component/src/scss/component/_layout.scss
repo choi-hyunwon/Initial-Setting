@@ -143,7 +143,7 @@
       content: '';
       display: inline-block;
       width: 100%;
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid $line-ffffff;
       opacity: 0.1;
       position: absolute;
       left: 0;
@@ -253,8 +253,8 @@
       background-color: $gray-ffffff;
 
       &:before {
-        border-bottom: 1px solid #e9e9e9;
-        opacity: 1;
+        border-bottom: 1px solid $line-e9e9e9;
+        opacity: 0.1;
       }
 
       .inner {
@@ -289,7 +289,7 @@
     &-sm {
       height: 96px;
       background-color: #ffffff;
-      border-bottom: 1px solid $line-e9e9e9;
+      border-bottom: rgba(233, 233, 233, 0.1);
 
       .inner {
         padding: 0;
@@ -353,7 +353,7 @@
       position: absolute;
       width: 100%;
       background-color: $bg-ffffff;
-      border-bottom: 1px solid $line-f3f3f3;
+      border-bottom: rgba(233, 233, 233, 0.1);
       .box{
         display: none;
         max-width: 1920px;
