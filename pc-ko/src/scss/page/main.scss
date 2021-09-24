@@ -279,17 +279,27 @@
         width: 300px;
         .swiper-pagination-bullet {
           background: transparent;
-          transform: scale(2.5);
+          /*transform: scale(2.5);*/
           margin-right: 48px;
+          //border:1px solid red;
+          width: 50px !important;
+          height: 50px !important;
+          margin-right: 0 !important;
           .path {
             display: none;
           }
         }
+
+        .fp-arc-loader{
+          //border: 1px solid #fff;
+          transform : rotate(-90deg);
+        }
+
         .swiper-pagination-bullet-active .path {
           display: inline-block !important;
           stroke-dasharray: 1000;
           stroke-dashoffset: 0;
-          animation: dash linear 120s;
+          animation: dash linear 30000ms;
           animation-iteration-count: unset;
         }
 
