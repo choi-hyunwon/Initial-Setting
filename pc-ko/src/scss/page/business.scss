@@ -14,12 +14,8 @@
   transition: 2s;
   animation-name: businessAnimation;
   background-attachment: fixed;
-  background-image: url("../img/@temp/business/bg_banner.svg");
+  background-image: url("../img/@temp/business/bg_banner_ngs.png");
   margin: 0 auto 140px;
-  &.ngs{
-    background-image: url("../img/@temp/business/bg_banner_ngs.png");
-  }
-
   @keyframes businessAnimation {
     from {
       opacity: 0;
