@@ -290,7 +290,7 @@
                   &.item{
                     width: 296px!important;
                     margin-right: 20px;
-                    a{
+                   /* a{
                       display: block;
                       .img{
                         width: 296px;
@@ -316,7 +316,34 @@
                           height: 70px;
                         }
                       }
-                    }
+                    }*/
+                      display: block;
+                      .img{
+                        width: 296px;
+                        height: 198px;
+                        display: block;
+                        margin-bottom: 0;
+                        img{
+                          @include img-100;
+                        }
+                      }
+                      .txt{
+                        padding: 30px;
+                        background-color:$gray-ffffff;
+                        height: 124px;
+                        display: inline-block;
+                        width: 100%;
+                        span{
+                          font-size: 18px;
+                          line-height: 32px;
+                          color:$gray-000000;
+                          @include ellipsis(2);
+                          font-weight: 500;
+                          height: 70px;
+                        }
+                      }
+                    /*------*/
+
                   }
                 }
               }
