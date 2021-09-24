@@ -174,7 +174,8 @@
                 $(this).parents('#header').addClass('header-bg-white')
                 gnbIndex.removeClass('active');
                 $(this).addClass('active');
-                gnb2depth.removeClass('active').css('border','1px solid #e9e9e9');
+                gnb2depth.removeClass('active');
+                $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
                 let idx = $(this).index();
                 gnb2depth.eq(idx).addClass('active');
             });
@@ -190,6 +191,7 @@
                     $('.header-main').css('background','none');
                     gnb2depth.removeClass('active')
                     gnbIndex.removeClass('active')
+                    $('#gnb2Depth').css('border','none')
 
                     if ($('html').is('.animated')) {
                         $('#header').removeClass('header-bg-white')
@@ -385,24 +387,24 @@
                     <ul class="btn-list clearfix">
                         <li>
                             <a href="#">
-                                <p>연구서비스</p>
-                                <p class="sub-text">다양한 유전자 연구로<br>인류 건강에 이바지 합니다</p>
+                                <p>기업개요</p>
+                                <p class="sub-text">대한민국 바이오 벤처 대표기업<br>마크로젠 입니다</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>임상진단서비스</p>
-                                <p class="sub-text">빅데이터를 기반으로<br>정밀의학의 실현하고 있습니다</p>
+                                <p>글로벌 마크로젠</p>
+                                <p class="sub-text">유전체  분석 연구를 이끄는<br>글로벌 파트너와 함께 합니다</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>헬스케어서비스</p>
-                                <p class="sub-text">건강 관리에 도움을 주는<br>개인 맞춤형 헬스케어 서비스입니다</p>
+                                <p>ESG</p>
+                                <p class="sub-text">안륲의 건강한 미래가<br>지속가능한 세계를 만들어갑니다</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
@@ -476,13 +478,13 @@
                 </div>
                 <div class="video-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="info-box">
-                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Clinical
-                            Diagnostics
-                        </div>
-                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">개개인의 건강한 삶을 위한 다양한 솔루션을 제공하는 임상진단 서비스를 영상으로 만나보세요</div>
-                        <a href="#" class="btn-play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span class="sr-only">재생 버튼</span></a>
+                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">#Macrogen TV</div>
+                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">마크로젠의 새로운 소식을 영상으로 만나보세요</div>
+                        <a href="#" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="icon icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon icon-arrow-right-short"></i></a>
                     </div>
-                    <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a>
+
+                    <!-- more 영역 제거-->
+                    <!--<a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a>-->
                 </div>
             </div>
             <!-- e  news -->

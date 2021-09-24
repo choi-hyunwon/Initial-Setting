@@ -382,6 +382,7 @@
         cursor: pointer;
         display: inline-block;
         z-index: 20;
+        opacity: 0.3;
         &.active.close_btn{
           left: 0;
           transform: rotate(-180deg);
@@ -670,22 +671,33 @@
             letter-spacing: -1px;
             color: $gray-ffffff;
           }
-          .btn-play {
-            @include background-img($width: 40px, $height: 40px, $category: 'common', $img: 'btn-play.svg');
+          .btn_play {
             position: absolute;
-            width: 80px;
-            height: 80px;
             bottom: -129px;
             left: 50%;
             transform: translateX(-50%);
+            border-radius: 35px;
+            font-size: 18px;
+            padding: 17.5px 30px;
+            height: 70px;
+            .icon_youtube{
+              background: url("../img/main/ico-youtube.png") no-repeat center center /cover;
+              width: 26px;
+              height: 18px;
+            }
+            .icon-arrow-right-short{
+              margin-left: 20px;
+            }
+
           }
         }
+       /* more 영역 제거
         .btn-text{
           position: absolute;
           right: 340px;
           bottom: 80px;
           color: #ffffff;
-        }
+        }*/
       }
     }
     .section-media{
