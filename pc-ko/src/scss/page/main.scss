@@ -726,6 +726,11 @@
         .list-border {
           .item {
             padding: 49px 150px 53px 0;
+            &:hover{
+              .date, .tit{
+                color:$point-active;
+              }
+            }
 
             .date {
               display: inline-block;
