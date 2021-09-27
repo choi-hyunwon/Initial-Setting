@@ -21,6 +21,9 @@
             color: $gray-ffffff;
             font-weight: bold;
             margin-bottom: 15px;
+            >span{
+              vertical-align: middle;
+            }
             >a{
               padding: 20px;
               position: relative;
