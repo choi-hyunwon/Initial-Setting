@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 주연: 최초 작업 -- 2021.08.31
+ v.0.2 선미: .business > .swiper-slide > .title > a , .btn (css 추가) -- 2021.09.27
 |----------------------------------|
 */
 .business {
@@ -18,7 +19,22 @@
             line-height: 92px;
             letter-spacing: 0.5px;
             color: $gray-ffffff;
-            margin-bottom: 9px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            >a{
+              padding: 20px;
+              position: relative;
+              width: 100px;
+              height: 100px;
+              display: inline-block;
+              vertical-align: middle;
+              .btn{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
           }
           .desc {
             font-size: 18px;
