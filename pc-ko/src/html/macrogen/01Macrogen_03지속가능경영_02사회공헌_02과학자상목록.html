@@ -480,6 +480,10 @@
 <script>
     var myModal = new bootstrap.Modal(document.getElementById('modalListOfWinners'))
     myModal.show();
+    <!-- IE 미동작 이슈 처리 -- 2021.09.27 -->
+    $('.btn-close').on('click',function (){
+        myModal.hide();
+    })
 </script>
 </body>
 </html>
