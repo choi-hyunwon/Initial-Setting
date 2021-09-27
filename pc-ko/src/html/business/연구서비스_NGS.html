@@ -105,14 +105,19 @@
                     }
                 })
 
-                $('._swiperTab .swiper-slide').on('click', function(){
-                    var idx = $(this).index();
-                    $(this).addClass('active').siblings().removeClass('active');
-
+                function setTabContent (idx){
+                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
                     <!--탭메뉴 클릭시 페이지 변경-->
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                }
+
+                $('._swiperTab .swiper-slide').on('click', function(){
+                    var idx = $(this).index();
+                    setTabContent(idx)
                 });
+
+
 
                 $('.swiper-notification').remove();
             </script>
