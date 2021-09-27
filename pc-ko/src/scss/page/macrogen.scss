@@ -5,6 +5,11 @@
 */
 $min-width: 1244px;
 
+/* 공통 */
+.modal .btn-close:focus {
+  box-shadow: none;
+}
+
 .macrogen {
   /* s 공통 */
   .badge {
@@ -104,16 +109,16 @@ $min-width: 1244px;
       }
     }
 
- /* 수정 요청사항으로 인한 딤드 제거
-  &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(14, 22, 33, 0.45);
-    }*/
+    /* 수정 요청사항으로 인한 딤드 제거
+     &::before {
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(14, 22, 33, 0.45);
+       }*/
 
     &.no-bg {
       background-image: none;
