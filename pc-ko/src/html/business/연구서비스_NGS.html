@@ -107,6 +107,8 @@
 
                 function setTabContent (idx){
                     $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+                    swiper[0].slideTo(idx);
+
                     <!--탭메뉴 클릭시 페이지 변경-->
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
@@ -164,7 +166,7 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item next">
+                                <a href="#" onclick="setTabContent(1)" class="item next">
                                     <div class="title">Whole Exome Sequencing</div>
                                 </a>
                             </div>
@@ -208,10 +210,10 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" onclick="setTabContent(0)" class="item prev">
                                     <div class="title">Whole Genome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" onclick="setTabContent(2)" class="item next">
                                     <div class="title">Transcriptome Sequencing</div>
                                 </a>
                             </div>
@@ -319,18 +321,15 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(1)">
                                     <div class="title">Whole Exome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(3)">
                                     <div class="title">Epigenome Sequencing</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
                 <!--Epigenome-->
                 <div class="info-box">
@@ -356,18 +355,16 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(2)">
                                     <div class="title">Transcriptome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(4)">
                                     <div class="title">Single Cell Multi-Omics analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
 
-                    </script>
                 </div>
                 <!--Cell-->
                 <div class="info-box">
@@ -420,18 +417,15 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(3)">
                                     <div class="title">Epigenome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(5)">
                                     <div class="title">ATAC analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
                 <!--ATAC-->
                 <div class="info-box">
@@ -459,18 +453,15 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(4)">
                                     <div class="title">Single Cell Multi-omics analysis</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(6)">
                                     <div class="title">Spatial Gene Expression analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
                 <!--Spatial-->
                 <div class="info-box">
@@ -491,15 +482,12 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(5)">
                                     <div class="title">ATAC analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
             </div>
         </div>
