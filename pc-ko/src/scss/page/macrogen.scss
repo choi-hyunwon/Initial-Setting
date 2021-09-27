@@ -496,6 +496,7 @@ $min-width: 1244px;
 
     .section-ci {
       position: relative;
+      height: 560px;
       background-size: 1920px 560px;
       background-repeat: no-repeat;
       padding-top: 150px;
@@ -1232,7 +1233,7 @@ $min-width: 1244px;
               .tel {
                 span {
                   position: relative;
-                  font-weight: bold;
+                  font-weight: 700;
                   font-size: 16px;
                   line-height: 30px;
                   color: $gray-707070;
@@ -1290,7 +1291,7 @@ $min-width: 1244px;
       }
 
       .text-lg {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 56px;
         line-height: 81px;
         letter-spacing: -3px;
@@ -1321,7 +1322,7 @@ $min-width: 1244px;
       }
 
       .text-lg {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 56px;
         line-height: 81px;
         letter-spacing: -3px;
@@ -1345,7 +1346,7 @@ $min-width: 1244px;
           }
 
           .tit {
-            font-weight: bold;
+            font-weight: 700;
             font-size: 32px;
             line-height: 46px;
             letter-spacing: -1px;
@@ -1421,7 +1422,7 @@ $min-width: 1244px;
 
         .tit {
           position: relative;
-          font-weight: bold;
+          font-weight: 700;
           font-size: 32px;
           line-height: 46px;
           letter-spacing: -1px;
@@ -1488,7 +1489,7 @@ $min-width: 1244px;
               transform: translateX(-50%);
               border-radius: 50%;
               background-color: $bg-ffffff;
-              font-weight: bold;
+              font-weight: 700;
               font-size: 18px;
               text-align: center;
               color: $gray-000000;
@@ -1499,7 +1500,7 @@ $min-width: 1244px;
               top: 135px;
               left: 50%;
               transform: translateX(-50%);
-              font-weight: bold;
+              font-weight: 700;
               font-size: 32px;
               line-height: 46px;
               text-align: center;
@@ -1518,7 +1519,7 @@ $min-width: 1244px;
             padding-left: 60px;
 
             .desc {
-              font-weight: bold;
+              font-weight: 700;
               font-size: 32px;
               line-height: 46px;
               letter-spacing: -1px;
@@ -1544,7 +1545,7 @@ $min-width: 1244px;
             }
 
             .link {
-              font-weight: bold;
+              font-weight: 700;
               font-size: 18px;
               line-height: 22px;
               letter-spacing: -0.75px;
@@ -1554,7 +1555,7 @@ $min-width: 1244px;
             }
 
             .desc-sm {
-              font-weight: bold;
+              font-weight: 700;
               font-size: 18px;
               line-height: 26px;
               letter-spacing: -0.75px;
@@ -1586,7 +1587,7 @@ $min-width: 1244px;
                   &:first-child {
                     position: relative;
                     width: 174px;
-                    font-weight: bold;
+                    font-weight: 700;
                     font-size: 16px;
                     line-height: 30px;
                     letter-spacing: -0.75px;
@@ -1639,7 +1640,7 @@ $min-width: 1244px;
       }
 
       .desc {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 32px;
         line-height: 46px;
       }
@@ -1682,7 +1683,7 @@ $min-width: 1244px;
             width: calc(100% - 816px);
 
             .title {
-              font-weight: bold;
+              font-weight: 700;
               font-size: 56px;
               line-height: 81px;
               letter-spacing: -3px;
@@ -1752,7 +1753,7 @@ $min-width: 1244px;
                     width: calc(100% - 280px - 40px);
 
                     .sub {
-                      font-weight: bold;
+                      font-weight: 700;
                       font-size: 18px;
                       line-height: 26px;
                       letter-spacing: -0.75px;
@@ -1761,7 +1762,7 @@ $min-width: 1244px;
                     }
 
                     .name {
-                      font-weight: bold;
+                      font-weight: 700;
                       font-size: 36px;
                       line-height: 52px;
                       letter-spacing: -1px;
@@ -1855,7 +1856,7 @@ $min-width: 1244px;
         overflow: hidden;
 
         > .title {
-          font-weight: bold;
+          font-weight: 700;
           font-size: 56px;
           line-height: 81px;
           letter-spacing: -3px;
@@ -1896,7 +1897,7 @@ $min-width: 1244px;
 
               .item {
                 .tit {
-                  font-weight: bold;
+                  font-weight: 700;
                   font-size: 22px;
                   line-height: 36px;
                   letter-spacing: -0.75px;
@@ -1940,7 +1941,7 @@ $min-width: 1244px;
       }
 
       .text-lg {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 56px;
         line-height: 81px;
         letter-spacing: -3px;
@@ -1989,7 +1990,7 @@ $min-width: 1244px;
 
         li {
           position: relative;
-          font-weight: bold;
+          font-weight: 700;
           font-size: 36px;
           line-height: 52px;
           letter-spacing: -1px;
@@ -2254,7 +2255,7 @@ $min-width: 1244px;
             float: left;
             position: relative;
             width: 214px;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 36px;
             line-height: 52px;
             letter-spacing: -1px;
@@ -2309,13 +2310,13 @@ $min-width: 1244px;
                   font-style: normal;
                   letter-spacing: -0.75px;
                   font-size: 18px;
-                  font-weight: bold;
+                  font-weight: 700;
                 }
 
                 &:first-child {
                   position: relative;
                   width: 142px;
-                  font-weight: bold;
+                  font-weight: 700;
                   font-size: 22px;
                   line-height: 30px;
                   letter-spacing: 0.5px;
@@ -2374,7 +2375,7 @@ $min-width: 1244px;
             float: left;
             position: relative;
             width: 312px;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 36px;
             line-height: 52px;
             letter-spacing: -1px;
@@ -2429,13 +2430,13 @@ $min-width: 1244px;
                   font-style: normal;
                   letter-spacing: -0.75px;
                   font-size: 18px;
-                  font-weight: bold;
+                  font-weight: 700;
                 }
 
                 &:first-child {
                   position: relative;
                   width: 142px;
-                  font-weight: bold;
+                  font-weight: 700;
                   font-size: 22px;
                   line-height: 30px;
                   letter-spacing: 0.5px;
@@ -2486,7 +2487,7 @@ $min-width: 1244px;
         margin: 0 auto;
 
         .year {
-          font-weight: bold;
+          font-weight: 700;
           font-size: 32px;
           line-height: 39px;
           letter-spacing: 0.5px;
@@ -2496,7 +2497,7 @@ $min-width: 1244px;
         .title {
           position: relative;
           display: inline-block;
-          font-weight: bold;
+          font-weight: 700;
           font-size: 64px;
           line-height: 93px;
           letter-spacing: -3px;
@@ -2537,7 +2538,7 @@ $min-width: 1244px;
 
           .year {
             position: absolute;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 150px;
             line-height: 183px;
             letter-spacing: -2px;
@@ -2645,7 +2646,7 @@ $min-width: 1244px;
             span {
               position: relative;
               display: block;
-              font-weight: bold;
+              font-weight: 700;
               font-size: 23px;
               line-height: 39px;
               letter-spacing: 0.5px;
@@ -2744,7 +2745,7 @@ $min-width: 1244px;
                 float: left;
                 display: inline-block;
                 width: 67px;
-                font-weight: bold;
+                font-weight: 700;
                 font-size: 18px;
                 line-height: 23px;
                 color: $gray-000000;
@@ -2803,7 +2804,7 @@ $min-width: 1244px;
               padding: 50px;
 
               .tit {
-                font-weight: bold;
+                font-weight: 700;
                 font-size: 36px;
                 line-height: 52px;
                 letter-spacing: -1px;
@@ -3034,7 +3035,7 @@ $min-width: 1244px;
 
           .title {
             position: relative;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 120px;
             line-height: 108px;
             letter-spacing: -0.5px;
@@ -3239,7 +3240,7 @@ $min-width: 1244px;
             display: inline-block;
             width: 174px;
             vertical-align: middle;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 26px;
             line-height: 38px;
             letter-spacing: -0.75px;
@@ -3271,7 +3272,7 @@ $min-width: 1244px;
                 vertical-align: middle;
                 line-height: 32px;
                 font-size: 18px;
-                font-weight: bold;
+                font-weight: 700;
                 color: $gray-454545;
                 margin-right: 4px;
               }
@@ -3301,7 +3302,7 @@ $min-width: 1244px;
           .tit {
             display: inline-block;
             vertical-align: middle;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 18px;
             line-height: 32px;
             letter-spacing: -0.75px;
@@ -3374,7 +3375,7 @@ $min-width: 1244px;
           position: absolute;
           left: 50px;
           top: 50px;
-          font-weight: bold;
+          font-weight: 700;
           font-size: 22px;
           line-height: 32px;
           letter-spacing: -0.75px;
@@ -3385,7 +3386,7 @@ $min-width: 1244px;
           padding-left: 248px;
 
           .name {
-            font-weight: bold;
+            font-weight: 700;
             font-size: 16px;
             line-height: 23px;
             letter-spacing: -0.75px;
@@ -3407,7 +3408,7 @@ $min-width: 1244px;
             span {
               display: inline-block;
               vertical-align: middle;
-              font-weight: bold;
+              font-weight: 700;
               font-size: 16px;
               line-height: 30px;
               color: $gray-454545;
@@ -3606,7 +3607,7 @@ $min-width: 1244px;
       .modal-body {
         .list-of-winners {
           > .title {
-            font-weight: bold;
+            font-weight: 700;
             font-size: 36px;
             line-height: 52px;
             letter-spacing: -1px;
@@ -3640,7 +3641,7 @@ $min-width: 1244px;
               }
 
               .name {
-                font-weight: bold;
+                font-weight: 700;
                 font-size: 22px;
                 line-height: 32px;
                 text-align: center;
@@ -3686,7 +3687,7 @@ $min-width: 1244px;
               width: calc(100% - 220px - 50px);
 
               .sub {
-                font-weight: bold;
+                font-weight: 700;
                 font-size: 18px;
                 line-height: 26px;
                 letter-spacing: -0.75px;
@@ -3695,7 +3696,7 @@ $min-width: 1244px;
               }
 
               .name {
-                font-weight: bold;
+                font-weight: 700;
                 font-size: 44px;
                 line-height: 64px;
                 letter-spacing: -2px;
@@ -3765,7 +3766,7 @@ $min-width: 1244px;
 
           .list-body {
             .title {
-              font-weight: bold;
+              font-weight: 700;
               font-size: 18px;
               line-height: 26px;
               letter-spacing: -0.75px;
