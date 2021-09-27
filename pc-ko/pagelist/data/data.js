@@ -484,27 +484,27 @@ data.esg = {
     },
     {
       stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_01윤리경영',
+      url: '06ESG_02윤리경영',
       category: 'ESG',
-      page: '01Macrogen_03지속가능경영_01윤리경영'
+      page: '06ESG_02윤리경영'
     },
     {
       stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
+      url: '06ESG_03사회공헌_01소개',
       category: 'ESG',
-      page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
+      page: '06ESG_03사회공헌_01소개'
     },
     {
       stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
+      url: '06ESG_03사회공헌_02과학자상목록',
       category: 'ESG',
-      page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
+      page: '06ESG_03사회공헌_02과학자상목록'
     },
     {
       stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_02사회공헌_03과학자상상세',
+      url: '06ESG_03사회공헌_03과학자상상세',
       category: 'ESG',
-      page: '01Macrogen_03지속가능경영_02사회공헌_03과학자상상세'
+      page: '06ESG_03사회공헌_03과학자상상세'
     },
   ]
 }
