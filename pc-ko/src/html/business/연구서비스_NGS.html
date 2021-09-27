@@ -52,77 +52,28 @@
                             </div>
                         </div>
                         <ul class="tab-modal-body">
-                            <li><a href="#">Whole Genome Sequencing</a></li>
-                            <li><a href="#">Whole Exome Sequencing</a></li>
-                            <li><a href="#">Transcriptome Sequencing</a></li>
-                            <li><a href="#">Epigenome Sequencing</a></li>
-                            <li><a href="#">Single Cell Multi-omics analysis</a></li>
-                            <li><a href="#">ATAC analysis</a></li>
-                            <li><a href="#">Spatial Gene Expression analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(0)">Whole Genome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(1)">Whole Exome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(2)">Transcriptome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(3)">Epigenome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(5)">ATAC analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li>
                         </ul>
                     </div>
 
                     <!--탭모달 스크립트-->
                     <script>
-                        $("._btnMenu").click(function() {
+                        $("._btnMenu").on('click',function() {
                             $(".tab-modal").show();
                         });
-                        $("._closebtn").click(function() {
+                        $("._closebtn").on('click',function() {
                             $(".tab-modal").hide();
                         });
                     </script>
                 </div>
             </div>
             <!--슬라이드 스크립트-->
-            <script>
-                var swiper = new Swiper("._swiperTab", {
-                    slidesPerView: "auto",
-                    spaceBetween: 0,
-                    centeredSlides: false,
-                    watchActiveIndex: true,
-                    slideToClickedSlide: true,
-                    navigation: {
-                        nextEl: "._slideRight",
-                        prevEl: "._slideLeft",
-                    },
-                });
-
-                $(document).ready(function (){
-                    var idx = $('._swiperTab .swiper-slide').length;
-                    var sum= 0;
-
-                    // slide wrap width
-                    for (var j = 0; j < idx; j++) {
-                        sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-                    }
-                    $('.swiper-wrapper').css('width',sum)
-
-                    // slide width
-                    for (var i = 0; i <= idx; i++) {
-                        var target = $(`.swiper-slide:eq(${i})`);
-                        var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
-                        target.css('width',idxWidth)
-                    }
-                })
-
-                function setTabContent (idx){
-                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-                    swiper[0].slideTo(idx);
-
-                    <!--탭메뉴 클릭시 페이지 변경-->
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                }
-
-                $('._swiperTab .swiper-slide').on('click', function(){
-                    var idx = $(this).index();
-                    setTabContent(idx)
-                });
-
-
-
-                $('.swiper-notification').remove();
-            </script>
             <div class="info-box-wrap tab-content">
                 <!--Genome-->
                 <div class="info-box show">
@@ -492,6 +443,55 @@
             </div>
         </div>
     </div>
+    <script>
+        var swiper = new Swiper("._swiperTab", {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            centeredSlides: false,
+            watchActiveIndex: true,
+            slideToClickedSlide: true,
+            navigation: {
+                nextEl: "._slideRight",
+                prevEl: "._slideLeft",
+            },
+        });
+
+        $(document).ready(function (){
+            var idx = $('._swiperTab .swiper-slide').length;
+            var sum= 0;
+
+            // slide wrap width
+            for (var j = 0; j < idx; j++) {
+                sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
+            }
+            $('.swiper-wrapper').css('width',sum)
+
+            // slide width
+            for (var i = 0; i <= idx; i++) {
+                var target = $(".swiper-slide:eq("+"i"+")");
+                var idxWidth = $(".swiper-slide:eq("+"i"+")").outerWidth(true) - 40;
+                target.css('width',idxWidth)
+            }
+        })
+
+        function setTabContent (idx){
+            $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+            swiper[0].slideTo(idx);
+
+            <!--탭메뉴 클릭시 페이지 변경-->
+            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        }
+
+        $('._swiperTab .swiper-slide').on('click', function(){
+            var idx = $(this).index();
+            console.log(idx)
+            console.log('dfsdfdsfds')
+            setTabContent(idx)
+        });
+
+        $('.swiper-notification').remove();
+    </script>
     @@include('../../html/include/component/footer.html')
     @@include('../../html/include/component/toTop.html')
 </div>

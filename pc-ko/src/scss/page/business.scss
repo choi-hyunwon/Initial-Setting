@@ -749,5 +749,24 @@
         }
     }
   }
-
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .slide-tab-wrap::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .slide-tab-wrap .swiper-container {
+    float: left;
+    width: calc(100% - 134px);
+  }
+  .slide-tab-wrap .btn-box {
+    display: block;
+    width: 134px;
+    float: left;
+  }
+  .slide-tab-wrap .btn-box .btn {
+    float: left;
+    margin-right: 6px;
+  }
 }
