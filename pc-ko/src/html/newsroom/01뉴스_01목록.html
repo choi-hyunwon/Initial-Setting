@@ -54,12 +54,12 @@
                         <div class="pagination-wrap">
                             <ul class="navigation">
                                 <li class="page-item prev">
-                                    <a class="page-link _prev" href="#">
+                                    <a class="page-link" href="#">
                                         <span class="sr-only">이전</span>
                                     </a>
                                 </li>
                                 <li class="page-item next">
-                                    <a class="page-link _next" href="#">
+                                    <a class="page-link" href="#">
                                         <span class="sr-only">다음</span>
                                     </a>
                                 </li>
@@ -88,17 +88,20 @@
                     </div>
                     <script>
                         var imageSwiper = new Swiper("._imageSlider", {
-                            speed: 250,
+                          /*  pagination: {
+                                el: ".swiper-pagination",
+                                clickable : true,
+                            },*/
                             navigation: {
-                                nextEl: '._next',
-                                prevEl: '._prev',
+                                nextEl: '.page-item.next',
+                                prevEl: '.page-item.prev',
                             },
                         });
 
                         var textSwiper = new Swiper("._textSlider", {
                             navigation: {
-                                nextEl: '._next',
-                                prevEl: '._prev',
+                                nextEl: '.page-item.next',
+                                prevEl: '.page-item.prev',
                             },
                         });
                     </script>
