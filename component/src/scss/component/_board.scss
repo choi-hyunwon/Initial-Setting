@@ -6,6 +6,8 @@
  v.0.4 선미 : list 4타입 분류 작업 -- 2021.09.03
  v.0.5 선미 : indicator > btn-box {padding:0}-- 2021.09.06
  v.0.6 태윤 : .navigation 추가 -- 2021.0909
+ v.0.7 선미 : text-slider tit color값 추가- 2021.09.27
+
 |----------------------------------|
 */
 .board {
@@ -24,6 +26,7 @@
         line-height: 60px;
         letter-spacing: -2px;
         margin-bottom: 30px;
+        color: $gray-000000;
         @include ellipsis($line: 3);
       }
 
@@ -55,6 +58,12 @@
           }
         }
       }
+
+      .swiper-slide{
+        a{
+          display: block;
+        }
+      }
     }
 
     .image-slider {
@@ -82,6 +91,9 @@
       .swiper-slide {
         width: 100%;
         height: 100%;
+        a{
+          display: block;
+        }
 
         img {
           @include img-100;

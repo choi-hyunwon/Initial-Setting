@@ -1,4 +1,7 @@
 .main-wrap {
+  .container{
+    padding: 0!important;
+  }
 
   .bg-DNA {
     position: absolute;
@@ -84,18 +87,21 @@
 
       .box {
         position: absolute;
-        left: 17.4479vw;
-        top: 28.0612vh;
+        left: 17.5vw;/*336*/
+        top: 38.2653vh;/*375*/
 
-        p {
+        .text {
           font-size: 3.9583vw; /*76px;*/
           line-height: 5.2083vw; /*100px;*/
           letter-spacing: -0.0em;
           color: $gray-000000;
           font-weight: bold;
+          img{
+            width: 44.4792vw;/*854px*/
+          }
         }
 
-        .text-gradient {
+     /*   .text-gradient {
           position: relative;
           line-height: 1;
           background: #55ffaa;
@@ -130,7 +136,7 @@
 
 
           }
-        }
+        }*/
       }
     }
 
@@ -147,6 +153,7 @@
         transform: translateY(250px);
 
         .swiper-slide {
+         /* 딤드제거
           &:before {
             content: '';
             display: block;
@@ -156,18 +163,33 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.25);
-          }
+          }*/
 
           &.visual_01 {
             background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;
+            .text-gradient{
+              img{
+                width: 31.8750vw;/*612px*/
+              }
+            }
           }
 
           &.visual_02 {
             background: url("../img/main/img-main_02.png") no-repeat center center / cover;
+            .text-gradient{
+              img{
+                width: 31.8229vw;/*611px*/
+              }
+            }
           }
 
           &.visual_03 {
             background: url("../img/main/img-main_03.png") no-repeat center center / cover;
+            .text-gradient{
+              img{
+                width: 27.7083vw;/*532px*/
+              }
+            }
           }
 
           &.visual_04 {
@@ -198,11 +220,11 @@
               }
             }
 
-            .text-gradient {
+           /* .text-gradient {
               background: linear-gradient(to right, #00ADA9, #377EF9);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-            }
+            }*/
 
             &.phrase {
               left: 50%;
