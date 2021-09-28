@@ -2,13 +2,11 @@
 |----------------------------------|
  v.0.1 (선미) 최초 작업 -- 2021.08.26
  v.0.2 (주연) 수정 요청 사항 적용 -- 2021.09.01
+ v.0.3 (선미) .pagination-wrap : margin 0 제거 -- 2021.09.29
 |----------------------------------|
 */
 .section_newsroom {
   .btn-share-box {
     text-align: right;
-  }
-  .pagination-wrap {
-    margin: 0;
   }
 }

@@ -289,7 +289,7 @@
     &-sm {
       height: 96px;
       background-color: #ffffff;
-      border-bottom: rgba(233, 233, 233, 0.1);
+      border-bottom: 1px solid rgba(233, 233, 233, 0.1);
 
       .inner {
         padding: 0;
@@ -316,24 +316,6 @@
         }
 
         .section_btn {
-          .sns {
-            .icon-facebook-circle-white {
-              background-image: url("../img/common/ico-facebook-circle.svg");
-            }
-
-            .icon-youtube-circle-white {
-              background-image: url("../img/common/ico-youtube-circle.svg");
-            }
-
-            .icon-blog-circle-white {
-              background-image: url("../img/common/ico-blog-circle.svg");
-            }
-
-            .icon-linkedin-circle-white {
-              background-image: url("../img/common/ico-linkedin-circle.svg");
-            }
-          }
-
           .btn_eng {
             .btn-round {
               color: $gray-000000;
@@ -519,6 +501,10 @@
 
               li {
                 margin-bottom: 7px;
+
+                >a{
+                  color: #707070;
+                }
 
                 &:last-of-type {
                   margin-bottom: 0

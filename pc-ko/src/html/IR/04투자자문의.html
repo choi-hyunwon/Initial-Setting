@@ -98,8 +98,12 @@
             </div>
 
             <script>
-                $('.form-check').on('click',function (){
-                    $(this).parent().next('.btn-box').children('.btn').toggleClass('disabled')
+                $('.form-check-input').on('click',function (){
+                    if($(this).is(":checked") ==  true){
+                        $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
+                    }else{
+                        $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
+                    }
                 });
             </script>
        </div>

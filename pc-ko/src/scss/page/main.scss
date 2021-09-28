@@ -681,7 +681,7 @@
       }
 
       .business {
-        cursor: url('../img/main/img-cursor.cur'), auto;
+        cursor: url('../img/main/img-cursor.cur') 60 60 , auto;
 
         .slider {
           .swiper-slide {
@@ -794,7 +794,6 @@
           padding-left: 212px;
           line-height: 2;
           position: relative;
-          z-index: 10;
         }
       }
 
