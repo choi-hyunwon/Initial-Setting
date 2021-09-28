@@ -1696,9 +1696,6 @@ $min-width: 1244px;
               color: $gray-000000;
               margin-bottom: 40px;
             }
-
-            .btn-wrap {
-            }
           }
 
           .list-body {
@@ -1715,6 +1712,11 @@ $min-width: 1244px;
                 .page-item {
                   position: static;
                   margin-right: 8px;
+
+                  &:focus {
+                    outline: none;
+                    box-shadow: none;
+                  }
 
                   &:last-child {
                     margin-right: 0;
@@ -2482,7 +2484,8 @@ $min-width: 1244px;
   &.macrogen-history {
     .slide-tab-wrap {
       width: $min-width;
-      margin: 140px auto 0;
+      margin: 0 auto;
+      padding-top: 140px;
     }
 
     .section {
@@ -2636,12 +2639,14 @@ $min-width: 1244px;
         }
       }
 
+
       .history-list {
+        position: relative;
         padding-top: 57px + 66px;
         overflow: hidden;
 
         .year-info {
-          float: left;
+          position: absolute;
           width: 428px;
 
           li {
@@ -2679,6 +2684,26 @@ $min-width: 1244px;
               }
             }
 
+            &.active {
+              span {
+                font-size: 58px;
+                line-height: 71px;
+                color: $gray-000000;
+
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: -107px;
+                  background-color: transparent;
+                  @include background-img($width: 23px, $height: 23px, $category: 'macrogen', $img: 'bg-history-dot.svg');
+                }
+
+                &::after {
+                  bottom: -41px;
+                }
+              }
+            }
+
             &:first-child {
               &::before {
                 content: '';
@@ -2699,23 +2724,7 @@ $min-width: 1244px;
                 top: -62px;
               }
 
-              span {
-                font-size: 58px;
-                line-height: 71px;
-                color: $gray-000000;
 
-                &::before {
-                  content: '';
-                  position: absolute;
-                  left: -107px;
-                  background-color: transparent;
-                  @include background-img($width: 23px, $height: 23px, $category: 'macrogen', $img: 'bg-history-dot.svg');
-                }
-
-                &::after {
-                  bottom: -41px;
-                }
-              }
             }
 
             &:last-child {
@@ -2729,8 +2738,7 @@ $min-width: 1244px;
         }
 
         .desc-info {
-          float: left;
-          width: calc(100% - 428px);
+          padding-left: 428px;
 
           ul {
             margin-bottom: 100px;
@@ -3709,6 +3717,10 @@ $min-width: 1244px;
                 letter-spacing: -2px;
                 color: $gray-000000;
                 margin-bottom: 4px;
+
+                a {
+                  color: $gray-000000;
+                }
               }
 
               .job {
