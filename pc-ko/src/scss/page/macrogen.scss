@@ -901,7 +901,7 @@ $min-width: 1244px;
         margin-bottom: 33px;
 
         .form-select {
-          width: 125px;
+          width: 135px;
           color: $gray-000000;
           padding-left: 30px;
           font-size: 18px;
@@ -1464,7 +1464,7 @@ $min-width: 1244px;
             line-height: 30px;
             letter-spacing: -0.75px;
             color: $gray-454545;
-            padding: 40px;
+            padding: 40px 0 40px 40px;
           }
         }
       }
@@ -1546,7 +1546,7 @@ $min-width: 1244px;
                 position: absolute;
                 @include background-img($width: 20px, $height: 20px, $category: 'macrogen', $img: 'ic-tip.svg');
                 left: 0;
-                top: 3px;
+                top: 5px;
               }
             }
 
@@ -2874,7 +2874,7 @@ $min-width: 1244px;
     }
 
     .section-welfare {
-      padding-top: 150px;
+      padding: 150px 50px 0;
 
       .inner {
         position: relative;
@@ -3647,6 +3647,8 @@ $min-width: 1244px;
                 width: 180px;
                 height: 180px;
                 margin-bottom: 20px;
+                border-radius: 50%;
+                overflow: hidden;
 
                 img {
                   width: 100%;
