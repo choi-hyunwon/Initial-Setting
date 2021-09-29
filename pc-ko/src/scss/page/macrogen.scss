@@ -2750,6 +2750,10 @@ $min-width: 1244px;
             padding-left: 107px;
             margin-bottom: 40px;
 
+            &:last-child {
+              margin-bottom: 0;
+            }
+
             span {
               position: relative;
               display: block;
@@ -2926,10 +2930,6 @@ $min-width: 1244px;
                 line-height: 30px;
                 letter-spacing: -0.75px;
                 color: $gray-454545;
-              }
-
-              &.item-1 {
-
               }
 
               &.item-2 {
