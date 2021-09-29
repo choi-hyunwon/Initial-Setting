@@ -508,6 +508,9 @@
                   margin: 0 12px;
                   display: inline-block;
                   position: relative;
+                  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    display: inline;
+                  }
                   a{
                     color: #707070;
                   }
