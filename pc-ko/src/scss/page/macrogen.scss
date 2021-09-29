@@ -256,7 +256,7 @@ $min-width: 1244px;
           height: 6px;
           background-color: $bg-000000;
           right: -89px;
-          bottom: 24px;
+          bottom: 8px;
         }
       }
 
@@ -1168,6 +1168,10 @@ $min-width: 1244px;
               line-height: 52px;
               letter-spacing: -1px;
               margin-bottom: 40px;
+              .badge{
+                font-weight: 500;
+                line-height: 25px;
+              }
             }
 
             .img {
@@ -1210,7 +1214,7 @@ $min-width: 1244px;
                         content: '';
                         position: absolute;
                         left: 0;
-                        top: 12px;
+                        top: 15px;
                         width: 5px;
                         height: 5px;
                         border-radius: 50%;
@@ -2012,7 +2016,7 @@ $min-width: 1244px;
             height: 4px;
             background-color: $gray-ffffff;
             left: -48px;
-            top: 17px;
+            top: 23px;
           }
 
           &:last-child {
@@ -2302,7 +2306,7 @@ $min-width: 1244px;
 
             li {
               overflow: hidden;
-              width: 495px;
+              width: 500px;
               margin-bottom: 14px;
 
               &:last-child {
@@ -2323,13 +2327,13 @@ $min-width: 1244px;
 
                 &:first-child {
                   position: relative;
-                  width: 142px;
+                  width: 145px;
                   font-weight: 700;
                   font-size: 22px;
                   line-height: 30px;
                   letter-spacing: 0.5px;
                   color: $gray-ffffff;
-                  padding-left: 20px;
+                  padding-left: 15px;
                   margin-right: 18px;
 
                   &::before {
