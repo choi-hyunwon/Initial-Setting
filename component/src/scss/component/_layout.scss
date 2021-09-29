@@ -477,14 +477,11 @@
 
         .info {
           display: flex;
-          justify-content: start;
+          justify-content: space-between;
           font-family: $font-family-base;
           margin-bottom: 54px;
 
           .box {
-            &:first-of-type{
-              width: 55.5%;
-            }
             .title {
               font-size: 20px;
               line-height: 32px;
