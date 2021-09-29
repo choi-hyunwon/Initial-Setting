@@ -1624,7 +1624,7 @@ $min-width: 1244px;
               font-weight: 700;
               font-size: 32px;
               line-height: 46px;
-              letter-spacing: -1px;
+              letter-spacing: -2px;
               margin-bottom: 0;
             }
 
@@ -1642,7 +1642,7 @@ $min-width: 1244px;
                 position: absolute;
                 @include background-img($width: 20px, $height: 20px, $category: 'macrogen', $img: 'ic-tip.svg');
                 left: 0;
-                top: 5px;
+                top: 8px;
               }
             }
 
@@ -1650,7 +1650,7 @@ $min-width: 1244px;
               font-weight: 700;
               font-size: 18px;
               line-height: 22px;
-              letter-spacing: -0.75px;
+              letter-spacing: 0.5px;
               color: $point-primary;
               margin-top: 40px;
               text-decoration: underline;
