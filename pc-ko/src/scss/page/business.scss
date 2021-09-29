@@ -16,6 +16,12 @@
   background-attachment: fixed;
   background-image: url("../img/@temp/business/bg_banner_ngs.png");
   margin: 0 auto 140px;
+  &.cancer{
+    background-image: url("../img/@temp/business/bg_banner_cancer.png");
+  }
+  &.pet{
+    background-image: url("../img/@temp/business/bg_banner_pet.png");
+  }
   @keyframes businessAnimation {
     from {
       opacity: 0;
