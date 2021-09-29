@@ -38,7 +38,7 @@
 
             <div class="section-wrap">
                 <!-- s 글로벌 유전체 정보 구축 -->
-                <div class="section _history_section" id="information" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section _historySection" id="information" data-aos="fade-up" data-aos-duration="2000">
                     <div class="inner">
                         <div class="year">2011 - TODAY</div>
                         <div class="title">글로벌 유전체 정보 구축</div>
@@ -214,7 +214,7 @@
                 <!-- e 글로벌 유전체 정보 구축 -->
 
                 <!-- s 글로벌 유전체 정보 구축 -->
-                <div class="section _history_section" id="information2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section _historySection" id="information2" data-aos="fade-up" data-aos-duration="2000">
                     <div class="inner">
                         <div class="year">2001 - 2010</div>
                         <div class="title">글로벌 유전체 정보 구축</div>
@@ -448,7 +448,7 @@
                 <!-- e 글로벌 유전체 정보 구축 -->
 
                 <!-- s 벤처기업 창업 -->
-                <div class="section _history_section" id="information3" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section _historySection" id="information3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="inner">
                         <div class="year">1997 - 2000</div>
                         <div class="title">벤처기업 창업</div>
@@ -620,52 +620,42 @@
 
     // 연혁 인터랙션
     $(document).ready(function () {
-        var yearListArray = [];
-        var section = $('._history_section');
+        var section = $('._historySection');
         var sectionLength = section.length;
-
 
         $(window).on('resize scroll', function () {
             for (var i = 0; i < sectionLength; i++) {
                 setHistoryScroll(section.eq(i));
             }
         })
-
         function setHistoryScroll($information) {
             var gap = 50;
             var gapYear = 79;
-            var yearboxPos = 100;
             var currentPosition = $(window).scrollTop();
             var sectionOffset = $information.find('.desc-info ul').eq(0).offset().top;
             var scrollStart = currentPosition - sectionOffset + 123;
             var size = $information.find('.year-info li').length;
 
             $information.find('.year-info li').each(function (index) {
-                // console.log(size);
-                // console.log(index+1);
                 if (currentPosition < $information.find('.desc-info ul').eq(0).offset().top - gap) {
-                    // console.log('섹션 이전 화면에서는 absolute상태!!')
                     //섹션 이전 화면에서는 absolute상태
-                    $information.find('.year-info').css({'top': 'auto'}, {'position': 'absolute'});
+                    $information.find('.year-info').css({'top' : 'auto'}, {'position' : 'absolute'});
                 } else {
                     //섹션 안으로 들어오면 fixed 상태
                     if (size !== index + 1) {
                         if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top - gap && currentPosition < $information.find('.desc-info ul').eq(index + 1).offset().top - gap) {
-                            // console.log(index+ '번째!!')
-                            $information.find('.year-info').css({'top': scrollStart + 100 - (gapYear * index)}, {'position': 'fixed'});
-                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active')
+                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
+                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
                         }
                     } else {
                         if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top) {
-                            // console.log('마지막 번째!!')
-                            $information.find('.year-info').css({'top': scrollStart + 100 - (gapYear * index)}, {'position': 'fixed'});
-                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active')
+                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
+                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
                         }
                     }
                 }
             })
         }
-
     })
 </script>
 </body>
