@@ -2791,7 +2791,8 @@ $min-width: 1244px;
             &.active {
               span {
                 font-size: 58px;
-                line-height: 71px;
+                /*line-height: 71px;*/
+                line-height: 1;
                 color: $gray-000000;
 
                 &::before {

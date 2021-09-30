@@ -650,9 +650,9 @@
             }
         })
         function setHistoryScroll($information) {
-            var gap = 50;
+            var gap = 0;/*50*/
             var gapYear = 79;
-            var currentPosition = $(window).scrollTop();
+            var currentPosition = $(window).scrollTop() +95; /*+95 X*/
             var sectionOffset = $information.find('.desc-info ul').eq(0).offset().top;
             var scrollStart = currentPosition - sectionOffset + 123;
             var size = $information.find('.year-info li').length;
