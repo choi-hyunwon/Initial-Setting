@@ -23,9 +23,9 @@
             <div class="slide-tab-wrap">
                 <div class="swiper-container tab-slide-box _swiperTab">
                     <div class="swiper-wrapper _swiperTab">
-                        <div class="swiper-slide active"><a href="#information">2011 - 현재</a></div>
-                        <div class="swiper-slide"><a href="#information2">2001 - 2010</a></div>
-                        <div class="swiper-slide"><a href="#information3">1997 - 2000</a></div>
+                        <div class="swiper-slide active"><a href="#" onclick="fnMove('information')">2011 - 현재</a></div>
+                        <div class="swiper-slide"><a href="#" onclick="fnMove('information2')">2001 - 2010</a></div>
+                        <div class="swiper-slide"><a href="#" onclick="fnMove('information3')">1997 - 2000</a></div>
                     </div>
                 </div>
             </div>
@@ -617,6 +617,12 @@
         event.preventDefault()
         $(this).tab('show')
     })
+
+    function fnMove(seq){
+        var id = $('#'+ seq);
+        var offset = id.offset();
+        $('html, body').animate({scrollTop : offset.top - 95}, 400);
+    }
 
     // 연혁 인터랙션
     $(document).ready(function () {
