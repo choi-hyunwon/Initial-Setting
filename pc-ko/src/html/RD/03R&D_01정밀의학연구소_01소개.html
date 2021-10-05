@@ -66,12 +66,6 @@
                     </a>
                 </div>
             </nav>
-            <script>
-                $('#tab a').on('click', function (event) {
-                    event.preventDefault()
-                    $(this).tab('show')
-                })
-            </script>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">
                     <!-- s  연구진행 -->
@@ -279,6 +273,24 @@
                     <!-- e  개발-->
                 </div>
             </div>
+
+            <!--클릭시 페이지 변경-->
+            <script>
+                function setTabContent (idx){
+                    $('.tab-list > .nav-link').eq(idx).addClass('active').siblings().removeClass('active');
+                    console.log(idx);
+
+                    <!--탭메뉴 클릭시 페이지 변경-->
+                    $(".tab-content > .tab-pane").eq(idx).addClass('show').siblings().removeClass('show');
+                    $(".tab-content > .tab-pane").eq(idx).addClass('active').siblings().removeClass('active');
+                }
+
+                $('.tab-list .nav-link').on('click', function(){
+                    var idx = $(this).index();
+                    setTabContent(idx)
+                });
+            </script>
+
         </div>
 
     </div>
