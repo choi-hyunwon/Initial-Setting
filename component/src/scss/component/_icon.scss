@@ -5,6 +5,7 @@
  v.0.3 선미 : icon-arrow-right-long-white 추가ㅣ -- 2021.09.13
  v.0.4 선미 : icon-arrow-bottom-short 추가ㅣ icon-arrow-bottom-short-black -> icon-arrow-bottom-sm 변경-- 2021.09.15
  v.0.5 선미 : icon-pen 추가 - 2021.09.16
+ v.0.6 태윤 : icon-arrow-top-fill-black ㅣ icon-arrow-bottom-fill-black 추가
 
 |----------------------------------|
 */
@@ -217,6 +218,18 @@
   background-image: url("../img/common/ico-arrow-right-sm.svg");
   width: 8px;
   height: 14px;
+}
+
+.icon-arrow-top-fill-black{
+  background-image: url("../img/common/ico-arrow-top-fill-black.svg");
+  width: 8px;
+  height: 6px;
+}
+
+.icon-arrow-bottom-fill-black{
+  background-image: url("../img/common/ico-arrow-bottom-fill-black.svg");
+  width: 8px;
+  height: 6px;
 }
 
 /*icon - guide*/
