@@ -14,15 +14,15 @@
   transition: 2s;
   animation-name: businessAnimation;
   background-attachment: fixed;
-  background-image: url("../img/@temp/business/bg_banner_ngs.png");
+  background-image: url("../img/business/bg_banner_ngs.png");
   margin: 0 auto 140px;
   /*임상진단서비스*/
   &.bg-type2{
-    background-image: url("../img/@temp/business/bg_banner_cancer.png");
+    background-image: url("../img/business/bg_banner_cancer.png");
   }
   /*헬스케어서비스*/
   &.bg-type3{
-    background-image: url("../img/@temp/business/bg_banner_pet.png");
+    background-image: url("../img/business/bg_banner_pet.png");
   }
   @keyframes businessAnimation {
     from {
