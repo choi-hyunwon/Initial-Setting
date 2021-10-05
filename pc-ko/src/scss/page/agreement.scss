@@ -22,7 +22,7 @@
       cursor: pointer;
       position: relative;
       .select_default{
-        background-image: url("../img/@temp/agreement/bg-triangle-down.svg");
+        background-image: url("../img/common/ico-arrow-bottom-fill-black.svg");
         background-repeat: no-repeat;
         background-position: calc(100% - 6px) 13.5px;
         display: inline-block;
@@ -34,7 +34,7 @@
           display: inline-block;
         }
         &.open{
-          background-image: url("../img/@temp/agreement/bg-triangle-up.svg");
+          background-image: url("../img/common/ico-arrow-top-fill-black.svg");
           background-repeat: no-repeat;
           background-position: calc(100% - 6px) 13.5px;
         }
