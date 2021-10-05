@@ -63,6 +63,7 @@
                     </div>
 
                     <!--탭모달 스크립트-->
+
                     <script>
                         $("._btnMenu").on('click',function() {
                             $(".tab-modal").show();
@@ -70,6 +71,14 @@
                         $("._closebtn").on('click',function() {
                             $(".tab-modal").hide();
                         });
+                        <!--10.05 스크립트 추가-->
+                        $(document).mouseup(function (e){
+                            var LayerPopup = $(".tab-modal");
+                            if(LayerPopup.has(e.target).length === 0){
+                                LayerPopup.hide();
+                            }
+                        });
+
                     </script>
                 </div>
             </div>
