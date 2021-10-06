@@ -71,7 +71,7 @@
                     <!-- s  연구진행 -->
                     <div class="slide-box">
                         <div class="slider">
-                            <div class="swiper-container _Slider01 ">
+                            <div class="swiper-container _Slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide item">
                                         <a href="#" class="_popupOpen">
@@ -133,10 +133,10 @@
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
                             <div class="slider-navigation">
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev01 swiper-button-disabled"
+                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev swiper-button-disabled"
                                    tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i
                                         class="icon icon-arrow-left-md-white"></i></a>
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext01" tabindex="0"
+                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext" tabindex="0"
                                    role="button" aria-label="Next slide" aria-disabled="false"><i
                                         class="icon icon-arrow-right-md-white"></i></a>
                             </div>
@@ -148,7 +148,7 @@
                     <!-- s  플랫폼 구축-->
                     <div class="slide-box">
                         <div class="slider">
-                            <div class="swiper-container _Slider02">
+                            <div class="swiper-container _Slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide item">
                                         <a href="#" class="_popupOpen">
@@ -195,8 +195,8 @@
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
                             <div class="slider-navigation">
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev02 swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i class="icon icon-arrow-left-md-white"></i></a>
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext02" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><i class="icon icon-arrow-right-md-white"></i></a>
+                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i class="icon icon-arrow-left-md-white"></i></a>
+                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><i class="icon icon-arrow-right-md-white"></i></a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                     <!-- s  개발-->
                     <div class="slide-box">
                         <div class="slider">
-                            <div class="swiper-container _Slider03">
+                            <div class="swiper-container _Slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide item">
                                         <a href="#" class="_popupOpen">
@@ -260,10 +260,10 @@
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
                             <div class="slider-navigation">
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev03 swiper-button-disabled"
+                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev swiper-button-disabled"
                                    tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i
                                         class="icon icon-arrow-left-md-white"></i></a>
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext03" tabindex="0"
+                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext" tabindex="0"
                                    role="button" aria-label="Next slide" aria-disabled="false"><i
                                         class="icon icon-arrow-right-md-white"></i></a>
                             </div>
@@ -278,33 +278,62 @@
 
     </div>
     <script>
-        function setSlider(index){
-            new Swiper("._Slider0" + index, {
-                slidesPerView: 4,
-                spaceBetween: 20,
-                slidesPerGroup: 4,
-                loopFillGroupWithBlank: true,
-                grabCursor: true,
-                navigation: {
-                    nextEl: "._btnNext0" + index,
-                    prevEl: "._btnPrev0" + index,
-                },
-            });
-        }
+
+
+
+
+
+        // function setSlider(){
+        //     new Swiper("._Slider",
+        //         {
+        //         slidesPerView: 4,
+        //         spaceBetween: 20,
+        //         slidesPerGroup: 4,
+        //         loopFillGroupWithBlank: true,
+        //         grabCursor: true,
+        //             observer: true,
+        //             observeParents: true,
+        //         navigation: {
+        //             nextEl: "._btnNext",
+        //             prevEl: "._btnPrev",
+        //         },
+        //
+        //     });
+        // }
+        // setSlider()
 
         <!--클릭시 페이지 변경-->
+
         function setTabContent (idx){
+            setSlider();
+            var tab = $(".tab-content > .tab-pane").eq(idx)
             $('.tab-list > .nav-link').eq(idx).addClass('active').siblings().removeClass('active');
-            console.log(idx);
 
             <!--탭메뉴 클릭시 페이지 변경-->
-            $(".tab-content > .tab-pane").eq(idx).addClass('show').siblings().removeClass('show');
-            $(".tab-content > .tab-pane").eq(idx).addClass('active').siblings().removeClass('active');
+            tab.addClass('show').siblings().removeClass('show');
+            tab.addClass('active').siblings().removeClass('active');
+
+            //슬라이드 변경
+            function setSlider(){
+                new Swiper('._Slider', {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    slidesPerGroup: 4,
+                    loopFillGroupWithBlank: true,
+                    grabCursor: true,
+                    observer: true,
+                    observeParents: true,
+                    navigation: {
+                        nextEl: "._btnNext",
+                        prevEl: "._btnPrev",
+                    },
+                });
+            }
         }
 
         $('.tab-list .nav-link').on('click', function(){
             var idx = $(this).index();
-            setTabContent(idx)
+            setTabContent(idx);
         });
      </script>
 
