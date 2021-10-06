@@ -278,58 +278,39 @@
 
     </div>
     <script>
+        //슬라이드 함수
+        function setSlider(){
+            new Swiper('._Slider', {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slidesPerGroup: 4,
+                loopFillGroupWithBlank: true,
+                grabCursor: true,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: "._btnNext",
+                    prevEl: "._btnPrev",
+                },
+            });
+        }
+        //슬라이드 함수 실행
+        setSlider();
 
-
-
-
-
-        // function setSlider(){
-        //     new Swiper("._Slider",
-        //         {
-        //         slidesPerView: 4,
-        //         spaceBetween: 20,
-        //         slidesPerGroup: 4,
-        //         loopFillGroupWithBlank: true,
-        //         grabCursor: true,
-        //             observer: true,
-        //             observeParents: true,
-        //         navigation: {
-        //             nextEl: "._btnNext",
-        //             prevEl: "._btnPrev",
-        //         },
-        //
-        //     });
-        // }
-        // setSlider()
-
-        <!--클릭시 페이지 변경-->
 
         function setTabContent (idx){
+            //탭메뉴 변경후 슬라이드 초기화를 위한 함수 실행
             setSlider();
+
             var tab = $(".tab-content > .tab-pane").eq(idx)
             $('.tab-list > .nav-link').eq(idx).addClass('active').siblings().removeClass('active');
 
             <!--탭메뉴 클릭시 페이지 변경-->
             tab.addClass('show').siblings().removeClass('show');
             tab.addClass('active').siblings().removeClass('active');
-
-            //슬라이드 변경
-            function setSlider(){
-                new Swiper('._Slider', {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                    slidesPerGroup: 4,
-                    loopFillGroupWithBlank: true,
-                    grabCursor: true,
-                    observer: true,
-                    observeParents: true,
-                    navigation: {
-                        nextEl: "._btnNext",
-                        prevEl: "._btnPrev",
-                    },
-                });
-            }
         }
+
+
 
         $('.tab-list .nav-link').on('click', function(){
             var idx = $(this).index();
