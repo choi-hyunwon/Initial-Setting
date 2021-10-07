@@ -657,6 +657,11 @@
                 li{
                   display: inline-block;
                   margin-right: 30px;
+                  &:first-of-type{
+                    a{
+                      color: #042bf8;
+                    }
+                  }
                   &:last-of-type{
                     margin-right: 0;
                   }
