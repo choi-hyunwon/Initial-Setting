@@ -460,6 +460,8 @@
             </div>
         </div>
     </div>
+
+    <!--10.07 앵커포인트 스크립트 완료-->
     <script>
         var swiper = new Swiper("._swiperTab", {
             slidesPerView: "auto",
@@ -494,16 +496,21 @@
         function setTabContent (idx){
             $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
             swiper[0].slideTo(idx);
-
             <!--탭메뉴 클릭시 페이지 변경-->
             $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
             $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+            fnMove();
         }
+        /*탭메뉴 상단으로 이동*/
+        function fnMove(){
+            var offset = $("#_tab-box").offset();
+            $('html, body').animate({scrollTop : offset.top - 95}, 100);
+        }
+
+
 
         $('._swiperTab .swiper-slide').on('click', function(){
             var idx = $(this).index();
-            console.log(idx)
-            console.log('dfsdfdsfds')
             setTabContent(idx)
         });
 
