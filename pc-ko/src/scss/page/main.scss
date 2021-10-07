@@ -10,29 +10,24 @@
     width: 37.5521vw; /*721px;*/
     height: 79.2857vh; /*777px;*/
     transform: rotate(-15deg);
-    right: 8.3333vw /*160px*/
-  ;
-    top: -30.6122vh /*-300px*/
-  ;
+    right: 8.3333vw /*160px*/;
+    top: -30.6122vh /*-300px*/;
     background: url("../img/main/img-vision-DNA.png") no-repeat center center / contain;
     opacity: 0.7;
     animation: DNA-down 4s 3s forwards;
     @keyframes DNA-down {
       0% {
-        top: -30.6122vh /*-300px*/
-      ;
+        top: -30.6122vh /*-300px*/;
         opacity: 0.7;
       }
       100% {
-        top: -21.0204vh /*-206px*/
-      ;
+        top: -21.0204vh /*-206px*/;
         opacity: 1
       }
     }
 
     &.DNA-move {
-      top: -21.0204vh /*-206px*/
-    ;
+      top: -21.0204vh /*-206px*/;
       transform: rotate(-15deg);
       opacity: 1;
       animation: background 7s infinite;
@@ -85,6 +80,7 @@
       }
     }
 
+
     .intro {
       position: absolute;
       width: 100%;
@@ -103,6 +99,7 @@
           font-weight: bold;
           img{
             width: 44.4792vw;/*854px*/
+            backface-visibility: hidden;/*이미지 깨짐 방지*/
           }
         }
 
@@ -144,7 +141,6 @@
         }*/
       }
     }
-
     .swiper-container {
       width: 100%;
       height: 100vh;
@@ -318,8 +314,7 @@
         position: absolute;
         top: 89.7959vh; /*bottom100px*/
         z-index: 11;
-        left: 17.8125vw /*342px*/
-      ;
+        left: 17.8125vw /*342px*/;
 
         .scroll {
           position: absolute;
@@ -438,6 +433,162 @@
         background: rgba(255, 255, 255, 0.1) url("../img/common/ico-arrow-right-md-white.svg") no-repeat center center;
       }
     }
+
+    /*모바일 오픈전 임시 css*/
+    @media (max-width: 1366px) {
+      .intro {
+        position: absolute;
+        width: 1366px;
+        height: 697.2291px;
+
+        .box {
+          position: absolute;
+          left: 24.5974%/*336px*/;
+          top: 46%;
+        }
+      }
+      .swiper-container {
+        width: 1366px;
+        height: 697.2291px;
+        position: relative;
+        overflow: unset;
+        .swiper-wrapper {
+          position: absolute;
+          bottom: 0;
+          overflow: hidden;
+          height: 30.6122%;/*300px*/
+
+          .swiper-slide {
+            .text-box {
+              left: 24.5974%/*336px*/;
+              top: 46%;
+
+              &.phrase {
+                left: 50%;
+                top: 48%;
+                transform: translate(-50%, -50%);
+                color: $gray-ffffff;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+
+                p {
+                  font-size: 2.3958vw /*46px*/;
+                  line-height: 3.4375vw; /*66px;*/
+                  letter-spacing: -0.06em;
+                  margin: 0 30px;
+                }
+
+                > .name {
+                  position: absolute;
+                  bottom: -60px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  font-size: 0.8333vw; /*16px;*/
+                  font-weight: normal;
+
+                  &:before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    width: 25px;
+                    height: 1px;
+                    background-color: $gray-ffffff;
+                  }
+
+                  &:after {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    right: -30px;
+                    top: 50%;
+                    width: 25px;
+                    height: 1px;
+                    background-color: $gray-ffffff;
+                  }
+
+                  span {
+                    margin-left: 10px;
+                    font-size: 1.1458vw; /*22px;*/
+                    font-weight: bold;
+                  }
+                }
+
+                &:before {
+                  content: '[';
+                  font-size: 10.4167vw; /*200px;*/
+                  display: inline-block;
+                  line-height: 1;
+                  margin: 0 auto;
+                  position: absolute;
+                  left: -52px;
+                  top: -50px;
+                }
+
+                &:after {
+                  content: ']';
+                  font-size: 10.4167vw; /*200px;*/
+                  display: inline-block;
+                  line-height: 1;
+                  margin: 0 auto;
+                  position: absolute;
+                  right: -52px;
+                  top: -50px;
+                }
+
+              }
+            }
+
+
+          }
+
+          .scroll-wrap {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            z-index: 11;
+            left: 17.8125vw /*342px*/;
+            .scroll {
+              position: absolute;
+              width: 2px;
+              height: 100px;
+              background-color: rgba(255, 255, 255, 0.2);
+
+              .bar {
+                position: absolute;
+                width: 2px;
+                height: 60px;
+                background-color: #fff;
+                bottom: 0;
+                left: 0;
+              }
+
+              &::after {
+                content: '';
+                position: absolute;
+                top: -14px;
+                left: -1px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+        .swiper-pagination {
+          top: 28.0612%; /*195.651px;*/
+          left: 21.9619%/*300px*/;
+        }
+        .scroll-wrap {
+          top: 89.7959%;
+          left: 17.8125%;
+        }
+      }
+    }
+
 
     .stock_information {
       display: none;
