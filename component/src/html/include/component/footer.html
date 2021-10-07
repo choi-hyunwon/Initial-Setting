@@ -1,6 +1,83 @@
 <!--footer 수정시 메인 footer 같이 수정해주세요-->
 <footer class="footer">
     <div class="inner clearfix">
+        <div class="section_sns">
+            <div class="text font-bold">
+                <p>MACROGEN</p>
+            </div>
+            <ul class="sns clearfix">
+                <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook-square"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube-square"></i></a></li>
+                <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="section_information">
+            <div class="info">
+                <ul class="text">
+                    <li><span>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</span><span><span class="font-bold">대표번호</span>02-2180-7000</span></li>
+                    <li>
+                        <ul class="terms">
+                            <li><span class="font-medium"><a href="#">서비스 신청/견적 문의</a></span></li>
+                            <li><span class="font-medium"><a href="#">개인정보취급방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">내부정보관리규정</a></span></li>
+                            <li><span class="font-medium"><a href="#">영상정보처리기기 운영.관리방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">Contact us</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section_familysite">
+            <div class="family-box">
+                <a href="#" class="select_site _select_site"><span class="text">FAMILY SITE</span></a>
+                <div class="popup_box _popup_box">
+                    <div class="title font-bold">
+                        FAMILY SITE
+                    </div>
+                    <a href="#" class="list"><span class="text">더바이옴</span></a>
+                    <a href="#" class="list"><span class="text">마이지놈스토리</span></a>
+                    <a href="#" class="list"><span class="text">마이펫진</span></a>
+                    <a href="#" class="list"><span class="text">소마젠(Psomagen)</span></a>
+                    <a href="#" class="list"><span class="text">마크로젠 일본</span></a>
+                    <a href="#" class="list"><span class="text">마크로젠 유럽</span></a>
+                    <a href="#" class="list"><span class="text">마크로젠 싱가포르</span></a>
+                    <a href="#" class="list"><span class="text">유전체의학연구소</span></a>
+                    <a href="#" class="list"><span class="text">공우생명정보재단</span></a>
+                </div>
+            </div>
+            <script>
+                $('.popup_box').hide();
+                $('._select_site').click(function(){
+                    $('.popup_box').slideToggle(200);
+                });
+
+                $('.popup_box .title').click(function(){
+                    $('.popup_box').slideUp(200);
+                });
+
+                /*외부 클릭시 select 닫힘*/
+                $(document).mouseup(function (e){
+                    var popupBox = $("._popup_box");
+                    if(popupBox.has(e.target).length === 0){
+                        popupBox.hide();
+                    }
+                });
+            </script>
+
+        </div>
+
+        <div class="section_copy">
+            <div class="copyright font-medium">
+                <p>Copyright © Macrogen, Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--<footer class="footer">
+    <div class="inner clearfix">
         <div class="section_copy">
             <div class="text font-bold">
                 <p>humanizing<br>genomics</p>
@@ -46,4 +123,4 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
