@@ -3932,6 +3932,11 @@ $min-width: 1244px;
               line-height: 30px;
               letter-spacing: -0.75px;
               color: $gray-454545;
+              margin-bottom: 30px;
+              &:last-of-type{
+                margin-bottom: 0;
+              }
+
             }
           }
         }
