@@ -309,12 +309,12 @@
         }
       }
 
-      .scroll-wrap {
+      /*.scroll-wrap {
         display: none;
         position: absolute;
-        top: 89.7959vh; /*bottom100px*/
+        top: 89.7959vh; !*bottom100px*!
         z-index: 11;
-        left: 17.8125vw /*342px*/;
+        left: 17.8125vw !*342px*!;
 
         .scroll {
           position: absolute;
@@ -342,19 +342,78 @@
             background-color: #fff;
           }
         }
+      }*/
+      .scroll-wrap {
+        display: none;
+        z-index: 11;
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 0;
+        position: absolute;
+        left: 340px;
+        bottom: 0;
+        &:before{
+          content: '';
+          width: 4px;
+          height: 4px;
+          background: $gray-ffffff;
+          position: absolute;
+          top:-14px;
+          left: -1px;
+          border-radius: 2px;
+        }
+
+        .scroll {
+          box-sizing: border-box;
+          margin: 0;
+          min-width: 0;
+          width: 1px;
+          position: relative;
+          height: 100px;
+          overflow: hidden;
+          &:before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            border-left: 2px solid #ffffff;
+            opacity: 0.2;
+          }
+          &:after {
+            content: '';
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            border-left: 2px solid #ffffff;
+            -webkit-animation: scrollMove 2s ease-in infinite;
+            animation: scrollMove 2s ease-in infinite;
+          }
+          @keyframes scrollMove {
+            0% {
+              top: -100%;
+            }
+            100% {
+              top: 100%;
+            }
+          }
+        }
       }
 
       .swiper-pagination {
         top: 28.0612vh; /*275px;*/
-        left: 17.2917vw; /* 332px;*/
-        height: 60px;
-        width: 300px;
+        left: 335px;
+        height: 50px;
+        width: 220px;
 
         .swiper-pagination-bullet {
           background: transparent;
           width: 50px !important;
           height: 50px !important;
           margin-right: 0 !important;
+          &:first-of-type{
+            margin-left: 0;
+          }
 
           .path {
             display: none;
@@ -449,7 +508,7 @@
       }
       .swiper-container {
         width: 1366px;
-        height: 697.2291px;
+        /*height: 697.2291px;*/
         position: relative;
         overflow: unset;
         .swiper-wrapper {
@@ -578,14 +637,14 @@
             }
           }
         }
-        .swiper-pagination {
-          top: 28.0612%; /*195.651px;*/
-          left: 21.9619%/*300px*/;
-        }
-        .scroll-wrap {
+       /* .swiper-pagination {
+          top: 28.0612%; !*195.651px;*!
+          left: 21.9619%!*300px*!;
+        }*/
+       /* .scroll-wrap {
           top: 89.7959%;
           left: 17.8125%;
-        }
+        }*/
       }
     }
 
