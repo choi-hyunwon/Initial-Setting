@@ -94,7 +94,7 @@
         .text {
           font-size: 3.9583vw; /*76px;*/
           line-height: 5.2083vw; /*100px;*/
-          letter-spacing: -0.0em;
+          letter-spacing: -0.05em;
           color: $gray-000000;
           font-weight: bold;
           img{
@@ -729,7 +729,8 @@
         .btn-list {
           display: flex;
           height: 100%;
-          padding: 0 290px;
+          width: 1244px;
+          margin: 0 auto;
           position: relative;
           z-index: 1;
 

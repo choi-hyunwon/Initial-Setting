@@ -2383,8 +2383,8 @@ $min-width: 1244px;
                 position: absolute;
                 width: 50px;
                 height: 3px;
-                right: -58px;
-                bottom: 12px;
+                right: -60px;
+                bottom: 7px;
                 background: $bg-ffffff;
               }
             }
@@ -2393,7 +2393,7 @@ $min-width: 1244px;
           .list {
             float: left;
             width: calc(100% - 214px);
-            padding-top: 37px;
+            padding-top: 35px;
 
             .row {
               padding: 0;
@@ -2408,7 +2408,7 @@ $min-width: 1244px;
             li {
               overflow: hidden;
               width: 500px;
-              margin-bottom: 14px;
+              margin-bottom: 10px;
 
               &:last-child {
                 margin-bottom: 0;
@@ -2428,14 +2428,14 @@ $min-width: 1244px;
 
                 &:first-child {
                   position: relative;
-                  width: 145px;
+                  width: 155px;
                   font-weight: 700;
                   font-size: 22px;
-                  line-height: 30px;
+                  line-height: 28px;
                   letter-spacing: 0.5px;
                   color: $gray-ffffff;
-                  padding-left: 15px;
-                  margin-right: 18px;
+                  padding-left: 20px;
+                  margin-right: 20px;
 
                   &::before {
                     content: '';
@@ -2452,10 +2452,10 @@ $min-width: 1244px;
 
                 &:nth-child(2) {
                   display: inline-block;
-                  width: 335px;
+                  width: 325px;
                   font-size: 16px;
                   line-height: 30px;
-                  letter-spacing: -0.75px;
+                  letter-spacing: -1.3px;
                   color: $gray-ffffff;
                 }
               }
