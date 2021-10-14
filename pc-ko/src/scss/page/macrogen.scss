@@ -137,7 +137,6 @@ $min-width: 1244px;
       margin-bottom: 152px;
 
       .title {
-        width: $min-width;
         font-weight: 700;
         font-size: 92px;
         line-height: 86px;
@@ -145,53 +144,49 @@ $min-width: 1244px;
         letter-spacing: -0.5px;
         text-transform: uppercase;
         margin: 0 auto 28px;
+        padding-left: 337px;
       }
 
       .title-sm {
-        width: $min-width;
         font-size: 26px;
         line-height: 38px;
         letter-spacing: -0.75px;
         margin: 0 auto 100px;
+        padding-left: 339px;
       }
 
       .text-box {
-        width: $min-width;
         margin: 0 auto 108px;
-        padding-left: 215px;
 
         .font-body-h {
+          word-break: keep-all;
           display: inline-block;
           font-weight: 400;
           text-align: left;
           color: $gray-454545;
+          padding-left: 552px;
         }
       }
 
       .img-box {
-        width: 100%;
+        margin-left: 552px;
+        overflow: hidden;
         height: 602px;
         margin-bottom: 152px;
-        overflow: hidden;
 
         .inner {
-          position: absolute;
+          position: relative;
           width: 100%;
           height: 602px;
 
-          .img {
+          .img{
             text-align: right;
-
-            img {
-              display: inline-block;
-              width: 1370px;
-              height: 602px;
-            }
+            width: 1370px;
           }
 
           .list {
             position: absolute;
-            right: 611px;
+            left: 166px;
             top: 139px;
 
             li {
@@ -2176,6 +2171,7 @@ $min-width: 1244px;
             }
 
             .font-body-h {
+
               color: $point-primary;
               margin-bottom: 20px;
             }
