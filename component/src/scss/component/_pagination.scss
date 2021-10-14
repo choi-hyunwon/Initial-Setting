@@ -1,13 +1,14 @@
 /*
 |----------------------------------|
  v.0.1 선미 : 최초 작업 -- 2021.08.31
+ v.0.2 선미 : .pagination-wrap (margin-top : 40px) 제거 / .pagination (margin-top : 40px)추가-- 2021.10.14
 |----------------------------------|
 */
 .pagination-wrap {
   position: relative;
   width: 100%;
   height: 45px;
-  margin: 40px auto 0;
+  margin: 0 auto 0;
 }
 
 .navigation {
@@ -69,6 +70,7 @@
   height: 45px;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 
   .page-item {
     .page-link {
