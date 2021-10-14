@@ -4076,7 +4076,7 @@ $min-width: 1244px;
   &.full-bg {
     position: relative;
     background-image: url(../img/@temp/macrogen/macrogen_bg_1.png);
-    background-size: 1920px 980px;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     animation-duration: 2s;
@@ -4087,6 +4087,11 @@ $min-width: 1244px;
     .frame {
       position: relative;
       height: calc(100vh - 124px);
+      min-width: 1366px;
+      width: 100%;
+      >.inner{
+        margin: 0 340px;
+      }
 
       .hero-title {
         margin-bottom: 160px;
