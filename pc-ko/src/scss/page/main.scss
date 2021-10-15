@@ -80,7 +80,6 @@
       }
     }
 
-
     .intro {
       position: absolute;
       width: 100%;
@@ -92,13 +91,13 @@
         top: 38.2653vh;/*375*/
 
         .text {
-          font-size: 3.9583vw; /*76px;*/
-          line-height: 5.2083vw; /*100px;*/
-          letter-spacing: -0.0em;
+          font-size: 76px;
+          line-height: 100px;
+          letter-spacing: -0.05em;
           color: $gray-000000;
           font-weight: bold;
           img{
-            width: 44.4792vw;/*854px*/
+            width: 854px;
             backface-visibility: hidden;/*이미지 깨짐 방지*/
           }
         }
@@ -169,7 +168,7 @@
             background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;
             .text-gradient{
               img{
-                width: 31.8750vw;/*612px*/
+                width: 612px;
               }
             }
           }
@@ -178,7 +177,7 @@
             background: url("../img/main/img-main_02.png") no-repeat center center / cover;
             .text-gradient{
               img{
-                width: 31.8229vw;/*611px*/
+                width: 611px;
               }
             }
           }
@@ -187,7 +186,7 @@
             background: url("../img/main/img-main_03.png") no-repeat center center / cover;
             .text-gradient{
               img{
-                width: 27.7083vw;/*532px*/
+                width: 532px;
               }
             }
           }
@@ -199,22 +198,20 @@
           .text-box {
             display: none;
             position: absolute;
-            left: 17.4479vw /*335px*/
-          ;
-            top: 49.4898vh /*485px*/
-          ;
+            left: 335px;
+            top: 48.979%/*480px*/;
 
             p {
-              font-size: 4.3750vw; /*84px;*/
-              line-height: 5.1042vw; /*98px;*/
+              font-size: 86px;
+              line-height: 98px;
               letter-spacing: -0.06em;
               color: #ffffff;
               font-weight: bold;
 
               &.desc {
                 font-weight: 500;
-                font-size: 1.2500vw; /*24px;*/
-                line-height: 2.0833vw; /*40px;*/
+                font-size: 24px;
+                line-height: 40px;
                 letter-spacing: -0.05em;
                 margin-top: 35px;
               }
@@ -236,9 +233,8 @@
               text-align: center;
 
               p {
-                font-size: 2.3958vw /*46px*/
-              ;
-                line-height: 3.4375vw; /*66px;*/
+                font-size: 46px;
+                line-height: 66px;
                 letter-spacing: -0.06em;
                 margin: 0 30px;
               }
@@ -248,7 +244,7 @@
                 bottom: -60px;
                 left: 50%;
                 transform: translateX(-50%);
-                font-size: 0.8333vw; /*16px;*/
+                font-size: 16px;
                 font-weight: normal;
 
                 &:before {
@@ -275,7 +271,7 @@
 
                 span {
                   margin-left: 10px;
-                  font-size: 1.1458vw; /*22px;*/
+                  font-size: 22px;
                   font-weight: bold;
                 }
               }
@@ -293,7 +289,7 @@
 
               &:after {
                 content: ']';
-                font-size: 10.4167vw; /*200px;*/
+                font-size: 200px;
                 display: inline-block;
                 line-height: 1;
                 margin: 0 auto;
@@ -311,50 +307,75 @@
 
       .scroll-wrap {
         display: none;
-        position: absolute;
-        top: 89.7959vh; /*bottom100px*/
         z-index: 11;
-        left: 17.8125vw /*342px*/;
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 0;
+        position: absolute;
+        left: 340px;
+        bottom: 0;
+        &:before{
+          content: '';
+          width: 4px;
+          height: 4px;
+          background: $gray-ffffff;
+          position: absolute;
+          top:-14px;
+          left: -1px;
+          border-radius: 2px;
+        }
 
         .scroll {
-          position: absolute;
-          width: 2px;
+          box-sizing: border-box;
+          margin: 0;
+          min-width: 0;
+          width: 1px;
+          position: relative;
           height: 100px;
-          background-color: rgba(255, 255, 255, 0.2);
-
-          .bar {
-            position: absolute;
-            width: 2px;
-            height: 60px;
-            background-color: #fff;
-            bottom: 0;
-            left: 0;
-          }
-
-          &::after {
+          overflow: hidden;
+          &:before{
             content: '';
+            width: 100%;
+            height: 100%;
             position: absolute;
-            top: -14px;
-            left: -1px;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            background-color: #fff;
+            top: 0;
+            border-left: 2px solid #ffffff;
+            opacity: 0.2;
+          }
+          &:after {
+            content: '';
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            border-left: 2px solid #ffffff;
+            -webkit-animation: scrollMove 1.5s ease-in infinite;
+            animation: scrollMove 1.5s ease-in infinite;
+          }
+          @keyframes scrollMove {
+            0% {
+              top: -100%;
+            }
+            100% {
+              top: 100%;
+            }
           }
         }
       }
 
       .swiper-pagination {
-        top: 28.0612vh; /*275px;*/
-        left: 17.2917vw; /* 332px;*/
-        height: 60px;
-        width: 300px;
+        top: 28.877%/*283px*/;
+        left: 335px;
+        height: 50px;
+        width: 220px;
 
         .swiper-pagination-bullet {
           background: transparent;
           width: 50px !important;
           height: 50px !important;
           margin-right: 0 !important;
+          &:first-of-type{
+            margin-left: 0;
+          }
 
           .path {
             display: none;
@@ -433,163 +454,6 @@
         background: rgba(255, 255, 255, 0.1) url("../img/common/ico-arrow-right-md-white.svg") no-repeat center center;
       }
     }
-
-    /*모바일 오픈전 임시 css*/
-    @media (max-width: 1366px) {
-      .intro {
-        position: absolute;
-        width: 1366px;
-        height: 697.2291px;
-
-        .box {
-          position: absolute;
-          left: 24.5974%/*336px*/;
-          top: 46%;
-        }
-      }
-      .swiper-container {
-        width: 1366px;
-        height: 697.2291px;
-        position: relative;
-        overflow: unset;
-        .swiper-wrapper {
-          position: absolute;
-          bottom: 0;
-          overflow: hidden;
-          height: 30.6122%;/*300px*/
-
-          .swiper-slide {
-            .text-box {
-              left: 24.5974%/*336px*/;
-              top: 46%;
-
-              &.phrase {
-                left: 50%;
-                top: 48%;
-                transform: translate(-50%, -50%);
-                color: $gray-ffffff;
-                position: relative;
-                display: inline-block;
-                text-align: center;
-
-                p {
-                  font-size: 2.3958vw /*46px*/;
-                  line-height: 3.4375vw; /*66px;*/
-                  letter-spacing: -0.06em;
-                  margin: 0 30px;
-                }
-
-                > .name {
-                  position: absolute;
-                  bottom: -60px;
-                  left: 50%;
-                  transform: translateX(-50%);
-                  font-size: 0.8333vw; /*16px;*/
-                  font-weight: normal;
-
-                  &:before {
-                    content: '';
-                    display: inline-block;
-                    position: absolute;
-                    left: -30px;
-                    top: 50%;
-                    width: 25px;
-                    height: 1px;
-                    background-color: $gray-ffffff;
-                  }
-
-                  &:after {
-                    content: '';
-                    display: inline-block;
-                    position: absolute;
-                    right: -30px;
-                    top: 50%;
-                    width: 25px;
-                    height: 1px;
-                    background-color: $gray-ffffff;
-                  }
-
-                  span {
-                    margin-left: 10px;
-                    font-size: 1.1458vw; /*22px;*/
-                    font-weight: bold;
-                  }
-                }
-
-                &:before {
-                  content: '[';
-                  font-size: 10.4167vw; /*200px;*/
-                  display: inline-block;
-                  line-height: 1;
-                  margin: 0 auto;
-                  position: absolute;
-                  left: -52px;
-                  top: -50px;
-                }
-
-                &:after {
-                  content: ']';
-                  font-size: 10.4167vw; /*200px;*/
-                  display: inline-block;
-                  line-height: 1;
-                  margin: 0 auto;
-                  position: absolute;
-                  right: -52px;
-                  top: -50px;
-                }
-
-              }
-            }
-
-
-          }
-
-          .scroll-wrap {
-            display: none;
-            position: absolute;
-            bottom: 0;
-            z-index: 11;
-            left: 17.8125vw /*342px*/;
-            .scroll {
-              position: absolute;
-              width: 2px;
-              height: 100px;
-              background-color: rgba(255, 255, 255, 0.2);
-
-              .bar {
-                position: absolute;
-                width: 2px;
-                height: 60px;
-                background-color: #fff;
-                bottom: 0;
-                left: 0;
-              }
-
-              &::after {
-                content: '';
-                position: absolute;
-                top: -14px;
-                left: -1px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-                background-color: #fff;
-              }
-            }
-          }
-        }
-        .swiper-pagination {
-          top: 28.0612%; /*195.651px;*/
-          left: 21.9619%/*300px*/;
-        }
-        .scroll-wrap {
-          top: 89.7959%;
-          left: 17.8125%;
-        }
-      }
-    }
-
-
     .stock_information {
       display: none;
       position: absolute;
@@ -729,7 +593,8 @@
         .btn-list {
           display: flex;
           height: 100%;
-          padding: 0 290px;
+          width: 1244px;
+          margin: 0 auto;
           position: relative;
           z-index: 1;
 

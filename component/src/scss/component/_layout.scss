@@ -9,6 +9,7 @@
  v.0.7 선미 : header -> gnb-2depth 재작업 - 2021.09.22
  v.0.8 태윤 : footer -> safari 링크 깨지는거 재수정
  v.0.9 태윤 : &.container-fluid max-width:1920px 추가
+ v.0.10 선미 : .wrap > .full-bg > .frame > .breadcrumb ( right: 335px; )추가
 |----------------------------------|
 */
 .wrap {
@@ -56,6 +57,9 @@
         bottom: 50px;
         height: 20px;
         margin-bottom: 0;
+        right: 335px;
+
+
 
         .breadcrumb-item {
           a {
