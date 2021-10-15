@@ -5680,6 +5680,11 @@ $min-width: 1244px;
 
           &:last-child {
             margin-bottom: 0;
+            .img{
+              &:after{
+                border:none;
+              }
+            }
           }
 
           .img {
@@ -5687,6 +5692,16 @@ $min-width: 1244px;
             width: 261px;
             height: 261px;
             border-radius: 50%;
+            &:after{
+              content: '';
+              display: inline-block;
+              border-right: 1px dashed #909090;
+              width: 1px;
+              height: 80px;
+              position: absolute;
+              left: 50%;
+              bottom: -100px;
+            }
 
             .label {
               position: absolute;
@@ -5952,6 +5967,14 @@ $min-width: 1244px;
                     width: 280px;
                     height: 346px;
                     margin-right: 40px;
+                    &:after{
+                      content: '';
+                      display: inline-block;
+                      @include background-img($width:61px, $height: 54px, $category: 'macrogen', $img: 'img-trophy.png');
+                      position: absolute;
+                      left: 60px;
+                      bottom: 65px;
+                    }
 
                     img {
                       width: 100%;
@@ -7921,12 +7944,11 @@ $min-width: 1244px;
             .img {
               float: left;
               width: 220px;
-              height: 282px;
+              height: 272px;
               margin-right: 50px;
 
               img {
                 width: 100%;
-                height: 100%;
               }
             }
 
@@ -7970,9 +7992,9 @@ $min-width: 1244px;
                   position: absolute;
                   bottom: 0;
                   left: 0;
-                  @include background-img($width: 610px, $height: 1px, $category: 'macrogen', $img: 'bg-line.svg');
-                  background-repeat: repeat-x;
-                  background-size: 418px 2px;
+                  width: 100%;
+                  height: 1px;
+                  border-bottom: 1px dashed $line-909090;
                 }
               }
 
@@ -8042,7 +8064,7 @@ $min-width: 1244px;
 
       .modal-footer {
         display: block;
-        padding: 15px 60px;
+        padding: 24px 60px 25px;
 
         .board {
           margin: 0;
@@ -8080,7 +8102,7 @@ $min-width: 1244px;
                 display: block;
                 width: 354px;
                 font-size: 16px;
-                line-height: 23px;
+                line-height: 25px;
                 letter-spacing: -0.75px;
                 overflow: hidden;
                 white-space: nowrap;
