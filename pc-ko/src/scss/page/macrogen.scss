@@ -4091,7 +4091,9 @@ $min-width: 1244px;
       position: relative;
       height: calc(100vh - 124px);
       min-width: 1366px;
-      width: 100%;
+      width: 1920px;
+      margin: 0 auto;
+      padding: 20px 0;
 
       >.inner{
         margin: 0 340px;
@@ -4250,6 +4252,7 @@ $min-width: 1244px;
         letter-spacing: -0.5px;
         text-transform: uppercase;
         margin: 0 auto 28px;
+        padding-left: 337px;
       }
 
       .title-sm {
@@ -4258,6 +4261,7 @@ $min-width: 1244px;
         line-height: 38px;
         letter-spacing: -0.75px;
         margin: 0 auto 100px;
+        padding-left: 339px;
       }
 
       .text-box {
@@ -4274,25 +4278,24 @@ $min-width: 1244px;
       }
 
       .img-box {
+        word-break: keep-all;
         width: 100%;
         height: 602px;
         margin-bottom: 152px;
         overflow: hidden;
+        padding-left: 552px;
+        padding-right: 239px;
 
         .inner {
-          position: absolute;
+          position: relative;
           width: 100%;
           height: 602px;
-
+          min-width:1920px;
           .img {
+            width: 1370px;
             text-align: right;
-
-            img {
-              display: inline-block;
-              width: 1370px;
-              height: 602px;
-            }
           }
+
 
           .list {
             position: absolute;
