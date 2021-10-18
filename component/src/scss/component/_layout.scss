@@ -190,6 +190,7 @@
           vertical-align: middle;
 
           ul {
+            font-family: "Proxima Nova Bold";
             li {
               text-transform: uppercase;
               display: inline-block;
@@ -404,6 +405,7 @@
     &.container-fluid {
       width: 100%;
       max-width: 1920px;
+      overflow-x: hidden;
     }
   }
 

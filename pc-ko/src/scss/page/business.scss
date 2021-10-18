@@ -702,9 +702,10 @@
     min-width:291px;
     border: 1px solid #222222;
     border-radius: 10px;
-    padding: 10px 30px 30px;
-    right: 0px;
-    top: 88px;
+    padding: 10px 10px 30px 30px;
+    right: 0;
+    top: 0;
+    z-index: 5;
     background-color: #fff;
     .tab-modal-header{
       display: flex;
