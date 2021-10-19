@@ -707,10 +707,12 @@
           .swiper-slide {
             padding-top: 370px;
             padding-left: 100px;
+            width: 1030px;
+            margin: 0 10px;
 
             /* s business 내부 text slide */
             &.swiper-slide-prev, &.swiper-slide-next {
-              width: 1180px;
+
               .text-area {
                 transform: translate3d(100px, 0, 0);
                 opacity: 0;
@@ -718,7 +720,7 @@
               }
             }
             &.swiper-slide-active {
-              width: 1030px;
+
               .text-area {
                 transform: translateZ(0);
                 opacity: 1;
