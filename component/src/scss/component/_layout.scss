@@ -203,18 +203,20 @@
               margin-right: 44px;
               font-size: 20px;
               letter-spacing: 0;
+              cursor: pointer;
 
               &:last-of-type {
                 margin-right: 0;
               }
 
-              a {
+              span {
                 color: $gray-ffffff;
                 text-decoration: none;
+
               }
 
               &.active, &:hover {
-                a {
+                span {
                   color: $point-active !important;
                 }
               }
@@ -279,7 +281,7 @@
             }
           }
 
-          nav ul li a {
+          nav ul li span {
             color: $gray-000000;
           }
         }
@@ -321,7 +323,7 @@
           nav {
             ul {
               li {
-                a {
+                span {
                   color: #000000;
                 }
               }
