@@ -7,27 +7,27 @@
     position: absolute;
     z-index: 9;
     display: inline-block;
-    width: 37.5521vw; /*721px;*/
-    height: 79.2857vh; /*777px;*/
+    width: 721px;
+    height:777px;
     transform: rotate(-15deg);
-    right: 8.3333vw /*160px*/;
-    top: -30.6122vh /*-300px*/;
+    right:160px;
+    top: -300px;
     background: url("../img/main/img-vision-DNA.png") no-repeat center center / contain;
     opacity: 0.7;
     animation: DNA-down 4s 3s forwards;
     @keyframes DNA-down {
       0% {
-        top: -30.6122vh /*-300px*/;
+        top: -300px;
         opacity: 0.7;
       }
       100% {
-        top: -21.0204vh /*-206px*/;
+        top: -206px;
         opacity: 1
       }
     }
 
     &.DNA-move {
-      top: -21.0204vh /*-206px*/;
+      top: -206px;
       transform: rotate(-15deg);
       opacity: 1;
       animation: background 7s infinite;
@@ -36,28 +36,28 @@
     @keyframes background {
       0% {
         transform: rotate(-15deg);
-        top: -21.0204vh /*-206px*/
+        top: -206px;
       }
       20% {
-        top: -18.3673vh /*-180px*/
+        top:-180px
       }
       25% {
         transform: rotate(-10deg);
       }
       40% {
-        top: -20.4082vh /*-200px*/
+        top:-200px
       }
       50% {
         transform: rotate(-13deg);
       }
       60% {
-        top: -18.3673vh /*-180px*/
+        top:-180px
       }
       75% {
         transform: rotate(-10deg);
       }
       90% {
-        top: -20.4082vh /*-200px*/
+        top: -200px
       }
     }
   }
@@ -82,13 +82,15 @@
 
     .intro {
       position: absolute;
+      max-width: 1920px;
+      max-height: 980px;
       width: 100%;
       height: 100%;
 
       .box {
         position: absolute;
-        left: 17.5vw;/*336*/
-        top: 38.2653vh;/*375*/
+        left: 336px;
+        top: 375px;
 
         .text {
           font-size: 76px;
@@ -141,8 +143,13 @@
       }
     }
     .swiper-container {
+      max-width: 1920px;
+      min-width: 1366px;
+      max-height: 980px;
+      min-height: 938px;
       width: 100%;
-      height: 100vh;
+      height: 100%;
+      margin: 0 auto;
       position: relative;
       overflow: unset;
       .swiper-wrapper {
@@ -150,20 +157,8 @@
         bottom: 0;
         overflow: hidden;
         height: 300px;
-
         .swiper-slide {
-         /* 딤드제거
-          &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.25);
-          }*/
-
+          background-size: cover;
           &.visual_01 {
             background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;
             .text-gradient{

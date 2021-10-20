@@ -4089,15 +4089,8 @@ $min-width: 1244px;
 
     .frame {
       position: relative;
-      height: calc(100vh - 124px);
-      min-width: 1366px;
-      width: 1920px;
+      height: calc(100% - 124px);
       margin: 0 auto;
-      padding: 20px 0;
-
-      >.inner{
-        margin: 0 340px;
-      }
 
       .hero-title {
         margin-bottom: 130px;
@@ -4135,7 +4128,7 @@ $min-width: 1244px;
       margin: 0;
       min-width: 0;
       position: absolute;
-      left: 340px;
+      left: 0;
       bottom: 0;
       &:before{
         content: '';
@@ -6337,14 +6330,19 @@ $min-width: 1244px;
 
       &.DNA-1 {
         @include background-img($width: 732px, $height: 777px, $category: 'macrogen', $img: 'img-DNA.png');
-        top: 2800px;
-        right: 292px;
+        top: 1000px;
+        left: 30%;
       }
 
       &.DNA-2 {
         @include background-img($width: 732px, $height: 777px, $category: 'macrogen', $img: 'img-DNA2.png');
-        top: 5115px;
-        right: 476px;
+        bottom: -1700px;
+        left: 30%;
+      }
+    }
+    @media (max-width: 1440px) {
+      .DNA {
+        display: none;
       }
     }
   }
@@ -6352,11 +6350,11 @@ $min-width: 1244px;
   &.macrogen-management {
     .section-chairman {
       padding-top: 150px;
+      padding-left: 17.6041%/*338px*/;/*1582*/
       text-align: right;
 
       .inner {
         display: inline-block;
-        width: 1586px;
         text-align: left;
 
         .font-h3 {
@@ -6369,18 +6367,23 @@ $min-width: 1244px;
 
           .info {
             float: left;
-            width: 582px;
-            margin-right: 60px;
+            width: 36.78%;/*582px;*/
+            margin-right:3.7926%;/* 60px;*/
 
             .font-h7 {
-              margin-bottom: 60px;
+              margin-bottom: 7.0588%/*60px*/;
               line-height: 40px;
+              width: 95%;
+              word-break: keep-all;
+
             }
 
             .font-body {
               font-weight: normal;
               color: $gray-454545;
-              margin-bottom: 130px;
+              margin-bottom: 15.2941%/*130px*/;
+              word-break: keep-all;
+
             }
 
             .sign {
@@ -6403,8 +6406,8 @@ $min-width: 1244px;
 
           .img {
             float: left;
-            width: 940px;
-            height: 850px;
+            width:59.4184%;/* 940px*/;
+            max-height: 850px;
 
             img {
               width: 100%;
@@ -6417,11 +6420,11 @@ $min-width: 1244px;
 
     .section-ceo {
       padding-top: 150px;
+      padding-right: 17.4479%/*335px*/;
       padding-bottom: 180px;
 
       .img {
-        width: 1585px;
-        height: 640px;
+        max-height: 640px;
         margin-bottom: 100px;
 
         img {
@@ -6431,8 +6434,9 @@ $min-width: 1244px;
       }
 
       .inner {
-        width: 1244px;
-        margin: 0 auto;
+       /* width: 1244px;
+        margin: 0 auto;*/
+        padding-left: 21.3248%/*338px*/;
 
         .font-h3 {
           margin-bottom: 80px;
@@ -6446,13 +6450,15 @@ $min-width: 1244px;
 
           .font-h7 {
             float: left;
-            width: 495px;
-            margin-right: 40px;
+            width: 37.6904%/*460px / 1247px*/;
+            margin-right:4.8115%;/*60px / 1247px*/
+            word-break: keep-all;
           }
 
           .font-body {
+            word-break: keep-all;
             float: left;
-            width: 709px;
+            width: 56.8564%/*709px / 1247px*/;
             font-weight: normal;
             color: $gray-454545;
             letter-spacing: -0.85px;
@@ -7191,6 +7197,8 @@ $min-width: 1244px;
   }
 
   &.macrogen-vision {
+    position: relative;
+
     .inner {
       width: $min-width;
       margin: 0 auto;
@@ -7198,7 +7206,6 @@ $min-width: 1244px;
 
     .section-vision {
       padding: 150px 0;
-
       .inner {
         position: relative;
         z-index: 3;
@@ -7306,6 +7313,7 @@ $min-width: 1244px;
         .img {
           position: absolute;
           opacity: 1 !important;
+          z-index: 3;
 
           &.img-1 {
             right: 252px;
@@ -7326,15 +7334,15 @@ $min-width: 1244px;
     }
 
     .section-management-philosophy {
-      overflow: hidden;
+      /*overflow: hidden;*/
       padding-top: 180px;
       min-width: $min-width;
+      height: 980px;
 
       .img {
         float: left;
-        width: 960px;
-        height: 799px;
-        margin-right: 127px;
+        width: 50%/*960px*/;
+        max-height: 799px;
 
         img {
           width: 100%;
@@ -7344,17 +7352,17 @@ $min-width: 1244px;
 
       .info {
         float: left;
-        width: calc(100% - 960px - 127px);
-        padding-top: 101px;
+        width: 50%;
+        padding: 4% 6.6145%/*127px*/;
 
         .font-h7 {
           line-height: 38px;
-          margin-bottom: 120px;
+          margin-bottom: 17.1428%/*120px*/;
         }
 
         .font-h4 {
           line-height: 60px;
-          margin-bottom: 60px;
+          margin-bottom: 7.894%/*60px*/;
         }
 
         .font-body {
@@ -7421,21 +7429,26 @@ $min-width: 1244px;
     .parallax-DNA {
       position: absolute;
       @include background-img($width: 732px, $height: 777px, $category: 'macrogen', $img: 'img-vision-DNA.png');
-      top: 2000px;
+      top: 1300px;
       left: -120px;
       z-index: 2;
 
       &.DNA-2 {
         background-image: url(../img/macrogen/img-vision-DNA-2.png);
         left: auto;
-        right: 50px;
-        top: 4200px;
+        right: 0;
+        top: 1000px;
       }
 
       &.DNA-3 {
         background-image: url(../img/macrogen/img-vision-DNA-3.png);
-        top: 5600px;
-        left: -120px;
+        z-index: -1;
+        top: 1700px;
+      }
+    }
+    @media (max-width: 1440px) {
+      .parallax-DNA {
+        display: none;
       }
     }
   }
