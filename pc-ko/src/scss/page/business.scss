@@ -1,12 +1,14 @@
 /*
 |----------------------------------|
  v.0.1 (태윤) 최초 작업 -- 2021.09.02
+ v.0.2 (태윤) 최초 작업 -- 2021.10.20
 |----------------------------------|
 */
 
 .business_bg{
   max-width: 1920px;
   width: 100%;
+  height: 600px !important;
   background-size: 1920px 600px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -15,7 +17,7 @@
   animation-name: businessAnimation;
   background-attachment: fixed;
   background-image: url("../img/business/bg_banner_ngs.png");
-  margin: 0 auto 140px;
+  margin: 0 auto 140px !important;
   /*임상진단서비스*/
   &.bg-type2{
     background-image: url("../img/business/bg_banner_cancer.png");
