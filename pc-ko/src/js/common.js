@@ -37,7 +37,7 @@ front.common = (function () {
       // console.log('UP');
       if (window.pageYOffset > 124){
         $('.header').show()
-            .css({'position': 'fixed','top':'0'})
+            .css({'position': 'fixed','top':'0','left':'0'})
             .addClass('header-sm')
       } else {
         $('.header').show()
