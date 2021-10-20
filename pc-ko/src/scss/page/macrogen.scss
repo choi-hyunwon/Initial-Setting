@@ -7274,8 +7274,8 @@ $min-width: 1244px;
           position: relative;
           z-index: 5;
           padding-top: 180px;
-          padding-left: 50px;
           color: $gray-ffffff;
+          width: 62.85%/* 1144px / 1820px */;
 
           .font-h7 {
             position: relative;
@@ -7317,17 +7317,17 @@ $min-width: 1244px;
           z-index: 3;
 
           &.img-1 {
-            right: 252px;
+            right: 13.8461% /* 252px / 1820px */;
             top: 300px;
           }
 
           &.img-2 {
-            right: 320px;
+            right: 17.5824% /* 320px / 1820px */;
             top: 500px;
           }
 
           &.img-3 {
-            right: 298px;
+            right: 16.3736% /* 298px / 1820px */;
             top: 800px;
           }
         }
