@@ -143,10 +143,13 @@
       }
     }
     .swiper-container {
+      max-width: 1920px;
+      min-width: 1366px;
+      max-height: 980px;
+      min-height: 938px;
       width: 100%;
       height: 100%;
-      max-width: 1920px;
-      max-height: 980px;
+      margin: 0 auto;
       position: relative;
       overflow: unset;
       .swiper-wrapper {
@@ -154,8 +157,8 @@
         bottom: 0;
         overflow: hidden;
         height: 300px;
-
         .swiper-slide {
+          background-size: cover;
           &.visual_01 {
             background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;
             .text-gradient{

@@ -6,7 +6,6 @@
     <div class="full-bg macrogen" style="background-image: url(../../img/macrogen/bg-macrogen-talent.png);">
         @@include('../../html/include/component/header.html')
         <div class="frame">
-            <div class="inner">
                 <div class="hero-title">인재상</div>
                 <div class="slogan ko">새로운 내일을<br/>당신과 함께 꿈꿉니다</div>
                 <div class="slogan-sub">건강한 미래를 만들어 갈 마크로젠 구성원을 찾습니다</div>
@@ -15,7 +14,7 @@
                 "depth2": "채용",
                 "depth3": "인재상",
                 })
-                @@include('_scrollWrap.html')</div>
+                @@include('_scrollWrap.html')
         </div>
     </div>
     <div class="container container-fluid">
@@ -93,15 +92,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
+                <div class="DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
+                <script>
+                    var rellax1 = new Rellax('._DNA1');
+                    var rellax2 = new Rellax('._DNA2');
+                </script>
+
             </div>
             <!-- e  배너 -->
 
-            <div class="DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
-            <div class="DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
-            <script>
-                var rellax1 = new Rellax('._DNA1');
-                var rellax2 = new Rellax('._DNA2');
-            </script>
+
         </div>
     </div>
     @@include('../../html/include/component/footer.html')
