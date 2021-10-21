@@ -158,7 +158,6 @@
         overflow: hidden;
         height: 300px;
         .swiper-slide {
-          background-size: cover;
           &.visual_01 {
             background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;
             .text-gradient{
@@ -273,7 +272,7 @@
 
               &:before {
                 content: '[';
-                font-size: 10.4167vw; /*200px;*/
+                font-size: 200px;
                 display: inline-block;
                 line-height: 1;
                 margin: 0 auto;
@@ -295,8 +294,6 @@
 
             }
           }
-
-
         }
       }
 
@@ -449,6 +446,7 @@
         background: rgba(255, 255, 255, 0.1) url("../img/common/ico-arrow-right-md-white.svg") no-repeat center center;
       }
     }
+
     .stock_information {
       display: none;
       position: absolute;
