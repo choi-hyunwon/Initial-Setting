@@ -6,6 +6,7 @@
  v.0.4 선미 : icon-arrow-bottom-short 추가ㅣ icon-arrow-bottom-short-black -> icon-arrow-bottom-sm 변경-- 2021.09.15
  v.0.5 선미 : icon-pen 추가 - 2021.09.16
  v.0.6 태윤 : icon-arrow-top-fill-black ㅣ icon-arrow-bottom-fill-black 추가
+ v.0.7 선미 : icon-list_box / icon-download-white / icon-link-white 추가 / 21.10.22
 
 |----------------------------------|
 */
@@ -280,6 +281,11 @@
   width: 14px;
   height: 18px;
 }
+.icon-download-white {
+  background-image: url("../img/common/ico-download-white.png");
+  width: 14px;
+  height: 18px;
+}
 
 .icon-menu-white {
   background-image: url("../img/common/ico-menu-white.svg");
@@ -315,6 +321,18 @@
   background-image: url("../img/common/ico-pen.svg");
   width: 24px;
   height: 24px;
+}
+
+.icon-list_box{
+  background-image: url("../img/common/ico-list_box.png");
+  width: 18px;
+  height: 18px;
+}
+
+.icon-link-white{
+  background-image: url("../img/common/ico-link-white.png");
+  width: 18px;
+  height: 18px;
 }
 
 /*체크박스 사용*/
