@@ -69,7 +69,6 @@
             position: relative;
             .swiper-wrapper{
               .swiper-slide{
-                border:1px solid #fff;
                 .img{
                   display: flex;
                   flex-wrap: nowrap;
@@ -77,9 +76,7 @@
                   justify-content: center;
                   width: 1244px;
                   margin: 0 auto 60px;
-
                   height: 580px;
-                  border:1px solid yellow;
                   img{
                     object-fit: contain;
                   }
@@ -87,7 +84,6 @@
                .btn-box{
                  width: 1244px;
                  margin: 0 auto;
-                 border:1px solid blue;
                  .link{
                    float: left;
                    >span{
@@ -130,11 +126,22 @@
 
             .swiper-pagination{
               top:-40px;
-              left:40px;
+              left:60px;
               width: 53px;
-              height: 30px;
-              border:1px solid #fff;
+              height: 28px;
               color: #fff;
+
+              &:before{
+                content: '';
+                display: inline-block;
+                background-image: url("../img/common/ico-list_box.png");
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: -20px;
+                top:50%;
+                transform: translateY(-50%);
+              }
             }
 
 
