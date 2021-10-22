@@ -5980,13 +5980,14 @@ $min-width: 1244px;
                     width: 280px;
                     height: 346px;
                     margin-right: 40px;
+                    position: relative;
                     &:after{
                       content: '';
                       display: inline-block;
                       @include background-img($width:61px, $height: 54px, $category: 'macrogen', $img: 'img-trophy.png');
                       position: absolute;
-                      left: 60px;
-                      bottom: 65px;
+                      left: 20px;
+                      bottom: 20px;
                     }
 
                     img {
