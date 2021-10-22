@@ -100,6 +100,9 @@
     }
     .img{
       margin-bottom: 60px;
+      &.caption_bottom{
+        margin-bottom: 0px;
+      }
     }
     &.no-line{
       padding-bottom: 50px;
