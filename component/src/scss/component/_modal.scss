@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.09.09
+ v.0.2 (선미) .pagination-wrap -> .pagination 클래스명 수정 -- 2021.10.22
 |----------------------------------|
 */
 .modal {
@@ -10,6 +11,9 @@
     &.modal-lg {
       min-width: 1000px !important;
       max-width: 1000px !important;
+    }
+    &.modal-xl {
+     max-width: 1820px !important;
     }
     .modal-content {
       border-radius: 0;
@@ -53,7 +57,7 @@
         border-radius: 0;
         padding: 15px;
 
-        .pagination-wrap {
+        .pagination {
           margin-top: 0;
         }
       }
