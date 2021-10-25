@@ -4,6 +4,8 @@
  v.0.2 선미: .business > .swiper-slide > .title > a , .btn (css 추가) -- 2021.09.27
 |----------------------------------|
 */
+
+/*메인페이지 슬라이드*/
 .business {
   .slider {
     .swiper-container {
@@ -25,17 +27,17 @@
               vertical-align: middle;
             }
             >a{
-              margin: 20px;
-              position: relative;
-              width: 60px;
-              height: 60px;
+              padding: 60px 0 0 60px;
+              position: absolute;
+              width: 100px;
+              height: 80px;
               display: inline-block;
               vertical-align: middle;
               .btn{
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%, -50%);
+               /* transform: translate(-50%, -50%);*/
               }
             }
           }
@@ -50,6 +52,7 @@
     }
   }
 }
+/*메인페이지 슬라이드 end*/
 
 .media {
   .slider {
