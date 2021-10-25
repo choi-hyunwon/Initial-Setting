@@ -89,7 +89,11 @@
       color: #000;
       font-weight: 400;
       margin-bottom: 80px;
+      &.info{
+        margin-bottom: 0;
+      }
     }
+
     .desc{
       word-break: keep-all;
       letter-spacing: -0.75px;
