@@ -6673,8 +6673,8 @@ $min-width: 1244px;
 
             li {
               overflow: hidden;
-              width: 495px;
-              margin-bottom: 14px;
+              width: 510px;
+              margin-bottom: 10px;
 
               &:last-child {
                 margin-bottom: 0;
@@ -6694,14 +6694,14 @@ $min-width: 1244px;
 
                 &:first-child {
                   position: relative;
-                  width: 142px;
+                  width: 155px;
                   font-weight: 700;
                   font-size: 22px;
-                  line-height: 30px;
+                  line-height: 28px;
                   letter-spacing: 0.5px;
                   color: $gray-ffffff;
                   padding-left: 20px;
-                  margin-right: 18px;
+                  margin-right: 20px;
 
                   &::before {
                     content: '';
@@ -6721,7 +6721,7 @@ $min-width: 1244px;
                   width: 335px;
                   font-size: 16px;
                   line-height: 30px;
-                  letter-spacing: -0.75px;
+                  letter-spacing: -1.3px;
                   color: $gray-ffffff;
                 }
               }

@@ -4,6 +4,7 @@
  v.0.2 선미 : textarea.form-control {height:600px-> 400px} 변경- 2021.09.01
  v.0.3 주연 : .icon-pdf => .icon - 2021.09.07
  v.0.4 선미 : input number 증가 감소 버튼 제거 - 2021.09.15
+ v.0.5 선미 : placeholder 색상값 지정 - 2021.10.26
 |----------------------------------|
 */
 
@@ -14,7 +15,16 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
+input::placeholder{
+  font-size: 18px;
+  color:$gray-d9d9d9!important;
+  font-weight: bold;
+}
+textarea::placeholder{
+  font-size: 16px;
+  color:$gray-d9d9d9!important;
+  font-weight: normal;
+}
 
 /* input-group */
 .input-group {
@@ -30,10 +40,6 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: 700;
     font-size: 22px;
     letter-spacing: -0.75px;
-    &::placeholder{
-      font-size: 18px;
-      color:$gray-d9d9d9;
-    }
   }
 
   .input-group-phone {
@@ -69,10 +75,6 @@ input[type="number"]::-webkit-inner-spin-button {
     &:focus {
       outline: none;
       box-shadow: none;
-    }
-
-    &::placeholder {
-      color: $gray-d9d9d9;
     }
 
     &.form-control-file {
@@ -175,10 +177,6 @@ select::-ms-expand {
     &:focus {
       outline: none;
       box-shadow: none;
-    }
-
-    &::placeholder {
-      color: $gray-d9d9d9;
     }
   }
 

@@ -888,12 +888,14 @@
       .media {
         .slider {
           position: relative;
+          width: 1240px;
+          margin: 0 auto;
 
           .slider-navigation {
             position: absolute;
             margin-bottom: 0;
             top: -113px;
-            left: 1480px;
+            right: 0;
 
             .btn-circle {
               width: 45px;

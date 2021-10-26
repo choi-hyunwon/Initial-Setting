@@ -72,15 +72,28 @@
                         <div class="date">2021.07.21</div>
                     </a>
                 </div>
+                <div class="swiper-slide">
+                    <a href="https://www.facebook.com/macrogenkr/posts/4081205675334494" target="_blank">
+                        <div class="img">
+                            <img src="../../img/main/img-media_06.png" alt="반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있는 방법">
+                            <span class="sns">Facebook</span>
+                        </div>
+                        <div class="content">반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있다면 좋겠죠. 마크로젠이 견종별, 묘종별 주의해야 할 유전질환의
+                            종류를 알려드릴게요!
+                        </div>
+                        <div class="date">2021.07.21</div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <script>
         new Swiper("._mediaSlider", {
             slidesPerView: "auto",
-            spaceBetween: 40,
             slidesPerGroup: 3,
             grabCursor: true,
+            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+            loop : true, // 무한 반복
             navigation: {
                 nextEl: "._btnNext",
                 prevEl: "._btnPrev",
