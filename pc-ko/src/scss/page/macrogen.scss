@@ -6739,8 +6739,12 @@ $min-width: 1244px;
       padding-top: 140px;
     }
 
+    .section-wrap{
+      overflow: hidden;
+
+    }
     .section {
-      padding: 140px 0 100px;
+      padding: 140px 0 0;
 
       .inner {
         width: $min-width;

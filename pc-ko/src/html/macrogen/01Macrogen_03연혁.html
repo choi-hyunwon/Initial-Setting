@@ -631,10 +631,12 @@
 
         section.find('.desc-info').each(function (idx) {
             var sectionHeight = section.eq(idx).find('.desc-info').height();
+            console.log(sectionHeight)
+            console.log(idx)
             section.eq(idx).find('.year-info').css('height', sectionHeight + 'px')
         })
 
-        $(window).on('resize scroll', _.throttle(function (){
+        $(window).on('resize scroll', function () {
             var currentPosition = $(window).scrollTop();
 
             for (var i = 0; i < sectionLength; i++) {
@@ -648,7 +650,7 @@
             else {
                 $('.section:last-child .year-info').find('li:last-child').removeClass('active')
             }
-        }, 100));
+        })
 
         function setHistoryScroll($information) {
             var gap = 0;/*50*/
