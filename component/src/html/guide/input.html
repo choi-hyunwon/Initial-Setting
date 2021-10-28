@@ -9,12 +9,15 @@
             <div class="font-h2">Input</div>
             <div class="box">
                 <div class="search-wrap mb-5">
-                    <select class="form-select" title="카테고리">
-                        <option selected>제목</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                    <div class="select-box">
+                        <a href="#" class="select_default _select_default"><span class="text">제목</span></a>
+                        <ul class="select_list _select_list">
+                           <li><span>제목</span></li>
+                           <li><span>One</span></li>
+                           <li><span>Two</span></li>
+                           <li><span>Three</span></li>
+                        </ul>
+                    </div>
                     <div class="input-search">
                         <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요"
                                aria-describedby="search">
@@ -38,12 +41,17 @@
                 <div class="input-group">
                     <span class="input-group-text" id="num1">휴대폰 번호</span>
                     <div class="input-group-phone">
-                        <select class="form-select" title="카테고리">
-                            <option selected="">제목</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                        <div class="select-box">
+                            <a href="#" class="select_default _select_default"><span class="text">010</span></a>
+                            <ul class="select_list _select_list">
+                                <li><span>010</span></li>
+                                <li><span>011</span></li>
+                                <li><span>016</span></li>
+                                <li><span>017</span></li>
+                                <li><span>018</span></li>
+                                <li><span>019</span></li>
+                            </ul>
+                        </div>
                         <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input"
                                aria-describedby="num2">
                         <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input"
@@ -173,61 +181,26 @@
                 </div>
             </div>
 
-            <!-- input / phone-->
+
             <div class="title">Dropdown</div>
             <div class="box">
                 <div class="mb-5">
                     <div class="dropdown_area">
-                    <div class="select_box _select_box">
-                        <div class="select_default">
-                            <span>2020. 03. 31 ~ 현재</span>
+                    <div class="select-box">
+                        <div class="select_default _select_default">
+                            <span class="text">2020. 03. 31 ~ 현재</span>
                         </div>
-                        <div class="select_dropdown _dropdown">
-                            <ul>
-                                <li><a role="button"><span>2020. 03. 31 ~ 현재</span></a></li>
-                                <li><a role="button"><span>2019. 10. 21 - 2020. 03 .31</span></a></li>
-                                <li><a role="button"><span>2018. 10. 26 - 2019. 10 .20</span></a></li>
-                                <li><a role="button"><span>2017. 03. 31 - 2018. 10 .25</span></a></li>
-                                <li><a role="button"><span>2012. 12. 03 - 2017. 03 .31</span></a></li>
-                            </ul>
-                        </div>
+                        <ul class="select_list _select_list">
+                            <li><span>2020. 03. 31 ~ 현재</span></li>
+                            <li><span>2019. 10. 21 - 2020. 03 .31</span></li>
+                            <li><span>2018. 10. 26 - 2019. 10 .20</span></li>
+                            <li><span>2017. 03. 31 - 2018. 10 .25</span></li>
+                            <li><span>2012. 12. 03 - 2017. 03 .31</span></li>
+                        </ul>
                     </div>
-                    <!--클릭시 select box on-->
-                    <script>
-                        /*드롭다운 클릭시 이벤트*/
-                        var selectBox = $(".select_default");
-
-                        selectBox.on('click',function() {
-                            var select = $(this);
-                            //드롭다운 닫기
-                            if(select.hasClass('open')) {
-                                select.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                            }
-                            //드롭다운 열기
-                            else {
-                                select.addClass("open").next('._dropdown').slideDown(200).addClass("open");
-                                $('body').on('click',function (e){
-                                    if(selectBox.hasClass('open')) {
-                                        if(!selectBox.has(e.target).length) {
-                                            selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                        }
-                                    }
-                                    e.preventDefault()
-                                })
-                            }
-                        });
-
-                        $("._dropdown a").on('click',function() {
-                            var option = $(this).find('span').text();
-                            console.log(option)
-                            $('._select_box .select_default').find('span').text(option);
-                        });
-                    </script>
                 </div>
                 </div>
             </div>
-
-
         </div>
     </div>
     @@include('../../html/include/component/footer.html')

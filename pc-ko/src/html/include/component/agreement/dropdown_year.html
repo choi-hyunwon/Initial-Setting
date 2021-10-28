@@ -1,20 +1,19 @@
 <div class="dropdown_area">
-  <div class="select_box _select_box">
-    <div class="select_default">
-      <span>2020. 03. 31 ~ 현재</span>
+  <div class="select-box">
+    <div class="select_default _select_default">
+      <span class="text">2020. 03. 31 ~ 현재</span>
     </div>
-    <div class="select_dropdown _dropdown">
-      <ul>
-        <li><a role="button"><span>2020. 03. 31 ~ 현재</span></a></li>
-        <li><a role="button"><span>2019. 10. 21 - 2020. 03 .31</span></a></li>
-        <li><a role="button"><span>2018. 10. 26 - 2019. 10 .20</span></a></li>
-        <li><a role="button"><span>2017. 03. 31 - 2018. 10 .25</span></a></li>
-        <li><a role="button"><span>2012. 12. 03 - 2017. 03 .31</span></a></li>
-      </ul>
-    </div>
+    <ul class="select_list _select_list">
+      <li><span>2020. 03. 31 ~ 현재</span></li>
+      <li><span>2019. 10. 21 - 2020. 03 .31</span></li>
+      <li><span>2018. 10. 26 - 2019. 10 .20</span></li>
+      <li><span>2017. 03. 31 - 2018. 10 .25</span></li>
+      <li><span>2012. 12. 03 - 2017. 03 .31</span></li>
+    </ul>
   </div>
+</div>
   <!--클릭시 select box on-->
-  <script>
+<!--  <script>
     /*드롭다운 클릭시 이벤트*/
     var selectBox = $(".select_default");
 
@@ -43,5 +42,4 @@
       console.log(option)
       $('._select_box .select_default').find('span').text(option);
     });
-  </script>
-</div>
+  </script>-->

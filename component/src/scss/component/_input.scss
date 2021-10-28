@@ -6,6 +6,7 @@
  v.0.4 선미 : input number 증가 감소 버튼 제거 - 2021.09.15
  v.0.5 선미 : placeholder 색상값 지정 - 2021.10.26
  v.0.6 태윤 : Dropdown 추가 - 2021.10.26
+ v.0.7 선미 : form-select 제거 /  .select-box 추가 - 2021.10.28
 |----------------------------------|
 */
 
@@ -15,6 +16,7 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 
 input::placeholder{
   font-size: 18px;
@@ -47,9 +49,12 @@ textarea::placeholder{
     display: flex;
     width: calc(100% - 174px - 40px);
 
-    .form-select {
+    .select-box {
       width: 334px;
       margin-right: 14px;
+      height: 60px;
+      line-height: 60px;
+      font-weight: 700;
     }
 
     .form-control {
@@ -107,8 +112,8 @@ textarea::placeholder{
   }
 }
 
-/* select */
-.form-select {
+/* select 공통 */
+/*.form-select {
   line-height: 53px;
   padding: 0 20px 0 0;
   border-top: 0;
@@ -125,16 +130,74 @@ textarea::placeholder{
   height: auto;
   background-position: right 20px center;
   background-size: 8px 6px;
-  appearance: none;  /*Removes default chrome and safari style*/
-  -webkit-appearance: none;  /*Removes default chrome and safari style*/
-  -moz-appearance: none;  /*Removes default style Firefox*/
+  appearance: none;  !*Removes default chrome and safari style*!
+  -webkit-appearance: none;  !*Removes default chrome and safari style*!
+  -moz-appearance: none;  !*Removes default style Firefox*!
 
   &:focus {
     outline: none;
     box-shadow: none;
     border-color: $gray-000000;
   }
+}*/
+.select-box{
+  border-bottom: 1px solid #000000;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  .select_default{
+    display: block;
+    color:$gray-000000;
+    cursor: pointer;
+    &:before{
+      content: '';
+      display: block;
+      background: url("../img/common/ico-footer-select-top.png") no-repeat center center;
+      width: 8px;
+      height: 6px;
+      position: absolute;
+      right: 14px;
+      top:50%;
+    }
+    &.open{
+      &:before{
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .select_list {
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    width: calc(100% + 20px);
+    border-radius: 10px;
+    background: $bg-ffffff;
+    border: 1px solid #222222;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    padding: 30px 27px;
+    line-height: 30px;
+
+    >li {
+      display: block;
+      width: 100%;
+      color: #5b5b5b;
+      font-size: 16px;
+      height: 30px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      &:hover{
+        color:$point-active;
+        font-weight: bold;
+      }
+    }
+  }
 }
+
 
 select::-ms-expand {
   display: none;
@@ -144,15 +207,13 @@ select::-ms-expand {
 .search-wrap {
   margin-bottom: 50px;
   text-align: right;
-
-  .form-select {
-    display: inline-block;
+  .select-box {
     width: 128px;
     margin-right: 6px;
-    font-weight: normal;
-    color: $gray-000000;
+    height: 54px;
+    line-height: 53px;
+    text-align: left;
   }
-
   .input-search {
     display: inline-block;
     width: 388px;
@@ -358,10 +419,8 @@ textarea.form-control {
   }
 }
 
-
-
 /* Dropdown */
-.dropdown_area{
+/*.dropdown_area{
   .select_box{
     font-size: 18px;
     line-height: 32px;
@@ -388,7 +447,7 @@ textarea.form-control {
         background-position: calc(100% - 6px) 13.5px;
       }
     }
-    .select_dropdown{
+    .select_list{
       padding: 30px;
       border: 1px solid #222222;
       box-sizing: border-box;
@@ -400,9 +459,6 @@ textarea.form-control {
       width: 239px;
       left: -10px;
       z-index: 100;
-      &._dropdown{
-        display: none;
-      }
       ul{
         li{
           text-align: left;
@@ -436,5 +492,12 @@ textarea.form-control {
     padding: 0px 24px;
     min-width: 88px;
     height: 40px;
+  }
+}*/
+.dropdown_area{
+  .select-box{
+    width: 218px;
+    height: 40px;
+    line-height: 40px;
   }
 }
