@@ -199,15 +199,17 @@ textarea::placeholder{
 }
 
 
-select::-ms-expand {
+/*select::-ms-expand {
   display: none;
-}
+}*/
 
 /* search */
 .search-wrap {
   margin-bottom: 50px;
   text-align: right;
   .select-box {
+    display: inline-block;
+    vertical-align: middle;
     width: 128px;
     margin-right: 6px;
     height: 54px;
@@ -216,6 +218,7 @@ select::-ms-expand {
   }
   .input-search {
     display: inline-block;
+    vertical-align: middle;
     width: 388px;
   }
 }

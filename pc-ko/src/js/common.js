@@ -141,12 +141,12 @@ front.common = (function () {
       //드롭다운 열기
       else {
         select.addClass("open").next('._select_list').slideDown(200);
-        $(document).click(function(event) {
+      /*  $(document).click(function(event) {
           if ( !$(event.target).hasClass('open')) {
             select.removeClass('open');
             $('._select_list').removeClass('open').slideUp(200);
           }
-        });
+        });*/
       }
       $(this).next().find('span').on('click',function() {
         var option = $(this).text();
