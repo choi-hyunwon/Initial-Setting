@@ -1,6 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  *  common.js
+ *  v0.1 - footerSelect 추가 - 선미 ( 21.10.28 )
  * --------------------------------------------------------------------------
  */
 
@@ -15,7 +16,7 @@ front.common = (function () {
     this.a();
     this.commonHandler();
     this.scrollHeader();
-
+    this.footerSelect();
   };
 
   var a = function () {
@@ -97,12 +98,43 @@ front.common = (function () {
     }
   }
 
+  var footerSelect = function () {
+    var selectSite = $("._select_site");
+    $('._popup_box').hide();
+
+    selectSite.on('click',function() {
+      var select = $(this);
+      //드롭다운 닫기
+      if(select.hasClass('open')) {
+        select.removeClass("open").next('._popup_box').slideUp(200).removeClass("open");
+      }
+      //드롭다운 열기
+      else {
+        select.addClass("open").next('._popup_box').slideDown(200).addClass("open");
+        $('body').on('click',function (e){
+          if(selectSite.hasClass('open')) {
+            if(!selectSite.has(e.target).length) {
+              selectSite.removeClass("open").next('._popup_box').slideUp(200).removeClass("open");
+            }
+          }
+          e.preventDefault()
+        })
+      }
+    });
+    $("._popup_box a").on('click',function() {
+      var option = $(this).find('span').text();
+      console.log(option)
+      $('._select_box ._select_site').find('span').text(option);
+    });
+  }
+
 
 
   return {
     a : a,
     commonHandler : commonHandler,
     scrollHeader : scrollHeader,
+    footerSelect : footerSelect,
     init : init,
   }
 })();
