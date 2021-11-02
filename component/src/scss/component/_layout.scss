@@ -529,6 +529,13 @@
                         background: none;
                       }
                     }
+                    &:nth-of-type(2){
+                      span{
+                        a{
+                          color: #2e87ef;
+                        }
+                      }
+                    }
                   }
                 }
               }
