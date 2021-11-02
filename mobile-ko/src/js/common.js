@@ -14,7 +14,7 @@ front.common = (function () {
   var init = function() {
     this.a();
     this.commonHandler();
-    this.scrollHeader();
+    // this.scrollHeader();
   };
 
   var a = function () {
@@ -22,36 +22,36 @@ front.common = (function () {
       e.preventDefault();
     });
   }
-  var scrollHeader = function () {
-    var scrollableElement = document.body; //document.getElementById('scrollableElement');
-    scrollableElement.addEventListener('wheel', checkScrollDirection);
-    function checkScrollDirection(event) {
-      if (checkScrollDirectionIsUp(event)) {
-        // console.log('UP');
-        if (window.scrollY > 124){
-          $('.header').show()
-              .css({'position': 'fixed','top':'0'})
-              .addClass('header-sm')
-        } else {
-          $('.header').show()
-              .css({'position': 'relative'})
-              .removeClass('header-sm')
-        }
-      } else {
-        // console.log('Down');
-        // console.log(window.scrollY);
-        if (window.scrollY > 124){
-          $('.header').hide()
-        }
-      }
-    }
-    function checkScrollDirectionIsUp(event) {
-      if (event.wheelDelta) {
-        return event.wheelDelta > 0;
-      }
-      return event.deltaY < 0;
-    }
-  }
+  // var scrollHeader = function () {
+  //   var scrollableElement = document.body; //document.getElementById('scrollableElement');
+  //   scrollableElement.addEventListener('wheel', checkScrollDirection);
+  //   function checkScrollDirection(event) {
+  //     if (checkScrollDirectionIsUp(event)) {
+  //       // console.log('UP');
+  //       if (window.scrollY > 124){
+  //         $('.header').show()
+  //             .css({'position': 'fixed','top':'0'})
+  //             .addClass('header-sm')
+  //       } else {
+  //         $('.header').show()
+  //             .css({'position': 'relative'})
+  //             .removeClass('header-sm')
+  //       }
+  //     } else {
+  //       // console.log('Down');
+  //       // console.log(window.scrollY);
+  //       if (window.scrollY > 124){
+  //         $('.header').hide()
+  //       }
+  //     }
+  //   }
+  //   function checkScrollDirectionIsUp(event) {
+  //     if (event.wheelDelta) {
+  //       return event.wheelDelta > 0;
+  //     }
+  //     return event.deltaY < 0;
+  //   }
+  // }
 
 
   var commonHandler = function () {
@@ -85,7 +85,7 @@ front.common = (function () {
   return {
     a : a,
     commonHandler : commonHandler,
-    scrollHeader : scrollHeader,
+    // scrollHeader : scrollHeader,
     init : init
   }
 })();

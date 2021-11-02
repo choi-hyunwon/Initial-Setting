@@ -126,13 +126,13 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, copyCSS,copyJS, htmlPage,delInclude));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, jsLib, jsCommon, htmlPage))
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS,copyJS,  htmlPage, delInclude,beautify));
-gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg ));
+gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont));
 
 gulp.task('browser-sync', function() {
   browserSync.init({
-    port: 1002,
+    port: 5555,
     server: {
       baseDir: "./",
       index: "dist/index.html"
