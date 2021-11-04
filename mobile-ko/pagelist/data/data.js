@@ -43,19 +43,25 @@ data.guide = {
             stateClass: 'complete',
             url: 'layout_01',
             category: 'guide',
-            page: 'layout frame A'
+            page: 'FULL BG'
         },
         {
             stateClass: 'complete',
             url: 'layout_02',
             category: 'guide',
-            page: 'layout frame B'
+            page: 'TOP BG'
         },
         {
             stateClass: 'complete',
             url: 'layout_03',
             category: 'guide',
-            page: 'layout frame C'
+            page: 'NON BG'
+        },
+        {
+            stateClass: 'complete',
+            url: 'layout_04',
+            category: 'guide',
+            page: 'VIEW PAGE'
         },
         {
             stateClass: 'complete',
@@ -107,9 +113,15 @@ data.guide = {
         },
         {
             stateClass: 'complete',
-            url: 'modal',
+            url: 'popup-full',
             category: 'guide',
-            page: 'modal'
+            page: 'popup full'
+        },
+        {
+            stateClass: 'complete',
+            url: 'popup-image-viewer',
+            category: 'guide',
+            page: 'popup image viewer'
         },
         {
             stateClass: 'complete',

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/components/head_guide.html')
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        @@include('../../html/include/components/header.html')
+        <div class="frame"></div>
+    </div>
+    <div class="container pt-0">
+        <div class="img text-center mb-5"><img src="../../img/@temp/bg-01.png" alt=""></div>
+        <div class="img position-relative">
+            <img class="w-100" src="../../img/@temp/bg-02.png" alt="">
+            <a class="btn-zoom _btnZoom" href="#"><span class="sr-only">이미지 확대</span></a>
+        </div>
+    </div>
+    @@include('../../html/include/components/footer.html')
+    @@include('../../html/include/components/toTop.html')
+</div>
+<div class="modal modal-image-viewer" tabindex="-1" id="modal" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="pinch-zoom-parent">
+                <div class="pinch-zoom"><img src="../../img/@temp/bg-01.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn-totop"></a>
+    <script>
+        $(document).ready(function(){
+            $('.btn-totop').click(function(){
+                $('.modal').animate( { scrollTop:0 },{duration : 100});
+                return false;
+            });
+            $('.modal').on('scroll', function (){
+                var scrollTop = $('.modal').scrollTop()
+                if (scrollTop > 150) {
+                    $('.btn-totop').css({'opacity' : 1})
+                } else {
+                    $('.btn-totop').css({'opacity' : 0})
+                }
+            })
+        });
+    </script>
+</div>
+<div class="toast-popup">
+    <p>이미지를 확대할 수 있습니다</p>
+</div>
+<script>
+    // modal show
+    var myModal = new bootstrap.Modal(document.getElementById('modal'))
+    myModal.show();
+
+    // zoom
+    var el = document.querySelector('.pinch-zoom');
+    new PinchZoom.default(el, {});
+
+    // modal close
+    $('.btn-close').on('click', function () {
+        myModal.hide();
+    })
+
+    // modal open
+    $('._btnZoom').on('click', function () {
+        myModal.show();
+    })
+
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+
+    setTimeout(showToastPopup, 1500);
+</script>
+</body>
+</html>
