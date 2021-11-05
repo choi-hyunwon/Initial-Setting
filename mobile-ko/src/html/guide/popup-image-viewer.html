@@ -49,8 +49,8 @@
 </div>
 <script>
     // modal show
-    var myModal = new bootstrap.Modal(document.getElementById('modal'))
-    myModal.show();
+    var modal = new bootstrap.Modal(document.getElementById('modal'))
+    modal.show();
 
     // zoom
     var el = document.querySelector('.pinch-zoom');
@@ -58,12 +58,12 @@
 
     // modal close
     $('.btn-close').on('click', function () {
-        myModal.hide();
+        modal.hide();
     })
 
     // modal open
     $('._btnZoom').on('click', function () {
-        myModal.show();
+        modal.show();
     })
 
     // toast popup
