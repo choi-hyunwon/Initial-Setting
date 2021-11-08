@@ -131,9 +131,9 @@ data.macrogen = {
   list: [
     {
       stateClass: 'complete',
-      url: 'intro',
+      url: '01Macrogen_01기업개요',
       category: 'macrogen',
-      page: '메인'
+      page: '01Macrogen_01기업개요'
     }
   ]
 }
