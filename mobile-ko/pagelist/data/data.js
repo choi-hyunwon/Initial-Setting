@@ -77,39 +77,21 @@ data.guide = {
         },
         {
             stateClass: 'complete',
-            url: 'slider',
-            category: 'guide',
-            page: 'slider'
-        },
-        {
-            stateClass: 'complete',
             url: 'board_01',
             category: 'guide',
-            page: '썸네일 리스트'
+            page: 'text list'
         },
         {
             stateClass: 'complete',
             url: 'board_02',
             category: 'guide',
-            page: '게시판 리스트'
+            page: 'thumbnail list'
         },
         {
             stateClass: 'complete',
-            url: 'board_04',
+            url: 'board_03',
             category: 'guide',
-            page: '상세'
-        },
-        {
-            stateClass: 'complete',
-            url: 'Indicator',
-            category: 'guide',
-            page: '인디케이터'
-        },
-        {
-            stateClass: 'complete',
-            url: 'tooltip',
-            category: 'guide',
-            page: 'tooltip'
+            page: 'view'
         },
         {
             stateClass: 'complete',
@@ -122,6 +104,18 @@ data.guide = {
             url: 'popup-image-viewer',
             category: 'guide',
             page: 'popup image viewer'
+        },
+        {
+            stateClass: 'complete',
+            url: 'popup-notice',
+            category: 'guide',
+            page: 'popup notice'
+        },
+        {
+            stateClass: 'complete',
+            url: 'popup-tooltip',
+            category: 'guide',
+            page: 'popup tooltip'
         },
         {
             stateClass: 'complete',
