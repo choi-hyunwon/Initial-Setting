@@ -1,0 +1,63 @@
+/*
+|----------------------------------|
+ v.0.1 주연 : 최초 작업 -- 2021.11.5
+|----------------------------------|
+*/
+.tab-primary {
+  .nav-tabs {
+    display: flex;
+    width: 100%;
+
+    .nav-link {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+      height: 65px;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3f3f3;
+      cursor: pointer;
+      border-radius: 0;
+      border: 0;
+
+
+      &:first-child {
+        padding: 0 0 0 20px;
+      }
+
+      &:last-child {
+        padding: 0 20px 0 0;
+      }
+
+      span {
+        display: inline-block;
+        font-family: $font-family-bold;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: -0.5px;
+        color: $gray-909090;
+      }
+
+      &.active {
+        background-color: #fff;
+
+        span {
+          position: relative;
+          color: $gray-000000;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 0;
+            right: -10px;
+            background-color: $point-primary;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

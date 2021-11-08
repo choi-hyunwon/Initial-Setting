@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/components/head_guide.html')
+<body>
+<div class="wrap">
+    <div class="container pt-0">
+        <div class="guide px-0">
+            <div class="box">
+                <p class="font-h6">Buttons</p>
+                <div>
+                    <a href="#" class="btn btn-primary"><span>btn-primary</span></a>
+                    <a href="#" class="btn btn-primary disabled"><span>btn-primary disabled</span></a>
+                    <a href="#" class="btn btn-black"><span>btn-black</span></a>
+                    <a href="#" class="btn btn-black disabled"><span>btn-black disabled</span></a>
+                    <a href="#" class="btn btn-light"><span>btn-light</span></a>
+                    <a href="#" class="btn btn-light disabled"><span>btn-light disabled</span></a>
+                </div>
+            </div>
+            <div class="box">
+                <p class="font-h6">Multiple Buttons</p>
+                <div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn btn-light"><span>btn-light</span></a>
+                        <a href="#" class="btn btn-light"><span>btn-light</span></a>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn btn-primary"><span>btn-primary</span></a>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn btn-light btn-round"><span>버튼</span></a>
+                        <a href="#" class="btn btn-primary btn-round"><span>버튼</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p class="font-h6">Round Buttons</p>
+                <a href="#" class="btn btn-primary btn-round"><span>btn-primary btn-round</span></a>
+                <a href="#" class="btn btn-light btn-round"><span>btn-light btn-round</span></a>
+                <a href="#" class="btn btn-light btn-round btn-flexible"><span>flexible</span></a>
+            </div>
+            <div class="box">
+                <p class="font-h6">Round Buttons</p>
+                <a href="#" class="btn btn-primary btn-round"><span>btn-primary btn-round</span></a>
+                <a href="#" class="btn btn-light btn-round"><span>btn-light btn-round</span></a>
+                <a href="#" class="btn btn-light btn-round btn-flexible"><span>flexible</span></a>
+            </div>
+            <div class="box" style="background-color: rgba(0,0,0,.3)">
+                <p class="font-h6">icon Buttons</p>
+                <a href="#" class="btn-service"><span class="sr-only">서비스</span></a>
+                <a href="#" class="btn-download"><span class="sr-only">다운로드</span></a>
+                <a href="#" class="btn-view-zoom"><span class="sr-only">확대보기</span></a>
+                <a href="#" class="btn-more"><span class="sr-only">더보기</span></a>
+                <a href="#" class="btn-share"><span class="sr-only">공유하기</span></a>
+                <a href="#" class="btn-tooltip"><span class="sr-only">툴팁</span></a>
+                <a href="#" class="btn-close-dark"><span class="sr-only">닫기</span></a>
+                <a href="#" class="btn-close-light"><span class="sr-only">닫기</span></a>
+            </div>
+        </div>
+    </div>
+    @@include('../../html/include/components/footer.html')
+</div>
+</body>
+</html>
+<style>
+    .container .box {
+        border: 1px solid #d9d9d9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .container .box:last-child {
+        margin-bottom: 0
+    }
+
+    .container .box div:last-child {
+        margin-bottom: 0
+    }
+
+    .container .box p {
+        margin-bottom: 20px
+    }
+
+    .container .text {
+        font-size: 20px;
+        font-weight: bold
+    }
+
+    .container .box .btn-totop {
+        margin: 0 30px
+    }
+</style>

@@ -23,7 +23,7 @@ npm install --global gulp-cli
 gulp를 사용하기 위해서는 npm을 통해 gulp-cli를 전역으로 설치
  ```
 * [gulp 전역설치 버전확인]  gulp -v 
- ```
+ ``` 
 
 
 ## 3. npm 의존 설치
