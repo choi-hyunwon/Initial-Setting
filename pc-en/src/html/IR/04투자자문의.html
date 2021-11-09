@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+<!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/05IR_04투자자문의.png'})-->
+    @@include('../../html/include/component/header-white.html')
+    <div class="container container-fluid">
+        <div class="section_IR">
+            <div class="question_box">
+                <div class="text-area">
+                    @@include('../../html/include/common/breadcrumb.html',  {
+                    "depth1": "IR",
+                    "depth2": "투자자 문의",
+                    })
+                    <div class="font-h1">투자자 문의</div>
+                    <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
+                    <span class="number">Tel&#46; 02&#45;3489&#45;7558</span>
+                    <a href="#" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
+
+                </div>
+                <div class="img-area"></div>
+
+            </div>
+            <div class="privacy_box">
+                <div class="font-h5"><span>01&#46;</span>정보를 입력해주세요</div>
+                <!-- input / text-->
+                <div class="input-group">
+                    <span class="input-group-text" id="name">이름</span>
+                    <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input" aria-describedby="name">
+                </div>
+                <!-- input / phone-->
+                <div class="input-group input-phone-box">
+                    <span class="input-group-text" id="num1">휴대폰 번호</span>
+                    <div class="input-group-phone">
+                        <div class="select-box ">
+                            <a href="#" class="select_default _select_default"><span class="text">010</span></a>
+                            <ul class="select_list _select_list">
+                                <li><span>010</span></li>
+                                <li><span>011</span></li>
+                                <li><span>016</span></li>
+                                <li><span>017</span></li>
+                                <li><span>018</span></li>
+                                <li><span>019</span></li>
+                            </ul>
+                        </div>
+
+                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                        <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                        <script>
+                            /*숫자 글자수 제한*/
+                            function lengthLimit4(e){
+                                if(e.value.length > 4){
+                                    e.value = e.value.slice(0, 4)
+                                }
+                            }
+                        </script>
+                    </div>
+                    <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다&#46;</span></p>
+                </div>
+                <hr class="divider"/>
+            </div>
+            <div class="privacy_box">
+                <div class="font-h5"><span>02&#46;</span>문의하실 내용을 작성해주세요</div>
+                <!-- input / text-->
+                <div class="input-group">
+                    <span class="input-group-text" id="title">제목</span>
+                    <input type="text" placeholder="제목을 입력하세요" class="form-control" aria-label="input" aria-describedby="title">
+                </div>
+                <!-- textarea -->
+                <div class="input-group">
+                    <span class="input-group-text" id="faq">문의내용</span>
+                    <textarea type="text" placeholder="문의하실 내용을 입력하세요" class="form-control" aria-label="input"
+                              aria-describedby="faq"></textarea>
+                </div>
+                <!-- input / text-->
+
+                <!--s 개발영역-->
+                <div class="input-group">
+                    <span class="input-group-text" id="automatic">자동등록방지</span>
+                    <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;"></span>
+                    <input type="text" placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
+                </div>
+                <!--e 개발영역-->
+
+                <hr class="divider"/>
+            </div>
+
+            <div class="privacy_box">
+                <div class="font-h5"><span>03&#46;</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
+                <div class="agreement">
+                    <p><span class="font-bold">개인정보 수집 목적 &#58;</span> 투자 문의 및 상담 문의 대응</p>
+                    <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호</p>
+                    <p><span class="font-bold">보유 및 이용기간 &#58;</span>  3년</p>
+                    <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다&#46; 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다&#46;</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" checked type="checkbox" value="" id="check">
+                    <label class="form-check-label" for="check">동의합니다</label>
+                </div>
+            </div>
+            <div class="btn-box">
+                <a href="#" class="btn btn-white"><span>취소</span></a>
+                <a href="#" class="btn btn-primary"><i class="icon icon-pen"></i><span>문의하기</span></a>
+            </div>
+
+            <script>
+                $('.form-check-input').on('click',function (){
+                    if($(this).is(":checked") ==  true){
+                        $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
+                    }else{
+                        $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
+                    }
+                });
+            </script>
+       </div>
+
+    </div>
+
+    @@include('../../html/include/component/footer.html')
+    @@include('../../html/include/component/toTop.html')
+</div>
+</body>
+</html>
