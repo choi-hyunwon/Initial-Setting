@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.11.5
  v.0.2 태윤 : .select-box 추가
+ v.0.3 주연 : .tab-secondary 추가 -- 2021.11.10
 |----------------------------------|
 */
 .tab-primary {
@@ -62,8 +63,107 @@
     }
   }
 }
+
+.tab-secondary {
+  margin-bottom: 72px;
+
+  .nav-tabs {
+    display: flex;
+    width: 100%;
+    border-bottom: 0;
+
+    .nav-link {
+      display: flex;
+      cursor: pointer;
+      border-radius: 0;
+      border: 0;
+      margin-right: 24px;
+      padding: 0;
+
+      span {
+        display: inline-block;
+        font-family: $font-family-bold;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: -0.5px;
+        color: $disabled-d9d9d9;
+      }
+
+      &.active {
+        span {
+          color: $point-primary;
+          border-bottom: 2px solid $point-primary;
+        }
+      }
+    }
+  }
+}
+
+.slide-tab-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .swiper-container {
+    margin: 0 !important;
+
+    .swiper-slide {
+      width: fit-content;
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        position: relative;
+        white-space: nowrap;
+        display: inline-block;
+        font-family: $font-family-bold;
+        font-size: 18px;
+        height: 34px;
+        color: $gray-d9d9d9;
+      }
+
+      &.active {
+        position: relative;
+
+        a {
+          color: $point-primary;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $point-primary;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-navi {
+    position: absolute;
+    top: -2px;
+    z-index: 2;
+  }
+
+  .btn-navi-prev {
+    @include background-img ($width: 60px, $height: 36px, $category: 'common', $img: 'btn-navi-left.png');
+    left: 0;
+  }
+  .btn-navi-next {
+    @include background-img ($width: 60px, $height: 36px, $category: 'common', $img: 'btn-navi-right.png');
+    right: 0;
+  }
+}
+
 /* 셀렉트 영역 스타일 */
-.select-box{
+.select-box {
   z-index: 100;
   position: relative;
   width: 100%;
@@ -72,7 +172,8 @@
   color: #000;
   line-height: 34px;
   letter-spacing: -0.5px;
-  .selected-value{
+
+  .selected-value {
     padding: 13px 20px;
     width: 100%;
     display: inline-block;
@@ -81,7 +182,7 @@
     position: relative;
 
 
-    &:before{
+    &:before {
       content: '';
       position: absolute;
       top: 50%;
@@ -92,7 +193,6 @@
       margin-left: 16px;
 
 
-
       /*아래로*/
       border-top: 6px solid #222222;
       border-left: 4.5px solid transparent;
@@ -100,28 +200,33 @@
       border-bottom: none;
     }
   }
-  .select-option{
+
+  .select-option {
     display: none;
     padding: 24px 20px;
     width: 100%;
     max-height: 290px;
     overflow-y: scroll;
-    .option-value{
+
+    .option-value {
       margin-bottom: 16px;
-      a{
+
+      a {
         display: inline-block;
         width: 100%;
         height: 100%;
         color: #454545;
       }
-      &:nth-last-of-type(1){
+
+      &:nth-last-of-type(1) {
         margin-bottom: 0px;
       }
     }
   }
-  &.open{
-    .selected-value{
-      &:before{
+
+  &.open {
+    .selected-value {
+      &:before {
         border-top: none;
         border-left: 4.5px solid transparent;
         border-right: 4.5px solid transparent;
@@ -130,9 +235,10 @@
     }
   }
 }
+
 /* 아코디언 영역 스타일*/
-.accordion{
-  .accordion-item{
+.accordion {
+  .accordion-item {
 
   }
 }

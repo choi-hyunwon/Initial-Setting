@@ -24,8 +24,85 @@
         </div>
         <div class="mb-5">
             <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4">Tab Secondary</p>
+                <!-- s -->
+                <nav class="tab-secondary">
+                    <div class="nav nav-tabs" id="nav-tab2" role="tablist">
+                        <button class="nav-link active" id="nav-tab-3" data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab" aria-controls="nav-3" aria-selected="true"><span>국내</span></button>
+                        <button class="nav-link" id="nav-tab-4" data-bs-toggle="tab" data-bs-target="#nav-4" type="button" role="tab" aria-controls="nav-4" aria-selected="false"><span>글로벌</span></button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent2">
+                    <div class="tab-pane fade show active" id="nav-3" role="tabpanel" aria-labelledby="nav-tab-3">
+                        1
+                    </div>
+                    <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-tab-4">
+                        2
+                    </div>
+                </div>
+                <!-- e -->
+            </div>
+        </div>
+        <div class="mb-5">
+            <div class="box">
                 <p class="font-h7 mb-5 px-2 mb-4">Tab Secondary/Swipe</p>
                 <!-- s -->
+                <div class="slide-tab-wrap">
+                    <div class="swiper-container tab-slide-box _swiperTab">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide active"><a href="#">품질경영시스템</a></div>
+                            <div class="swiper-slide"><a href="#">임상진단 품질경영시스템</a></div>
+                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-navi btn-navi-prev _slideLeft"></a>
+                    <a href="#" class="btn-navi btn-navi-next _slideRight"></a>
+                </div>
+                <script>
+                    var swiper = new Swiper("._swiperTab", {
+                        slidesPerView: "auto",
+                        spaceBetween: 0,
+                        centeredSlides: false,
+                        watchActiveIndex: true,
+                        slideToClickedSlide: true,
+                        navigation: {
+                            nextEl: "._slideRight",
+                            prevEl: "._slideLeft",
+                        },
+                    });
+
+                    $(document).ready(function (){
+                        var idx = $('._swiperTab .swiper-slide').length;
+                        var sum= 0;
+
+                        for (var j = 0; j < idx; j++) {
+                            sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
+                        }
+                        $('.swiper-wrapper').css('width',sum)
+
+                        for (var i = 0; i <= idx; i++) {
+                            var target = $(`.swiper-slide:eq(${i})`);
+                            var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 24;
+                            target.css('width',idxWidth)
+                        }
+                    })
+
+                    $('._swiperTab .swiper-slide').on('click', function(){
+                        $(this).addClass('active').siblings().removeClass('active');
+                    });
+
+                    $('.swiper-notification').remove();
+                </script>
+
                 <!-- e -->
             </div>
         </div>

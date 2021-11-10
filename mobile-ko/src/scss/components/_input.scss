@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.11.5
+ v.0.2 주연 : 파일 다운로드 UI 추가 -- 2021.11.10
 |----------------------------------|
 */
 input[type="number"]::-webkit-outer-spin-button,
@@ -265,7 +266,7 @@ textarea::placeholder {
     .ico-select-nor {
       position: absolute;
       @include background-img($width: 9px, $height: 6px, $category: 'common', $img: 'ico-select-nor.svg');
-      right: 30px;
+      right: 27px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -281,7 +282,7 @@ textarea::placeholder {
     margin-top: 1px;
     box-shadow: 0 8px 6px rgba(0, 0, 0, 0.08);
     border: 1px solid $gray-000000;
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: hidden;
     overflow-y: auto;
     z-index: 9;
@@ -341,6 +342,50 @@ textarea::placeholder {
 
     + .file {
       margin-top: 8px;
+    }
+  }
+}
+
+.file-download {
+  .item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 14px 25px;
+    background-color: $bg-f7f7f7;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+    .font-body-b {
+      padding-left: 37px;
+      padding-top: 3px;
+      padding-right: 16px;
+    }
+
+    > .icon {
+      position: absolute;
+      left: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-right: 40px;
+    }
+
+    a {
+      position: relative;
+      display: block;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        left: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $line-e9e9e9;
+      }
     }
   }
 }

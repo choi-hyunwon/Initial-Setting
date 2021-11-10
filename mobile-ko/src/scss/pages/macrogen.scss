@@ -1,0 +1,3302 @@
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.11.9
+|----------------------------------|
+*/
+$min-width: 1244px;
+
+.macrogen {
+  /* s 공통 */
+  .badge {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 12px;
+    height: 29px;
+    line-height: 27px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: $gray-909090;
+    border: 1px solid $line-d9d9d9;
+    border-radius: 4px;
+    margin-left: 15px;
+  }
+
+  .color-white {
+    color: $gray-ffffff !important;
+  }
+
+  .swiper-container {
+    position: relative;
+    height: 100%;
+  }
+
+  .pagination-wrap {
+    position: absolute;
+    width: 100%;
+    top: 368px;
+    left: 0;
+    z-index: 2;
+
+    .navigation {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 8px;
+
+      .page-item {
+        position: static;
+
+        .page-link {
+          padding: 0;
+        }
+
+        &.prev {
+          margin-right: 8px;
+
+          .page-link {
+            @include background-img($width: 14px, $height: 14px, $category: 'common', $img: 'ico-left-dark.svg');
+          }
+        }
+
+        &.next {
+          .page-link {
+            @include background-img($width: 14px, $height: 14px, $category: 'common', $img: 'ico-left-dark.svg');
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 164px;
+    text-align: center;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      opacity: 1;
+      margin: 0 7.5px;
+
+      &.swiper-pagination-bullet-active {
+        background-color: $bg-ffffff;
+      }
+    }
+  }
+
+  /* e 공통 */
+
+  &.company-overview {
+    .section-info {
+      margin-bottom: 80px;
+
+      .inner {
+        padding: 0 20px;
+      }
+
+      .font-slogan-en {
+        margin-bottom: 24px;
+      }
+
+      .font-h7 {
+        margin-bottom: 56px;
+      }
+
+      .text-box {
+        margin-bottom: 40px;
+      }
+
+      .img-box {
+        .inner {
+          padding: 0;
+
+          .img {
+            text-align: right;
+            margin-bottom: 40px;
+            padding-left: 20px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .list {
+            padding-left: 20px;
+
+            li {
+              position: relative;
+              padding-left: 22px;
+              margin-bottom: 8px;
+
+              &::before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 2px;
+                background-color: $gray-000000;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-overview {
+      width: 100%;
+      background-color: $bg-f7f7f7;
+      padding-top: 80px;
+      padding-bottom: 40px;
+      overflow: hidden;
+
+      .inner {
+        padding: 0 20px;
+      }
+
+      .box {
+        margin-bottom: 48px;
+
+        .font-h7 {
+          margin-bottom: 56px;
+        }
+
+        .year {
+          position: relative;
+          display: inline-block;
+          font-family: $font-family-bold;
+          font-size: 56px;
+          line-height: 72px;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: $bg-000000;
+            right: -60px;
+            bottom: 14px;
+          }
+        }
+      }
+
+      .overview-list {
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 40px;
+
+          .img {
+            display: block;
+            width: 140px;
+            height: 140px;
+            margin-bottom: 16px;
+
+            img {
+              @include img-100;
+            }
+          }
+
+          .font-h4 {
+            display: block;
+          }
+
+          .font-body-h {
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .section-business {
+      position: relative;
+      @include background-img($width: auto, $height: 900px, $category: 'macrogen', $img: 'macrogen_thumb_lg_2.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding-top: 80px;
+
+      .swiper-container {
+        position: relative;
+        height: 100%;
+      }
+
+      .inner {
+        padding: 0 20px;
+      }
+
+      .font-h7 {
+        color: $gray-ffffff;
+        margin-bottom: 56px;
+      }
+
+      .font-h3 {
+        color: $gray-ffffff;
+        margin-bottom: 24px;
+      }
+
+      .font-body-h {
+        color: $gray-ffffff;
+        margin-bottom: 48px;
+      }
+
+      .category-list {
+        li {
+          position: relative;
+          padding: 0 4px;
+          margin-bottom: 32px;
+
+          .img {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 12px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .tit {
+            font-family: $font-family-bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.5px;
+            color: $gray-ffffff;
+            text-align: center;
+          }
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+
+            &::after {
+              content: none;
+            }
+          }
+        }
+
+        &.category-list-lg {
+          li {
+            width: 194px + 80px;
+            padding: 0 40px;
+          }
+        }
+      }
+    }
+
+    .section-business-detail {
+      position: relative;
+      padding: 0 20px;
+      margin-top: -100px;
+
+      .item {
+        margin-bottom: 64px;
+
+        .img {
+          position: relative;
+          margin-bottom: 40px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .title-sm {
+            position: absolute;
+            display: block;
+            font-size: 16px;
+            line-height: 32px;
+            font-family: $font-family-bold;
+            color: $gray-ffffff;
+            bottom: 68px;
+            left: 30px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: calc(100vw - 105px);
+              height: 1px;
+              left: 0;
+              top: -16px;
+              background-color: rgba(255, 255, 255, .2);
+            }
+          }
+
+          .title {
+            position: absolute;
+            display: block;
+            font-family: $font-family-bold;
+            font-size: 28px;
+            line-height: 44px;
+            letter-spacing: -2px;
+            color: $gray-ffffff;
+            bottom: 30px;
+            left: 30px;
+          }
+        }
+
+        .desc {
+          font-family: $font-family-bold;
+          font-size: 16px;
+          line-height: 32px;
+          letter-spacing: -0.5px;
+          margin-bottom: 20px;
+        }
+
+        .desc-sm {
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: -0.75px;
+          color: $gray-454545;
+        }
+      }
+    }
+
+    .section-ci {
+      position: relative;
+      height: 480px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include background-img($width: 100%, $height: 480px, $category: 'macrogen', $img: 'macrogen_thumb03.png');
+        background-position: center center;
+      }
+
+      .inner {
+        position: relative;
+        padding: 118px 20px 0;
+      }
+
+      .title-sm {
+        font-family: $font-family-bold;
+        font-size: 22px;
+        line-height: 38px;
+        letter-spacing: -1px;
+        color: $gray-ffffff;
+        margin-bottom: 56px;
+      }
+
+      .text {
+        font-family: $font-family-bold;
+        font-size: 34px;
+        line-height: 50px;
+        letter-spacing: -3px;
+        color: $gray-ffffff;
+      }
+    }
+
+    .section-symbol {
+      margin-top: 64px;
+
+      .inner {
+        padding: 0 20px;
+      }
+
+      .item {
+        overflow: hidden;
+        margin-bottom: 64px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .title {
+          font-family: $font-family-bold;
+          font-size: 22px;
+          line-height: 38px;
+          letter-spacing: -1px;
+          margin-bottom: 48px;
+        }
+
+        .desc {
+          width: 100%;
+
+          .bg-logo {
+            @include background-img($width: 100%, $height: 49.555555vw, $category: 'macrogen', $img: 'box-logo.png');
+            background-position: center center;
+            margin-bottom: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+          .content {
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+            color: $gray-454545;
+            margin-bottom: 40px;
+          }
+
+          .download-area {
+            .btn-download {
+              display: inline-block;
+
+              span {
+                display: inline-block;
+                vertical-align: middle;
+                font-family: $font-family-bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: $gray-000000;
+
+                &:first-child {
+                  margin-right: 15px;
+                }
+              }
+            }
+          }
+
+          .color-list {
+            li {
+              &:first-child, &:nth-child(2) {
+                margin-bottom: 40px;
+              }
+
+              .color {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 0 auto 16px;
+
+                &.color-1 {
+                  background-color: #001E62;
+                }
+
+                &.color-2 {
+                  background-color: #00BFB2;
+                }
+
+                &.color-3 {
+                  background-color: #84BD00;
+                }
+
+                &.color-4 {
+                  background-color: #E50050;
+                }
+              }
+
+              .value {
+                padding-left: 19px;
+
+                span:first-child {
+                  display: inline-block;
+                  width: 36px;
+                  font-family: $font-family-bold;
+                  font-size: 14px;
+                  line-height: 26px;
+                  letter-spacing: -0.5px;
+                  color: $gray-454545;
+                  margin-right: 12px;
+                }
+
+                span:nth-child(2) {
+                  display: inline-block;
+                  font-size: 14px;
+                  line-height: 26px;
+                  letter-spacing: -0.5px;
+                  color: $gray-454545;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.macrogen-management {
+    .section-chairman, .section-ceo {
+      padding-top: 80px;
+
+      .inner {
+        .font-h3 {
+          margin-bottom: 64px;
+          padding: 0 20px;
+        }
+
+        .info-wrap {
+          margin-bottom: 80px;
+
+          .info {
+            padding: 0 20px;
+
+            .font-h7 {
+              margin-bottom: 24px;
+            }
+
+            .font-body {
+              word-break: keep-all;
+              margin-bottom: 56px;
+            }
+
+            .sign {
+              text-align: right;
+
+              .font-body-h {
+                display: inline-block;
+                vertical-align: bottom;
+                margin-right: 10px;
+              }
+
+              .font-h6 {
+                display: inline-block;
+                vertical-align: bottom;
+              }
+            }
+          }
+
+          .img {
+            text-align: right;
+            margin-bottom: 48px;
+            padding-left: 20px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .section-chairman-career, .section-ceo-career {
+      padding-top: 80px;
+      @include background-img($width: auto, $height: 760px, $category: 'macrogen', $img: 'bg-chairman-career.png');
+      background-position: center bottom;
+      margin: 0 auto;
+
+      .pagination-wrap {
+        top: 214px;
+      }
+
+      .inner {
+        padding: 0 20px;
+
+        .item {
+          position: relative;
+          margin-bottom: 60px;
+
+          &.line-bottom {
+            padding-bottom: 40px;
+
+            &::after {
+              content: '';
+              position: absolute;
+              background-repeat: repeat-x;
+              @include background-img($width: calc(100% - 30px), $height: 1px, $category: 'macrogen', $img: 'img-line-lg.png');
+              left: 15px;
+              bottom: 0;
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .font-h5 {
+            color: $gray-ffffff;
+            padding-left: 15px;
+            margin-bottom: 24px;
+          }
+
+          .list {
+            .row {
+              padding: 0;
+              margin: 0;
+
+              .col {
+                padding: 0;
+                margin: 0;
+              }
+            }
+
+            li {
+              margin-bottom: 8px;
+              overflow: hidden;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              span {
+                display: inline-block;
+
+                em {
+                  font-style: normal;
+                  letter-spacing: -0.75px;
+                  font-size: 18px;
+                  font-family: $font-family-bold;
+                }
+
+                &:first-child {
+                  float: left;
+                  position: relative;
+                  width: 116px;
+                  font-size: 16px;
+                  line-height: 32px;
+                  letter-spacing: -0.5px;
+                  color: $gray-ffffff;
+                  padding-left: 28px;
+
+                  &::before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $bg-ffffff;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+
+                &:nth-child(2) {
+                  float: left;
+                  width: calc(100% - 104px - 12px);
+                  font-size: 16px;
+                  line-height: 32px;
+                  letter-spacing: -0.5px;
+                  color: $gray-ffffff;
+                  padding-right: 15px;
+                  padding-left: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-ceo {
+      .inner {
+        .info-wrap {
+          padding-right: 0;
+        }
+      }
+
+      //padding-top: 150px;
+      //padding-right: 17.4479%;
+      //padding-bottom: 180px;
+      //
+      //.img {
+      //  max-height: 640px;
+      //  margin-bottom: 100px;
+      //
+      //  img {
+      //    width: 100%;
+      //    height: 100%;
+      //  }
+      //}
+      //
+      //.inner {
+      //  padding-left: 21.3248% ;
+      //
+      //  .font-h3 {
+      //    margin-bottom: 80px;
+      //  }
+      //
+      //  .info {
+      //    .item {
+      //      margin-bottom: 80px;
+      //      overflow: hidden;
+      //    }
+      //
+      //    .font-h7 {
+      //      float: left;
+      //      width: 37.6904% /*460px / 1247px*/
+      //    ;
+      //      margin-right: 4.8115%; /*60px / 1247px*/
+      //      word-break: keep-all;
+      //    }
+      //
+      //    .font-body {
+      //      word-break: keep-all;
+      //      float: left;
+      //      width: 56.8564% /*709px / 1247px*/
+      //    ;
+      //      font-weight: normal;
+      //      color: $gray-454545;
+      //      letter-spacing: -0.85px;
+      //    }
+      //  }
+      //
+      //  .sign {
+      //    text-align: right;
+      //    height: 46px;
+      //
+      //    .font-body-h {
+      //      font-weight: normal;
+      //      display: inline-block;
+      //      vertical-align: bottom;
+      //      margin-right: 10px;
+      //    }
+      //
+      //    .font-h6 {
+      //      display: inline-block;
+      //      vertical-align: bottom;
+      //    }
+      //  }
+      //}
+    }
+
+    .section-ceo-career {
+      padding-top: 80px;
+      @include background-img($width: auto, $height: 640px, $category: 'macrogen', $img: 'bg-ceo-career.png');
+
+      .inner {
+        .item {
+          .font-h5 {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  &.macrogen-authorization {
+    .slide-tab-wrap {
+      margin-top: 153px;
+      margin-bottom: 139px;
+    }
+
+    .section {
+      padding-top: 80px;
+
+      &#qualityManagementSystem {
+        padding-top: 0;
+        margin-top: 0;
+
+        > .title {
+          border-top: none;
+        }
+      }
+
+      .btn-sm {
+        padding: 7px 25px 5px;
+        min-width: 124px;
+      }
+
+      > .title {
+        font-family: $font-family-bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-000000;
+        border-top: 10px solid #f5f5f5;
+        padding-top: 120px;
+
+        .tooltip-box {
+          display: inline-block;
+          vertical-align: text-bottom;
+
+          .text-box {
+            top: 66px;
+          }
+        }
+      }
+
+      .title-sm {
+        font-family: $font-family-bold;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: -1px;
+        color: $gray-000000;
+        margin-bottom: 16px;
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        > div {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      .desc {
+        display: block;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -0.75px;
+        color: $gray-454545;
+        margin-bottom: 30px;
+
+        &.with-date {
+          margin-bottom: 10px;
+        }
+      }
+
+      .date {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.75px;
+        color: $gray-909090;
+        margin-bottom: 30px;
+      }
+
+      .img-wrap {
+        padding-top: 30px;
+        overflow: hidden;
+
+        .img {
+          float: left;
+          width: 381px;
+          height: auto;
+          text-align: center;
+          margin-right: 43px;
+          margin-bottom: 0;
+
+          &:first-child,
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-bottom: 70px;
+
+            .tit {
+              padding-top: 30px;
+            }
+          }
+
+          .tit {
+            display: block;
+            width: 100%;
+            font-family: $font-family-bold;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.75px;
+            color: $gray-000000;
+            text-align: left;
+            margin-bottom: 20px;
+          }
+
+          img {
+            display: block;
+            width: 100%;
+            height: 233px;
+            margin-bottom: 23px;
+          }
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .img {
+        width: 381px;
+        height: 233px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      > .box {
+        padding: 80px 0;
+        border-bottom: 1px solid $line-e9e9e9;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        &.box-full-sm {
+          margin-top: 20px;
+
+          &.box-full {
+            padding-bottom: 120px;
+          }
+
+          .desc {
+            margin-bottom: 0;
+          }
+        }
+
+        &.box-full {
+          padding-bottom: 80px;
+
+          .left {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+          }
+        }
+
+        .left {
+          float: left;
+          width: 816px;
+          margin-right: 44px;
+        }
+
+        .right {
+          float: left;
+          width: calc(100% - 816px - 44px);
+        }
+      }
+    }
+
+    .tooltip-box {
+      .text-box {
+        top: 46px;
+      }
+    }
+  }
+
+  &.recruitment-info {
+    padding: 0 20px;
+
+    .section {
+      border-bottom: 10px solid $bg-f5f5f5;
+      margin-bottom: 80px;
+      padding-bottom: 80px;
+
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      .font-body {
+        color: $gray-707070;
+        margin-bottom: 56px;
+        margin-top: 16px;
+      }
+
+      .file-download {
+        margin-bottom: 48px;
+      }
+
+      .img-recruitment-info {
+        margin-top: 24px;
+        width: 100%;
+        height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .board {
+        margin-top: 56px;
+      }
+    }
+  }
+
+  &.recruitment-info-list {
+    padding: 0 20px;
+
+    .view-body {
+      padding-bottom: 65px;
+    }
+
+    .font-body {
+      margin-bottom: 40px;
+    }
+  }
+
+  &.global-macrogen {
+    padding: 0 20px;
+
+    .section-map {
+      margin-bottom: 80px;
+
+      > .title {
+        font-family: $font-family-bold;
+        font-size: 48px;
+        line-height: 52px;
+        letter-spacing: -1px;
+        margin-bottom: 24px;
+      }
+
+      > .desc {
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: -0.5px;
+        margin-bottom: 40px;
+      }
+
+      .map {
+        position: relative;
+        @include background-img($width: 100%, $height: 100vw * 0.489552238805, $category: 'macrogen', $img: 'bg-map.png');
+        margin: 0 auto;
+
+        .pin {
+          position: absolute;
+          padding: 0 16px 0 40px;
+          height: 38px;
+          line-height: 36px;
+          background-color: #FFFFFF;
+          border: 1px solid $line-c9c9c9;
+          box-sizing: border-box;
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
+          border-radius: 100px;
+          font-family: $font-family-bold;
+          font-size: 13px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: $gray-000000;
+          background-image: url(../img/macrogen/ic-pin.svg);
+          background-size: 16px 16px;
+          background-position: left 16px center;
+          background-repeat: no-repeat;
+
+          &:hover, &.active {
+            background-color: $point-active;
+            border-color: $point-active;
+            box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2);
+            color: $gray-ffffff;
+            background-image: url(../img/macrogen/ic-pin-foc.svg);
+          }
+
+          &.amsterdam {
+            top: 76px;
+            left: 71px;
+          }
+
+          &.seoul {
+            top: 76px;
+            left: 512px;
+          }
+
+          &.boston {
+            top: 76px;
+            left: 854.5px;
+          }
+
+          &.tokyo {
+            top: 134px;
+            left: 587.5px;
+          }
+
+          &.virginia {
+            top: 134px;
+            left: 794px;
+          }
+
+          &.madrid {
+            top: 192px;
+            left: 5.5px;
+          }
+
+          &.kyoto {
+            top: 192px;
+            left: 492.5px;
+          }
+
+          &.newyork {
+            top: 192px;
+            left: 932.5px;
+          }
+
+          &.synapse {
+            top: 250px;
+            left: 358px;
+          }
+
+          &.rockville {
+            top: 250px;
+            left: 846px;
+          }
+        }
+      }
+    }
+
+    .section-map-detail {
+      .box {
+        position: relative;
+        margin-bottom: 280px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        > .title {
+          font-family: $font-family-bold;
+          font-size: 34px;
+          line-height: 50px;
+          letter-spacing: -1px;
+          margin-bottom: 56px;
+        }
+
+        > .detail {
+          .item {
+            position: relative;
+            padding-bottom: 65px;
+            margin-bottom: 64px;
+
+            &:last-child {
+              &::after {
+                content: none;
+              }
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              bottom: 0;
+              left: 0;
+              background-color: #E9E9E9;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+              padding-bottom: 0;
+            }
+
+            .name {
+              font-family: $font-family-bold;
+              font-size: 26px;
+              line-height: 42px;
+              letter-spacing: -1px;
+              margin-bottom: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+
+            .img {
+              width: 100%;
+              margin-bottom: 40px;
+
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            .info {
+              ul {
+                margin-bottom: 20px;
+
+                li {
+                  margin-bottom: 8px;
+                  overflow: hidden;
+
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+
+                  span {
+                    float: left;
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 32px;
+
+                    &:first-child {
+                      position: relative;
+                      width: 98px;
+                      vertical-align: middle;
+                      font-family: $font-family-bold;
+                      font-size: 18px;
+                      letter-spacing: -0.75px;
+                      padding-left: 13px;
+
+                      &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 15px;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: $bg-000000;
+                        vertical-align: middle;
+                      }
+                    }
+
+                    &:nth-child(2) {
+                      width: calc(100% - 98px);
+                      font-size: 18px;
+                      line-height: 32px;
+                      letter-spacing: -0.75px;
+                    }
+                  }
+                }
+              }
+
+              .address {
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: -0.75px;
+                color: $gray-707070;
+                margin-bottom: 8px;
+              }
+
+              .tel {
+                > div {
+                  span {
+                    position: relative;
+                    font-family: $font-family-bold;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: $gray-707070;
+                    margin-right: 8px;
+                  }
+
+                  a {
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: $gray-707070;
+                  }
+
+                  + div {
+                    margin-top: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.ethical-management {
+    .btn-sm {
+      padding: 7px 25px 5px;
+      min-width: 124px;
+    }
+
+    .section-description {
+      padding: 150px 0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .text-lg {
+        font-family: $font-family-bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-000000;
+        margin-bottom: 28px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        color: $gray-000000;
+      }
+    }
+
+    .section-bg {
+      padding: 150px 0;
+      position: relative;
+      @include background-img($width: 100%, $height: 1180px, $category: 'macrogen', $img: 'bg-sub-ethical-management.png');
+      background-size: 1920px 1180px;
+      background-repeat: no-repeat;
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .text-lg {
+        font-family: $font-family-bold;
+        font-size: 56px;
+        line-height: 81px;
+        letter-spacing: -3px;
+        color: $gray-000000;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        margin-top: 150px;
+        width: 1137px;
+
+        li {
+          float: left;
+          width: 281px;
+          height: 186px;
+          margin-right: 147px;
+          margin-bottom: 100px;
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+
+          .tit {
+            margin-bottom: 20px;
+            font-family: $font-family-bold;
+            font-size: 32px;
+            line-height: 46px;
+            letter-spacing: -1px;
+            color: $gray-ffffff;
+          }
+
+          .desc {
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.75px;
+            color: $gray-ffffff;
+          }
+        }
+      }
+
+      /* 딤드제거
+       &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, rgba(100, 109, 118, 0.35) 0%, rgba(42, 76, 83, 0.7) 100%);
+        }*/
+    }
+
+    .section-tip {
+      padding: 150px 0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .row {
+        margin-left: 0;
+        padding-right: 0;
+        margin-bottom: 10px;
+
+        > * {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+
+      .text-md {
+        font-family: $font-family-bold;
+        font-size: 44px;
+        line-height: 64px;
+        letter-spacing: -2px;
+        color: $gray-000000;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        color: $gray-000000;
+      }
+
+      .subject-to-report {
+        padding-bottom: 120px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        border-bottom: 1px solid $line-e9e9e9;
+
+        .tit {
+          position: relative;
+          font-family: $font-family-bold;
+          font-size: 32px;
+          line-height: 46px;
+          letter-spacing: -1px;
+          color: $gray-000000;
+          margin-bottom: 40px;
+        }
+
+        .row {
+          margin-left: -10px;
+          margin-right: -10px;
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .col {
+          padding-left: 10px;
+          padding-right: 10px;
+
+          .desc {
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.75px;
+            color: $gray-666666;
+          }
+
+          .item {
+            background-color: $bg-f7f7f7;
+            height: 160px;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.75px;
+            color: $gray-454545;
+            padding: 40px 0 40px 40px;
+          }
+        }
+      }
+
+      .subject-to-report-step {
+        .item {
+          display: flex;
+          height: 261px;
+          margin-bottom: 120px;
+
+          &:last-child {
+            margin-bottom: 0;
+
+            .img {
+              &:after {
+                border: none;
+              }
+            }
+          }
+
+          .img {
+            position: relative;
+            width: 261px;
+            height: 261px;
+            border-radius: 50%;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              border-right: 1px dashed #909090;
+              width: 1px;
+              height: 80px;
+              position: absolute;
+              left: 50%;
+              bottom: -100px;
+            }
+
+            .label {
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              line-height: 41px;
+              top: 85px;
+              left: 50%;
+              transform: translateX(-50%);
+              border-radius: 50%;
+              background-color: $bg-ffffff;
+              font-family: $font-family-bold;
+              font-size: 18px;
+              text-align: center;
+              color: $gray-000000;
+            }
+
+            .tit {
+              position: absolute;
+              top: 135px;
+              left: 50%;
+              transform: translateX(-50%);
+              font-family: $font-family-bold;
+              font-size: 32px;
+              line-height: 46px;
+              text-align: center;
+              letter-spacing: -1px;
+              color: #FFFFFF;
+              text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+
+          .info {
+            display: flex;
+            width: calc(100% - 261px);
+            height: 261px;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 60px;
+
+            .desc {
+              font-family: $font-family-bold;
+              font-size: 32px;
+              line-height: 46px;
+              letter-spacing: -2px;
+              margin-bottom: 0;
+            }
+
+            .tip {
+              position: relative;
+              font-size: 18px;
+              line-height: 32px;
+              letter-spacing: -0.75px;
+              color: $gray-909090;
+              padding-left: 27px;
+              margin-top: 21px;
+
+              &::after {
+                content: '';
+                position: absolute;
+                @include background-img($width: 20px, $height: 20px, $category: 'macrogen', $img: 'ic-tip.svg');
+                left: 0;
+                top: 8px;
+              }
+            }
+
+            .link {
+              font-family: $font-family-bold;
+              font-size: 18px;
+              line-height: 22px;
+              letter-spacing: 0.5px;
+              color: $point-primary;
+              margin-top: 40px;
+              text-decoration: underline;
+            }
+
+            .desc-sm {
+              font-family: $font-family-bold;
+              font-size: 18px;
+              line-height: 26px;
+              letter-spacing: -0.75px;
+              color: $point-primary;
+              margin-top: 40px;
+            }
+
+            .desc-xs {
+              font-size: 16px;
+              line-height: 30px;
+              letter-spacing: -0.75px;
+              color: $gray-454545;
+              margin-top: 10px;
+            }
+
+            ul {
+              margin-top: 40px;
+
+              li {
+                margin-bottom: 10px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                span {
+                  display: inline-block;
+
+                  &:first-child {
+                    position: relative;
+                    width: 174px;
+                    font-family: $font-family-bold;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: -0.75px;
+                    color: $gray-000000;
+                    padding-left: 15px;
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      width: 5px;
+                      height: 5px;
+                      left: 0;
+                      top: 11px;
+                      background-color: $bg-000000;
+                      border-radius: 50%;
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: -0.75px;
+                    color: $gray-454545;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-banner {
+      @include background-img($width: 100%, $height: 560px, $category: 'macrogen', $img: 'bg-ethical-banner-1.png');
+      background-size: 1920px 560px;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-top: 240px;
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .font-slogan {
+        line-height: 98px;
+        margin-bottom: 30px;
+      }
+
+      .desc {
+        font-family: $font-family-bold;
+        font-size: 32px;
+        line-height: 46px;
+      }
+    }
+
+    .section-reward {
+      padding-top: 120px;
+      padding-bottom: 150px;
+
+      .inner {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .list {
+        .item {
+          padding: 100px 0;
+          border-bottom: 1px solid $line-e9e9e9;
+
+          &::after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+          }
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          .list-header {
+            float: left;
+            width: calc(100% - 816px);
+
+            .title {
+              font-family: $font-family-bold;
+              font-size: 56px;
+              line-height: 81px;
+              letter-spacing: -3px;
+              color: $gray-000000;
+              margin-bottom: 40px;
+            }
+          }
+
+          .list-body {
+            float: left;
+            width: 816px;
+            overflow: hidden;
+
+            .pagination-wrap {
+              margin: 20px 0 0;
+
+              .navigation {
+                position: static;
+
+                .page-item {
+                  position: static;
+                  margin-right: 8px;
+
+                  &:focus {
+                    outline: none;
+                    box-shadow: none;
+                  }
+
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+
+            .desc {
+              font-size: 16px;
+              line-height: 30px;
+              letter-spacing: -0.75px;
+              color: $gray-454545;
+              margin-bottom: 50px;
+            }
+
+            .reward {
+              width: 816px;
+
+              .swiper-slide {
+                width: 816px;
+
+                .box {
+                  padding: 40px;
+                  background-color: $bg-f7f7f7;
+                  overflow: hidden;
+
+                  .img {
+                    float: left;
+                    width: 280px;
+                    height: 346px;
+                    margin-right: 40px;
+                    position: relative;
+
+                    &:after {
+                      content: '';
+                      display: inline-block;
+                      @include background-img($width: 61px, $height: 54px, $category: 'macrogen', $img: 'img-trophy.png');
+                      position: absolute;
+                      left: 20px;
+                      bottom: 20px;
+                    }
+
+                    img {
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+
+                  .info {
+                    float: left;
+                    width: calc(100% - 280px - 40px);
+
+                    .sub {
+                      font-family: $font-family-bold;
+                      font-size: 18px;
+                      line-height: 26px;
+                      letter-spacing: -0.75px;
+                      color: $point-primary;
+                      margin-bottom: 15px;
+                    }
+
+                    .name {
+                      font-family: $font-family-bold;
+                      font-size: 36px;
+                      line-height: 52px;
+                      letter-spacing: -1px;
+                      color: $gray-000000;
+                      margin-bottom: 6px;
+                    }
+
+                    .job {
+                      position: relative;
+                      font-size: 16px;
+                      line-height: 23px;
+                      letter-spacing: -0.75px;
+                      color: $gray-707070;
+                      padding-bottom: 30px;
+                      margin-bottom: 30px;
+
+                      &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        @include background-img($width: 416px, $height: 1px, $category: 'macrogen', $img: 'bg-line.png');
+                      }
+                    }
+
+                    .career {
+                      margin-bottom: 50px;
+
+                      .tit {
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -0.75px;
+                        margin-bottom: 10px;
+                      }
+
+                      ul {
+                        li {
+                          position: relative;
+                          font-size: 16px;
+                          line-height: 30px;
+                          letter-spacing: -0.75px;
+                          color: $gray-454545;
+                          padding-left: 15px;
+                          margin-bottom: 2px;
+                          @include ellipsis($line: 2);
+
+                          &:last-child {
+                            margin-bottom: 0;
+                          }
+
+                          &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 11px;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: $gray-454545;
+                            vertical-align: middle;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-activity {
+      padding: 150px 0 30px;
+
+      .main-img {
+        text-align: right;
+        margin-bottom: 120px;
+
+        img {
+          width: 1582px;
+          height: 610px;
+        }
+      }
+
+      .box {
+        position: relative;
+        width: 1244px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        > .title {
+          font-family: $font-family-bold;
+          font-size: 56px;
+          line-height: 81px;
+          letter-spacing: -3px;
+          color: $gray-000000;
+          margin-bottom: 20px;
+        }
+
+        > .desc {
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: -0.75px;
+          color: $gray-454545;
+          margin-bottom: 80px;
+        }
+
+        .multi-stage {
+          //position: relative;
+          width: 100%;
+          //height: 990px;
+
+          .row {
+            margin-left: 0;
+            margin-right: 0;
+
+            .col {
+              padding: 0;
+
+              &:first-child {
+                margin-right: 84px;
+
+                .item {
+                  &.item-img {
+                    margin-top: 80px;
+                    margin-bottom: 0;
+                  }
+                }
+              }
+
+              .item {
+                .tit {
+                  font-family: $font-family-bold;
+                  font-size: 22px;
+                  line-height: 36px;
+                  letter-spacing: -0.75px;
+                  color: $gray-000000;
+                  margin-bottom: 20px;
+                }
+
+                .desc {
+                  font-size: 16px;
+                  line-height: 30px;
+                  letter-spacing: -0.75px;
+                  color: $gray-454545;
+                }
+
+                &.item-img {
+                  margin-bottom: 80px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.macrogen-talent {
+    .section-description {
+      margin-bottom: 80px;
+
+      .inner {
+        padding: 0 20px;
+      }
+
+      .underline {
+        display: inline-block;
+        width: 22px;
+        height: 3px;
+        background-color: $gray-000000;
+        margin-right: 12px;
+      }
+
+      .font-h3 {
+        margin-bottom: 28px;
+      }
+
+      .font-body-h {
+        color: $gray-000000;
+      }
+    }
+
+    .section-bg {
+      position: relative;
+
+      .img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .txt-box {
+        padding: 0 20px 80px;
+
+        li {
+          position: relative;
+          display: block;
+          font-family: $font-family-bold;
+          font-size: 22px;
+          line-height: 38px;
+          letter-spacing: -1px;
+          color: $gray-000000;
+          margin-bottom: 8px;
+          padding-left: 24px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 2px;
+            background-color: $gray-000000;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .section-core-talent {
+      padding-top: 80px;
+
+      .inner {
+        padding: 0 20px;
+      }
+
+      .font-h7 {
+        margin-bottom: 64px;
+      }
+
+      .list {
+        text-align: center;
+
+        .item {
+          margin-bottom: 72px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .desc-area {
+            .font-h3 {
+              margin-bottom: 24px;
+            }
+
+            .font-body-h {
+              color: $point-primary;
+              margin-bottom: 16px;
+            }
+          }
+
+          .img {
+            width: 240px;
+            height: 240px;
+            margin: 0 auto 40px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.macrogen-history {
+    .slide-tab-wrap {
+      width: $min-width;
+      margin: 0 auto;
+      padding-top: 140px;
+    }
+
+    .section-wrap {
+      overflow: hidden;
+
+    }
+
+    .section {
+      padding: 140px 0 0;
+
+      .inner {
+        width: $min-width;
+        margin: 0 auto;
+
+        .year {
+          font-family: $font-family-bold;
+          font-size: 32px;
+          line-height: 39px;
+          letter-spacing: 0.5px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          position: relative;
+          display: inline-block;
+          font-family: $font-family-bold;
+          font-size: 64px;
+          line-height: 93px;
+          letter-spacing: -3px;
+          color: $point-primary;
+          margin-bottom: 68px;
+
+          &::before {
+            content: '';
+            display: block;
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 5px;
+            background-color: $point-primary;
+            right: -70px;
+            bottom: 20px;
+          }
+        }
+      }
+
+      .history-slider {
+        position: relative;
+        width: 100%;
+        height: 740px;
+
+        .inner {
+          position: absolute;
+          width: $min-width;
+          height: 740px;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
+
+          .year {
+            position: absolute;
+            font-family: $font-family-bold;
+            font-size: 150px;
+            line-height: 183px;
+            letter-spacing: -2px;
+            color: $gray-ffffff;
+            bottom: 102px;
+            left: 0;
+            margin-bottom: 0;
+          }
+
+          .desc {
+            position: absolute;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: -0.75px;
+            color: $gray-ffffff;
+            bottom: 80px;
+            left: 0;
+          }
+        }
+      }
+
+
+      .history-list {
+        position: relative;
+        padding-top: 57px + 66px;
+        overflow: hidden;
+
+        .year-info {
+          position: absolute;
+          width: 428px;
+
+          li {
+            position: relative;
+            padding-left: 107px;
+            margin-bottom: 40px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            span {
+              position: relative;
+              display: block;
+              font-family: $font-family-bold;
+              font-size: 23px;
+              line-height: 39px;
+              letter-spacing: 0.5px;
+              color: $disabled-d9d9d9;
+
+              &::before {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: $gray-000000;
+                left: -99px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+              }
+
+              &::after {
+                content: '';
+                position: absolute;
+                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
+                left: -97px;
+                bottom: -49px;
+              }
+            }
+
+            &.active {
+              span {
+                font-size: 58px;
+                /*line-height: 71px;*/
+                line-height: 1;
+                color: $gray-000000;
+
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: -107px;
+                  background-color: transparent;
+                  @include background-img($width: 23px, $height: 23px, $category: 'macrogen', $img: 'bg-history-dot.svg');
+                }
+
+                &::after {
+                  bottom: -41px;
+                }
+              }
+            }
+
+            &:first-child {
+              &::before {
+                content: '';
+                position: absolute;
+                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
+                left: 10px;
+                top: -41px;
+              }
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: $gray-909090;
+                border-radius: 50%;
+                left: 8px;
+                top: -62px;
+              }
+
+
+            }
+
+            &:last-child {
+              span {
+                &::after {
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+
+        .desc-info {
+          padding-left: 428px;
+
+          ul {
+            margin-bottom: 100px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            li {
+              margin-bottom: 22px;
+              overflow: hidden;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              .num {
+                float: left;
+                display: inline-block;
+                width: 67px;
+                font-family: $font-family-bold;
+                font-size: 18px;
+                line-height: 23px;
+                color: $gray-000000;
+              }
+
+              .desc {
+                float: left;
+                display: inline-block;
+                width: calc(100% - 67px);
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.75px;
+                color: $gray-454545;
+
+
+                &.desc-lg {
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &.macrogen-human-resource {
+    .section-management {
+      position: relative;
+      padding: 0 20px 138px;
+
+      .font-h7 {
+        margin-bottom: 64px;
+      }
+
+      .font-h3 {
+        margin-bottom: 56px;
+      }
+
+      .item-2 {
+        .item {
+          background-image: url(../img/macrogen/thumb-human-resource-2.png);
+        }
+      }
+
+      .item-3 {
+        .item {
+          background-image: url(../img/macrogen/thumb-human-resource-3.png);
+        }
+      }
+
+      .item {
+        padding: 40px;
+        @include background-img($width: auto, $height: 133.4vw, $category: 'macrogen', $img: 'thumb-human-resource-1.png');
+
+        .font-h5 {
+          margin-bottom: 16px;
+        }
+      }
+
+      .pagination-wrap {
+        top: 501px;
+      }
+
+      .swiper-pagination {
+        bottom: 80px;
+        width: calc(100% - 40px);
+
+        .swiper-pagination-bullet {
+          background-color: #222;
+          opacity: .2;
+
+          &.swiper-pagination-bullet-active {
+            background-color: #222;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .section-rank-system {
+      @include background-img($width: auto, $height: 100vw * 2.656, $category: 'macrogen', $img: 'bg-human-resource-2.png');
+      padding: 80px 20px 0;
+
+      .font-h7 {
+        margin-bottom: 64px;
+        color: $gray-ffffff;
+      }
+
+      .font-h3 {
+        margin-bottom: 56px;
+        color: $gray-ffffff;
+      }
+
+      .flow-bg {
+        @include background-img($width: auto, $height: 143.59701vw, $category: 'macrogen', $img: 'human-resource-flow.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .section-welfare {
+      padding-top: 80px;
+
+      .inner {
+        padding: 0 20px;
+      }
+
+      .font-h7 {
+        margin-bottom: 64px;
+      }
+
+      .font-h3 {
+        margin-bottom: 24px;
+      }
+
+      .click-area {
+        margin-bottom: 80px;
+
+        .font-body-h {
+          margin-bottom: 48px;
+        }
+
+        .font-body-b {
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+            color: $gray-000000;
+          }
+          i {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .item {
+        @include background-img($width: auto, $height: 100vw * 1.5146666666, $category: 'macrogen', $img: 'banner-human-resource-1.png');
+        margin-bottom: 40px;
+        padding: 80px 0 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .font-h5 {
+          margin-bottom: 40px;
+          color: $gray-ffffff;
+        }
+
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+
+          .col {
+            margin-right: 3.5px;
+
+            &:nth-child(2n) {
+              margin-left: 3.5px;
+            }
+          }
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          line-height: 32px;
+          letter-spacing: -0.5px;
+          font-family: $font-family-bold;
+          color: $gray-000000;
+          @include background-img($width: 50%, $height: auto, $category: 'macrogen', $img: 'bg-human-resource-rect.png');
+          width: calc(50% - 5.5px);
+          border-radius: 5px;
+          margin-bottom: 7px;
+          padding: 20px 0;
+          text-align: center;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        &.item-2 {
+          background-image: url(../img/macrogen/banner-human-resource-2.png);
+        }
+
+        &.item-3 {
+          background-image: url(../img/macrogen/banner-human-resource-3.png);
+        }
+      }
+    }
+  }
+
+  &.macrogen-vision {
+    position: relative;
+
+    .section-vision {
+      padding: 0 20px 80px;
+
+      .title {
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: -1px;
+        margin-bottom: 64px;
+      }
+
+      .diagram {
+        .img {
+          margin-bottom: 48px;
+          text-align: center;
+
+          img {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .section-slogan {
+      .bg {
+        position: relative;
+        @include background-img($width: auto, $height: 1042px, $category: 'macrogen', $img: 'bg-humanizing-genomics.png');
+        background-position: center;
+
+        .inner {
+          position: relative;
+          z-index: 5;
+          color: $gray-ffffff;
+          padding: 80px 20px 0;
+
+          .font-h7 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 64px;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 32px;
+              height: 2px;
+              right: -45px;
+              bottom: 12px;
+              background-color: $bg-ffffff;
+            }
+          }
+
+          .title {
+            position: relative;
+            font-family: $font-family-bold;
+            font-size: 56px;
+            line-height: 64px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            z-index: 1;
+          }
+
+          .font-body-h {
+            color: $gray-ffffff;
+          }
+        }
+
+        .img-wrap {
+          position: relative;
+
+          .img {
+            position: absolute;
+            z-index: 3;
+
+            &.img-1 {
+              top: 56px;
+              right: 8px;
+            }
+
+            &.img-2 {
+              top: 143px;
+              right: 41px;
+            }
+
+            &.img-3 {
+              top: 355px;
+              right: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-management-philosophy {
+      padding-top: 80px;
+
+      .img {
+        margin-bottom: 55px;
+        padding-right: 20px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .info {
+        padding: 0 20px;
+        margin-bottom: 80px;
+      }
+
+      .font-h7 {
+        padding-left: 20px;
+        margin-bottom: 56px;
+      }
+
+      .font-body {
+        padding-bottom: 80px;
+      }
+
+      .font-h4 {
+        margin-bottom: 24px;
+      }
+    }
+
+    .section-core-values {
+      padding: 0 20px;
+
+      .font-h7 {
+        margin-bottom: 64px;
+      }
+
+      .values {
+        .item {
+          text-align: center;
+          margin-bottom: 72px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .img {
+            width: 240px;
+            height: 240px;
+            margin: 0 auto 40px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .font-h5 {
+            margin-bottom: 16px;
+          }
+
+          .font-body {
+            padding: 0 45px;
+          }
+        }
+      }
+    }
+  }
+
+  &.macrogen-contact-us {
+    .inner {
+      padding: 0 20px;
+    }
+
+    /* 아이콘 */
+    .ic-mail {
+      display: inline-block;
+      @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-mail.svg');
+      margin-right: 10px;
+      transform: translateY(5px);
+    }
+
+    .ic-fax {
+      display: inline-block;
+      @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-fax.svg');
+      margin-right: 10px;
+      transform: translateY(4px);
+    }
+
+    .ic-call {
+      display: inline-block;
+      @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-call.svg');
+      margin-right: 10px;
+      transform: translateY(5px);
+    }
+
+    .font-h4 {
+      margin-bottom: 56px;
+    }
+
+    .font-h5 {
+      margin-bottom: 60px;
+    }
+
+    .section-map {
+      margin-bottom: 80px;
+
+      .map {
+        margin-bottom: 32px;
+      }
+
+      .map-info {
+        margin-bottom: 72px;
+
+        .address-wrap {
+          .pin {
+            display: inline-block;
+            vertical-align: middle;
+            @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-pin.svg');
+            margin-right: 6px;
+            transform: translateY(-2px);
+          }
+
+          .tit {
+            display: inline-block;
+            vertical-align: middle;
+            font-family: $font-family-bold;
+            font-size: 18px;
+            line-height: 34px;
+            letter-spacing: -0.5px;
+          }
+
+          .address {
+            display: block;
+            font-size: 18px;
+            line-height: 34px;
+            letter-spacing: -0.5px;
+            color: $gray-454545;
+            margin-bottom: 32px;
+          }
+        }
+
+        .pin-btn-wrap {
+          .google-pin {
+            display: inline-block;
+            vertical-align: middle;
+            @include background-img($width: 12px, $height: 17px, $category: 'macrogen', $img: 'ic-pin-google.svg');
+            margin-right: 8px;
+            transform: translateY(-2px);
+          }
+        }
+      }
+
+      .info {
+        margin-bottom: 80px;
+
+        .item {
+          position: relative;
+          margin-bottom: 48px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .font-h7 {
+            margin-bottom: 24px;
+          }
+
+          .desc {
+            li {
+              margin-bottom: 8px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              a {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 32px;
+                font-size: 16px;
+                color: $gray-454545;
+              }
+
+              span {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 32px;
+                font-size: 16px;
+                color: $gray-454545;
+                margin-right: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .category {
+      border-top: 1px solid $line-e9e9e9;
+
+      .item {
+        position: relative;
+        width: 100%;
+        padding: 30px 0 30px 30px;
+        border-bottom: 1px solid $line-e9e9e9;
+        border-left: 1px solid $line-e9e9e9;
+        border-right: 1px solid $line-e9e9e9;
+
+        .title {
+          font-family: $font-family-bold;
+          font-size: 22px;
+          line-height: 38px;
+          letter-spacing: -1px;
+          margin-bottom: 24px;
+        }
+
+        .desc {
+          .name {
+            font-family: $font-family-bold;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: -0.75px;
+            color: $gray-000000;
+            margin-bottom: 20px;
+
+            &:nth-child(3) {
+              margin-top: 24px;
+            }
+          }
+
+          li {
+            margin-bottom: 4px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              font-family: $font-family-bold;
+              font-size: 16px;
+              line-height: 30px;
+              color: $gray-454545;
+              margin-right: 4px;
+            }
+
+            a {
+              font-size: 16px;
+              line-height: 32px;
+              color: $gray-454545;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &.macrogen-esg {
+    .inner {
+      width: $min-width;
+      margin: 0 auto;
+    }
+
+    .section-phrase {
+      padding-top: 150px;
+      padding-bottom: 120px;
+
+      .font-h3 {
+        line-height: 81px;
+      }
+    }
+
+    .section-banner {
+      padding: 0 50px;
+
+      .banner {
+        @include background-img($width: 1920px, $height: 820px, $category: 'macrogen', $img: 'bg-esg-thumb-1.png');
+        width: auto;
+        padding-top: 150px;
+
+        .font-h6 {
+          display: inline-block;
+          position: relative;
+          line-height: 39px;
+          color: $gray-ffffff;
+          margin-bottom: 80px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            right: -58px;
+            bottom: 12px;
+            width: 50px;
+            height: 3px;
+            background-color: $gray-ffffff;
+          }
+        }
+
+        .font-h4 {
+          color: $gray-ffffff;
+          line-height: 63px;
+        }
+
+        &.banner-1 {
+          margin-bottom: 50px;
+        }
+
+        &.banner-2 {
+          background-image: url(../img/macrogen/bg-esg-thumb-2.png);
+        }
+      }
+    }
+
+    .section-management-goals {
+      padding-top: 150px;
+
+      .font-h6 {
+        display: inline-block;
+        position: relative;
+        line-height: 46px;
+        margin-bottom: 150px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: -58px;
+          bottom: 12px;
+          width: 50px;
+          height: 3px;
+          background-color: $gray-000000;
+        }
+      }
+
+      .list-goals {
+        .goal {
+          margin-bottom: 150px;
+          text-align: right;
+          height: 600px;
+
+          .box {
+            display: inline-block;
+          }
+
+          &:nth-child(2n) {
+            text-align: left;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+
+          .item {
+            float: left;
+
+            &:first-child {
+              &.text {
+                margin-right: 40px;
+              }
+            }
+
+            &:nth-child(2) {
+              &.text {
+                margin-left: 147px;
+              }
+            }
+
+            &.text {
+              width: 495px;
+              padding-top: 100px;
+              text-align: left;
+
+              .font-h7 {
+                line-height: 38px;
+                color: $point-primary;
+                margin-bottom: 60px;
+              }
+
+              .font-h3 {
+                line-height: 81px;
+                margin-bottom: 40px;
+              }
+
+              .font-body-h {
+                ul {
+                  li {
+                    position: relative;
+                    font-size: 16px;
+                    font-weight: normal;
+                    padding-left: 30px;
+                    line-height: 40px;
+                    color: $gray-454545;
+                    white-space: nowrap;
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      width: 15px;
+                      height: 1px;
+                      background-color: $gray-454545;
+                      top: 18px;
+                      left: 0;
+                    }
+                  }
+                }
+              }
+            }
+
+            &.bg {
+              width: 940px;
+              height: 600px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        .list-of-winners {
+          > .title {
+            font-family: $font-family-bold;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: -1px;
+            color: $gray-000000;
+            margin-bottom: 60px;
+          }
+
+          ul {
+            li {
+              float: left;
+              width: 220px;
+              padding: 0 20px;
+              margin-bottom: 58px;
+
+              &:nth-child(5),
+              &:nth-child(6),
+              &:nth-child(7),
+              &:nth-child(8) {
+                margin-bottom: 0;
+              }
+
+              .img {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 20px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              .name {
+                font-family: $font-family-bold;
+                font-size: 22px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: -0.75px;
+                margin-bottom: 2px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                color: $gray-000000;
+              }
+
+              .desc {
+                font-size: 18px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: -0.75px;
+                color: $gray-666666;
+              }
+            }
+          }
+        }
+
+        .list-of-winners-detail {
+          .list-header {
+            padding: 50px 0 62px;
+            overflow: hidden;
+            border-bottom: 1px solid $line-e9e9e9;
+            margin-bottom: 60px;
+
+            .img {
+              float: left;
+              width: 220px;
+              height: 272px;
+              margin-right: 50px;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .info {
+              float: left;
+              width: calc(100% - 220px - 50px);
+
+              .sub {
+                font-family: $font-family-bold;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: -0.75px;
+                color: $point-primary;
+                margin-bottom: 20px;
+              }
+
+              .name {
+                font-family: $font-family-bold;
+                font-size: 44px;
+                line-height: 64px;
+                letter-spacing: -2px;
+                color: $gray-000000;
+                margin-bottom: 4px;
+
+                a {
+                  color: $gray-000000;
+                }
+              }
+
+              .job {
+                position: relative;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.75px;
+                color: $gray-707070;
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 1px;
+                  border-bottom: 1px dashed $line-909090;
+                }
+              }
+
+              .career {
+                .tit {
+                  font-size: 16px;
+                  line-height: 24px;
+                  letter-spacing: -0.75px;
+                  margin-bottom: 10px;
+                }
+
+                ul {
+                  li {
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: -0.75px;
+                    color: $gray-454545;
+                    padding-left: 15px;
+                    margin-bottom: 2px;
+                    @include ellipsis($line: 2);
+
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      left: 0;
+                      top: 11px;
+                      width: 5px;
+                      height: 5px;
+                      border-radius: 50%;
+                      background-color: $gray-454545;
+                      vertical-align: middle;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .list-body {
+            .title {
+              font-family: $font-family-bold;
+              font-size: 18px;
+              line-height: 26px;
+              letter-spacing: -0.75px;
+              margin-bottom: 30px;
+            }
+
+            .desc {
+              font-size: 16px;
+              line-height: 30px;
+              letter-spacing: -0.75px;
+              color: $gray-454545;
+              margin-bottom: 30px;
+
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+
+            }
+          }
+        }
+      }
+
+      .modal-footer {
+        display: block;
+        padding: 24px 60px 25px;
+
+        .board {
+          margin: 0;
+
+          .navigation {
+            .content {
+              .item {
+                padding: 0;
+
+                &::before {
+                  width: 12px;
+                  height: 25px;
+                  background-size: 12px 25px;
+                  background-repeat: no-repeat;
+                }
+
+                &.prev {
+                  padding-left: 36px;
+
+                  .title {
+                    text-align: left;
+                  }
+                }
+
+                &.next {
+                  padding-right: 36px;
+
+                  .title {
+                    text-align: right;
+                  }
+                }
+              }
+
+              .title {
+                display: block;
+                width: 354px;
+                font-size: 16px;
+                line-height: 25px;
+                letter-spacing: -0.75px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes subAnimation {
+  from {
+    opacity: 0;
+    background-size: 1920px * 2 980px * 2;
+  }
+
+  to {
+    opacity: 1;
+    background-size: 1920px 980px;
+  }
+}
