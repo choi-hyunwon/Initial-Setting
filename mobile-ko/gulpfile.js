@@ -63,6 +63,7 @@ function jsLib() {
         'src/js/lib/bootstrap.bundle.min.js',
         'src/js/lib/swiper.min.js',
         'src/js/lib/pinch-zoom.js',
+        'src/js/lib/aos.js',
     ];
     return gulp.src(sourceLib)
         .pipe(concat('bundle.js'))

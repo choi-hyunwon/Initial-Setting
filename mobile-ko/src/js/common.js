@@ -71,6 +71,10 @@ front.common = (function () {
         });
         /* e Dropdown Menu */
 
+        /* s AOS */
+        AOS.init();
+        /* e AOS */
+
         $('._fileUpload .form-control-file').on('change', function () {
             var target = $(this).parent().find('.file-box');
             if (typeof (this.files) != 'undefined') {

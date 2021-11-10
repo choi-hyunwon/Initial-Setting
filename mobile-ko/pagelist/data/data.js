@@ -127,13 +127,31 @@ data.guide = {
 }
 
 data.macrogen = {
-  title: 'Macrogen',
-  list: [
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_01기업개요',
-      category: 'macrogen',
-      page: '01Macrogen_01기업개요'
-    }
-  ]
+    title: 'Macrogen',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_01기업개요',
+            category: 'macrogen',
+            page: '01Macrogen_01기업개요'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_02경영진',
+            category: 'macrogen',
+            page: '01Macrogen_02경영진'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_04비전',
+            category: 'macrogen',
+            page: '01Macrogen_04비전'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_06ContactUs',
+            category: 'macrogen',
+            page: '01Macrogen_06ContactUs'
+        }
+    ]
 }
