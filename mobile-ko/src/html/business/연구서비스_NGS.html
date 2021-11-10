@@ -1,0 +1,90 @@
+<div class="wrap">
+    <div class="top-bg" style="background-image: url(../../img/@temp/main-bg.png);">
+        <header class="header header-white" style="position: absolute; top: 0px;">
+            <div class="inner">
+                <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+                <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+            </div>
+        </header>
+        <script>
+            $(function(){
+                var lastScroll = 0;
+                $(window).scroll(function(){
+                    var st = $(this).scrollTop();
+                    if (st > lastScroll){
+                        // console.log('Down');
+                    }
+                    else if (st === 0) {
+                        // console.log('Top');
+                        $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                    }
+                    else {
+                        // console.log('Up');
+                        $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+                    }
+                    lastScroll = st;
+                });
+            });
+        </script>
+
+        <div class="frame">
+            <div class="font-h1">히어로 타이틀</div>
+            <div class="font-body-h">서브카피 문구 영역입니다</div>
+            <div class="btn-wrap"><a href="#" class="btn-service"><span class="sr-only">service</span></a></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box font-slogan" style="display:flex;align-items:center; justify-content:center;color: #fff;width: 100%; height: 500px; background-color: rgba(0,0,0,.5);">contents</div>
+    </div>
+    <footer class="footer main">
+        <div class="font-h5">Macrogen</div>
+        <div class="info">
+            <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
+            <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+            <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
+        </div>
+        <div class="link-list">
+            <ul>
+                <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+                <li>
+                    <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                        <option value="https://thebiome.life/">더바이옴</option>
+                        <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
+                        <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
+                        <option value="https://psomagen.com/">소마젠(Psomagen)</option>
+                        <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
+                        <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
+                        <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
+                        <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
+                        <option value="http://www.g2if.org/">공우생명정보재단</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <ul class="sns">
+            <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
+            <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+    <a href="#" class="btn-totop" style="opacity: 0;"></a>
+    <script>
+        $(document).ready(function(){
+            $('.btn-totop').click(function(){
+                $('html,body').animate( { scrollTop:0 },{duration : 100});
+                return false;
+            });
+            $(window).on('scroll', function (){
+                var scrollTop = $(window).scrollTop()
+                if (scrollTop > 150) {
+                    $('.btn-totop').css({'opacity' : 1})
+                } else {
+                    $('.btn-totop').css({'opacity' : 0})
+                }
+            })
+        });
+    </script>
+
+</div>
