@@ -141,49 +141,49 @@ data.business ={
     title: 'BUSINESS',
     list: [
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '연구서비스_NGS',
             category: 'business',
             page: '연구서비스_NGS'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '연구서비스_CES',
             category: 'business',
             page: '연구서비스_CES'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '연구서비스_Oligo',
             category: 'business',
             page: '연구서비스_Oligo'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '연구서비스_MICROARRAY',
             category: 'business',
             page: '연구서비스_MICROARRAY'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '연구서비스_동물모델사업부',
             category: 'business',
             page: '연구서비스_동물모델사업부'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '임상진단서비스_암유전체검사',
             category: 'business',
             page: '임상진단서비스_암유전체검사'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '임상진단서비스_신생아유전자검사',
             category: 'business',
             page: '임상진단서비스_신생아유전자검사'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '임상진단서비스_covid19',
             category: 'business',
             page: '임상진단서비스_covid19'
