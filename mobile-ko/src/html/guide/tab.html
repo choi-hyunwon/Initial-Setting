@@ -33,8 +33,52 @@
             <div class="box">
                 <p class="font-h7 mb-5 px-2 mb-4">Secondary/Select</p>
                 <!-- s -->
+                    <div class="select-box">
+                        <div class="selected-value _selected-value">
+                            <span class="text">tab</span>
+                        </div>
+                        <ul class="select-option _select-option">
+                            <li class="option-value"><a href="#">tab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menutab-menutab-menutab-menutab-menutab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menutab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menutab-menutab-menutab-menu</a></li>
+                        </ul>
+                    </div>
+
+                 <script>
+                    /*변수*/
+                    var selectBox = $(".select-box");
+                    var option = $(".option-value");
+
+                    /*드롭다운 클릭시 이벤트*/
+                    selectBox.on('click',function() {
+                      var select = $(this);
+                      if(select.hasClass('open')) {
+                        select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                      }
+                      else {
+                        select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                        $('body').on('click',function (e){
+                          if(selectBox.hasClass('open')) {
+                            if(!selectBox.has(e.target).length) {
+                              selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                            }
+                          }
+                          e.preventDefault()
+                        })
+                      }
+                    });
+
+                    /*클릭시 텍스트 변경*/
+                    option.on('click',function() {
+                        var select = $(this).find('a').text();
+                        $('._selected-value').find('span').text(select);
+                    });
+                  </script>
                 <!-- e -->
             </div>
+
         </div>
     </div>
     @@include('../../html/include/components/footer.html')
