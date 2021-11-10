@@ -70,7 +70,6 @@
   .nav-tabs {
     display: flex;
     width: 100%;
-    padding: 0 20px;
     border-bottom: 0;
 
     .nav-link {
@@ -97,6 +96,69 @@
         }
       }
     }
+  }
+}
+
+.slide-tab-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .swiper-container {
+    margin: 0 !important;
+
+    .swiper-slide {
+      width: fit-content;
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        position: relative;
+        white-space: nowrap;
+        display: inline-block;
+        font-family: $font-family-bold;
+        font-size: 18px;
+        height: 34px;
+        color: $gray-d9d9d9;
+      }
+
+      &.active {
+        position: relative;
+
+        a {
+          color: $point-primary;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $point-primary;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-navi {
+    position: absolute;
+    top: -2px;
+    z-index: 2;
+  }
+
+  .btn-navi-prev {
+    @include background-img ($width: 60px, $height: 36px, $category: 'common', $img: 'btn-navi-left.png');
+    left: 0;
+  }
+  .btn-navi-next {
+    @include background-img ($width: 60px, $height: 36px, $category: 'common', $img: 'btn-navi-right.png');
+    right: 0;
   }
 }
 

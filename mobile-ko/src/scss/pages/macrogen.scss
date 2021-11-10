@@ -10,14 +10,14 @@ $min-width: 1244px;
   .badge {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 10px;
-    height: 26px;
-    line-height: 26px;
+    padding: 0 12px;
+    height: 29px;
+    line-height: 27px;
     font-size: 14px;
-    letter-spacing: -0.75px;
+    letter-spacing: -0.5px;
     color: $gray-909090;
     border: 1px solid $line-d9d9d9;
-    border-radius: 3px;
+    border-radius: 4px;
     margin-left: 15px;
   }
 
@@ -84,6 +84,7 @@ $min-width: 1244px;
       }
     }
   }
+
   /* e 공통 */
 
   &.company-overview {
@@ -973,15 +974,12 @@ $min-width: 1244px;
   }
 
   &.recruitment-info {
-    .section {
-      padding-bottom: 100px;
-      border-bottom: 1px solid #e9e9e9;
-      margin-bottom: 100px;
+    padding: 0 20px;
 
-      .btn-sm {
-        padding: 7px 25px 5px;
-        min-width: 124px;
-      }
+    .section {
+      border-bottom: 10px solid $bg-f5f5f5;
+      margin-bottom: 80px;
+      padding-bottom: 80px;
 
       &:last-child {
         padding-bottom: 0;
@@ -989,146 +987,42 @@ $min-width: 1244px;
         margin-bottom: 0;
       }
 
-      > .title {
-        font-family: $font-family-bold;
-        font-size: 36px;
-        line-height: 52px;
-        letter-spacing: -1px;
-        color: $gray-000000;
-      }
-
-      > .desc {
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.75px;
+      .font-body {
         color: $gray-707070;
-        margin-top: 15px;
-        margin-bottom: 60px;
-      }
-
-      .select-box {
-        margin: 60px 0 30px 20px;
-        border-bottom: 0;
-        padding-left: 10px;
-
-        .select_default {
-          width: 135px;
-          color: $gray-000000;
-          font-size: 18px;
-          line-height: 40px;
-        }
-      }
-
-      .img-recruitment-info {
-        margin-top: 60px;
-        width: 1244px;
-        height: 317px;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
+        margin-bottom: 56px;
+        margin-top: 16px;
       }
 
       .file-download {
-        padding-bottom: 20px;
-
-        .item {
-          .title {
-            color: $gray-454545;
-          }
-        }
-
-        .icon {
-          margin-right: 40px;
-        }
+        margin-bottom: 48px;
       }
 
-      .attachment-box {
-        position: relative;
-        padding: 30px 30px 26px 144px;
-        background-color: $bg-f7f7f7;
+      .img-recruitment-info {
+        margin-top: 24px;
+        width: 100%;
+        height: auto;
 
-        .file {
-          display: inline-block;
-          font-family: $font-family-bold;
-          font-size: 18px;
-          line-height: 30px;
-          letter-spacing: -0.5px;
-          color: $gray-454545;
-          margin-right: 40px;
-          max-width: 1060px;
-          @include ellipsis($line: 1);
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          width: 1px;
-          height: 21px;
-          left: 104px;
-          top: 50%;
-          transform: translateY(-50%);
-          background-color: $line-e9e9e9;
-        }
-
-        &::before {
-          content: '';
-          position: absolute;
-          left: 40px;
-          top: 50%;
-          transform: translateY(-50%);
-          @include background-img($width: 24px, $height: 24px, $category: 'macrogen', $img: 'ic-attach.svg');
+        img {
+          width: 100%;
+          height: auto;
         }
       }
 
       .board {
-        .detail {
-          .heading {
-            .department {
-              font-family: $font-family-bold;
-              font-size: 26px;
-              line-height: 38px;
-              letter-spacing: -0.75px;
-              color: $gray-000000;
-              margin-bottom: 6px;
-            }
-
-            &.with-badge {
-              position: relative;
-
-              .title {
-                width: calc(100% - 110px);
-              }
-
-              .badge-recruit {
-                top: 0;
-                right: 0;
-                transform: none;
-              }
-            }
-          }
-        }
-
-        .list {
-          .item {
-            &:hover {
-
-              .tit-sub {
-                color: $point-active;
-              }
-
-              .tit {
-                color: $point-active;
-              }
-
-              .date {
-                color: $point-active;
-              }
-            }
-          }
-        }
+        margin-top: 56px;
       }
+    }
+  }
+
+  &.recruitment-info-list {
+    padding: 0 20px;
+
+    .view-body {
+      padding-bottom: 65px;
+    }
+
+    .font-body {
+      margin-bottom: 40px;
     }
   }
 
@@ -1280,6 +1174,7 @@ $min-width: 1244px;
 
             &:last-child {
               margin-bottom: 0;
+              padding-bottom: 0;
             }
 
             .name {
@@ -1288,11 +1183,9 @@ $min-width: 1244px;
               line-height: 42px;
               letter-spacing: -1px;
               margin-bottom: 40px;
-
-              .badge {
-                font-weight: 500;
-                line-height: 25px;
-              }
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
             }
 
             .img {
@@ -1311,24 +1204,26 @@ $min-width: 1244px;
 
                 li {
                   margin-bottom: 8px;
+                  overflow: hidden;
 
                   &:last-child {
                     margin-bottom: 0;
                   }
 
                   span {
+                    float: left;
                     display: inline-block;
                     vertical-align: middle;
                     line-height: 32px;
 
                     &:first-child {
                       position: relative;
+                      width: 98px;
                       vertical-align: middle;
                       font-family: $font-family-bold;
                       font-size: 18px;
                       letter-spacing: -0.75px;
                       padding-left: 13px;
-                      margin-right: 15px;
 
                       &::before {
                         content: '';
@@ -1344,6 +1239,7 @@ $min-width: 1244px;
                     }
 
                     &:nth-child(2) {
+                      width: calc(100% - 98px);
                       font-size: 18px;
                       line-height: 32px;
                       letter-spacing: -0.75px;
@@ -2075,86 +1971,66 @@ $min-width: 1244px;
 
   &.macrogen-talent {
     .section-description {
-      padding: 150px 0 120px;
+      margin-bottom: 80px;
 
       .inner {
-        width: 1244px;
-        margin: 0 auto;
+        padding: 0 20px;
       }
 
       .underline {
         display: inline-block;
-        width: 60px;
-        height: 5px;
+        width: 22px;
+        height: 3px;
         background-color: $gray-000000;
-        margin-left: 12px;
+        margin-right: 12px;
       }
 
-      .text-lg {
-        font-family: $font-family-bold;
-        font-size: 56px;
-        line-height: 81px;
-        letter-spacing: -3px;
-        color: $gray-000000;
+      .font-h3 {
         margin-bottom: 28px;
       }
 
-      .desc {
-        font-size: 18px;
-        line-height: 32px;
-        letter-spacing: -0.75px;
+      .font-body-h {
         color: $gray-000000;
       }
     }
 
     .section-bg {
       position: relative;
-      width: 100%;
-      height: 600px;
-
-      .inner {
-        position: absolute;
-        width: $min-width;
-        height: 600px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0;
-      }
 
       .img {
         width: 100%;
-        padding: 0 50px;
-        height: 600px;
+        height: auto;
+        margin-bottom: 40px;
 
         img {
           width: 100%;
-          height: 100%;
+          height: auto;
         }
       }
 
       .txt-box {
-        position: absolute;
-        right: 82px;
-        top: 50%;
-        transform: translateY(-50%);
+        padding: 0 20px 80px;
 
         li {
           position: relative;
+          display: block;
           font-family: $font-family-bold;
-          font-size: 36px;
-          line-height: 52px;
+          font-size: 22px;
+          line-height: 38px;
           letter-spacing: -1px;
-          color: $gray-ffffff;
-          margin-bottom: 22px;
+          color: $gray-000000;
+          margin-bottom: 8px;
+          padding-left: 24px;
 
           &::before {
             content: '';
             position: absolute;
-            width: 30px;
-            height: 4px;
-            background-color: $gray-ffffff;
-            left: -48px;
-            top: 23px;
+            width: 16px;
+            height: 2px;
+            background-color: $gray-000000;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
           }
 
           &:last-child {
@@ -2165,66 +2041,41 @@ $min-width: 1244px;
     }
 
     .section-core-talent {
-      position: relative;
-      width: 100%;
-      height: calc(2268px - 150px);
-      padding-top: 180px;
-      padding-bottom: 2px;
-      overflow: hidden;
+      padding-top: 80px;
 
       .inner {
-        position: relative;
-        width: 1244px;
-        margin: 0 auto;
+        padding: 0 20px;
       }
 
-      .font-h6 {
-        margin-bottom: 30px;
+      .font-h7 {
+        margin-bottom: 64px;
       }
 
       .list {
+        text-align: center;
+
         .item {
-          width: 100%;
-          height: 540px;
-          overflow: hidden;
-          margin-bottom: 120px;
+          margin-bottom: 72px;
 
-          &:nth-child(2) {
-            .img {
-              margin-right: 100px;
-            }
-
-            .desc-area {
-              width: calc(100% - 540px - 100px);
-            }
+          &:last-child {
+            margin-bottom: 0;
           }
 
           .desc-area {
-            float: left;
-            display: flex;
-            width: calc(100% - 540px);
-            height: 100%;
-            justify-content: center;
-            flex-direction: column;
-
             .font-h3 {
-              margin-bottom: 60px;
+              margin-bottom: 24px;
             }
 
             .font-body-h {
               color: $point-primary;
-              margin-bottom: 20px;
-            }
-
-            .font-8 {
-              font-weight: normal;
+              margin-bottom: 16px;
             }
           }
 
           .img {
-            float: left;
-            width: 540px;
-            height: 540px;
+            width: 240px;
+            height: 240px;
+            margin: 0 auto 40px;
 
             img {
               width: 100%;
@@ -2232,29 +2083,6 @@ $min-width: 1244px;
             }
           }
         }
-      }
-    }
-
-    .DNA {
-      position: absolute;
-      background-size: contain;
-
-      &.DNA-1 {
-        @include background-img($width: 732px, $height: 777px, $category: 'macrogen', $img: 'img-DNA.png');
-        top: 1000px;
-        left: 30%;
-      }
-
-      &.DNA-2 {
-        @include background-img($width: 732px, $height: 777px, $category: 'macrogen', $img: 'img-DNA2.png');
-        bottom: -1700px;
-        left: 30%;
-      }
-    }
-
-    @media (max-width: 1440px) {
-      .DNA {
-        display: none;
       }
     }
   }
@@ -2509,145 +2337,158 @@ $min-width: 1244px;
   }
 
   &.macrogen-human-resource {
-    .inner {
-      width: $min-width;
-      margin: 0 auto;
-    }
-
     .section-management {
-      padding-top: 150px;
-      padding-bottom: 179px;
+      position: relative;
+      padding: 0 20px 138px;
 
       .font-h7 {
-        line-height: 38px;
-        margin-bottom: 60px;
+        margin-bottom: 64px;
       }
 
       .font-h3 {
-        line-height: 81px;
-        margin-bottom: 154px;
+        margin-bottom: 56px;
       }
 
-      .step {
-        .row {
-          .col {
-            .item {
-              @include background-img($width: 388px, $height: 580px, $category: 'macrogen', $img: 'thumb-human-resource-1.png');
-              padding: 50px;
+      .item-2 {
+        .item {
+          background-image: url(../img/macrogen/thumb-human-resource-2.png);
+        }
+      }
 
-              .tit {
-                font-family: $font-family-bold;
-                font-size: 36px;
-                line-height: 52px;
-                letter-spacing: -1px;
-                margin-bottom: 15px;
-              }
+      .item-3 {
+        .item {
+          background-image: url(../img/macrogen/thumb-human-resource-3.png);
+        }
+      }
 
-              .desc {
-                font-size: 16px;
-                line-height: 30px;
-                letter-spacing: -0.75px;
-                color: $gray-454545;
-              }
+      .item {
+        padding: 40px;
+        @include background-img($width: auto, $height: 133.4vw, $category: 'macrogen', $img: 'thumb-human-resource-1.png');
 
-              &.item-2 {
-                margin-top: -50px;
-                background-image: url(../img/macrogen/thumb-human-resource-2.png);
-              }
+        .font-h5 {
+          margin-bottom: 16px;
+        }
+      }
 
-              &.item-3 {
-                margin-top: -100px;
-                background-image: url(../img/macrogen/thumb-human-resource-3.png);
-              }
-            }
+      .pagination-wrap {
+        top: 501px;
+      }
+
+      .swiper-pagination {
+        bottom: 80px;
+        width: calc(100% - 40px);
+
+        .swiper-pagination-bullet {
+          background-color: #222;
+          opacity: .2;
+
+          &.swiper-pagination-bullet-active {
+            background-color: #222;
+            opacity: 1;
           }
         }
       }
     }
 
     .section-rank-system {
-      @include background-img($width: 1821px, $height: 1100px, $category: 'macrogen', $img: 'bg-human-resource-2.png');
-      width: auto;
-      padding: 170px 50px 0;
+      @include background-img($width: auto, $height: 100vw * 2.656, $category: 'macrogen', $img: 'bg-human-resource-2.png');
+      padding: 80px 20px 0;
 
       .font-h7 {
-        line-height: 38px;
-        margin-bottom: 60px;
+        margin-bottom: 64px;
         color: $gray-ffffff;
       }
 
       .font-h3 {
-        line-height: 81px;
-        margin-bottom: 120px;
+        margin-bottom: 56px;
         color: $gray-ffffff;
       }
 
       .flow-bg {
-        @include background-img($width: 1244px, $height: 333px, $category: 'macrogen', $img: 'human-resource-flow.png');
+        @include background-img($width: auto, $height: 143.59701vw, $category: 'macrogen', $img: 'human-resource-flow.png');
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
 
     .section-welfare {
-      padding: 150px 50px 0;
+      padding-top: 80px;
 
       .inner {
-        position: relative;
-        height: 338px;
-        margin-bottom: 120px;
+        padding: 0 20px;
       }
 
       .font-h7 {
-        line-height: 38px;
-        margin-bottom: 60px;
+        margin-bottom: 64px;
       }
 
       .font-h3 {
-        line-height: 81px;
-        margin-bottom: 198px;
+        margin-bottom: 24px;
       }
 
       .click-area {
-        position: absolute;
-        width: 380px;
-        bottom: 0;
-        right: 0;
+        margin-bottom: 80px;
 
         .font-body-h {
-          font-weight: normal;
-          margin-bottom: 60px;
+          margin-bottom: 48px;
+        }
+
+        .font-body-b {
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+            color: $gray-000000;
+          }
+          i {
+            display: inline-block;
+            vertical-align: middle;
+          }
         }
       }
 
       .item {
-        @include background-img($width: 1821px, $height: 580px, $category: 'macrogen', $img: 'banner-human-resource-1.png');
-        width: auto;
-        padding: 140px 50px 0;
-        margin-bottom: 80px;
+        @include background-img($width: auto, $height: 100vw * 1.5146666666, $category: 'macrogen', $img: 'banner-human-resource-1.png');
+        margin-bottom: 40px;
+        padding: 80px 0 0;
 
         &:last-child {
           margin-bottom: 0;
         }
 
         .font-h5 {
-          margin-bottom: 138px;
+          margin-bottom: 40px;
           color: $gray-ffffff;
         }
 
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+
+          .col {
+            margin-right: 3.5px;
+
+            &:nth-child(2n) {
+              margin-left: 3.5px;
+            }
+          }
+        }
+
         li {
-          float: left;
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 230px;
-          height: 150px;
-          font-size: 22px;
-          line-height: 36px;
-          text-align: center;
-          letter-spacing: -0.75px;
+          font-size: 16px;
+          line-height: 32px;
+          letter-spacing: -0.5px;
+          font-family: $font-family-bold;
           color: $gray-000000;
-          @include background-img($width: 230px, $height: 150px, $category: 'macrogen', $img: 'bg-human-resource-rect.png');
-          margin-right: 22px;
+          @include background-img($width: 50%, $height: auto, $category: 'macrogen', $img: 'bg-human-resource-rect.png');
+          width: calc(50% - 5.5px);
           border-radius: 5px;
+          margin-bottom: 7px;
+          padding: 20px 0;
+          text-align: center;
 
           &:last-child {
             margin-right: 0;
