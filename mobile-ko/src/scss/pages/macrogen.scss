@@ -84,7 +84,6 @@ $min-width: 1244px;
       }
     }
   }
-
   /* e 공통 */
 
   &.company-overview {
@@ -1156,7 +1155,7 @@ $min-width: 1244px;
 
       .map {
         position: relative;
-        @include background-img($width: 335px, $height: 164px, $category: 'macrogen', $img: 'bg-map.png');
+        @include background-img($width: 100%, $height: 100vw * 0.489552238805, $category: 'macrogen', $img: 'bg-map.png');
         margin: 0 auto;
 
         .pin {
@@ -1259,7 +1258,25 @@ $min-width: 1244px;
 
         > .detail {
           .item {
-            margin-bottom: 120px;
+            position: relative;
+            padding-bottom: 65px;
+            margin-bottom: 64px;
+
+            &:last-child {
+              &::after {
+                content: none;
+              }
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              bottom: 0;
+              left: 0;
+              background-color: #E9E9E9;
+            }
 
             &:last-child {
               margin-bottom: 0;
@@ -1344,35 +1361,24 @@ $min-width: 1244px;
               }
 
               .tel {
-                span {
-                  position: relative;
-                  font-family: $font-family-bold;
-                  font-size: 16px;
-                  line-height: 30px;
-                  color: $gray-707070;
-                  margin-right: 8px;
-
-                  &:nth-child(3) {
-                    &::before {
-                      content: '';
-                      position: absolute;
-                      width: 1px;
-                      height: 16px;
-                      left: -21px;
-                      top: 1px;
-                      background-color: #e9e9e9;
-                    }
+                > div {
+                  span {
+                    position: relative;
+                    font-family: $font-family-bold;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: $gray-707070;
+                    margin-right: 8px;
                   }
-                }
 
-                a {
-                  font-size: 16px;
-                  line-height: 30px;
-                  color: $gray-707070;
-                  margin-right: 41px;
+                  a {
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: $gray-707070;
+                  }
 
-                  &:last-child {
-                    margin-right: 0;
+                  + div {
+                    margin-top: 8px;
                   }
                 }
               }
