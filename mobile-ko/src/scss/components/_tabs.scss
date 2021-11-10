@@ -63,7 +63,6 @@
   }
 }
 /* 셀렉트 영역 스타일 */
-
 .select-box{
   z-index: 100;
   position: relative;
@@ -73,17 +72,6 @@
   color: #000;
   line-height: 34px;
   letter-spacing: -0.5px;
-  &.open{
-    .selected-value{
-      &:before{
-        border-top: none;
-        border-left: 4.5px solid transparent;
-        border-right: 4.5px solid transparent;
-        border-bottom: 6px solid #222222;
-      }
-    }
-
-  }
   .selected-value{
     padding: 13px 20px;
     width: 100%;
@@ -129,7 +117,22 @@
       &:nth-last-of-type(1){
         margin-bottom: 0px;
       }
-
     }
+  }
+  &.open{
+    .selected-value{
+      &:before{
+        border-top: none;
+        border-left: 4.5px solid transparent;
+        border-right: 4.5px solid transparent;
+        border-bottom: 6px solid #222222;
+      }
+    }
+  }
+}
+/* 아코디언 영역 스타일*/
+.accordion{
+  .accordion-item{
+
   }
 }
