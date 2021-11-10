@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <div class="full-bg macrogen no-bg">
+        @@include('../../html/include/component/header-white.html')
+        <div class="frame frameC">
+            @@include('../../html/include/common/breadcrumb-depth3.html',  {
+            "depth1": "MACROGEN",
+            "depth2": "채용",
+            "depth3": "채용안내"
+            })
+            <div class="hero-title">채용안내</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="macrogen recruitment-info">
+
+            <!-- s 전형절차 -->
+            <div class="section">
+                <div class="title">전형절차</div>
+                <div class="img-recruitment-info">
+                    <img src="../../img/macrogen/img-recruitment-info.png" alt="전형절차">
+                </div>
+            </div>
+            <!-- e 전형절차 -->
+
+            <!-- s 상시채용 -->
+            <div class="section">
+                <div class="title">상시채용</div>
+                <div class="desc">지원양식을 다운로드하여 작성한 후 채용 담당자의 메일로 송부해주시기 바랍니다&#46;</div>
+                <div class="file-download">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="item">
+                                <i class="icon icon-doc"></i>
+                                <span class="title">마크로젠 입사지원양식&#46;doc</span>
+                                <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="item">
+                                <i class="icon icon-hwp"></i>
+                                <span class="title">마크로젠 입사지원양식&#46;hwp</span>
+                                <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a href="mailto:hire@macrogen.com" target="_blank" class="btn btn-sm btn-primary"><span>채용담당자 메일접수</span></a>
+                </div>
+            </div>
+            <!-- e 상시채용 -->
+
+            <!-- s 채용공고 -->
+            <div class="section">
+                <div class="title">채용공고</div>
+                <div class="select-box ">
+                    <a href="#" class="select_default _select_default"><span class="text">지원구분</span></a>
+                    <ul class="select_list _select_list">
+                        <li><span>One</span></li>
+                        <li><span>Two</span></li>
+                        <li><span>Three</span></li>
+                    </ul>
+                </div>
+
+                <div class="board">
+                    <div class="list list-card">
+                        <div class="item with-badge">
+                            <span class="tit-sub">경력</span>
+                            <a href="#" class="tit">㈜마크로젠 각 부문별 경력 직원 채용</a>
+                            <span class="date">2021&#46;05&#46;08</span>
+                            <div class="badge-recruit ongoing"><span class="sr-only">채용중</span></div>
+                        </div>
+                        <div class="item with-badge">
+                            <span class="tit-sub">경력</span>
+                            <a href="#" class="tit">㈜마크로젠 각 부문별 경력 직원 채용</a>
+                            <span class="date">2021&#46;05&#46;08</span>
+                            <div class="badge-recruit"><span class="sr-only">마감</span></div>
+                        </div>
+                        <div class="item with-badge">
+                            <span class="tit-sub">경력</span>
+                            <a href="#" class="tit">㈜마크로젠 각 부문별 경력 직원 채용</a>
+                            <span class="date">2021&#46;05&#46;08</span>
+                            <div class="badge-recruit"><span class="sr-only">마감</span></div>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap">
+                        <ul class="navigation">
+                            <li class="page-item first">
+                                <a class="page-link" href="#">
+                                    <span class="sr-only">맨 앞</span>
+                                </a>
+                            </li>
+                            <li class="page-item prev">
+                                <a class="page-link" href="#">
+                                    <span class="sr-only">이전</span>
+                                </a>
+                            </li>
+                            <li class="page-item next">
+                                <a class="page-link" href="#">
+                                    <span class="sr-only">다음</span>
+                                </a>
+                            </li>
+                            <li class="page-item last">
+                                <a class="page-link" href="#">
+                                    <span class="sr-only">맨 뒤</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- e 채용공고 -->
+        </div>
+    </div>
+    @@include('../../html/include/component/footer.html')
+    @@include('../../html/include/component/toTop.html')
+</div>
+</body>
+</html>
