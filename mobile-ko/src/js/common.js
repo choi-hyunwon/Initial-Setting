@@ -72,11 +72,6 @@ front.common = (function () {
                 });
                 /* e slide active  */
             }
-
-            /* s slide tab  */
-            if($('.macrogen-history').length === 1) {
-            }
-            /* e slide tab  */
         })
     }
 
