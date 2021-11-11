@@ -3,9 +3,7 @@
  *  common.js
  * --------------------------------------------------------------------------
  */
-
 var front = front || {};
-
 
 front.common = front.common || {};
 
@@ -13,58 +11,83 @@ front.common = (function () {
 
     var init = function () {
         this.a();
+        this.swiperTab();
         this.commonHandler();
-        // this.scrollHeader();
-    };
+    }
 
     var a = function () {
         $('a[href="#"]').on('click', function (e) {
             e.preventDefault();
         });
     }
-    // var scrollHeader = function () {
-    //   var scrollableElement = document.body; //document.getElementById('scrollableElement');
-    //   scrollableElement.addEventListener('wheel', checkScrollDirection);
-    //   function checkScrollDirection(event) {
-    //     if (checkScrollDirectionIsUp(event)) {
-    //       // console.log('UP');
-    //       if (window.scrollY > 124){
-    //         $('.header').show()
-    //             .css({'position': 'fixed','top':'0'})
-    //             .addClass('header-sm')
-    //       } else {
-    //         $('.header').show()
-    //             .css({'position': 'relative'})
-    //             .removeClass('header-sm')
-    //       }
-    //     } else {
-    //       // console.log('Down');
-    //       // console.log(window.scrollY);
-    //       if (window.scrollY > 124){
-    //         $('.header').hide()
-    //       }
-    //     }
-    //   }
-    //   function checkScrollDirectionIsUp(event) {
-    //     if (event.wheelDelta) {
-    //       return event.wheelDelta > 0;
-    //     }
-    //     return event.deltaY < 0;
-    //   }
-    // }
 
+    var swiperTab = function () {
+        $(document).ready(function (){
+            var swiper = new Swiper("._swiperTab", {
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                centeredSlides: false,
+                watchActiveIndex: true,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: "._slideRight",
+                    prevEl: "._slideLeft",
+                }
+            });
+
+            /* s swiper - 터치 여부에 따른 show & hide */
+            swiper.on('slideChange', function() {
+                $('._slideLeft').show()
+                $('._slideRight').show()
+            });
+
+            swiper.on('touchMove', function(swiper, index) {
+                $('._slideLeft').hide()
+                $('._slideRight').hide()
+            });
+            /* e swiper - 터치 여부에 따른 show & hide */
+
+            /* s slide container & slide - width */
+            var slide = $('._swiperTab').find('.swiper-slide')
+            var idx = slide.length;
+            var sum= 0;
+
+            for (var i = 0; i <= idx; i++) {
+                var target = slide.eq(i);
+                var idxWidth = target.outerWidth(true) - 24;
+                target.css('width',idxWidth);
+            }
+
+            for (var j = 0; j < idx; j++) {
+                sum = sum + slide.eq(j).outerWidth(true);
+            }
+
+            $('.swiper-wrapper').css('width',sum);
+            /* e swiper slide container  */
+
+            /* s slide active  */
+            slide.on('click', function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+            /* e slide active  */
+        })
+    }
 
     var commonHandler = function () {
         /* s Dropdown Menu */
-        $('.dropdown').on('click', function () {
+        var dropdown = $('.dropdown');
+
+        dropdown.on('click', function () {
             $(this).attr('tabindex', 1).focus();
             $(this).toggleClass('active');
             $(this).find('.dropdown-menu').slideToggle(300);
         });
-        $('.dropdown').focusout(function () {
+
+        dropdown.focusout(function () {
             $(this).removeClass('active');
             $(this).find('.dropdown-menu').slideUp(300);
         });
+
         $('.dropdown .dropdown-menu li').on('click', function () {
             $(this).parents('.dropdown').find('span').text($(this).text());
             $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
@@ -75,26 +98,37 @@ front.common = (function () {
         AOS.init();
         /* e AOS */
 
-        $('._fileUpload .form-control-file').on('change', function () {
-            var target = $(this).parent().find('.file-box');
-            if (typeof (this.files) != 'undefined') {
-                if (this.files.length == 0) {
-                    target.removeClass('withFile').text(target.data('default'));
-                } else {
-                    var file = this.files[0];
-                    var name = file.name;
-                    target.parent().addClass('withFile');
-                    target.html(`<span>${name}</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>`);
-                }
+        /* s full-bg 일 경우, 자동 하단으로 스크롤 */
+        var screeSize = document.documentElement.clientHeight;
+        // console.log(screeSize);
+
+        if($('.full-bg').length) {
+            if($('html, body').scrollTop() === 0) {
+                // 서브 배경 애니메이션
+                var sub = setTimeout(function() {
+                    // console.log($('html, body').scrollTop())
+                    if($('html, body').scrollTop() !== 0) clearTimeout(sub)
+                    else $('html, body').animate({scrollTop: screeSize}, 300);
+                }, 2000);
             }
-            return false;
-        });
+        }
+        /* e full-bg 일 경우, 자동 하단으로 스크롤 */
+
+        /* s tooltip */
+        $('._btnTooltip').on('click',function (){
+            $(this).siblings().show();
+        })
+
+        $('._btnTooltipClose').on('click',function (){
+            $(this).parent().hide();
+        })
+        /* e tooltip */
     }
 
     return {
         a: a,
+        swiperTab : swiperTab,
         commonHandler: commonHandler,
-        // scrollHeader : scrollHeader,
         init: init
     }
 })();

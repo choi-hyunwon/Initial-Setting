@@ -120,7 +120,6 @@
         position: relative;
         white-space: nowrap;
         display: inline-block;
-        font-family: $font-family-bold;
         font-size: 18px;
         height: 34px;
         color: $gray-d9d9d9;
@@ -131,6 +130,7 @@
 
         a {
           color: $point-primary;
+          font-family: $font-family-bold;
 
           &::after {
             content: '';
@@ -150,6 +150,10 @@
     position: absolute;
     top: -2px;
     z-index: 2;
+
+    &.swiper-button-disabled {
+      display: none;
+    }
   }
 
   .btn-navi-prev {

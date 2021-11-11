@@ -693,70 +693,6 @@ $min-width: 1244px;
           padding-right: 0;
         }
       }
-
-      //padding-top: 150px;
-      //padding-right: 17.4479%;
-      //padding-bottom: 180px;
-      //
-      //.img {
-      //  max-height: 640px;
-      //  margin-bottom: 100px;
-      //
-      //  img {
-      //    width: 100%;
-      //    height: 100%;
-      //  }
-      //}
-      //
-      //.inner {
-      //  padding-left: 21.3248% ;
-      //
-      //  .font-h3 {
-      //    margin-bottom: 80px;
-      //  }
-      //
-      //  .info {
-      //    .item {
-      //      margin-bottom: 80px;
-      //      overflow: hidden;
-      //    }
-      //
-      //    .font-h7 {
-      //      float: left;
-      //      width: 37.6904% /*460px / 1247px*/
-      //    ;
-      //      margin-right: 4.8115%; /*60px / 1247px*/
-      //      word-break: keep-all;
-      //    }
-      //
-      //    .font-body {
-      //      word-break: keep-all;
-      //      float: left;
-      //      width: 56.8564% /*709px / 1247px*/
-      //    ;
-      //      font-weight: normal;
-      //      color: $gray-454545;
-      //      letter-spacing: -0.85px;
-      //    }
-      //  }
-      //
-      //  .sign {
-      //    text-align: right;
-      //    height: 46px;
-      //
-      //    .font-body-h {
-      //      font-weight: normal;
-      //      display: inline-block;
-      //      vertical-align: bottom;
-      //      margin-right: 10px;
-      //    }
-      //
-      //    .font-h6 {
-      //      display: inline-block;
-      //      vertical-align: bottom;
-      //    }
-      //  }
-      //}
     }
 
     .section-ceo-career {
@@ -774,23 +710,13 @@ $min-width: 1244px;
   }
 
   &.macrogen-authorization {
+    padding: 0 20px;
+
     .slide-tab-wrap {
-      margin-top: 153px;
-      margin-bottom: 139px;
+      margin-bottom: 72px;
     }
 
     .section {
-      padding-top: 80px;
-
-      &#qualityManagementSystem {
-        padding-top: 0;
-        margin-top: 0;
-
-        > .title {
-          border-top: none;
-        }
-      }
-
       .btn-sm {
         padding: 7px 25px 5px;
         min-width: 124px;
@@ -798,30 +724,20 @@ $min-width: 1244px;
 
       > .title {
         font-family: $font-family-bold;
-        font-size: 56px;
-        line-height: 81px;
-        letter-spacing: -3px;
+        font-size: 34px;
+        line-height: 50px;
+        letter-spacing: -1px;
         color: $gray-000000;
-        border-top: 10px solid #f5f5f5;
-        padding-top: 120px;
-
-        .tooltip-box {
-          display: inline-block;
-          vertical-align: text-bottom;
-
-          .text-box {
-            top: 66px;
-          }
-        }
+        margin-bottom: 64px;
       }
 
       .title-sm {
         font-family: $font-family-bold;
-        font-size: 32px;
-        line-height: 46px;
+        font-size: 22px;
+        line-height: 38px;
         letter-spacing: -1px;
         color: $gray-000000;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
 
         span {
           display: inline-block;
@@ -858,11 +774,9 @@ $min-width: 1244px;
 
       .img-wrap {
         padding-top: 30px;
-        overflow: hidden;
 
         .img {
-          float: left;
-          width: 381px;
+          width: auto;
           height: auto;
           text-align: center;
           margin-right: 43px;
@@ -893,7 +807,7 @@ $min-width: 1244px;
           img {
             display: block;
             width: 100%;
-            height: 233px;
+            height: auto;
             margin-bottom: 23px;
           }
 
@@ -904,27 +818,20 @@ $min-width: 1244px;
       }
 
       .img {
-        width: 381px;
-        height: 233px;
+        width: 100%;
+        height: auto;
 
         img {
           width: 100%;
-          height: 100%;
+          height: auto;
         }
       }
 
       > .box {
-        padding: 80px 0;
         border-bottom: 1px solid $line-e9e9e9;
 
         &:last-of-type {
           padding-bottom: 0;
-        }
-
-        &::after {
-          content: '';
-          display: block;
-          clear: both;
         }
 
         &:last-child {
@@ -953,22 +860,12 @@ $min-width: 1244px;
           }
         }
 
-        .left {
-          float: left;
-          width: 816px;
-          margin-right: 44px;
+        .title-box {
         }
 
-        .right {
-          float: left;
-          width: calc(100% - 816px - 44px);
+        .img-box {
+          width: auto;
         }
-      }
-    }
-
-    .tooltip-box {
-      .text-box {
-        top: 46px;
       }
     }
   }
