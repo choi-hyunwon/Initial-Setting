@@ -117,7 +117,6 @@ front.common = (function () {
               selectSite.removeClass("open").next('._popup_box').slideUp(200);
             }
           }
-          e.preventDefault()
         })
       }
     });
