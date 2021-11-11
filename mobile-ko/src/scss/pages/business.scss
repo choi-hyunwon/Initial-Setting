@@ -52,6 +52,9 @@
         width: 100%;
         height: 100%;
       }
+      +.list-area-group{
+        padding-top: 56px;
+      }
     }
     .main-title{
       margin-bottom: 56px;
@@ -70,6 +73,11 @@
     }
     .sub-title{
       margin-bottom: 24px;
+    }
+    .list-area-group{
+      .list-area{
+        margin-bottom: 48px;
+      }
     }
     .list-area{
       .title{
@@ -99,8 +107,15 @@
 
       }
     }
+    .btn-area{
+      padding-top: 80px;
+    }
+    .board{
+      .navigation{
+        margin-bottom: 0px;
+      }
+    }
 
 
   }
-
 }
