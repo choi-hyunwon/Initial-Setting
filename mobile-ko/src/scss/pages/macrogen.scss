@@ -712,83 +712,144 @@ $min-width: 1244px;
   &.macrogen-authorization {
     padding: 0 20px;
 
-    .slide-tab-wrap {
-      margin-bottom: 72px;
-    }
-
     .section {
-      .btn-sm {
-        padding: 7px 25px 5px;
-        min-width: 124px;
+      padding-top: 80px;
+      margin-bottom: 80px;
+      border-top: 10px solid $bg-f5f5f5;
+
+      &:nth-child(2) {
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom: 0;
       }
 
       > .title {
+        position: relative;
         font-family: $font-family-bold;
         font-size: 34px;
         line-height: 50px;
         letter-spacing: -1px;
         color: $gray-000000;
         margin-bottom: 64px;
-      }
 
-      .title-sm {
-        font-family: $font-family-bold;
-        font-size: 22px;
-        line-height: 38px;
-        letter-spacing: -1px;
-        color: $gray-000000;
-        margin-bottom: 24px;
+        .tooltip-box {
+          .btn-tooltip {
+            .icon-tooltip {
+              &::after {
+                bottom: -13px;
+              }
+            }
+          }
 
-        span {
-          display: inline-block;
-          vertical-align: middle;
-        }
-
-        > div {
-          display: inline-block;
-          vertical-align: middle;
+          .text-box {
+            top: 50px;
+          }
         }
       }
 
-      .desc {
-        display: block;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.75px;
-        color: $gray-454545;
-        margin-bottom: 30px;
+      .tooltip-box {
+        display: inline-block;
+        position: static;
 
-        &.with-date {
-          margin-bottom: 10px;
+        .btn-tooltip {
+          .icon-tooltip {
+            &::after {
+              bottom: -14px;
+            }
+          }
+        }
+
+        .text-box {
+          width: calc(100vw - 40px);
+          left: 0;
+          top: 43px;
         }
       }
 
-      .date {
-        display: block;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: -0.75px;
-        color: $gray-909090;
-        margin-bottom: 30px;
+      .box {
+        border-bottom: 1px solid $line-e9e9e9;
+        margin-bottom: 64px;
+        padding-bottom: 64px;
+
+        &:last-child {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border-bottom: 0;
+        }
+
+        .title-box {
+          .title-sm {
+            position: relative;
+            font-family: $font-family-bold;
+            font-size: 22px;
+            line-height: 38px;
+            letter-spacing: -1px;
+            color: $gray-000000;
+            margin-bottom: 24px;
+
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 4px;
+            }
+          }
+
+          .desc {
+            display: block;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+            color: $gray-454545;
+            margin-bottom: 40px;
+
+            &.with-date {
+              margin-bottom: 10px;
+            }
+          }
+
+          .date {
+            display: block;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: -0.5px;
+            color: $gray-909090;
+            margin-bottom: 40px;
+          }
+        }
+
+        .img-box {
+          margin-bottom: 24px;
+
+          .img {
+            width: 100%;
+            height: auto;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
       }
 
       .img-wrap {
-        padding-top: 30px;
-
         .img {
-          width: auto;
+          width: 100%;
           height: auto;
           text-align: center;
-          margin-right: 43px;
-          margin-bottom: 0;
+          margin-bottom: 24px;
 
-          &:first-child,
-          &:nth-child(2),
-          &:nth-child(3) {
-            margin-bottom: 70px;
+          &:last-child {
+            margin-bottom: 0;
+          }
 
+          &:first-child {
             .tit {
-              padding-top: 30px;
+              padding-top: 0;
             }
           }
 
@@ -797,11 +858,12 @@ $min-width: 1244px;
             width: 100%;
             font-family: $font-family-bold;
             font-size: 18px;
-            line-height: 26px;
-            letter-spacing: -0.75px;
+            line-height: 34px;
+            letter-spacing: -0.5px;
             color: $gray-000000;
             text-align: left;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
+            padding-top: 16px;
           }
 
           img {
@@ -814,57 +876,6 @@ $min-width: 1244px;
           &:nth-child(3n) {
             margin-right: 0;
           }
-        }
-      }
-
-      .img {
-        width: 100%;
-        height: auto;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      > .box {
-        border-bottom: 1px solid $line-e9e9e9;
-
-        &:last-of-type {
-          padding-bottom: 0;
-        }
-
-        &:last-child {
-          border-bottom: 0;
-        }
-
-        &.box-full-sm {
-          margin-top: 20px;
-
-          &.box-full {
-            padding-bottom: 120px;
-          }
-
-          .desc {
-            margin-bottom: 0;
-          }
-        }
-
-        &.box-full {
-          padding-bottom: 80px;
-
-          .left {
-            float: none;
-            width: 100%;
-            margin-right: 0;
-          }
-        }
-
-        .title-box {
-        }
-
-        .img-box {
-          width: auto;
         }
       }
     }
@@ -1985,111 +1996,146 @@ $min-width: 1244px;
   }
 
   &.macrogen-history {
-    .slide-tab-wrap {
-      width: $min-width;
-      margin: 0 auto;
-      padding-top: 140px;
-    }
-
-    .section-wrap {
-      overflow: hidden;
-
-    }
-
     .section {
-      padding: 140px 0 0;
+      display: none;
+
+      &.show {
+        display: block;
+      }
 
       .inner {
-        width: $min-width;
-        margin: 0 auto;
+        padding: 0 20px;
 
-        .year {
+        > .year {
           font-family: $font-family-bold;
-          font-size: 32px;
-          line-height: 39px;
-          letter-spacing: 0.5px;
-          margin-bottom: 5px;
+          font-size: 22px;
+          line-height: 38px;
+          letter-spacing: -1px;
+          margin-bottom: 8px;
         }
 
-        .title {
+        > .title {
           position: relative;
-          display: inline-block;
           font-family: $font-family-bold;
-          font-size: 64px;
-          line-height: 93px;
-          letter-spacing: -3px;
+          font-size: 34px;
+          line-height: 50px;
+          letter-spacing: -1px;
           color: $point-primary;
-          margin-bottom: 68px;
-
-          &::before {
-            content: '';
-            display: block;
-          }
-
-          &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 60px;
-            height: 5px;
-            background-color: $point-primary;
-            right: -70px;
-            bottom: 20px;
-          }
+          margin-bottom: 64px;
         }
       }
 
       .history-slider {
         position: relative;
         width: 100%;
-        height: 740px;
 
-        .inner {
-          position: absolute;
-          width: $min-width;
-          height: 740px;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 2;
+        .swiper-container {
+          text-align: center;
+          margin-bottom: 48px;
 
-          .year {
-            position: absolute;
-            font-family: $font-family-bold;
-            font-size: 150px;
-            line-height: 183px;
-            letter-spacing: -2px;
-            color: $gray-ffffff;
-            bottom: 102px;
-            left: 0;
-            margin-bottom: 0;
+          .swiper-slide {
+            position: relative;
+
+            .img {
+              position: relative;
+              width: 100%;
+              height: 100vw * 0.8;
+              margin-bottom: 40px;
+
+              &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                @include background-img($width: 100%, $height: 100vw * 0.8, $category: 'macrogen', $img: 'bg-history-circle.png');
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+
+              .year {
+                position: absolute;
+                font-family: $font-family-bold;
+                font-size: 56px;
+                line-height: 64px;
+                letter-spacing: -1px;
+                color: $gray-ffffff;
+                bottom: 20px;
+                left: 20px;
+                margin-bottom: 0;
+                z-index: 2;
+              }
+            }
+
+            .desc {
+              display: block;
+              font-size: 18px;
+              line-height: 34px;
+              letter-spacing: -0.5px;
+              color: $gray-454545;
+              padding: 0 20px;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
           }
 
-          .desc {
+          + .inner {
             position: absolute;
-            font-size: 22px;
-            line-height: 33px;
-            letter-spacing: -0.75px;
-            color: $gray-ffffff;
-            bottom: 80px;
+            width: 100%;
+            height: 100%;
+            top: 0;
             left: 0;
           }
         }
-      }
 
+        .pagination-wrap {
+          top: 143px;
+        }
+
+        .swiper-pagination {
+          position: absolute;
+          bottom: -10px;
+          display: flex;
+          justify-content: center;
+
+          .swiper-pagination-bullet {
+            background-color: $gray-000000;
+            opacity: .2;
+
+            &.swiper-pagination-bullet-active {
+              background-color: $gray-000000;
+              opacity: 1;
+            }
+          }
+        }
+
+        .divider {
+          margin: 80px 0;
+        }
+      }
 
       .history-list {
         position: relative;
-        padding-top: 57px + 66px;
-        overflow: hidden;
+
+        .year {
+          font-family: $font-family-bold;
+          font-size: 34px;
+          line-height: 50px;
+          letter-spacing: -1px;
+          margin-bottom: 48px;
+        }
 
         .year-info {
-          position: absolute;
-          width: 428px;
-
           li {
             position: relative;
-            padding-left: 107px;
             margin-bottom: 40px;
 
             &:last-child {
@@ -2104,88 +2150,20 @@ $min-width: 1244px;
               line-height: 39px;
               letter-spacing: 0.5px;
               color: $disabled-d9d9d9;
-
-              &::before {
-                content: '';
-                position: absolute;
-                width: 6px;
-                height: 6px;
-                background-color: $gray-000000;
-                left: -99px;
-                top: 50%;
-                transform: translateY(-50%);
-                border-radius: 50%;
-              }
-
-              &::after {
-                content: '';
-                position: absolute;
-                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
-                left: -97px;
-                bottom: -49px;
-              }
             }
 
             &.active {
               span {
                 font-size: 58px;
-                /*line-height: 71px;*/
                 line-height: 1;
                 color: $gray-000000;
-
-                &::before {
-                  content: '';
-                  position: absolute;
-                  left: -107px;
-                  background-color: transparent;
-                  @include background-img($width: 23px, $height: 23px, $category: 'macrogen', $img: 'bg-history-dot.svg');
-                }
-
-                &::after {
-                  bottom: -41px;
-                }
-              }
-            }
-
-            &:first-child {
-              &::before {
-                content: '';
-                position: absolute;
-                @include background-img($width: 2px, $height: 50px, $category: 'macrogen', $img: 'bg-history-line.svg');
-                left: 10px;
-                top: -41px;
-              }
-
-              &::after {
-                content: '';
-                position: absolute;
-                width: 6px;
-                height: 6px;
-                background-color: $gray-909090;
-                border-radius: 50%;
-                left: 8px;
-                top: -62px;
-              }
-
-
-            }
-
-            &:last-child {
-              span {
-                &::after {
-                  content: none;
-                }
               }
             }
           }
         }
 
         .desc-info {
-          padding-left: 428px;
-
           ul {
-            margin-bottom: 100px;
-
             &:last-child {
               margin-bottom: 0;
             }
@@ -2201,7 +2179,7 @@ $min-width: 1244px;
               .num {
                 float: left;
                 display: inline-block;
-                width: 67px;
+                width: 48px;
                 font-family: $font-family-bold;
                 font-size: 18px;
                 line-height: 23px;
@@ -2211,7 +2189,7 @@ $min-width: 1244px;
               .desc {
                 float: left;
                 display: inline-block;
-                width: calc(100% - 67px);
+                width: calc(100% - 48px);
                 font-size: 16px;
                 line-height: 23px;
                 letter-spacing: -0.75px;
@@ -2337,6 +2315,7 @@ $min-width: 1244px;
             margin-right: 12px;
             color: $gray-000000;
           }
+
           i {
             display: inline-block;
             vertical-align: middle;

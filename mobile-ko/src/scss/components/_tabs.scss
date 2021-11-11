@@ -101,9 +101,10 @@
 
 .slide-tab-wrap {
   position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 72px;
+  //width: 100%;
+  //display: flex;
+  //justify-content: space-between;
 
   .swiper-container {
     margin: 0 !important;
@@ -148,7 +149,7 @@
 
   .btn-navi {
     position: absolute;
-    top: -2px;
+    top: -4px;
     z-index: 2;
 
     &.swiper-button-disabled {

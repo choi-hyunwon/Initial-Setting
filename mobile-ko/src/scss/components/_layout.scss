@@ -106,7 +106,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    animation: full-bg 2s;
+    animation: grow 2s;
 
     .frame {
       position: relative;
@@ -133,9 +133,6 @@ body {
         color: #fff;
         word-break: keep-all;
       }
-    }
-
-    &._interaction {
     }
   }
 
@@ -250,13 +247,18 @@ body {
 
 @keyframes full-bg {
   0% {
-    background-size: 200%;
+    background-size: 100% 200vh;
     opacity: 0;
   }
   100% {
-    background-size: 100%;
+    background-size: 100% 100vh;
     opacity: 1;
   }
+}
+
+@keyframes grow {
+  0%   { background-size: 200% auto; opacity: 0;}
+  100% { background-size: 100% auto; opacity: 1;}
 }
 
 /* footer */

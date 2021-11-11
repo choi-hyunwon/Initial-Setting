@@ -23,53 +23,60 @@ front.common = (function () {
 
     var swiperTab = function () {
         $(document).ready(function (){
-            var swiper = new Swiper("._swiperTab", {
-                slidesPerView: "auto",
-                spaceBetween: 0,
-                centeredSlides: false,
-                watchActiveIndex: true,
-                slideToClickedSlide: true,
-                navigation: {
-                    nextEl: "._slideRight",
-                    prevEl: "._slideLeft",
-                }
-            });
-
             /* s swiper - 터치 여부에 따른 show & hide */
-            swiper.on('slideChange', function() {
-                $('._slideLeft').show()
-                $('._slideRight').show()
-            });
-
-            swiper.on('touchMove', function(swiper, index) {
-                $('._slideLeft').hide()
-                $('._slideRight').hide()
-            });
+            // swiper.on('slideChange', function() {
+            //     $('._slideLeft').show()
+            //     $('._slideRight').show()
+            // });
+            //
+            // swiper.on('touchMove', function(swiper, index) {
+            //     $('._slideLeft').hide()
+            //     $('._slideRight').hide()
+            // });
             /* e swiper - 터치 여부에 따른 show & hide */
 
             /* s slide container & slide - width */
-            var slide = $('._swiperTab').find('.swiper-slide')
-            var idx = slide.length;
-            var sum= 0;
+            if($('.macrogen-authorization').length === 1) {
+                var swiper = new Swiper("._swiperTab", {
+                    slidesPerView: "auto",
+                    spaceBetween: 0,
+                    centeredSlides: true,
+                    watchActiveIndex: true,
+                    slideToClickedSlide: true,
+                    navigation: {
+                        nextEl: "._slideRight",
+                        prevEl: "._slideLeft",
+                    }
+                });
 
-            for (var i = 0; i <= idx; i++) {
-                var target = slide.eq(i);
-                var idxWidth = target.outerWidth(true) - 24;
-                target.css('width',idxWidth);
+                var slide = $('._swiperTab').find('.swiper-slide')
+                var idx = slide.length;
+                var sum = 0;
+
+                for (var i = 0; i <= idx; i++) {
+                    var target = slide.eq(i);
+                    var idxWidth = target.outerWidth(true) - 24;
+                    target.css('width', idxWidth);
+                }
+
+                for (var j = 0; j < idx; j++) {
+                    sum = sum + slide.eq(j).outerWidth(true);
+                }
+
+                $('.swiper-wrapper').css('width', sum);
+                /* e swiper slide container  */
+
+                /* s slide active  */
+                slide.on('click', function () {
+                    $(this).addClass('active').siblings().removeClass('active');
+                });
+                /* e slide active  */
             }
 
-            for (var j = 0; j < idx; j++) {
-                sum = sum + slide.eq(j).outerWidth(true);
+            /* s slide tab  */
+            if($('.macrogen-history').length === 1) {
             }
-
-            $('.swiper-wrapper').css('width',sum);
-            /* e swiper slide container  */
-
-            /* s slide active  */
-            slide.on('click', function(){
-                $(this).addClass('active').siblings().removeClass('active');
-            });
-            /* e slide active  */
+            /* e slide tab  */
         })
     }
 
@@ -116,11 +123,12 @@ front.common = (function () {
 
         /* s tooltip */
         $('._btnTooltip').on('click',function (){
-            $(this).siblings().show();
+            $('.tooltip-box').removeClass('active');
+            $(this).parent().addClass('active');
         })
 
         $('._btnTooltipClose').on('click',function (){
-            $(this).parent().hide();
+            $(this).parent().parent().removeClass('active');
         })
         /* e tooltip */
     }

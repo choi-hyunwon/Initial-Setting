@@ -11,6 +11,7 @@
             var st = $(this).scrollTop();
             if (st > lastScroll){
                 // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
             }
             else if (st === 0) {
                 // console.log('Top');
