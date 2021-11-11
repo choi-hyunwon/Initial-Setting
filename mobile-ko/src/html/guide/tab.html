@@ -57,52 +57,16 @@
                             <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
                             <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
                             <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+<!--                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>-->
+<!--                            <div class="swiper-slide"><a href="#">Whole Genome Sequencing</a></div>-->
+<!--                            <div class="swiper-slide"><a href="#">Exome Sequencing</a></div>-->
+<!--                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>-->
+<!--                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>-->
                         </div>
                     </div>
                     <a href="#" class="btn-navi btn-navi-prev _slideLeft"></a>
                     <a href="#" class="btn-navi btn-navi-next _slideRight"></a>
                 </div>
-                <script>
-                    var swiper = new Swiper("._swiperTab", {
-                        slidesPerView: "auto",
-                        spaceBetween: 0,
-                        centeredSlides: false,
-                        watchActiveIndex: true,
-                        slideToClickedSlide: true,
-                        navigation: {
-                            nextEl: "._slideRight",
-                            prevEl: "._slideLeft",
-                        },
-                    });
-
-                    $(document).ready(function (){
-                        var idx = $('._swiperTab .swiper-slide').length;
-                        var sum= 0;
-
-                        for (var j = 0; j < idx; j++) {
-                            sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-                        }
-                        $('.swiper-wrapper').css('width',sum)
-
-                        for (var i = 0; i <= idx; i++) {
-                            var target = $(`.swiper-slide:eq(${i})`);
-                            var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 24;
-                            target.css('width',idxWidth)
-                        }
-                    })
-
-                    $('._swiperTab .swiper-slide').on('click', function(){
-                        $(this).addClass('active').siblings().removeClass('active');
-                    });
-
-                    $('.swiper-notification').remove();
-                </script>
-
                 <!-- e -->
             </div>
         </div>

@@ -106,6 +106,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    animation: full-bg 2s;
 
     .frame {
       position: relative;
@@ -132,6 +133,9 @@ body {
         color: #fff;
         word-break: keep-all;
       }
+    }
+
+    &._interaction {
     }
   }
 
@@ -241,6 +245,17 @@ body {
         animation: scrollMove 1.5s ease-in infinite;
       }
     }
+  }
+}
+
+@keyframes full-bg {
+  0% {
+    background-size: 200%;
+    opacity: 0;
+  }
+  100% {
+    background-size: 100%;
+    opacity: 1;
   }
 }
 
