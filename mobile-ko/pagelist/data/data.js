@@ -233,12 +233,6 @@ data.newsroom = {
         },
         {
             stateClass: 'complete',
-            url: '02미디어라이브러리_02조회',
-            category: 'newsroom',
-            page: '02미디어라이브러리_02조회'
-        },
-        {
-            stateClass: 'complete',
             url: '02미디어라이브러리_02조회팝업',
             category: 'newsroom',
             page: '02미디어라이브러리_02조회팝업'
