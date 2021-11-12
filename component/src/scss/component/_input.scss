@@ -7,6 +7,7 @@
  v.0.5 선미 : placeholder 색상값 지정 - 2021.10.26
  v.0.6 태윤 : Dropdown 추가 - 2021.10.26
  v.0.7 선미 : form-select 제거 /  .select-box 추가 - 2021.10.28
+ v.0.8 선미 : ie-> placeholder 색상값 지정 - 2021.11.12
 |----------------------------------|
 */
 
@@ -23,6 +24,11 @@ input::placeholder{
   color:$gray-d9d9d9!important;
   font-weight: bold;
 }
+:-ms-input-placeholder {
+  color:$gray-d9d9d9!important;
+  font-weight: bold !important;
+}
+
 textarea::placeholder{
   font-size: 16px;
   color:$gray-d9d9d9!important;

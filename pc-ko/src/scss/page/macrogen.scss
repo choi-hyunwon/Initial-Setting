@@ -7958,6 +7958,9 @@ $min-width: 1244px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 color: $gray-000000;
+                >a{
+                  color: $gray-000000;
+                }
               }
 
               .desc {
