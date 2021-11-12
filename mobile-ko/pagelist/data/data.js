@@ -127,7 +127,7 @@ data.guide = {
 }
 
 data.macrogen = {
-    title: 'Macrogen',
+    title: 'MACROGEN',
     list: [
         // {
         //     stateClass: 'complete',
