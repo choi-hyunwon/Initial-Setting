@@ -157,11 +157,6 @@ data.macrogen = {
             stateClass: 'complete',
             url: '01Macrogen_04비전',
             category: 'macrogen',
-            page: '01Macrogen_04비전'
-            stateClass: 'working',
-            url: '연구서비스_NGS',
-            category: 'business',
-            page: '연구서비스_NGS'
         },
         {
             stateClass: 'complete',
