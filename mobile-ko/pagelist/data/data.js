@@ -129,6 +129,12 @@ data.guide = {
 data.macrogen = {
     title: 'Macrogen',
     list: [
+        // {
+        //     stateClass: 'complete',
+        //     url: 'Main',
+        //     category: 'macrogen',
+        //     page: 'Main'
+        // },
         {
             stateClass: 'complete',
             url: '01Macrogen_01기업개요',
@@ -143,15 +149,153 @@ data.macrogen = {
         },
         {
             stateClass: 'complete',
+            url: '01Macrogen_03연혁',
+            category: 'macrogen',
+            page: '01Macrogen_03연혁'
+        },
+        {
+            stateClass: 'complete',
             url: '01Macrogen_04비전',
             category: 'macrogen',
             page: '01Macrogen_04비전'
         },
         {
             stateClass: 'complete',
+            url: '01Macrogen_05인증',
+            category: 'macrogen',
+            page: '01Macrogen_05인증'
+        },
+        {
+            stateClass: 'waiting',
             url: '01Macrogen_06ContactUs',
             category: 'macrogen',
             page: '01Macrogen_06ContactUs'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_06글로벌네트워크',
+            category: 'macrogen',
+            page: '01Macrogen_06글로벌네트워크'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_04채용_01인재상',
+            category: 'macrogen',
+            page: '01Macrogen_04채용_01인재상'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_04채용_02인사제도',
+            category: 'macrogen',
+            page: '01Macrogen_04채용_02인사제도'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_04채용_03채용안내_01목록',
+            category: 'macrogen',
+            page: '01Macrogen_04채용_03채용안내_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '01Macrogen_04채용_03채용안내_02조회',
+            category: 'macrogen',
+            page: '01Macrogen_04채용_03채용안내_02조회'
+        },
+    ]
+}
+
+data.newsroom = {
+    title: 'NEWSROOM',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '01뉴스_01목록',
+            category: 'newsroom',
+            page: '01뉴스_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '01뉴스_01목록_없을경우',
+            category: 'newsroom',
+            page: '01뉴스_01목록_없을경우'
+        },
+        {
+            stateClass: 'complete',
+            url: '01뉴스_02조회',
+            category: 'newsroom',
+            page: '01뉴스_02조회'
+        },
+        {
+            stateClass: 'complete',
+            url: '02미디어라이브러리_01목록',
+            category: 'newsroom',
+            page: '02미디어라이브러리_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '02미디어라이브러리_02조회',
+            category: 'newsroom',
+            page: '02미디어라이브러리_02조회'
+        },
+        {
+            stateClass: 'complete',
+            url: '02미디어라이브러리_02조회팝업',
+            category: 'newsroom',
+            page: '02미디어라이브러리_02조회팝업'
+        },
+        {
+            stateClass: 'complete',
+            url: '02미디어라이브러리_03이미지뷰어',
+            category: 'newsroom',
+            page: '02미디어라이브러리_03이미지뷰어'
+        },
+        {
+            stateClass: 'complete',
+            url: '03공지사항_01목록',
+            category: 'newsroom',
+            page: '03공지사항_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '03공지사항_02조회',
+            category: 'newsroom',
+            page: '03공지사항_02조회'
         }
+    ]
+}
+
+data.esg = {
+    title: 'ESG',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '06ESG_01ESG경영',
+            category: 'ESG',
+            page: '06ESG_01ESG경영'
+        },
+        {
+            stateClass: 'complete',
+            url: '06ESG_02윤리경영',
+            category: 'ESG',
+            page: '06ESG_02윤리경영'
+        },
+        {
+            stateClass: 'complete',
+            url: '06ESG_03사회공헌_01소개',
+            category: 'ESG',
+            page: '06ESG_03사회공헌_01소개'
+        },
+        {
+            stateClass: 'complete',
+            url: '06ESG_03사회공헌_02과학자상목록',
+            category: 'ESG',
+            page: '06ESG_03사회공헌_02과학자상목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '06ESG_03사회공헌_03과학자상상세',
+            category: 'ESG',
+            page: '06ESG_03사회공헌_03과학자상상세'
+        },
     ]
 }
