@@ -86,29 +86,28 @@
                             <li class="option-value"><a href="#">tab-menutab-menutab-menutab-menutab-menu</a></li>
                         </ul>
                     </div>
-
-                 <script>
+                    <script>
                     /*변수*/
                     var selectBox = $(".select-box");
                     var option = $(".option-value");
 
                     /*드롭다운 클릭시 이벤트*/
                     selectBox.on('click',function() {
-                      var select = $(this);
-                      if(select.hasClass('open')) {
-                        select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                      }
-                      else {
-                        select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                        $('body').on('click',function (e){
-                          if(selectBox.hasClass('open')) {
-                            if(!selectBox.has(e.target).length) {
-                              selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                            }
-                          }
-                          e.preventDefault()
-                        })
-                      }
+                        var select = $(this);
+                        if(select.hasClass('open')) {
+                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                        }
+                        else {
+                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                            $('body').on('click',function (e){
+                                if(selectBox.hasClass('open')) {
+                                    if(!selectBox.has(e.target).length) {
+                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                    }
+                                }
+                                e.preventDefault()
+                            })
+                        }
                     });
 
                     /*클릭시 텍스트 변경*/
@@ -116,7 +115,7 @@
                         var select = $(this).find('a').text();
                         $('._selected-value').find('span').text(select);
                     });
-                  </script>
+                </script>
                 <!-- e -->
             </div>
 
@@ -129,12 +128,12 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Illumina
+                                <p class="title">제목입니다</p>
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-
+                                내용은 커스텀이라서 우선 냅둡니다.
                             </div>
                         </div>
                     </div>
@@ -151,6 +150,72 @@
                         </div>
                     </div>
                 </div>
+                <!-- e -->
+            </div>
+
+        </div>
+        <div class="mb-5">
+            <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4">contents Anchor</p>
+                <!-- s -->
+                <div class="content-anchor">
+                    <div class="selected-value _anchor-value">
+                        <span class="text">Whole Genome Resequencing</span>
+                    </div>
+                    <ul class="anchor-option">
+                        <li class="anchor-value"><a href="#">Whole Genome De novo Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">수정란 동결 및 마우스 복원 (Embryo freezing & Reproduction to Live)</a></li>
+                        <li class="anchor-value"><a href="#">마우스 계통유지 (Mouse Line Recovery)</a></li>
+                        <li class="anchor-value"><a href="#">Whole Genome Resequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                    </ul>
+                </div>
+                <script>
+
+                    /*변수*/
+                    var selectBox = $(".content-anchor");
+                    var option = $(".anchor-value");
+                    var p = $( "p" ).last();
+                    var offset = p.offset();
+
+                    /*특정 위치에서 show & hide*/
+
+                    p.html( "left: " + offset.left + ", top: " + offset.top );
+
+
+                    /*드롭다운 클릭시 이벤트*/
+                    selectBox.on('click',function() {
+                        var select = $(this);
+                        if(select.hasClass('open')) {
+                            select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                        }
+                        else {
+                            select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                            $('body').on('click',function (e){
+                                if(selectBox.hasClass('open')) {
+                                    if(!selectBox.has(e.target).length) {
+                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                    }
+                                }
+                                e.preventDefault()
+                            })
+                        }
+                    });
+
+                    /*클릭시 텍스트 변경*/
+                    option.on('click',function() {
+                        var select = $(this).find('a').text();
+                        $('._anchor-value').find('span').text(select);
+                    });
+
+
+
+                </script>
                 <!-- e -->
             </div>
 
