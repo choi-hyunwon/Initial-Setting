@@ -317,14 +317,14 @@
     }
 
     .tab-content {
-      width: 1244px;
+      width: 100%;
       margin: 0 auto;
       text-align: left;
       .tab-pane {
         /*slide 영역 공통*/
         .slide-box {
           .slider {
-           /* padding-left: 338px;*/
+            padding-left: 338px;
 
             .swiper-container {
               margin-bottom: 40px;
