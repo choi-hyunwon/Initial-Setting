@@ -30,7 +30,7 @@
             <!--Ngs 공통 e -->
 
             <!--Ngs 탭 네비 s-->
-            <div class="select-nav-box">
+            <div class="select-nav-box content_area">
                 <p class="title font-h4">SERVICE</p>
                 <div class="select-box">
                     <div class="selected-value _selected-value">
@@ -121,17 +121,9 @@
                             <li><p>PromethION</p></li>
                         </ul>
                     </div>
-                    <div class="btn-area">
-                        <div class="btn-wrapper">
-                        <a class="btn btn-light" href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a class="btn btn-light" href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                    </div>
-                        <div class="btn-wrapper">
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    </div>
+                    @@include('../../html/include/business/btn-area.html')
                     <div class="board">
-                    <div class="navigation">
+                        <div class="navigation mb-0">
                         <div class="row g-0">
                             <div class="col"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전글</span></div>
                             <div class="col"><span class="font-body-h-b">다음글</span><i class="icon ico-left-black"></i></div>
@@ -140,7 +132,7 @@
                     </div>
                 </div>
                 <!--Exome-->
-                <div class="info-box show">
+                <div class="info-box d-none">
                     <p class="font-h4 main-title">Whole Exome Sequencing</p>
                     <p class="subject font-body-h-b">WES(Whole Exsome Sequencing)는 유전자가 존재한다고 알려져 있는 Exon 영역 (Exome)만을 선택적으로 분석하는
                         방법입니다. </p>
@@ -170,32 +162,22 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="btn-area">
-                        <div class="btn-wrap"></div>
-                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="http://dna.macrogen.com/kor/quotation/ngs/ngs_q뢰uotation_step1.jsp" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    <hr class="divider">
+                    @@include('../../html/include/business/btn-area.html')
                     <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" onclick="setTabContent(0)" class="item prev">
-                                    <div class="title">Whole Genome Sequencing</div>
-                                </a>
-                                <a href="#" onclick="setTabContent(2)" class="item next">
-                                    <div class="title">Transcriptome Sequencing</div>
-                                </a>
+                        <div class="navigation mb-0">
+                            <div class="row g-0">
+                                <div class="col"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전글</span></div>
+                                <div class="col"><span class="font-body-h-b">다음글</span><i class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Transcriptome-->
-                <div class="info-box d-none">
+                <div class="info-box">
                     <p class="font-h4 main-title">Transcriptome Sequencing</p>
-                    <p class="subject">유전자의 발현으로 얻어진 RNA를 분석하는 방법으로, 샘플 간의 발현량 차이(expression profile) 및 각종 변이 정보를 확인할 수
+                    <p class="subject font-body-h-b">유전자의 발현으로 얻어진 RNA를 분석하는 방법으로, 샘플 간의 발현량 차이(expression profile) 및 각종 변이 정보를 확인할 수
                         있습니다.</p>
-                    <p class="desc img_bottom">NGS로 진행되는 실험 중 가장 자주 이용되는 방법이며 RNA의 불안정한 특이성 때문에 샘플 준비 및 보관, 처리 작업 등 고도의 기술력을 요구하는 분야입니다.<br>
+                    <p class="desc img_bottom font-body">NGS로 진행되는 실험 중 가장 자주 이용되는 방법이며 RNA의 불안정한 특이성 때문에 샘플 준비 및 보관, 처리 작업 등 고도의 기술력을 요구하는 분야입니다.<br>
                         샘플 간의 발현량 차이(expression profile) 및 변이 정보를 통해 유전자 가능 연구와 발현 조절에 대한 통찰력을 얻을 수 있고, 바이오마커(Biomarker) 개발, 병 진단, 모니터링에 적용할 수 있습니다.
                         마크로젠은 다년간의 연구 경험을 통해 연구자의 Transcriptome Sequencing 관련 니즈를 충족시키기 위한  각종 library kit 및 NGS 장비, 컴퓨팅 시설 등을 갖추고 있습니다.
                     </p>
@@ -290,7 +272,7 @@
                     </div>
                     <hr class="divider">
                     <div class="board">
-                        <div class="navigation">
+                        <div class="navigation mb-0">
                             <div class="content clearfix">
                                 <a href="#" class="item prev" onclick="setTabContent(1)">
                                     <div class="title">Whole Exome Sequencing</div>
@@ -325,7 +307,7 @@
                     </div>
                     <hr class="divider">
                     <div class="board">
-                        <div class="navigation">
+                        <div class="navigation mb-0">
                             <div class="content clearfix">
                                 <a href="#" class="item prev" onclick="setTabContent(2)">
                                     <div class="title">Transcriptome Sequencing</div>
@@ -388,7 +370,7 @@
                     </div>
                     <hr class="divider">
                     <div class="board">
-                        <div class="navigation">
+                        <div class="navigation mb-0">
                             <div class="content clearfix">
                                 <a href="#" class="item prev" onclick="setTabContent(3)">
                                     <div class="title">Epigenome Sequencing</div>
@@ -425,7 +407,7 @@
                     </div>
                     <hr class="divider">
                     <div class="board">
-                        <div class="navigation">
+                        <div class="navigation mb-0">
                             <div class="content clearfix">
                                 <a href="#" class="item prev" onclick="setTabContent(4)">
                                     <div class="title">Single Cell Multi-omics analysis</div>
@@ -455,7 +437,7 @@
                     </div>
                     <hr class="divider">
                     <div class="board">
-                        <div class="navigation">
+                        <div class="navigation mb-0">
                             <div class="content clearfix">
                                 <a href="#" class="item prev" onclick="setTabContent(5)">
                                     <div class="title">ATAC analysis</div>
@@ -505,7 +487,7 @@
                     </div>
                     <hr class="divider">
                     <div class="board">
-                        <div class="navigation">
+                        <div class="navigation mb-0">
                             <div class="content clearfix">
                                 <a href="#" class="item prev" onclick="setTabContent(6)">
                                     <div class="title">Spatial Gene Expression analysis</div>
