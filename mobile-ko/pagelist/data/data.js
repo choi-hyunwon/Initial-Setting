@@ -1,7 +1,7 @@
 const data = {}
 
 data.guide = {
-    title: 'Guide',
+    title: 'GUIDE',
     list: [
         {
             stateClass: 'complete',
