@@ -17,39 +17,22 @@
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
 </div>
-<div class="modal modal-image-viewer" tabindex="-1" id="modal" data-bs-backdrop="static">
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
             <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/@temp/bg-01.png" alt=""></div>
+                <div class="pinch-zoom"><img src="../../img/@temp/newsroom/sample-1.png" alt=""></div>
             </div>
         </div>
     </div>
-    <a href="#" class="btn-totop"></a>
-    <script>
-        $(document).ready(function(){
-            $('.btn-totop').click(function(){
-                $('.modal').animate( { scrollTop:0 },{duration : 100});
-                return false;
-            });
-            $('.modal').on('scroll', function (){
-                var scrollTop = $('.modal').scrollTop()
-                if (scrollTop > 150) {
-                    $('.btn-totop').css({'opacity' : 1})
-                } else {
-                    $('.btn-totop').css({'opacity' : 0})
-                }
-            })
-        });
-    </script>
 </div>
 <div class="toast-popup">
     <p>이미지를 확대할 수 있습니다</p>
 </div>
 <script>
     // modal show
-    var modal = new bootstrap.Modal(document.getElementById('modal'))
+    var modalImageViewer = new bootstrap.Modal(document.getElementById('modalImageViewer'))
     modal.show();
 
     // zoom

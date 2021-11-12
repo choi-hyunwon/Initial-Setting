@@ -76,6 +76,8 @@
   }
 
   &.modal-image-viewer {
+    display: block !important;
+
     .modal-dialog {
       .modal-content {
         position: relative;
@@ -204,6 +206,171 @@
                 top: 50%;
                 transform: translateY(-50%);
                 border: 1px solid $line-e9e9e9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.modal-look-up {
+    display: block !important;
+
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          height: 564px;
+          background-color: $gray-000000;
+          padding-top: 94px;
+
+          .heading {
+            position: absolute;
+            width: 100%;
+            height: 94px;
+            display: flex;
+            top: 0;
+            left: 0;
+            justify-content: space-between;
+
+            .btn-close {
+              position: absolute;
+              top: 25px;
+              right: 20px;
+              background-image: url(../img/common/btn-close-white.svg);
+            }
+
+            .paging {
+              position: absolute;
+              left: 20px;
+              top: 19px;
+              color: $gray-ffffff;
+
+              .icon {
+                display: inline-block;
+                vertical-align: middle;
+              }
+
+              em {
+                display: inline-block;
+                vertical-align: middle;
+                font-style: normal;
+                font-family: $font-family-bold;
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: -.5px;
+                margin-left: 8px;
+              }
+            }
+          }
+
+          .swiper-container {
+            width: calc(100vw - 80px);
+            height: 564px - 94px - 96px;
+
+            .swiper-slide {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                width: auto;
+                height: auto;
+                max-width: calc(100vw - 80px);
+                max-height: 350px;
+              }
+            }
+          }
+
+          .pagination-wrap {
+            position: absolute;
+            width: calc(100% - 40px);
+            top: 262px;
+            left: 20px;
+            z-index: 2;
+
+            .navigation {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+
+              .page-item {
+                position: static;
+
+                .page-link {
+                  padding: 0;
+                }
+
+                &.prev {
+                  margin-right: 8px;
+
+                  .page-link {
+                    @include background-img($width: 14px, $height: 14px, $category: 'common', $img: 'ico-left-dark.svg');
+                  }
+                }
+
+                &.next {
+                  .page-link {
+                    @include background-img($width: 14px, $height: 14px, $category: 'common', $img: 'ico-left-dark.svg');
+                    transform: rotate(180deg);
+                  }
+                }
+              }
+            }
+          }
+
+          .btn-wrapper {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            bottom: 40px;
+            justify-content: center;
+            left: 0;
+
+            a {
+              + a {
+                margin-left: 16px;
+              }
+            }
+          }
+        }
+
+        .modal-body {
+          padding: 48px 20px 0;
+          background-color: $gray-ffffff;
+
+          .font-body-h-b {
+            color: $gray-000000;
+            margin-bottom: 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+          }
+
+          .font-date {
+            margin-bottom: 40px;
+          }
+
+          .btn-wrapper {
+            margin-bottom: 54px;
+
+            a {
+              display: inline-block;
+              width: 100%;
+              align-items: center;
+
+              .icon {
+                margin-right: 8px;
+              }
+
+              .icon, .font-body {
+                display: inline-block;
+                vertical-align: middle;
               }
             }
           }

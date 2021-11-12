@@ -41,19 +41,19 @@
     var modalEl = document.getElementById('modal')
     var modal = new bootstrap.Modal(modalEl)
 
-    modal.show();
+    // modal.show();
 
     $(document).ready(function (){
         var modalHeight = $('.modal-notice .modal-content').outerHeight();
-        $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
+        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
     })
 
-    myModalEl.addEventListener('shown.bs.modal', function () {
+    modalEl.addEventListener('shown.bs.modal', function () {
         var modalHeight = $('.modal-notice .modal-content').outerHeight();
         $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
     })
 
-    myModalEl.addEventListener('hide.bs.modal', function () {
+    modalEl.addEventListener('hide.bs.modal', function () {
         var modalHeight = $('.modal-notice .modal-content').outerHeight();
         $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
     })
@@ -65,7 +65,7 @@
 
     // modal open
     // $('._btnZoom').on('click', function () {
-    //     myModal.show();
+    //     modalEl.show();
     // })
 </script>
 </body>

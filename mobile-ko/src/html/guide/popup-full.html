@@ -36,30 +36,30 @@
         </div>
     </div>
     <a href="#" class="btn-totop"></a>
-    <script>
-        $(document).ready(function(){
-            $('.btn-totop').click(function(){
-                $('.modal').animate( { scrollTop:0 },{duration : 100});
-                return false;
-            });
-            $('.modal').on('scroll', function (){
-                var scrollTop = $('.modal').scrollTop()
-                if (scrollTop > 150) {
-                    $('.btn-totop').css({'opacity' : 1})
-                } else {
-                    $('.btn-totop').css({'opacity' : 0})
-                }
-            })
-        });
-    </script>
 </div>
 <script>
-    var modal = new bootstrap.Modal(document.getElementById('modal'))
-    modal.show();
+    $(document).ready(function(){
+        $('.btn-totop').click(function(){
+            $('.modal').animate( { scrollTop:0 },{duration : 100});
+            return false;
+        });
 
-    $('.btn-close').on('click', function () {
-        modal.hide();
-    })
+        $('.modal').on('scroll', function (){
+            var scrollTop = $('.modal').scrollTop()
+            if (scrollTop > 150) {
+                $('.btn-totop').css({'opacity' : 1})
+            } else {
+                $('.btn-totop').css({'opacity' : 0})
+            }
+        })
+
+        var modal = new bootstrap.Modal(document.getElementById('modal'))
+        modal.show();
+
+        $('.btn-close').on('click', function () {
+            modal.hide();
+        })
+    });
 </script>
 </body>
 </html>
