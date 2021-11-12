@@ -293,3 +293,57 @@ data.esg = {
         },
     ]
 }
+
+data.RD = {
+    title: 'R&D',
+    list: [
+        {
+            stateClass: 'working',
+            url: '03R&D_01정밀의학연구소_01소개',
+            category: 'RD',
+            page: '03R&D_01정밀의학연구소_01소개'
+        },
+        {
+            stateClass: 'working',
+            url: '03R&D_02생명정보학연구소',
+            category: 'RD',
+            page: '03R&D_02생명정보학연구소'
+        },
+        {
+            stateClass: 'working',
+            url: '03R&D_03더바이옴연구소',
+            category: 'RD',
+            page: '03R&D_03더바이옴연구소'
+        },
+        {
+            stateClass: 'working',
+            url: '03R&D_04싱크진연구소',
+            category: 'RD',
+            page: '03R&D_04싱크진연구소'
+        },
+        {
+            stateClass: 'working',
+            url: '03R&D_05빅데이터연구소',
+            category: 'RD',
+            page: '03R&D_05빅데이터연구소'
+        },
+        {
+            stateClass: 'working',
+            url: '06특허,논문_01특허_01목록',
+            category: 'RD',
+            page: '06특허,논문_01특허_01목록'
+        },
+        {
+            stateClass: 'working',
+            url: '06특허,논문_02논문_01목록',
+            category: 'RD',
+            page: '06특허,논문_02논문_01목록'
+        },
+        {
+            stateClass: 'working',
+            url: '06특허,논문_02논문_01목록없음',
+            category: 'RD',
+            page: '06특허,논문_02논문_01목록없음'
+        },
+    ]
+}
