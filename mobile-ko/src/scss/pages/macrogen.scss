@@ -1705,7 +1705,7 @@ $min-width: 1244px;
                         color: $gray-454545;
                         padding-left: 15px;
                         margin-bottom: 2px;
-                        @include ellipsis($line: 4);
+                        @include ellipsis($line: 2);
 
                         &:last-child {
                           margin-bottom: 0;
