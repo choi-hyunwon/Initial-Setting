@@ -8,9 +8,9 @@
         <div class="frame"></div>
     </div>
     <div class="container pt-0">
-        <div class="img text-center mb-5"><img src="../../img/@temp/bg-01.png" alt=""></div>
+        <div class="img text-center mb-5"><img src="../../img/@temp/newsroom/sample-1.png" alt=""></div>
         <div class="img position-relative">
-            <img class="w-100" src="../../img/@temp/bg-02.png" alt="">
+            <img class="w-100" src="../../img/@temp/newsroom/sample-2.png" alt="">
             <a class="btn-zoom _btnZoom" href="#"><span class="sr-only">이미지 확대</span></a>
         </div>
     </div>
@@ -33,7 +33,7 @@
 <script>
     // modal show
     var modalImageViewer = new bootstrap.Modal(document.getElementById('modalImageViewer'))
-    modal.show();
+    modalImageViewer.show();
 
     // zoom
     var el = document.querySelector('.pinch-zoom');
@@ -46,7 +46,7 @@
 
     // modal open
     $('._btnZoom').on('click', function () {
-        modal.show();
+        modalImageViewer.show();
     })
 
     // toast popup
