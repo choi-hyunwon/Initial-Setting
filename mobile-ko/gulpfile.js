@@ -64,6 +64,7 @@ function jsLib() {
         'src/js/lib/swiper.js',
         'src/js/lib/pinch-zoom.js',
         'src/js/lib/aos.js',
+        'src/js/lib/rellax.js',
     ];
     return gulp.src(sourceLib)
         .pipe(concat('bundle.js'))

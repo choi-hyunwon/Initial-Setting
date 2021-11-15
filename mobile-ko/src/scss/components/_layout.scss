@@ -5,31 +5,38 @@
 */
 /* scroll hide */
 body {
-  -ms-overflow-style: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
+  display: none; /* Chrome, Safari, Opera*/
 }
+//body {
+//  -ms-overflow-style: none;
+//}
+//
+//::-webkit-scrollbar {
+//  -webkit-appearance: none;
+//}
 
-::-webkit-scrollbar:vertical {
-  width: 1px;
-}
-
-::-webkit-scrollbar:horizontal {
-  height: 1px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background-color: $gray-666666;
-  border: 1px solid $gray-666666;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 0;
-  border: 1px solid $bg-f7f7f7;
-}
+//::-webkit-scrollbar:vertical {
+//  width: 1px;
+//}
+//
+//::-webkit-scrollbar:horizontal {
+//  height: 1px;
+//}
+//
+//::-webkit-scrollbar-thumb {
+//  border-radius: 0;
+//  background-color: $gray-666666;
+//  border: 1px solid $gray-666666;
+//}
+//
+//::-webkit-scrollbar-track {
+//  border-radius: 0;
+//  border: 1px solid $bg-f7f7f7;
+//}
 
 /* header */
 .header {
