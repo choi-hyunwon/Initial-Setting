@@ -50,10 +50,9 @@
 
   /*폰트 공통*/
   .info-box {
-    width: $min-width;
     padding-top: 150px;
     padding-bottom: 80px;
-    margin: 0 auto;
+    padding-left: 338px;
 
     .title {
       font-size: 56px;
@@ -92,12 +91,12 @@
 
   /*이미지 공통*/
   .img {
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/RD/img-analysis.png);
+    background-size: 1920px 600px;
+    background-position: 0 0;
     margin-bottom: 120px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
 
@@ -111,7 +110,13 @@
   /*더바이옴연구소*/
   .section_theBiome {
     .img {
-      margin-left: 338px;
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-pincette.png);
+      background-size: 1582px 560px;
+      background-position: 323px 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
     }
   }
 
@@ -202,7 +207,12 @@
     margin-bottom: 120px;
 
     .img {
-      margin-left: 338px;
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-bigData.png);
+      background-size: 1582px 560px;
+      background-position: 323px 0;
+      background-repeat: no-repeat;
       margin-bottom: 100px;
     }
   }
@@ -252,12 +262,13 @@
     }
 
     .img {
-      margin-left: 338px;
-      margin-bottom: 150px;
-
-      img {
-        height: 600px;
-      }
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-person_research.png);
+      background-size: 1582px 560px;
+      background-position: 323px 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
     }
   }
 
@@ -418,15 +429,20 @@
     margin-bottom: 120px;
 
     .img {
-      margin-bottom: 100px;
+      width: 100%;
       height: 560px;
+      background-image: url(../img/RD/img-analysis.png);
+      background-size: 1920px 560px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+      overflow: hidden;
     }
 
     .divider {
       margin-top: 90px;
     }
   }
-
 }
 
 

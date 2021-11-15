@@ -86,13 +86,14 @@ $min-width: 1244px;
       position: absolute;
       left: 0;
       bottom: 0;
-      &:before{
+
+      &:before {
         content: '';
         width: 4px;
         height: 4px;
         background: $gray-ffffff;
         position: absolute;
-        top:-14px;
+        top: -14px;
         left: -1px;
         border-radius: 2px;
       }
@@ -105,7 +106,8 @@ $min-width: 1244px;
         position: relative;
         height: 100px;
         overflow: hidden;
-        &:before{
+
+        &:before {
           content: '';
           width: 100%;
           height: 100%;
@@ -114,6 +116,7 @@ $min-width: 1244px;
           border-left: 2px solid #ffffff;
           opacity: 0.2;
         }
+
         &:after {
           content: '';
           width: 100%;
@@ -123,6 +126,7 @@ $min-width: 1244px;
           -webkit-animation: scrollMove 1.5s ease-in infinite;
           animation: scrollMove 1.5s ease-in infinite;
         }
+
         @keyframes scrollMove {
           0% {
             top: -100%;
@@ -133,6 +137,7 @@ $min-width: 1244px;
         }
       }
     }
+
     /*.scroll-wrap {
       position: absolute;
       bottom: 100px;
@@ -237,7 +242,8 @@ $min-width: 1244px;
           position: relative;
           width: 100%;
           height: 602px;
-          min-width:1920px;
+          min-width: 1920px;
+
           .img {
             width: 1370px;
             text-align: right;
@@ -246,8 +252,10 @@ $min-width: 1244px;
 
           .list {
             position: absolute;
-            left: 12.1167%/*166px*/;
-            top: 23.089%/*139px*/;
+            left: 12.1167% /*166px*/
+          ;
+            top: 23.089% /*139px*/
+          ;
 
             li {
               position: relative;
@@ -352,7 +360,7 @@ $min-width: 1244px;
             font-size: 44px;
             line-height: 54px;
             white-space: nowrap;
-            font-family: "Proxima Nova Bold",sans-serif;
+            font-family: "Proxima Nova Bold", sans-serif;
 
             span {
               font-size: 36px;
@@ -527,6 +535,7 @@ $min-width: 1244px;
           &:first-child {
             padding-left: 0;
           }
+
           &:last-child {
             padding-right: 0;
 
@@ -812,10 +821,12 @@ $min-width: 1244px;
 
     .section {
       padding-top: 80px;
+
       &#qualityManagementSystem {
         padding-top: 0;
         margin-top: 0;
-        >.title{
+
+        > .title {
           border-top: none;
         }
       }
@@ -943,8 +954,9 @@ $min-width: 1244px;
       }
 
       > .box {
-         padding: 80px 0;
-         border-bottom: 1px solid $line-e9e9e9;
+        padding: 80px 0;
+        border-bottom: 1px solid $line-e9e9e9;
+
         &:last-of-type {
           padding-bottom: 0;
         }
@@ -1274,8 +1286,9 @@ $min-width: 1244px;
         //overflow: hidden;
         //border-bottom: 1px solid $line-e9e9e9;
         margin-bottom: 280px;
-        &:last-of-type{
-          &:before{
+
+        &:last-of-type {
+          &:before {
             background-color: transparent;
           }
         }
@@ -1318,7 +1331,7 @@ $min-width: 1244px;
             margin-bottom: 120px;
 
             /*  scroll-margin-top: 200px;*/
-            &.height_fix{
+            &.height_fix {
               margin-top: -200px;
               padding-top: 200px;
             }
@@ -1333,7 +1346,8 @@ $min-width: 1244px;
               line-height: 52px;
               letter-spacing: -1px;
               margin-bottom: 40px;
-              .badge{
+
+              .badge {
                 font-weight: 500;
                 line-height: 25px;
               }
@@ -1538,16 +1552,16 @@ $min-width: 1244px;
         }
       }
 
-    /* 딤드제거
-     &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, rgba(100, 109, 118, 0.35) 0%, rgba(42, 76, 83, 0.7) 100%);
-      }*/
+      /* 딤드제거
+       &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, rgba(100, 109, 118, 0.35) 0%, rgba(42, 76, 83, 0.7) 100%);
+        }*/
     }
 
     .section-tip {
@@ -1648,9 +1662,10 @@ $min-width: 1244px;
 
           &:last-child {
             margin-bottom: 0;
-            .img{
-              &:after{
-                border:none;
+
+            .img {
+              &:after {
+                border: none;
               }
             }
           }
@@ -1660,7 +1675,8 @@ $min-width: 1244px;
             width: 261px;
             height: 261px;
             border-radius: 50%;
-            &:after{
+
+            &:after {
               content: '';
               display: inline-block;
               border-right: 1px dashed #909090;
@@ -1936,10 +1952,11 @@ $min-width: 1244px;
                     height: 346px;
                     margin-right: 40px;
                     position: relative;
-                    &:after{
+
+                    &:after {
                       content: '';
                       display: inline-block;
-                      @include background-img($width:61px, $height: 54px, $category: 'macrogen', $img: 'img-trophy.png');
+                      @include background-img($width: 61px, $height: 54px, $category: 'macrogen', $img: 'img-trophy.png');
                       position: absolute;
                       left: 20px;
                       bottom: 20px;
@@ -2043,20 +2060,27 @@ $min-width: 1244px;
       padding: 150px 0 30px;
 
       .main-img {
-        text-align: right;
+        width: 100%;
+        height: 610px;
+        background-image: url(../img/macrogen/ethical-activity-thumb-1.png);
+        background-size: 1582px 610px;
+        background-position: 323px 0;
+        background-repeat: no-repeat;
         margin-bottom: 120px;
+        overflow: hidden;
 
-        img {
-          width: 1582px;
-          height: 610px;
-        }
+
+        //
+        //img {
+        //  width: 1582px;
+        //  height: 610px;
+        //}
       }
 
       .box {
         position: relative;
-        width: 1244px;
-        margin: 0 auto;
         overflow: hidden;
+        padding-left: 323px;
 
         > .title {
           font-weight: 700;
@@ -2163,7 +2187,6 @@ $min-width: 1244px;
     .section-bg {
       position: relative;
       width: 100%;
-      height: 600px;
 
       .inner {
         position: absolute;
@@ -2177,11 +2200,10 @@ $min-width: 1244px;
       .img {
         width: 100%;
         padding: 0 50px;
-        height: 600px;
 
         img {
           width: 100%;
-          height: 100%;
+          height: auto;
         }
       }
 
@@ -2304,6 +2326,7 @@ $min-width: 1244px;
         left: 30%;
       }
     }
+
     @media (max-width: 1440px) {
       .DNA {
         display: none;
@@ -2321,10 +2344,6 @@ $min-width: 1244px;
       overflow: hidden;
       //padding-left: 338px;
       padding-left: calc(100% - 940px - 582px - 60px);
-      background-image: url(../img/macrogen/img-chairman.png);
-      background-size: 940px 850px;
-      background-position: right 0 bottom -72px;
-      background-repeat: no-repeat;
 
       //&::after {
       //  content: '';
@@ -2348,10 +2367,10 @@ $min-width: 1244px;
         .chairman-info {
           overflow: hidden;
           margin-bottom: 180px;
-          //background-image: url(../img/macrogen/img-chairman.png);
-          //background-size: 940px 850px;
-          //background-position: right 0 bottom -72px;
-          //background-repeat: no-repeat;
+          background-image: url(../img/macrogen/img-chairman.png);
+          background-size: 940px 850px;
+          background-position: 642px -72px;
+          background-repeat: no-repeat;
 
           .info {
             float: left;
@@ -2367,7 +2386,8 @@ $min-width: 1244px;
             .font-body {
               font-weight: normal;
               color: $gray-454545;
-              margin-bottom: 15.2941%/*130px*/;
+              margin-bottom: 15.2941% /*130px*/
+            ;
               word-break: keep-all;
 
             }
@@ -2405,23 +2425,23 @@ $min-width: 1244px;
 
     .section-ceo {
       padding-top: 150px;
-      padding-right: 17.4479%/*335px*/;
+      padding-right: 17.4479% /*335px*/;
       padding-bottom: 180px;
 
       .img {
-        max-height: 640px;
+        width: 100%;
+        height: 640px;
         margin-bottom: 100px;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
+        background-image: url(../img/macrogen/img-ceo.png);
+        background-size: 1582px 640px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
       }
 
       .inner {
-       /* width: 1244px;
-        margin: 0 auto;*/
-        padding-left: 21.3248%/*338px*/;
+        /* width: 1244px;
+         margin: 0 auto;*/
+        padding-left: 21.3248% /*338px*/;
 
         .font-h3 {
           margin-bottom: 80px;
@@ -2435,15 +2455,17 @@ $min-width: 1244px;
 
           .font-h7 {
             float: left;
-            width: 37.6904%/*460px / 1247px*/;
-            margin-right:4.8115%;/*60px / 1247px*/
+            width: 37.6904% /*460px / 1247px*/
+          ;
+            margin-right: 4.8115%; /*60px / 1247px*/
             word-break: keep-all;
           }
 
           .font-body {
             word-break: keep-all;
             float: left;
-            width: 56.8564%/*709px / 1247px*/;
+            width: 56.8564% /*709px / 1247px*/
+          ;
             font-weight: normal;
             color: $gray-454545;
             letter-spacing: -0.85px;
@@ -2717,10 +2739,11 @@ $min-width: 1244px;
       padding-top: 140px;
     }
 
-    .section-wrap{
+    .section-wrap {
       overflow: hidden;
 
     }
+
     .section {
       padding: 140px 0 0;
 
@@ -3195,6 +3218,7 @@ $min-width: 1244px;
 
     .section-vision {
       padding: 150px 0;
+
       .inner {
         position: relative;
         z-index: 3;
@@ -3263,7 +3287,8 @@ $min-width: 1244px;
           z-index: 5;
           padding-top: 180px;
           color: $gray-ffffff;
-          width: 62.85%/* 1144px / 1820px */;
+          width: 62.85% /* 1144px / 1820px */
+        ;
 
           .font-h7 {
             position: relative;
@@ -3305,17 +3330,20 @@ $min-width: 1244px;
           z-index: 3;
 
           &.img-1 {
-            right: 13.8461% /* 252px / 1820px */;
+            right: 13.8461% /* 252px / 1820px */
+          ;
             top: 300px;
           }
 
           &.img-2 {
-            right: 17.5824% /* 320px / 1820px */;
+            right: 17.5824% /* 320px / 1820px */
+          ;
             top: 500px;
           }
 
           &.img-3 {
-            right: 16.3736% /* 298px / 1820px */;
+            right: 16.3736% /* 298px / 1820px */
+          ;
             top: 800px;
           }
         }
@@ -3330,7 +3358,8 @@ $min-width: 1244px;
 
       .img {
         float: left;
-        width: 50%/*960px*/;
+        width: 50% /*960px*/
+      ;
         max-height: 799px;
 
         img {
@@ -3342,16 +3371,19 @@ $min-width: 1244px;
       .info {
         float: left;
         width: 50%;
-        padding: 4% 6.6145%/*127px*/;
+        padding: 4% 6.6145% /*127px*/
+      ;
 
         .font-h7 {
           line-height: 38px;
-          margin-bottom: 17.1428%/*120px*/;
+          margin-bottom: 17.1428% /*120px*/
+        ;
         }
 
         .font-h4 {
           line-height: 60px;
-          margin-bottom: 7.894%/*60px*/;
+          margin-bottom: 7.894% /*60px*/
+        ;
         }
 
         .font-body {
@@ -3435,6 +3467,7 @@ $min-width: 1244px;
         top: 1700px;
       }
     }
+
     @media (max-width: 1440px) {
       .parallax-DNA {
         display: none;
@@ -3451,21 +3484,21 @@ $min-width: 1244px;
     /* 아이콘 */
     .ic-mail {
       display: inline-block;
-      @include background-img ($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-mail.svg');
+      @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-mail.svg');
       margin-right: 10px;
       transform: translateY(3px);
     }
 
     .ic-fax {
       display: inline-block;
-      @include background-img ($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-fax.svg');
+      @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-fax.svg');
       margin-right: 10px;
       transform: translateY(4px);
     }
 
     .ic-call {
       display: inline-block;
-      @include background-img ($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-call.svg');
+      @include background-img($width: 16px, $height: 16px, $category: 'macrogen', $img: 'ic-call.svg');
       margin-right: 10px;
       transform: translateY(3px);
     }
@@ -3790,10 +3823,44 @@ $min-width: 1244px;
       }
 
       .list-goals {
+        overflow: hidden;
+
         .goal {
+          width: 100%;
           margin-bottom: 150px;
-          text-align: right;
           height: 600px;
+
+          &:first-child {
+            background-image: url(../img/macrogen/bg-esg-thumb-sm-1.png);
+            background-size: 940px 640px;
+            background-position: 965px 0;
+            background-repeat: no-repeat;
+            padding-left: 338px;
+          }
+
+          &:nth-child(2) {
+            background-image: url(../img/macrogen/bg-esg-thumb-sm-2.png);
+            background-size: 940px 640px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            padding-left: 1107px;
+          }
+
+          &:nth-child(3) {
+            background-image: url(../img/macrogen/bg-esg-thumb-sm-3.png);
+            background-size: 940px 640px;
+            background-position: 965px 0;
+            background-repeat: no-repeat;
+            padding-left: 338px;
+          }
+
+          &:nth-child(4) {
+            background-image: url(../img/macrogen/bg-esg-thumb-sm-4.png);
+            background-size: 940px 640px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            padding-left: 1107px;
+          }
 
           .box {
             display: inline-block;
@@ -3935,7 +4002,8 @@ $min-width: 1244px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 color: $gray-000000;
-                >a{
+
+                > a {
                   color: $gray-000000;
                 }
               }
@@ -4070,7 +4138,8 @@ $min-width: 1244px;
               letter-spacing: -0.75px;
               color: $gray-454545;
               margin-bottom: 30px;
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
 
@@ -4168,22 +4237,19 @@ $min-width: 1244px;
   }
 }
 
-@media (max-width: 1600px) {
-  .macrogen.macrogen-esg .section-management-goals .list-goals .goal {
-    height: 600px * 0.8;
-  }
-  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text {
-    transform: scale(0.8);
-    padding-top: 60px;
-  }
-  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item:nth-child(2).text {
-    margin-left: 107px;
-  }
-  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.bg {
-    width: 940px * 0.8;
-    height: 600px * 0.8;
-  }
-}
-
-@media (max-width: 1920px) {
-}
+//@media (max-width: 1600px) {
+//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal {
+//    height: 600px * 0.8;
+//  }
+//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text {
+//    transform: scale(0.8);
+//    padding-top: 60px;
+//  }
+//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item:nth-child(2).text {
+//    margin-left: 107px;
+//  }
+//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.bg {
+//    width: 940px * 0.8;
+//    height: 600px * 0.8;
+//  }
+//}
