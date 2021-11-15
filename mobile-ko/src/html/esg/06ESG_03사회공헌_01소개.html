@@ -102,17 +102,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
                                 <script>
                                     var swiper = new Swiper("._reward1", {
                                         slidesPerView: 1,
                                         centeredSlides: false,
                                         spaceBetween: 10,
-                                        grabCursor: true,
-                                        // navigation: {
-                                        //     nextEl: '._reward1 + .pagination-wrap .page-item.next',
-                                        //     prevEl: '._reward1 + .pagination-wrap .page-item.prev',
-                                        // },
+                                        pagination: {
+                                            el: " .swiper-pagination",
+                                            clickable : true,
+                                        },
                                     });
                                 </script>
                             </div>
