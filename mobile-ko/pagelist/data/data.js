@@ -291,79 +291,80 @@ data.esg = {
             category: 'ESG',
             page: '06ESG_03사회공헌_03과학자상상세'
         },
-        data.business ={
-            title: 'BUSINESS',
-            list: [
-                {
-                    stateClass: 'working',
-                    url: '연구서비스_NGS',
-                    category: 'business',
-                    page: '연구서비스_NGS'
-                },
-                // {
-                //     stateClass: 'complete',
-                //     url: '연구서비스_CES',
-                //     category: 'business',
-                //     page: '연구서비스_CES'
-                // },
-                // {
-                //     stateClass: 'complete',
-                //     url: '연구서비스_Oligo',
-                //     category: 'business',
-                //     page: '연구서비스_Oligo'
-                // },
-                // {
-                //     stateClass: 'working',
-                //     url: '연구서비스_MICROARRAY',
-                //     category: 'business',
-                //     page: '연구서비스_MICROARRAY'
-                // },
-                // {
-                //     stateClass: 'working',
-                //     url: '연구서비스_동물모델사업부',
-                //     category: 'business',
-                //     page: '연구서비스_동물모델사업부'
-                // },
-                // {
-                //     stateClass: 'working',
-                //     url: '임상진단서비스_암유전체검사',
-                //     category: 'business',
-                //     page: '임상진단서비스_암유전체검사'
-                // },
-                // {
-                //     stateClass: 'working',
-                //     url: '임상진단서비스_신생아유전자검사',
-                //     category: 'business',
-                //     page: '임상진단서비스_신생아유전자검사'
-                // },
-                // {
-                //     stateClass: 'working',
-                //     url: '임상진단서비스_covid19',
-                //     category: 'business',
-                //     page: '임상진단서비스_covid19'
-                // },
-                // {
-                //     stateClass: 'complete',
-                //     url: '헬스케어서비스_개인유전자분석',
-                //     category: 'business',
-                //     page: '헬스케어서비스_개인유전자분석'
-                // },
-                // {
-                //     stateClass: 'complete',
-                //     url: '헬스케어서비스_장내미생물분석',
-                //     category: 'business',
-                //     page: '헬스케어서비스_장내미생물분석'
-                // },
-                // {
-                //     stateClass: 'complete',
-                //     url: '헬스케어서비스_반려동물유전자분석',
-                //     category: 'business',
-                //     page: '헬스케어서비스_반려동물유전자분석'
-                // },
-            ]
-        }
     ]
 
+}
+
+data.business ={
+    title: 'BUSINESS',
+    list: [
+        {
+            stateClass: 'working',
+            url: '연구서비스_NGS',
+            category: 'business',
+            page: '연구서비스_NGS'
+        },
+        // {
+        //     stateClass: 'complete',
+        //     url: '연구서비스_CES',
+        //     category: 'business',
+        //     page: '연구서비스_CES'
+        // },
+        // {
+        //     stateClass: 'complete',
+        //     url: '연구서비스_Oligo',
+        //     category: 'business',
+        //     page: '연구서비스_Oligo'
+        // },
+        // {
+        //     stateClass: 'working',
+        //     url: '연구서비스_MICROARRAY',
+        //     category: 'business',
+        //     page: '연구서비스_MICROARRAY'
+        // },
+        // {
+        //     stateClass: 'working',
+        //     url: '연구서비스_동물모델사업부',
+        //     category: 'business',
+        //     page: '연구서비스_동물모델사업부'
+        // },
+        // {
+        //     stateClass: 'working',
+        //     url: '임상진단서비스_암유전체검사',
+        //     category: 'business',
+        //     page: '임상진단서비스_암유전체검사'
+        // },
+        // {
+        //     stateClass: 'working',
+        //     url: '임상진단서비스_신생아유전자검사',
+        //     category: 'business',
+        //     page: '임상진단서비스_신생아유전자검사'
+        // },
+        // {
+        //     stateClass: 'working',
+        //     url: '임상진단서비스_covid19',
+        //     category: 'business',
+        //     page: '임상진단서비스_covid19'
+        // },
+        // {
+        //     stateClass: 'complete',
+        //     url: '헬스케어서비스_개인유전자분석',
+        //     category: 'business',
+        //     page: '헬스케어서비스_개인유전자분석'
+        // },
+        // {
+        //     stateClass: 'complete',
+        //     url: '헬스케어서비스_장내미생물분석',
+        //     category: 'business',
+        //     page: '헬스케어서비스_장내미생물분석'
+        // },
+        // {
+        //     stateClass: 'complete',
+        //     url: '헬스케어서비스_반려동물유전자분석',
+        //     category: 'business',
+        //     page: '헬스케어서비스_반려동물유전자분석'
+        // },
+    ]
 }
 
 data.RD = {
