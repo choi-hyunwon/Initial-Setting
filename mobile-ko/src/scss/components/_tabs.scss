@@ -246,8 +246,13 @@
 
 /* 아코디언 영역 스타일*/
 .accordion {
+  margin-bottom: ;
   .accordion-item {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+      .accordion-header{
 
+      }
   }
 }
 
@@ -255,9 +260,13 @@
 
 /*content anchor*/
 .content-anchor{
+  display: none;
+  background-color: #fff;
   z-index: 100;
-  position: relative;
+  position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
   cursor: pointer;
   font-size: 18px;
   color: #000;
@@ -285,7 +294,7 @@
     padding: 20px;
     position: absolute;
     background-color: #F5F5F5;
-    height: 244px;
+    max-height: 244px;
     overflow-y: scroll;
 
     .anchor-value{
