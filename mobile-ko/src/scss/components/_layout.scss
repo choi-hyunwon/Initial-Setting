@@ -112,7 +112,7 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 100% 100vh;
     animation: grow 2s;
 
     .frame {
@@ -252,20 +252,20 @@ body {
   }
 }
 
-@keyframes full-bg {
-  0% {
-    background-size: 100% 200vh;
-    opacity: 0;
-  }
-  100% {
-    background-size: 100% 100vh;
-    opacity: 1;
-  }
-}
+//@keyframes full-bg {
+//  0% {
+//    background-size: 100% 200vh;
+//    opacity: 0;
+//  }
+//  100% {
+//    background-size: 100% 100vh;
+//    opacity: 1;
+//  }
+//}
 
 @keyframes grow {
-  0%   { background-size: 200% auto; opacity: 0;}
-  100% { background-size: 100% auto; opacity: 1;}
+  0%   { background-size: 200% 200vh; opacity: 0;}
+  100% { background-size: 100% 100vh; opacity: 1;}
 }
 
 /* footer */
