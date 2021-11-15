@@ -79,7 +79,7 @@
 
                     /*이전 다음 이동*/
                     function setTabContent(idx){
-                        option.eq(idx).addClass('active').siblings().removeClass('active');
+                        $('._selected-value').text($('._select-option li').eq(idx).text());
                         <!--탭메뉴 클릭시 페이지 변경-->
                         $(".info-box-area > div").addClass('show').siblings().removeClass('show');
                         $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
