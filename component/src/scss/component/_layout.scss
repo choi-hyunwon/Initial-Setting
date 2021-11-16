@@ -562,7 +562,7 @@
           position: relative;
 
           .select_site {
-            min-width: 120px;
+            width: 120px;
             color: $gray-000000;
             display: block;
             position: relative;
@@ -581,6 +581,7 @@
             .text {
               font-size: 16px;
               font-weight: $font-weight-bold;
+              display: block;
             }
 
             &.open {
@@ -710,6 +711,26 @@
           font-size: 30px;
           line-height: 42px;
           letter-spacing: -0.5px;
+        }
+      }
+    }
+    .footer {
+      .inner {
+        .section_familysite {
+          .family-box {
+            .popup_box {
+              padding: 30px 15px;
+              width: 215px;
+              height: 440px;
+              .list{
+                margin-bottom: 11px;
+                &:last-of-type{
+                  margin-bottom: 0;
+                  height: 50px;
+                }
+              }
+            }
+          }
         }
       }
     }
