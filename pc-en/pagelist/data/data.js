@@ -426,12 +426,6 @@ data.etc = {
     },
     {
       stateClass: 'complete',
-      url: '03내부정보관리규정',
-      category: 'etc',
-      page: '03내부정보관리규정'
-    },
-    {
-      stateClass: 'complete',
       url: '에러페이지',
       category: 'etc',
       page: '에러페이지'
