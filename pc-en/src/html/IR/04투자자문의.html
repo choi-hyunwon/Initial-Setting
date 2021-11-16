@@ -29,8 +29,10 @@
                     <span class="input-group-text" id="name">Name</span>
                     <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input" aria-describedby="name">
                 </div>
+
+                <!--영문버전 제공 X-->
                 <!-- input / phone-->
-                <div class="input-group input-phone-box">
+               <!-- <div class="input-group input-phone-box">
                     <span class="input-group-text" id="num1">휴대폰 번호</span>
                     <div class="input-group-phone">
                         <div class="select-box ">
@@ -57,19 +59,29 @@
                         </script>
                     </div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다&#46;</span></p>
+                </div>-->
+
+                <!--영문버전 추가 영역 -->
+                <div class="input-group input-email-box">
+                    <span class="input-group-text" id="num1">Email</span>
+                    <input type="email" placeholder="yourmail" class="form-control" aria-label="input" aria-describedby="yourmail" maxlength="14">
+                    <span class="at_sign">@</span>
+                    <input type="text" placeholder="example.com" class="form-control" aria-label="input" aria-describedby="example.com" maxlength="14">
                 </div>
+
+
                 <hr class="divider"/>
             </div>
             <div class="privacy_box">
                 <div class="font-h5"><span>02&#46;</span>문의하실 내용을 작성해주세요</div>
                 <!-- input / text-->
                 <div class="input-group">
-                    <span class="input-group-text" id="title">제목</span>
+                    <span class="input-group-text" id="title">Subject</span>
                     <input type="text" placeholder="제목을 입력하세요" class="form-control" aria-label="input" aria-describedby="title">
                 </div>
                 <!-- textarea -->
                 <div class="input-group">
-                    <span class="input-group-text" id="faq">문의내용</span>
+                    <span class="input-group-text" id="faq">Details</span>
                     <textarea type="text" placeholder="문의하실 내용을 입력하세요" class="form-control" aria-label="input"
                               aria-describedby="faq"></textarea>
                 </div>
@@ -77,7 +89,7 @@
 
                 <!--s 개발영역-->
                 <div class="input-group">
-                    <span class="input-group-text" id="automatic">자동등록방지</span>
+                    <span class="input-group-text" id="automatic">Security code</span>
                     <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;"></span>
                     <input type="text" placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
                 </div>
