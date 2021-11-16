@@ -712,8 +712,26 @@
           line-height: 42px;
           letter-spacing: -0.5px;
         }
+
+        &.frameB {
+          padding-top: 211px;
+          padding-bottom: 100px;
+
+          .hero-title {
+            font-size: 67px;
+            line-height: 72px;
+            margin-bottom: 20px;
+          }
+
+          .slogan-sub {
+            font-size: 40px;
+            line-height: 72px;
+          }
+        }
+
       }
     }
+
     .footer {
       .inner {
         .section_familysite {
