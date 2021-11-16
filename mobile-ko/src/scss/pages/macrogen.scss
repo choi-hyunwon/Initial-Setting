@@ -3,6 +3,11 @@
  v.0.1 (주연) 최초 작업 -- 2021.11.9
 |----------------------------------|
 */
+.select-box {
+  display: none;
+  left: 0;
+}
+
 .macrogen {
   /* s 공통 */
   .badge {
@@ -94,6 +99,7 @@
       }
     }
   }
+
   /* e 공통 */
 
   &.company-overview {
@@ -2075,9 +2081,14 @@
         margin-top: 138px;
 
         .history-list {
+          display: none;
           position: relative;
           padding-top: 80px;
           border-top: 10px solid $bg-f5f5f5;
+
+          &.active {
+            display: block;
+          }
 
           .year {
             font-family: $font-family-bold;

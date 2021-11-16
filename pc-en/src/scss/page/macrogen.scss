@@ -328,7 +328,6 @@ $min-width: 1244px;
         font-size: 18px;
         line-height: 32px;
         letter-spacing: -0.75px;
-        color: $gray-454545;
         margin-bottom: 100px;
       }
 
@@ -340,6 +339,32 @@ $min-width: 1244px;
           width: 200px;
           margin-right: 74px;
           text-align: center;
+
+          &:nth-child(2) {
+            .desc {
+              margin-left: -15px;
+            }
+          }
+
+
+          &:nth-child(5) {
+            .desc {
+              margin-left: -30px;
+            }
+          }
+
+          &:nth-child(6) {
+            .desc {
+              margin-left: -10px;
+            }
+          }
+
+          &:nth-child(8) {
+            .desc {
+              margin-left: -35px;
+            }
+          }
+
 
           .img {
             display: block;
@@ -570,17 +595,10 @@ $min-width: 1244px;
           height: 560px;
           margin-bottom: 40px;
 
-          &::after {
-            content: '';
-            position: absolute;
-            width: 435px;
-            height: 1px;
-            left: 50px;
-            bottom: 156px;
-            background-color: rgba(255, 255, 255, .2);
-          }
-
           img {
+            position: absolute;
+            left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
           }
@@ -606,6 +624,16 @@ $min-width: 1244px;
             color: $gray-ffffff;
             bottom: 40px;
             left: 50px;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 435px;
+              height: 1px;
+              left: 0;
+              bottom: 156px;
+              background-color: rgba(255, 255, 255, .2);
+            }
           }
         }
 
@@ -2492,7 +2520,7 @@ $min-width: 1244px;
     }
 
     .section-chairman-career {
-      padding-top: 130px;
+      padding-top: 70px;
       @include background-img($width: 1920px, $height: 1009px, $category: 'macrogen', $img: 'bg-chairman-career.png');
       width: auto;
       background-position: center;
@@ -2504,7 +2532,7 @@ $min-width: 1244px;
 
         .item {
           overflow: hidden;
-          margin-bottom: 60px;
+          margin-bottom: 30px;
 
           &:last-child {
             margin-bottom: 0;
@@ -2524,15 +2552,15 @@ $min-width: 1244px;
               position: relative;
               display: inline-block;
 
-              &::after {
-                content: '';
-                position: absolute;
-                width: 50px;
-                height: 3px;
-                right: -60px;
-                bottom: 7px;
-                background: $bg-ffffff;
-              }
+              //&::after {
+              //  content: '';
+              //  position: absolute;
+              //  width: 50px;
+              //  height: 3px;
+              //  right: -60px;
+              //  bottom: 7px;
+              //  background: $bg-ffffff;
+              //}
             }
           }
 
@@ -2562,21 +2590,21 @@ $min-width: 1244px;
 
               span {
                 float: left;
-                white-space: nowrap;
+                //white-space: nowrap;
                 display: inline-block;
 
                 em {
                   font-style: normal;
-                  letter-spacing: -0.75px;
-                  font-size: 18px;
-                  font-weight: 700;
+                  //letter-spacing: -0.75px;
+                  //font-size: 18px;
+                  //font-weight: 700;
                 }
 
                 &:first-child {
                   position: relative;
                   width: 155px;
                   font-weight: 700;
-                  font-size: 22px;
+                  font-size: 16px;
                   line-height: 28px;
                   letter-spacing: 0.5px;
                   color: $gray-ffffff;
@@ -3351,44 +3379,34 @@ $min-width: 1244px;
     }
 
     .section-management-philosophy {
-      /*overflow: hidden;*/
-      padding-top: 180px;
-      min-width: $min-width;
+      overflow: hidden;
+      padding-top: 100px;
+      width: 100%;
       height: 980px;
-
-      .img {
-        float: left;
-        width: 50% /*960px*/
-      ;
-        max-height: 799px;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
+      background-image: url(../img/macrogen/img-management-philosophy.png);
+      background-size: 960px 799px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      padding-left: 1087px;
+      margin-top: 180px;
 
       .info {
-        float: left;
-        width: 50%;
-        padding: 4% 6.6145% /*127px*/
-      ;
-
         .font-h7 {
           line-height: 38px;
-          margin-bottom: 17.1428% /*120px*/
-        ;
+          margin-bottom: 120px;
+          white-space: nowrap;
         }
 
         .font-h4 {
           line-height: 60px;
-          margin-bottom: 7.894% /*60px*/
-        ;
+          margin-bottom: 60px;
+          white-space: nowrap;
         }
 
         .font-body {
           font-weight: normal;
           color: $gray-454545;
+          white-space: nowrap;
         }
       }
     }
@@ -4236,20 +4254,20 @@ $min-width: 1244px;
     top: auto;
   }
 }
-
-//@media (max-width: 1600px) {
-//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal {
-//    height: 600px * 0.8;
-//  }
-//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text {
-//    transform: scale(0.8);
-//    padding-top: 60px;
-//  }
-//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item:nth-child(2).text {
-//    margin-left: 107px;
-//  }
-//  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.bg {
-//    width: 940px * 0.8;
-//    height: 600px * 0.8;
-//  }
-//}
+/* 영문 */
+.en {
+  /* 경영진 */
+  .macrogen.macrogen-management .section-chairman-career {
+    padding-top: 130px;
+    height: 1394px;
+  }
+  .macrogen.macrogen-management .section-chairman-career .inner .item .list li span:first-child {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 15px;
+  }
+  .macrogen.macrogen-management .section-chairman-career .inner .item .list li span:nth-child(2) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

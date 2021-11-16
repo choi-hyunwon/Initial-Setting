@@ -11,18 +11,21 @@
  v.0.9 태윤 : &.container-fluid max-width:1920px 추가
  v.0.10 선미 : .wrap > .full-bg > .frame > .breadcrumb ( right: 335px; )추가
  v.0.11 선미 : .footer 전체 변경 / full-bg(크기값 고정) /  breadcrumb : right: 335px;제거 / 레이아웃 전체 구조변경
+ v.0.12 주연 : .en (영문 클래스 추가)
  |----------------------------------|
 */
 .wrap {
   position: relative;
   width: 100%;
   min-width: 1366px;
+
   .full-bg {
     width: 100%;
     height: 100%;
     max-width: 1920px;
     max-height: 980px;
     margin: 0 auto;
+
     .frame {
       position: relative;
       width: 1244px;
@@ -195,7 +198,7 @@
           vertical-align: middle;
 
           ul {
-            font-family: "Proxima Nova Bold","Noto Sans KR", sans-serif !important;
+            font-family: "Proxima Nova Bold", "Noto Sans KR", sans-serif !important;
 
             li {
               text-transform: uppercase;
@@ -421,7 +424,7 @@
     margin: 0 auto;
     padding: 0 0 150px !important;
     max-width: 1920px;
-    margin:0 auto;
+    margin: 0 auto;
 
     &.container-fluid {
       width: 100%;
@@ -431,6 +434,7 @@
 
   .footer {
     position: relative;
+
     &:before {
       content: '';
       display: inline-block;
@@ -529,9 +533,10 @@
                         background: none;
                       }
                     }
-                    &:nth-of-type(2){
-                      span{
-                        a{
+
+                    &:nth-of-type(2) {
+                      span {
+                        a {
                           color: #2e87ef;
                         }
                       }
@@ -555,12 +560,14 @@
 
         .family-box {
           position: relative;
+
           .select_site {
             min-width: 120px;
             color: $gray-000000;
             display: block;
             position: relative;
-            &:before{
+
+            &:before {
               content: '';
               display: block;
               background: url("../img/common/ico-footer-select-top.png") no-repeat right center;
@@ -568,16 +575,18 @@
               height: 6px;
               position: absolute;
               right: 0;
-              top:9px;
+              top: 9px;
             }
-              .text {
-                font-size: 16px;
-                font-weight: $font-weight-bold;
+
+            .text {
+              font-size: 16px;
+              font-weight: $font-weight-bold;
             }
-            &.open{
-              &:before{
-              transform: rotate(180deg);
-             }
+
+            &.open {
+              &:before {
+                transform: rotate(180deg);
+              }
             }
           }
 
@@ -601,11 +610,13 @@
               font-size: 16px;
               height: 30px;
               margin-bottom: 20px;
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              &:hover{
-                color:$point-active;
+
+              &:hover {
+                color: $point-active;
                 font-weight: bold;
               }
             }
@@ -618,28 +629,35 @@
         position: absolute;
         right: 0;
         bottom: 10px;
-        .sns{
-          li{
+
+        .sns {
+          li {
             width: 30px;
             height: 30px;
             float: left;
             margin-right: 8px;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-right: 0;
             }
-            &.facebook{
+
+            &.facebook {
               background: url("../img/common/ico-facebook-circle.svg") no-repeat center center;
             }
-            &.youtube{
+
+            &.youtube {
               background: url("../img/common/ico-youtube-circle.svg") no-repeat center center;
             }
-            &.blog{
+
+            &.blog {
               background: url("../img/common/ico-blog-circle.svg") no-repeat center center;
             }
-            &.linkedin{
+
+            &.linkedin {
               background: url("../img/common/ico-linkedin-circle.svg") no-repeat center center;
             }
-            a{
+
+            a {
               display: block;
               width: 30px;
               height: 30px;
@@ -674,11 +692,24 @@
         padding-bottom: 262px;
 
         .hero-title {
-          margin-bottom: 160px;
+          font-size: 42px;
+          line-height: 54px;
+          margin-bottom: 90px;
+          letter-spacing: 0;
         }
 
         .slogan {
-          margin-bottom: 26px;
+          font-size: 80px;
+          line-height: 86px;
+          margin-bottom: 36px;
+          letter-spacing: -0.5px;
+        }
+
+        .slogan-sub {
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 42px;
+          letter-spacing: -0.5px;
         }
       }
     }
