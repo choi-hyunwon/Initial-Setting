@@ -4,6 +4,36 @@
 |----------------------------------|
 */
 
+
+.en{
+  .wrap{
+    .full-bg{
+      &.business_bg{
+        .frame{
+          .hero-title{
+            font-size: 64px;
+            line-height: 93px;
+            letter-spacing: -3px;
+            margin-bottom: 10px;
+          }
+          .slogan-sub{
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: -0.75px;
+          }
+
+          &.frameB{
+            padding-bottom: 100px;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+
 .business_bg{
   max-width: 1920px;
   width: 100%;
