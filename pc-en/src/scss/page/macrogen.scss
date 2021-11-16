@@ -328,7 +328,6 @@ $min-width: 1244px;
         font-size: 18px;
         line-height: 32px;
         letter-spacing: -0.75px;
-        color: $gray-454545;
         margin-bottom: 100px;
       }
 
@@ -340,6 +339,32 @@ $min-width: 1244px;
           width: 200px;
           margin-right: 74px;
           text-align: center;
+
+          &:nth-child(2) {
+            .desc {
+              margin-left: -15px;
+            }
+          }
+
+
+          &:nth-child(5) {
+            .desc {
+              margin-left: -30px;
+            }
+          }
+
+          &:nth-child(6) {
+            .desc {
+              margin-left: -10px;
+            }
+          }
+
+          &:nth-child(8) {
+            .desc {
+              margin-left: -35px;
+            }
+          }
+
 
           .img {
             display: block;
@@ -570,17 +595,10 @@ $min-width: 1244px;
           height: 560px;
           margin-bottom: 40px;
 
-          &::after {
-            content: '';
-            position: absolute;
-            width: 435px;
-            height: 1px;
-            left: 50px;
-            bottom: 156px;
-            background-color: rgba(255, 255, 255, .2);
-          }
-
           img {
+            position: absolute;
+            left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
           }
@@ -606,6 +624,16 @@ $min-width: 1244px;
             color: $gray-ffffff;
             bottom: 40px;
             left: 50px;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 435px;
+              height: 1px;
+              left: 0;
+              bottom: 156px;
+              background-color: rgba(255, 255, 255, .2);
+            }
           }
         }
 
@@ -2492,7 +2520,7 @@ $min-width: 1244px;
     }
 
     .section-chairman-career {
-      padding-top: 130px;
+      padding-top: 70px;
       @include background-img($width: 1920px, $height: 1009px, $category: 'macrogen', $img: 'bg-chairman-career.png');
       width: auto;
       background-position: center;
@@ -2504,7 +2532,7 @@ $min-width: 1244px;
 
         .item {
           overflow: hidden;
-          margin-bottom: 60px;
+          margin-bottom: 30px;
 
           &:last-child {
             margin-bottom: 0;
@@ -2524,15 +2552,15 @@ $min-width: 1244px;
               position: relative;
               display: inline-block;
 
-              &::after {
-                content: '';
-                position: absolute;
-                width: 50px;
-                height: 3px;
-                right: -60px;
-                bottom: 7px;
-                background: $bg-ffffff;
-              }
+              //&::after {
+              //  content: '';
+              //  position: absolute;
+              //  width: 50px;
+              //  height: 3px;
+              //  right: -60px;
+              //  bottom: 7px;
+              //  background: $bg-ffffff;
+              //}
             }
           }
 
@@ -2562,21 +2590,21 @@ $min-width: 1244px;
 
               span {
                 float: left;
-                white-space: nowrap;
+                //white-space: nowrap;
                 display: inline-block;
 
                 em {
                   font-style: normal;
-                  letter-spacing: -0.75px;
-                  font-size: 18px;
-                  font-weight: 700;
+                  //letter-spacing: -0.75px;
+                  //font-size: 18px;
+                  //font-weight: 700;
                 }
 
                 &:first-child {
                   position: relative;
                   width: 155px;
                   font-weight: 700;
-                  font-size: 22px;
+                  font-size: 16px;
                   line-height: 28px;
                   letter-spacing: 0.5px;
                   color: $gray-ffffff;
