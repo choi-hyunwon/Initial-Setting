@@ -182,7 +182,8 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_06글로벌네트워크'
     },
-    {
+    <!--영문버전 제공 X-->
+   /* {
       stateClass: 'complete',
       url: '01Macrogen_04채용_01인재상',
       category: 'macrogen',
@@ -205,7 +206,7 @@ data.macrogen = {
       url: '01Macrogen_04채용_03채용안내_02조회',
       category: 'macrogen',
       page: '01Macrogen_04채용_03채용안내_02조회'
-    },
+    },*/
   ]
 }
 data.business ={
