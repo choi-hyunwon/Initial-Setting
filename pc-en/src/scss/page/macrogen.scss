@@ -4274,4 +4274,11 @@ $min-width: 1244px;
     height: 290px;
     padding: 40px;
   }
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:first-child {
+    width: 247px;
+  }
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:nth-child(2) {
+    width: calc(100% - 247px);
+    vertical-align: top;
+  }
 }
