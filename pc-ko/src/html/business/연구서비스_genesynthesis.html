@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <!--    @@include('../../html/include/common/wrap-img.html', {'src' : '../../img/@temp/Image-trace/02BUSINESS_01연구서비스_01NGS_01WholeGenomeSequencing.png'})-->
+    <div class="full-bg business_bg ces">
+        @@include('../../html/include/component/header.html')
+        <div class="frame frameB">
+            @@include('../../html/include/common/breadcrumb-white-depth3.html',{
+            "depth1": "Business",
+            "depth2": "연구서비스",
+            "depth3": "GENE SYNTHESIS",
+            })
+            <div class="hero-title">GENE SYNTHESIS</div>
+            <a href="#_tab-box" class="btn btn-round btn-service">
+                <span>SERVICE</span>
+                <i class="icon icon-arrow-bottom-short-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section_business">
+            <!--메인 컨텐츠-->
+            <div class="subject-box no-line">
+                <p class="title font-h4">유전자합성(Gene Synthesis)은 고객의 유전자 서열 주문에 따라<br>
+                    유전자를 합성하여 제공합니다.
+                </p>
+                <p class="subject img_bottom">유전자 합성은 백신 제조, 유전자치료, 형질발현 등 재조합 DNA를 연구하는 분야에서 널리 활용되고 있습니다.</p>
+                <!--10.05 이미지 경로 변경-->
+                <div class="img">
+                    <img src="../../img/business/img-ces-genesynthesis.png" alt="genesynthesisIntro">
+                </div>
+            </div>
+            <div class="info-box">
+            <div class="list-area-group">
+                <div class="list-area">
+                    <p class="title font-h8">Features</p>
+                    <ul class="list-circle-dot">
+                        <li>Cloning 서비스 무료(Macrogen standard vector)</li>
+                        <li>ABI 3730xl를 이용한 100% 염기서열 보장</li>
+                        <li>Mutagenesis 서비스 가능</li>
+                        <li>Plasmid DNA로 제공</li>
+                        <li>Sequencing 무료 제공</li>
+                        <li>LIMS(Laboratory Information Management System)를 기반으로 견적문의 및 주문가능</li>
+                    </ul>
+                </div>
+                <div class="list-area">
+                    <p class="font-h8 title img_bottom">Workflow</p>
+                    <!--10.05 이미지 경로 변경-->
+                    <div class="img">
+                        <img src="../../img/business/img-gene-flow5.png" alt="workflow">
+                    </div>
+                </div>
+            </div>
+                <div class="btn-area">
+                    <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                    <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
+                    <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('../../html/include/component/footer.html')
+    @@include('../../html/include/component/toTop.html')
+</div>
+</body>
+</html>

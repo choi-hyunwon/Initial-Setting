@@ -56,6 +56,12 @@
   }
 }
 .section_business{
+  .img{
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
   .subject-box{
     position: relative;
     padding-bottom: 120px;
@@ -91,6 +97,9 @@
       margin-bottom: 80px;
       &.info{
         margin-bottom: 0;
+      }
+      &.img_bottom{
+        margin-bottom: 60px;
       }
     }
 
