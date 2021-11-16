@@ -29,7 +29,7 @@
             </div>
             <!-- e tab-->
             <div class="section-wrap">
-                <div class="section show _section1">
+                <div class="section show _section">
                     <div class="select-box">
                         <div class="selected-value _selectedValue">
                             <span class="text">2021</span>
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section _section2">
+                <div class="section _section">
                     <div class="select-box">
                         <div class="selected-value _selectedValue">
                             <span class="text">2021</span>
@@ -369,7 +369,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section _section3">
+                <div class="section _section">
                     <div class="select-box">
                         <div class="selected-value _selectedValue">
                             <span class="text">2021</span>
@@ -539,7 +539,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section _section4">
+                <div class="section _section">
                     <div class="select-box">
                         <div class="selected-value _selectedValue">
                             <span class="text">2021</span>
@@ -716,70 +716,9 @@
     @@include('../../html/include/components/toTop.html')
 </div>
 <script>
-    selectInit('._section1');
-    selectInit('._section2');
-    selectInit('._section3');
-    selectInit('._section4');
-
-    function selectInit (section) {
-        let target = $(section);
-        let selectBox = target.find(".select-box");
-        console.log(selectBox)
-        let option = target.find(".option-value");
-
-        selectBox.on('click', function () {
-            console.log(selectBox)
-            let select = $(this);
-            if (select.hasClass('open')) {
-                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-            } else {
-                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                $('body').on('click', function (e) {
-                    if (selectBox.hasClass('open')) {
-                        if (!selectBox.has(e.target).length) {
-                            selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                        }
-                    }
-                    e.preventDefault()
-                })
-            }
-        });
-
-        option.on('click', function () {
-            console.log(option)
-            let select = $(this).find('a').text();
-            let thisOption = $(this);
-            let thisIndex = thisOption.index();
-            selectBox.find('._selectedValue').find('span').text(select);
-            target.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active')
-        });
-    }
-
-    $(window).on('mousewheel',function(e){
-        let listPos = $('.section.show .history-list.active').offset().top;
-        let selectBox = $('.section.show .select-box');
-        let offset = $(this).scrollTop();
-        let wheel = e.originalEvent.wheelDelta;
-
-        if(wheel > 0){
-            if (offset > listPos) {
-                selectBox.show().css({'position': 'fixed','top':'70px'});
-            }
-            else {
-                selectBox.hide();
-            }
-        } else {
-            if (offset > listPos) {
-                selectBox.show().css({'position': 'fixed','top':'0'});
-            }
-            else {
-                selectBox.hide();
-            }
-        }
-    });
-</script>
-<script>
-    // tab
+    /**
+     * swiper
+     */
     new Swiper("._swiperTab", {
         slidesPerView: "auto",
         spaceBetween: 0,
@@ -808,7 +747,6 @@
 
     $('.swiper-wrapper').css('width', sum);
 
-    // slider
     $(".section-wrap .swiper-container").each(function(index){
         var $this = $(this);
         $this.addClass('slider-' + index);
@@ -827,6 +765,9 @@
         });
     });
 
+    /**
+     * tab
+     */
     function setTabContent (idx){
         var slide =  $('._swiperTab').find('.swiper-slide');
         var section =  $(".section-wrap").find('.section');
@@ -840,6 +781,101 @@
         var idx = $(this).index();
         setTabContent(idx)
     });
+
+    /**
+     * fnSelectBox
+     * @param selectBox
+     */
+    function fnSelectBox (selectBox){
+        selectBox.on('click', function () {
+            let select = $(this);
+            if (select.hasClass('open')) {
+                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+            } else {
+                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            }
+        });
+    }
+
+    /**
+     * fnOptionBox
+     * @param section
+     * @param option
+     * @param selectBox
+     */
+    function fnOptionBox (section, option ,selectBox){
+        option.on('click', function () {
+            let select = $(this).find('a').text();
+            let thisOption = $(this);
+            let thisIndex = thisOption.index();
+            selectBox.find('._selectedValue').find('span').text(select);
+            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active')
+        });
+    }
+
+    /**
+     * selectInit
+     * @param section
+     */
+    function selectInit (section) {
+        $('._section').each(function (){
+            let target = $(this);
+            let selectBox = target.find(".select-box");
+            let option = target.find(".option-value");
+            fnSelectBox(selectBox);
+            fnOptionBox(target, option, selectBox);
+        })
+    }
+
+    /**
+     * fnBodyEvent
+     */
+    function fnBodyEvent(){
+        $('body').on('click', function (e) {
+            var $select = $(".select-box");
+            if ($select.hasClass('open')) {
+                if (!$select.has(e.target).length) {
+                    $select.removeClass("open").next('.select-option').slideUp(200).removeClass("open");
+                }
+            }
+            e.preventDefault()
+        })
+    }
+
+    /**
+     * fnMousewheel
+     */
+    function fnMousewheel(){
+        $(window).on('mousewheel',function(e){
+            let listPos = $('.section.show .history-list.active').offset().top;
+            let selectBox = $('.section.show .select-box');
+            let offset = $(this).scrollTop();
+            let wheel = e.originalEvent.wheelDelta;
+
+            if(wheel > 0){
+                if (offset > listPos) {
+                    selectBox.show().css({'position': 'fixed','top':'70px'});
+                }
+                else {
+                    selectBox.hide();
+                }
+            } else {
+                if (offset > listPos) {
+                    selectBox.show().css({'position': 'fixed','top':'0'});
+                }
+                else {
+                    selectBox.hide();
+                }
+            }
+        });
+    }
+
+    /**
+     * 함수 실행
+     */
+    selectInit();
+    fnBodyEvent();
+    fnMousewheel();
 </script>
 @@include('../../html/include/components/gnb.html')
 </body>
