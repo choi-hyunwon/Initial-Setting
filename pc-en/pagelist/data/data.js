@@ -171,7 +171,7 @@ data.macrogen = {
       page: '01Macrogen_05인증'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_06ContactUs',
       category: 'macrogen',
       page: '01Macrogen_06ContactUs'
@@ -400,36 +400,6 @@ data.IR = {
       url: '01재무정보',
       category: 'IR',
       page: '01재무정보'
-    },
-    {
-      stateClass: 'complete',
-      url: '02공시정보_01공고_01목록',
-      category: 'IR',
-      page: '02공시정보_01공고_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '02공시정보_01공고_02조회',
-      category: 'IR',
-      page: '02공시정보_01공고_02조회'
-    },
-    {
-      stateClass: 'complete',
-      url: '02공시정보_02공시정보',
-      category: 'IR',
-      page: '02공시정보_02공시정보'
-    },
-    {
-      stateClass: 'complete',
-      url: '03IR소식_01목록',
-      category: 'IR',
-      page: '03IR소식_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '03IR소식_02조회',
-      category: 'IR',
-      page: '03IR소식_02조회'
     },
     {
       stateClass: 'complete',
