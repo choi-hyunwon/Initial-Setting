@@ -368,6 +368,9 @@
         </div>
     </div>
 </div>
+<div class="toast-popup">
+    <p>이미지를 확대할 수 있습니다</p>
+</div>
 <script>
     // modal show
     var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
@@ -378,11 +381,13 @@
     // modal close
     $('.btn-close').on('click', function () {
         modal.hide();
+        hideToastPopup();
     })
 
     // modal open
     $('._btnZoom-1').on('click', function () {
         modal.show();
+        showToastPopup();
     })
 
 
@@ -395,7 +400,6 @@
     function hideToastPopup() {
         $('.toast-popup').removeClass('active');
     }
-    setTimeout(showToastPopup, 1500);
 </script>
 <!--1번이미지 모달 e-->
 </body>
