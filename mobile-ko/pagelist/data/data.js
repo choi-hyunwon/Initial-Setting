@@ -264,31 +264,31 @@ data.esg = {
         {
             stateClass: 'complete',
             url: '06ESG_01ESG경영',
-            category: 'ESG',
+            category: 'esg',
             page: '06ESG_01ESG경영'
         },
         {
             stateClass: 'complete',
             url: '06ESG_02윤리경영',
-            category: 'ESG',
+            category: 'esg',
             page: '06ESG_02윤리경영'
         },
         {
             stateClass: 'complete',
             url: '06ESG_03사회공헌_01소개',
-            category: 'ESG',
+            category: 'esg',
             page: '06ESG_03사회공헌_01소개'
         },
         {
             stateClass: 'complete',
             url: '06ESG_03사회공헌_02과학자상목록',
-            category: 'ESG',
+            category: 'esg',
             page: '06ESG_03사회공헌_02과학자상목록'
         },
         {
             stateClass: 'complete',
             url: '06ESG_03사회공헌_03과학자상상세',
-            category: 'ESG',
+            category: 'esg',
             page: '06ESG_03사회공헌_03과학자상상세'
         },
     ]
