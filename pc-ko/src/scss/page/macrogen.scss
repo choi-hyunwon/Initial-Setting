@@ -205,7 +205,8 @@ $min-width: 1244px;
         align-items: center;
         letter-spacing: -0.5px;
         text-transform: uppercase;
-        margin: 0 auto 28px;
+        margin: 0 0 28px;
+        padding-left: 337px;
       }
 
       .title-sm {
@@ -213,7 +214,8 @@ $min-width: 1244px;
         font-size: 26px;
         line-height: 38px;
         letter-spacing: -0.75px;
-        margin: 0 auto 100px;
+        margin: 0 0 100px;
+        padding-left: 337px;
       }
 
       .text-box {
@@ -2187,56 +2189,62 @@ $min-width: 1244px;
     .section-bg {
       position: relative;
       width: 100%;
-
-      .inner {
-        position: absolute;
-        width: $min-width;
-        height: 600px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0;
-      }
-
-      .img {
-        width: 100%;
-        padding: 0 50px;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .txt-box {
-        position: absolute;
-        right: 82px;
-        top: 50%;
-        transform: translateY(-50%);
-
-        li {
-          position: relative;
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 52px;
-          letter-spacing: -1px;
-          color: $gray-ffffff;
-          margin-bottom: 22px;
-
-          &::before {
-            content: '';
-            position: absolute;
-            width: 30px;
-            height: 4px;
-            background-color: $gray-ffffff;
-            left: -48px;
-            top: 23px;
-          }
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-        }
-      }
+      height: 600px;
+      background-image: url(../img/macrogen/bg-talent-banner.png);
+      background-size: 1820px 600px;
+      background-position: 50px 0;
+      background-repeat: no-repeat;
+      //
+      //
+      //.inner {
+      //  position: absolute;
+      //  width: $min-width;
+      //  height: 600px;
+      //  left: 50%;
+      //  transform: translateX(-50%);
+      //  top: 0;
+      //}
+      //
+      //.img {
+      //  width: 100%;
+      //  padding: 0 50px;
+      //
+      //  img {
+      //    width: 100%;
+      //    height: auto;
+      //  }
+      //}
+      //
+      //.txt-box {
+      //  position: absolute;
+      //  right: 82px;
+      //  top: 50%;
+      //  transform: translateY(-50%);
+      //
+      //  li {
+      //    position: relative;
+      //    font-weight: 700;
+      //    font-size: 36px;
+      //    line-height: 52px;
+      //    letter-spacing: -1px;
+      //    color: $gray-ffffff;
+      //    margin-bottom: 22px;
+      //
+      //    &::before {
+      //      content: '';
+      //      position: absolute;
+      //      width: 30px;
+      //      height: 4px;
+      //      background-color: $gray-ffffff;
+      //      left: -48px;
+      //      top: 23px;
+      //    }
+      //
+      //    &:last-child {
+      //      margin-bottom: 0;
+      //    }
+      //  }
+      //}
     }
 
     .section-core-talent {
@@ -2343,7 +2351,7 @@ $min-width: 1244px;
       //margin-left: auto;
       overflow: hidden;
       //padding-left: 338px;
-      padding-left: calc(100% - 940px - 582px - 60px);
+      padding-left: 323px;
 
       //&::after {
       //  content: '';
