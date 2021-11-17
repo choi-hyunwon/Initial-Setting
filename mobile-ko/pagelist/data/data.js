@@ -298,12 +298,12 @@ data.esg = {
 data.business ={
     title: 'BUSINESS',
     list: [
-        {
-            stateClass: 'working',
-            url: '연구서비스_NGS',
-            category: 'business',
-            page: '연구서비스_NGS'
-        },
+        // {
+        //     stateClass: 'working',
+        //     url: '연구서비스_NGS',
+        //     category: 'business',
+        //     page: '연구서비스_NGS'
+        // },
         // {
         //     stateClass: 'complete',
         //     url: '연구서비스_CES',
@@ -340,12 +340,12 @@ data.business ={
         //     category: 'business',
         //     page: '임상진단서비스_신생아유전자검사'
         // },
-        // {
-        //     stateClass: 'working',
-        //     url: '임상진단서비스_covid19',
-        //     category: 'business',
-        //     page: '임상진단서비스_covid19'
-        // },
+        {
+            stateClass: 'complete',
+            url: '임상진단서비스_covid19',
+            category: 'business',
+            page: '임상진단서비스_covid19'
+        },
         // {
         //     stateClass: 'complete',
         //     url: '헬스케어서비스_개인유전자분석',
