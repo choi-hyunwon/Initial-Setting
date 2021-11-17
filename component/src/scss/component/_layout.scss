@@ -12,6 +12,7 @@
  v.0.10 선미 : .wrap > .full-bg > .frame > .breadcrumb ( right: 335px; )추가
  v.0.11 선미 : .footer 전체 변경 / full-bg(크기값 고정) /  breadcrumb : right: 335px;제거 / 레이아웃 전체 구조변경
  v.0.12 주연 : .en (영문 클래스 추가)
+ v.0.13 선미 : .en = (full-bg > frameB) / (footer) 추가
  |----------------------------------|
 */
 .wrap {
@@ -712,8 +713,26 @@
           line-height: 42px;
           letter-spacing: -0.5px;
         }
+
+        &.frameB {
+          padding-top: 211px;
+          padding-bottom: 100px;
+
+          .hero-title {
+            font-size: 67px;
+            line-height: 72px;
+            margin-bottom: 20px;
+          }
+
+          .slogan-sub {
+            font-size: 40px;
+            line-height: 72px;
+          }
+        }
+
       }
     }
+
     .footer {
       .inner {
         .section_familysite {

@@ -171,7 +171,7 @@ data.macrogen = {
       page: '01Macrogen_05인증'
     },
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '01Macrogen_06ContactUs',
       category: 'macrogen',
       page: '01Macrogen_06ContactUs'
@@ -223,6 +223,12 @@ data.business ={
       url: '연구서비스_CES',
       category: 'business',
       page: '연구서비스_CES'
+    },
+    {
+      stateClass: 'complete',
+      url: '연구서비스_genesynthesis',
+      category: 'business',
+      page: '연구서비스_genesynthesis'
     },
     {
       stateClass: 'complete',
@@ -397,36 +403,6 @@ data.IR = {
     },
     {
       stateClass: 'complete',
-      url: '02공시정보_01공고_01목록',
-      category: 'IR',
-      page: '02공시정보_01공고_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '02공시정보_01공고_02조회',
-      category: 'IR',
-      page: '02공시정보_01공고_02조회'
-    },
-    {
-      stateClass: 'complete',
-      url: '02공시정보_02공시정보',
-      category: 'IR',
-      page: '02공시정보_02공시정보'
-    },
-    {
-      stateClass: 'complete',
-      url: '03IR소식_01목록',
-      category: 'IR',
-      page: '03IR소식_01목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '03IR소식_02조회',
-      category: 'IR',
-      page: '03IR소식_02조회'
-    },
-    {
-      stateClass: 'complete',
       url: '04투자자문의',
       category: 'IR',
       page: '04투자자문의'
@@ -447,12 +423,6 @@ data.etc = {
       url: '02영상정보_운영_관리',
       category: 'etc',
       page: '02영상정보_운영_관리'
-    },
-    {
-      stateClass: 'complete',
-      url: '03내부정보관리규정',
-      category: 'etc',
-      page: '03내부정보관리규정'
     },
     {
       stateClass: 'complete',
