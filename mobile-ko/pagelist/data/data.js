@@ -371,25 +371,25 @@ data.RD = {
     title: 'R&D',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_01정밀의학연구소_01소개',
             category: 'RD',
             page: '03R&D_01정밀의학연구소_01소개'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_02생명정보학연구소',
             category: 'RD',
             page: '03R&D_02생명정보학연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_03더바이옴연구소',
             category: 'RD',
             page: '03R&D_03더바이옴연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_04싱크진연구소',
             category: 'RD',
             page: '03R&D_04싱크진연구소'
