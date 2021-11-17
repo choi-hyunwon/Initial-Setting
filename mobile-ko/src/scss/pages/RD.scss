@@ -1,0 +1,528 @@
+/*
+|----------------------------------|
+ v.0.1 (선미) 최초 작업 -- 2021.11.17
+|----------------------------------|
+*/
+
+/*특허논문*/
+.section_RD {
+  .board {
+    .list {
+      &.list-card {
+        .item {
+          .tit {
+            /*R&D에만 말줄임표 없음*/
+            display: block;
+          }
+        }
+
+        &.hover {
+          .item {
+            padding: 41px 140px 41px 67px;
+
+            .tit-sub {
+              margin-bottom: 6px;
+            }
+
+            .arrow {
+              .icon-arrow-right-short {
+                right: 65px;
+              }
+            }
+          }
+        }
+      }
+      .no-data{
+        border: 1px solid $line-e9e9e9!important;
+      }
+    }
+  }
+}
+
+/*연구소*/
+.research-wrap {
+  .research_bg {
+    @include background-img($width: 100%, $height: 600px, $category: 'RD', $img: 'bg-visual.png');
+  }
+
+  .divider {
+    margin-top: 120px;
+  }
+
+  /*폰트 공통*/
+  .info-box {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    padding-left: 338px;
+
+    .title {
+      font-size: 56px;
+      line-height: 81px;
+      letter-spacing: -4.5px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: -1.3px;
+    }
+  }
+
+  .desc-box {
+    width: $min-width;
+    margin: 0 auto;
+
+    p {
+      font-size: 16px;
+      line-height: 30px;
+      color: #454545;
+
+      &.sub-title {
+        font-size: 22px;
+        line-height: 36px;
+        color: #000000;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: -1.3px;
+      }
+    }
+  }
+
+  /*이미지 공통*/
+  .img {
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/RD/img-analysis.png);
+    background-size: 1920px 600px;
+    background-position: 0 0;
+    margin-bottom: 120px;
+  }
+
+
+  /*생명정보학연구소*/
+  .section_lifeInformation {
+    .img {
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-microscope.png);
+      background-size: 1582px 560px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+    }
+  }
+
+  /*더바이옴연구소*/
+  .section_theBiome {
+    .img {
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-pincette.png);
+      background-size: 1582px 560px;
+      background-position: 323px 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+    }
+  }
+
+  .biome_area {
+    padding-top: 120px;
+
+    .sub_title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 40px;
+    }
+  }
+
+
+  /*생명정보학/정밀의학/더바이옴/싱크진 공통*/
+  .section_info_list {
+    width: $min-width;
+    margin: 0 auto;
+
+    &.syncgenes-area {
+      .box {
+        margin-bottom: 80px;
+
+        .sub_title {
+          font-size: 36px;
+        }
+
+        .sub_desc {
+          img {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .box {
+      margin-bottom: 120px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .sub_title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 46px;
+        display: inline-block;
+        float: left;
+        width: 428px;
+
+        > span {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          color: #454545;
+          display: block;
+          padding-top: 20px;
+        }
+      }
+
+      .sub_desc {
+        display: inline-block;
+        float: left;
+        width: calc(100% - 428px);
+
+        > p {
+          font-size: 16px;
+          line-height: 30px;
+          color: #454545;
+          letter-spacing: -1px;
+
+          + img {
+            padding-top: 40px;
+            margin-bottom: 0;
+          }
+        }
+
+        img {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  /*빅데이터연구소*/
+  .section_bigData {
+    margin-bottom: 120px;
+
+    .img {
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-bigData.png);
+      background-size: 1582px 560px;
+      background-position: 323px 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+    }
+  }
+
+  .section_research_area {
+    width: $min-width;
+    margin: 0 auto;
+
+    .title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 46px;
+      display: inline-block;
+      float: left;
+      width: 210px;
+    }
+
+    .list {
+      font-size: 16px;
+      line-height: 30px;
+      color: #454545;
+      display: inline-block;
+      float: left;
+      letter-spacing: -1px;
+      width: calc(100% - 210px);
+
+      li {
+        float: left;
+        margin-left: 65px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        p {
+          padding-top: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /*정밀의학연구소*/
+  .section_customMedicine {
+    .info-box {
+      padding-bottom: 108px;
+    }
+
+    .img {
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-person_research.png);
+      background-size: 1582px 560px;
+      background-position: 323px 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+    }
+  }
+
+  .section_status {
+    height: 980px;
+    background: url('../img/RD/bg-status.png') no-repeat center center / cover;
+    margin-top: 150px;
+    padding-top: 150px;
+
+    .font-h4 {
+      width: $min-width;
+      margin: 0 auto 100px;
+      color: $gray-ffffff;
+      letter-spacing: -3px;
+    }
+
+    .tab-basic {
+      width: $min-width;
+      margin: 0 auto 50px;
+
+      .tab-list {
+        .nav-link {
+          color: $gray-909090;
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 32px;
+          padding: 8px 25px;
+          position: relative;
+
+          &:first-of-type {
+            padding-left: 0;
+
+            &:before {
+              background-color: transparent;
+            }
+          }
+
+          &:before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 16px;
+            background-color: $line-e9e9e9;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            opacity: 0.3;
+          }
+
+          &.active {
+            color: $gray-ffffff;
+          }
+
+        }
+      }
+    }
+
+    .tab-content {
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      .tab-pane {
+        /*slide 영역 공통*/
+        .slide-box {
+          .slider {
+            padding-left: 338px;
+
+            .swiper-container {
+              margin-bottom: 40px;
+              overflow: hidden;
+
+              .swiper-wrapper {
+                .swiper-slide {
+                  &.item {
+                    width: 296px !important;
+                    margin-right: 20px;
+                    /* a{
+                       display: block;
+                       .img{
+                         width: 296px;
+                         height: 198px;
+                         display: block;
+                         margin-bottom: 0;
+                         img{
+                           @include img-100;
+                         }
+                       }
+                       .txt{
+                         padding: 30px;
+                         background-color:$gray-ffffff;
+                         height: 124px;
+                         display: inline-block;
+                         width: 100%;
+                         span{
+                           font-size: 18px;
+                           line-height: 32px;
+                           color:$gray-000000;
+                           @include ellipsis(2);
+                           font-weight: 500;
+                           height: 70px;
+                         }
+                       }
+                     }*/
+                    display: block;
+
+                    .img {
+                      width: 296px;
+                      height: 198px;
+                      display: block;
+                      margin-bottom: 0;
+
+                      img {
+                        @include img-100;
+                      }
+                    }
+
+                    .txt {
+                      padding: 30px;
+                      background-color: $gray-ffffff;
+                      height: 124px;
+                      display: inline-block;
+                      width: 100%;
+
+                      span {
+                        font-size: 18px;
+                        line-height: 32px;
+                        color: $gray-000000;
+                        @include ellipsis(2);
+                        font-weight: 500;
+                        height: 70px;
+                      }
+                    }
+
+                    /*------*/
+
+                  }
+                }
+              }
+            }
+
+            .slider-navigation {
+              .btn {
+                background-color: transparent;
+                border: 1px solid $line-ffffff;
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  /*싱크진 연구소*/
+  .section_syncgenes {
+    margin-bottom: 120px;
+
+    .img {
+      width: 100%;
+      height: 560px;
+      background-image: url(../img/RD/img-analysis.png);
+      background-size: 1920px 560px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+      overflow: hidden;
+    }
+
+    .divider {
+      margin-top: 90px;
+    }
+  }
+}
+
+
+.modal {
+  .modal-dialog {
+    &.research {
+      .modal-content{
+        .modal-body{
+          .title{
+            font-size: 32px;
+            line-height: 46px;
+            letter-spacing: -1px;
+            font-weight: bold;
+            .sub_title{
+              font-size: 18px;
+              line-height: 1;
+              letter-spacing: -0.75px;
+              color: $point-primary;
+              display: block;
+              margin-bottom: 10px;
+            }
+          }
+          .divider{
+            margin: 40px 0 60px;
+          }
+          .desc{
+            line-height: 30px;
+            color:$gray-454545;
+          }
+        }
+        .modal-footer{
+          padding: 22px 60px;
+          display: block;
+          .board{
+            margin: 0;
+            .navigation{
+              .content{
+                .item{
+                  &.prev{
+                    padding-left: 36px;
+                    padding-right: 0;
+                    text-align: left;
+                    &::before{
+                      background: url("../img/common/ico-arrow-left-ml.png") no-repeat 0 0;
+                      width: 15px;
+                      height: 27px;
+                    }
+                  }
+                  &.next{
+                    padding-right: 36px;
+                    padding-left: 0;
+                    text-align: right;
+                    &::before{
+                      background: url("../img/common/ico-arrow-right-ml.png") no-repeat 0 0;
+                      width: 15px;
+                      height: 27px;
+                    }
+                  }
+                  .title{
+                    font-size: 16px;
+                    line-height: 30px;
+                    display: block;
+                    width: 370px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
