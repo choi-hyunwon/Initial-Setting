@@ -310,6 +310,12 @@ data.business ={
         //     category: 'business',
         //     page: '연구서비스_CES'
         // },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_genesynthesis',
+            category: 'business',
+            page: '연구서비스_genesynthesis'
+        },
         // {
         //     stateClass: 'complete',
         //     url: '연구서비스_Oligo',
