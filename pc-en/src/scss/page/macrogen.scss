@@ -2460,7 +2460,8 @@ $min-width: 1244px;
 
     .section-ceo {
       padding-top: 150px;
-      padding-right: 17.4479% /*335px*/;
+      padding-right: 17.4479% /*335px*/
+    ;
       padding-bottom: 180px;
 
       .img {
@@ -2476,7 +2477,8 @@ $min-width: 1244px;
       .inner {
         /* width: 1244px;
          margin: 0 auto;*/
-        padding-left: 21.3248% /*338px*/;
+        padding-left: 21.3248% /*338px*/
+      ;
 
         .font-h3 {
           margin-bottom: 80px;
@@ -4261,31 +4263,66 @@ $min-width: 1244px;
     top: auto;
   }
 }
+
 /* 영문 */
 .en {
+  /* 공통 */
+  .wrap .full-bg .frame .slogan {
+    text-transform: none;
+  }
+
+  /* 기업개요 */
+  .macrogen.company-overview .section-overview .overview-list .item:nth-child(6) .val {
+    margin-left: -20px;
+  }
+
+  .macrogen.company-overview .section-business-detail .item .img .title::after {
+    bottom: auto;
+    top: -30px;
+  }
+
   /* 경영진 */
   .macrogen.macrogen-management .section-chairman-career {
     padding-top: 130px;
     height: 1394px;
   }
+
   .macrogen.macrogen-management .section-chairman-career .inner .item .list li span:first-child {
     font-size: 18px;
     line-height: 30px;
     padding-left: 15px;
   }
+
   .macrogen.macrogen-management .section-chairman-career .inner .item .list li span:nth-child(2) {
     font-size: 16px;
     line-height: 30px;
   }
+
   .macrogen.ethical-management .section-tip .subject-to-report .col .item {
     height: 290px;
     padding: 40px;
   }
-  .macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:first-child {
-    width: 247px;
+
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:first-child,
+  .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:first-child {
+    font-size: 18px;
+    line-height: 30px;
+    width: 163px;
+    margin-right: 0;
   }
-  .macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:nth-child(2) {
+
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:nth-child(2),
+  .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:nth-child(2) {
     width: calc(100% - 247px);
     vertical-align: top;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .macrogen.macrogen-management .section-ceo-career .inner .item .list li {
+    width: 100%;
+  }
+
+  .macrogen.macrogen-management .section-ceo-career .inner .item .title span::after {
+    content: none;
   }
 }
