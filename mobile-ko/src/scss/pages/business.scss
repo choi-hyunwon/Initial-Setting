@@ -132,11 +132,18 @@
       span{
         display: inline-block;
         width: 40px;
-        position: absolute;
         height: 40px;
+        position: absolute;
         bottom: 0px;
         right: 0px;
-        background-color: red;
+        background: rgba(144, 144, 144, 0.3);
+        border-radius: 8px 0px 0px 0px;
+        i{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50% , -50%);
+        }
       }
       &:nth-last-of-type{
         margin-bottom: 0px;
