@@ -119,12 +119,14 @@
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
 </div>
-<div class="modal modal-image-viewer" tabindex="-1" id="modal" data-bs-backdrop="static">
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
-            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목"></div>
+            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom">
+                    <img src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목">
+                </div>
             </div>
         </div>
     </div>
@@ -134,12 +136,8 @@
 </div>
 <script>
     // modal show
-    var modal = new bootstrap.Modal(document.getElementById('modal'))
-    modal.show();
-
-    // zoom
-    var el = document.querySelector('.pinch-zoom');
-    new PinchZoom.default(el, {});
+    var modalImageViewer = new bootstrap.Modal(document.getElementById('modalImageViewer'))
+    modalImageViewer.show();
 
     // modal close
     $('.btn-close').on('click', function () {
@@ -148,15 +146,16 @@
 
     // modal open
     $('._btnZoom').on('click', function () {
-        modal.show();
+        modalImageViewer.show();
     })
 
-    // toast popup
+    // show toast popup
     function showToastPopup() {
         $('.toast-popup').addClass('active');
         setTimeout(hideToastPopup, 2000);
     }
 
+    // hide toast popup
     function hideToastPopup() {
         $('.toast-popup').removeClass('active');
     }

@@ -99,10 +99,10 @@
     display: block;
     right: 0;
     top: 0;
-    @include background-img($width: 64px, $height: 30px, $category: 'common', $img: 'badge-recruit-done.png');
+    @include background-img($width: 64px, $height: 30px, $category: 'common', $img: 'badge-recruit-done.svg');
 
     &.ongoing {
-      background-image: url(../img/common/badge-recruit.png);
+      background-image: url(../img/common/badge-recruit.svg);
     }
   }
 
