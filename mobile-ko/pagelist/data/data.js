@@ -371,7 +371,7 @@ data.RD = {
     title: 'R&D',
     list: [
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '03R&D_01정밀의학연구소_01소개',
             category: 'RD',
             page: '03R&D_01정밀의학연구소_01소개'
@@ -395,28 +395,70 @@ data.RD = {
             page: '03R&D_04싱크진연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_05빅데이터연구소',
             category: 'RD',
             page: '03R&D_05빅데이터연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '06특허,논문_01특허_01목록',
             category: 'RD',
             page: '06특허,논문_01특허_01목록'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '06특허,논문_02논문_01목록',
             category: 'RD',
             page: '06특허,논문_02논문_01목록'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '06특허,논문_02논문_01목록없음',
             category: 'RD',
             page: '06특허,논문_02논문_01목록없음'
         },
+    ]
+}
+
+data.IR = {
+    title: 'IR',
+    list: [
+        {
+            stateClass: 'working',
+            url: '01재무정보',
+            category: 'IR',
+            page: '01재무정보'
+        },
+        {
+            stateClass: 'complete',
+            url: '02공시정보_01공고_01목록',
+            category: 'IR',
+            page: '02공시정보_01공고_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '02공시정보_01공고_02조회',
+            category: 'IR',
+            page: '02공시정보_01공고_02조회'
+        },
+        {
+            stateClass: 'complete',
+            url: '03IR소식_01목록',
+            category: 'IR',
+            page: '03IR소식_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '03IR소식_02조회',
+            category: 'IR',
+            page: '03IR소식_02조회'
+        },
+        {
+            stateClass: 'complete',
+            url: '04투자자문의',
+            category: 'IR',
+            page: '04투자자문의'
+        }
     ]
 }

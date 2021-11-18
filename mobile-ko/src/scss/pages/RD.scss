@@ -4,294 +4,11 @@
 |----------------------------------|
 */
 
-/*특허논문*/
-/*
-.section_RD {
-  .board {
-    .list {
-      &.list-card {
-        .item {
-          .tit {
-            !*R&D에만 말줄임표 없음*!
-            display: block;
-          }
-        }
-
-        &.hover {
-          .item {
-            padding: 41px 140px 41px 67px;
-
-            .tit-sub {
-              margin-bottom: 6px;
-            }
-
-            .arrow {
-              .icon-arrow-right-short {
-                right: 65px;
-              }
-            }
-          }
-        }
-      }
-      .no-data{
-        border: 1px solid $line-e9e9e9!important;
-      }
-    }
-  }
-}
-*/
-
-/*연구소*/
-/*.research-wrap {
-  .divider {
-    margin-top: 120px;
-  }
-
-  !*폰트 공통*!
-  .info-box {
-    padding: 80px 20px 56px;
-
-    .title {
-      font-size: 56px;
-      line-height: 81px;
-      letter-spacing: -4.5px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    .desc {
-      font-size: 18px;
-      line-height: 32px;
-      letter-spacing: -1.3px;
-    }
-  }
-
-  .desc-box {
-    width: $min-width;
-    margin: 0 auto;
-
-    p {
-      font-size: 16px;
-      line-height: 30px;
-      color: #454545;
-
-      &.sub-title {
-        font-size: 22px;
-        line-height: 36px;
-        color: #000000;
-        font-weight: bold;
-        margin-bottom: 20px;
-        letter-spacing: -1.3px;
-      }
-    }
-  }
-
-  !*이미지 공통*!
-  .img {
-    width: 100%;
-    height: 560px;
-    background-image: url(../img/RD/img-analysis.png);
-    background-size: 1920px 600px;
-    background-position: 0 0;
-    margin-bottom: 120px;
-  }
-
-
-  !*생명정보학연구소*!
-  .section_lifeInformation {
-    .img {
-      width: 100%;
-      height: 560px;
-      background-size: 1582px 560px;
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      margin-bottom: 100px;
-    }
-  }
-
-  !*더바이옴연구소*!
-  .section_theBiome {
-    .img {
-      width: 100%;
-      height: 560px;
-      background-image: url(../img/RD/img-pincette.png);
-      background-size: 1582px 560px;
-      background-position: 323px 0;
-      background-repeat: no-repeat;
-      margin-bottom: 100px;
-    }
-  }
-
-  .biome_area {
-    padding-top: 120px;
-
-    .sub_title {
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 46px;
-      margin-bottom: 40px;
-    }
-  }
-
-  !*생명정보학/정밀의학/더바이옴/싱크진 공통*!
-  .section_info_list {
-    width: $min-width;
-    margin: 0 auto;
-
-    &.syncgenes-area {
-      .box {
-        margin-bottom: 80px;
-
-        .sub_title {
-          font-size: 36px;
-        }
-
-        .sub_desc {
-          img {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-
-    .box {
-      margin-bottom: 120px;
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-
-      .sub_title {
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 46px;
-        display: inline-block;
-        float: left;
-        width: 428px;
-
-        > span {
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 30px;
-          color: #454545;
-          display: block;
-          padding-top: 20px;
-        }
-      }
-
-      .sub_desc {
-        display: inline-block;
-        float: left;
-        width: calc(100% - 428px);
-
-        > p {
-          font-size: 16px;
-          line-height: 30px;
-          color: #454545;
-          letter-spacing: -1px;
-
-          + img {
-            padding-top: 40px;
-            margin-bottom: 0;
-          }
-        }
-
-        img {
-          margin-bottom: 40px;
-        }
-      }
-    }
-  }
-
-  !*빅데이터연구소*!
-  .section_bigData {
-    margin-bottom: 120px;
-
-    .img {
-      width: 100%;
-      height: 560px;
-      background-image: url(../img/RD/img-bigData.png);
-      background-size: 1582px 560px;
-      background-position: 323px 0;
-      background-repeat: no-repeat;
-      margin-bottom: 100px;
-    }
-  }
-
-  .section_research_area {
-    width: $min-width;
-    margin: 0 auto;
-
-    .title {
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 46px;
-      display: inline-block;
-      float: left;
-      width: 210px;
-    }
-
-    .list {
-      font-size: 16px;
-      line-height: 30px;
-      color: #454545;
-      display: inline-block;
-      float: left;
-      letter-spacing: -1px;
-      width: calc(100% - 210px);
-
-      li {
-        float: left;
-        margin-left: 65px;
-
-        &:first-of-type {
-          margin-left: 0;
-        }
-
-        p {
-          padding-top: 30px;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  !*싱크진 연구소*!
-  .section_syncgenes {
-    margin-bottom: 120px;
-
-    .img {
-      width: 100%;
-      height: 560px;
-      background-image: url(../img/RD/img-analysis.png);
-      background-size: 1920px 560px;
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      margin-bottom: 100px;
-      overflow: hidden;
-    }
-
-    .divider {
-      margin-top: 90px;
-    }
-  }
-}*/
-
-
-
 .research-wrap{
-  .M-divider {
-   width: 100%;
-    height: 1px;
-    background-color: #e9e9e9;
-    margin: 64px 0 65px;
-  }
-
   .section_intro{
     .info-box{
       padding: 0 20px 56px;
       .title{
-        word-break: keep-all;
         font-size: 34px;
         line-height: 50px;
         letter-spacing: -1px;
@@ -324,13 +41,22 @@
         background-image: url(../img/RD/img-analysis.png);
         height: 252px;
       }
+      &.img-bigData{
+        background-image: url(../img/RD/img-bigData.png);
+        height: 252px;
+      }
     }
   }
   .section_info_list{
-    padding: 80px 20px;
+    padding: 0 20px;
 
     .box{
-      border:1px solid red;
+      &:first-of-type{
+        margin-top: 80px;
+      }
+      &:last-of-type{
+        margin-bottom: 80px;
+      }
       .sub_title{
         font-size: 22px;
         line-height: 38px;
@@ -340,6 +66,7 @@
       .sub_desc{
         font-size: 16px;
         line-height: 32px;
+        letter-spacing: -0.5px;
         img{
           padding-top: 40px;
         }
@@ -374,8 +101,40 @@
       >img{ /*더바이옴연구소 - 연구영역*/
         width: 100%;
       }
+
+      /*싱크진,빅데이터연구소*/
+      &.box-type2{
+        &:first-of-type{
+          margin-top: 40px;
+        }
+        .sub_title{
+          font-size: 18px;
+          line-height: 34px;
+          margin-bottom: 16px;
+        }
+      }
+
+      /*빅데이터연구소*/
+      .list{
+        li{
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          margin-bottom: 32px;
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+          p{
+            display: inline-block;
+            padding-left: 16px;
+            line-height: 32px;
+          }
+        }
+      }
     }
   }
+
+  /*정밀의학연구소 탭 & 슬라이드*/
   .section_status{
     overflow: hidden; /*swiper-scrollbar로 인해 위치이동*/
     height: 719px;
@@ -474,6 +233,18 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .board{
+    .text-list .category-list {
+      &.no-data{
+        padding: 24px 0!important;
+        border:none;
+        .item{
+          border: none;
+          padding: 0;
         }
       }
     }

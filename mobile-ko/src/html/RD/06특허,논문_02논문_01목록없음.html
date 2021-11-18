@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        @@include('../../html/include/components/header.html')
+        <div class="frame">
+            <div class="font-h1">논문</div>
+        </div>
+    </div>
+    <div class="container research-wrap pt-0">
+        <div class="board">
+            <div class="text-list">
+                <div class="input-search">
+                    <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                    <a href="#" class="btn-search"></a>
+                </div>
+                <ul class="category-list no-data">
+                    <li class="item">
+                        <p>등록된 게시물이 없습니다</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @@include('../../html/include/components/footer.html')
+    @@include('../../html/include/components/toTop.html')
+</div>
+@@include('../../html/include/components/gnb.html')
+</body>
+</html>
