@@ -2,6 +2,8 @@
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.11.5
  v.0.2 주연 : 파일 다운로드 UI 추가 -- 2021.11.10
+ v.0.3 선미 : .input-tip { margin-bottom 제거 } / form-check-input {marging 수정} /
+             input-group-text {margin 제거} / placeholder {bold 제거}-- 2021.11.18
 |----------------------------------|
 */
 input[type="number"]::-webkit-outer-spin-button,
@@ -13,7 +15,6 @@ input[type="number"]::-webkit-inner-spin-button {
 input::placeholder {
   font-size: 18px;
   color: $gray-d9d9d9;
-  font-weight: bold;
 }
 
 textarea::placeholder {
@@ -35,7 +36,7 @@ textarea::placeholder {
     font-family: inherit;
     font-size: 100%;
     line-height: 26px;
-    margin: 3px 8px 0 0;
+    margin: 0 8px 0 0;
     border-radius: 0;
     border: 2px solid $line-d9d9d9;
     background-image: url(../../dist/img/common/ico-check-nor.png);
@@ -86,7 +87,6 @@ textarea::placeholder {
     border: 0;
     background-color: transparent;
     padding: 0;
-    margin-right: 40px;
     font-weight: 700;
     font-size: 22px;
     letter-spacing: -0.75px;
@@ -185,7 +185,6 @@ textarea::placeholder {
   position: relative;
   padding-left: 28px;
   margin-top: -24px;
-  margin-bottom: 40px;
 
   .icon {
     position: absolute;
