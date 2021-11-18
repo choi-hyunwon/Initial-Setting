@@ -22,7 +22,7 @@
         Copyright (c) Manuel Stofer 2013 - today
 
         Author: Manuel Stofer (mst@rtp.ch)
-        Version: 2.2.0
+        Version: 2.3.4
 
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
@@ -126,7 +126,7 @@
                 // and then the load event (which trigger update) will never fire.
                 if (this.isImageLoaded(this.el)) {
                     this.updateAspectRatio();
-                    this.setupInitialOffset();
+                    this.setupOffsets();
                 }
 
                 this.enable();
@@ -148,6 +148,7 @@
                 minZoom: 0.5,
                 draggableUnzoomed: true,
                 lockDragAxis: false,
+                setOffsetsOnce: false,
                 use2d: true,
                 zoomStartEventName: 'pz_zoomstart',
                 zoomUpdateEventName: 'pz_zoomupdate',
@@ -157,7 +158,14 @@
                 dragEndEventName: 'pz_dragend',
                 doubleTapEventName: 'pz_doubletap',
                 verticalPadding: 0,
-                horizontalPadding: 0
+                horizontalPadding: 0,
+                onZoomStart: null,
+                onZoomEnd: null,
+                onZoomUpdate: null,
+                onDragStart: null,
+                onDragEnd: null,
+                onDragUpdate: null,
+                onDoubleTap: null
             },
 
             /**
@@ -166,6 +174,9 @@
              */
             handleDragStart: function handleDragStart(event) {
                 triggerEvent(this.el, this.options.dragStartEventName);
+                if (typeof this.options.onDragStart == "function") {
+                    this.options.onDragStart(this, event);
+                }
                 this.stopAnimation();
                 this.lastDragPosition = false;
                 this.hasInteraction = true;
@@ -185,6 +196,9 @@
 
             handleDragEnd: function handleDragEnd() {
                 triggerEvent(this.el, this.options.dragEndEventName);
+                if (typeof this.options.onDragEnd == "function") {
+                    this.options.onDragEnd(this, event);
+                }
                 this.end();
             },
 
@@ -194,6 +208,9 @@
              */
             handleZoomStart: function handleZoomStart(event) {
                 triggerEvent(this.el, this.options.zoomStartEventName);
+                if (typeof this.options.onZoomStart == "function") {
+                    this.options.onZoomStart(this, event);
+                }
                 this.stopAnimation();
                 this.lastScale = 1;
                 this.nthZoom = 0;
@@ -223,6 +240,9 @@
 
             handleZoomEnd: function handleZoomEnd() {
                 triggerEvent(this.el, this.options.zoomEndEventName);
+                if (typeof this.options.onZoomEnd == "function") {
+                    this.options.onZoomEnd(this, event);
+                }
                 this.end();
             },
 
@@ -250,6 +270,9 @@
 
                 this.animate(this.options.animationDuration, updateProgress, this.swing);
                 triggerEvent(this.el, this.options.doubleTapEventName);
+                if (typeof this.options.onDoubleTap == "function") {
+                    this.options.onDoubleTap(this, event);
+                }
             },
 
             /**
@@ -265,6 +288,14 @@
             },
 
             /**
+             * Reset current image offset to that of the initial offset
+             */
+            resetOffset: function resetOffset() {
+                this.offset.x = this.initialOffset.x;
+                this.offset.y = this.initialOffset.y;
+            },
+
+            /**
              * Determine if image is loaded
              */
             isImageLoaded: function isImageLoaded(el) {
@@ -275,16 +306,15 @@
                 }
             },
 
-            setupInitialOffset: function setupInitialOffset() {
-                if (this._initialOffsetSetup) {
+            setupOffsets: function setupOffsets() {
+                if (this.options.setOffsetsOnce && this._isOffsetsSet) {
                     return;
                 }
 
-                this._initialOffsetSetup = true;
+                this._isOffsetsSet = true;
 
                 this.computeInitialOffset();
-                this.offset.x = this.initialOffset.x;
-                this.offset.y = this.initialOffset.y;
+                this.resetOffset();
             },
 
             /**
@@ -329,6 +359,9 @@
                     y: (_scale - 1) * (center.y + this.offset.y)
                 });
                 triggerEvent(this.el, this.options.zoomUpdateEventName);
+                if (typeof this.options.onZoomUpdate == "function") {
+                    this.options.onZoomUpdate(this, event);
+                }
             },
 
             /**
@@ -382,6 +415,9 @@
                         });
                     }
                     triggerEvent(this.el, this.options.dragUpdateEventName);
+                    if (typeof this.options.onDragUpdate == "function") {
+                        this.options.onDragUpdate(this, event);
+                    }
                 }
             },
 
@@ -476,9 +512,13 @@
             },
 
             /**
-             * Updates the aspect ratio
+             * Updates the container aspect ratio
+             *
+             * Any previous container height must be cleared before re-measuring the
+             * parent height, since it depends implicitly on the height of any of its children
              */
             updateAspectRatio: function updateAspectRatio() {
+                this.unsetContainerY();
                 this.setContainerY(this.container.parentElement.offsetHeight);
             },
 
@@ -604,6 +644,10 @@
                 return this.container.style.height = y + 'px';
             },
 
+            unsetContainerY: function unsetContainerY() {
+                this.container.style.height = null;
+            },
+
             /**
              * Creates the expected html structure
              */
@@ -658,14 +702,15 @@
 
                 window.setTimeout(function () {
                     this.updatePlaned = false;
-                    this.updateAspectRatio();
 
                     if (event && event.type === 'resize') {
-                        this.computeInitialOffset();
+                        this.updateAspectRatio();
+                        this.setupOffsets();
                     }
 
                     if (event && event.type === 'load') {
-                        this.setupInitialOffset();
+                        this.updateAspectRatio();
+                        this.setupOffsets();
                     }
 
                     var zoomFactor = this.getInitialZoomFactor() * this.zoomFactor,
@@ -840,7 +885,9 @@
                     } else {
                         switch (interaction) {
                             case 'zoom':
-                                target.handleZoom(event, calculateScale(startTouches, targetTouches(event.touches)));
+                                if (startTouches.length == 2 && event.touches.length == 2) {
+                                    target.handleZoom(event, calculateScale(startTouches, targetTouches(event.touches)));
+                                }
                                 break;
                             case 'drag':
                                 target.handleDrag(event);

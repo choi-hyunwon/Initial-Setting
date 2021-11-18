@@ -1,16 +1,30 @@
 /*
-|----------------------------------|
+|----------------------------------------------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.11.2
- |----------------------------------|
+ v.0.2 주연 : touch 음영 제거 -- 2021.11.18
+|----------------------------------------------------------------------|
 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 /* scroll hide */
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 ::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+
 //body {
 //  -ms-overflow-style: none;
 //}
@@ -106,14 +120,15 @@ body {
 .wrap {
   position: relative;
   width: 100%;
+  overflow: hidden;
 
   .full-bg {
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% 100vh;
     animation: grow 2s;
+    background-size: 100%;
 
     .frame {
       position: relative;
@@ -131,8 +146,15 @@ body {
 
       .font-slogan {
         margin-bottom: 24px;
+        font-size: 42px;
+        line-height: 58px;
         color: #fff;
         word-break: keep-all;
+
+        &.en {
+          font-size: 48px;
+          line-height: 52px;
+        }
       }
 
       .font-h7-r {
@@ -189,6 +211,7 @@ body {
       .btn-wrap {
         margin-top: 16px;
       }
+
       &.non-title {
         padding: 120px 0 0;
       }
@@ -252,6 +275,21 @@ body {
   }
 }
 
+//@media(max-width: 398px) and (min-height: 620px) {
+//  body {
+//    background-color: red;
+//  }
+//  .wrap .full-bg {
+//    background-position: center top;
+//    background-size: auto 100vh;
+//    animation: grow2 1s;
+//  }
+//  @keyframes grow2 {
+//    0%   { background-size: auto 100vh * 1.2; opacity: 0;}
+//    100% { background-size: auto 100vh; opacity: 1;}
+//  }
+//}
+
 //@keyframes full-bg {
 //  0% {
 //    background-size: 100% 200vh;
@@ -264,8 +302,14 @@ body {
 //}
 
 @keyframes grow {
-  0%   { background-size: 200% 200vh; opacity: 0;}
-  100% { background-size: 100% 100vh; opacity: 1;}
+  0% {
+    background-size: 140%;
+    opacity: 0;
+  }
+  100% {
+    background-size: 100%;
+    opacity: 1;
+  }
 }
 
 /* footer */
@@ -328,6 +372,8 @@ body {
           line-height: 32px;
           letter-spacing: -0.5px;
           color: $gray-000000;
+          background-color: $white;
+          padding: 0;
         }
 
         .select {

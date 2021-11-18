@@ -62,7 +62,7 @@ function jsLib() {
         'src/js/lib/jquery.js',
         'src/js/lib/bootstrap.bundle.min.js',
         'src/js/lib/swiper.js',
-        'src/js/lib/pinch-zoom.js',
+        'src/js/lib/hammer.js',
         'src/js/lib/aos.js',
         'src/js/lib/rellax.js',
     ];
