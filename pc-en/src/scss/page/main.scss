@@ -1102,9 +1102,47 @@
 .en {
   .main-wrap {
     .main-bg {
+      .intro {
+        .box {
+          .text {
+            img{
+              width: 639px;
+              backface-visibility: hidden;/*이미지 깨짐 방지*/
+            }
+          }
+        }
+      }
       .swiper-container {
         .swiper-wrapper {
           .swiper-slide {
+            &.visual_01 {
+              .text-gradient{
+                img{
+                  width: 454px;
+                }
+              }
+            }
+
+            &.visual_02 {
+              .text-gradient{
+                img{
+                  width: 1097px;
+                }
+              }
+            }
+
+            &.visual_03 {
+              .text-gradient{
+                img{
+                  width: 677px;
+                }
+              }
+            }
+
+            &.visual_04 {
+              background: url("../img/main/img-main_04.png") no-repeat center center / cover;
+            }
+
             .text-box {
               &.phrase {
                 > .name {
