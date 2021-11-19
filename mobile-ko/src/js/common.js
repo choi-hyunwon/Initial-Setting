@@ -241,6 +241,13 @@ front.common = (function () {
         $('._btnTooltipClose').on('click',function (){
             $(this).parent().parent().removeClass('active');
         })
+
+        $(window).bind("load", function() {
+            $('._btnTooltip').each(function () {
+                var left = $(this).offset().left * -1 + 20;
+                $(this).siblings().css('left', left + 'px')
+            })
+        });
         /* e tooltip */
 
         /* s accordion */

@@ -229,7 +229,8 @@ textarea::placeholder {
 
   .btn-search {
     position: absolute;
-    @include background-img($width: 20px, $height: 20px, $category: 'common', $img: 'ico-search.png');
+    @include background-img($width: 20px, $height: 20px, $category: 'common', $img: 'ico-search.svg');
+    background-size: contain;
     z-index: 2;
     right: 15px;
     top: 50%;
@@ -360,7 +361,7 @@ textarea::placeholder {
     .font-body-b {
       padding-left: 37px;
       padding-top: 3px;
-      padding-right: 16px;
+      padding-right: 30px;
     }
 
     > .icon {
