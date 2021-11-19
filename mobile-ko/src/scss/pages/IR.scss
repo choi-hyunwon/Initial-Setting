@@ -20,11 +20,26 @@
     }
   }
   .financial_box{
-    padding: 0 20px;
+    margin: 0 20px 80px;
     white-space: normal;
     overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    margin-bottom: 80px;
+
+    &::-webkit-scrollbar {
+      display: block;
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #666666;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f7f7f7;
+
+    }
+
+
+
     .table{
       margin-bottom: 24px;
       tbody{
