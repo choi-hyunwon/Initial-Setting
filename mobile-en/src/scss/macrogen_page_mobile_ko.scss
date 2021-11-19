@@ -1,0 +1,19 @@
+/*
+|--------------------------------------|
+  Mobile - KO 공통관리 버전 v0.2 / 11.18
+|-------------------------------------|
+*/
+@import "components/variables";
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+@import "components/config";
+
+@import "pages/macrogen";
+@import "pages/business";
+@import "pages/newsroom";
+@import "pages/RD";
+@import "pages/IR";

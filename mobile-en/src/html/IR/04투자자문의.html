@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        @@include('../../html/include/components/header.html')
+        <div class="frame">
+            <div class="font-h1">투자자 문의</div>
+        </div>
+    </div>
+    <div class="container pt-0">
+        <div class="section_IR">
+            <div class="question">
+                <div class="text-area">
+                    <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
+                    <span class="number">Tel&#46; 02&#45;3489&#45;7570</span>
+                 </div>
+                <div class="img-area"></div>
+            </div>
+
+            <div class="privacy_list">
+                <div class="box">
+                    <div class="font-h5">01. 정보를 입력해주세요</div>
+                    <label class="label">이름</label>
+                    <div class="input-group">
+                        <input type="text" title="검색" class="form-control" placeholder="이름을 입력해주세요">
+                    </div>
+                    <label class="label">휴대폰 번호</label>
+                    <div class="input-group input-group-phone">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span>010</span>
+                                <i class="ico-select-nor"></i>
+                            </div>
+                            <input type="hidden" name="phone">
+                            <ul class="dropdown-menu">
+                                <li>010</li>
+                                <li>011</li>
+                                <li>019</li>
+                            </ul>
+                        </div>
+                        <input type="number" title="phone" class="form-control">
+                        <input type="number" title="phone" class="form-control">
+                    </div>
+                    <div class="input-tip">
+                        <i class="icon ico-info-blue"></i>
+                        <span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span>
+                    </div>
+                </div>
+
+                <hr class="M-divider">
+
+                <div class="box">
+                    <div class="font-h5">02. 문의하실 내용을 작성해주세요</div>
+
+                    <label class="label">제목</label>
+                    <div class="input-group">
+                        <input type="text" title="검색" class="form-control" placeholder="제목을 입력해주세요">
+                    </div>
+
+                    <label class="label">문의내용</label>
+                    <div class="input-group">
+                        <textarea title="textarea" class="form-control" placeholder="문의하실 내용을 입력하세요"></textarea>
+                    </div>
+
+                    <!--s 개발영역-->
+                    <div class="input-group">
+                        <span class="input-group-text" id="automatic">자동등록방지</span>
+                        <span class="security" style="width: 160px; height: 60px; background: #E9E9E9;"></span>
+                        <input type="text" placeholder="위의 문자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
+                    </div>
+                    <!--e 개발영역-->
+                </div>
+
+                <hr class="M-divider"/>
+
+                <div class="box">
+                    <div class="font-h5">03. 투자 및 상담을 위한 개인정보 수집·이용에 동의해주세요</div>
+
+                    <div class="agreement">
+                        <p><span class="font-bold">개인정보 수집 목적 &#58;</span> 투자 문의 및 상담 문의 대응</p>
+                        <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호</p>
+                        <p><span class="font-bold">보유 및 이용기간 &#58;</span>  3년</p>
+                        <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다&#46; 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다&#46;</p>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" checked type="checkbox" value="" id="check">
+                        <label class="form-check-label" for="check">동의합니다</label>
+                    </div>
+
+                    <div class="btn-box">
+                        <a href="#" class="btn btn-light"><span>취소</span></a>
+                        <a href="#" class="btn btn-primary"><i class="icon-pen"></i><span>문의하기</span></a>
+                    </div>
+                </div>
+
+                <script>
+                    $('.form-check-input').on('click',function (){
+                        if($(this).is(":checked") ==  true){
+                            $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
+                        }else{
+                            $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
+                        }
+                    });
+                </script>
+            </div>
+
+        </div>
+
+
+    </div>
+    @@include('../../html/include/components/footer.html')
+    @@include('../../html/include/components/toTop.html')
+</div>
+
+@@include('../../html/include/components/gnb.html')
+</body>
+</html>

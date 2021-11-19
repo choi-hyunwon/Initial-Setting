@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/components/head_guide.html')
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        @@include('../../html/include/components/header.html')
+        <div class="frame"></div>
+    </div>
+    <div class="container pt-0">
+        <div class="img text-center mb-5"><img src="../../img/@temp/newsroom/sample-1.png" alt=""></div>
+        <div class="img position-relative">
+            <img class="w-100" src="../../img/@temp/newsroom/sample-2.png" alt="">
+            <a class="btn-zoom _btnZoom" href="#"><span class="sr-only">이미지 확대</span></a>
+        </div>
+    </div>
+    @@include('../../html/include/components/footer.html')
+    @@include('../../html/include/components/toTop.html')
+</div>
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom">
+                    <img id="q123" src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="toast-popup">
+    <p>이미지를 확대할 수 있습니다</p>
+</div>
+<script>
+    // modal show
+    var modalImageViewer = new bootstrap.Modal(document.getElementById('modalImageViewer'))
+    modalImageViewer.show();
+
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal.hide();
+    })
+
+    // modal open
+    $('._btnZoom').on('click', function () {
+        modalImageViewer.show();
+    })
+
+    // show toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+
+    // hide toast popup
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+
+    setTimeout(showToastPopup, 1500);
+</script>
+</body>
+</html>

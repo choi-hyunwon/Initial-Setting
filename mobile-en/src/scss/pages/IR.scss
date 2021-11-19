@@ -1,0 +1,121 @@
+/*
+|----------------------------------|
+ v.0.1 (선미) 최초 작업 -- 2021.11.18
+|----------------------------------|
+*/
+
+.section_IR{
+
+  /*재무정보*/
+  .subtitle{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    .text-unit{
+      font-size: 14px;
+      line-height: 26px;
+      color:#707070;
+    }
+  }
+  .financial_box{
+    padding: 0 20px;
+    white-space: normal;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 80px;
+    .table{
+      margin-bottom: 24px;
+      tbody{
+        tr{
+          &.font-emphasis{
+            td{
+              color:#000000;
+            }
+          }
+        }
+      }
+    }
+  }
+  .update_text{
+    text-align: right;
+    padding: 16px 20px 0;
+    font-size: 14px;
+    line-height: 30px;
+    color:#909090;
+  }
+
+  /*공시정보 / IR소식*/
+  &.board{
+    .view{
+      .view-body{
+        .text{
+          line-height: 32px;
+          letter-spacing: -0.5px;
+          color:#454545;
+        }
+      }
+    }
+  }
+
+  /*투자자문의*/
+  .question{
+    .text-area{
+      padding: 0 20px;
+      margin-bottom: 40px;
+      .font-h4{
+        margin-bottom: 76px;
+      }
+      .number{
+        font-size: 22px;
+        line-height: 38px;
+        letter-spacing: -1px;
+      }
+    }
+    .img-area{
+      background: url('../img/IR/img-handshake.png') no-repeat center center / cover;
+      height: 252px;
+    }
+  }
+  .privacy_list{
+    padding: 0 20px;
+    .box{
+      &:first-of-type{
+        padding-top: 64px;
+      }
+      .font-h5{
+        margin-bottom: 40px;
+      }
+      .input-group{
+        .security{
+          margin-bottom: 20px;
+        }
+      }
+      .agreement{
+        background-color: #f7f7f7;
+        padding: 24px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        margin-bottom: 12px;
+        .guidance{
+          padding-top: 24px;
+        }
+      }
+      .btn-box{
+        padding-top: 70px;
+        .icon-pen{
+          background: url("../img/IR/ico-pen.png") no-repeat center center;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 8px;
+
+        }
+      }
+
+    }
+  }
+
+}
