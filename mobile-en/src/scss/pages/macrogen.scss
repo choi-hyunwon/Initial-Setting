@@ -1,6 +1,6 @@
 /*
 |----------------------------------|
- v.0.1 (주연) 최초 작업 -- 2021.11.9
+ v.0.1 (주연) 최초 작업 -- 2021.11.19
 |----------------------------------|
 */
 .select-box {
@@ -748,6 +748,16 @@
       margin-bottom: 80px;
       border-top: 10px solid $bg-f5f5f5;
 
+      &:nth-child(3) {
+        position: relative;
+        z-index: 2;
+      }
+
+      &.z-index {
+        position: relative;
+        z-index: 2;
+      }
+
       &:nth-child(2) {
         padding-top: 0;
         border-top: 0;
@@ -784,7 +794,7 @@
 
       .tooltip-box {
         display: inline-block;
-        position: static;
+        position: relative;
 
         .btn-tooltip {
           .icon-tooltip {
@@ -823,7 +833,7 @@
             margin-bottom: 24px;
 
             span {
-              display: inline-block;
+              display: inline;
               vertical-align: middle;
               margin-right: 4px;
             }
@@ -937,7 +947,7 @@
       }
 
       .img-recruitment-info {
-        margin-top: 24px;
+        margin-top: 32px;
         width: 100%;
         height: auto;
 
@@ -949,6 +959,7 @@
 
       .board {
         margin-top: 56px;
+        padding: 0;
       }
     }
   }
@@ -2453,17 +2464,17 @@
             z-index: 3;
 
             &.img-1 {
-              top: 0;
+              top: -120px;
               right: 8px;
             }
 
             &.img-2 {
-              top: 143px;
+              top: -47px;
               right: 41px;
             }
 
             &.img-3 {
-              top: 205px;
+              top: 70px;
               right: 30px;
             }
           }
@@ -3129,6 +3140,7 @@
   }
 }
 
+
 @keyframes subAnimation {
   from {
     opacity: 0;
@@ -3138,5 +3150,64 @@
   to {
     opacity: 1;
     background-size: 1920px 980px;
+  }
+}
+
+.en {
+  /* 기업개요 */
+  .macrogen.company-overview .section-info .img-box .inner .list {
+    padding: 0 20px;
+  }
+
+  .macrogen.company-overview .section-info .img-box .inner .list li::before {
+    top: 17px;
+    transform: none;
+  }
+
+  .macrogen.company-overview .section-business-detail .item .img .title {
+    width: calc(100% - 60px);
+  }
+
+  .macrogen.company-overview .section-business-detail .item .img .title::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    top: -16px;
+    opacity: .2;
+  }
+
+  /* 경영진 */
+  .macrogen.macrogen-management .section-chairman-career .inner, .macrogen.macrogen-management .section-ceo-career .inner {
+    padding: 0 35px;
+  }
+
+  .macrogen.macrogen-management .section-chairman-career .inner .item .font-h5, .macrogen.macrogen-management .section-ceo-career .inner .item .font-h5 {
+    padding-left: 0;
+  }
+
+  .macrogen.macrogen-management .section-chairman-career .inner .item .list li span:first-child::before, .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:first-child::before {
+    left: 0;
+  }
+
+  .macrogen.macrogen-management .section-chairman-career .inner .item .list li span:first-child, .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:first-child {
+    width: 118px;
+    padding-left: 13px;
+    margin-right: 12px;
+  }
+
+  .macrogen.macrogen-management .section-chairman-career .inner .item .list li span:nth-child(2), .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:nth-child(2) {
+    width: calc(100% - 118px - 12px);
+  }
+
+  /* 글로벌네트워크 */
+  .macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li span:first-child {
+    width: 182px;
+  }
+
+  .macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li span:nth-child(2) {
+    width: calc(100% - 182px);
   }
 }

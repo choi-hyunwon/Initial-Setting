@@ -183,30 +183,30 @@ data.macrogen = {
             category: 'macrogen',
             page: '01Macrogen_06글로벌네트워크'
         },
-        {
-            stateClass: 'complete',
-            url: '01Macrogen_04채용_01인재상',
-            category: 'macrogen',
-            page: '01Macrogen_04채용_01인재상'
-        },
-        {
-            stateClass: 'complete',
-            url: '01Macrogen_04채용_02인사제도',
-            category: 'macrogen',
-            page: '01Macrogen_04채용_02인사제도'
-        },
-        {
-            stateClass: 'complete',
-            url: '01Macrogen_04채용_03채용안내_01목록',
-            category: 'macrogen',
-            page: '01Macrogen_04채용_03채용안내_01목록'
-        },
-        {
-            stateClass: 'complete',
-            url: '01Macrogen_04채용_03채용안내_02조회',
-            category: 'macrogen',
-            page: '01Macrogen_04채용_03채용안내_02조회'
-        },
+        // {
+        //     stateClass: 'complete',
+        //     url: '01Macrogen_04채용_01인재상',
+        //     category: 'macrogen',
+        //     page: '01Macrogen_04채용_01인재상'
+        // },
+        // {
+        //     stateClass: 'complete',
+        //     url: '01Macrogen_04채용_02인사제도',
+        //     category: 'macrogen',
+        //     page: '01Macrogen_04채용_02인사제도'
+        // },
+        // {
+        //     stateClass: 'complete',
+        //     url: '01Macrogen_04채용_03채용안내_01목록',
+        //     category: 'macrogen',
+        //     page: '01Macrogen_04채용_03채용안내_01목록'
+        // },
+        // {
+        //     stateClass: 'complete',
+        //     url: '01Macrogen_04채용_03채용안내_02조회',
+        //     category: 'macrogen',
+        //     page: '01Macrogen_04채용_03채용안내_02조회'
+        // },
     ]
 }
 
