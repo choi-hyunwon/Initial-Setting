@@ -5,6 +5,9 @@
 */
 
 .section_business{
+ .table-scroll{
+   margin-bottom: 48px;
+ }
   .img{
     img{
       width: 100%;
@@ -43,7 +46,7 @@
       }
     }
     .title{
-      margin-bottom: 42px;
+      margin-bottom: 16px;
     }
   }
   .info-box-wrap{
@@ -66,6 +69,9 @@
       .desc{
         &.img_bottom{
           margin-bottom: 40px;
+        }
+        &.data_bottom{
+          margin-bottom: 48px;
         }
       }
       .img{
