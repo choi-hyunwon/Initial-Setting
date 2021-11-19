@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/components/head_guide.html')
+<body>
+<div class="wrap">
+     <div class="container">
+         <div class="box">
+             <p class="font-h7 mb-3">기본 테이블</p>
+             <div class="table-scroll">
+                 <table class="table">
+                     <colgroup>
+                         <col style="width:33.33333%;">
+                         <col style="width:33.33333%;">
+                         <col style="width:33.33333%;">
+                     </colgroup>
+                     <thead>
+                     <tr>
+                         <th><span>title</span></th>
+                         <th><span>title</span></th>
+                         <th><span>title</span></th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     <tr>
+                         <td class="text-start"><span>내용</span></td>
+                         <td class="text-start"><span>좌측 정렬</span></td>
+                         <td class="text-start"><span>내용</span></td>
+                     </tr>
+                     <tr>
+                         <td class="text-center"><span>내용</span></td>
+                         <td class="text-center"><span>가운데 정렬</span></td>
+                         <td class="text-center"><span>내용</span></td>
+                     </tr>
+                     <tr>
+                         <td class="text-end font-bold"><span>중간 합계행</span></td>
+                         <td class="text-end font-bold"><span>123,456,789</span></td>
+                         <td class="text-end font-bold"><span>123,456,789</span></td>
+                     </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+
+         <div class="box">
+             <p class="font-body-h-b mb-3">Overflow</p>
+             <div class="table-scroll">
+                 <table class="table">
+                     <colgroup>
+                         <col style="width:20%;">
+                         <col style="width:20%;">
+                         <col style="width:20%;">
+                         <col style="width:20%;">
+                         <col style="width:20%;">
+                     </colgroup>
+                     <thead>
+                     <tr>
+                         <th><span>title</span></th>
+                         <th><span>title</span></th>
+                         <th><span>title</span></th>
+                         <th><span>title</span></th>
+                         <th><span>title</span></th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     <tr>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                         <td><span>내용</span></td>
+                     </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+
+         <div class="box">
+             <p class="font-body-h-b mb-3">가로형 테이블(table-row)</p>
+             <div class="table-vertical-scroll">
+                 <table class="table table-row">
+                     <colgroup>
+                         <col style="width:45%;">
+                         <col style="width:20%;">
+                         <col style="width:15%;">
+                         <col style="width:20%;">
+                     </colgroup>
+                     <tbody>
+                     <tr>
+                         <th><span>내용</span></th>
+                         <td><span>- 본문열 1행 내용 긴경우 첫줄<br/>- 본문열 2행 내용 긴경우 둘째줄</span></td>
+                         <td class="table-bg"><span>내용</span></td>
+                         <td><span>내용</span></td>
+                     </tr>
+                     <tr>
+                         <th><span>2행 제목열 첫줄<br/>2행 제목열 둘째줄</span></th>
+                         <td><span>내용</span></td>
+                         <td class="table-bg"><span>내용</span></td>
+                         <td><span>내용</span></td>
+                     </tr>
+                     <tr>
+                         <th><span>내용</span></th>
+                         <td><span>내용</span></td>
+                         <td class="table-bg"><span>내용</span></td>
+                         <td><span>내용</span></td>
+                     </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+     </div>
+    @@include('../../html/include/components/footer.html')
+</div>
+</body>
+</html>

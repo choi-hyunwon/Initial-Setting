@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/components/head_guide.html')
+<body>
+<div class="wrap">
+    @@include('../../html/include/components/header-white.html')
+    <div class="container">
+        <div class="box">
+            <div class="font-h7 mb-3">Input</div>
+            <div class="mb-5">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check">
+                    <label class="form-check-label" for="check">동의합니다</label>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="input-search">
+                    <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                    <a href="#" class="btn-search"></a>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="dropdown">
+                    <div class="select">
+                        <span>선택하세요</span>
+                        <i class="ico-select-nor"></i>
+                    </div>
+                    <input type="hidden" title="select">
+                    <ul class="dropdown-menu">
+                        <li>제목</li>
+                        <li>내용</li>
+                        <li>글쓴이</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="input-group">
+                    <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="input-group">
+                    <textarea title="textarea" class="form-control" placeholder="안내문구"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="box mb-5">
+            <div class="font-h7 mb-3">Combination</div>
+            <label class="label">제목</label>
+            <div class="input-group">
+                <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+            </div>
+            <label class="label">휴대폰 번호</label>
+            <div class="input-group input-group-phone">
+                <div class="dropdown">
+                    <div class="select">
+                        <span>010</span>
+                        <i class="ico-select-nor"></i>
+                    </div>
+                    <input type="hidden" name="phone">
+                    <ul class="dropdown-menu">
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                    </ul>
+                </div>
+                <input type="number" title="phone" class="form-control">
+                <input type="number" title="phone" class="form-control">
+            </div>
+            <div class="input-tip">
+                <i class="icon ico-info-blue"></i>
+                <span>안내문구 안내문구 안내문구 안내문구 안내문구 안내문구 안내문구 안내문구</span>
+            </div>
+            <label class="label">제목</label>
+            <div class="input-group">
+                <textarea title="textarea" class="form-control" placeholder="안내문구"></textarea>
+            </div>
+        </div>
+        <div class="box mb-5">
+            <div class="font-h7 mb-3">Attach File</div>
+            <div class="attach-file">
+                <a href="#" class="file">
+                    <i class="icon ico-attach"></i>
+                    <span>[자사양식]입사지원서_마크로젠.zip</span>
+                </a>
+                <a href="#" class="file">
+                    <i class="icon ico-attach"></i>
+                    <span>[자사양식]입사지원서_마크로젠_파일명긴경우.zip</span>
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="font-h7 mb-3">File Download</div>
+            <div class="file-download">
+                <div class="item">
+                    <i class="icon ico-file-doc"></i>
+                    <span class="font-body-b">마크로젠 입사지원양식.doc</span>
+                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                </div>
+                <div class="item">
+                    <i class="icon ico-file-hwp"></i>
+                    <span class="font-body-b">[자사양식]마크로젠_상시채용_입사지원양식.hwp</span>
+                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('../../html/include/components/footer.html')
+</div>
+</body>
+</html>
