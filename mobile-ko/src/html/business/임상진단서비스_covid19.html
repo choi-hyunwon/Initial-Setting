@@ -73,8 +73,8 @@
                     /*클릭시 탭메뉴 변경*/
                     option.on('click',function(){
                         var idx =$(this).index();
-                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                         textChange();
                     })
 
@@ -82,8 +82,8 @@
                     function setTabContent(idx){
                         $('._selected-value').text($('._select-option li').eq(idx).text());
                         <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
                         /*페이지 변경후 상단 이동*/
                         fnMove();
@@ -111,7 +111,7 @@
             <!--covid19 탭 네비 e-->
 
             <!--covid19 탭 메뉴 s-->
-            <div class="info-box-area tab-content">
+            <div class="info-box-wrap tab-content">
                 <!--Axen™ COVID-19 RT 진단키트-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Axen™ COVID-19 RT 진단키트</p>
