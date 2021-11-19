@@ -178,7 +178,6 @@
       padding-top: 80px;
     }
     .border-gray-box{
-      padding: 10px;
       border: 1px solid #e9e9e9;
       margin-bottom:42px;
       position: relative;
@@ -200,6 +199,9 @@
       }
       &:nth-last-of-type{
         margin-bottom: 0px;
+      }
+      +.caption{
+        padding-top: 17px;
       }
     }
     .notice-text{
