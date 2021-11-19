@@ -219,16 +219,16 @@
                 }
               }
               .swiper-scrollbar{
-                width: 335px!important;
+                width: calc(100% - 20px)!important;
                 height: 1px;
                 background: rgba(255,255,255,0.1);/*ffffff*/
-                opacity: 0.1;
+                opacity: 1;
                 bottom: -24px;
                 left: 0;
                 .swiper-scrollbar-drag{
                   background: rgba(217,217,217,1);/*d9d9d9*/
 
-                  opacity: 1!important;
+                  opacity: 0.5!important;
                 }
               }
             }
