@@ -242,6 +242,20 @@ front.common = (function () {
             $(this).parent().parent().removeClass('active');
         })
         /* e tooltip */
+
+        /* s accordion */
+        $('.accordion-button').on('click', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).siblings('.accordion-content').slideUp(500);
+            } else {
+                $('.accordion-button').removeClass('active');
+                $(this).addClass('active');
+                $('.accordion-content').slideUp(500);
+                $(this).siblings('.accordion-content').slideDown(500);
+            }
+        });
+        /* s accordion */
     }
 
     return {

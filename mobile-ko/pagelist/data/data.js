@@ -122,6 +122,12 @@ data.guide = {
             url: 'loading',
             category: 'guide',
             page: 'loading'
+        },
+        {
+            stateClass: 'complete',
+            url: 'accordion',
+            category: 'guide',
+            page: 'accordion'
         }
     ]
 }
