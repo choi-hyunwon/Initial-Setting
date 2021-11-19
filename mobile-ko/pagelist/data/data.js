@@ -130,7 +130,7 @@ data.macrogen = {
     title: 'MACROGEN',
     list: [
         {
-           stateClass: 'walking',
+           stateClass: 'working',
             url: 'Main',
              category: 'macrogen',
             page: 'Main'
