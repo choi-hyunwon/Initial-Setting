@@ -334,12 +334,12 @@ data.business ={
         //     category: 'business',
         //     page: '연구서비스_MICROARRAY'
         // },
-        // {
-        //     stateClass: 'working',
-        //     url: '연구서비스_동물모델사업부',
-        //     category: 'business',
-        //     page: '연구서비스_동물모델사업부'
-        // },
+        {
+            stateClass: 'working',
+            url: '연구서비스_동물모델사업부',
+            category: 'business',
+            page: '연구서비스_동물모델사업부'
+        },
         {
             stateClass: 'complete',
             url: '임상진단서비스_암유전체검사',
