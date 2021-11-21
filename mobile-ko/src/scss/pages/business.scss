@@ -8,6 +8,7 @@
   margin: 0 20px;
  .table-scroll{
    margin-bottom: 48px;
+   margin-right: -20px;
  }
   .img{
     img{
@@ -215,10 +216,20 @@
             }
           }
         }
+        &.table_bottom{
+          margin-bottom: 24px;
+        }
 
       }
         &.img_bottom{
         margin-bottom: 40px;
+      }
+      &.table_bottom{
+        margin-bottom: 24px;
+      }
+
+      .sub-list-title{
+        margin-bottom: 8px;
       }
     }
     .btn-area{

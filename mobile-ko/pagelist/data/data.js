@@ -328,12 +328,12 @@ data.business ={
             category: 'business',
             page: '연구서비스_Oligo'
         },
-        // {
-        //     stateClass: 'working',
-        //     url: '연구서비스_MICROARRAY',
-        //     category: 'business',
-        //     page: '연구서비스_MICROARRAY'
-        // },
+        {
+            stateClass: 'working',
+            url: '연구서비스_MICROARRAY',
+            category: 'business',
+            page: '연구서비스_MICROARRAY'
+        },
         {
             stateClass: 'complete',
             url: '연구서비스_동물모델사업부',
