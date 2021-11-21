@@ -304,12 +304,12 @@ data.esg = {
 data.business ={
     title: 'BUSINESS',
     list: [
-        // {
-        //     stateClass: 'working',
-        //     url: '연구서비스_NGS',
-        //     category: 'business',
-        //     page: '연구서비스_NGS'
-        // },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_NGS',
+            category: 'business',
+            page: '연구서비스_NGS'
+        },
         {
             stateClass: 'complete',
             url: '연구서비스_CES',
@@ -329,7 +329,7 @@ data.business ={
             page: '연구서비스_Oligo'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '연구서비스_MICROARRAY',
             category: 'business',
             page: '연구서비스_MICROARRAY'
