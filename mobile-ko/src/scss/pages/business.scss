@@ -78,6 +78,9 @@
         + .desc{
           padding-top: 40px;
         }
+        + .list-area{
+          padding-top: 40px;
+        }
       }
       &.show{
         display: block;
@@ -180,7 +183,7 @@
         margin-bottom: 16px;
       }
       .list-circle-dot{
-        li{
+        > li{
           position: relative;
           margin-bottom: 8px;
           &:nth-last-of-type(1){
@@ -200,6 +203,16 @@
             line-height: 32px;
             margin-left: 15px;
             display: inline-block;
+          }
+          .list-hypen{
+            margin-left: 15px;
+            li{
+              font-size: 14px;
+              line-height: 26px;
+              letter-spacing: -0.5px;
+              color: #707070;
+              font-weight: 400;
+            }
           }
         }
 
