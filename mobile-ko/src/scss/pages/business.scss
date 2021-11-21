@@ -131,6 +131,9 @@
         line-height: 26px;
         letter-spacing: -0.5px;
         color: #909090;
+        &.btn-wrap_bottom{
+          margin-bottom: 40px;
+        }
       }
       .subject{
         &.img_bottom{
@@ -255,8 +258,6 @@
         padding-top: 80px;
       }
     }
-
-
   }
   .list-gallery{
     .img{
@@ -277,6 +278,21 @@
         width: 100%;
         height: 100%;
       }
+    }
+    .list{
+        .cont{
+          .desc{
+            margin-bottom: 24px;
+            &.caption_bottom{
+              margin-bottom: 16px;
+
+            }
+        }
+          .caption{
+            margin-bottom: 24px;
+          }
+      }
+
     }
   }
 

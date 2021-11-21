@@ -359,7 +359,7 @@ data.business ={
             page: '임상진단서비스_covid19'
         },
         {
-            stateClass: 'working',
+            stateClass: 'working ',
             url: '헬스케어서비스_개인유전자분석',
             category: 'business',
             page: '헬스케어서비스_개인유전자분석'
