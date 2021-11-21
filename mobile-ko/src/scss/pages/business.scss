@@ -58,9 +58,10 @@
     }
   }
   .select-nav-box{
+    margin-bottom: 56px;
     .select-box{
       display: block;
-      margin-bottom: 64px;
+
       .select-option{
         position: absolute;
         font-size: 18px;
@@ -73,6 +74,11 @@
   .info-box-wrap{
     .info-box{
       display: none;
+      .img{
+        + .desc{
+          padding-top: 40px;
+        }
+      }
       &.show{
         display: block;
       }

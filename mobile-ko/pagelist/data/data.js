@@ -371,7 +371,7 @@ data.business ={
             page: '헬스케어서비스_장내미생물분석'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '헬스케어서비스_반려동물유전자분석',
             category: 'business',
             page: '헬스케어서비스_반려동물유전자분석'
