@@ -201,6 +201,9 @@
         }
 
       }
+        &.img_bottom{
+        margin-bottom: 40px;
+      }
     }
     .btn-area{
       padding-top: 80px;
@@ -230,6 +233,9 @@
       }
       +.caption{
         padding-top: 17px;
+      }
+      +.btn-area{
+        padding-top: 38px;
       }
     }
     .notice-text{
