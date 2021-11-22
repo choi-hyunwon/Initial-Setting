@@ -116,17 +116,30 @@
 
             <div class="info-box-wrap">
                 <!--질병예측 & 웰니스 유전자검사-->
-                <div class="info-box show" id="anchor1">
+                <div class="info-box show">
                     <p class="font-h4 main-title">질병예측 &#38; 웰니스 유전자검사</p>
                     <p class="subject font-body-h">마이지놈스토리 블루와 그린, 그리고 이들을 모두 아우르는 골드는 질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 검사 항목을 제공합니다.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="../../img/business/img_disease.png" alt="질병예측 & 웰니스 유전자검사">
                     </div>
+                    <!--content-anchor s-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">마이지놈스토리 블루 (질병 예측)</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">마이지놈스토리 블루 (질병 예측)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">마이지놈스토리 그린 (웰니스)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">마이지놈스토리 골드 (종합형)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">젠톡 (질병 예측)</a></li>
+                        </ul>
+                    </div>
+                    <!--content-anchor e-->
                     <hr class="divider">
                     <div class="list-gallery">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 블루 (질병 예측)</p>
+                            <p class="title font-h5" id="target1">마이지놈스토리 블루 (질병 예측)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -148,7 +161,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 그린 (웰니스)</p>
+                            <p class="title font-h5" id="target2">마이지놈스토리 그린 (웰니스)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -170,7 +183,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 골드 (종합형)</p>
+                            <p class="title font-h5" id="target3">마이지놈스토리 골드 (종합형)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -183,7 +196,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">젠톡 (질병 예측)</p>
+                            <p class="title font-h5" id="target4">젠톡 (질병 예측)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -216,9 +229,22 @@
                         <img src="../../img/business/img_healthbeauthintro.png" alt="헬스&뷰티 유전자 검사">
                     </div>
                     <hr class="divider">
+                    <!--content-anchor s-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">마이지놈스토리 더플러스 스킨&케어 44 (세부항목 48종)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">마이지놈스토리 더플러스 피트니스 41(세부항목 43종)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">마이지놈스토리 더플러스 12 (세부항목 13종)</a></li>
+                        </ul>
+                    </div>
+                    <!--content-anchor e-->
                     <div class="list-gallery">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</p>
+                            <p class="title font-h5" id="target5">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -249,7 +275,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 더플러스 스킨&#38;케어 44 (세부항목 48종)</p>
+                            <p class="title font-h5" id="target6">마이지놈스토리 더플러스 스킨&#38;케어 44 (세부항목 48종)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -276,7 +302,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 더플러스 피트니스 41(세부항목 43종)</p>
+                            <p class="title font-h5" id="target7">마이지놈스토리 더플러스 피트니스 41(세부항목 43종)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -304,7 +330,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 더플러스 12 (세부항목 13종)</p>
+                            <p class="title font-h5" id="target8">마이지놈스토리 더플러스 12 (세부항목 13종)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -320,7 +346,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <div calss="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
+                                        <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
                                               class="btn btn-sm btn-light"><span>서비스 문의</span></a>
                                             <a href="https://smartstore.naver.com/mygenomestory/products/4150226329"
                                                target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a></div>
@@ -332,7 +358,6 @@
                 </div>
                 <!--약물 반응성 분석 서비스-->
                 <div class="info-box">
-                    <!--09.29 header 링크 이슈로 인한 id 변경 추가-->
                     <p class="font-h4 main-title" id="anchor3">약물 반응성 분석 서비스</p>
                     <p class="subject font-body-h">개인의 유전형에 따른 약물반응(치료효과, 대사, 부작용)을 예측하여 약물 용량 조절, 대체약물 처방 등 최적의 맞춤 약물 치료 계획을 수립하도록 돕는 유전자검사입니다.</p>
                     <!--10.05 이미지 경로 변경-->
@@ -350,6 +375,80 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
+    <!--contentanchor s-->
+    <script>
+        /*변수*/
+        var contentAnchor = $(".content-anchor");
+        var anchorOption= $(".anchor-value");
+        var anchor = $( "._anchor" );
+        var offset = anchor.offset();
+
+
+        /*특정위치 show & hide*/
+        function fnMousewheel(){
+            var lastScroll = 0;
+
+            $(window).on('scroll',function(e){
+                let listPos = $('.info-box').offset().top;
+                let offset = $(this).scrollTop();
+
+                if (offset > lastScroll){
+                    // console.log('down')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                else {
+                    // console.log('up')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                lastScroll = offset;
+            });
+        }
+
+        /*드롭다운 클릭시 이벤트*/
+        contentAnchor.on('click',function() {
+            var select = $(this);
+            if(select.hasClass('open')) {
+                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+            }
+            else {
+                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                $('body').on('click',function (e){
+                    if(contentAnchor.hasClass('open')) {
+                        if(!contentAnchor.has(e.target).length) {
+                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                        }
+                    }
+                    e.preventDefault()
+                })
+            }
+        });
+
+
+        /*클릭시 페이지 이동 이동*/
+        function TitleMove(target){
+            var id = $('#'+ target);
+            var offset = id.offset();
+            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+        }
+        /*클릭시 텍스트 변경*/
+        anchorOption.on('click',function() {
+            var select = $(this).find('a').text();
+            $('._anchor-value').find('span').text(select);
+        });
+        fnMousewheel();
+
+    </script>
+    <!--contentanchor e-->
 </div>
 @@include('../../html/include/components/gnb.html')
 <!--1번이미지 모달 s-->
