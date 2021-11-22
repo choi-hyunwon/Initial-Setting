@@ -115,7 +115,7 @@
                     <div class="border-gray-box">
                         <div class="img">
                             <img src="../../img/business/img_familyline.png" alt="암 발생 위험 예측">
-                            <span><i class="icon ico-zoom-white"></i></span>
+                            <span class="btnZoom-1"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <hr class="divider">
@@ -282,7 +282,7 @@
                     <div class="border-gray-box">
                         <!--10.05 이미지 경로 변경-->
                         <img src="../../img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
-                        <span><i class="icon ico-zoom-white"></i></span>
+                        <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
                     </div>
                     <p class="notice-text"><i class="icon  ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
                     <div class="btn-area">
@@ -308,14 +308,14 @@
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
                             <img src="../../img/business/img_cancer.png" alt="암 발생 원인 분석">
-                            <span><i class="icon ico-zoom-white"></i></span>
+                            <span class="btnZoom-3"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <div class="border-gray-box mb-0">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
                             <img src="../../img/business/img_cancer2.png" alt="암 발생 원인 분석 그래프">
-                            <span><i class="icon ico-zoom-white"></i></span>
+                            <span class="btnZoom-4"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <p class="caption">※ 출처 : Pao W et al. New driver mutations in non-small-cell lung cancer Lancet Oncol. 2011 Feb; 12(2): 175-80.</p>
@@ -343,14 +343,14 @@
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
                             <img src="../../img/business/img_monitoring.png" alt="CTDNA분석">
-                            <span><i class="icon ico-zoom-white"></i></span>
+                            <span class="btnZoom-5"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <div class="border-gray-box mb-0">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
                             <img src="../../img/business/img_monitoring2.png" alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
-                            <span><i class="icon ico-zoom-white"></i></span>
+                            <span class="btnZoom-6"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <hr class="divider">
@@ -372,6 +372,245 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
+
+    <!--modalImageViewer1 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img_familyline.png" alt="familyline"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+
+
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal1.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-1').on('click', function () {
+            modal1.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer1 e-->
+    <!--modalImageViewer2 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img-dnatest.png" alt="dnatest"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal2.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-2').on('click', function () {
+            modal2.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer2 e-->
+    <!--modalImageViewer3 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img_cancer.png" alt="dnatest"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal3.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-3').on('click', function () {
+            modal3.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer4 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer4" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img_cancer2.png" alt="dnatest"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal4 = new bootstrap.Modal(document.getElementById('modalImageViewer4'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal4.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-4').on('click', function () {
+            modal4.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer4 e-->
+    <!--modalImageViewer5 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer5" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img_monitoring.png" alt="dnatest"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal5 = new bootstrap.Modal(document.getElementById('modalImageViewer5'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal5.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-5').on('click', function () {
+            modal5.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer5 e-->
+    <!--modalImageViewer6 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer6" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img_monitoring2.png" alt="monitoring"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal6 = new bootstrap.Modal(document.getElementById('modalImageViewer6'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal6.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-6').on('click', function () {
+            modal6.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer6 e-->
+    <div class="toast-popup">
+        <p>이미지를 확대할 수 있습니다</p>
+    </div>
 </div>
 @@include('../../html/include/components/gnb.html')
 </body>
