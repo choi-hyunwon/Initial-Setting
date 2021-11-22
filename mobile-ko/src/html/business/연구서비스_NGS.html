@@ -142,6 +142,7 @@
                             <li class="anchor-value" onclick="TitleMove('Sequencing')"><a href="#">Whole Genome De novo Sequencing</a></li>
                         </ul>
                     </div>
+                    <!--content-anchor e-->
                     <p class="main-title font-h4" id="Resequencing">Whole Genome Sequencing</p>
                     <p class="subject font-body-h-b">WGS는 유전체 전체를 한 번에 읽어 유전정보를 분석하는 방법입니다.</p>
                     <p class="desc font-body img_bottom">WGS을 통해 얻어진 변이 정보는 질병과 관련한 유전자 발굴 및 맞춤의학 연구에 활용되고 있습니다. 현재 전 세계
@@ -676,7 +677,6 @@
         /*특정위치 show & hide*/
         function fnMousewheel(){
             var lastScroll = 0;
-
             $(window).on('scroll',function(e){
                 let listPos = $('.info-box').offset().top;
                 let offset = $(this).scrollTop();

@@ -145,7 +145,18 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">Standard Sequencing Single/Plate</p>
+                    <!--content-anchor s-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">Standard Sequencing Single/Plate</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('standard')"><a href="#">Standard Sequencing Single/Plate</a></li>
+                            <li class="anchor-value" onclick="TitleMove('difficult')"><a href="#">Difficult Template Sequencing</a></li>
+                        </ul>
+                    </div>
+                    <!--content-anchor e-->
+                    <p class="font-h5 sub-title" id="standard">Standard Sequencing Single/Plate</p>
                     <p class="desc font-body list_bottom">Standard Sequencing은 Single tube와 96well plate 두 가지로 실험 진행이
                         가능합니다.</p>
                     <div class="list-area-group">
@@ -168,7 +179,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">Difficult Template Sequencing</p>
+                    <p class="font-h5 sub-title" id="difficult">Difficult Template Sequencing</p>
                     <p class="desc font-body list_bottom">Standard Sequencing 결과확인 후 또는 고객의 정보를 바탕으로 특이 구조를 보유한
                         Template를 Sequencing하는 서비스입니다. 특히 아래와 같은 특이구조를 가진 Template에 적합하며 고품질의<br>
                         개선된 결과를 안정적으로 얻을 수 있습니다.</p>
@@ -184,7 +195,7 @@
                     <div class="border-gray-box">
                         <div class="img">
                             <img src="../../img/business/img_sequencingchart.png" alt="Difficult Template Sequencing">
-                            <span><i class="icon ico-zoom-white"></i></span>
+                            <span class="btnZoom-1"><i class="icon ico-zoom-white"></i></span>
                         </div>
 
                     </div>
@@ -215,7 +226,18 @@
                         <img src="../../img/business/img-ces-identification.png" alt="Identification">
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">16S/18S/26S rRNA&#38;ITS Region Full Sequencing</p>
+                    <!--content-anchor s-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">16S/18S/26S rRNA&ITS Region Full Sequencing</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('rrna')"><a href="#">16S/18S/26S rRNA&ITS Region Full Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('rapidID')"><a href="#">Rapid-ID</a></li>
+                        </ul>
+                    </div>
+                    <!--content-anchor e-->
+                    <p class="font-h5 sub-title" id="rrna">16S/18S/26S rRNA&#38;ITS Region Full Sequencing</p>
                     <p class="desc list_bottom font-body">16S rRNA gene 27F, 1492R primer를 이용하여 PCR을 진행한 뒤 Inter-primer인 785F,
                         907R primer로 Sequencing 하여 균을 동정하는 서비스입니다. 고객이 원하는 경우 Primer를 추가 선택/변경하여 약 1,350bp 이상의 염기서열을
                         제공합니다.</p>
@@ -233,7 +255,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="sub-title font-h5">Rapid-ID</p>
+                    <p class="sub-title font-h5" id="rapidID">Rapid-ID</p>
                     <p class="desc list_bottom font-body">MALDI-TOF 단백질 분석 기술을 이용한 미생물질량분석동정 서비스로 세계 최초 FDA Clearance 획득 및 AOAC
                         인증된 시스템을 사용합니다. 기존 염기서열 동정서비스에 비해 소요시간이 짧으며 정확한
                         미생물 동정을 원하는 고객에게 적합한 서비스입니다. 미생물을 식별하고 종 또는 속을 분류 및 식별합니다. 정확성과 즉시성 때문에 대다수 의학, 제약, 화장품 제조의 미생물
@@ -319,6 +341,20 @@
                 </div>
                 <!--Customized Sequencing-->
                 <div class="info-box">
+                    <!--content-anchor s-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">PCR Optimization/Amplification</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('ancher1')"><a href="#">PCR Optimization/Amplification</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher2')"><a href="#">Pyrosequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher3')"><a href="#">NGS Validation</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher4')"><a href="#">MLST 분석</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher5')"><a href="#">One-click Sanger Sequencing</a></li>
+                        </ul>
+                    </div>
+                    <!--content-anchor e-->
                     <p class="main-title font-h4">Customized Sequencing</p>
                     <p class="subject font-body-h-b">Customized Sequencing은 동일 조건 하의 sanger sequencing 실험, prep, PCR, Cloning,
                         Pyrosequencing 등을 제공합니다.</p>
@@ -326,7 +362,7 @@
                         <img src="../../img/business/img-ces-customized.png" alt="Customized Sequencing">
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">PCR Optimization/ Amplification</p>
+                    <p class="font-h5 sub-title" id="ancher1">PCR Optimization/ Amplification</p>
                     <p class="desc list_bottom font-body">PCR Optimization은 Target region과 관련하여 Reference와 함께 받은 Cell/gDNA의 Primer
                         디자인, PCR 증폭, Sequencing, BI 리포트를 포함한 전 프로세스 공정을 수행•분석하는 고객 맞춤형 서비스입니다. PCR 증폭, Touch down PCR
                         증폭, Nested PCR 증폭, FFPE PCR 증폭실험 등 샘플 특이성으로 인해 재실험률이 높은 경우 고객 맞춤형 PCR 증폭 서비스를 통해 문제점을
@@ -341,7 +377,7 @@
                         </ul>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">Pyrosequencing</p>
+                    <p class="font-h5 sub-title" id="ancher2">Pyrosequencing</p>
                     <p class="desc list_bottom font-body">Pyrosequencing은 Nucleotide가 DNA와 중합이 일어날 때, 생성되는 Pyrophosphate(PPi)를
                         이용하여 염기서열을 확인하는 Sequencing 서비스입니다.DNA 서열과 상관없이 특정 Gene의
                         Expression 레벨을 조절하는 것에 대한 후성유전체학(Epigenetics)의 연구가 활발해지면서 DNA methylation분석 서비스에 대한 관심이 높아지고
@@ -369,7 +405,7 @@
                         </ul>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">NGS Validation</p>
+                    <p class="font-h5 sub-title" id="ancher3">NGS Validation</p>
                     <p class="desc list_bottom font-body">NGS 서비스 이용 후 해당 데이터의 정확도와 신뢰도를 높이기 위해 Sanger Sequencing 방법을 이용하는 검증
                         서비스입니다.
                         제공 받은 Chromosome position 또는 Reference sequence를 통해 특정 부위의 SNP와 변이(Mutation) 결과를 분석합니다.
@@ -387,14 +423,14 @@
                         </ul>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">MLST 분석</p>
+                    <p class="font-h5 sub-title" id="ancher4">MLST 분석</p>
                     <p class="desc font-body img_bottom">MLST(Multilocus Sequence Typing) 분석은 Bacteria, Fungi 등 동일 종 내의 균주를
                         분류하는 분석 방법으로 특이 균종 5~7개 Housekeeping gene을 Sequencing 하여 각각의Sequence Type(ST) 연관 관계를 분석하고, 동일 균종
                         내 균주별 대립유전자의 조합을 통해 유전적/분자적 진화 관계를 확인합니다. </p>
                     <div class="border-gray-box">
                         <div class="img">
                             <img src="../../img/business/img_mslt.png" alt="MLST 분석">
-                            <span><i class="icon ico-zoom-white"></i></span>
+                            <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <hr class="divider">
@@ -410,7 +446,7 @@
                         정립하여 정확하게 사용합니다.
                     </p>
                     <hr class="divider">
-                    <p class="sub-title font-h5 ">
+                    <p class="sub-title font-h5" id="ancher5">
                         Primer Walking
                     </p>
                     <p class="desc font-body">
@@ -472,9 +508,22 @@
                         </ul>
                     </div>
                     <hr class="divider">
+                    <!--content-anchor s-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">친자확인 검사</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('ancher6')"><a href="#">친자확인 검사</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher7')"><a href="#">부계확인 검사</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher8')"><a href="#">모계확인 검사</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher9')"><a href="#">개인식별 검사</a></li>
+                        </ul>
+                    </div>
+                    <!--content-anchor e-->
                     <div class="list-gallery">
                         <div class="list">
-                            <p class="title font-h5">친자확인 검사</p>
+                            <p class="title font-h5" id="ancher6">친자확인 검사</p>
                             <div class="content">
                                 <div class="img mb-0">
                                     <img src="../../img/business/img-ces-test1.png" alt="친자확인검사">
@@ -487,7 +536,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">부계확인 검사</p>
+                            <p class="title font-h5" id="ancher7">부계확인 검사</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="img">
@@ -502,7 +551,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">모계확인 검사</p>
+                            <p class="title font-h5" id="ancher8">모계확인 검사</p>
                             <div class="content">
                                 <div class="img mb-0">
                                     <img src="../../img/business/img-ces-test3.png" alt="모계확인검사">
@@ -518,7 +567,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">개인식별 검사</p>
+                            <p class="title font-h5" id="ancher9">개인식별 검사</p>
                             <div class="content">
                                 <div class="img mb-0">
                                     <img src="../../img/business/img-ces-test4.png" alt="개인식별검사">
@@ -551,6 +600,164 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
+    <!--content-anchor script s-->
+    <script>
+        /*변수*/
+        var contentAnchor = $(".content-anchor");
+        var anchorOption= $(".anchor-value");
+        var anchor = $( "._anchor" );
+        var offset = anchor.offset();
+
+
+        /*특정위치 show & hide*/
+        function fnMousewheel(){
+            var lastScroll = 0;
+
+            $(window).on('scroll',function(e){
+                let listPos = $('.info-box').offset().top;
+                let offset = $(this).scrollTop();
+
+                if (offset > lastScroll){
+                    // console.log('down')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                else {
+                    // console.log('up')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                lastScroll = offset;
+            });
+        }
+
+        /*드롭다운 클릭시 이벤트*/
+        contentAnchor.on('click',function() {
+            var select = $(this);
+            if(select.hasClass('open')) {
+                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+            }
+            else {
+                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                $('body').on('click',function (e){
+                    if(contentAnchor.hasClass('open')) {
+                        if(!contentAnchor.has(e.target).length) {
+                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                        }
+                    }
+                    e.preventDefault()
+                })
+            }
+        });
+
+
+        /*클릭시 페이지 이동 이동*/
+        function TitleMove(target){
+            var id = $('#'+ target);
+            var offset = id.offset();
+            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+        }
+        /*클릭시 텍스트 변경*/
+        anchorOption.on('click',function() {
+            var select = $(this).find('a').text();
+            $('._anchor-value').find('span').text(select);
+        });
+        fnMousewheel();
+
+    </script>
+    <!--content-anchor script e-->
+
+    <!--modalImageViewer1 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img_sequencingchart.png" alt="Difficult Template Sequencing"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+
+
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-1').on('click', function () {
+            modal.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer1 e-->
+    <!--modalImageViewer2 s-->
+    <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+                <div class="pinch-zoom-parent">
+                    <div class="pinch-zoom"><img src="../../img/business/img_mslt.png" alt="Difficult Template Sequencing"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
+        // zoom
+        var el = document.querySelector('.pinch-zoom');
+        // new PinchZoom.default(el, {});
+        // modal close
+        $('.btn-close').on('click', function () {
+            modal.hide();
+            hideToastPopup();
+        })
+
+        // modal open
+        $('.btnZoom-2').on('click', function () {
+            modal.show();
+            showToastPopup();
+        })
+
+        // toast popup
+        function showToastPopup() {
+            $('.toast-popup').addClass('active');
+            setTimeout(hideToastPopup, 2000);
+        }
+        function hideToastPopup() {
+            $('.toast-popup').removeClass('active');
+        }
+    </script>
+    <!--modalImageViewer2 e-->
+    <div class="toast-popup">
+        <p>이미지를 확대할 수 있습니다</p>
+    </div>
 </div>
 @@include('../../html/include/components/gnb.html')
 
