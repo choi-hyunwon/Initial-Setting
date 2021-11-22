@@ -372,8 +372,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/business/img_data_graph1.png" alt="게시물 제목"></div>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph1.png" alt="게시물 제목"></div>
             </div>
         </div>
     </div>
@@ -385,7 +385,7 @@
     // modal show
     var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
     // zoom
-    var el = document.querySelector('.pinch-zoom');
+    var el = document.querySelector('.panzoom');
     new PinchZoom.default(el, {});
 
     // modal close

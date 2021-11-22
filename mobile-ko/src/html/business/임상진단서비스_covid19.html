@@ -245,7 +245,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                              <img src="../../img/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
-                                <span class="_btnZoom-1">
+                                <span class="btnZoom-1">
                                     <i class="icon ico-zoom-white"></i>
                                 </span>
                             </div>
@@ -253,7 +253,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                                 <img src="../../img/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
-                                <span class="_btnZoom-2">
+                                <span class="btnZoom-2">
                                     <i class="icon ico-zoom-white _btnZoom2"></i>
                                 </span>
                             </div>
@@ -261,7 +261,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                                 <img src="../../img/business/img_clinicaltrialtest.png" alt="flow">
-                                <span class="_btnZoom-3">
+                                <span class="btnZoom-3">
                                     <i class="icon ico-zoom-white _btnZoom3"></i>
                                 </span>
                             </div>
@@ -357,40 +357,76 @@
     @@include('../../html/include/components/toTop.html')
 </div>
 @@include('../../html/include/components/gnb.html')
-<!--1번이미지 모달 s-->
+<div class="toast-popup">
+    <p>이미지를 확대할 수 있습니다</p>
+</div>
+<!--modalImageViewer1 s-->
 <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/business/img_data_graph1.png" alt="게시물 제목"></div>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph1.png" alt="graph1"></div>
             </div>
         </div>
     </div>
 </div>
-<div class="toast-popup">
-    <p>이미지를 확대할 수 있습니다</p>
-</div>
 <script>
     // modal show
-    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
-    // zoom
-    var el = document.querySelector('.pinch-zoom');
-    new PinchZoom.default(el, {});
+    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
 
     // modal close
     $('.btn-close').on('click', function () {
-        modal.hide();
+        modalImageViewer1.hide();
         hideToastPopup();
     })
 
     // modal open
-    $('._btnZoom-1').on('click', function () {
-        modal.show();
+    $('.btnZoom-1').on('click', function () {
+        modalImageViewer1.show();
         showToastPopup();
     })
 
+    // show toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
 
+    // hide toast popup
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer1 e-->
+<!--modalImageViewer2 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph2.png" alt="graph2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal2.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-2').on('click', function () {
+        modal2.show();
+        showToastPopup();
+    })
 
     // toast popup
     function showToastPopup() {
@@ -401,6 +437,44 @@
         $('.toast-popup').removeClass('active');
     }
 </script>
-<!--1번이미지 모달 e-->
+<!--modalImageViewer2 e-->
+<!--modalImageViewer3 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal3.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-3').on('click', function () {
+        modal3.show();
+        showToastPopup();
+    })
+
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
 </body>
 </html>
