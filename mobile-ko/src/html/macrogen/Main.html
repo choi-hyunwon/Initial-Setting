@@ -3,8 +3,22 @@
 @@include('../../html/include/common/head.html')
 <body>
 <div class="wrap main-wrap">
-    <div class="full-bg main-bg">
+    <div class="main-bg">
         @@include('../../html/include/components/header.html')
+
+        <script>
+          /*  $(window).scroll( function(){
+                if($('html, body').scrollTop() > 0) {
+                    console.log(scrollValue);
+
+
+                }
+            })*/
+          $(document).scrollTop();
+          $(window).scroll(function () { var scrollValue = $(document).scrollTop(); console.log(scrollValue); });
+
+
+        </script>
 
         <!-- s intro -->
         <div class="intro">
@@ -23,7 +37,7 @@
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
                 <div class="swiper-slide visual_01">
-                    <div class="text-box">
+                    <div class="text-box" data-aos="fade-left" data-aos-duration="600">
                         <p><span class="text-gradient">유전체</span></p>
                         <p><span class="text-gradient" >분석기술의</span></p>
                         <p class="slogan-sub">글로벌 리더</p>
@@ -31,7 +45,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide visual_02">
-                    <div class="text-box">
+                    <div class="text-box" data-aos="fade-left" data-aos-duration="600">
                         <p><span class="text-gradient">빅데이터 +</span></p>
                         <p><span class="text-gradient" >AI기반</span></p>
                         <p class="slogan-sub">정밀맞춤의학</p>
@@ -39,7 +53,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide visual_03">
-                    <div class="text-box">
+                    <div class="text-box" data-aos="fade-left" data-aos-duration="600">
                         <p><span class="text-gradient" >희망과</span></p>
                         <p><span class="text-gradient" >함께하는</span></p>
                         <p class="slogan-sub">건강한 미래</p>
@@ -47,7 +61,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide visual_04">
-                    <div class="text-box phrase">
+                    <div class="text-box phrase" data-aos="fade-left" data-aos-duration="600">
                         <p>DNA가<br>세상을 구할 것이다<br>나의 DNA에는<br>과거와 미래가 공존한다</p>
                         <span class="name">마크로젠 창립자&#47;회장<br><span>서정선</span></span>
                     </div>
@@ -150,6 +164,7 @@
                     lastScroll = st;
                 });
             }
+
         </script>
 
         <!-- e 메인비주얼 영역 -->
