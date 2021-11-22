@@ -135,12 +135,12 @@ data.guide = {
 data.macrogen = {
     title: 'MACROGEN',
     list: [
-        // {
-        //     stateClass: 'complete',
-        //     url: 'Main',
-        //     category: 'macrogen',
-        //     page: 'Main'
-        // },
+        {
+           stateClass: 'working',
+            url: 'Main',
+             category: 'macrogen',
+            page: 'Main'
+        },
         {
             stateClass: 'complete',
             url: '01Macrogen_01기업개요',
@@ -383,7 +383,7 @@ data.RD = {
     title: 'R&D',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_01정밀의학연구소_01소개',
             category: 'RD',
             page: '03R&D_01정밀의학연구소_01소개'
@@ -437,7 +437,7 @@ data.IR = {
     title: 'IR',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '01재무정보',
             category: 'IR',
             page: '01재무정보'
