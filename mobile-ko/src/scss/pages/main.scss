@@ -10,36 +10,36 @@
         position: absolute;
         left: 5.333%/*20px*/;
         top: 25.86%/*210px*/;
-
-        .text {
-          font-size: 34px;
-          line-height: 50px;
-          letter-spacing: -1px;
-          color: $gray-000000;
-          font-weight: bold;
-          margin-bottom: 24px;
-        }
-        .text-gradient {
-          font-size: 46px;
-          line-height: 54px;
-          font-weight: bold;
-          letter-spacing: -1px;
+        p{
           margin-bottom: 8px;
-          position: relative;
-          background: #55ffaa;
-          background: -webkit-linear-gradient(left, #00ADA9, #377EF9);
-          background: -moz-linear-gradient(right, #00ADA9, #377EF9);
-          background: -o-linear-gradient(right, #00ADA9, #377EF9);
-          background: linear-gradient(to right, #00ADA9, #377EF9);
-          -webkit-background-clip: text;
-          color: transparent;
           &:last-of-type{
             margin-bottom: 0;
           }
+          &.text {
+            font-size: 34px;
+            line-height: 50px;
+            letter-spacing: -1px;
+            color: $gray-000000;
+            font-weight: bold;
+            margin-bottom: 24px;
+          }
+          .text-gradient {
+            font-size: 46px;
+            line-height: 54px;
+            font-weight: bold;
+            letter-spacing: -1px;
+            position: relative;
+            background: #55ffaa;
+            background: -webkit-linear-gradient(left, #00ADA9, #377EF9);
+            background: -moz-linear-gradient(right, #00ADA9, #377EF9);
+            background: -o-linear-gradient(right, #00ADA9, #377EF9);
+            background: linear-gradient(to right, #00ADA9, #377EF9);
+            -webkit-background-clip: text;
+            color: transparent;
 
+
+          }
         }
-
-
       }
     }
     .swiper-container {
@@ -162,6 +162,8 @@
         left: 5.33%;/*20px*/
         top: 20%;
         text-align: left;
+        width: auto;
+        bottom: unset;
 
         .swiper-pagination-bullet {
           background: transparent;
@@ -177,7 +179,7 @@
             display: none;
           }
           &:first-of-type.swiper-pagination-bullet-active .path {
-            animation: dash linear 23000ms;
+            animation: dash linear 27000ms;
           }
 
 
@@ -187,7 +189,7 @@
               display: inline-block !important;
               stroke-dasharray: 1000;
               stroke-dashoffset: 0;
-              animation: dash linear 32000ms;
+              animation: dash linear 40000ms;
               animation-iteration-count: unset;
             }
           }
@@ -289,103 +291,6 @@
     }
 
     /*바로가기 swiper*/
-  /*  .define-box {
-      height: 320px;
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 80px;
-
-      .btn-list {
-        display: flex;
-        height: 100%;
-        width: 1244px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
-
-        li {
-          height: 100%;
-          width: 100%;
-
-          &:hover {
-            a {
-              p {
-                &.sub-text {
-                  display: block;
-                  font-size: 16px;
-                  line-height: 26px;
-                  letter-spacing: -0.5px;
-                  margin: 20px auto 35px;
-                  font-weight: normal;
-                }
-
-                &.btn-circle {
-                  display: block;
-                }
-              }
-            }
-          }
-
-          a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-            text-decoration: none;
-            border-right: 1px solid rgba(255, 255, 255, 0.25);
-
-            &:first-of-type {
-              border-left: 1px solid rgba(255, 255, 255, 0.25);
-            }
-
-            p {
-              font-weight: bold;
-              font-size: 32px;
-              line-height: 30px;
-              color: #ffffff;
-              text-align: center;
-
-              &.sub-text, &.btn-circle {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-
-      .bg_section {
-        position: absolute;
-        height: 506px;
-        width: 100%;
-        top: 0;
-        transform: translateY(510px);
-        transition-duration: 0.3s;
-
-        &.active {
-          transform: translateY(0);
-        }
-
-        &.bg0 {
-          background: #080428;
-          transform: translateY(0) !important;
-
-        }
-
-        &.bg1 {
-          background-image: url("../img/main/img-shortcuts_01.png");
-        }
-
-        &.bg2 {
-          background-image: url("../img/main/img-shortcuts_02.png");
-        }
-
-        &.bg3 {
-          background-image: url("../img/main/img-shortcuts_03.png");
-        }
-
-      }
-    }*/
     .define-box{
       margin-bottom: 80px;
       .slider{
@@ -394,11 +299,13 @@
             .swiper-slide{
 
               .video{
-                height: 320px;
+                width: 100%;
+                height: auto;
               }
               .text-area{
                 position: absolute;
-                top: 56px;
+                top: 45%;
+                transform: translateY(-50%);
                 width: 100%;
                 margin: 0 auto;
                 text-align: center;
@@ -427,17 +334,16 @@
               }
             }
           }
-          .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-            margin :0 20px 0 0;
+
+          &.swiper-container-horizontal > .swiper-pagination-bullets{
+           bottom: 32px;
           }
           .swiper-pagination-bullet {
             position: relative;
-            width: 156px;
-            height: auto;
-            text-align: left;
-            border-radius: 0;
-            opacity: 1;
-            margin-right: 20px;
+            width: 77px;
+            height: 4px;
+            text-align: center;
+            margin-right: 5px;
             background-color: transparent;
             i {
               position: absolute;
@@ -445,8 +351,9 @@
               left: 0;
               z-index: 1;
               width: 100%;
-              height: 10px;
-              background-color: hotpink;
+              height: 4px;
+              background-color: #ffffff;
+              opacity: 0.2;
               //progress bar 배경
             }
             b {
@@ -454,9 +361,10 @@
               bottom: 0;
               left:  0;
               z-index: 2;
-              width: 0%;
-              height: 10px;
-              background-color: rgba(17, 17, 17, 1);
+              width: 0;
+              height: 4px;
+              opacity: 1;
+              background-color: #ffffff;
               //progress bar 채워지는 부분
             }
           }
@@ -553,17 +461,21 @@
             /* e business 내부 text slide */
           }
 
-          .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-            margin :0 20px 0 0;
+          &.swiper-container-horizontal{
+            >.swiper-pagination-bullets{
+              padding: 0 20px;
+              .swiper-pagination-bullet {
+                bottom: -24px;
+              }
+            }
           }
           .swiper-pagination-bullet {
             position: relative;
-            width: 156px;
-            height: auto;
-            text-align: left;
+            width: calc(100% / 5);
+            height: 1px;
+            margin: 0;
             border-radius: 0;
             opacity: 1;
-            margin-right: 20px;
             background-color: transparent;
             i {
               position: absolute;
@@ -571,38 +483,16 @@
               left: 0;
               z-index: 1;
               width: 100%;
-              height: 10px;
-              background-color: hotpink;
+              height: 1px;
+              background-color: #f7f7f7;
               //progress bar 배경
-            }
-            b {
-              position: absolute;
-              bottom: 0;
-              left:  0;
-              z-index: 2;
-              width: 0%;
-              height: 10px;
-              background-color: rgba(17, 17, 17, 1);
-              //progress bar 채워지는 부분
             }
           }
           .swiper-pagination-bullet-active {
-       i{
-         background-color: red;
-       }
+             i{
+               background-color: #666666;
+             }
           }
-      /*    .swiper-scrollbar{
-            width: calc(100% - 40px)!important;
-            height: 2px;
-            position: relative;
-            left: 20px;
-            bottom: -24px;
-            background: #f7f7f7;
-            opacity: 1;
-            .swiper-scrollbar-drag{
-              background: #666666;
-            }
-          }*/
 
         }
       }
@@ -988,20 +878,26 @@
         overflow-y: hidden;
         padding-bottom: 30px;
 
+        &::-webkit-scrollbar-button{
+          display: block;
+          width: 10px;
+          background: transparent;
 
+        }
         &::-webkit-scrollbar {
           display: block;
           height: 1px;
           padding-bottom: 50px;
-          margin-bottom: 50px;
+          margin-bottom:  50px;
+          width: calc( 100% - 40px);
         }
 
         &::-webkit-scrollbar-thumb {
-          background-color: red;
+          background-color: #666666;
         }
 
         &::-webkit-scrollbar-track {
-          background-color: #ffffff;
+          background-color: #f7f7f7;
         }
 
         .map {
