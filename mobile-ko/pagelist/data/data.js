@@ -485,7 +485,7 @@ data.etc = {
             page: '01개인정보처리방침'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '02영상정보_운영_관리',
             category: 'etc',
             page: '02영상정보_운영_관리'
