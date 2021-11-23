@@ -3,11 +3,19 @@
  v.0.1 주연 : 최초 작업 -- 2021.11.5
  v.0.2 선미 : .table > thead > th > span -> $font-family -- 2021.11.18
              .table-bg > td css 추가
+v.0.3 선미 :  .table-scroll 플러그인 추가 css 변경 -- 2021.11.23
 |----------------------------------|
 */
 .table-scroll {
   overflow-x: auto;
+  table{
+    &.table{
+     margin-bottom: 0px;
+    }
+  }
+
 }
+
 
 .table-vertical-scroll {
   overflow-x: auto;
