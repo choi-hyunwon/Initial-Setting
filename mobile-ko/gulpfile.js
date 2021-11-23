@@ -65,6 +65,7 @@ function jsLib() {
         'src/js/lib/hammer.js',
         'src/js/lib/aos.js',
         'src/js/lib/rellax.js',
+        'src/js/lib/jquery.mCustomScrollbar.concat.min.js',
     ];
     return gulp.src(sourceLib)
         .pipe(concat('bundle.js'))
