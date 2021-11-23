@@ -55,24 +55,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="visual visual_03">
-                        <div class="text-box" data-aos="fade-left" data-aos-duration="600">
-                            <p><span class="text-gradient">희망과</span></p>
-                            <p><span class="text-gradient">함께하는</span></p>
-                            <p class="slogan-sub">건강한 미래</p>
-                            <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로<br>새로운 미래를 열어갑니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="visual visual_04">
-                        <div class="text-box phrase" data-aos="fade-left" data-aos-duration="600">
-                            <p>DNA가<br>세상을 구할 것이다<br>나의 DNA에는<br>과거와 미래가 공존한다</p>
-                            <span class="name">마크로젠 창립자&#47;회장<br><span>서정선</span></span>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="swiper-slide">-->
+<!--                    <div class="visual visual_03">-->
+<!--                        <div class="text-box" data-aos="fade-left" data-aos-duration="600">-->
+<!--                            <p><span class="text-gradient">희망과</span></p>-->
+<!--                            <p><span class="text-gradient">함께하는</span></p>-->
+<!--                            <p class="slogan-sub">건강한 미래</p>-->
+<!--                            <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로<br>새로운 미래를 열어갑니다</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="swiper-slide">-->
+<!--                    <div class="visual visual_04">-->
+<!--                        <div class="text-box phrase" data-aos="fade-left" data-aos-duration="600">-->
+<!--                            <p>DNA가<br>세상을 구할 것이다<br>나의 DNA에는<br>과거와 미래가 공존한다</p>-->
+<!--                            <span class="name">마크로젠 창립자&#47;회장<br><span>서정선</span></span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
             @@include('../../html/include/components/scrollWrap.html')
             <!-- If we need pagination -->
@@ -84,8 +84,10 @@
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
             var mainSwiper;
+
             setTimeout(function () {
-                step1();
+                step1()
+                step3()
             }, delay)
 
             function step1() {
@@ -104,11 +106,16 @@
                     $('html').addClass('animated')
                 })
             }
+            function step3() {
+                $('.visual').css({
+                    'animation-name': 'grow2',
+                    'animation-duration': '3s'
+                })
+            }
 
             function step2() {
                 //after 기능
-                $('.header')
-                    .addClass('header-white')
+                $('.header').addClass('header-white')
                 introScroll()
 
                 $wrapper.css({'overflow': 'visible'})
@@ -116,8 +123,6 @@
                 $('.text-box').fadeIn()
                 $('.scroll-wrap').delay(1000).fadeIn()
                 // $('.stock_information').delay(1500).fadeIn()
-
-
             }
 
             function setSlider() {
@@ -147,14 +152,12 @@
                                 '</svg></span>';
                             //console.log('setSlider222');
                             return bu;
-
                         },
                     },
-
                 })
-
                 step2()
             }
+
             function introScroll(){
                 var lastScroll = 0;
                 $(window).scroll(function(){
@@ -176,9 +179,7 @@
             }
 
         </script>
-
         <!-- e 메인비주얼 영역 -->
-
     </div>
 
     <div class="container">
