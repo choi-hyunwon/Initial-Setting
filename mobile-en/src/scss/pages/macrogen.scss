@@ -84,7 +84,7 @@
   }
 
   .swiper-pagination {
-    bottom: 164px;
+    bottom: 174px;
     text-align: center;
 
     .swiper-pagination-bullet {
@@ -615,7 +615,7 @@
 
         .item {
           position: relative;
-          margin-bottom: 60px;
+          margin-bottom: 40px;
 
           &.line-bottom {
             padding-bottom: 40px;
@@ -699,8 +699,8 @@
                   line-height: 32px;
                   letter-spacing: -0.5px;
                   color: $gray-ffffff;
-                  padding-right: 15px;
-                  padding-left: 6px;
+                  //padding-right: 15px;
+                  //padding-left: 6px;
                 }
               }
             }
