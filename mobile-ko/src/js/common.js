@@ -13,6 +13,7 @@ front.common = (function () {
         this.a();
         this.swiperTab();
         this.commonHandler();
+        this.scrollHorizon();
     }
 
     var a = function () {
@@ -263,13 +264,26 @@ front.common = (function () {
             }
         });
         /* s accordion */
+
+
     }
+
+    var scrollHorizon = function(){
+        $(window).on("load",function(){
+            $(".table-scroll").mCustomScrollbar({
+                axis:"x",
+                theme:"dark"
+            });
+        });
+    };
+
 
     return {
         a: a,
         swiperTab : swiperTab,
         commonHandler: commonHandler,
-        init: init
+        init: init,
+        scrollHorizon : scrollHorizon
     }
 })();
 
