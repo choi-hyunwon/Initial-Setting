@@ -73,7 +73,6 @@
   .table-scroll{
    margin-top: 24px;
    margin-right: -20px;
-   margin-left: -25px;
  }
   .select-box{
     display: block;
@@ -107,14 +106,25 @@
         margin-top: 8px;
       }
       .table{
-        tr{
-          td{
-            padding: 8px 0px!important;
-          }
-          th{
-            padding: 8px 0px!important;
+        &.table-50{
+          tr{
+            td{
+              padding: 8px 0px !important;
+            }
+            th{
+              padding: 8px 0px !important;
+            }
           }
         }
+        tr{
+          td{
+            padding: 8px 24px !important;
+          }
+          th{
+            padding: 8px 24px !important;
+          }
+        }
+
       }
       .download{
         margin-left: 0px;
