@@ -55,24 +55,24 @@
                         </div>
                     </div>
                 </div>
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="visual visual_03">-->
-<!--                        <div class="text-box" data-aos="fade-left" data-aos-duration="600">-->
-<!--                            <p><span class="text-gradient">희망과</span></p>-->
-<!--                            <p><span class="text-gradient">함께하는</span></p>-->
-<!--                            <p class="slogan-sub">건강한 미래</p>-->
-<!--                            <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로<br>새로운 미래를 열어갑니다</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="visual visual_04">-->
-<!--                        <div class="text-box phrase" data-aos="fade-left" data-aos-duration="600">-->
-<!--                            <p>DNA가<br>세상을 구할 것이다<br>나의 DNA에는<br>과거와 미래가 공존한다</p>-->
-<!--                            <span class="name">마크로젠 창립자&#47;회장<br><span>서정선</span></span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="swiper-slide">
+                    <div class="visual visual_03">
+                        <div class="text-box" data-aos="fade-left" data-aos-duration="600">
+                            <p><span class="text-gradient">희망과</span></p>
+                            <p><span class="text-gradient">함께하는</span></p>
+                            <p class="slogan-sub">건강한 미래</p>
+                            <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로<br>새로운 미래를 열어갑니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="visual visual_04">
+                        <div class="text-box phrase" data-aos="fade-left" data-aos-duration="600">
+                            <p>DNA가<br>세상을 구할 것이다<br>나의 DNA에는<br>과거와 미래가 공존한다</p>
+                            <span class="name">마크로젠 창립자&#47;회장<br><span>서정선</span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
             @@include('../../html/include/components/scrollWrap.html')
             <!-- If we need pagination -->
@@ -87,7 +87,6 @@
 
             setTimeout(function () {
                 step1()
-                step3()
             }, delay)
 
             function step1() {
@@ -104,12 +103,6 @@
                     setSlider()
 
                     $('html').addClass('animated')
-                })
-            }
-            function step3() {
-                $('.visual').css({
-                    'animation-name': 'grow2',
-                    'animation-duration': '3s'
                 })
             }
 
@@ -131,7 +124,7 @@
                     return false
                 }
                 //console.log('setSlider');
-                mainSwiper = new Swiper($container, {
+                var mainSwiper = new Swiper($container, {
                     effect : 'fade', // 페이드 효과
                     loop: true, //반복
                     speed: 1200,//속도
@@ -143,7 +136,6 @@
                     pagination: {
                         el: $pagination,
                         clickable: true,
-
                         renderBullet: function (index, className) {
                             var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="28" height="28">' +
                                 '<circle class="path" cx="50%" cy="50%" r="13" fill="none"  stroke="#FFF"' +
@@ -154,6 +146,19 @@
                             return bu;
                         },
                     },
+                    on: {
+                        slideChange: function () {
+                            !$('.swiper-slide').eq(this.activeIndex).css({
+                                'animation-name': 'none',
+                                'animation-duration': '0'
+                            })
+
+                            $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
+                                'animation-name': 'grow2',
+                                'animation-duration': '3s'
+                            })
+                        }
+                    }
                 })
                 step2()
             }
