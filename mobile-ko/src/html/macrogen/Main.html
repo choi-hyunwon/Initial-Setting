@@ -125,10 +125,8 @@
                 //console.log('setSlider');
                 var mainSwiper = new Swiper($container, {
                     effect : 'fade', // 페이드 효과
-                    loop: true,
-                    autoplay: {
-                        disableOnInteraction: false
-                    },
+                    loopedSlides: 0,
+                    autoplay: true,
                     pagination: {
                         el: $pagination,
                         clickable: true,
@@ -155,6 +153,18 @@
                                 'animation-name': 'grow2',
                                 'animation-duration': '3s'
                             })
+
+
+                            //
+                            // if($('.swiper-slide').hasClass('.swiper-slide-active')) {
+                            //
+                            // }
+                            // else {
+                            //     !$('.swiper-slide').eq(this.realIndex).children('.visual').css({
+                            //         'animation-name': 'none',
+                            //         'animation-duration': '3s'
+                            //     })
+                            // }
                         },
                         init: function () {
                             var swiper = this;
