@@ -89,10 +89,10 @@
             }, delay)
 
             function step1() {
-                $wrapper.css({
-                    'transform': 'translateY(0)',
-                    'transition-duration': '1s'
-                })
+                // $wrapper.css({
+                //     'transform': 'translateY(0)',
+                //     'transition-duration': '1s'
+                // })
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({
                     height: "100%"
@@ -113,7 +113,7 @@
                 $wrapper.css({'overflow': 'visible'})
                 $container.css({'overflow': 'hidden'})
                 $('.text-box').fadeIn()
-                $('.scroll-wrap').delay(1000).fadeIn()
+                // $('.scroll-wrap').delay(1000).fadeIn()
                 // $('.stock_information').delay(1500).fadeIn()
             }
 
@@ -125,13 +125,8 @@
                 //console.log('setSlider');
                 var mainSwiper = new Swiper($container, {
                     effect : 'fade', // 페이드 효과
-                    loop: true, //반복
-                    speed: 1200,//속도
-                    autoplay: {
-                        delay: 3500,
-                        waitForTransition: true,
-                        disableOnInteraction: false,
-                    },
+                    loopedSlides: 0,
+                    autoplay: true,
                     pagination: {
                         el: $pagination,
                         clickable: true,
@@ -147,18 +142,42 @@
                     },
                     on: {
                         slideChange: function () {
-                            !$('.swiper-slide').eq(this.activeIndex).children('.visual').css({
+                            // console.log(this.realIndex)
+
+                            $('.swiper-slide').children('.visual').css({
                                 'animation-name': 'none',
                                 'animation-duration': '0'
                             })
 
-                            $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
+                            $('.swiper-slide').eq(this.realIndex).children('.visual').css({
                                 'animation-name': 'grow2',
                                 'animation-duration': '3s'
                             })
+
+
+                            //
+                            // if($('.swiper-slide').hasClass('.swiper-slide-active')) {
+                            //
+                            // }
+                            // else {
+                            //     !$('.swiper-slide').eq(this.realIndex).children('.visual').css({
+                            //         'animation-name': 'none',
+                            //         'animation-duration': '3s'
+                            //     })
+                            // }
+                        },
+                        init: function () {
+                            var swiper = this;
+
+                            if (swiper.originalParams.loop && swiper.loopedSlides < swiper.originalParams.slidesPerView) {
+                                swiper.params.slidesPerView = swiper.loopedSlides;
+                                swiper.destroy(false, false);
+                                swiper.init();
+                            }
                         }
-                    }
+                    },
                 })
+
                 step2()
             }
 

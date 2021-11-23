@@ -224,13 +224,12 @@
           .path {
             display: none;
           }
-          &:first-of-type.swiper-pagination-bullet-active .path {
-            animation: dash linear 27000ms;
-          }
+          //&:first-of-type.swiper-pagination-bullet-active .path {
+          //  animation: dash linear 27000ms;
+          //}
 
 
           &.swiper-pagination-bullet-active {
-
             .path {
               display: inline-block !important;
               stroke-dasharray: 1000;
