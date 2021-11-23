@@ -62,7 +62,7 @@
           &.swiper-slide-active,
           &.swiper-slide-duplicate-active {
             .visual{
-              animation: grow2 3s;
+              //animation: grow2 3s;
               &:before{
                 content: '';
                 display: block;
