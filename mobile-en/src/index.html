@@ -26,7 +26,9 @@
     <ul class="navi_site">
       <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/pc-ko/dist/index.html">PC-KO</a></li>
       <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/pc-en/dist/index.html">PC-EN</a></li>
-      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/mobile-ko/dist/index.html" class="active">모바일</a></li>
+      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/mobile-ko/dist/index.html">M-KO</a></li>
+      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/mobile-en/dist/index.html" class="active">M-EN</a></li>
+
     </ul>
     <h2>Page List</h2>
     <a href="#" class="btn_control_all close"></a>
@@ -118,7 +120,6 @@
   var source = $('#list-template').html() //jQuery
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
-          .append(template(data.guide))
           .append(template(data.macrogen))
           .append(template(data.newsroom))
           .append(template(data.esg))
@@ -203,7 +204,7 @@
   })
   // sum = sum - 20;
   var total = (comp / sum) * 100
-  $('.nav_depth_2 .title h2').html('Macrogen-Mobile(EN) v0.0 / 11.19')
+  $('.nav_depth_2 .title h2').html('Macrogen-Mobile(EN) v0.3 / 11.23')
   // .html('페이지 목록 : 완료' + total.toFixed(0) + '%')
 </script>
 </body>

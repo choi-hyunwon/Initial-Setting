@@ -8,14 +8,14 @@
 
         <script>
 
-/*      $(window).scroll( function() {
-          var height = $('body, html').scrollTop();
-          var offset = $(".container").offset();
-          if(height > 200){
-              $('html, body').animate({scrollTop : offset.top}, 400);
-          }
-         /!* console.log(height)*!/
-      })*/
+            /*      $(window).scroll( function() {
+                      var height = $('body, html').scrollTop();
+                      var offset = $(".container").offset();
+                      if(height > 200){
+                          $('html, body').animate({scrollTop : offset.top}, 400);
+                      }
+                     /!* console.log(height)*!/
+                  })*/
 
         </script>
 
@@ -89,10 +89,10 @@
             }, delay)
 
             function step1() {
-                // $wrapper.css({
-                //     'transform': 'translateY(0)',
-                //     'transition-duration': '1s'
-                // })
+                $wrapper.css({
+                    'transform': 'translateY(0)',
+                    'transition-duration': '1s'
+                })
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({
                     height: "100%"
@@ -113,7 +113,7 @@
                 $wrapper.css({'overflow': 'visible'})
                 $container.css({'overflow': 'hidden'})
                 $('.text-box').fadeIn()
-                // $('.scroll-wrap').delay(1000).fadeIn()
+                $('.scroll-wrap').delay(1000).fadeIn()
                 // $('.stock_information').delay(1500).fadeIn()
             }
 
@@ -125,8 +125,13 @@
                 //console.log('setSlider');
                 var mainSwiper = new Swiper($container, {
                     effect : 'fade', // 페이드 효과
-                    loopedSlides: 0,
-                    autoplay: true,
+                    loop: true, //반복
+                    speed: 1200,//속도
+                    autoplay: {
+                        delay: 3500,
+                        waitForTransition: true,
+                        disableOnInteraction: false,
+                    },
                     pagination: {
                         el: $pagination,
                         clickable: true,
@@ -142,42 +147,18 @@
                     },
                     on: {
                         slideChange: function () {
-                            // console.log(this.realIndex)
-
-                            $('.swiper-slide').children('.visual').css({
+                            !$('.swiper-slide').eq(this.activeIndex).css({
                                 'animation-name': 'none',
                                 'animation-duration': '0'
                             })
 
-                            $('.swiper-slide').eq(this.realIndex).children('.visual').css({
+                            $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
                                 'animation-name': 'grow2',
                                 'animation-duration': '3s'
                             })
-
-
-                            //
-                            // if($('.swiper-slide').hasClass('.swiper-slide-active')) {
-                            //
-                            // }
-                            // else {
-                            //     !$('.swiper-slide').eq(this.realIndex).children('.visual').css({
-                            //         'animation-name': 'none',
-                            //         'animation-duration': '3s'
-                            //     })
-                            // }
-                        },
-                        init: function () {
-                            var swiper = this;
-
-                            if (swiper.originalParams.loop && swiper.loopedSlides < swiper.originalParams.slidesPerView) {
-                                swiper.params.slidesPerView = swiper.loopedSlides;
-                                swiper.destroy(false, false);
-                                swiper.init();
-                            }
                         }
-                    },
+                    }
                 })
-
                 step2()
             }
 
@@ -332,7 +313,7 @@
                                     <div class="title">
                                         <span>퍼스널 헬스케어</span>
                                         <a href="#">
-                                             <i class="icon-arrow-right-short"></i>
+                                            <i class="icon-arrow-right-short"></i>
                                         </a>
                                     </div>
                                     <div class="desc">
@@ -586,41 +567,41 @@
             </script>
 
         </div>
-        </div>
+    </div>
 
-        <footer class="footer main" data-aos="fade-up" data-aos-duration="2000">
-            <div class="font-h5">Macrogen</div>
-            <div class="info">
-                <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
-                <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
-                <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
-            </div>
-            <div class="link-list">
-                <ul>
-                    <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
-                    <li>
-                        <select class="select" title="familySite" onchange="window.open(value,'_blank');">
-                            <option selected>Family Site</option>
-                            <option value="https://thebiome.life/">더바이옴</option>
-                            <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
-                            <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
-                            <option value="https://psomagen.com/">소마젠(Psomagen)</option>
-                            <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
-                            <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
-                            <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
-                            <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
-                            <option value="http://www.g2if.org/">공우생명정보재단</option>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-            <ul class="sns">
-                <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
-                <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+    <footer class="footer main" data-aos="fade-up" data-aos-duration="2000">
+        <div class="font-h5">Macrogen</div>
+        <div class="info">
+            <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
+            <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+            <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
+        </div>
+        <div class="link-list">
+            <ul>
+                <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+                <li>
+                    <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                        <option selected>Family Site</option>
+                        <option value="https://thebiome.life/">더바이옴</option>
+                        <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
+                        <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
+                        <option value="https://psomagen.com/">소마젠(Psomagen)</option>
+                        <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
+                        <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
+                        <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
+                        <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
+                        <option value="http://www.g2if.org/">공우생명정보재단</option>
+                    </select>
+                </li>
             </ul>
-        </footer>
+        </div>
+        <ul class="sns">
+            <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
+            <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+        </ul>
+    </footer>
     @@include('../../html/include/components/toTop.html')
 </div>
 @@include('../../html/include/components/gnb.html')
