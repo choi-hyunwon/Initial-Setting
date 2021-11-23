@@ -147,7 +147,7 @@
                     },
                     on: {
                         slideChange: function () {
-                            !$('.swiper-slide').eq(this.activeIndex).css({
+                            !$('.swiper-slide').eq(this.activeIndex).children('.visual').css({
                                 'animation-name': 'none',
                                 'animation-duration': '0'
                             })
