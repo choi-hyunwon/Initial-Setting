@@ -124,13 +124,13 @@ data.business ={
             page: '임상진단서비스_암유전체검사'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '임상진단서비스_신생아유전자검사',
             category: 'business',
             page: '임상진단서비스_신생아유전자검사'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '임상진단서비스_covid19',
             category: 'business',
             page: '임상진단서비스_covid19'
