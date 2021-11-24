@@ -4,7 +4,7 @@ data.macrogen = {
     title: 'MACROGEN',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'Main',
             category: 'macrogen',
             page: 'Main'
@@ -268,13 +268,13 @@ data.IR = {
     title: 'IR',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '01재무정보',
             category: 'IR',
             page: '01재무정보'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '04투자자문의',
             category: 'IR',
             page: '04투자자문의'
@@ -303,18 +303,6 @@ data.esg = {
             category: 'esg',
             page: '06ESG_03사회공헌_01소개'
         },
-        /*  {
-              stateClass: 'working',
-              url: '06ESG_03사회공헌_02과학자상목록',
-              category: 'esg',
-              page: '06ESG_03사회공헌_02과학자상목록'
-          },
-          {
-              stateClass: 'working',
-              url: '06ESG_03사회공헌_03과학자상상세',
-              category: 'esg',
-              page: '06ESG_03사회공헌_03과학자상상세'
-          },*/
     ]
 
 }

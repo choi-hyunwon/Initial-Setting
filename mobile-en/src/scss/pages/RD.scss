@@ -16,11 +16,7 @@
   .section_intro{
     .info-box{
       padding: 0 20px 56px;
-      .title{
-        font-size: 34px;
-        line-height: 50px;
-        letter-spacing: -1px;
-        font-weight: bold;
+      .font-h3{
         margin-bottom: 24px;
       }
       .desc{
@@ -65,16 +61,10 @@
       &:last-of-type{
         margin-bottom: 80px;
       }
-      .sub_title{
-        font-size: 22px;
-        line-height: 38px;
-        font-weight: bold;
+      .font-h7{
         margin-bottom: 24px;
       }
-      .sub_desc{
-        font-size: 16px;
-        line-height: 32px;
-        letter-spacing: -0.5px;
+      .font-body{
         img{
           padding-top: 40px;
         }
@@ -115,7 +105,7 @@
         &:first-of-type{
           margin-top: 40px;
         }
-        .sub_title{
+        .font-h7{
           font-size: 18px;
           line-height: 34px;
           margin-bottom: 16px;
@@ -145,9 +135,9 @@
   /*정밀의학연구소 탭 & 슬라이드*/
   .section_status{
     overflow: hidden; /*swiper-scrollbar로 인해 위치이동*/
-    height: 719px;
+    min-height: 719px;
     background: url('../img/RD/bg-status.png') no-repeat center center / cover;
-    padding: 80px 0 80px 20px;
+    padding: 80px 0 80px 5.634%;
     .font-h4{
       color:#ffffff;
       margin-bottom: 64px;
@@ -265,11 +255,7 @@
     &.research {
       .modal-content{
         .modal-body{
-          .title{
-            font-size: 22px;
-            line-height: 38px;
-            letter-spacing: -1px;
-            font-weight: bold;
+          .font-h7{
             .sub_title{
               display: block;
               font-size: 18px;
