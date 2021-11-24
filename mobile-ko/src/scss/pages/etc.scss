@@ -4,43 +4,53 @@
 |----------------------------------|
 */
 
-.section_agreement{
+.section_agreement {
   margin: 0 20px;
-  .table{
-    tr{
-      th{
+
+  .table {
+    tr {
+      th {
         padding: 8px 10px;
-        &:first-child{
+
+        &:first-child {
           padding: 8px 10px;
         }
-        &:last-child{
+
+        &:last-child {
           padding: 8px 10px;
         }
       }
-      td{
+
+      td {
         padding: 8px 10px;
-        &:first-child{
+
+        &:first-child {
           padding: 8px 24px;
         }
-        &:last-child{
+
+        &:last-child {
           padding: 8px 10px;
         }
       }
     }
   }
-  .gray-box{
+
+  .gray-box {
     margin-top: 16px;
     border-radius: 6px;
     margin-left: -20px;
     background-color: #F7F7F7;
     padding: 24px;
-    .list-circle-dot{
-      li{
+
+    .list-circle-dot {
+      li {
         margin-bottom: 8px;
-        .tit{
+
+        .tit {
           color: #000;
           position: relative;
-          &:before{
+
+          &:before {
             content: '';
             width: 5px;
             height: 5px;
@@ -52,119 +62,137 @@
             left: -15px;
           }
         }
-        &:nth-last-of-type(1){
+
+        &:nth-last-of-type(1) {
           margin-bottom: 0px;
         }
       }
-      span{
+
+      span {
         display: block;
       }
-      a{
+
+      a {
         text-decoration: none;
         color: #454545;
       }
     }
   }
-  .download{
+
+  .download {
     margin-top: 16px;
     margin-left: -22px;
     margin-bottom: 32px;
   }
-  .table-scroll{
-   margin-top: 24px;
-   margin-right: -20px;
- }
-  .select-box{
+
+  .table-scroll {
+    margin-top: 24px;
+    margin-right: -20px;
+  }
+
+  .select-box {
     display: block;
     margin-bottom: 64px;
-    .selected-value{
-      .text{
+
+    .selected-value {
+      .text {
         color: #000000;
       }
     }
   }
-  .terms{
-    &.management{
-      .sub-title{
+
+  .terms {
+    &.management {
+      .sub-title {
         color: #000;
         margin-bottom: 8px;
       }
-      li{
+
+      li {
         padding: 0;
-        ol{
-          li{
+
+        ol {
+          li {
             padding-left: 20px
           }
         }
       }
     }
-    &.movieinfo{
-      li{
-        padding: 0;
-      }
-      .hyphen_list{
+
+    &.movieinfo {
+      .hyphen_list {
         margin-top: 8px;
       }
-      .table{
-        &.table-50{
-          tr{
-            td{
+      .padding-none{
+        padding: 0;
+      }
+      ul{
+        li{
+
+        }
+      }
+      .table {
+        &.table-50 {
+          tr {
+            td {
               padding: 8px 0px !important;
             }
-            th{
+
+            th {
               padding: 8px 0px !important;
             }
           }
         }
-        tr{
-          td{
+
+        tr {
+          td {
             padding: 8px 24px !important;
           }
-          th{
+
+          th {
             padding: 8px 24px !important;
           }
         }
 
       }
-      .download{
+
+      .download {
         margin-left: 0px;
       }
     }
-    .title{
+
+    .title {
       margin-top: 64px;
       margin-bottom: 24px;
     }
-    .desc{
+
+    .desc {
       margin-bottom: 24px;
     }
-    .sub-desc{
+
+    .sub-desc {
       margin-bottom: 8px;
       font-size: 16px;
       line-height: 32px;
       letter-spacing: -0.5px;
-      color:#454545;
+      color: #454545;
     }
-    .skip{
-      margin-top: 112px;
-      margin-bottom: 112px;
-     text-align: center;
-      p{
-        color: #D9D9D9;
-        font-size: 24px;
-        line-height: 34px;
-        letter-spacing: -0.5px;
 
+
+    li {
+      .caption{
+        padding-top: 24px;
       }
-    }
-    li{
-      ul{
+      ul {
         font-size: 16px;
         line-height: 32px;
         color: #454545;
-        >li{
+
+        > li {
           padding-left: 25px;
           position: relative;
-          &:before{
+
+          &:before {
             content: attr(data-bullet);
             position: absolute;
             top: 0;
@@ -172,11 +200,13 @@
             width: 17px;
             text-align: left;
           }
-          >ol{
-            li{
+
+          > ol {
+            li {
               padding-left: 22px;
               position: relative;
-              &:before{
+
+              &:before {
                 content: attr(data-bullet);
                 position: absolute;
                 top: 0;
@@ -186,10 +216,7 @@
               }
             }
           }
-
         }
-
-
       }
     }
 

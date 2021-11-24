@@ -4,6 +4,7 @@
  v.0.2 주연 : 파일 다운로드 UI 추가 -- 2021.11.10
  v.0.3 선미 : .input-tip { margin-bottom 제거 } / form-check-input {marging 수정} /
              input-group-text {margin 제거} / placeholder {bold 제거}-- 2021.11.18
+ v.0.4 선미 : btn-search 아이콘 경로 변경 -- 2021.11.24
 |----------------------------------|
 */
 input[type="number"]::-webkit-outer-spin-button,
@@ -229,7 +230,9 @@ textarea::placeholder {
 
   .btn-search {
     position: absolute;
-    @include background-img($width: 20px, $height: 20px, $category: 'common', $img: 'ico-search.svg');
+    background-image: url("../img/common/ico-search.png");
+    width: 20px;
+    height: 20px;
     background-size: contain;
     z-index: 2;
     right: 15px;
