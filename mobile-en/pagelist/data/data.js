@@ -173,7 +173,7 @@ data.business ={
     title: 'BUSINESS',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '연구서비스_NGS',
             category: 'business',
             page: '연구서비스_NGS'
