@@ -127,9 +127,9 @@
   /*정밀의학연구소 탭 & 슬라이드*/
   .section_status{
     overflow: hidden; /*swiper-scrollbar로 인해 위치이동*/
-    height: 719px;
+    min-height: 719px;
     background: url('../img/RD/bg-status.png') no-repeat center center / cover;
-    padding: 80px 0 80px 20px;
+    padding: 80px 0 80px 5.634%;
     .font-h4{
       color:#ffffff;
       margin-bottom: 64px;
@@ -174,13 +174,13 @@
               .swiper-wrapper {
                 .swiper-slide {
                   &.item {
-                    width: 335px !important;
-                    margin-right: 20px;
+                    width: 100%!important;
                     display: block;
 
                     .img {
-                      width: 335px;
-                      height: 224px;
+                      width: 94.366%;
+                      margin-right: 5.634%;
+                      height: auto;
                       display: block;
                       margin-bottom: 0;
 
@@ -194,7 +194,7 @@
                       background-color: $gray-ffffff;
                       height: 128px;
                       display: inline-block;
-                      width: 100%;
+                      width: 94.366%;
 
                       span {
                         font-size: 18px;
