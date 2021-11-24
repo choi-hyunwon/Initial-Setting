@@ -118,7 +118,7 @@ data.business ={
             page: '연구서비스_동물모델사업부'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '임상진단서비스_암유전체검사',
             category: 'business',
             page: '임상진단서비스_암유전체검사'
