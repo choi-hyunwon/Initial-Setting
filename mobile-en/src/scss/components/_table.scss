@@ -67,14 +67,6 @@ table {
           font-family: $font-family;
         }
 
-        &:first-child {
-          padding-left: 36px;
-        }
-
-        &:last-child {
-          padding-right: 36px;
-        }
-
         &.sub-title {
           font-weight: 500;
           font-size: 16px;

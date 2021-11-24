@@ -20,13 +20,20 @@
     }
   }
   .financial_box{
-    margin: 0 20px 80px;
+    padding: 0 20px;
+    margin-bottom: 80px;
     white-space: normal;
     overflow-x: scroll;
 
     &::-webkit-scrollbar {
       display: block;
       height: 1px;
+    }
+
+    &::-webkit-scrollbar-button{
+      display: block;
+      width: 10px;
+      background: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -37,15 +44,72 @@
       background-color: #f7f7f7;
     }
 
-
-
     .table{
-      margin-bottom: 24px;
-      tbody{
+      /*공통*/
+      &.table-rotate{
+        overflow-x: scroll;
+        tbody{
+          min-width: 600px;
+          display: block;
         tr{
-          &.font-emphasis{
-            td{
+          display: inline-block;
+          th{
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom: 1px solid $line-d9d9d9;
+            border-spacing: 0;
+            border-right: 1px solid #f7f7f7;
+            background-color: #f7f7f7!important;
+            &:last-of-type{
+              border-right: none;
+            }
+          }
+          td{
+            display: block;
+            border-bottom: 1px solid $line-e9e9e9;
+            padding: 8px 20px;
+            border-spacing: 0;
+            &:last-of-type{
+              border-bottom: none;
+              &.table-bg{
+                border-bottom: none;
+              }
+            }
+            &.table-bg{
+              background-color: #f5f8fb!important;
+              font-weight: bold;
               color:#000000;
+              border-bottom: 1px solid $line-d9d9d9;
+            }
+          }
+          .font-medium{
+            font-weight: 500;
+            color:#454545;
+          }
+        }
+        }
+      }
+      /*상태표*/
+      &.state_table{
+        tbody{
+          tr{
+            width: 22.2222%;
+            &:first-of-type{
+              width: 33.3333%;
+            }
+          }
+        }
+      }
+      /*계산서*/
+      &.bill_table{
+        tbody{
+          tr{
+            width: 21.3888%;
+            &:first-of-type{
+              width: 35.8333%;
             }
           }
         }
