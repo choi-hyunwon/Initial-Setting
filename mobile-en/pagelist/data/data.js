@@ -269,30 +269,6 @@ data.IR = {
         },
         {
             stateClass: 'working',
-            url: '02공시정보_01공고_01목록',
-            category: 'IR',
-            page: '02공시정보_01공고_01목록'
-        },
-        {
-            stateClass: 'working',
-            url: '02공시정보_01공고_02조회',
-            category: 'IR',
-            page: '02공시정보_01공고_02조회'
-        },
-        {
-            stateClass: 'working',
-            url: '03IR소식_01목록',
-            category: 'IR',
-            page: '03IR소식_01목록'
-        },
-        {
-            stateClass: 'working',
-            url: '03IR소식_02조회',
-            category: 'IR',
-            page: '03IR소식_02조회'
-        },
-        {
-            stateClass: 'working',
             url: '04투자자문의',
             category: 'IR',
             page: '04투자자문의'
