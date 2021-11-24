@@ -185,7 +185,7 @@ data.business ={
             page: '연구서비스_CES'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '연구서비스_genesynthesis',
             category: 'business',
             page: '연구서비스_genesynthesis'
@@ -203,7 +203,7 @@ data.business ={
             page: '연구서비스_MICROARRAY'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '연구서비스_동물모델사업부',
             category: 'business',
             page: '연구서비스_동물모델사업부'
