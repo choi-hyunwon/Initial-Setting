@@ -57,6 +57,22 @@
         bottom: 0;
         overflow: hidden;
         height: 36.9458%/*300px*/;
+
+        /*visual_01 이슈*/
+        &:before{
+          content: '';
+          background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;
+          opacity: 0.2;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+
+        }
+
+
+
         .swiper-slide {
 
           &.swiper-slide-active,
@@ -99,6 +115,7 @@
           .visual{
             width: 100%;
             height: 100%;
+
           }
           .visual_01 {
             background: url("../img/main/img-main_01.png") no-repeat center bottom / cover;

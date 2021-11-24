@@ -1,146 +1,14 @@
 const data = {}
 
-data.guide = {
-    title: 'GUIDE',
-    list: [
-        {
-            stateClass: 'complete',
-            url: 'color',
-            category: 'guide',
-            page: 'COLORS'
-        },
-        {
-            stateClass: 'complete',
-            url: 'icon',
-            category: 'guide',
-            page: 'icon'
-        },
-        {
-            stateClass: 'complete',
-            url: 'table',
-            category: 'guide',
-            page: 'table'
-        },
-        {
-            stateClass: 'complete',
-            url: 'button',
-            category: 'guide',
-            page: 'button'
-        },
-        {
-            stateClass: 'complete',
-            url: 'typography',
-            category: 'guide',
-            page: 'TYPOGRAPHY'
-        },
-        {
-            stateClass: 'complete',
-            url: 'grid',
-            category: 'guide',
-            page: 'grid'
-        },
-        {
-            stateClass: 'complete',
-            url: 'layout_01',
-            category: 'guide',
-            page: 'FULL BG'
-        },
-        {
-            stateClass: 'complete',
-            url: 'layout_02',
-            category: 'guide',
-            page: 'TOP BG'
-        },
-        {
-            stateClass: 'complete',
-            url: 'layout_03',
-            category: 'guide',
-            page: 'NON BG'
-        },
-        {
-            stateClass: 'complete',
-            url: 'layout_04',
-            category: 'guide',
-            page: 'VIEW PAGE'
-        },
-        {
-            stateClass: 'complete',
-            url: 'input',
-            category: 'guide',
-            page: 'INPUT'
-        },
-        {
-            stateClass: 'complete',
-            url: 'tab',
-            category: 'guide',
-            page: 'tab'
-        },
-        {
-            stateClass: 'complete',
-            url: 'board_01',
-            category: 'guide',
-            page: 'text list'
-        },
-        {
-            stateClass: 'complete',
-            url: 'board_02',
-            category: 'guide',
-            page: 'thumbnail list'
-        },
-        {
-            stateClass: 'complete',
-            url: 'board_03',
-            category: 'guide',
-            page: 'view'
-        },
-        {
-            stateClass: 'complete',
-            url: 'popup-full',
-            category: 'guide',
-            page: 'popup full'
-        },
-        {
-            stateClass: 'complete',
-            url: 'popup-image-viewer',
-            category: 'guide',
-            page: 'popup image viewer'
-        },
-        {
-            stateClass: 'complete',
-            url: 'popup-notice',
-            category: 'guide',
-            page: 'popup notice'
-        },
-        {
-            stateClass: 'complete',
-            url: 'popup-tooltip',
-            category: 'guide',
-            page: 'popup tooltip'
-        },
-        {
-            stateClass: 'complete',
-            url: 'loading',
-            category: 'guide',
-            page: 'loading'
-        },
-        {
-            stateClass: 'complete',
-            url: 'accordion',
-            category: 'guide',
-            page: 'accordion'
-        }
-    ]
-}
-
 data.macrogen = {
     title: 'MACROGEN',
     list: [
-        // {
-        //     stateClass: 'complete',
-        //     url: 'Main',
-        //     category: 'macrogen',
-        //     page: 'Main'
-        // },
+        {
+            stateClass: 'working',
+            url: 'Main',
+            category: 'macrogen',
+            page: 'Main'
+        },
         {
             stateClass: 'complete',
             url: '01Macrogen_01기업개요',
@@ -285,18 +153,18 @@ data.esg = {
             category: 'esg',
             page: '06ESG_03사회공헌_01소개'
         },
-        {
-            stateClass: 'complete',
+      /*  {
+            stateClass: 'working',
             url: '06ESG_03사회공헌_02과학자상목록',
             category: 'esg',
             page: '06ESG_03사회공헌_02과학자상목록'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '06ESG_03사회공헌_03과학자상상세',
             category: 'esg',
             page: '06ESG_03사회공헌_03과학자상상세'
-        },
+        },*/
     ]
 
 }
@@ -383,43 +251,43 @@ data.RD = {
             page: '03R&D_01정밀의학연구소_01소개'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '03R&D_02생명정보학연구소',
             category: 'RD',
             page: '03R&D_02생명정보학연구소'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '03R&D_03더바이옴연구소',
             category: 'RD',
             page: '03R&D_03더바이옴연구소'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '03R&D_04싱크진연구소',
             category: 'RD',
             page: '03R&D_04싱크진연구소'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '03R&D_05빅데이터연구소',
             category: 'RD',
             page: '03R&D_05빅데이터연구소'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '06특허,논문_01특허_01목록',
             category: 'RD',
             page: '06특허,논문_01특허_01목록'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '06특허,논문_02논문_01목록',
             category: 'RD',
             page: '06특허,논문_02논문_01목록'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '06특허,논문_02논문_01목록없음',
             category: 'RD',
             page: '06특허,논문_02논문_01목록없음'
@@ -437,31 +305,31 @@ data.IR = {
             page: '01재무정보'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '02공시정보_01공고_01목록',
             category: 'IR',
             page: '02공시정보_01공고_01목록'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '02공시정보_01공고_02조회',
             category: 'IR',
             page: '02공시정보_01공고_02조회'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '03IR소식_01목록',
             category: 'IR',
             page: '03IR소식_01목록'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '03IR소식_02조회',
             category: 'IR',
             page: '03IR소식_02조회'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '04투자자문의',
             category: 'IR',
             page: '04투자자문의'
