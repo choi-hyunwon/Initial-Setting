@@ -185,13 +185,19 @@ data.business ={
             page: '연구서비스_CES'
         },
         {
+            stateClass: 'working',
+            url: '연구서비스_genesynthesis',
+            category: 'business',
+            page: '연구서비스_genesynthesis'
+        },
+        {
             stateClass: 'complete',
             url: '연구서비스_Oligo',
             category: 'business',
             page: '연구서비스_Oligo'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '연구서비스_MICROARRAY',
             category: 'business',
             page: '연구서비스_MICROARRAY'
