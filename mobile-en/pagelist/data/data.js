@@ -78,97 +78,6 @@ data.macrogen = {
     ]
 }
 
-data.newsroom = {
-    title: 'NEWSROOM',
-    list: [
-        {
-            stateClass: 'complete',
-            url: '01뉴스_01목록',
-            category: 'newsroom',
-            page: '01뉴스_01목록'
-        },
-        {
-            stateClass: 'complete',
-            url: '01뉴스_01목록_없을경우',
-            category: 'newsroom',
-            page: '01뉴스_01목록_없을경우'
-        },
-        {
-            stateClass: 'complete',
-            url: '01뉴스_02조회',
-            category: 'newsroom',
-            page: '01뉴스_02조회'
-        },
-        {
-            stateClass: 'complete',
-            url: '02미디어라이브러리_01목록',
-            category: 'newsroom',
-            page: '02미디어라이브러리_01목록'
-        },
-        {
-            stateClass: 'complete',
-            url: '02미디어라이브러리_02조회팝업',
-            category: 'newsroom',
-            page: '02미디어라이브러리_02조회팝업'
-        },
-        {
-            stateClass: 'complete',
-            url: '02미디어라이브러리_03이미지뷰어',
-            category: 'newsroom',
-            page: '02미디어라이브러리_03이미지뷰어'
-        },
-        {
-            stateClass: 'complete',
-            url: '03공지사항_01목록',
-            category: 'newsroom',
-            page: '03공지사항_01목록'
-        },
-        {
-            stateClass: 'complete',
-            url: '03공지사항_02조회',
-            category: 'newsroom',
-            page: '03공지사항_02조회'
-        }
-    ]
-}
-
-data.esg = {
-    title: 'ESG',
-    list: [
-        {
-            stateClass: 'complete',
-            url: '06ESG_01ESG경영',
-            category: 'esg',
-            page: '06ESG_01ESG경영'
-        },
-        {
-            stateClass: 'complete',
-            url: '06ESG_02윤리경영',
-            category: 'esg',
-            page: '06ESG_02윤리경영'
-        },
-        {
-            stateClass: 'complete',
-            url: '06ESG_03사회공헌_01소개',
-            category: 'esg',
-            page: '06ESG_03사회공헌_01소개'
-        },
-      /*  {
-            stateClass: 'working',
-            url: '06ESG_03사회공헌_02과학자상목록',
-            category: 'esg',
-            page: '06ESG_03사회공헌_02과학자상목록'
-        },
-        {
-            stateClass: 'working',
-            url: '06ESG_03사회공헌_03과학자상상세',
-            category: 'esg',
-            page: '06ESG_03사회공헌_03과학자상상세'
-        },*/
-    ]
-
-}
-
 data.business ={
     title: 'BUSINESS',
     list: [
@@ -245,53 +154,107 @@ data.RD = {
     title: 'R&D',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_01정밀의학연구소_01소개',
             category: 'RD',
             page: '03R&D_01정밀의학연구소_01소개'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_02생명정보학연구소',
             category: 'RD',
             page: '03R&D_02생명정보학연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_03더바이옴연구소',
             category: 'RD',
             page: '03R&D_03더바이옴연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_04싱크진연구소',
             category: 'RD',
             page: '03R&D_04싱크진연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_05빅데이터연구소',
             category: 'RD',
             page: '03R&D_05빅데이터연구소'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '06특허,논문_01특허_01목록',
             category: 'RD',
             page: '06특허,논문_01특허_01목록'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '06특허,논문_02논문_01목록',
             category: 'RD',
             page: '06특허,논문_02논문_01목록'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '06특허,논문_02논문_01목록없음',
             category: 'RD',
             page: '06특허,논문_02논문_01목록없음'
         },
+    ]
+}
+
+data.newsroom = {
+    title: 'NEWSROOM',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '01뉴스_01목록',
+            category: 'newsroom',
+            page: '01뉴스_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '01뉴스_01목록_없을경우',
+            category: 'newsroom',
+            page: '01뉴스_01목록_없을경우'
+        },
+        {
+            stateClass: 'complete',
+            url: '01뉴스_02조회',
+            category: 'newsroom',
+            page: '01뉴스_02조회'
+        },
+        {
+            stateClass: 'complete',
+            url: '02미디어라이브러리_01목록',
+            category: 'newsroom',
+            page: '02미디어라이브러리_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '02미디어라이브러리_02조회팝업',
+            category: 'newsroom',
+            page: '02미디어라이브러리_02조회팝업'
+        },
+        {
+            stateClass: 'complete',
+            url: '02미디어라이브러리_03이미지뷰어',
+            category: 'newsroom',
+            page: '02미디어라이브러리_03이미지뷰어'
+        },
+        {
+            stateClass: 'complete',
+            url: '03공지사항_01목록',
+            category: 'newsroom',
+            page: '03공지사항_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '03공지사항_02조회',
+            category: 'newsroom',
+            page: '03공지사항_02조회'
+        }
     ]
 }
 
@@ -334,5 +297,72 @@ data.IR = {
             category: 'IR',
             page: '04투자자문의'
         }
+    ]
+}
+
+data.esg = {
+    title: 'ESG',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '06ESG_01ESG경영',
+            category: 'esg',
+            page: '06ESG_01ESG경영'
+        },
+        {
+            stateClass: 'complete',
+            url: '06ESG_02윤리경영',
+            category: 'esg',
+            page: '06ESG_02윤리경영'
+        },
+        {
+            stateClass: 'complete',
+            url: '06ESG_03사회공헌_01소개',
+            category: 'esg',
+            page: '06ESG_03사회공헌_01소개'
+        },
+        /*  {
+              stateClass: 'working',
+              url: '06ESG_03사회공헌_02과학자상목록',
+              category: 'esg',
+              page: '06ESG_03사회공헌_02과학자상목록'
+          },
+          {
+              stateClass: 'working',
+              url: '06ESG_03사회공헌_03과학자상상세',
+              category: 'esg',
+              page: '06ESG_03사회공헌_03과학자상상세'
+          },*/
+    ]
+
+}
+
+data.etc = {
+    title: 'Etc',
+    list: [
+        {
+            stateClass: 'working',
+            url: '01개인정보처리방침',
+            category: 'etc',
+            page: '01개인정보처리방침'
+        },
+        {
+            stateClass: 'working',
+            url: '02영상정보_운영_관리',
+            category: 'etc',
+            page: '02영상정보_운영_관리'
+        },
+        {
+            stateClass: 'working',
+            url: '03내부정보관리규정',
+            category: 'etc',
+            page: '03내부정보관리규정'
+        },
+        {
+            stateClass: 'working',
+            url: '에러페이지',
+            category: 'etc',
+            page: '에러페이지'
+        },
     ]
 }
