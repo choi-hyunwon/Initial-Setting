@@ -135,9 +135,9 @@
   /*정밀의학연구소 탭 & 슬라이드*/
   .section_status{
     overflow: hidden; /*swiper-scrollbar로 인해 위치이동*/
-    height: 719px;
+    min-height: 719px;
     background: url('../img/RD/bg-status.png') no-repeat center center / cover;
-    padding: 80px 0 80px 20px;
+    padding: 80px 0 80px 5.634%;
     .font-h4{
       color:#ffffff;
       margin-bottom: 64px;
