@@ -386,6 +386,7 @@
                         /*slide 영역*/
                         swiperScrollbar = new Swiper ("._businessSlider", {
                             slidesPerView: "auto",
+                            effect : 'fade', // 페이드 효과 사용
                             centeredSlides: true,
                             loop: true,
 
@@ -556,21 +557,17 @@
                 </div>
             </div>
             <!-- e  global map -->
-            <script>
 
+            <script>
                 $('.section-map').ready(function(){
                     $('.inner').scrollLeft(400);
                 });
-
-
-
             </script>
-
         </div>
     </div>
 
+
     <footer class="footer main" data-aos="fade-up" data-aos-duration="2000">
-        <footer class="footer main">
             <div class="font-h5">Macrogen</div>
             <div class="info">
                 <p>238, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</p>
@@ -604,7 +601,7 @@
             </ul>
         </footer>
 
-    </footer>
+
     @@include('../../html/include/components/toTop.html')
 </div>
 @@include('../../html/include/components/gnb.html')

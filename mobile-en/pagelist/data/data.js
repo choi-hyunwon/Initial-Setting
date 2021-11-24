@@ -262,13 +262,13 @@ data.IR = {
     title: 'IR',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '01재무정보',
             category: 'IR',
             page: '01재무정보'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '04투자자문의',
             category: 'IR',
             page: '04투자자문의'
