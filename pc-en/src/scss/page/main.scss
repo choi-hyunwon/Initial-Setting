@@ -648,12 +648,24 @@
           height: 506px;
           width: 100%;
           top: 0;
-          background: url("../img/main/img-shortcuts_01.png") no-repeat center center /cover;
           transform: translateY(510px);
-          transition-duration: 0.3s;
 
           &.active {
-            transform: translateY(0);
+            animation: slideup 0.3s ease-in forwards;
+          }
+          @keyframes slideup {
+            0% {
+              transform: translateY(510px);
+              opacity: 0;
+              transition-delay: 1s;
+            }
+            70% {
+              opacity: 0.2;
+            }
+            100% {
+              transform: translateY(0px);
+              opacity: 1;
+            }
           }
 
           &.bg0 {
@@ -668,7 +680,6 @@
 
           &.bg2 {
             background-image: url("../img/main/img-shortcuts_02.png");
-
           }
 
           &.bg3 {
@@ -772,19 +783,12 @@
             .date {
               display: inline-block;
               width: 135px;
-              font-size: 18px;
-              line-height: 30px;
+              font-size: 22px;
+              line-height: 40px;
               color: #000000;
               margin-right: 70px;
               vertical-align: middle;
-
-              .day {
-                font-size: 34px;
-                line-height: 46px;
-                font-weight: bold;
-                margin-right: 20px;
-                letter-spacing: 1px;
-              }
+              font-weight: bold;
             }
 
             .tit {
@@ -876,10 +880,11 @@
 
     .section-media {
       margin-bottom: 150px;
+      padding-left: 330px;
 
       .info-box {
         width: $min-width;
-        margin: 145px auto 70px;
+        margin: 145px 0 25px;
 
         .title {
           margin-bottom: 20px;
@@ -889,14 +894,14 @@
       .media {
         .slider {
           position: relative;
-          width: 1240px;
+          width: unset;
           margin: 0 auto;
 
           .slider-navigation {
-            position: absolute;
+            width: 1240px;
+            position: relative;
             margin-bottom: 0;
-            top: -113px;
-            right: 0;
+            top: -75px;
 
             .btn-circle {
               width: 45px;
@@ -1309,76 +1314,6 @@
              bottom: 80px;
              color: #ffffff;
            }*/
-        }
-      }
-
-      .section-media {
-        margin-bottom: 150px;
-
-        .info-box {
-          width: $min-width;
-          margin: 145px auto 70px;
-
-          .title {
-            margin-bottom: 20px;
-          }
-        }
-
-        .media {
-          .slider {
-            position: relative;
-            width: 1240px;
-            margin: 0 auto;
-
-            .slider-navigation {
-              position: absolute;
-              margin-bottom: 0;
-              top: -113px;
-              right: 0;
-
-              .btn-circle {
-                width: 45px;
-                height: 45px;
-              }
-            }
-
-            .swiper-container {
-              .swiper-wrapper {
-                .swiper-slide {
-                  >a{
-                    display: block;
-                  }
-                  .img {
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                    position: relative;
-
-                    .sns {
-                      position: absolute;
-                      color: #ffffff;
-                      top: 15px;
-                      left: 20px;
-                      font-weight: bold;
-                      font-size: 18px;
-                      line-height: 22px;
-                      letter-spacing: -0.5px;
-
-                      &:after {
-                        content: '';
-                        display: inline-block;
-                        width: 30px;
-                        height: 2px;
-                        background-color: #ffffff;
-                        margin-left: 10px;
-
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       }
 

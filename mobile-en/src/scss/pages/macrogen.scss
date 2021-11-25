@@ -3179,6 +3179,14 @@
     opacity: .2;
   }
 
+  .macrogen.company-overview .section-ci .title-sm {
+    letter-spacing: -0.5px;
+  }
+
+  .macrogen.company-overview .section-ci .text {
+    letter-spacing: -1px;
+  }
+
   /* 경영진 */
   .macrogen.macrogen-management .section-chairman-career .inner, .macrogen.macrogen-management .section-ceo-career .inner {
     padding: 0 35px;
@@ -3214,5 +3222,13 @@
   /* esg 윤리경영 */
   .macrogen.ethical-management .section-bg {
     height: 1174px;
+  }
+  /* 사회공헌 */
+  .macrogen.ethical-management .section-activity {
+    padding: 64px 0 80px;
+  }
+  .macrogen.ethical-management .section-activity .desc-box .text-box > .text-box,
+  .macrogen.ethical-management .section-activity .desc-box .text-box > .img {
+    padding: 0;
   }
 }

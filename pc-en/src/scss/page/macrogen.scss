@@ -4313,13 +4313,13 @@ $min-width: 1244px;
   .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:first-child {
     font-size: 18px;
     line-height: 30px;
-    width: 163px;
+    width: 280px;
     margin-right: 0;
   }
 
   .macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:nth-child(2),
   .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:nth-child(2) {
-    width: calc(100% - 247px);
+    width: calc(100% - 280px);
     vertical-align: top;
     font-size: 16px;
     line-height: 30px;
@@ -4339,5 +4339,10 @@ $min-width: 1244px;
   .macrogen.ethical-management .section-tip .subject-to-report-step .item:first-child .img .tit,
   .macrogen.ethical-management .section-tip .subject-to-report-step .item:nth-child(2) .img .tit {
     top: 110px;
+  }
+  /* 사회공헌 */
+  .macrogen.ethical-management .section-reward .list .item .list-header .title {
+    letter-spacing: -1px;
+    padding-right: 20px;
   }
 }
