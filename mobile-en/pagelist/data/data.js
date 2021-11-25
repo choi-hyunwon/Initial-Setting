@@ -4,7 +4,7 @@ data.macrogen = {
     title: 'MACROGEN',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'Main',
             category: 'macrogen',
             page: 'Main'
@@ -118,37 +118,37 @@ data.business ={
             page: '연구서비스_동물모델사업부'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '임상진단서비스_암유전체검사',
             category: 'business',
             page: '임상진단서비스_암유전체검사'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '임상진단서비스_신생아유전자검사',
             category: 'business',
             page: '임상진단서비스_신생아유전자검사'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '임상진단서비스_covid19',
             category: 'business',
             page: '임상진단서비스_covid19'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '헬스케어서비스_개인유전자분석',
             category: 'business',
             page: '헬스케어서비스_개인유전자분석'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '헬스케어서비스_장내미생물분석',
             category: 'business',
             page: '헬스케어서비스_장내미생물분석'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '헬스케어서비스_반려동물유전자분석',
             category: 'business',
             page: '헬스케어서비스_반려동물유전자분석'
@@ -268,13 +268,13 @@ data.IR = {
     title: 'IR',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '01재무정보',
             category: 'IR',
             page: '01재무정보'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '04투자자문의',
             category: 'IR',
             page: '04투자자문의'
@@ -303,18 +303,6 @@ data.esg = {
             category: 'esg',
             page: '06ESG_03사회공헌_01소개'
         },
-        /*  {
-              stateClass: 'working',
-              url: '06ESG_03사회공헌_02과학자상목록',
-              category: 'esg',
-              page: '06ESG_03사회공헌_02과학자상목록'
-          },
-          {
-              stateClass: 'working',
-              url: '06ESG_03사회공헌_03과학자상상세',
-              category: 'esg',
-              page: '06ESG_03사회공헌_03과학자상상세'
-          },*/
     ]
 
 }
@@ -323,25 +311,19 @@ data.etc = {
     title: 'Etc',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '01개인정보처리방침',
             category: 'etc',
             page: '01개인정보처리방침'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '02영상정보_운영_관리',
             category: 'etc',
             page: '02영상정보_운영_관리'
         },
         {
-            stateClass: 'working',
-            url: '03내부정보관리규정',
-            category: 'etc',
-            page: '03내부정보관리규정'
-        },
-        {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '에러페이지',
             category: 'etc',
             page: '에러페이지'
