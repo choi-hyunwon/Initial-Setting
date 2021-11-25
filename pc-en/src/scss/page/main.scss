@@ -648,12 +648,24 @@
           height: 506px;
           width: 100%;
           top: 0;
-          background: url("../img/main/img-shortcuts_01.png") no-repeat center center /cover;
           transform: translateY(510px);
-          transition-duration: 0.3s;
 
           &.active {
-            transform: translateY(0);
+            animation: slideup 0.3s ease-in forwards;
+          }
+          @keyframes slideup {
+            0% {
+              transform: translateY(510px);
+              opacity: 0;
+              transition-delay: 1s;
+            }
+            70% {
+              opacity: 0.2;
+            }
+            100% {
+              transform: translateY(0px);
+              opacity: 1;
+            }
           }
 
           &.bg0 {
@@ -668,7 +680,6 @@
 
           &.bg2 {
             background-image: url("../img/main/img-shortcuts_02.png");
-
           }
 
           &.bg3 {

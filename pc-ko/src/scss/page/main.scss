@@ -649,10 +649,23 @@
           width: 100%;
           top: 0;
           transform: translateY(510px);
-          transition-duration: 0.3s;
 
           &.active {
-            transform: translateY(0);
+            animation: slideup 0.3s ease-in forwards;
+          }
+          @keyframes slideup {
+            0% {
+              transform: translateY(510px);
+              opacity: 0;
+              transition-delay: 1s;
+            }
+            70% {
+              opacity: 0.2;
+            }
+            100% {
+              transform: translateY(0px);
+              opacity: 1;
+            }
           }
 
           &.bg0 {
@@ -662,7 +675,7 @@
           }
 
           &.bg1 {
-         background-image: url("../img/main/img-shortcuts_01.png");
+            background-image: url("../img/main/img-shortcuts_01.png");
           }
 
           &.bg2 {
