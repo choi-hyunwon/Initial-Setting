@@ -294,7 +294,6 @@
   }
   .selected-value {
     padding: 15px 20px;
-
     .text {
       font-size: 14px;
       font-weight: 400;
@@ -316,7 +315,6 @@
       }
     }
   }
-
   .anchor-option {
     display: none;
     width: 100%;
@@ -325,7 +323,7 @@
     background-color: #F5F5F5;
     max-height: 244px;
     overflow-y: scroll;
-
+    box-shadow: 0 6px 6px rgba(0,0,0,0.08);
     .anchor-value {
       margin-bottom: 12px;
 
