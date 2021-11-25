@@ -54,7 +54,7 @@
     padding-bottom: 80px;
     padding-left: 338px;
 
-    .title {
+    .font-h3 {
       font-size: 56px;
       line-height: 81px;
       letter-spacing: -4.5px;
@@ -62,7 +62,8 @@
       margin-bottom: 20px;
     }
 
-    .desc {
+    .font-body {
+      font-weight: normal;
       font-size: 18px;
       line-height: 32px;
       letter-spacing: -1.3px;
@@ -129,10 +130,7 @@
   .biome_area {
     padding-top: 120px;
 
-    .sub_title {
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 46px;
+    .font-h7 {
       margin-bottom: 40px;
     }
   }
@@ -147,11 +145,8 @@
       .box {
         margin-bottom: 80px;
 
-        .sub_title {
-          font-size: 36px;
-        }
-
-        .sub_desc {
+        .font-body {
+          font-weight: normal;
           img {
             margin-bottom: 0;
           }
@@ -166,13 +161,10 @@
         margin-bottom: 0;
       }
 
-      .sub_title {
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 46px;
+      .font-h7 {
         display: inline-block;
         float: left;
-        width: 428px;
+        width: 420px;
 
         > span {
           font-weight: normal;
@@ -184,17 +176,13 @@
         }
       }
 
-      .sub_desc {
+      .font-body {
         display: inline-block;
         float: left;
         width: calc(100% - 428px);
+        font-weight: normal;
 
         > p {
-          font-size: 16px;
-          line-height: 30px;
-          color: #454545;
-          letter-spacing: -1px;
-
           + img {
             padding-top: 40px;
             margin-bottom: 0;
@@ -227,10 +215,7 @@
     width: $min-width;
     margin: 0 auto;
 
-    .title {
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 46px;
+    .font-h7 {
       display: inline-block;
       float: left;
       width: 210px;
@@ -451,17 +436,12 @@
   }
 }
 
-
 .modal {
   .modal-dialog {
     &.research {
       .modal-content{
         .modal-body{
-          .title{
-            font-size: 32px;
-            line-height: 46px;
-            letter-spacing: -1px;
-            font-weight: bold;
+          .font-h7{
             .sub_title{
               font-size: 18px;
               line-height: 1;
@@ -521,311 +501,6 @@
             }
           }
         }
-      }
-    }
-  }
-}
-
-.en{
-  .research-wrap {
-    .research_bg{
-      .frameB{
-        padding-bottom: 0;
-        padding-top: 300px!important;
-      }
-    }
-
-    /*폰트 공통*/
-    .info-box {
-      padding-top: 126px;
-      padding-bottom: 65px;
-
-      .title {
-        font-size: 72px;
-        line-height: 85px;
-        letter-spacing: -0.5px;
-      }
-
-      .desc {
-        font-size: 40px;
-        line-height: 72px;
-        letter-spacing: -0.5px;
-      }
-    }
-
-    .desc-box {
-
-      p {
-        font-size: 30px;
-        line-height: 45px;
-
-        &.sub-title {
-          font-size: 50px;
-          line-height: 65px;
-          letter-spacing: -0.5px;
-        }
-      }
-    }
-
-    /*이미지 공통*/
-    .img {
-
-    }
-
-
-    /*생명정보학연구소*/
-    .section_lifeInformation {
-      .img {
-
-      }
-    }
-
-    /*더바이옴연구소*/
-    .section_theBiome {
-      .img {
-
-      }
-    }
-
-    .biome_area {
-
-      .sub_title {
-        font-size: 50px;
-        line-height: 65px;
-      }
-    }
-
-
-    /*생명정보학/정밀의학/더바이옴/싱크진 공통*/
-    .section_info_list {
-
-      &.syncgenes-area {
-        .box {
-
-          .sub_title {
-            font-size: 60px;
-            line-height: 87px;
-            > span{
-              font-size: 30px;
-              line-height: 55px;
-              letter-spacing: -0.5px;
-            }
-          }
-
-          .sub_desc {
-            img {
-
-            }
-          }
-        }
-      }
-
-      .box {
-        .sub_title {
-          font-size: 50px;
-          line-height: 65px;
-          letter-spacing: -0.5px;
-
-          > span {
-
-          }
-        }
-
-        .sub_desc {
-
-          > p {
-            font-size: 30px;
-            line-height: 45px;
-
-            + img {
-
-            }
-          }
-
-          img {
-
-          }
-        }
-      }
-    }
-
-    /*빅데이터연구소*/
-    .section_bigData {
-
-
-      .img {
-
-      }
-    }
-
-    .section_research_area {
-
-      .title {
-        font-size: 40px;
-        line-height: 55px;
-
-      }
-
-      .list {
-
-        li {
-          margin-left: 39px;
-          &:first-of-type {
-            margin-left: 0;
-          }
-          img{
-            display: block;
-            margin: 0 auto;
-          }
-
-          p {
-            font-size: 25px;
-            line-height: 30px;
-
-          }
-        }
-      }
-    }
-
-    /*정밀의학연구소*/
-    .section_customMedicine {
-      .info-box {
-
-      }
-
-      .img {
-
-      }
-    }
-
-    .section_status {
-
-      .font-h4 {
-        font-size: 72px;
-        line-height: 98px;
-      }
-
-      .tab-basic {
-
-        .tab-list {
-          .nav-link {
-            font-size: 24px;
-            padding: 8px 25px;
-
-            &:first-of-type {
-
-            }
-
-          }
-        }
-      }
-
-      .tab-content {
-        width: 100%;
-        margin: 0 auto;
-        text-align: left;
-        .tab-pane {
-          /*slide 영역 공통*/
-          .slide-box {
-            .slider {
-              padding-left: 338px;
-
-              .swiper-container {
-                margin-bottom: 40px;
-                overflow: hidden;
-
-                .swiper-wrapper {
-                  .swiper-slide {
-                    &.item {
-                      width: 296px !important;
-                      margin-right: 20px;
-                      /* a{
-                         display: block;
-                         .img{
-                           width: 296px;
-                           height: 198px;
-                           display: block;
-                           margin-bottom: 0;
-                           img{
-                             @include img-100;
-                           }
-                         }
-                         .txt{
-                           padding: 30px;
-                           background-color:$gray-ffffff;
-                           height: 124px;
-                           display: inline-block;
-                           width: 100%;
-                           span{
-                             font-size: 18px;
-                             line-height: 32px;
-                             color:$gray-000000;
-                             @include ellipsis(2);
-                             font-weight: 500;
-                             height: 70px;
-                           }
-                         }
-                       }*/
-                      display: block;
-
-                      .img {
-                        width: 296px;
-                        height: 198px;
-                        display: block;
-                        margin-bottom: 0;
-
-                        img {
-                          @include img-100;
-                        }
-                      }
-
-                      .txt {
-                        padding: 30px;
-                        background-color: $gray-ffffff;
-                        height: 124px;
-                        display: inline-block;
-                        width: 100%;
-
-                        span {
-                          font-size: 18px;
-                          line-height: 32px;
-                          color: $gray-000000;
-                          @include ellipsis(2);
-                          font-weight: 500;
-                          height: 70px;
-                        }
-                      }
-
-                      /*------*/
-
-                    }
-                  }
-                }
-              }
-
-              .slider-navigation {
-                .btn {
-                  background-color: transparent;
-                  border: 1px solid $line-ffffff;
-                }
-
-              }
-
-            }
-          }
-        }
-      }
-    }
-
-    /*싱크진 연구소*/
-    .section_syncgenes {
-
-      .img {
-
-      }
-
-      .divider {
-        margin-top: 90px;
       }
     }
   }
