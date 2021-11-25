@@ -9,6 +9,14 @@
   .table-scroll {
     margin-bottom: 48px;
     margin-right: -20px;
+    table{
+      tr{
+        th{
+          white-space: nowrap;
+        }
+
+      }
+    }
   }
   .icon.ico-cart-white{
     margin-right: 8px;

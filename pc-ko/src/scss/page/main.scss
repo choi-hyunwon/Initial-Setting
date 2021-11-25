@@ -783,19 +783,12 @@
             .date {
               display: inline-block;
               width: 135px;
-              font-size: 18px;
-              line-height: 30px;
+              font-size: 22px;
+              line-height: 40px;
               color: #000000;
               margin-right: 70px;
               vertical-align: middle;
-
-              .day {
-                font-size: 34px;
-                line-height: 46px;
-                font-weight: bold;
-                margin-right: 20px;
-                letter-spacing: 1px;
-              }
+              font-weight: bold;
             }
 
             .tit {
@@ -887,10 +880,11 @@
 
     .section-media {
       margin-bottom: 150px;
+      padding-left: 330px;
 
       .info-box {
         width: $min-width;
-        margin: 145px auto 70px;
+        margin: 145px 0 25px;
 
         .title {
           margin-bottom: 20px;
@@ -900,14 +894,14 @@
       .media {
         .slider {
           position: relative;
-          width: 1240px;
+          width: unset;
           margin: 0 auto;
 
           .slider-navigation {
-            position: absolute;
+            width: 1240px;
+            position: relative;
             margin-bottom: 0;
-            top: -113px;
-            right: 0;
+            top: -75px;
 
             .btn-circle {
               width: 45px;
