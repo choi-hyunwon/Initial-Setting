@@ -25,7 +25,7 @@
                     <div class="font-h5">01. Inquiry Information</div>
                     <label class="label">Name</label>
                     <div class="input-group">
-                        <input type="text" title="검색" class="form-control" placeholder="이름을 입력해주세요">
+                        <input type="text" title="검색" class="form-control" placeholder="Enter your name">
                     </div>
 
                     <!-- s 영문버전 추가 영역 -->
@@ -46,59 +46,34 @@
                 <hr class="M-divider">
 
                 <div class="box">
-                    <div class="font-h5">02. 문의하실 내용을 작성해주세요</div>
+                    <div class="font-h5">02. Please enter the your inquiry</div>
 
                     <label class="label">Subject</label>
                     <div class="input-group">
-                        <input type="text" title="검색" class="form-control" placeholder="제목을 입력해주세요">
+                        <input type="text" title="검색" class="form-control" placeholder="Enter title">
                     </div>
 
                     <label class="label">Details</label>
                     <div class="input-group">
-                        <textarea title="textarea" class="form-control" placeholder="문의하실 내용을 입력하세요"></textarea>
+                        <textarea title="textarea" class="form-control" placeholder="Enter the your inquiry"></textarea>
                     </div>
 
                     <!--s 개발영역-->
                     <div class="input-group">
                         <span class="input-group-text" id="automatic">Security code</span>
                         <span class="security" style="width: 160px; height: 60px; background: #E9E9E9;"></span>
-                        <input type="text" placeholder="Please enter the characters on the left." class="form-control" aria-label="input" aria-describedby="automatic">
+                        <input type="text" placeholder="Enter number" class="form-control" aria-label="input" aria-describedby="automatic">
                     </div>
                     <!--e 개발영역-->
                 </div>
 
-                <hr class="M-divider"/>
 
                 <div class="box">
-                    <div class="font-h5">03. 투자 및 상담을 위한 개인정보 수집·이용에 동의해주세요</div>
-
-                    <div class="agreement">
-                        <p><span class="font-bold">개인정보 수집 목적 &#58;</span> 투자 문의 및 상담 문의 대응</p>
-                        <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호</p>
-                        <p><span class="font-bold">보유 및 이용기간 &#58;</span>  3년</p>
-                        <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다&#46; 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다&#46;</p>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" checked type="checkbox" value="" id="check">
-                        <label class="form-check-label" for="check">동의합니다</label>
-                    </div>
-
                     <div class="btn-box">
-                        <a href="#" class="btn btn-light"><span>취소</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon-pen"></i><span>문의하기</span></a>
+                        <a href="#" class="btn btn-light"><span>Cancel</span></a>
+                        <a href="#" class="btn btn-primary"><i class="icon-pen"></i><span>Inquire</span></a>
                     </div>
                 </div>
-
-                <script>
-                    $('.form-check-input').on('click',function (){
-                        if($(this).is(":checked") ==  true){
-                            $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
-                        }else{
-                            $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
-                        }
-                    });
-                </script>
             </div>
 
         </div>
