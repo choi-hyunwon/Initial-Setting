@@ -149,7 +149,7 @@
                     </ul>
                 </div>
                 <div class="btn-wrapper">
-                    <a href="#" class="btn-view-zoom _openImageViewer" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
+                    <a href="#" class="btn-view-zoom _openImageViewer" onclick="getActiveImage()" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
                     <a href="#" class="btn-download"><span class="sr-only">다운로드</span></a>
                 </div>
             </div>
@@ -178,7 +178,7 @@
 <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
-            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
             <div class="parent">
                 <div class="panzoom">
                     <img src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목">
@@ -191,6 +191,12 @@
     <p>이미지를 확대할 수 있습니다</p>
 </div>
 <script>
+    // 현재 active 이미지 show
+    function getActiveImage() {
+        let activeImage = $('.swiper-slide-active').children().children('img').attr('src')
+        $('.modal-image-viewer .panzoom').children('img').attr('src',activeImage)
+    }
+
     $(document).ready(function(){
         $('.btn-totop').click(function(){
             $('.modal').animate( { scrollTop:0 },{duration : 100});

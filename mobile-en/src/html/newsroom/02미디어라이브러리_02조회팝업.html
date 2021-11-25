@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="ko">
 @@include('../../html/include/common/head.html')
-<body class="en">
+<body>
 <div class="wrap">
     <div class="non-bg">
         @@include('../../html/include/components/header.html')
         <div class="frame">
-            <div class="font-h1">Media library</div>
+            <div class="font-h1">미디어라이브러리</div>
         </div>
     </div>
     <div class="container pt-0">
@@ -149,7 +149,7 @@
                     </ul>
                 </div>
                 <div class="btn-wrapper">
-                    <a href="#" class="btn-view-zoom _openImageViewer" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
+                    <a href="#" class="btn-view-zoom _openImageViewer" onclick="getActiveImage()" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
                     <a href="#" class="btn-download"><span class="sr-only">다운로드</span></a>
                 </div>
             </div>
@@ -179,8 +179,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/@temp/newsroom/sample-1.png" alt=""></div>
+            <div class="parent">
+                <div class="panzoom">
+                    <img src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목">
+                </div>
             </div>
         </div>
     </div>
@@ -189,6 +191,12 @@
     <p>이미지를 확대할 수 있습니다</p>
 </div>
 <script>
+    // 현재 active 이미지 show
+    function getActiveImage() {
+        let activeImage = $('.swiper-slide-active').children().children('img').attr('src')
+        $('.modal-image-viewer .panzoom').children('img').attr('src',activeImage)
+    }
+
     $(document).ready(function(){
         $('.btn-totop').click(function(){
             $('.modal').animate( { scrollTop:0 },{duration : 100});
@@ -221,10 +229,6 @@
         });
 
         swiper.update();
-
-        // zoom
-        var el = document.querySelector('.pinch-zoom');
-        new PinchZoom.default(el, {});
 
         // toast popup
         function showToastPopup() {
