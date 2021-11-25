@@ -4331,4 +4331,13 @@ $min-width: 1244px;
   .macrogen.macrogen-management .section-ceo-career .inner .item .title span::after {
     content: none;
   }
+
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item:first-child .img .label,
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item:nth-child(2) .img .label {
+    top: 55px;
+  }
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item:first-child .img .tit,
+  .macrogen.ethical-management .section-tip .subject-to-report-step .item:nth-child(2) .img .tit {
+    top: 110px;
+  }
 }
