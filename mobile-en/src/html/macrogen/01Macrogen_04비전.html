@@ -43,13 +43,13 @@
                             “for the benefit of all mankind.”
                         </div>
                         <div class="img-wrap">
-                            <div class="img img-1" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="2" data-rellax-percentage="0.5">
+                            <div class="img img-1" data-aos="fade-up" data-aos-duration="2000">
                                 <img src="../../img/macrogen/img-vision-parallax-1.png" alt="dna">
                             </div>
-                            <div class="img img-2" data-aos="fade-down" data-aos-duration="2000" data-rellax-speed="2" data-rellax-percentage="0.5">
+                            <div class="img img-2" data-aos="fade-down" data-aos-duration="2000">
                                 <img src="../../img/macrogen/img-vision-parallax-2.png" alt="dna">
                             </div>
-                            <div class="img img-3" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="2" data-rellax-percentage="0.5">
+                            <div class="img img-3" data-aos="fade-up" data-aos-duration="2000">
                                 <img src="../../img/macrogen/img-vision-parallax-3.png" alt="dna">
                             </div>
                         </div>
@@ -57,9 +57,25 @@
                 </div>
             </div>
             <script>
-                new Rellax('.img-1');
-                new Rellax('.img-2');
-                new Rellax('.img-3');
+                $(document).ready(function() {
+                    $(window).on("load scroll", function() {
+                        var parallaxElement = $(".img-wrap").find('.img'),
+                            parallaxQuantity = parallaxElement.length;
+                        window.requestAnimationFrame(function() {
+                            for (var i = 0; i < parallaxQuantity; i++) {
+                                var currentElement = parallaxElement.eq(i),
+                                    windowTop = $(window).scrollTop(),
+                                    elementTop = currentElement.offset().top,
+                                    elementHeight = currentElement.height(),
+                                    viewPortHeight = window.innerHeight * 0.5 - elementHeight * 0.5,
+                                    scrolled = windowTop - elementTop + viewPortHeight;
+                                currentElement.css({
+                                    transform: "translate3d(0," + scrolled * -0.15 + "px, 0)"
+                                });
+                            }
+                        });
+                    });
+                });
             </script>
             <!-- e vision -->
 
