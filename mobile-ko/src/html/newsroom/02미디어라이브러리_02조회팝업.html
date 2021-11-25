@@ -178,9 +178,11 @@
 <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
-            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/@temp/newsroom/sample-1.png" alt=""></div>
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom">
+                    <img src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목">
+                </div>
             </div>
         </div>
     </div>
@@ -221,10 +223,6 @@
         });
 
         swiper.update();
-
-        // zoom
-        var el = document.querySelector('.pinch-zoom');
-        new PinchZoom.default(el, {});
 
         // toast popup
         function showToastPopup() {
