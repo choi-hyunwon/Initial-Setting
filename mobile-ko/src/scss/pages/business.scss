@@ -101,7 +101,9 @@
   .info-box-wrap {
     .info-box {
       display: none;
-
+      .board{
+        padding: 0px;
+      }
       .img {
         + .desc {
           padding-top: 40px;
