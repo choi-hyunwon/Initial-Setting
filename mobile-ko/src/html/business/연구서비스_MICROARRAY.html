@@ -121,8 +121,21 @@
                     <div class="img">
                         <img src="../../img/business/img-microarray-expression.png" alt="Expression Microarray">
                     </div>
+                    <!--v0.5 content-anchor 추가 (주석제거예정)-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">mRNA Expression Microarray</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">mRNA Expression Microarray</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">microRNA Expression Microarray</a></li>
+                        </ul>
+                    </div>
+
                     <hr class="divider">
-                    <p class="font-h5 sub-title">mRNA Expression Microarray</p>
+
+                    <!--v0.5 id값 추가 완료(주석제거예정)-->
+                    <p class="font-h5 sub-title" id="target1">mRNA Expression Microarray</p>
                     <p class="desc list_bottom font-body">mRNA(messenger RNA)는 DNA가 전사될 때 생성되는 RNA의 일종입니다. mRNA는 단백질 정보를 담고 있는 coding region을 포함합니다. 특정 환경에서 주요 기능을 수행하는 유전자와
                         그 유전자의 pathway를 찾기 위해서는 mRNA의 발현패턴을 분석하는 것이 중요합니다. mRNA Expression Microarray를 이용하여 Organism의 전체 유전자 발현 정도를 분석할 수 있습니다.
                         생물학적 환경 조건의 변화에 따라 발현이 달라지는 유전자 정보를 확인해야 할 때도 Microarray 스크리닝을 통해 빠르게 결과를 얻을 수 있습니다.</p>
@@ -227,7 +240,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="font-h5 sub-title list-area-group-top">microRNA Expression Microarray</p>
+                    <!--v0.5 id값 추가 완료(주석제거예정)-->
+                    <p class="font-h5 sub-title list-area-group-top" id="target2">microRNA Expression Microarray</p>
                     <p class="desc font-body list_bottom">번역(Translation) 과정에서 유전자의 발현을 조절하는 다양한 microRNA에 대한 정보를 빠르게 스크리닝하여 한번에 얻을 수 있는 분석방법입니다.
                         microRNA는 21-25개 뉴클레오타이드(Nucleotide)로 이루어진 단일서열의 작은 RNA로 mRNA가 번역과정을 거쳐 단백질이 형성되는 기능을 방해함으로써 유전자 발현을 제어하는 역할을 합니다.
                         해당 microRNA 연구를 통하여 RNA silencing에 대한 이해를 넓힐 수 있습니다.
@@ -340,12 +354,23 @@
                 <div class="info-box">
                     <p class="font-h4 main-title">Genome Microarray</p>
                     <p class="subject font-body-h-b">DNA상의 다양한 염기서열 변이나 구조적 변화에 대해 분석하는 방법입니다.</p>
-                    <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="../../img/business/img-microarray-genome.png" alt="Genome Microarray">
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">SNP Genotyping Microarray</p>
+                    <!--v0.5 content-anchor 추가 (주석제거예정)-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">SNP Genotyping Microarray</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">SNP Genotyping Microarray</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CGH Microarray</a></li>
+                        </ul>
+                    </div>
+                    <!--v0.5 id 추가 (주석제거예정)-->
+                    <p class="font-h5 sub-title" id="target3">SNP Genotyping Microarray</p>
+
                     <p class="desc list_bottom font-body">약 30억 쌍의 염기로 구성된 인간 유전체의 경우 개인의 DNA 염기서열이 대부분 일치하지만  0.1% 정도 차이가 나는 단일염기다형성(SNP, Single Nucleotide Polymorphism) 부위를 가지고 있습니다.
                         이러한 SNP에 의해 개인의 유전적 다양성이 나타나며 서로 다른 질병에 대한 감수성의 차이를 만들어 냅니다. SNP Genotyping Microarray를 사용하면 수백만 개의 SNP를 동시에 분석할 수 있습니다.
                         마크로젠은 국내 최대 SNP 칩 데이터 자동화 생산 시설을 갖추고 있으며, 데이터 QC 프로세스를 적용하여 정확한 분석 결과를 제공하고 있습니다.</p>
@@ -499,7 +524,8 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="font-h4 main-title">CGH Microarray</p>
+                    <!--v0.5 id 추가 (주석제거예정)-->
+                    <p class="font-h4 main-title" id="target4">CGH Microarray</p>
                     <p class="desc list_bottom font-body">복제 수 변이라 불리는 CNV(Copy Number Variation)는 염색체 내에 1Kb 이상의 특정 염기서열 부위가 결손 되거나 증폭되어 반복적으로 나타나는 DNA 변이를 의미합니다.
                         이러한 복제 수 변이는 암세포 증식 외에도 다양한 유전질환을 유발할 수 있습니다.
                         CGH 칩 데이터 분석 시 DGV, ClinVar등의 Database를 활용하여 다양한 질병이나 특정 Phenotype의 원인이 되는 CNV를 찾을 수 있으며 CGH Microarray를 이용하여 유전자와 염색체상의 CNV를 분석할 수 있습니다.
@@ -719,6 +745,79 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
+    <!--v0.5 스크립트추가(주석제거예정)-->
+    <script>
+        /*변수*/
+        var contentAnchor = $(".content-anchor");
+        var anchorOption= $(".anchor-value");
+        var anchor = $( "._anchor" );
+        var offset = anchor.offset();
+
+
+        /*특정위치 show & hide*/
+        function fnMousewheel(){
+            var lastScroll = 0;
+
+            $(window).on('scroll',function(e){
+                let listPos = $('.info-box').offset().top;
+                let offset = $(this).scrollTop();
+
+                if (offset > lastScroll){
+                    // console.log('down')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                else {
+                    // console.log('up')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                lastScroll = offset;
+            });
+        }
+
+        /*드롭다운 클릭시 이벤트*/
+        contentAnchor.on('click',function() {
+            var select = $(this);
+            if(select.hasClass('open')) {
+                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+            }
+            else {
+                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                $('body').on('click',function (e){
+                    if(contentAnchor.hasClass('open')) {
+                        if(!contentAnchor.has(e.target).length) {
+                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                        }
+                    }
+                    e.preventDefault()
+                })
+            }
+        });
+
+
+        /*클릭시 페이지 이동 이동*/
+        function TitleMove(target){
+            var id = $('#'+ target);
+            var offset = id.offset();
+            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+        }
+        /*클릭시 텍스트 변경*/
+        anchorOption.on('click',function() {
+            var select = $(this).find('a').text();
+            $('._anchor-value').find('span').text(select);
+        });
+        fnMousewheel();
+
+    </script>
 </div>
 @@include('../../html/include/components/gnb.html')
 
