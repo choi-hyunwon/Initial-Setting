@@ -3,6 +3,7 @@
  v.0.1 주연 : 최초 작업 -- 2021.11.5
  v.0.2 태윤 : .select-box 추가
  v.0.3 주연 : .tab-secondary 추가 -- 2021.11.10
+ v.0.4 태윤 : .content-anchor 화살표추가 -- 2021.11.24
 |----------------------------------|
 */
 .tab-primary {
@@ -272,7 +273,25 @@
   line-height: 34px;
   letter-spacing: -0.5px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
-
+  &.open{
+    .selected-value{
+      .text{
+        display: inline-block;
+        &:after {
+          content: '';
+          width: 8px;
+          height: 8px;
+          border-top: 1px solid #000000;
+          border-right: 1px solid #000000;
+          display: inline-block;
+          transform: rotate(315deg);
+          position: absolute;
+          top:50%;
+          right: -18px;
+        }
+      }
+    }
+  }
   .selected-value {
     padding: 15px 20px;
 
@@ -281,12 +300,19 @@
       font-weight: 400;
       line-height: 26px;
       letter-spacing: -0.5px;
-
+      position: relative;
+      display: inline-block;
       &:after {
-
         content: '';
-        width: 9px;
-        height: 4.5px
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid #000000;
+        border-right: 1px solid #000000;
+        display: inline-block;
+        transform: rotate(135deg);
+        position: absolute;
+         top: 8px;
+        right: -18px;
       }
     }
   }
