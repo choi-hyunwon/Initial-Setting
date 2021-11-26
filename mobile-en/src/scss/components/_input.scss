@@ -5,6 +5,7 @@
  v.0.3 선미 : .input-tip { margin-bottom 제거 } / form-check-input {marging 수정} /
              input-group-text {margin 제거} / placeholder {bold 제거}-- 2021.11.18
  v.0.4 선미 : btn-search 아이콘 경로 변경 -- 2021.11.24
+ v.0.5 선미 : ico-select-nor 아이콘 위치 변경 / dropdown-menu (width-> min-width)변경-- 2021.11.26
 |----------------------------------|
 */
 input[type="number"]::-webkit-outer-spin-button,
@@ -269,7 +270,7 @@ textarea::placeholder {
     .ico-select-nor {
       position: absolute;
       @include background-img($width: 9px, $height: 6px, $category: 'common', $img: 'ico-select-nor.svg');
-      right: 27px;
+      right: 15px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -279,7 +280,7 @@ textarea::placeholder {
     display: none;
     position: absolute;
     background-color: #fff;
-    width: 100%;
+    min-width: 100%;
     top: 52px;
     left: 0;
     margin-top: 1px;

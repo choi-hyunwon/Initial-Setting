@@ -386,6 +386,9 @@
                   margin-bottom: 24px;
                 }
                 >a{
+                  max-width: 100%;
+                  height: auto;
+                  display: inline-block;
                   .icon-arrow-right-short{
                     background: url("../img/main/ico-arrow-right-short.png") no-repeat center center;
                     width: 36px;
