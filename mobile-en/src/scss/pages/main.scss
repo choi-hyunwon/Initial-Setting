@@ -481,7 +481,6 @@
           .swiper-slide {
             width: calc(100% - 40px);
             height: 400px;
-            margin: 0 5px;
             position: relative;
             .text-area {
               position: absolute;
@@ -919,6 +918,7 @@
         left: 0;
         margin: 80px 20px 0;
         display: inline-block;
+        -webkit-transform: translateZ(0);
 
         .title {
           font-weight: bold;
