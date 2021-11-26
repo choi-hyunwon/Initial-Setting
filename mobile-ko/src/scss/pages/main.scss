@@ -918,7 +918,6 @@
         left: 0;
         margin: 80px 20px 0;
         display: inline-block;
-        -webkit-transform: translateZ(0);
 
         .title {
           font-weight: bold;
@@ -991,7 +990,7 @@
               height: 16px;
               display: inline-block;
               background-image: url(../img/main/ico-pin-white.png);
-              background-size: 12px 16px;
+              background-size: 100% auto;
               background-position: 0 0;
               background-repeat: no-repeat;
               vertical-align: middle;
