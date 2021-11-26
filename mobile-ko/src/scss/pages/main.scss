@@ -513,6 +513,7 @@
             }
 
             &.swiper-slide-active {
+              opacity: 1!important;
               .text-area {
                 transform: translateZ(0);
                 opacity: 1;
