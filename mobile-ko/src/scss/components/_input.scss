@@ -6,6 +6,7 @@
              input-group-text {margin 제거} / placeholder {bold 제거}-- 2021.11.18
  v.0.4 선미 : btn-search 아이콘 경로 변경 -- 2021.11.24
  v.0.5 선미 : ico-select-nor 아이콘 위치 변경 / dropdown-menu (width-> min-width)변경-- 2021.11.26
+ v.0.6 선미 : form-check-input 체크박스 단말기별 기본 css 제거- 2021.11.27
 |----------------------------------|
 */
 input[type="number"]::-webkit-outer-spin-button,
@@ -39,10 +40,19 @@ textarea::placeholder {
     font-size: 100%;
     line-height: 26px;
     margin: 0 8px 0 0;
-    border-radius: 0;
     border: 2px solid $line-d9d9d9;
     background-image: url(../../dist/img/common/ico-check-nor.png);
     background-size: 16px 12px;
+
+    border-radius: 0!important;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+
+
+
 
     &:focus {
       outline: none;
@@ -50,6 +60,7 @@ textarea::placeholder {
     }
 
     &:checked {
+      border-radius: 0!important;
       border: 2px solid $point-primary;
       background-color: $point-primary;
       background-image: url(../../dist/img/common/ico-check-checked.png);
