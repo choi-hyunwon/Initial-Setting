@@ -2,6 +2,7 @@
 |----------------------------------------------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.11.2
  v.0.2 주연 : touch 음영 제거 -- 2021.11.18
+ v.0.3 선미 : btn-totop {background-size: 100% auto;}로 변경 -- 2021.11.26
 |----------------------------------------------------------------------|
 */
 * {
@@ -408,7 +409,7 @@ body {
   height: 59px;
   transition: 0.4s;
   background-image: url(../img/common/btn-toTop.png);
-  background-size: cover;
+  background-size: 100% auto;
 }
 
 /* gnb */
