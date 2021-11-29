@@ -975,9 +975,10 @@
         var lastScroll = 0;
 
         $(window).on('scroll',function(){
-            let listPos = $('._listWrap').offset().top;
+            let listPos = $('.section.show ._listWrap').offset().top;
             let selectBox = $('.section.show .select-box');
             let offset = $(this).scrollTop();
+            // console.log(offset);
 
             $('.section.show .history-list').each(function(idx) {
                 if(offset > $('.section.show .history-list').eq(idx).offset().top - 62) {
@@ -990,7 +991,9 @@
             if (offset > lastScroll){
                 // console.log('down')
                 if (offset > listPos) {
-                    selectBox.show().css({'position': 'fixed','top':'0'});
+                    selectBox.show().css({'position': 'fixed','top': '0'});
+
+
                 }
                 else {
                     selectBox.hide();
@@ -999,7 +1002,7 @@
             else {
                 // console.log('up')
                 if (offset > listPos) {
-                    selectBox.show().css({'position': 'fixed','top':'70px'});
+                    selectBox.show().css({'position': 'fixed','top': '70px'});
                 }
                 else {
                     selectBox.hide();
