@@ -201,103 +201,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--content-anchor script s-->
-                    <script>
-                        /*변수*/
-                        var contentAnchor = $(".content-anchor");
-                        var anchorOption= $(".anchor-value");
-                        var anchor = $( "._anchor" );
-                        var offset = anchor.offset();
 
-                        /*특정위치 show & hide*/
-                        function fnMousewheel(){
-                            var lastScroll = 0;
-                            $(window).on('scroll',function(e){
-                                let listPos = $('.info-box').offset().top;
-                                let offset = $(this).scrollTop();
-
-                                if (offset > lastScroll){
-                                    // console.log('down')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
-                                    }
-                                    else {
-                                        contentAnchor.hide();
-                                    }
-                                }
-                                else {
-                                    // console.log('up')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
-                                    }
-                                    else {
-                                        contentAnchor.hide();
-                                    }
-                                }
-                                lastScroll = offset;
-                            });
-                        }
-
-
-                        /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
-                        $(window).scroll(function(){
-                            var position = $(window).scrollTop();
-
-
-                            if(position > $('.info-box._genome > .anchor-section').eq(0).offset().top && position < $('.anchor-section').eq(1).offset().top){
-                                $('.anchor-section').eq(0).find('.sub-title').text();
-                                $('._anchor-value').find('span').text($('.anchor-section').eq(0).find('.sub-title').text());
-                            }
-
-                            else if (position > $('.anchor-section').eq(1).offset().top) {
-                                $('._anchor-value').find('span').text($('.anchor-section').eq(1).find('.sub-title').text());
-                            }
-
-                            else {
-
-                            }
-                        });
-
-
-
-                        /*드롭다운 클릭시 이벤트*/
-                        contentAnchor.on('click',function() {
-                            var select = $(this);
-                            if(select.hasClass('open')) {
-                                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-                            }
-                            else {
-                                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                                $('body').on('click',function (e){
-                                    if(contentAnchor.hasClass('open')) {
-                                        if(!contentAnchor.has(e.target).length) {
-                                            contentAnchor.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-                                        }
-                                    }
-
-                                })
-                            }
-
-                        });
-
-                        /*클릭시 페이지 이동 이동*/
-                        function TitleMove(target){
-                            var id = $('#'+ target);
-                            var offset = id.offset();
-                            $('html, body').animate({scrollTop : offset.top - 75}, 300);
-                        }
-
-                        /*클릭시 텍스트 변경*/
-                        anchorOption.on('click',function() {
-                            var select = $(this).find('a').text();
-                            $('._anchor-value').find('span').text(select);
-                        });
-
-
-                        fnMousewheel();
-
-                    </script>
-                    <!--content-anchor script e-->
                 </div>
                 <!--Exome-->
                 <div class="info-box _sequencing">
@@ -787,6 +691,103 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
+    <!--content-anchor script s-->
+    <script>
+        /*변수*/
+        var contentAnchor = $(".content-anchor");
+        var anchorOption= $(".anchor-value");
+        var anchor = $( "._anchor" );
+        var offset = anchor.offset();
+
+        /*특정위치 show & hide*/
+        function fnMousewheel(){
+            var lastScroll = 0;
+            $(window).on('scroll',function(e){
+                let listPos = $('.info-box').offset().top;
+                let offset = $(this).scrollTop();
+
+                if (offset > lastScroll){
+                    // console.log('down')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                else {
+                    // console.log('up')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                lastScroll = offset;
+            });
+        }
+
+
+        /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
+        $(window).scroll(function(){
+            var position = $(window).scrollTop();
+
+
+            if(position > $('.info-box._genome > .anchor-section').eq(0).offset().top && position < $('.anchor-section').eq(1).offset().top){
+                $('.anchor-section').eq(0).find('.sub-title').text();
+                $('._anchor-value').find('span').text($('.anchor-section').eq(0).find('.sub-title').text());
+            }
+
+            else if (position > $('.anchor-section').eq(1).offset().top) {
+                $('._anchor-value').find('span').text($('.anchor-section').eq(1).find('.sub-title').text());
+            }
+
+            else {
+
+            }
+        });
+
+
+
+        /*드롭다운 클릭시 이벤트*/
+        contentAnchor.on('click',function() {
+            var select = $(this);
+            if(select.hasClass('open')) {
+                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+            }
+            else {
+                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                $('body').on('click',function (e){
+                    if(contentAnchor.hasClass('open')) {
+                        if(!contentAnchor.has(e.target).length) {
+                            contentAnchor.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                        }
+                    }
+
+                })
+            }
+
+        });
+
+        /*클릭시 페이지 이동 이동*/
+        function TitleMove(target){
+            var id = $('#'+ target);
+            var offset = id.offset();
+            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+        }
+
+        /*클릭시 텍스트 변경*/
+        anchorOption.on('click',function() {
+            var select = $(this).find('a').text();
+            $('._anchor-value').find('span').text(select);
+        });
+
+
+        fnMousewheel();
+
+    </script>
+    <!--content-anchor script e-->
 
 </div>
 @@include('../../html/include/components/gnb.html')
