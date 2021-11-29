@@ -121,7 +121,6 @@
 
   /*투자자문의*/
   .question_box{
-    margin-bottom: 120px;
     .text-area{
       position: relative;
       width: $min-width;
@@ -156,6 +155,9 @@
   .privacy_box{
     margin:0 auto;
     width: $min-width;
+    &#write{
+      padding-top: 120px;
+    }
     .font-h5{
       margin-bottom: 60px;
       line-height: 52px;

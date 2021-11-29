@@ -1774,9 +1774,12 @@
               }
 
               .swiper-pagination {
-                display: flex;
-                justify-content: center;
+                //display: flex;
+                //justify-content: center;
                 bottom: -58px;
+                white-space: nowrap;
+                overflow: auto;
+                z-index: 3;
 
                 .swiper-pagination-bullet {
                   background-color: $gray-000000;
@@ -1978,6 +1981,10 @@
   }
 
   &.macrogen-history {
+    .snbSwiper {
+      padding: 0 20px;
+    }
+
     .section {
       display: none;
 
