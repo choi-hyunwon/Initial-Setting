@@ -703,9 +703,9 @@
         function fnMousewheel(){
             var lastScroll = 0;
             $(window).on('scroll',function(e){
-                let listPos = $('.info-box').offset().top;
+                let listPos = $('.info-box.show').offset().top;
                 let offset = $(this).scrollTop();
-
+                console.log(listPos);
                 if (offset > lastScroll){
                     // console.log('down')
                     if (offset > listPos) {
