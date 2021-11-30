@@ -276,7 +276,7 @@ front.common = (function () {
     }
 
     var scrollHorizon = function(){
-        $(window).on("load",function(){
+        $(document).ready(function(){
             $(".table-scroll").mCustomScrollbar({
                 axis:"x",
                 theme:"dark",
