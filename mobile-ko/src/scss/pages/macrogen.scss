@@ -1715,6 +1715,11 @@
                         line-height: 32px;
                         letter-spacing: -0.75px;
                         color: $gray-707070;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
                       }
                     }
                   }
@@ -1731,7 +1736,7 @@
                     }
 
                     ul {
-                      min-height: 130px;
+                      //min-height: 130px;
 
                       li {
                         position: relative;
