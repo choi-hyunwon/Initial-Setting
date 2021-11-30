@@ -276,7 +276,8 @@ front.common = (function () {
     }
 
     var scrollHorizon = function(){
-        $(window).on("load",function(){
+        /*스크립트 변경*/
+        $(document).ready(function(){
             $(".table-scroll").mCustomScrollbar({
                 axis:"x",
                 theme:"dark",
