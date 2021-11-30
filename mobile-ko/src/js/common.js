@@ -280,6 +280,7 @@ front.common = (function () {
             $(".table-scroll").mCustomScrollbar({
                 axis:"x",
                 theme:"dark",
+                setTop: "6px"
             });
         });
     };
