@@ -690,7 +690,7 @@
                   width: 315px !important;
                   margin-right:20px;
                   .img{
-                      .sns {
+                    .sns {
                         position: absolute;
                         color: #ffffff;
                         top: 10px;
@@ -707,6 +707,10 @@
                           background-color: #ffffff;
                           margin-left: 8px;
                         }
+                    }
+                    img{
+                      width: 100%;
+                      height: auto;
                     }
                   }
 
