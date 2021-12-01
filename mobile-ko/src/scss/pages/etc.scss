@@ -105,7 +105,7 @@
 
   .terms {
     .table{
-      margin-left: -25px;
+      margin-left: 0px;
       overflow-x: auto;
     }
     ol.terms{
@@ -123,6 +123,17 @@
           font-weight: 400;
           line-height: 32px;
           letter-spacing: -0.5px;
+        }
+      }
+      li{
+        .download{
+          margin-left: 0px;
+        }
+        ul{
+          li{
+            padding-left: 0px;
+          }
+
         }
       }
     }
@@ -251,7 +262,6 @@
     }
 
   }
-
   .table {
     tr {
       th{
