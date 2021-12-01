@@ -108,61 +108,22 @@
       margin-left: -25px;
       overflow-x: auto;
     }
-    &.management {
-      .sub-title {
-        color: #000;
-        margin-bottom: 8px;
-      }
-
-      li {
-        padding: 0;
-
-        ol {
-          li {
-            padding-left: 20px
-          }
-        }
-      }
-    }
-    &.movieinfo {
-      .hyphen_list {
-        margin-top: 8px;
-      }
-      .padding-none{
-        padding: 0;
-      }
-      ul{
+    ol.terms{
+      .hyphen_list{
         li{
-
-        }
-      }
-      .table {
-        &.table-50 {
-          tr {
-            td {
-              padding: 8px 0px !important;
-            }
-
-            th {
-              padding: 8px 0px !important;
-            }
-          }
-        }
-
-        tr {
-          td {
-            padding: 8px 24px !important;
-          }
-
-          th {
-            padding: 8px 24px !important;
-          }
+          padding-left: 0px;
         }
 
       }
-
-      .download {
-        margin-left: 0px;
+      .title{
+        +p{
+          color: #454545;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: -0.5px;
+        }
       }
     }
     .caption_bottom{

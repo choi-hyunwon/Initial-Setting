@@ -284,6 +284,14 @@ front.common = (function () {
                 setTop: "6px"
             });
         });
+
+        $(document).ready(function(){
+            $(".section_agreement > table").mCustomScrollbar({
+                axis:"x",
+                theme:"dark",
+                setTop: "6px"
+            });
+        });
     };
 
 
