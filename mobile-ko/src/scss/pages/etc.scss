@@ -123,8 +123,12 @@
   }
   .terms {
     .table{
-      margin-left: -25px;
-      overflow-x: auto;
+      margin-left: 0px;
+
+
+
+
+
     }
     ol.terms{
       .hyphen_list{
@@ -310,7 +314,7 @@
 
   .table-scroll {
     margin-top: 24px;
-    margin-right: -20px;
+    margin-left: -25px;
   }
 
   .select-box {
