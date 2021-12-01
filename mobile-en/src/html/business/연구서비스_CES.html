@@ -564,7 +564,7 @@
     </div>
     <script>
         // modal show
-        var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
+        var modal1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
         // zoom
         var el = document.querySelector('.panzoom');
         // new PinchZoom.default(el, {});
@@ -572,13 +572,13 @@
 
         // modal close
         $('.btn-close').on('click', function () {
-            modal.hide();
+            modal1.hide();
             hideToastPopup();
         })
 
         // modal open
         $('.btnZoom-1').on('click', function () {
-            modal.show();
+            modal1.show();
             showToastPopup();
         })
 
@@ -606,19 +606,19 @@
     <script>
         /*v0.7 getElementById 변경 완료*/
         // modal show
-        var modal = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+        var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
         // zoom
         var el = document.querySelector('.panzoom');
         // new PinchZoom.default(el, {});
         // modal close
         $('.btn-close').on('click', function () {
-            modal.hide();
+            modal2.hide();
             hideToastPopup();
         })
 
         // modal open
         $('.btnZoom-2').on('click', function () {
-            modal.show();
+            modal2.show();
             showToastPopup();
         })
 
