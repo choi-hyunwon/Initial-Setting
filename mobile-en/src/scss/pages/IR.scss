@@ -23,9 +23,8 @@
     padding: 0 20px;
     margin-bottom: 80px;
     white-space: normal;
-    overflow-x: scroll;
 
-    &::-webkit-scrollbar {
+/*    &::-webkit-scrollbar {
       display: block;
       height: 1px;
     }
@@ -42,7 +41,7 @@
 
     &::-webkit-scrollbar-track {
       background-color: #f7f7f7;
-    }
+    }*/
 
     .table{
       /*공통*/
@@ -185,7 +184,8 @@
         .icon-pen{
           background: url("../img/IR/ico-pen.png") no-repeat center center;
           width: 20px;
-          height: 21px;
+          height: 20px;
+          background-size: 100% auto;
           display: inline-block;
           vertical-align: middle;
           margin-right: 8px;
