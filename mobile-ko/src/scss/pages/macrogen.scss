@@ -339,7 +339,7 @@
             position: absolute;
             display: block;
             font-size: 16px;
-            line-height: 32px;
+            line-height: 42px;
             font-family: $font-family-bold;
             font-weight: bold;
             color: $gray-ffffff;
@@ -413,7 +413,7 @@
         font-family: $font-family-bold;
         font-weight: bold;
         font-size: 22px;
-        line-height: 38px;
+        line-height: 42px;
         letter-spacing: -1px;
         color: $gray-ffffff;
         margin-bottom: 56px;
@@ -818,7 +818,7 @@
         .text-box {
           width: calc(100vw - 40px);
           left: 0;
-          top: 41px;
+          top: 47px;
         }
       }
 
@@ -839,7 +839,7 @@
             font-family: $font-family-bold;
             font-weight: bold;
             font-size: 22px;
-            line-height: 38px;
+            line-height: 42px;
             letter-spacing: -1px;
             color: $gray-000000;
             margin-bottom: 24px;
