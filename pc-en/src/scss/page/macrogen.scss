@@ -4278,13 +4278,43 @@ $min-width: 1244px;
   }
 
   /* 기업개요 */
-  .macrogen.company-overview .section-overview .overview-list .item:nth-child(6) .val {
-    margin-left: -20px;
-  }
-
   .macrogen.company-overview .section-business-detail .item .img .title::after {
     bottom: auto;
     top: -30px;
+  }
+  .macrogen.company-overview .section-overview {
+    padding-bottom: 65px;
+    height: auto;
+    overflow: hidden;
+  }
+  .macrogen.company-overview .section-overview .inner > div > .desc {
+    margin-bottom: 100px;
+  }
+  .macrogen.company-overview .section-overview .overview-list .item {
+    height: 393px;
+  }
+  .macrogen.company-overview .section-overview .overview-list .item .val {
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.5px;
+  }
+  .macrogen.company-overview .section-overview .desc {
+    margin-bottom: 80px;
+  }
+  .macrogen.company-overview .section-overview .overview-list .item:nth-child(2) .desc {
+    margin-left: 0;
+  }
+  .macrogen.company-overview .section-overview .overview-list .item:nth-child(5) .desc {
+    margin-left: 0;
+  }
+  .macrogen.company-overview .section-overview .overview-list .item:nth-child(6) .desc {
+    margin-left: 0;
+  }
+  .macrogen.company-overview .section-overview .overview-list .item:nth-child(6) .val {
+    margin-left: 0;
+  }
+  .macrogen.company-overview .section-overview .overview-list .item:nth-child(8) .desc {
+    margin-left: 0;
   }
 
   /* 경영진 */
@@ -4344,5 +4374,32 @@ $min-width: 1244px;
   .macrogen.ethical-management .section-reward .list .item .list-header .title {
     letter-spacing: -1px;
     padding-right: 20px;
+  }
+  /* esg 경영 */
+  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text .font-body-h ul li {
+    //white-space: normal;
+  }
+  .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text .font-body-h ul li:last-child{
+    white-space: normal;
+  }
+
+  /* 인증 */
+  .macrogen.macrogen-authorization .section#clinicalDiagnosisQualityManagementSystem {
+    position: relative;
+    z-index: 3;
+  }
+  .macrogen.macrogen-authorization .section#informationSecurityManagementSystem {
+    position: relative;
+    z-index: 2;
+  }
+  .macrogen.macrogen-authorization .section#qualityManagementSystem {
+    position: relative;
+    z-index: 4;
+  }
+  .macrogen.macrogen-authorization .section#CSPCertificationProgram .btn-tooltip {
+    transform: translateY(8px);
+  }
+  .macrogen.macrogen-authorization .section#CSPCertificationProgram .text-box {
+    transform: translateY(8px);
   }
 }

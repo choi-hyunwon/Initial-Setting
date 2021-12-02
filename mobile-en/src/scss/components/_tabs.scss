@@ -37,6 +37,7 @@
       span {
         display: inline-block;
         font-family: $font-family-bold;
+        font-weight: bold;
         font-size: 18px;
         line-height: 34px;
         letter-spacing: -0.5px;
@@ -85,6 +86,7 @@
       span {
         display: inline-block;
         font-family: $font-family-bold;
+        font-weight: bold;
         font-size: 18px;
         line-height: 34px;
         letter-spacing: -0.5px;
@@ -134,6 +136,7 @@
         a {
           color: $point-primary;
           font-family: $font-family-bold;
+          font-weight: bold;
 
           &::after {
             content: '';
@@ -228,8 +231,8 @@
     .option-value {
       margin-bottom: 16px;
 
-      &.active{
-        a{
+      &.active {
+        a {
           color: #2E87EF;
           font-weight: bold;
         }
@@ -252,10 +255,12 @@
       width: 5px;
       padding-right: 4px;
     }
+
     &::-webkit-scrollbar-thumb {
       background-color: #f6f6f6;
       border-radius: 10px;
     }
+
     &::-webkit-scrollbar-track {
       background-color: transparent;
     }
@@ -297,10 +302,12 @@
   line-height: 34px;
   letter-spacing: -0.5px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
-  &.open{
-    .selected-value{
-      .text{
+
+  &.open {
+    .selected-value {
+      .text {
         display: inline-block;
+
         &:after {
           content: '';
           width: 8px;
@@ -310,14 +317,16 @@
           display: inline-block;
           transform: rotate(315deg);
           position: absolute;
-          top:50%;
+          top: 50%;
           right: -18px;
         }
       }
     }
   }
+
   .selected-value {
     padding: 15px 20px;
+
     .text {
       font-size: 14px;
       font-weight: 400;
@@ -325,6 +334,7 @@
       letter-spacing: -0.5px;
       position: relative;
       display: inline-block;
+
       &:after {
         content: '';
         width: 8px;
@@ -334,11 +344,12 @@
         display: inline-block;
         transform: rotate(135deg);
         position: absolute;
-         top: 8px;
+        top: 8px;
         right: -18px;
       }
     }
   }
+
   .anchor-option {
     display: none;
     width: 100%;
@@ -347,7 +358,8 @@
     background-color: #F5F5F5;
     max-height: 244px;
     overflow-y: scroll;
-    box-shadow: 0 6px 6px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.08);
+
     .anchor-value {
       margin-bottom: 12px;
 
@@ -364,7 +376,7 @@
       }
 
       &:nth-last-of-type(1) {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
     }
   }
@@ -397,6 +409,7 @@
     .text {
       color: $point-primary;
       font-family: $font-family-bold;
+      font-weight: bold;
 
       &::after {
         content: '';

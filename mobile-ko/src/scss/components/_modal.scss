@@ -48,6 +48,7 @@
 
         .modal-title {
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 22px;
           line-height: 38px;
           letter-spacing: -1px;
@@ -268,6 +269,7 @@
                 vertical-align: middle;
                 font-style: normal;
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 16px;
                 line-height: 32px;
                 letter-spacing: -.5px;
@@ -453,18 +455,18 @@
       vertical-align: middle;
       @include background-img($width: 20px, $height: 20px, $category: 'common', $img: 'btn-tooltip.svg');
 
-/*      &::after {
-        content: '';
-        display: none;
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        bottom: -13px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-bottom: 1px solid #fff;
-        z-index: 3;
-      }*/
+      /*      &::after {
+              content: '';
+              display: none;
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              bottom: -13px;
+              left: 50%;
+              transform: translateX(-50%);
+              border-bottom: 1px solid #fff;
+              z-index: 3;
+            }*/
 
       &::before {
         content: '';

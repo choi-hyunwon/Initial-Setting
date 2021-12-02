@@ -105,6 +105,7 @@
     background: #FFFFFF;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
   }
+
   /* e 공통 */
 
   &.company-overview {
@@ -192,6 +193,7 @@
           position: relative;
           display: inline-block;
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 56px;
           line-height: 72px;
           text-transform: uppercase;
@@ -289,6 +291,7 @@
 
           .tit {
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 14px;
             line-height: 22px;
             letter-spacing: -0.5px;
@@ -341,6 +344,7 @@
             font-size: 16px;
             line-height: 32px;
             font-family: $font-family-bold;
+            font-weight: bold;
             color: $gray-ffffff;
             bottom: 68px;
             left: 30px;
@@ -362,6 +366,7 @@
             position: absolute;
             display: block;
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 28px;
             line-height: 44px;
             letter-spacing: -2px;
@@ -373,6 +378,7 @@
 
         .desc {
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 16px;
           line-height: 32px;
           letter-spacing: -0.5px;
@@ -408,6 +414,7 @@
 
       .title-sm {
         font-family: $font-family-bold;
+        font-weight: bold;
         font-size: 22px;
         line-height: 38px;
         letter-spacing: -1px;
@@ -417,6 +424,7 @@
 
       .text {
         font-family: $font-family-bold;
+        font-weight: bold;
         font-size: 34px;
         line-height: 50px;
         letter-spacing: -3px;
@@ -443,6 +451,7 @@
 
         .title {
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 22px;
           line-height: 38px;
           letter-spacing: -1px;
@@ -476,6 +485,7 @@
                 display: inline-block;
                 vertical-align: middle;
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 18px;
                 line-height: 22px;
                 color: $gray-000000;
@@ -523,6 +533,7 @@
                   display: inline-block;
                   width: 36px;
                   font-family: $font-family-bold;
+                  font-weight: bold;
                   font-size: 14px;
                   line-height: 26px;
                   letter-spacing: -0.5px;
@@ -667,6 +678,7 @@
                   letter-spacing: -0.75px;
                   font-size: 18px;
                   font-family: $font-family-bold;
+                  font-weight: bold;
                 }
 
                 &:first-child {
@@ -738,6 +750,7 @@
       .btn-navi-next {
         right: -20px;
       }
+
       .btn-navi-prev {
         left: -20px;
       }
@@ -771,6 +784,7 @@
       > .title {
         position: relative;
         font-family: $font-family-bold;
+        font-weight: bold;
         font-size: 34px;
         line-height: 50px;
         letter-spacing: -1px;
@@ -826,6 +840,7 @@
           .title-sm {
             position: relative;
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 22px;
             line-height: 38px;
             letter-spacing: -1px;
@@ -898,6 +913,7 @@
             display: block;
             width: 100%;
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 18px;
             line-height: 34px;
             letter-spacing: -0.5px;
@@ -967,9 +983,10 @@
   &.recruitment-info-list {
     padding: 0 20px;
 
-    .board{
-      padding: 0!important;
+    .board {
+      padding: 0 !important;
     }
+
     .view-body {
       padding-bottom: 65px;
     }
@@ -987,6 +1004,7 @@
 
       > .title {
         font-family: $font-family-bold;
+        font-weight: bold;
         font-size: 48px;
         line-height: 52px;
         letter-spacing: -1px;
@@ -1016,6 +1034,7 @@
           box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
           border-radius: 100px;
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 13px;
           letter-spacing: 0.02em;
           text-transform: uppercase;
@@ -1097,6 +1116,7 @@
 
         > .title {
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 34px;
           line-height: 50px;
           letter-spacing: -1px;
@@ -1132,6 +1152,7 @@
 
             .name {
               font-family: $font-family-bold;
+              font-weight: bold;
               font-size: 26px;
               line-height: 42px;
               letter-spacing: -1px;
@@ -1174,6 +1195,7 @@
                       width: 98px;
                       vertical-align: middle;
                       font-family: $font-family-bold;
+                      font-weight: bold;
                       font-size: 18px;
                       letter-spacing: -0.75px;
                       padding-left: 13px;
@@ -1214,6 +1236,7 @@
                   span {
                     position: relative;
                     font-family: $font-family-bold;
+                    font-weight: bold;
                     font-size: 16px;
                     line-height: 32px;
                     color: $gray-707070;
@@ -1324,6 +1347,7 @@
           .tit {
             margin-bottom: 16px;
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 22px;
             line-height: 38px;
             letter-spacing: -1px;
@@ -1480,6 +1504,7 @@
 
             .link {
               font-family: $font-family-bold;
+              font-weight: bold;
               font-size: 18px;
               line-height: 34px;
               letter-spacing: -0.5px;
@@ -1489,6 +1514,7 @@
 
             .desc-sm {
               font-family: $font-family-bold;
+              font-weight: bold;
               font-size: 18px;
               line-height: 26px;
               letter-spacing: -0.75px;
@@ -1518,6 +1544,7 @@
                   &:first-child {
                     position: relative;
                     font-family: $font-family-bold;
+                    font-weight: bold;
                     font-size: 16px;
                     line-height: 32px;
                     letter-spacing: -0.5px;
@@ -1570,6 +1597,7 @@
 
       .desc {
         font-family: $font-family-bold;
+        font-weight: bold;
         font-size: 32px;
         line-height: 46px;
       }
@@ -1694,6 +1722,7 @@
 
                       .sub {
                         font-family: $font-family-bold;
+                        font-weight: bold;
                         font-size: 18px;
                         line-height: 34px;
                         letter-spacing: -0.5px;
@@ -1703,6 +1732,7 @@
 
                       .name {
                         font-family: $font-family-bold;
+                        font-weight: bold;
                         font-size: 26px;
                         line-height: 42px;
                         letter-spacing: -1px;
@@ -1729,6 +1759,7 @@
 
                     .tit {
                       font-family: $font-family-bold;
+                      font-weight: bold;
                       font-size: 16px;
                       line-height: 22px;
                       letter-spacing: -0.5px;
@@ -1849,6 +1880,7 @@
 
         > .title {
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 34px;
           line-height: 50px;
           letter-spacing: -1px;
@@ -1913,6 +1945,7 @@
           position: relative;
           display: block;
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 22px;
           line-height: 38px;
           letter-spacing: -1px;
@@ -2002,6 +2035,7 @@
 
         .year {
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 22px;
           line-height: 38px;
           letter-spacing: -1px;
@@ -2011,6 +2045,7 @@
         .title {
           position: relative;
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 34px;
           line-height: 50px;
           letter-spacing: -1px;
@@ -2054,6 +2089,7 @@
               .year {
                 position: absolute;
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 56px;
                 line-height: 64px;
                 letter-spacing: -1px;
@@ -2146,6 +2182,7 @@
 
           .year {
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 34px;
             line-height: 50px;
             letter-spacing: -1px;
@@ -2165,6 +2202,7 @@
                 position: relative;
                 display: block;
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 23px;
                 line-height: 39px;
                 letter-spacing: 0.5px;
@@ -2200,6 +2238,7 @@
                   display: inline-block;
                   width: 48px;
                   font-family: $font-family-bold;
+                  font-weight: bold;
                   font-size: 18px;
                   line-height: 23px;
                   color: $gray-000000;
@@ -2378,6 +2417,7 @@
           line-height: 32px;
           letter-spacing: -0.5px;
           font-family: $font-family-bold;
+          font-weight: bold;
           color: $gray-000000;
           @include background-img($width: 50%, $height: auto, $category: 'macrogen', $img: 'bg-human-resource-rect.png');
           width: calc(50% - 5.5px);
@@ -2414,6 +2454,7 @@
         letter-spacing: -1px;
         margin-bottom: 64px;
         font-family: $font-family-bold;
+        font-weight: bold;
         text-transform: uppercase;
       }
 
@@ -2465,6 +2506,7 @@
           .title {
             position: relative;
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 56px;
             line-height: 64px;
             letter-spacing: -1px;
@@ -2635,6 +2677,7 @@
             display: inline-block;
             vertical-align: middle;
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 18px;
             line-height: 34px;
             letter-spacing: -0.5px;
@@ -2719,6 +2762,7 @@
 
         .title {
           font-family: $font-family-bold;
+          font-weight: bold;
           font-size: 22px;
           line-height: 38px;
           letter-spacing: -1px;
@@ -2728,6 +2772,7 @@
         .desc {
           .name {
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 16px;
             line-height: 23px;
             letter-spacing: -0.75px;
@@ -2750,6 +2795,7 @@
               display: inline-block;
               vertical-align: middle;
               font-family: $font-family-bold;
+              font-weight: bold;
               font-size: 16px;
               line-height: 30px;
               color: $gray-454545;
@@ -2925,6 +2971,7 @@
         .list-of-winners {
           > .title {
             font-family: $font-family-bold;
+            font-weight: bold;
             font-size: 26px;
             line-height: 42px;
             letter-spacing: -1px;
@@ -2951,6 +2998,7 @@
 
               .name {
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 18px;
                 line-height: 34px;
                 text-align: center;
@@ -3015,6 +3063,7 @@
 
               .sub {
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 18px;
                 line-height: 34px;
                 letter-spacing: -0.5px;
@@ -3024,6 +3073,7 @@
 
               .name {
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 26px;
                 line-height: 42px;
                 letter-spacing: -1px;
@@ -3052,6 +3102,7 @@
 
               .tit {
                 font-family: $font-family-bold;
+                font-weight: bold;
                 font-size: 16px;
                 line-height: 32px;
                 letter-spacing: -0.5px;
@@ -3090,6 +3141,7 @@
 
             .title {
               font-family: $font-family-bold;
+              font-weight: bold;
               font-size: 18px;
               line-height: 34px;
               letter-spacing: -0.5px;
