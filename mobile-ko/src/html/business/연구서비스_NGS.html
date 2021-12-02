@@ -61,7 +61,7 @@
             <!--ngs 컨텐츠 s-->
             <div class="info-box-wrap tab-content">
                 <!--Genome-->
-                <div class="info-box _genome show">
+                <div class="info-box show">
                     <!--content-anchor s-->
                     <div class="content-anchor">
                         <div class="selected-value _anchor-value">
@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <!--Exome-->
-                <div class="info-box _sequencing">
+                <div class="info-box">
                     <p class="font-h4 main-title">Whole Exome Sequencing</p>
                     <p class="subject font-body-h-b">WES(Whole Exsome Sequencing)는 유전자가 존재한다고 알려져 있는 Exon 영역 (Exome)만을
                         선택적으로 분석하는
@@ -661,13 +661,12 @@
             // console.log('onClickSelectOption');
             /*클릭시 탭메뉴 변경*/
             option.on('click', function () {
-                // console.log($(this));
+                $(this).addClass('active').siblings().removeClass('active')
                 var idx = $(this).index();
                 var $info = $(".info-box-wrap > div");
                 $info.addClass('show').siblings().removeClass('show');
                 $info.eq(idx).addClass('show').siblings().removeClass('show');
                 textChange($(this));
-
                 setInfoSectionList($(this).text())
             })
         }
@@ -696,6 +695,7 @@
             var $Select = $('._select-option li');
             var $Selected = $('._selected-value');
             var $info = $(".info-box-wrap > div");
+
             <!--탭메뉴 클릭시 페이지 변경-->
             $Selected.text($Select.eq(idx).text());
             $info.addClass('show').siblings().removeClass('show');
