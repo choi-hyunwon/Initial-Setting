@@ -437,6 +437,24 @@
   }
 }
 
+.en{
+  .wrap{
+    &.research-wrap {
+      .research_bg {
+        .frame{
+          &.frameB{
+            padding-top: 305px!important;
+            .hero-title{
+              margin-bottom: 0!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .modal {
   .modal-dialog {
     &.research {

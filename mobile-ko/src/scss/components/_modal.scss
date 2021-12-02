@@ -1,6 +1,7 @@
 /*
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.11.3
+ v.0.2 선미 : tooltip-box : after제거 및  box선 제거 -- 2021.12.01
 |----------------------------------|
 */
 .modal {
@@ -452,7 +453,7 @@
       vertical-align: middle;
       @include background-img($width: 20px, $height: 20px, $category: 'common', $img: 'btn-tooltip.svg');
 
-      &::after {
+/*      &::after {
         content: '';
         display: none;
         position: absolute;
@@ -461,20 +462,19 @@
         bottom: -13px;
         left: 50%;
         transform: translateX(-50%);
-        //border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #fff;
         z-index: 3;
-      }
+      }*/
 
       &::before {
         content: '';
         display: none;
         position: absolute;
-        bottom: -15px;
+        bottom: -14px;
         left: 50%;
         transform: translateX(-50%);
-        @include background-img($width: 12px, $height: 9px, $category: 'common', $img: 'tooltip-tip.svg');
+        @include background-img($width: 13px, $height: 9px, $category: 'common', $img: 'tooltip-tip.svg');
         z-index: 3;
-        border-bottom: 1px solid #fff;
       }
     }
   }

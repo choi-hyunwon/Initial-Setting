@@ -645,7 +645,7 @@
             .icon_youtube {
               display: inline-block;
               background: url("../img/main/ico-youtube.png") no-repeat center center;
-              width: 24px;
+              width: 23px;
               height: 16px;
               background-size: 100% auto;
               vertical-align: middle;
@@ -689,7 +689,7 @@
                   width: 315px !important;
                   margin-right:20px;
                   .img{
-                      .sns {
+                    .sns {
                         position: absolute;
                         color: #ffffff;
                         top: 10px;
@@ -706,6 +706,10 @@
                           background-color: #ffffff;
                           margin-left: 8px;
                         }
+                    }
+                    img{
+                      width: 100%;
+                      height: auto;
                     }
                   }
 
@@ -994,6 +998,12 @@
               background-position: 0 0;
               background-repeat: no-repeat;
               vertical-align: middle;
+
+
+
+              animation: fadeInUp;
+              animation-duration: 0.5s;
+
             }
 
             & span {
