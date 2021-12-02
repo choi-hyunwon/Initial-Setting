@@ -35,7 +35,7 @@
                         <li class="option-value"><a href="#">암 발생 모니터링</a></li>
                     </ul>
                 </div>
-                @@include('../../html/include/business/script-select-nav-box.html')
+
             </div>
 
             <!--암 유전체 검사 탭 네비 e-->
@@ -67,78 +67,10 @@
                             <li class="anchor-value" onclick="TitleMove('BRCA1')"><a href="#">BRCA1/2 유전자 검사</a></li>
                         </ul>
                     </div>
-                    <script>
-                        /*변수*/
-                        var contentAnchor = $(".content-anchor");
-                        var anchorOption = $(".anchor-value");
-                        var anchor = $("._anchor");
-                        var offset = anchor.offset();
 
-
-                        /*특정위치 show & hide*/
-                        function fnMousewheel() {
-                            var lastScroll = 0;
-
-                            $(window).on('scroll', function (e) {
-                                let listPos = $('.info-box').offset().top;
-                                let offset = $(this).scrollTop();
-
-                                if (offset > lastScroll) {
-                                    // console.log('down')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed', 'top': '0px'});
-                                    } else {
-                                        contentAnchor.hide();
-                                    }
-                                } else {
-                                    // console.log('up')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed', 'top': '70px'});
-                                    } else {
-                                        contentAnchor.hide();
-                                    }
-                                }
-                                lastScroll = offset;
-                            });
-                        }
-
-                        /*드롭다운 클릭시 이벤트*/
-                        contentAnchor.on('click', function () {
-                            var select = $(this);
-                            if (select.hasClass('open')) {
-                                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-                            } else {
-                                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                                $('body').on('click', function (e) {
-                                    if (contentAnchor.hasClass('open')) {
-                                        if (!contentAnchor.has(e.target).length) {
-                                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                        }
-                                    }
-
-                                })
-                            }
-                        });
-
-
-                        /*클릭시 페이지 이동 이동*/
-                        function TitleMove(target) {
-                            var id = $('#' + target);
-                            var offset = id.offset();
-                            $('html, body').animate({scrollTop: offset.top - 75}, 300);
-                        }
-
-                        /*클릭시 텍스트 변경*/
-                        anchorOption.on('click', function () {
-                            var select = $(this).find('a').text();
-                            $('._anchor-value').find('span').text(select);
-                        });
-                        fnMousewheel();
-
-                    </script>
                     <!--content-anchor e-->
 
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="font-h5 sub-title" id="HereditaryCancerPanel">유전성 암 감수성 검사 (Hereditary Cancer
                             Panel)</p>
                         <p class="desc font-body data_bottom">유전성 암과 관련된 원인 유전자를 분석해 암에 대한 유전적 위험률을 진단합니다. BRCA1/2 유전자를
@@ -223,7 +155,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="anchor-section"><p class="font-h5 sub-title" id="BRCA1">BRCA1/2 유전자 검사</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="BRCA1">BRCA1/2 유전자 검사</p>
                         <p class="desc font-body img_bottom">유전성 유방암의 대표적 원인이 되는 BRCA1/2 유전자의 전 영역을 분석해 유방암 발생 위험을
                             진단합니다. BRCA 1/2 유전자 변이가 있는 경우 유방암 발생 위험이 급격하게 증가합니다.
                         </p>
@@ -336,7 +268,214 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
+    <script>
+        /*변수*/
+        var selectBox = $(".select-box");
+        var option = $(".option-value");
 
+        var contentAnchor = $(".content-anchor");
+        var anchorOption = $(".anchor-value");
+        var anchor = $("._anchor");
+        var offset = anchor.offset();
+        var infoSectionList = [];
+
+
+        function onClickSelectBox() {
+            // console.log('onClickSelectBox');
+            /*드롭다운 클릭시 이벤트*/
+            selectBox.on('click', function () {
+                var select = $(this);
+                if (select.hasClass('open')) {
+                    select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                } else {
+                    select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+
+                }
+            });
+        }
+
+        function onClickSelectOption() {
+            // console.log('onClickSelectOption');
+            /*클릭시 탭메뉴 변경*/
+            option.on('click', function () {
+                $(this).addClass('active').siblings().removeClass('active')
+                var idx = $(this).index();
+                var $info = $(".info-box-wrap > div");
+                $info.addClass('show').siblings().removeClass('show');
+                $info.eq(idx).addClass('show').siblings().removeClass('show');
+                textChange($(this));
+                setInfoSectionList($(this).text())
+            })
+        }
+
+        function onClickBody() {
+            $('body').on('click', function (e) {
+                if (selectBox.hasClass('open')) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                    }
+                }
+                if (!selectBox.has(e.target).length) {
+                    selectBox.removeClass("open").children('.select-option').slideUp(200);
+                }
+            })
+        }
+
+        /*클릭시 텍스트 변경*/
+        function textChange(target) {
+            var select = target.find('a').text();
+            $('._selected-value').find('span').text(select);
+        }
+
+        /*이전 다음 이동*/
+        function setTabContent(idx) {
+            var $Select = $('._select-option li');
+            var $Selected = $('._selected-value');
+            var $info = $(".info-box-wrap > div");
+
+            <!--탭메뉴 클릭시 페이지 변경-->
+            $Selected.text($Select.eq(idx).text());
+            $info.addClass('show').siblings().removeClass('show');
+            $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+            setInfoSectionList($Select.eq(idx).text())
+            /*페이지 변경후 상단 이동*/
+            fnMove();
+            /*클릭시 텍스트 변경*/
+        }
+
+        /*탭메뉴 상단으로 이동*/
+        function fnMove() {
+            var offset = $("._content-anchor").offset();
+            $('html, body').animate({scrollTop: offset.top - 95}, 100);
+        }
+
+        /*특정위치 show & hide*/
+        function fnMousewheel() {
+            var lastScroll = 0;
+            var listPos = $('.info-box').offset().top;
+            $(window).on('scroll', function (e) {
+                let offset = $(this).scrollTop();
+
+                if (offset > lastScroll){
+                    // console.log('down')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                } else {
+                    // console.log('up')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                lastScroll = offset;
+
+
+                /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
+                if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
+                    writeText(infoSectionList.title)
+                } else {
+                    var title;
+                    for (let i = 0; i < infoSectionList.list.length; i++) {
+                        var item = infoSectionList.list[i]
+                        if (offset > item.offset) {
+                            // console.log(i);
+                            title = item.title
+                            break
+                        }
+                    }
+                    //console.log(title);
+                    writeText(title)
+                }
+
+            });
+        }
+
+
+        /**
+         * Anchor 글씨 쓰기
+         * @param text
+         */
+        function writeText(text) {
+            // console.log(text);
+            $('._anchor-value .text').text(text)
+        }
+
+        function setInfoSectionList(tit) {
+
+            writeText(tit);
+
+            infoSectionList = {
+                title: tit,
+                list: [],
+            }
+            $('.info-box.show').find('.section-anchor').each(function (index) {
+
+                // console.log(i)
+                let top = $(this).offset().top - 75;
+                // console.log(top);
+                let title = $(this).find('.sub-title').text();
+                infoSectionList.list.unshift({
+                    index: index,
+                    offset: top,
+                    title: title
+                })
+            })
+            console.log(infoSectionList);
+        }
+
+        /*드롭다운 클릭시 이벤트*/
+        function onClickFixedAnchor() {
+            contentAnchor.on('click', function () {
+                var select = $(this);
+                if (select.hasClass('open')) {
+                    select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                } else {
+                    select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+
+                }
+            });
+            $('body').on('click', function (e) {
+                if (contentAnchor.hasClass('open')) {
+                    if (!contentAnchor.has(e.target).length) {
+                        contentAnchor.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                    }
+                }
+            })
+            /*클릭시 텍스트 변경*/
+            anchorOption.on('click', function () {
+                var select = $(this).find('a').text();
+                writeText(select)
+            });
+        }
+
+        /*클릭시 페이지 이동 이동*/
+        function TitleMove(target) {
+            var id = $('#' + target);
+            var offset = id.offset();
+            $('html, body').animate({scrollTop: offset.top - 75}, 300);
+        }
+
+
+        function init() {
+            onClickSelectBox();
+            onClickSelectOption();
+            onClickBody();
+            onClickFixedAnchor();
+            fnMousewheel();
+            setInfoSectionList($('._selected-value span').text())
+        }
+
+        init()
+
+
+    </script>
     <div class="toast-popup">
         <p>이미지를 확대할 수 있습니다</p>
     </div>

@@ -54,20 +54,21 @@
                         <li class="option-value"><a href="#">Metagenome Sequencing</a></li>
                     </ul>
                 </div>
-
             </div>
             <!--ngs 탭 네비 e-->
 
             <!--ngs 컨텐츠 s-->
             <div class="info-box-wrap tab-content">
                 <!--Genome-->
-                <div class="info-box _genome show">
+                <div class="info-box show">
                     <!--content-anchor s-->
                     <div class="content-anchor">
                         <div class="selected-value _anchor-value">
                             <span class="text">Whole Genome Resequencing</span>
                         </div>
                         <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('Genome')"><a href="#">Whole Genome
+                                Resequencing</a></li>
                             <li class="anchor-value" onclick="TitleMove('Resequencing')"><a href="#">Whole Genome
                                 Resequencing</a></li>
                             <li class="anchor-value" onclick="TitleMove('Sequencing')"><a href="#">Whole Genome De novo
@@ -75,7 +76,7 @@
                         </ul>
                     </div>
                     <!--content-anchor e-->
-                    <p class="main-title font-h4">Whole Genome Sequencing</p>
+                    <p class="main-title font-h4" id="Genome">Whole Genome Sequencing</p>
                     <p class="subject font-body-h-b">WGS는 유전체 전체를 한 번에 읽어 유전정보를 분석하는 방법입니다.</p>
                     <p class="desc font-body img_bottom">WGS을 통해 얻어진 변이 정보는 질병과 관련한 유전자 발굴 및 맞춤의학 연구에 활용되고 있습니다. 현재 전 세계
                         153개국 1만
@@ -137,7 +138,7 @@
                     </div>
                 </div>
                 <!--Exome-->
-                <div class="info-box _sequencing">
+                <div class="info-box">
                     <p class="font-h4 main-title">Whole Exome Sequencing</p>
                     <p class="subject font-body-h-b">WES(Whole Exsome Sequencing)는 유전자가 존재한다고 알려져 있는 Exon 영역 (Exome)만을
                         선택적으로 분석하는
@@ -210,7 +211,7 @@
                     <!--content-anchor s-->
                     <div class="content-anchor">
                         <div class="selected-value _anchor-value">
-                            <span class="text">mRNA / Total RNA Sequencing</span>
+                            <span class="text"></span>
                         </div>
                         <ul class="anchor-option">
                             <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">mRNA / Total RNA
@@ -541,7 +542,6 @@
                 </div>
                 <!--Metagenome-->
                 <div class="info-box">
-
                     <p class="font-h4 main-title">Metagenome Sequencing</p>
                     <p class="subject font-body-h-b">다양한 환경에 존재하는 유전체 집합을 한 번에 시퀀싱하여, 환경 내 서식하는 생물 종의 다양성을 확인할 수 있는
                         군집유전체 분석 서비스 입니다.</p>
@@ -558,7 +558,7 @@
                     <!--content-anchor s-->
                     <div class="content-anchor">
                         <div class="selected-value _anchor-value">
-                            <span class="text">Metagenome Amplicon Sequencing</span>
+                            <span class="text"></span>
                         </div>
                         <ul class="anchor-option">
                             <li class="anchor-value" onclick="TitleMove('Amplicon')"><a href="#">Metagenome Amplicon
@@ -661,13 +661,12 @@
             // console.log('onClickSelectOption');
             /*클릭시 탭메뉴 변경*/
             option.on('click', function () {
-                // console.log($(this));
+                $(this).addClass('active').siblings().removeClass('active')
                 var idx = $(this).index();
                 var $info = $(".info-box-wrap > div");
                 $info.addClass('show').siblings().removeClass('show');
                 $info.eq(idx).addClass('show').siblings().removeClass('show');
                 textChange($(this));
-
                 setInfoSectionList($(this).text())
             })
         }
@@ -696,6 +695,7 @@
             var $Select = $('._select-option li');
             var $Selected = $('._selected-value');
             var $info = $(".info-box-wrap > div");
+
             <!--탭메뉴 클릭시 페이지 변경-->
             $Selected.text($Select.eq(idx).text());
             $info.addClass('show').siblings().removeClass('show');
@@ -753,7 +753,7 @@
                             break
                         }
                     }
-                    // console.log(title);
+                    //console.log(title);
                     writeText(title)
                 }
 
@@ -770,7 +770,6 @@
             $('._anchor-value .text').text(text)
         }
 
-
         function setInfoSectionList(tit) {
 
             writeText(tit);
@@ -780,6 +779,7 @@
                 list: [],
             }
             $('.info-box.show').find('.section-anchor').each(function (index) {
+
                 // console.log(i)
                 let top = $(this).offset().top - 75;
                 // console.log(top);
@@ -792,7 +792,6 @@
             })
             console.log(infoSectionList);
         }
-
 
         /*드롭다운 클릭시 이벤트*/
         function onClickFixedAnchor() {
