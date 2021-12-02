@@ -201,7 +201,7 @@
     .tab-content {
       .tab-pane {
 
-        /*.slide-box {
+        .slide-box {
           .slider {
             .swiper-container {
               overflow: unset;
@@ -230,69 +230,6 @@
                       height: 128px;
                       display: inline-block;
                       width: 94.366%;
-
-                      span {
-                        font-size: 18px;
-                        line-height: 32px;
-                        color: $gray-000000;
-                        @include ellipsis(2);
-                        font-weight: bold;
-                        height: 70px;
-                      }
-                    }
-                  }
-                }
-              }
-
-              .swiper-scrollbar {
-                width: calc(100% - 20px) !important;
-                height: 1px;
-                background: rgba(255, 255, 255, 0.1); !*ffffff*!
-                opacity: 1;
-                bottom: -24px;
-                left: 0;
-
-                .swiper-scrollbar-drag {
-                  background: rgba(217, 217, 217, 1); !*d9d9d9*!
-
-                  opacity: 0.5 !important;
-                }
-              }
-            }
-          }
-        }*/
-        .slide-box {
-          .slider {
-            .swiper-container {
-              overflow: unset;
-
-              .swiper-wrapper {
-                .swiper-slide {
-                  width: unset;
-                  height: unset;
-                  &.item {
-                    width: 335px!important;
-                    display: block;
-                    margin-right: 5.333%;
-
-
-                    .img {
-                      width: 335px;
-                      height: auto;
-                      display: block;
-
-                      img {
-                        @include img-100;
-                        margin: 0;
-                      }
-                    }
-
-                    .txt {
-                      padding: 30px;
-                      background-color: $gray-ffffff;
-                      height: 128px;
-                      display: inline-block;
-                      width: 335px;
 
                       span {
                         font-size: 18px;
