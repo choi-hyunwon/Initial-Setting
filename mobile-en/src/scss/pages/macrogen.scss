@@ -798,7 +798,7 @@
           }
 
           .text-box {
-            top: 47px;
+            top: 48px;
           }
         }
       }
@@ -809,6 +809,25 @@
 
         .btn-tooltip {
           .icon-tooltip {
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: -19px;
+              left: 50%;
+              transform: translateX(-50%) rotate(45deg);
+              background-color: #fff;
+              width: 9px;
+              height: 9px;
+              border: 1px solid #222;
+              background-image: none;
+              background-size: inherit;
+              /* background-image: url(../img/common/tooltip-tip.svg); */
+              /* background-size: cover; */
+              z-index: 3;
+              border-bottom: 0;
+              border-right: 0;
+            }
+
             &::after {
               bottom: -14px;
             }
@@ -818,7 +837,7 @@
         .text-box {
           width: calc(100vw - 40px);
           left: 0;
-          top: 41px;
+          top: 40.5px;
         }
       }
 
