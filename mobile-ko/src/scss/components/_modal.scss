@@ -483,6 +483,7 @@
         @include background-img($width: 11px, $height: 9px, $category: 'common', $img: 'tooltip-tip.svg');
         z-index: 3;
         border-bottom: 1px solid #fff;
+
       }
     }
   }
