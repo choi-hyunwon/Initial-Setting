@@ -644,7 +644,7 @@
 
 
         function onClickSelectBox() {
-            console.log('onClickSelectBox');
+            // console.log('onClickSelectBox');
             /*드롭다운 클릭시 이벤트*/
             selectBox.on('click', function () {
                 var select = $(this);
@@ -658,13 +658,14 @@
         }
 
         function onClickSelectOption() {
-            console.log('onClickSelectOption');
+            // console.log('onClickSelectOption');
             /*클릭시 탭메뉴 변경*/
             option.on('click', function () {
-                console.log($(this));
+                // console.log($(this));
                 var idx = $(this).index();
-                $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                var $info = $(".info-box-wrap > div");
+                $info.addClass('show').siblings().removeClass('show');
+                $info.eq(idx).addClass('show').siblings().removeClass('show');
                 textChange($(this));
 
                 setInfoSectionList($(this).text())
@@ -692,11 +693,15 @@
 
         /*이전 다음 이동*/
         function setTabContent(idx) {
-            $('._selected-value').text($('._select-option li').eq(idx).text());
+            var $Select = $('._select-option li');
+            var $Selected = $('._selected-value');
+            var $info = $(".info-box-wrap > div");
             <!--탭메뉴 클릭시 페이지 변경-->
-            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+            $Selected.text($Select.eq(idx).text());
+            $info.addClass('show').siblings().removeClass('show');
+            $info.eq(idx).addClass('show').siblings().removeClass('show');
 
+            setInfoSectionList($Select.eq(idx).text())
             /*페이지 변경후 상단 이동*/
             fnMove();
             /*클릭시 텍스트 변경*/
@@ -736,19 +741,19 @@
 
 
                 /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
-                if (offset < infoSectionList.list[infoSectionList.list.length - 1].offset) {
+                if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
                     writeText(infoSectionList.title)
                 } else {
                     var title;
                     for (let i = 0; i < infoSectionList.list.length; i++) {
                         var item = infoSectionList.list[i]
                         if (offset > item.offset) {
-                            console.log(i);
+                            // console.log(i);
                             title = item.title
                             break
                         }
                     }
-                    console.log(title);
+                    // console.log(title);
                     writeText(title)
                 }
 
@@ -761,7 +766,7 @@
          * @param text
          */
         function writeText(text) {
-            console.log(text);
+            // console.log(text);
             $('._anchor-value .text').text(text)
         }
 
@@ -777,7 +782,7 @@
             $('.info-box.show').find('.section-anchor').each(function (index) {
                 // console.log(i)
                 let top = $(this).offset().top - 75;
-                console.log(top);
+                // console.log(top);
                 let title = $(this).find('.sub-title').text();
                 infoSectionList.list.unshift({
                     index: index,
