@@ -1,4 +1,5 @@
-<!--비즈니스 스크립트 리펙토링-->
+
+<!--비즈니스 스크립트 리펙토링 s-->
 <script>
     /*변수*/
     var selectBox = $(".select-box");
@@ -63,16 +64,19 @@
         var $Select = $('._select-option li');
         var $Selected = $('._selected-value');
         var $info = $(".info-box-wrap > div");
+        var change = $(".option-value");
 
+        console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
+        $Selected.addClass($Select.eq(idx).addClass('active'));
         $info.addClass('show').siblings().removeClass('show');
         $info.eq(idx).addClass('show').siblings().removeClass('show');
 
         setInfoSectionList($Select.eq(idx).text())
         /*페이지 변경후 상단 이동*/
         fnMove();
-        /*클릭시 텍스트 변경*/
+
     }
 
     /*탭메뉴 상단으로 이동*/
@@ -121,7 +125,7 @@
                         break
                     }
                 }
-                //console.log(title);
+                console.log(title);
                 writeText(title)
             }
 
@@ -136,6 +140,7 @@
     function writeText(text) {
         // console.log(text);
         $('._anchor-value .text').text(text)
+
     }
 
     function setInfoSectionList(tit) {
@@ -207,3 +212,5 @@
 
 
 </script>
+
+<!--비즈니스 스크립트 리펙토링 e-->
