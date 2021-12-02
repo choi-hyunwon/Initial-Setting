@@ -238,6 +238,8 @@ front.common = (function () {
         $('._btnTooltip').on('click',function (){
             $('.tooltip-box').removeClass('active');
             $(this).parent().addClass('active');
+            $('._btnTooltip').css('z-index', '1');
+            $(this).css('z-index', '3');
         })
 
         $('._btnTooltipClose').on('click',function (){

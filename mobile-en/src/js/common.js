@@ -237,6 +237,8 @@ front.common = (function () {
         $('._btnTooltip').on('click',function (){
             $('.tooltip-box').removeClass('active');
             $(this).parent().addClass('active');
+            $('._btnTooltip').css('z-index', '1');
+            $(this).css('z-index', '3');
         })
 
         $('._btnTooltipClose').on('click',function (){
@@ -246,14 +248,14 @@ front.common = (function () {
         $(window).bind("load", function() {
             $('._btnTooltip').each(function () {
                 var left = $(this).offset().left * -1 + 20;
-                $(this).siblings().css('left', left + 'px')
+                $(this).siblings().css('left', left + 'px');
             })
         });
 
         $(document).ready(function() {
             $('._btnTooltip').each(function () {
                 var left = $(this).offset().left * -1 + 20;
-                $(this).siblings().css('left', left + 'px')
+                $(this).siblings().css('left', left + 'px');
             })
         });
         /* e tooltip */

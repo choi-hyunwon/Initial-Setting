@@ -444,10 +444,13 @@
   position: relative;
 
   .btn-tooltip {
+    position: relative;
+    z-index: 3;
     display: inline-block;
     width: auto;
     height: auto;
     background-image: none;
+    transform: translateY(-2px);
 
     .icon-tooltip {
       position: relative;
@@ -472,11 +475,12 @@
         content: '';
         display: none;
         position: absolute;
-        bottom: -14px;
+        bottom: -16px;
         left: 50%;
         transform: translateX(-50%);
-        @include background-img($width: 13px, $height: 9px, $category: 'common', $img: 'tooltip-tip.svg');
+        @include background-img($width: 11px, $height: 9px, $category: 'common', $img: 'tooltip-tip.svg');
         z-index: 3;
+        border-bottom: 1px solid #fff;
       }
     }
   }
