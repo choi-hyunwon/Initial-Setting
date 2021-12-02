@@ -69,9 +69,10 @@
         console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
-        $Selected.addClass($Select.eq(idx).addClass('active'));
         $info.addClass('show').siblings().removeClass('show');
         $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        change.eq(idx).addClass('active').siblings().removeClass('active');
 
         setInfoSectionList($Select.eq(idx).text())
         /*페이지 변경후 상단 이동*/
