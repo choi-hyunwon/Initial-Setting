@@ -2,6 +2,7 @@
 |----------------------------------|
  v.0.1 주연 : 최초 작업 -- 2021.11.3
  v.0.2 선미 : tooltip-box : after제거 및  box선 제거 -- 2021.12.01
+ v.0.3 선미 : tooltip-box > btn-tooltip (vertical-align: middle;) 간격조정 -- 2021.12.02
 |----------------------------------|
 */
 .modal {
@@ -451,6 +452,7 @@
     height: auto;
     background-image: none;
     transform: translateY(-2px);
+    vertical-align: middle;
 
     .icon-tooltip {
       position: relative;
