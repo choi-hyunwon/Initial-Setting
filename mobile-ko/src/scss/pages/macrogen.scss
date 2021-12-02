@@ -3,11 +3,6 @@
  v.0.1 (주연) 최초 작업 -- 2021.11.9
 |----------------------------------|
 */
-.select-box {
-  display: none;
-  left: 0;
-}
-
 .macrogen {
   /* s 공통 */
   .badge {
@@ -101,9 +96,11 @@
   }
 
   .select-box {
+    display: none;
+    left: 0;
     border: 0;
     background: #FFFFFF;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.06);
   }
 
   /* e 공통 */
@@ -2021,6 +2018,12 @@
   &.macrogen-history {
     .snbSwiper {
       padding: 0 20px;
+    }
+
+    .select-box {
+      .selected-value {
+        font-weight: 400;
+      }
     }
 
     .section {
