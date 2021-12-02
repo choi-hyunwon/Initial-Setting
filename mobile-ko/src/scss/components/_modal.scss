@@ -461,7 +461,7 @@
         bottom: -13px;
         left: 50%;
         transform: translateX(-50%);
-        border-bottom: 1px solid #fff;
+        //border-bottom: 1px solid #fff;
         z-index: 3;
       }
 
@@ -469,11 +469,12 @@
         content: '';
         display: none;
         position: absolute;
-        bottom: -13px;
+        bottom: -15px;
         left: 50%;
         transform: translateX(-50%);
         @include background-img($width: 12px, $height: 9px, $category: 'common', $img: 'tooltip-tip.svg');
-        z-index: 1;
+        z-index: 3;
+        border-bottom: 1px solid #fff;
       }
     }
   }

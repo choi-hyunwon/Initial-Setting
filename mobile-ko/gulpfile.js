@@ -28,8 +28,8 @@ function htmlPage() {
 function copyCss() {
     gulp.src(['src/scss/**/*.scss'])
         .pipe(gulp.dest('dist/css'));
-    return gulp.src('src/scss/fonts/**',)
-        .pipe(gulp.dest('dist/css/fonts'));
+    // return gulp.src('src/scss/fonts/**',)
+    //     .pipe(gulp.dest('dist/css/fonts'));
 }
 
 function copyIndex() {
@@ -42,10 +42,10 @@ function copyImg() {
         .pipe(gulp.dest('dist/img'));
 }
 
-function copyFonts() {
-    return gulp.src('src/fonts/**/**')
-        .pipe(gulp.dest('dist/fonts'));
-}
+// function copyFonts() {
+//     return gulp.src('src/fonts/**/**')
+//         .pipe(gulp.dest('dist/fonts'));
+// }
 
 function copyJS() {
     return gulp.src('src/js/**')
@@ -99,9 +99,9 @@ function watchImg() {
     gulp.watch('src/img/**/*', gulp.series(copyImg));
 }
 
-function watchFont() {
-    gulp.watch('src/fonts/**/**', gulp.series(copyFonts));
-}
+// function watchFont() {
+//     gulp.watch('src/fonts/**/**', gulp.series(copyFonts));
+// }
 
 
 function beautify() {
@@ -133,9 +133,9 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, jsLib, jsCommon, htmlPage))
-gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS, copyJS, htmlPage, delInclude, beautify));
-gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, jsLib, jsCommon, htmlPage))
+gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyCSS, copyJS, htmlPage, delInclude, beautify));
+gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg));
 
 gulp.task('browser-sync', function () {
     browserSync.init({
@@ -150,7 +150,6 @@ gulp.task('browser-sync', function () {
     gulp.watch('src/html/include/*.html', gulp.series(htmlPage)).on('change', browserSync.reload);
     gulp.watch('src/js/*.js', gulp.series(jsCommon)).on('change', browserSync.reload);
     gulp.watch('src/img/**/*', gulp.series(copyImg)).on('change', browserSync.reload);
-    gulp.watch('src/fonts/**/**', gulp.series(copyFonts)).on('change', browserSync.reload);
 });
 
 exports.default = gulp.series("dist");
