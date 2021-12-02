@@ -44,14 +44,12 @@ textarea::placeholder {
     background-image: url(../../dist/img/common/ico-check-nor.png);
     background-size: 16px 12px;
 
-    border-radius: 0!important;
+    border-radius: 0 !important;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-
-
 
 
     &:focus {
@@ -60,7 +58,7 @@ textarea::placeholder {
     }
 
     &:checked {
-      border-radius: 0!important;
+      border-radius: 0 !important;
       border: 2px solid $point-primary;
       background-color: $point-primary;
       background-image: url(../../dist/img/common/ico-check-checked.png);
@@ -83,6 +81,7 @@ textarea::placeholder {
 
 .label {
   font-family: $font-family-bold;
+  font-weight: bold;
   font-size: 18px;
   line-height: 34px;
   letter-spacing: -0.5px;
@@ -349,6 +348,7 @@ textarea::placeholder {
 
     span {
       font-family: $font-family-bold;
+      font-weight: bold;
       font-size: 16px;
       line-height: 32px;
       letter-spacing: -0.5px;

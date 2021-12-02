@@ -9,20 +9,19 @@ v.0.5 태윤 :  .table-scroll css 변경 (safari 이슈) -- 2021.11.30
 |----------------------------------|
 */
 .table-scroll {
-  table{
-    &.table{
-     margin-bottom: 0px;
+  table {
+    &.table {
+      margin-bottom: 0;
     }
   }
-  .mCSB_dragger_bar{
+
+  .mCSB_dragger_bar {
     background-color: #666 !important;
     height: 1px !important;
-    margin: 0px !important;
+    margin: 0 !important;
   }
-  .mCSB_draggerRail{
 
-  }
-  .mCSB_scrollTools{
+  .mCSB_scrollTools {
     background-color: #f7f7f7;
     height: 1px !important;
   }
@@ -48,8 +47,9 @@ table {
 
     .table-bg {
       background-color: $bg-f5f8fb !important;
-      td{
-        color:#000000;
+
+      td {
+        color: #000000;
         font-weight: $font-weight-bold;
       }
     }
@@ -72,6 +72,7 @@ table {
         line-height: 34px;
         font-size: 18px;
         font-family: $font-family-bold;
+        font-weight: bold;
 
         span {
           display: inline-block;
@@ -131,6 +132,7 @@ table {
           &.font-bold {
             color: $gray-000000;
             font-family: $font-family-bold;
+            font-weight: bold;
           }
 
           &:last-child {
@@ -165,6 +167,7 @@ table {
       .table {
         overflow-x: auto;
       }
+
       tbody {
         border-top: 0 !important;
 
@@ -177,6 +180,7 @@ table {
             border-right: 0;
           }
         }
+
         tr {
           th {
             border-top: none;
