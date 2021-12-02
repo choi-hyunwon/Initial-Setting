@@ -59,78 +59,7 @@
                             <li class="anchor-value" onclick="TitleMove('Gender')"><a href="#">성별확인서</a></li>
                         </ul>
                     </div>
-                    <script>
-                        /*변수*/
-                        var contentAnchor = $(".content-anchor");
-                        var anchorOption= $(".anchor-value");
-                        var anchor = $( "._anchor" );
-                        var offset = anchor.offset();
 
-
-                        /*특정위치 show & hide*/
-                        function fnMousewheel(){
-                            var lastScroll = 0;
-
-                            $(window).on('scroll',function(e){
-                                let listPos = $('.info-box').offset().top;
-                                let offset = $(this).scrollTop();
-
-                                if (offset > lastScroll){
-                                    // console.log('down')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
-                                    }
-                                    else {
-                                        contentAnchor.hide();
-                                    }
-                                }
-                                else {
-                                    // console.log('up')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
-                                    }
-                                    else {
-                                        contentAnchor.hide();
-                                    }
-                                }
-                                lastScroll = offset;
-                            });
-                        }
-
-                        /*드롭다운 클릭시 이벤트*/
-                        contentAnchor.on('click',function() {
-                            var select = $(this);
-                            if(select.hasClass('open')) {
-                                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-                            }
-                            else {
-                                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                                $('body').on('click',function (e){
-                                    if(contentAnchor.hasClass('open')) {
-                                        if(!contentAnchor.has(e.target).length) {
-                                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                        }
-                                    }
-
-                                })
-                            }
-                        });
-
-
-                        /*클릭시 페이지 이동 이동*/
-                        function TitleMove(target){
-                            var id = $('#'+ target);
-                            var offset = id.offset();
-                            $('html, body').animate({scrollTop : offset.top - 75}, 300);
-                        }
-                        /*클릭시 텍스트 변경*/
-                        anchorOption.on('click',function() {
-                            var select = $(this).find('a').text();
-                            $('._anchor-value').find('span').text(select);
-                        });
-                        fnMousewheel();
-
-                    </script>
                     <p class="font-h4 main-title">마이펫진 검사</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
@@ -138,9 +67,9 @@
                     </div>
                     <hr class="divider">
                     <div class="list-gallery">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="Degree">질병확인서</p>
+                                <p class="sub-title font-h5" id="Degree">질병확인서</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -164,9 +93,9 @@
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="Dna">DNA인증서</p>
+                                <p class="sub-title font-h5" id="Dna">DNA인증서</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -188,9 +117,9 @@
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="Blood">혈연확인서</p>
+                                <p class="sub-title font-h5" id="Blood">혈연확인서</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -210,9 +139,9 @@
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="Gender">성별확인서</p>
+                                <p class="sub-title font-h5" id="Gender">성별확인서</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -254,6 +183,7 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
+@@include('../../html/include/business/business-script.html')
 </div>
 @@include('../../html/include/components/gnb.html')
 

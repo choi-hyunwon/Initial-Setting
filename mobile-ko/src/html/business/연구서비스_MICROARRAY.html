@@ -44,7 +44,7 @@
                         <li class="option-value"><a href="#">Epigenome Microarray</a></li>
                     </ul>
                 </div>
-                @@include('../../html/include/business/script-select-nav-box.html')
+
             </div>
             <!--MICROARRAY 탭 네비 e-->
 
@@ -72,7 +72,7 @@
 
                     <hr class="divider">
 
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <!--v0.5 id값 추가 완료(주석제거예정)-->
                         <p class="font-h5 sub-title" id="target1">mRNA Expression Microarray</p>
                         <p class="desc list_bottom font-body">mRNA(messenger RNA)는 DNA가 전사될 때 생성되는 RNA의 일종입니다. mRNA는 단백질
@@ -188,7 +188,7 @@
                         </div>
                     </div>
                     <!--v0.5 id값 추가 완료(주석제거예정)-->
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="font-h5 sub-title list-area-group-top" id="target2">microRNA Expression Microarray</p>
                         <p class="desc font-body list_bottom">번역(Translation) 과정에서 유전자의 발현을 조절하는 다양한 microRNA에 대한 정보를
                             빠르게 스크리닝하여 한번에 얻을 수 있는 분석방법입니다.
@@ -327,7 +327,7 @@
                             <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CGH Microarray</a></li>
                         </ul>
                     </div>
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <!--v0.5 id 추가 (주석제거예정)-->
                         <p class="font-h5 sub-title" id="target3">SNP Genotyping Microarray</p>
 
@@ -491,8 +491,8 @@
                     </div>
                     <hr class="divider">
                     <!--v0.5 id 추가 (주석제거예정)-->
-                    <div class="anchor-section">
-                        <p class="font-h4 main-title" id="target4">CGH Microarray</p>
+                    <div class="section-anchor">
+                        <p class="font-h4 sub-title" id="target4">CGH Microarray</p>
                         <p class="desc list_bottom font-body">복제 수 변이라 불리는 CNV(Copy Number Variation)는 염색체 내에 1Kb 이상의 특정
                             염기서열 부위가 결손 되거나 증폭되어 반복적으로 나타나는 DNA 변이를 의미합니다.
                             이러한 복제 수 변이는 암세포 증식 외에도 다양한 유전질환을 유발할 수 있습니다.
@@ -729,76 +729,7 @@
     </div>
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
-    <!--v0.5 스크립트추가(주석제거예정)-->
-    <script>
-        /*변수*/
-        var contentAnchor = $(".content-anchor");
-        var anchorOption = $(".anchor-value");
-        var anchor = $("._anchor");
-        var offset = anchor.offset();
-
-
-        /*특정위치 show & hide*/
-        function fnMousewheel() {
-            var lastScroll = 0;
-
-            $(window).on('scroll', function (e) {
-                let listPos = $('.info-box').offset().top;
-                let offset = $(this).scrollTop();
-
-                if (offset > lastScroll) {
-                    // console.log('down')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed', 'top': '0px'});
-                    } else {
-                        contentAnchor.hide();
-                    }
-                } else {
-                    // console.log('up')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed', 'top': '70px'});
-                    } else {
-                        contentAnchor.hide();
-                    }
-                }
-                lastScroll = offset;
-            });
-        }
-
-        /*드롭다운 클릭시 이벤트*/
-        contentAnchor.on('click', function () {
-            var select = $(this);
-            if (select.hasClass('open')) {
-                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-            } else {
-                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                $('body').on('click', function (e) {
-                    if (contentAnchor.hasClass('open')) {
-                        if (!contentAnchor.has(e.target).length) {
-                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                        }
-                    }
-
-                })
-            }
-        });
-
-
-        /*클릭시 페이지 이동 이동*/
-        function TitleMove(target) {
-            var id = $('#' + target);
-            var offset = id.offset();
-            $('html, body').animate({scrollTop: offset.top - 75}, 300);
-        }
-
-        /*클릭시 텍스트 변경*/
-        anchorOption.on('click', function () {
-            var select = $(this).find('a').text();
-            $('._anchor-value').find('span').text(select);
-        });
-        fnMousewheel();
-
-    </script>
+    @@include('../../html/include/business/business-script.html')
 </div>
 @@include('../../html/include/components/gnb.html')
 
