@@ -114,6 +114,7 @@
 
 
             /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
+
             if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
                 writeText(infoSectionList.title)
             } else {
@@ -126,10 +127,9 @@
                         break
                     }
                 }
-                console.log(title);
                 writeText(title)
+                ChangeColor(title)
             }
-
         });
     }
 
@@ -139,10 +139,26 @@
      * @param text
      */
     function writeText(text) {
-        // console.log(text);
         $('._anchor-value .text').text(text)
-
     }
+
+    function ChangeColor(title){
+        console.log(title);
+        $(".anchor-value a").css({
+            'color' : '#454545',
+            'font-weight' : 'normal'
+        });
+        $(".anchor-value a:contains(" + title + ")").css({
+            'color' : '#2E87EF',
+            'font-weight' : 'bold'
+        });
+    }
+
+
+
+
+
+
 
     function setInfoSectionList(tit) {
 
@@ -153,7 +169,6 @@
             list: [],
         }
         $('.info-box.show').find('.section-anchor').each(function (index) {
-
             // console.log(i)
             let top = $(this).offset().top - 75;
             // console.log(top);
@@ -163,8 +178,9 @@
                 offset: top,
                 title: title
             })
+
         })
-        console.log(infoSectionList);
+        // console.log(infoSectionList);
     }
 
     /*드롭다운 클릭시 이벤트*/
