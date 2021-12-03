@@ -253,6 +253,12 @@ front.common = (function () {
                 theme:"dark",
                 setTop: "6px"
             });
+
+            $(".anchor-option").mCustomScrollbar({
+                axis:"y",
+                theme:"dark",
+                setTop: "6px"
+            });
         });
     };
 

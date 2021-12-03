@@ -350,10 +350,14 @@
     }
   }
 
+  .mCSB_scrollTools {
+    width: 9px;
+  }
+
   .anchor-option {
     display: none;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     position: absolute;
     background-color: #F5F5F5;
     max-height: 244px;
