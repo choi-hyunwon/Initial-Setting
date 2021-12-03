@@ -92,6 +92,7 @@
         var listPos = $('.info-box').offset().top;
         $(window).on('scroll', function (e) {
             let offset = $(this).scrollTop();
+            console.log(offset);
 
             if (offset > lastScroll){
                 // console.log('down')
@@ -115,21 +116,17 @@
 
             /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
 
-            if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
-                writeText(infoSectionList.title)
-            } else {
-                var title;
-                for (let i = 0; i < infoSectionList.list.length; i++) {
-                    var item = infoSectionList.list[i]
-                    if (offset > item.offset) {
-                        // console.log(i);
-                        title = item.title
-                        break
-                    }
+            var title;
+            for (let i = 0; i < infoSectionList.list.length; i++) {
+                var item = infoSectionList.list[i]
+                if (offset > item.offset) {
+                    // console.log(i);
+                    title = item.title
+                    break
                 }
-                writeText(title)
-                ChangeColor(title)
             }
+            writeText(title)
+            ChangeColor(title)
         });
     }
 
