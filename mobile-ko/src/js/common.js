@@ -254,10 +254,9 @@ front.common = (function () {
                 setTop: "6px"
             });
 
-            $(".anchor-option").mCustomScrollbar({
+            $(".select-option").mCustomScrollbar({
                 axis:"y",
-                theme:"dark",
-                setTop: "6px"
+                theme:"dark"
             });
         });
     };

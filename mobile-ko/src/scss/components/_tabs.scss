@@ -220,7 +220,7 @@
   .select-option {
     position: absolute;
     display: none;
-    padding: 24px 20px;
+    padding: 24px 0 24px 20px;
     width: 100%;
     max-height: 290px;
     overflow-y: scroll;
@@ -350,14 +350,10 @@
     }
   }
 
-  .mCSB_scrollTools {
-    width: 9px;
-  }
-
   .anchor-option {
     display: none;
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 20px;
     position: absolute;
     background-color: #F5F5F5;
     max-height: 244px;
