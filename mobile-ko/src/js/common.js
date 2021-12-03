@@ -256,7 +256,6 @@ front.common = (function () {
 
             $(".select-option").mCustomScrollbar({
                 axis:"y",
-                theme:"dark"
             });
         });
     };
