@@ -115,13 +115,18 @@
 
 
             /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
-
             var title;
-            for (let i = 0; i < infoSectionList.list.length; i++) {
+            for (
+                let i = 0; i < infoSectionList.list.length; i++) {
                 var item = infoSectionList.list[i]
+                var title = item.title
+                writeText(title)
+                ChangeColor(title)
+
                 if (offset > item.offset) {
                     // console.log(i);
                     title = item.title
+
                     break
                 }
             }
