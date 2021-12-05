@@ -66,178 +66,115 @@
                             <span class="text">Hereditary Cancer Panel</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">Hereditary
-                                Cancer Panel</a></li>
+                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">Hereditary Cancer Panel</a></li>
                             <li class="anchor-value" onclick="TitleMove('BRCA1')"><a href="#">BRCA1/2 Gene Test</a></li>
                         </ul>
                     </div>
-                    <script>
-                        /*변수*/
-                        var contentAnchor = $(".content-anchor");
-                        var anchorOption = $(".anchor-value");
-                        var anchor = $("._anchor");
-                        var offset = anchor.offset();
-
-
-                        /*특정위치 show & hide*/
-                        function fnMousewheel() {
-                            var lastScroll = 0;
-
-                            $(window).on('scroll', function (e) {
-                                let listPos = $('.info-box').offset().top;
-                                let offset = $(this).scrollTop();
-
-                                if (offset > lastScroll) {
-                                    // console.log('down')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed', 'top': '0px'});
-                                    } else {
-                                        contentAnchor.hide();
-                                    }
-                                } else {
-                                    // console.log('up')
-                                    if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed', 'top': '70px'});
-                                    } else {
-                                        contentAnchor.hide();
-                                    }
-                                }
-                                lastScroll = offset;
-                            });
-                        }
-
-                        /*드롭다운 클릭시 이벤트*/
-                        contentAnchor.on('click', function () {
-                            var select = $(this);
-                            if (select.hasClass('open')) {
-                                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-                            } else {
-                                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                                $('body').on('click', function (e) {
-                                    if (contentAnchor.hasClass('open')) {
-                                        if (!contentAnchor.has(e.target).length) {
-                                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                        }
-                                    }
-
-                                })
-                            }
-                        });
-
-
-                        /*클릭시 페이지 이동 이동*/
-                        function TitleMove(target) {
-                            var id = $('#' + target);
-                            var offset = id.offset();
-                            $('html, body').animate({scrollTop: offset.top - 75}, 300);
-                        }
-
-                        /*클릭시 텍스트 변경*/
-                        anchorOption.on('click', function () {
-                            var select = $(this).find('a').text();
-                            $('._anchor-value').find('span').text(select);
-                        });
-                        fnMousewheel();
-
-                    </script>
                     <!--content-anchor e-->
-                    <p class="font-h5 sub-title" id="HereditaryCancerPanel">Hereditary Cancer Panel</p>
-                    <p class="desc font-body data_bottom">The heredity cancer panel diagnoses the hereditary risk of
-                        cancer by analyzing the causative gene related to hereditary cancer. Mutations of a total of 16
-                        genes including BRCA1/2 genes,
-                        and genes related to Lynch syndrome, which is the main cause of colon cancer, are analyzed.</p>
-                    <div class="table-scroll">
-                        <table class="table">
-                            <colgroup>
-                                <col style="width:25%;">
-                                <col style="width:25%;">
-                                <col style="width:50%;">
-                            </colgroup>
-                            <thead>
-                            <tr>
-                                <th>Gene List</th>
-                                <th>Target</th>
-                                <th>Description (related cancer type)</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>APC, MUTYH</td>
-                                <td>Large Intestine</td>
-                                <td class="text-start">Germline mutations associated with familial adenomatous polyposis
-                                    (FAP)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>BRCA1, BRCA2</td>
-                                <td>Breast Ovary</td>
-                                <td class="text-start">Related to breast/ovarian cancer</td>
-                            </tr>
-                            <tr>
-                                <td>CDH1</td>
-                                <td>Stomach Large Intestine</td>
-                                <td class="text-start">Responsible for cell-to-cell adhesion llmplicated in cancer
-                                    progression and metastasis
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EPCAM, PMS2, MLH1, MSH2, MSH6</td>
-                                <td>Large Intestine Rectum</td>
-                                <td class="text-start">Related to the mismatch repair of DNA Lynch syndrome<br>(hereditary
-                                    non-polyposis colorectal cancer, HNPCC)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>MEN1</td>
-                                <td>Endocrine System</td>
-                                <td class="text-start">Multiple endocrine neoplasia type 1 (MEN-1 syndrome)<br>
-                                    Familial neoplasia affecting the network of hormone-producing glands
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>PTEN</td>
-                                <td>Thyroid Breast</td>
-                                <td class="text-start">Cowden syndrome Tumor - suppressor gene</td>
-                            </tr>
-                            <tr>
-                                <td>RB1</td>
-                                <td>Eye</td>
-                                <td class="text-start">Retinoblastoma</td>
-                            </tr>
-                            <tr>
-                                <td>RET</td>
-                                <td>Endocrine System Thyroid</td>
-                                <td class="text-start">Proto-oncogene Multiple endocrine neoplasia type 2 Medullary
-                                    thyroid carcinoma
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>TP53</td>
-                                <td>Breast Bone Etc.</td>
-                                <td class="text-start">Li - Fraumeni syndrome</td>
-                            </tr>
-                            <tr>
-                                <td>VHL</td>
-                                <td>Eye Kidny Central Nervous System</td>
-                                <td class="text-start">Tumor - suppressor gene von Hippel - Lindau Syndrome</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="font-h5 sub-title" id="BRCA1">BRCA1/2 Gene Test</p>
-                    <p class="desc font-body img_bottom">All areas of the BRCA1/2 gene, which is the main cause of
-                        hereditary breast cancer, are analyzed to diagnose a person’s risk of breast cancer.
-                        Mutations in the BRCA 1/2 gene greatly increase the risk of breast cancer.
-                    </p>
-                    <div class="border-gray-box">
-                        <!--v0.6 div img 추가 -->
-                        <div class="img">
-                            <img src="../../img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
-                            <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+
+                    <!--v0.11 section-anchor 추가-->
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="HereditaryCancerPanel">Hereditary Cancer Panel</p>
+                        <p class="desc font-body data_bottom">The heredity cancer panel diagnoses the hereditary risk of
+                            cancer by analyzing the causative gene related to hereditary cancer. Mutations of a total of
+                            16
+                            genes including BRCA1/2 genes,
+                            and genes related to Lynch syndrome, which is the main cause of colon cancer, are
+                            analyzed.</p>
+                        <div class="table-scroll">
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:50%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>Gene List</th>
+                                    <th>Target</th>
+                                    <th>Description (related cancer type)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>APC, MUTYH</td>
+                                    <td>Large Intestine</td>
+                                    <td class="text-start">Germline mutations associated with familial adenomatous
+                                        polyposis
+                                        (FAP)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>BRCA1, BRCA2</td>
+                                    <td>Breast Ovary</td>
+                                    <td class="text-start">Related to breast/ovarian cancer</td>
+                                </tr>
+                                <tr>
+                                    <td>CDH1</td>
+                                    <td>Stomach Large Intestine</td>
+                                    <td class="text-start">Responsible for cell-to-cell adhesion llmplicated in cancer
+                                        progression and metastasis
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>EPCAM, PMS2, MLH1, MSH2, MSH6</td>
+                                    <td>Large Intestine Rectum</td>
+                                    <td class="text-start">Related to the mismatch repair of DNA Lynch syndrome<br>(hereditary
+                                        non-polyposis colorectal cancer, HNPCC)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MEN1</td>
+                                    <td>Endocrine System</td>
+                                    <td class="text-start">Multiple endocrine neoplasia type 1 (MEN-1 syndrome)<br>
+                                        Familial neoplasia affecting the network of hormone-producing glands
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PTEN</td>
+                                    <td>Thyroid Breast</td>
+                                    <td class="text-start">Cowden syndrome Tumor - suppressor gene</td>
+                                </tr>
+                                <tr>
+                                    <td>RB1</td>
+                                    <td>Eye</td>
+                                    <td class="text-start">Retinoblastoma</td>
+                                </tr>
+                                <tr>
+                                    <td>RET</td>
+                                    <td>Endocrine System Thyroid</td>
+                                    <td class="text-start">Proto-oncogene Multiple endocrine neoplasia type 2 Medullary
+                                        thyroid carcinoma
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>TP53</td>
+                                    <td>Breast Bone Etc.</td>
+                                    <td class="text-start">Li - Fraumeni syndrome</td>
+                                </tr>
+                                <tr>
+                                    <td>VHL</td>
+                                    <td>Eye Kidny Central Nervous System</td>
+                                    <td class="text-start">Tumor - suppressor gene von Hippel - Lindau Syndrome</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span>
-                    </p>
+                    <!--v0.11 section-anchor 추가-->
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="BRCA1">BRCA1/2 Gene Test</p>
+                        <p class="desc font-body img_bottom">All areas of the BRCA1/2 gene, which is the main cause of
+                            hereditary breast cancer, are analyzed to diagnose a person’s risk of breast cancer.
+                            Mutations in the BRCA 1/2 gene greatly increase the risk of breast cancer.
+                        </p>
+                        <div class="border-gray-box">
+                            <!--v0.6 div img 추가 -->
+                            <div class="img">
+                                <img src="../../img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
+                                <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                            </div>
+                        </div>
+                        <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span>
+                        </p></div>
                     <div class="btn-area">
                         <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
                     </div>
