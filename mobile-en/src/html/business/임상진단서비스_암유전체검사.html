@@ -8,14 +8,18 @@
         <div class="frame">
             <div class="font-h1">Cancer Genome Testing</div>
             <div class="font-body-h">Using FFPE, tissue, and liquid biopsy</div>
-            <div class="btn-wrap"><a href="#tabAncher" class="btn-service"><span class="sr-only">service</span></a></div>
+            <div class="btn-wrap"><a href="#tabAncher" class="btn-service"><span class="sr-only">service</span></a>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="section_business">
             <div class="subject-box">
-                <p class="font-h4 title">We provide personalized solutions for a healthy life by analyzing your genomic features.</p>
-                <p class="subject font-body">Based on genetic factors identified through your personal genome sequence, we predict the risk of cancer and provide personalized treatment information by analyzing mutations in oncogenes.</p>
+                <p class="font-h4 title">We provide personalized solutions for a healthy life by analyzing your genomic
+                    features.</p>
+                <p class="subject font-body">Based on genetic factors identified through your personal genome sequence,
+                    we predict the risk of cancer and provide personalized treatment information by analyzing mutations
+                    in oncogenes.</p>
             </div>
             <!--암 유전체 검사 탭 네비 s-->
             <div class="select-nav-box _content-anchor">
@@ -38,8 +42,16 @@
                 <!--암 발생 위험 예측-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Cancer risk prediction</p>
-                    <p class="subject font-body-h-b">Cancers occur due to various causes, but some cancers are caused by genetic mutations of specific inherited genes.</p>
-                    <p class="desc font-body img_bottom">People who have such cancer-related mutations are exposed to far more risk of cancer than others. Hereditary cancers are caused by gene abnormalities inherited from parents, and the incidence of cancer in the same family is high. Thus, early detection and identification of the exact cause through gene diagnosis is required. The most commonly known hereditary cancers are breast cancer, ovarian cancer, and colon cancer. In regard to incidence of breast cancer, 5% - 10% is known to be genetically caused, and about more than half are caused by abnormalities in genes called BRCA1 and BRCA2. In addition, having genes that cause various cancers will dramatically increase the incidence of cancer.</p>
+                    <p class="subject font-body-h-b">Cancers occur due to various causes, but some cancers are caused by
+                        genetic mutations of specific inherited genes.</p>
+                    <p class="desc font-body img_bottom">People who have such cancer-related mutations are exposed to
+                        far more risk of cancer than others. Hereditary cancers are caused by gene abnormalities
+                        inherited from parents, and the incidence of cancer in the same family is high. Thus, early
+                        detection and identification of the exact cause through gene diagnosis is required. The most
+                        commonly known hereditary cancers are breast cancer, ovarian cancer, and colon cancer. In regard
+                        to incidence of breast cancer, 5% - 10% is known to be genetically caused, and about more than
+                        half are caused by abnormalities in genes called BRCA1 and BRCA2. In addition, having genes that
+                        cause various cancers will dramatically increase the incidence of cancer.</p>
                     <div class="border-gray-box">
                         <div class="img">
                             <img src="../../img/business/img_familyline.png" alt="암 발생 위험 예측">
@@ -54,41 +66,39 @@
                             <span class="text">Hereditary Cancer Panel</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">Hereditary Cancer Panel</a></li>
+                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">Hereditary
+                                Cancer Panel</a></li>
                             <li class="anchor-value" onclick="TitleMove('BRCA1')"><a href="#">BRCA1/2 Gene Test</a></li>
                         </ul>
                     </div>
                     <script>
                         /*변수*/
                         var contentAnchor = $(".content-anchor");
-                        var anchorOption= $(".anchor-value");
-                        var anchor = $( "._anchor" );
+                        var anchorOption = $(".anchor-value");
+                        var anchor = $("._anchor");
                         var offset = anchor.offset();
 
 
                         /*특정위치 show & hide*/
-                        function fnMousewheel(){
+                        function fnMousewheel() {
                             var lastScroll = 0;
 
-                            $(window).on('scroll',function(e){
+                            $(window).on('scroll', function (e) {
                                 let listPos = $('.info-box').offset().top;
                                 let offset = $(this).scrollTop();
 
-                                if (offset > lastScroll){
+                                if (offset > lastScroll) {
                                     // console.log('down')
                                     if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
-                                    }
-                                    else {
+                                        contentAnchor.show().css({'position': 'fixed', 'top': '0px'});
+                                    } else {
                                         contentAnchor.hide();
                                     }
-                                }
-                                else {
+                                } else {
                                     // console.log('up')
                                     if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
-                                    }
-                                    else {
+                                        contentAnchor.show().css({'position': 'fixed', 'top': '70px'});
+                                    } else {
                                         contentAnchor.hide();
                                     }
                                 }
@@ -97,16 +107,15 @@
                         }
 
                         /*드롭다운 클릭시 이벤트*/
-                        contentAnchor.on('click',function() {
+                        contentAnchor.on('click', function () {
                             var select = $(this);
-                            if(select.hasClass('open')) {
+                            if (select.hasClass('open')) {
                                 select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-                            }
-                            else {
+                            } else {
                                 select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                                $('body').on('click',function (e){
-                                    if(contentAnchor.hasClass('open')) {
-                                        if(!contentAnchor.has(e.target).length) {
+                                $('body').on('click', function (e) {
+                                    if (contentAnchor.hasClass('open')) {
+                                        if (!contentAnchor.has(e.target).length) {
                                             contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                         }
                                     }
@@ -117,13 +126,14 @@
 
 
                         /*클릭시 페이지 이동 이동*/
-                        function TitleMove(target){
-                            var id = $('#'+ target);
+                        function TitleMove(target) {
+                            var id = $('#' + target);
                             var offset = id.offset();
-                            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+                            $('html, body').animate({scrollTop: offset.top - 75}, 300);
                         }
+
                         /*클릭시 텍스트 변경*/
-                        anchorOption.on('click',function() {
+                        anchorOption.on('click', function () {
                             var select = $(this).find('a').text();
                             $('._anchor-value').find('span').text(select);
                         });
@@ -132,79 +142,91 @@
                     </script>
                     <!--content-anchor e-->
                     <p class="font-h5 sub-title" id="HereditaryCancerPanel">Hereditary Cancer Panel</p>
-                    <p class="desc font-body data_bottom">The heredity cancer panel diagnoses the hereditary risk of cancer by analyzing the causative gene related to hereditary cancer. Mutations of a total of 16 genes including BRCA1/2 genes,
+                    <p class="desc font-body data_bottom">The heredity cancer panel diagnoses the hereditary risk of
+                        cancer by analyzing the causative gene related to hereditary cancer. Mutations of a total of 16
+                        genes including BRCA1/2 genes,
                         and genes related to Lynch syndrome, which is the main cause of colon cancer, are analyzed.</p>
                     <div class="table-scroll">
                         <table class="table">
-                        <colgroup>
-                            <col style="width:25%;">
-                            <col style="width:25%;">
-                            <col style="width:50%;">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th>Gene List</th>
-                            <th>Target</th>
-                            <th>Description (related cancer type)</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>APC, MUTYH</td>
-                            <td>Large Intestine</td>
-                            <td class="text-start">Germline mutations associated with familial adenomatous polyposis (FAP)</td>
-                        </tr>
-                        <tr>
-                            <td>BRCA1, BRCA2</td>
-                            <td>Breast Ovary</td>
-                            <td class="text-start">Related to breast/ovarian cancer</td>
-                        </tr>
-                        <tr>
-                            <td>CDH1</td>
-                            <td>Stomach Large Intestine</td>
-                            <td class="text-start">Responsible for cell-to-cell adhesion llmplicated in cancer progression and metastasis</td>
-                        </tr>
-                        <tr>
-                            <td>EPCAM, PMS2, MLH1, MSH2, MSH6</td>
-                            <td>Large Intestine Rectum</td>
-                            <td class="text-start">Related to the mismatch repair of DNA Lynch syndrome<br>(hereditary non-polyposis colorectal cancer, HNPCC)</td>
-                        </tr>
-                        <tr>
-                            <td>MEN1</td>
-                            <td>Endocrine System</td>
-                            <td class="text-start">Multiple endocrine neoplasia type 1 (MEN-1 syndrome)<br>
-                                Familial neoplasia affecting the network of hormone-producing glands</td>
-                        </tr>
-                        <tr>
-                            <td>PTEN</td>
-                            <td>Thyroid Breast</td>
-                            <td class="text-start">Cowden syndrome Tumor - suppressor gene</td>
-                        </tr>
-                        <tr>
-                            <td>RB1</td>
-                            <td>Eye</td>
-                            <td class="text-start">Retinoblastoma</td>
-                        </tr>
-                        <tr>
-                            <td>RET</td>
-                            <td>Endocrine System Thyroid</td>
-                            <td class="text-start">Proto-oncogene Multiple endocrine neoplasia type 2 Medullary thyroid carcinoma</td>
-                        </tr>
-                        <tr>
-                            <td>TP53</td>
-                            <td>Breast Bone Etc.</td>
-                            <td class="text-start">Li - Fraumeni syndrome</td>
-                        </tr>
-                        <tr>
-                            <td>VHL</td>
-                            <td>Eye Kidny Central Nervous System</td>
-                            <td class="text-start">Tumor - suppressor gene von Hippel - Lindau Syndrome</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                            <colgroup>
+                                <col style="width:25%;">
+                                <col style="width:25%;">
+                                <col style="width:50%;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>Gene List</th>
+                                <th>Target</th>
+                                <th>Description (related cancer type)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>APC, MUTYH</td>
+                                <td>Large Intestine</td>
+                                <td class="text-start">Germline mutations associated with familial adenomatous polyposis
+                                    (FAP)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRCA1, BRCA2</td>
+                                <td>Breast Ovary</td>
+                                <td class="text-start">Related to breast/ovarian cancer</td>
+                            </tr>
+                            <tr>
+                                <td>CDH1</td>
+                                <td>Stomach Large Intestine</td>
+                                <td class="text-start">Responsible for cell-to-cell adhesion llmplicated in cancer
+                                    progression and metastasis
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EPCAM, PMS2, MLH1, MSH2, MSH6</td>
+                                <td>Large Intestine Rectum</td>
+                                <td class="text-start">Related to the mismatch repair of DNA Lynch syndrome<br>(hereditary
+                                    non-polyposis colorectal cancer, HNPCC)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MEN1</td>
+                                <td>Endocrine System</td>
+                                <td class="text-start">Multiple endocrine neoplasia type 1 (MEN-1 syndrome)<br>
+                                    Familial neoplasia affecting the network of hormone-producing glands
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PTEN</td>
+                                <td>Thyroid Breast</td>
+                                <td class="text-start">Cowden syndrome Tumor - suppressor gene</td>
+                            </tr>
+                            <tr>
+                                <td>RB1</td>
+                                <td>Eye</td>
+                                <td class="text-start">Retinoblastoma</td>
+                            </tr>
+                            <tr>
+                                <td>RET</td>
+                                <td>Endocrine System Thyroid</td>
+                                <td class="text-start">Proto-oncogene Multiple endocrine neoplasia type 2 Medullary
+                                    thyroid carcinoma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TP53</td>
+                                <td>Breast Bone Etc.</td>
+                                <td class="text-start">Li - Fraumeni syndrome</td>
+                            </tr>
+                            <tr>
+                                <td>VHL</td>
+                                <td>Eye Kidny Central Nervous System</td>
+                                <td class="text-start">Tumor - suppressor gene von Hippel - Lindau Syndrome</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <p class="font-h5 sub-title" id="BRCA1">BRCA1/2 Gene Test</p>
-                    <p class="desc font-body img_bottom">All areas of the BRCA1/2 gene, which is the main cause of hereditary breast cancer, are analyzed to diagnose a person’s risk of breast cancer.
+                    <p class="desc font-body img_bottom">All areas of the BRCA1/2 gene, which is the main cause of
+                        hereditary breast cancer, are analyzed to diagnose a person’s risk of breast cancer.
                         Mutations in the BRCA 1/2 gene greatly increase the risk of breast cancer.
                     </p>
                     <div class="border-gray-box">
@@ -214,15 +236,18 @@
                             <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
-                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
+                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span>
+                    </p>
                     <div class="btn-area">
                         <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
-                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
+                                <div class="col disabled"><i class="icon ico-left-black"></i><span
+                                        class="font-body-h-b">Prev</span></div>
+                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">Next</span><i
+                                        class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -230,10 +255,15 @@
                 <!--암 발생 원인 분석-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Analysis of causes of cancer</p>
-                    <p class="subject font-body-h-b">This service tracks the cause of cancer and provides key information for personalized treatment by analyzing mutations in the genes
+                    <p class="subject font-body-h-b">This service tracks the cause of cancer and provides key
+                        information for personalized treatment by analyzing mutations in the genes
                         involved in cancer development using DNA extracted from cancer patients' tumor samples.</p>
-                    <p class="desc img_bottom font-body">Until now, cancers were classified in a histopathological manner, but recently, gene analysis is performed on cancer tissue, and cancers are subdivided into groups.
-                        This contributes to improved response (about 75% of patients exhibit different effects when the same anticancer drug is prescribed) and provides personalized treatment for cancer patients while minimizing adverse effects.</p>
+                    <p class="desc img_bottom font-body">Until now, cancers were classified in a histopathological
+                        manner, but recently, gene analysis is performed on cancer tissue, and cancers are subdivided
+                        into groups.
+                        This contributes to improved response (about 75% of patients exhibit different effects when the
+                        same anticancer drug is prescribed) and provides personalized treatment for cancer patients
+                        while minimizing adverse effects.</p>
                     <div class="border-gray-box">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
@@ -248,17 +278,21 @@
                             <span class="btnZoom-4"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
-                    <p class="caption">※ Source : Pao W et al. New driver mutations in non-small-cell lung cancer Lancet Oncol. 2011 Feb; 12(2): 175-80.</p>
+                    <p class="caption">※ Source : Pao W et al. New driver mutations in non-small-cell lung cancer Lancet
+                        Oncol. 2011 Feb; 12(2): 175-80.</p>
                     <hr class="divider">
-                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
+                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span>
+                    </p>
                     <div class="btn-area">
                         <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
-                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
+                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span
+                                        class="font-body-h-b">Prev</span></div>
+                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">Next</span><i
+                                        class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -266,9 +300,14 @@
                 <!--암 발생 모니터링-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Cancer Occurrence Monitoring</p>
-                    <p class="subject font-body-h-b">When cancer occurs in the body, there are NDA fragments detached from cancer cells in the blood.</p>
-                    <p class="desc img_bottom font-body">This is called ctDNA (circulating tumor DNA). When ctDNA is checked regularly, cancer cells can be detected early and prompt measures can be taken.
-                        Unlike existing biopsies, this test can be performed by simply collecting blood, which makes regular checkups more efficient. However, theistest is not widely given because the levels of ctDNA are different by type of cancer and individual, making detection very difficult. Macrogen is expanding this service by continuously making technical improvements.</p>
+                    <p class="subject font-body-h-b">When cancer occurs in the body, there are NDA fragments detached
+                        from cancer cells in the blood.</p>
+                    <p class="desc img_bottom font-body">This is called ctDNA (circulating tumor DNA). When ctDNA is
+                        checked regularly, cancer cells can be detected early and prompt measures can be taken.
+                        Unlike existing biopsies, this test can be performed by simply collecting blood, which makes
+                        regular checkups more efficient. However, theistest is not widely given because the levels of
+                        ctDNA are different by type of cancer and individual, making detection very difficult. Macrogen
+                        is expanding this service by continuously making technical improvements.</p>
                     <div class="border-gray-box">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
@@ -279,20 +318,24 @@
                     <div class="border-gray-box mb-0">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
-                            <img src="../../img/business/img_monitoring2.png" alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
+                            <img src="../../img/business/img_monitoring2.png"
+                                 alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
                             <span class="btnZoom-6"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
+                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span>
+                    </p>
                     <div class="btn-area">
                         <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
-                                <div class="col disabled"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
+                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span
+                                        class="font-body-h-b">Prev</span></div>
+                                <div class="col disabled"><span class="font-body-h-b">Next</span><i
+                                        class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -300,6 +343,7 @@
             </div>
         </div>
     </div>
+    @@include('../../html/include/business/business-script.html')
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
 
@@ -342,6 +386,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -381,6 +426,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -420,6 +466,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -458,6 +505,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -497,6 +545,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -536,6 +585,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }

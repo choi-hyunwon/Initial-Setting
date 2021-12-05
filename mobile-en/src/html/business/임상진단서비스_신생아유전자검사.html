@@ -13,30 +13,40 @@
     <div class="container">
         <div class="section_business">
             <div class="subject-box">
-                <p class="font-h4 title">We offer a wide range of genome sequencing to help people lead healthier and happier lives.</p>
+                <p class="font-h4 title">We offer a wide range of genome sequencing to help people lead healthier and
+                    happier lives.</p>
                 <!--10.25 html 추가-->
-                <p class="subject font-body-h">The Clinical Diagnostics Division helps individuals lead healthy lives throughout their lifespan through prenatal and rare disease tests for fetuses.<br>
+                <p class="subject font-body-h">The Clinical Diagnostics Division helps individuals lead healthy lives
+                    throughout their lifespan through prenatal and rare disease tests for fetuses.<br>
                     From disease prevention to personalized treatment, we provide various genome sequencing tests.</p>
             </div>
             <div class="info-box-wrap">
                 <!--산전 염색체 이수성 검사-->
                 <div class="info-box show subject-box">
                     <p class="font-h4 title">NIPS: Non-Invasive Prenatal Screening</p>
-                    <p class="subject font-body-h img_bottom">NIPS is the test that screens for aneuploidy of chromosomes in a fetus using its cffDNA (cell-free fetal DNA). The test is performed for Down syndrome,<br>
-                        Edwards syndrome and Patau syndrome, the most typical kinds of aneuploidy, and aneuploidy of gender chromosomes.</p>
+                    <p class="subject font-body-h img_bottom">NIPS is the test that screens for aneuploidy of
+                        chromosomes in a fetus using its cffDNA (cell-free fetal DNA). The test is performed for Down
+                        syndrome,<br>
+                        Edwards syndrome and Patau syndrome, the most typical kinds of aneuploidy, and aneuploidy of
+                        gender chromosomes.</p>
                     <div class="img caption_bottom">
                         <img src="../../img/business/img-npis.png" alt="NIPS">
                         <span class="btnZoom-1">
                             <i class="icon ico-zoom-white"></i>
                         </span>
                     </div>
-                    <div class="caption">※ This test has not established the clinical meaning of the test results, and there is still insufficient objective validity that the resulting health-related actions are useful.
+                    <div class="caption">※ This test has not established the clinical meaning of the test results, and
+                        there is still insufficient objective validity that the resulting health-related actions are
+                        useful.
                     </div>
                 </div>
                 <div class="info-box show subject-box no-line">
                     <p class="font-h4 title">Rare Disease Genome</p>
-                    <p class="subject font-body-h desc img_bottom">There are more than 8,000 known rare diseases. Among them, 80% are hereditary diseases caused by gene mutation.  Even though the prevalence rate of each<br>
-                        disease is very low, the risk is rather high around the world because there are so many types and symptoms of these diseases.</p>
+                    <p class="subject font-body-h desc img_bottom">There are more than 8,000 known rare diseases. Among
+                        them, 80% are hereditary diseases caused by gene mutation. Even though the prevalence rate of
+                        each<br>
+                        disease is very low, the risk is rather high around the world because there are so many types
+                        and symptoms of these diseases.</p>
                     <div class="img">
                         <img src="../../img/business/img_raredisease.png" alt="희귀질환 유전체">
                         <span class="btnZoom-2">
@@ -50,6 +60,7 @@
             </div>
         </div>
     </div>
+    @@include('../../html/include/business/business-script.html')
     @@include('../../html/include/components/footer.html')
     @@include('../../html/include/components/toTop.html')
     <div class="toast-popup">
@@ -91,6 +102,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -131,6 +143,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
