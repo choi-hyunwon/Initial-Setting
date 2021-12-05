@@ -123,6 +123,7 @@
                 let i = 0; i < infoSectionList.list.length; i++) {
                 var item = infoSectionList.list[i]
                 var title = item.title
+
                 writeText(title)
                 ChangeColor(title)
 
@@ -180,6 +181,7 @@
             let top = $(this).offset().top - 75;
             // console.log(top);
             let title = $(this).find('.sub-title').text();
+
             infoSectionList.list.unshift({
                 index: index,
                 offset: top,
@@ -219,7 +221,7 @@
     function TitleMove(target) {
         var id = $('#' + target);
         var offset = id.offset();
-        $('html, body').animate({scrollTop: offset.top - 66}, 300);
+        $('html, body').animate({scrollTop: offset.top - 60}, 300);
     }
 
 
