@@ -258,6 +258,9 @@ front.common = (function () {
             $(".select-option").mCustomScrollbar({
                 axis:"y",
             });
+            $(".anchor-option").mCustomScrollbar({
+                axis:"y",
+            });
         });
     };
 

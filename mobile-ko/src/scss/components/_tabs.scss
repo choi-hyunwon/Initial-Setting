@@ -6,6 +6,7 @@
  v.0.4 태윤 : .content-anchor 화살표추가 -- 2021.11.24
  v.0.5 선미 : .select-option 내부 수정(폰트,라인,색상, scrollbar추가...) /  .selected-value ellipsis 추가 -- 2021.12.01
  v.0.6 선미 : .select-option mCustomScrollbar 커스텀 - 2021.12.03
+ v 0.7 태윤 : .anchor-option mCustomScrollbar 커스텀 & anchor-option padding값 수정 - 2021.12.05
 |----------------------------------|
 */
 .tab-primary {
@@ -373,13 +374,12 @@
   .anchor-option {
     display: none;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
     position: absolute;
     background-color: #F5F5F5;
     max-height: 244px;
     overflow-y: scroll;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.08);
-
     .anchor-value {
       margin-bottom: 12px;
 
@@ -397,6 +397,26 @@
 
       &:nth-last-of-type(1) {
         margin-bottom: 0;
+      }
+    }
+    /*스크롤바 커스텀*/
+    &.mCustomScrollbar{
+      .mCustomScrollBox{
+        .mCSB_scrollTools{
+          .mCSB_draggerContainer{
+            .mCSB_dragger{
+              right: 0;
+              width: 5px;
+              .mCSB_dragger_bar{
+                background-color: #d9d9d9;
+                margin: 0;
+              }
+              .mCSB_draggerRail {
+                background-color: #ffffff;
+              }
+            }
+          }
+        }
       }
     }
   }
