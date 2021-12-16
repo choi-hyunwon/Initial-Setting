@@ -33,14 +33,16 @@
         .modal-body{
           background-color: #fff;
           padding: 40px;
-          .title{
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 46px;
-            text-align: center;
-            letter-spacing: -1px;
-            margin-bottom: 30px;
+          .data-img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 40px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
           }
+
           .desc{
             font-size: 18px;
             font-style: normal;
